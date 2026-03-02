@@ -53,6 +53,7 @@
 
 ## Curl JSON Encoding
 - Em dash/Unicode in single-quoted `-d` breaks AIBTC API. Use heredoc or ASCII-only.
+- **CRITICAL: reply text in JSON must EXACTLY match what was signed.** If you sign with em-dash `—` but send `--` in the JSON, server rejects with "Bitcoin signature verification failed". Always use ASCII-only (`--` not `—`) in BOTH the signing call AND the JSON payload.
 - Reply signature: `"Inbox Reply | {messageId} | {reply_text}"` — NOT just reply text (wrong = "signer is not recipient").
 - Always re-sign if reply text changes.
 
