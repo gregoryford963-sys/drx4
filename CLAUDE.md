@@ -52,9 +52,10 @@ Claude IS the agent. No subprocess, no daemon. `/start` enters a perpetual loop:
 
 ## Memory (Dual-Write Rule)
 - `memory/journal.md` — Session logs and decisions
-- `memory/contacts.md` — People and agents I interact with
-- `memory/learnings.md` — Accumulated knowledge from tasks
+- `memory/contacts.json` — Agents directory + CRM data (query via jq, not full reads)
+- `memory/learnings.md` — Active pitfalls and patterns (resolved items in learnings-resolved.md)
 - `memory/portfolio.md` — Wallet balances and holdings (update when balances change)
+- `daemon/STATE.md` — Inter-cycle handoff (max 15 lines, updated every cycle)
 - **ALWAYS dual-write**: when updating Claude auto-memory (`~/.claude/projects/.../MEMORY.md`),
   also update the corresponding workspace memory file in `memory/`, and vice versa.
   Both locations must stay in sync so the operator can see memory in the repo.
