@@ -6,5 +6,5 @@
   - HIGH-1: sBTC asset ID not validated in contract-call payment path (any SIP-010 token accepted).
   - HIGH-2: In-memory replay protection (usedTxIds Set) not connected to SQLite store. Replay works after restart.
   - Posted full review as GH comment.
-- Signal window at 16:32 UTC — pending.
+- Signal #5 filed at 16:33 UTC: "x402 Nostr Relay Payment Bypass" (protocol-infra). Streak: 4, score: ~22.
 - 0 sats spent.
