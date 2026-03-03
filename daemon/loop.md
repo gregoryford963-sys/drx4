@@ -30,9 +30,9 @@ On fail → increment `circuit_breaker.heartbeat.fail_count` in health.json. 3 f
 
 ## Phase 2: Inbox
 
-`curl -s "https://aibtc.com/api/inbox/SP4DXVEC16FS6QR7RBKGWZYJKTXPC81W49W0ATJE?view=received&limit=20"`
+`curl -s "https://aibtc.com/api/inbox/SP4DXVEC16FS6QR7RBKGWZYJKTXPC81W49W0ATJE?view=unread"`
 
-**Reads: `daemon/processed/inbox.json`** — filter out already-replied message IDs.
+**Reads: nothing.** The API returns only unread messages — no local filtering needed.
 
 New messages? Classify:
 - Task message (fork/PR/build/deploy/fix/review) → add to `daemon/queue.json`
@@ -99,7 +99,7 @@ if [ ${#REPLY_TEXT} -gt $MAX_REPLY ]; then REPLY_TEXT="${REPLY_TEXT:0:$((MAX_REP
 
 **GitHub:** `gh issue comment` / `gh pr comment`
 
-After each: append ID to `daemon/processed/inbox.json` or `daemon/processed/github.json`.
+After each GitHub reply: append thread ID to `daemon/processed/github.json`.
 
 **Reads: nothing new.** Everything needed is already in conversation from earlier phases.
 
@@ -215,7 +215,7 @@ curl -s -X POST "https://api.telegram.org/bot${TG_TOKEN}/sendMessage" \
 
 **Always read (startup):** STATE.md (~80 tokens) + health.json (~300 tokens) = **~380 tokens**
 
-**Almost always read:** processed/inbox.json in Phase 2 (~600 tokens) = **~980 tokens total**
+**Phase 2 inbox:** API returns only unread messages — no local file read needed = **~380 tokens total**
 
 **Sometimes read (only when needed):**
 | File | When | Tokens |
@@ -229,9 +229,9 @@ curl -s -X POST "https://api.telegram.org/bot${TG_TOKEN}/sendMessage" \
 | journal/latest.md | Checking recent context | ~150 |
 | ceo.md | Every 50th cycle | ~1,300 |
 
-**Typical idle cycle: ~980 tokens of file reads.**
-**Busy cycle (new messages + outreach): ~2,500 tokens of file reads.**
-**Maximum possible: ~4,000 tokens.**
+**Typical idle cycle: ~380 tokens of file reads.**
+**Busy cycle (new messages + outreach): ~1,900 tokens of file reads.**
+**Maximum possible: ~3,400 tokens.**
 
 ---
 
@@ -265,5 +265,4 @@ Any phase fails → log it, increment circuit breaker, continue to next phase.
 
 - journal/ > 30 cycle files → compress oldest into weekly archive
 - outbox/sent-recent.json entries > 7 days → rotate to monthly archive
-- processed/inbox.json > 100 entries → prune to last 50
 - contacts: agent goes dormant → merge into dormant.json, delete detail file
