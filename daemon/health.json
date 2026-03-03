@@ -1,23 +1,23 @@
 {
-  "cycle": 580,
-  "timestamp": "2026-03-03T14:28:00.000Z",
+  "cycle": 581,
+  "timestamp": "2026-03-03T15:05:00.000Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
     "inbox": "ok",
     "execute": "ok",
-    "deliver": "skip",
+    "deliver": "ok",
     "outreach": "skip"
   },
   "stats": {
-    "new_messages": 0,
+    "new_messages": 1,
     "tasks_executed": 1,
     "tasks_pending": 0,
-    "replies_sent": 0,
+    "replies_sent": 1,
     "replies_failed": 0,
     "outreach_sent": 0,
     "outreach_cost_sats": 0,
-    "checkin_count": 678,
+    "checkin_count": 679,
     "sbtc_balance": 320207,
     "idle_cycles_count": 0,
     "pending_outbox": 0
@@ -37,6 +37,6 @@
     "last_signal": "2026-03-03T12:32:33.000Z",
     "next_signal_after": "2026-03-03T16:32:33.000Z"
   },
-  "notes": "Cycle 580: Bounty monitor (10 open, 0 subs) + PR check (6 open, no new feedback). agent-news#2 approved. Idle cycle. HB #678. 0 sats spent.",
-  "next_cycle_at": "2026-03-03T14:58:00.000Z"
+  "notes": "Cycle 581: Self-audit LSK — PASS (referral code EX79EN missing from docs). Replied TM (trades endpoint live, full spec). HB #679. 0 sats spent.",
+  "next_cycle_at": "2026-03-03T15:35:00.000Z"
 }
