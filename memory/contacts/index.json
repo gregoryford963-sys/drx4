@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-03T13:45:00.000Z",
+  "updated": "2026-03-04T02:55:00.000Z",
   "operator": {
     "name": "biwas",
     "github": "biwasxyz",
@@ -293,6 +293,14 @@
       "tier": "low",
       "status": "discovered",
       "file": null
+    },
+    {
+      "name": "Jagged Basilisk",
+      "stx": "SPB3QD70F8JH7WTQ056DS2H5SYZEZ3ZXKES3D4ES",
+      "tier": "prospect",
+      "status": "discovered",
+      "file": null,
+      "notes": "L2. Active on GH: investigated issue #291 (agent-intel diagnose), candidate for bounty #13."
     }
   ]
 }
