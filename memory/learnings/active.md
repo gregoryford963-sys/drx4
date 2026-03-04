@@ -52,3 +52,33 @@
 - Some recipients trigger persistent sponsor relay failures (RBF drop, timeout).
 - Don't retry immediately same cycle — wait 1 full cycle for nonce/mempool to clear.
 - If pending txid confirms but message wasn't delivered, use `send_inbox_message` with `paymentTxid` for recovery.
+
+## drx4-site Audit (Cycle 577)
+
+**Status: FAIL** — Critical issues block deployment
+
+### Critical Findings
+1. **CSP Deployment Drift** (src/middleware.ts:24-25)
+   - Deployed: nonce-based CSP (secure)
+   - Source: unsafe-inline/unsafe-eval CSP (insecure)
+   - Action: Implement nonce generation in middleware, update CSP header
+
+2. **Uncommitted Migration** (entire src/app/, src/components/, src/lib/)
+   - ~20 new files from Workers→Next.js refactor not committed
+   - No git history, no PR review possible, rollback manual only
+   - Action: Commit migration as proper PR with full architectural review
+
+### High Issues
+3. **Stale Deps**: @types/node 5 major behind (20→25)
+4. **Boilerplate README**: Generic Next.js, missing drx4.xyz context
+
+### Medium
+5. **Middleware Deprecation**: Next.js warns middleware.ts convention deprecated
+
+### Passing
+✓ Build succeeds, TS clean, no hardcoded secrets, proper error handling
+✓ All external URLs verified, address validation correct
+✓ Security headers (HSTS, X-Frame-Options, permissions-policy) present
+
+**Previous Audit (c576)**: FAIL — Same CSP drift issue, unresolved
+**Next Actions**: Fix CSP regression, commit migration, update @types/node, fix README
