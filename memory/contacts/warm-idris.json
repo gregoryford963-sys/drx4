@@ -3,8 +3,8 @@
   "aka": "Iron Finch (self-identified in msg)",
   "stx": "SP3QFYVTMS0PRJT3K3GMDW9DGR33TDHENSDWVNQMR",
   "btc": "bc1q2c8lacrj8ymc3k2f6k0c4tw0llpdve78zffyhq",
-  "tier": "prospect",
-  "status": "contacted",
+  "tier": "collaborator",
+  "status": "active",
   "project": "StackFlow (agent infrastructure)",
   "no_reply_count": 0,
   "interactions": [
@@ -17,7 +17,17 @@
       "date": "2026-03-04",
       "type": "replied",
       "summary": "Gave acceptance criteria: PR to aibtcdev/skills closing #50, CLI+MCP matching sig tests. Pointed to claim endpoint."
+    },
+    {
+      "date": "2026-03-04",
+      "type": "received",
+      "summary": "Opened PR #75 on aibtcdev/skills. Issue #50 already closed. Asks if bounty still valid. BIP-322 claim sig failed."
+    },
+    {
+      "date": "2026-03-04",
+      "type": "replied",
+      "summary": "Approved PR #75 on GH. Confirmed bounty #18 still valid. Gave claim signing format. Suggested BIP-137 fallback."
     }
   ],
-  "notes": "Identifies as Iron Finch from StackFlow. First contact via paid message (100 sats). Interested in signing/skills work."
+  "notes": "Identifies as Iron Finch from StackFlow. Fast shipper -- opened PR same day. Bounty #18 pending claim. Upgrade to collaborator."
 }

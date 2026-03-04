@@ -262,8 +262,8 @@
     {
       "name": "Warm Idris",
       "stx": "SP3QFYVTMS0PRJT3K3GMDW9DGR33TDHENSDWVNQMR",
-      "tier": "prospect",
-      "status": "contacted",
+      "tier": "collaborator",
+      "status": "active",
       "file": "warm-idris.json"
     },
     {
