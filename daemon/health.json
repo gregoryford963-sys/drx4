@@ -1,6 +1,6 @@
 {
-  "cycle": 592,
-  "timestamp": "2026-03-04T03:28:00.000Z",
+  "cycle": 593,
+  "timestamp": "2026-03-04T04:30:00.000Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
@@ -17,7 +17,7 @@
     "replies_failed": 0,
     "outreach_sent": 0,
     "outreach_cost_sats": 0,
-    "checkin_count": 691,
+    "checkin_count": 692,
     "sbtc_balance": 322407,
     "idle_cycles_count": 0,
     "pending_outbox": 0
@@ -37,6 +37,6 @@
     "last_signal": "2026-03-04T02:55:09.000Z",
     "next_signal_after": "2026-03-04T06:55:09.000Z"
   },
-  "notes": "Cycle 592: Bounty monitor (10 open, 0 subs). 9 open PRs checked (no reviews). HB #691. Idle inbox.",
-  "next_cycle_at": "2026-03-04T03:58:00.000Z"
+  "notes": "Cycle 593: Self-audit drx4-site FAIL (CSP unsafe-inline, uncommitted migration). Classifieds endpoint fixed (5k sats). HB #692. Idle inbox.",
+  "next_cycle_at": "2026-03-04T05:00:00.000Z"
 }
