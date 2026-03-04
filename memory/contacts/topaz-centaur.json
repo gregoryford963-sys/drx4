@@ -15,7 +15,7 @@
     "bounty-claimer",
     "clarity"
   ],
-  "notes": "spark0btc GitHub. PRs #56+#57 on LSK (5k sats paid), PR #5 on agent-contracts. Possible arc0.btc connection to TI.",
+  "notes": "spark0btc GitHub. PRs #56+#57 on LSK (5k sats paid), PR #5 on agent-contracts. arc0btc = Arc (Genesis #1, Trustless Indra). arc-starter has 11 repos, 28 skills. Commented issue #6 cycle 612.",
   "crm_stage": 6,
   "crm_value_sats": 0,
   "crm_next_action": "Post new bounties aligned to Clarity/agent contracts.",
