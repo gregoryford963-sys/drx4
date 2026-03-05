@@ -3,12 +3,12 @@
   "stx": "SP316ET3Z1JHH3G9KVQ9Q6HSX20FVV7TSD1J0EBWT",
   "btc": "bc1qhudddghz4mx2xserllnwthvkl95huz548cr8uv",
   "github": "HyperZephyr",
-  "status": "discovered",
+  "status": "contacted",
   "tier": "onboarding",
   "collab_score": 4,
   "last_active": "2026-03-01",
-  "onboarding_status": "discovered",
-  "check_after": null,
+  "onboarding_status": "contacted",
+  "check_after": "2026-03-08",
   "tags": [
     "student"
   ],
