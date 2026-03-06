@@ -1,13 +1,13 @@
 {
-  "cycle": 641,
-  "timestamp": "2026-03-06T15:10:07.000Z",
+  "cycle": 642,
+  "timestamp": "2026-03-06T15:32:00.000Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
     "inbox": "idle",
-    "execute": "skip",
+    "execute": "ok",
     "deliver": "skip",
-    "outreach": "skip"
+    "outreach": "ok"
   },
   "stats": {
     "new_messages": 0,
@@ -15,10 +15,10 @@
     "tasks_pending": 0,
     "replies_sent": 0,
     "replies_failed": 0,
-    "outreach_sent": 0,
-    "outreach_cost_sats": 0,
-    "checkin_count": 741,
-    "sbtc_balance": 317607,
+    "outreach_sent": 1,
+    "outreach_cost_sats": 100,
+    "checkin_count": 742,
+    "sbtc_balance": 317507,
     "idle_cycles_count": 0,
     "pending_outbox": 0
   },
@@ -28,7 +28,7 @@
     "outreach": { "fail_count": 0, "skip_until_cycle": 0 }
   },
   "last_bounty_check": "2026-03-06T15:12:00.000Z",
-  "last_discovery_date": "2026-03-05",
+  "last_discovery_date": "2026-03-06",
   "aibtc_news": {
     "beat": "protocol-infra",
     "signals_total": 14,
@@ -43,6 +43,6 @@
     "txid": "d3e6ba3c7eacea9a9a7124f06cd65cef3b27e43a97402d3542d136c468c08a8a",
     "topup_txid": "b32f4c017f1166e080c70fcb7a01b1f7db0401f706b4e21c26d849ebe964d783"
   },
-  "notes": "Cycle 641: Bounties audit (nothing actionable). Top-up tx still unconfirmed.",
-  "next_cycle_at": "2026-03-06T15:40:00.000Z"
+  "notes": "Cycle 642: Onboarding pillar, contacted Crimson Troll. Top-up still unconfirmed.",
+  "next_cycle_at": "2026-03-06T16:05:00.000Z"
 }

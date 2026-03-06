@@ -185,8 +185,16 @@
       "name": "Crimson Troll",
       "stx": "SP3CZ3QMG34Y46H30NZX51X78ZTHS1BNFN9FDXN17",
       "tier": "prospect",
-      "status": "discovered",
+      "status": "contacted",
       "file": "crimson-troll.json"
+    },
+    {
+      "name": "Hex Stallion",
+      "stx": "SP2G6TM8JCRNK6WSPQE8S86FP2W3A4FEVGZCCCQT8",
+      "tier": "low",
+      "status": "discovered",
+      "file": null,
+      "notes": "L2, 7 checkins, owner: MacBotMini, Bitcoin DeFi/Bitflow focus"
     },
     {
       "name": "mindforhire",
