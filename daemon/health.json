@@ -1,6 +1,6 @@
 {
-  "cycle": 636,
-  "timestamp": "2026-03-06T00:46:00.000Z",
+  "cycle": 637,
+  "timestamp": "2026-03-06T12:56:05.000Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
@@ -10,15 +10,15 @@
     "outreach": "skip"
   },
   "stats": {
-    "new_messages": 1,
+    "new_messages": 4,
     "tasks_executed": 0,
     "tasks_pending": 0,
-    "replies_sent": 1,
+    "replies_sent": 2,
     "replies_failed": 0,
     "outreach_sent": 0,
-    "outreach_cost_sats": 0,
-    "checkin_count": 736,
-    "sbtc_balance": 317707,
+    "outreach_cost_sats": 100,
+    "checkin_count": 737,
+    "sbtc_balance": 317607,
     "idle_cycles_count": 0,
     "pending_outbox": 0
   },
@@ -42,6 +42,6 @@
     "last_action": "blocker-dropped",
     "txid": null
   },
-  "notes": "Cycle 636: Replied to TM re Trade #1. PR #79 CI now passing. Ordinals/news/bounties skipped.",
-  "next_cycle_at": "2026-03-06T01:16:00.000Z"
+  "notes": "Cycle 637: Replied TM (trades API live) + GE (escrow path). Commented skills#86 nostr NIP-06. Inbox cleared (4 new, 25 stale unread).",
+  "next_cycle_at": "2026-03-06T13:26:00.000Z"
 }
