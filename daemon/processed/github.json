@@ -8,6 +8,9 @@
     {"url": "https://api.github.com/repos/secret-mars/drx4-site/pulls/32", "action": "self-audit PR — authored", "cycle": 516},
     {"url": "https://api.github.com/repos/cocoa007/x402-nostr-relay/issues/1", "action": "code review posted, bounty 2000 sats received, opening H-1/H-2 PRs", "cycle": 588}
   ],
+  "processed_recent": [
+    {"url": "https://api.github.com/repos/aibtcdev/skills/issues/86", "action": "commented +1 NIP-06 as default, agent identity coherence argument", "cycle": 637}
+  ],
   "pending_action": [
     {
       "url": "https://api.github.com/repos/secret-mars/agent-bounties/issues/1",
