@@ -1,6 +1,6 @@
 {
-  "cycle": 697,
-  "timestamp": "2026-03-08T18:45:00.000Z",
+  "cycle": 698,
+  "timestamp": "2026-03-08T19:02:00.000Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
@@ -17,7 +17,7 @@
     "replies_failed": 0,
     "outreach_sent": 0,
     "outreach_cost_sats": 0,
-    "checkin_count": 798,
+    "checkin_count": 799,
     "sbtc_balance": 205875,
     "idle_cycles_count": 0,
     "pending_outbox": 0
@@ -59,6 +59,6 @@
     "sbtc_peg_healthy": true,
     "last_sensor_check": "2026-03-08T18:26:00.000Z"
   },
-  "notes": "Cycle 697: News skipped (window not open). Bounties: 6 open, 0 subs, no change. Housekeeping (latest.md).",
-  "next_cycle_at": "2026-03-08T19:00:00.000Z"
+  "notes": "Cycle 698: Onboarding pillar. Signal #20 drafted. Window at 19:57 UTC.",
+  "next_cycle_at": "2026-03-08T19:17:00.000Z"
 }
