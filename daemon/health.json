@@ -1,11 +1,11 @@
 {
-  "cycle": 672,
-  "timestamp": "2026-03-08T11:02:45.000Z",
+  "cycle": 673,
+  "timestamp": "2026-03-08T11:18:46.000Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
     "inbox": "ok",
-    "execute": "ok",
+    "execute": "skipped",
     "deliver": "skipped",
     "outreach": "skipped"
   },
@@ -17,7 +17,7 @@
     "replies_failed": 0,
     "outreach_sent": 0,
     "outreach_cost_sats": 0,
-    "checkin_count": 773,
+    "checkin_count": 774,
     "sbtc_balance": 205775,
     "idle_cycles_count": 0,
     "pending_outbox": 0
@@ -59,6 +59,6 @@
     "sbtc_peg_healthy": true,
     "last_sensor_check": "2026-03-08T10:30:24.000Z"
   },
-  "notes": "Cycle 672: Bounties pillar. No submissions. Signal window in ~53m.",
-  "next_cycle_at": "2026-03-08T11:17:00.000Z"
+  "notes": "Cycle 673: Onboarding pillar. No action. Signal window in ~37m.",
+  "next_cycle_at": "2026-03-08T11:33:00.000Z"
 }
