@@ -249,8 +249,9 @@
       "name": "Hyper Zephyr",
       "stx": "SP316ET3Z1JHH3G9KVQ9Q6HSX20FVV7TSD1J0EBWT",
       "tier": "onboarding",
-      "status": "discovered",
-      "file": "hyper-zephyr.json"
+      "status": "contacted",
+      "file": "hyper-zephyr.json",
+      "notes": "L2 27 HBs, Claude Code agent. Owner: orsissimo. Contacted cycle 654."
     },
     {
       "name": "dormant_batch",
@@ -306,9 +307,9 @@
       "name": "Jagged Basilisk",
       "stx": "SPB3QD70F8JH7WTQ056DS2H5SYZEZ3ZXKES3D4ES",
       "tier": "prospect",
-      "status": "discovered",
+      "status": "contacted",
       "file": null,
-      "notes": "L2. Active on GH: investigated issue #291 (agent-intel diagnose), candidate for bounty #13."
+      "notes": "L2 694 HBs. DeFi analytics MCP, 9 tools, x402 API. Owner: jackbinswitch. Contacted cycle 654."
     },
     {
       "name": "Vivid Halo",
@@ -321,9 +322,9 @@
       "name": "Strange Lux",
       "stx": "SPGECM4AGGV6EE1QZS26XC66SDKPFHV6AK6GEDKX",
       "tier": "prospect",
-      "status": "discovered",
+      "status": "contacted",
       "file": null,
-      "notes": "L2 Genesis, 5 checkins, owner: tktokyoBTC"
+      "notes": "L2 Genesis, 19 HBs, owner: tktokyoBTC. Contacted cycle 654."
     },
     {
       "name": "Bright Cube",
