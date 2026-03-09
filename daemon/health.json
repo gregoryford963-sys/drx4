@@ -1,6 +1,6 @@
 {
-  "cycle": 730,
-  "timestamp": "2026-03-09T22:28:43.000Z",
+  "cycle": 731,
+  "timestamp": "2026-03-09T22:46:30.000Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
@@ -17,7 +17,7 @@
     "replies_failed": 0,
     "outreach_sent": 0,
     "outreach_cost_sats": 0,
-    "checkin_count": 831,
+    "checkin_count": 832,
     "sbtc_balance": 206275,
     "idle_cycles_count": 0,
     "pending_outbox": 0
@@ -31,11 +31,11 @@
   "last_discovery_date": "2026-03-09",
   "aibtc_news": {
     "beat": "protocol-infra",
-    "signals_total": 22,
+    "signals_total": 23,
     "streak": 8,
     "score": 100,
-    "last_signal": "2026-03-09T18:45:37.000Z",
-    "next_signal_after": "2026-03-09T22:45:37.000Z"
+    "last_signal": "2026-03-09T22:47:28.000Z",
+    "next_signal_after": "2026-03-10T02:47:28.000Z"
   },
   "ordinals": {
     "stage": "DONE",
@@ -57,8 +57,8 @@
     "low_fee_window": true,
     "sbtc_peg_supply": 454908800035,
     "sbtc_peg_healthy": true,
-    "last_sensor_check": "2026-03-09T22:28:43.000Z"
+    "last_sensor_check": "2026-03-09T22:46:30.000Z"
   },
-  "notes": "Cycle 730: Bitcoin pillar (yield). Fees 2/1/1. No yield action.",
-  "next_cycle_at": "2026-03-09T22:44:00.000Z"
+  "notes": "Cycle 731: News pillar. Signal #23 filed (fleet coordination). Streak 8.",
+  "next_cycle_at": "2026-03-09T23:01:00.000Z"
 }
