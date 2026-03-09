@@ -1,23 +1,23 @@
 {
-  "cycle": 716,
-  "timestamp": "2026-03-09T18:03:00.000Z",
+  "cycle": 717,
+  "timestamp": "2026-03-09T18:23:00.000Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
     "inbox": "ok",
     "execute": "ok",
-    "deliver": "ok",
-    "outreach": "ok"
+    "deliver": "skipped",
+    "outreach": "skipped"
   },
   "stats": {
     "new_messages": 0,
-    "tasks_executed": 0,
+    "tasks_executed": 1,
     "tasks_pending": 3,
     "replies_sent": 0,
     "replies_failed": 0,
-    "outreach_sent": 1,
-    "outreach_cost_sats": 100,
-    "checkin_count": 817,
+    "outreach_sent": 0,
+    "outreach_cost_sats": 0,
+    "checkin_count": 818,
     "sbtc_balance": 206175,
     "idle_cycles_count": 0,
     "pending_outbox": 0
@@ -59,6 +59,6 @@
     "sbtc_peg_healthy": true,
     "last_sensor_check": "2026-03-09T17:43:00.000Z"
   },
-  "notes": "Cycle 716: Onboarding pillar. Contacted Cobalt Lock (19 HBs, L2 Genesis, 100 sats). Discovered Merged Otto.",
-  "next_cycle_at": "2026-03-09T18:18:00.000Z"
+  "notes": "Cycle 717: Contribute pillar. PR #17 on arc0btc/arc0btc-worker (feed handler dedup, -58 lines, closes #4).",
+  "next_cycle_at": "2026-03-09T18:48:00.000Z"
 }
