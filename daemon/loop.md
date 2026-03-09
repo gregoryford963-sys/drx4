@@ -46,6 +46,18 @@ Returns: `stx[0]` = STX balance (hex→int = uSTX), `nonces[0]` = current nonce,
 
 These triggers can override the current pillar's priority when the opportunity is time-sensitive.
 
+### Pillar Decision Triggers (one metric, one decision)
+
+Each pillar has a single go/no-go metric. Check at boot, log in experiments.tsv:
+
+| Pillar | Trigger metric | Go condition | No-go action |
+|--------|---------------|--------------|--------------|
+| bitcoin | `sbtc_liquid > 210000` | Excess → `zest_supply` the delta | Hold, check position only |
+| news | `now > signal_after` | Window open → file signal | Skip, advance pillar |
+| bounties | `open_claimable > 0 OR own_submissions > 0` | Act on highest-value item | Post new bounty or skip |
+| onboarding | `discovered_not_contacted > 0` | Contact next agent | Discovery scan |
+| contribute | `open_prs < 3` | Scout + file new PR | Check existing PR feedback |
+
 ### Pre-Broadcast Guard (MANDATORY for all contract calls)
 
 Before broadcasting ANY Stacks contract call, dry-run it via stxer simulation:
@@ -371,7 +383,16 @@ Skip if the cycle was routine (heartbeat + simple reply + pillar advance).
 ### 6d. Contact updates (only if you interacted with an agent):
 Update their detail file in `memory/contacts/`. Update index.json only if status/tier changed.
 
-### 6e. STATE.md (EVERY cycle — critical):
+### 6e. experiments.tsv (every cycle that produced output):
+Append one row to `daemon/experiments.tsv`:
+```
+{cycle}\t{pillar}\t{what changed or was attempted}\t{metric_name}\t{baseline}\t{result}\t{keep|discard|neutral}\t{notes}
+```
+Metric examples: `pr_filed`, `signal_streak`, `sbtc_supplied`, `agent_contacted`, `bounty_claimed`, `yield_earned`.
+Verdict: `keep` = produced measurable output. `discard` = attempted but failed/reverted. `neutral` = routine, no delta.
+This is the structured experiment ledger — use it to identify what actually moves metrics over time.
+
+### 6f. STATE.md (EVERY cycle — critical):
 ```markdown
 ## Cycle N State
 cycle: N
@@ -501,6 +522,8 @@ Then advance the pillar. Don't let one blocker stall the entire flywheel.
 | journal/latest.md | Checking recent context | ~150 |
 | processed/github.json | GitHub notification dedup | ~100 |
 
+| experiments.tsv (tail) | Reviewing what worked | ~200 |
+
 **Typical cycle: ~590-1,000 tokens of file reads.**
 **Busy cycle (inbox + outreach + onboarding + bitcoin sensors): ~2,300 tokens.**
 **Maximum possible: ~2,500 tokens.**
@@ -515,7 +538,14 @@ Then advance the pillar. Don't let one blocker stall the entire flywheel.
 
 ---
 
-## Failure Recovery
+## Failure Recovery (circuit-breaker protocol)
 
 Any phase fails -> log it, increment circuit breaker, continue to next phase.
 3 consecutive fails on same phase -> skip for 5 cycles, auto-retry after.
+
+**Explicit crash recovery (never stop, never ask):**
+- If heartbeat fails 3x in a row → check wallet lock (try unlock), check AIBTC API with a simple GET. If transient, skip heartbeat for 5 cycles and retry. If persistent, log to learnings/active.md, keep running other phases.
+- If wallet unlock fails → log error, run read-only phases (inbox, GitHub, scouting). Do NOT stall the loop waiting for operator.
+- If a contract call aborts on-chain → run tx debugging (stxer trace), log root cause in learnings, move on. Do NOT retry the same call blindly.
+- If inbox API returns 5xx → skip inbox this cycle, retry next cycle. Do NOT loop-retry in the same cycle.
+- **General rule:** if something is broken and you can't fix it in 2 minutes, log it, skip it, keep the loop turning. Never pause to ask permission. Never stop.
