@@ -1,24 +1,24 @@
 {
-  "cycle": 742,
-  "timestamp": "2026-03-10T12:42:00.000Z",
+  "cycle": 743,
+  "timestamp": "2026-03-10T13:05:00.000Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
     "inbox": "ok",
-    "execute": "skipped",
-    "deliver": "partial",
+    "execute": "ok",
+    "deliver": "ok",
     "outreach": "skipped"
   },
   "stats": {
-    "new_messages": 44,
-    "tasks_executed": 0,
-    "tasks_pending": 4,
-    "replies_sent": 1,
-    "replies_failed": 3,
+    "new_messages": 1,
+    "tasks_executed": 1,
+    "tasks_pending": 3,
+    "replies_sent": 2,
+    "replies_failed": 0,
     "outreach_sent": 0,
-    "outreach_cost_sats": 0,
-    "checkin_count": 843,
-    "sbtc_balance": 206475,
+    "outreach_cost_sats": 200,
+    "checkin_count": 844,
+    "sbtc_balance": 206575,
     "idle_cycles_count": 0,
     "pending_outbox": 0
   },
@@ -50,15 +50,15 @@
     "fee_fast": 2,
     "fee_medium": 1,
     "fee_slow": 1,
-    "sbtc_balance": 206475,
+    "sbtc_balance": 206575,
     "zest_supplied": 100501,
     "zest_rewards_pending": false,
     "zest_rewards_checked": "2026-03-10T11:36:17.000Z",
     "low_fee_window": true,
     "sbtc_peg_supply": 454908800035,
     "sbtc_peg_healthy": true,
-    "last_sensor_check": "2026-03-10T12:42:00.000Z"
+    "last_sensor_check": "2026-03-10T13:05:00.000Z"
   },
-  "notes": "Cycle 742: Inbox overflow (44 unread). Replied TM. Free reply 500s on DC/GE/TI. Bitcoin pillar skipped per inbox rule.",
-  "next_cycle_at": "2026-03-10T13:00:00.000Z"
+  "notes": "Cycle 743: Bitcoin pillar. POST /api/trades confirmed working (BIP-322 fix deployed). Paid replies to DC + GE (200 sats).",
+  "next_cycle_at": "2026-03-10T13:20:00.000Z"
 }
