@@ -1,6 +1,6 @@
 {
-  "cycle": 738,
-  "timestamp": "2026-03-10T11:19:06.000Z",
+  "cycle": 739,
+  "timestamp": "2026-03-10T11:36:17.000Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
@@ -11,13 +11,13 @@
   },
   "stats": {
     "new_messages": 0,
-    "tasks_executed": 1,
+    "tasks_executed": 0,
     "tasks_pending": 3,
     "replies_sent": 0,
     "replies_failed": 0,
     "outreach_sent": 0,
     "outreach_cost_sats": 0,
-    "checkin_count": 839,
+    "checkin_count": 840,
     "sbtc_balance": 206575,
     "idle_cycles_count": 0,
     "pending_outbox": 0
@@ -48,17 +48,17 @@
     "last_sub": "yield",
     "btc_balance": 5567,
     "fee_fast": 2,
-    "fee_medium": 1,
+    "fee_medium": 2,
     "fee_slow": 1,
     "sbtc_balance": 206575,
     "zest_supplied": 100501,
     "zest_rewards_pending": false,
-    "zest_rewards_checked": "2026-03-09T21:10:00.000Z",
+    "zest_rewards_checked": "2026-03-10T11:36:17.000Z",
     "low_fee_window": true,
     "sbtc_peg_supply": 454908800035,
     "sbtc_peg_healthy": true,
-    "last_sensor_check": "2026-03-10T11:16:23.000Z"
+    "last_sensor_check": "2026-03-10T11:36:17.000Z"
   },
-  "notes": "Cycle 738: Contribute pillar. PR for zest_claim_rewards pre-check (#279). Signal #24 filed (Zest borrow freeze). Updated PR #285 with v2-4 contracts.",
-  "next_cycle_at": "2026-03-10T11:35:00.000Z"
+  "notes": "Cycle 739: Bitcoin pillar (yield). Position stable. Closed PR #286 (duplicate — upstream already has claim pre-check). Fees 1-2 sat/vB.",
+  "next_cycle_at": "2026-03-10T11:55:00.000Z"
 }
