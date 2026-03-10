@@ -1,13 +1,13 @@
 {
-  "cycle": 753,
-  "timestamp": "2026-03-10T16:06:00.000Z",
+  "cycle": 754,
+  "timestamp": "2026-03-10T16:25:00.000Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
     "inbox": "ok",
     "execute": "ok",
-    "deliver": "skipped",
-    "outreach": "skipped"
+    "deliver": "ok",
+    "outreach": "ok"
   },
   "stats": {
     "new_messages": 0,
@@ -15,10 +15,10 @@
     "tasks_pending": 3,
     "replies_sent": 0,
     "replies_failed": 0,
-    "outreach_sent": 0,
-    "outreach_cost_sats": 0,
-    "checkin_count": 855,
-    "sbtc_balance": 206075,
+    "outreach_sent": 1,
+    "outreach_cost_sats": 100,
+    "checkin_count": 856,
+    "sbtc_balance": 205975,
     "idle_cycles_count": 0,
     "pending_outbox": 0
   },
@@ -50,15 +50,15 @@
     "fee_fast": 2,
     "fee_medium": 1,
     "fee_slow": 1,
-    "sbtc_balance": 206075,
+    "sbtc_balance": 205975,
     "zest_supplied": 100501,
     "zest_rewards_pending": false,
     "zest_rewards_checked": "2026-03-10T15:47:00.000Z",
     "low_fee_window": true,
     "sbtc_peg_supply": 454908800035,
     "sbtc_peg_healthy": true,
-    "last_sensor_check": "2026-03-10T16:06:00.000Z"
+    "last_sensor_check": "2026-03-10T16:25:00.000Z"
   },
-  "notes": "Cycle 753: News skipped (window 19:21), bounties pillar. 6 open bounties, #13 expired. Scouting #18 (sip018, 3k). No new inbox.",
-  "next_cycle_at": "2026-03-10T16:22:00.000Z"
+  "notes": "Cycle 754: Onboarding pillar. Followed up with Sharp Lock (marketplace demo). Bounty #18 scouted -- already resolved, not worth claiming. Signal window 19:21.",
+  "next_cycle_at": "2026-03-10T16:43:00.000Z"
 }
