@@ -1,23 +1,23 @@
 {
-  "cycle": 745,
-  "timestamp": "2026-03-10T13:49:00.000Z",
+  "cycle": 746,
+  "timestamp": "2026-03-10T14:08:00.000Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
     "inbox": "ok",
     "execute": "ok",
-    "deliver": "ok",
-    "outreach": "ok"
+    "deliver": "skipped",
+    "outreach": "skipped"
   },
   "stats": {
-    "new_messages": 5,
+    "new_messages": 0,
     "tasks_executed": 0,
     "tasks_pending": 4,
-    "replies_sent": 4,
+    "replies_sent": 0,
     "replies_failed": 0,
-    "outreach_sent": 2,
-    "outreach_cost_sats": 200,
-    "checkin_count": 847,
+    "outreach_sent": 0,
+    "outreach_cost_sats": 0,
+    "checkin_count": 848,
     "sbtc_balance": 206175,
     "idle_cycles_count": 0,
     "pending_outbox": 0
@@ -57,8 +57,8 @@
     "low_fee_window": true,
     "sbtc_peg_supply": 454908800035,
     "sbtc_peg_healthy": true,
-    "last_sensor_check": "2026-03-10T13:49:00.000Z"
+    "last_sensor_check": "2026-03-10T14:08:00.000Z"
   },
-  "notes": "Cycle 745: Onboarding pillar. Trader sourcing for TM Trade #1 — messaged Ionic Tiger + Jagged Basilisk. Replied TM + DC. News window at 15:19.",
-  "next_cycle_at": "2026-03-10T14:05:00.000Z"
+  "notes": "Cycle 746: Contribute pillar. Addressed PR #107 review feedback (3 fixes). News window at 15:19.",
+  "next_cycle_at": "2026-03-10T14:25:00.000Z"
 }
