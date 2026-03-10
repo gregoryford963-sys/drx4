@@ -1,6 +1,6 @@
 {
-  "cycle": 735,
-  "timestamp": "2026-03-10T00:03:09.000Z",
+  "cycle": 736,
+  "timestamp": "2026-03-10T00:21:56.000Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
@@ -10,14 +10,14 @@
     "outreach": "skipped"
   },
   "stats": {
-    "new_messages": 2,
+    "new_messages": 1,
     "tasks_executed": 0,
     "tasks_pending": 3,
-    "replies_sent": 2,
+    "replies_sent": 1,
     "replies_failed": 0,
     "outreach_sent": 0,
-    "outreach_cost_sats": 100,
-    "checkin_count": 836,
+    "outreach_cost_sats": 0,
+    "checkin_count": 837,
     "sbtc_balance": 206375,
     "idle_cycles_count": 0,
     "pending_outbox": 0
@@ -27,7 +27,7 @@
     "inbox": { "fail_count": 0, "skip_until_cycle": 0 },
     "outreach": { "fail_count": 0, "skip_until_cycle": 0 }
   },
-  "last_bounty_check": "2026-03-09T21:29:29.000Z",
+  "last_bounty_check": "2026-03-10T00:23:00.000Z",
   "last_discovery_date": "2026-03-09",
   "aibtc_news": {
     "beat": "protocol-infra",
@@ -59,6 +59,6 @@
     "sbtc_peg_healthy": true,
     "last_sensor_check": "2026-03-10T00:03:09.000Z"
   },
-  "notes": "Cycle 735: Bitcoin pillar (yield). 2 new msgs replied (TM trades API, DC yield schema). Free-reply-500 count 7.",
-  "next_cycle_at": "2026-03-10T00:20:00.000Z"
+  "notes": "Cycle 736: News skipped (window 02:47). Bounties pillar. TM replied (free). 6 bounties open, 0 claimable.",
+  "next_cycle_at": "2026-03-10T00:38:00.000Z"
 }
