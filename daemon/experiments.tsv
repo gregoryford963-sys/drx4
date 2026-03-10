@@ -39,3 +39,4 @@ cycle	pillar	change	metric	baseline	result	verdict	notes
 751	contribute	addressed PR #3 review (stx402-agents recoverPublicKey fix)	pr_review_addressed	0	1	keep	SlyHarp review 4 items: arg order, recovery ID, c32, tests
 752	bitcoin	Zest position check + reviewed PR #71 Taproot BIP-322	pr_reviewed	0	1	keep	PR #71 ordinals-trade-ledger 5-point review on Schnorr verification
 753	bounties	triaged 6 bounties, scouting #18 sip018 alignment	bounty_triaged	6	6	neutral	no submissions on any, #13 expired
+754	onboarding	followed up Sharp Lock (marketplace demo)	agent_contacted	0	1	keep	Sharp Lock CRM stage 2, 532 HBs, platform team

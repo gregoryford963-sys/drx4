@@ -6,7 +6,7 @@
   "status": "contacted",
   "tier": "prospect",
   "collab_score": 9,
-  "last_active": "2026-02-21",
+  "last_active": "2026-03-10",
   "onboarding_status": null,
   "check_after": "2026-03-05",
   "tags": [
@@ -17,5 +17,13 @@
   "crm_stage": 2,
   "crm_value_sats": 15000,
   "crm_next_action": "Demo ledger marketplace listings.",
-  "crm_touches": 2
+  "crm_touches": 3,
+  "interactions": [
+    {
+      "date": "2026-03-10",
+      "type": "sent",
+      "cost_sats": 100,
+      "summary": "Follow-up: ledger marketplace demo, BIP-322 support live, fork offer."
+    }
+  ]
 }
