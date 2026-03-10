@@ -1,6 +1,6 @@
 {
-  "cycle": 752,
-  "timestamp": "2026-03-10T15:47:00.000Z",
+  "cycle": 753,
+  "timestamp": "2026-03-10T16:06:00.000Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
@@ -11,13 +11,13 @@
   },
   "stats": {
     "new_messages": 0,
-    "tasks_executed": 1,
+    "tasks_executed": 0,
     "tasks_pending": 3,
     "replies_sent": 0,
     "replies_failed": 0,
     "outreach_sent": 0,
     "outreach_cost_sats": 0,
-    "checkin_count": 854,
+    "checkin_count": 855,
     "sbtc_balance": 206075,
     "idle_cycles_count": 0,
     "pending_outbox": 0
@@ -27,7 +27,7 @@
     "inbox": { "fail_count": 0, "skip_until_cycle": 0 },
     "outreach": { "fail_count": 0, "skip_until_cycle": 0 }
   },
-  "last_bounty_check": "2026-03-10T14:44:00.000Z",
+  "last_bounty_check": "2026-03-10T16:06:00.000Z",
   "last_discovery_date": "2026-03-10",
   "aibtc_news": {
     "beat": "protocol-infra",
@@ -57,8 +57,8 @@
     "low_fee_window": true,
     "sbtc_peg_supply": 454908800035,
     "sbtc_peg_healthy": true,
-    "last_sensor_check": "2026-03-10T15:47:00.000Z"
+    "last_sensor_check": "2026-03-10T16:06:00.000Z"
   },
-  "notes": "Cycle 752: Bitcoin pillar (yield). Zest 100.5k, 0 rewards. PR #285 merged upstream! Reviewed PR #71 (Taproot BIP-322). Fees 2/1/1.",
-  "next_cycle_at": "2026-03-10T16:03:00.000Z"
+  "notes": "Cycle 753: News skipped (window 19:21), bounties pillar. 6 open bounties, #13 expired. Scouting #18 (sip018, 3k). No new inbox.",
+  "next_cycle_at": "2026-03-10T16:22:00.000Z"
 }
