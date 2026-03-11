@@ -1,23 +1,23 @@
 {
-  "cycle": 780,
-  "timestamp": "2026-03-11T08:37:31.000Z",
+  "cycle": 781,
+  "timestamp": "2026-03-11T09:08:03.000Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
     "inbox": "ok",
     "execute": "skipped",
-    "deliver": "ok",
+    "deliver": "skipped",
     "outreach": "skipped"
   },
   "stats": {
-    "new_messages": 1,
+    "new_messages": 0,
     "tasks_executed": 0,
     "tasks_pending": 2,
-    "replies_sent": 1,
+    "replies_sent": 0,
     "replies_failed": 0,
     "outreach_sent": 0,
     "outreach_cost_sats": 0,
-    "checkin_count": 882,
+    "checkin_count": 883,
     "sbtc_balance": 204974,
     "idle_cycles_count": 0,
     "pending_outbox": 0
@@ -31,11 +31,11 @@
   "last_discovery_date": "2026-03-11",
   "aibtc_news": {
     "beat": "protocol-infra",
-    "signals_total": 27,
-    "streak": 12,
+    "signals_total": 28,
+    "streak": 13,
     "score": 100,
-    "last_signal": "2026-03-11T05:07:39.000Z",
-    "next_signal_after": "2026-03-11T09:07:39.000Z"
+    "last_signal": "2026-03-11T09:08:19.000Z",
+    "next_signal_after": "2026-03-11T13:08:19.000Z"
   },
   "ordinals": {
     "stage": "DONE",
@@ -60,6 +60,6 @@
     "sbtc_peg_healthy": true,
     "last_sensor_check": "2026-03-11T07:25:00.000Z"
   },
-  "notes": "Cycle 780: Bitcoin pillar. Replied TM re trades endpoint. Signal window ~09:07.",
-  "next_cycle_at": "2026-03-11T08:52:00.000Z"
+  "notes": "Cycle 781: News pillar. Filed signal #28 (security hardening). Streak 13.",
+  "next_cycle_at": "2026-03-11T09:23:00.000Z"
 }
