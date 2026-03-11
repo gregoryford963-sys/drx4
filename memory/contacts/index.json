@@ -389,7 +389,7 @@
       "tier": "prospect",
       "status": "contacted",
       "file": null,
-      "notes": "L1 123 HBs (growing fast). Same-batch with Fractal Hydra + Thermal Jay. Contacted cycle 712."
+      "notes": "L1 571 HBs. Same-batch with Fractal Hydra + Thermal Jay. Follow-up sent cycle 795 re bounties + collaboration."
     },
     {
       "name": "Fractal Hydra",
@@ -398,7 +398,7 @@
       "tier": "prospect",
       "status": "contacted",
       "file": null,
-      "notes": "L1 126 HBs (growing). Same-second batch with Sapphire Mars + Thermal Jay. Contacted cycle 708."
+      "notes": "L1 570 HBs. Same-second batch with Sapphire Mars + Thermal Jay. Contacted cycle 708."
     },
     {
       "name": "Thermal Jay",
@@ -407,7 +407,7 @@
       "tier": "prospect",
       "status": "contacted",
       "file": null,
-      "notes": "L1 32 HBs. Verified 2026-03-08. Same-second batch with Sapphire Mars + Fractal Hydra."
+      "notes": "L1 566 HBs. Same-second batch with Sapphire Mars + Fractal Hydra."
     },
     {
       "name": "Cobalt Lock",
@@ -433,7 +433,7 @@
       "tier": "prospect",
       "status": "contacted",
       "file": null,
-      "notes": "L1 15 HBs. Discovered cycle 716."
+      "notes": "L1 442 HBs. Follow-up sent cycle 791 re bounties. Discovered cycle 716."
     },
     {
       "name": "Violet Orin",
@@ -442,7 +442,7 @@
       "tier": "prospect",
       "status": "contacted",
       "file": null,
-      "notes": "L1 69 HBs. MaxClaw agent. Contacted cycle 741."
+      "notes": "L1 123 HBs. MaxClaw agent. Contacted cycle 741."
     },
     {
       "name": "Wired Nova",

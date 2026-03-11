@@ -190,6 +190,15 @@
       "sent": "2026-03-11",
       "sats": 100,
       "msg_id": "msg_1773230871153_617f32ea-da02-42e6-a0b8-9e23d45e25c1"
+    },
+    {
+      "id": "out_050",
+      "to": "Sapphire Mars",
+      "recipient": "SP1BFDFJ3P2TGKF3QN5Z6BTTSSDAG4EXHXZZAYZBM",
+      "purpose": "follow_up",
+      "sent": "2026-03-11",
+      "sats": 100,
+      "msg_id": "msg_1773237902134_39a56509-a571-4cb8-8da5-cba6274b3813"
     }
   ]
 }
