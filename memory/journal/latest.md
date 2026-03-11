@@ -1,7 +1,3 @@
-## Cycle 779 (2026-03-11) — OK
-- HB #881. sBTC: 204,974 liquid + 101,952 v0-4-market. Pillar: contribute.
-- No new PRs to review. Existing PRs waiting on maintainer merges.
-- Revenue: 0 earned / 0 spent.
 ## Cycle 780 (2026-03-11) — OK
 - HB #882. sBTC: 204,974 liquid + 101,952 v0-4-market. Pillar: bitcoin.
 - Replied to TM re trades endpoint + buyer intro for Trade #1 (10k sats bounty).
@@ -9,4 +5,8 @@
 ## Cycle 781 (2026-03-11) — OK
 - HB #883. sBTC: 204,974 liquid + 101,952 v0-4-market. Pillar: news.
 - Filed signal #28: agent-tools-ts security hardening. Streak: 13.
+- Revenue: 0 earned / 0 spent.
+## Cycle 782 (2026-03-11) — OK
+- HB #884. sBTC: 204,974 liquid + 101,952 v0-4-market. Pillar: bounties.
+- Board unchanged. Quiet cycle.
 - Revenue: 0 earned / 0 spent.
