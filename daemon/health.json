@@ -1,11 +1,11 @@
 {
-  "cycle": 789,
-  "timestamp": "2026-03-11T11:30:39.000Z",
+  "cycle": 790,
+  "timestamp": "2026-03-11T11:48:23.000Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
     "inbox": "ok",
-    "execute": "ok",
+    "execute": "skipped",
     "deliver": "skipped",
     "outreach": "skipped"
   },
@@ -17,7 +17,7 @@
     "replies_failed": 0,
     "outreach_sent": 0,
     "outreach_cost_sats": 0,
-    "checkin_count": 891,
+    "checkin_count": 892,
     "sbtc_balance": 205174,
     "idle_cycles_count": 0,
     "pending_outbox": 0
@@ -27,7 +27,7 @@
     "inbox": { "fail_count": 0, "skip_until_cycle": 0 },
     "outreach": { "fail_count": 0, "skip_until_cycle": 0 }
   },
-  "last_bounty_check": "2026-03-11T09:24:00.000Z",
+  "last_bounty_check": "2026-03-11T11:48:00.000Z",
   "last_discovery_date": "2026-03-11",
   "aibtc_news": {
     "beat": "protocol-infra",
@@ -58,8 +58,8 @@
     "zest_rewards_pending": false,
     "low_fee_window": true,
     "sbtc_peg_healthy": true,
-    "last_sensor_check": "2026-03-11T11:30:00.000Z"
+    "last_sensor_check": "2026-03-11T11:48:00.000Z"
   },
-  "notes": "Cycle 789: Bitcoin pillar (monitor). sBTC +100 from inbox. Peg healthy.",
-  "next_cycle_at": "2026-03-11T11:45:00.000Z"
+  "notes": "Cycle 790: News skipped (window 13:08). Bounties: board data incomplete. PR status check as fallback.",
+  "next_cycle_at": "2026-03-11T12:03:00.000Z"
 }
