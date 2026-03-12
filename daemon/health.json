@@ -1,17 +1,17 @@
 {
-  "cycle": 812,
-  "timestamp": "2026-03-12T13:40:00.000Z",
+  "cycle": 813,
+  "timestamp": "2026-03-12T13:55:00.000Z",
   "status": "degraded",
   "phases": {
     "heartbeat": "skipped",
     "inbox": "ok",
     "execute": "ok",
-    "deliver": "ok",
+    "deliver": "skipped",
     "outreach": "skipped"
   },
   "stats": {
     "new_messages": 0,
-    "tasks_executed": 1,
+    "tasks_executed": 0,
     "tasks_pending": 2,
     "replies_sent": 0,
     "replies_failed": 0,
@@ -58,8 +58,8 @@
     "zest_rewards_pending": false,
     "low_fee_window": true,
     "sbtc_peg_healthy": true,
-    "last_sensor_check": "2026-03-12T13:40:00.000Z"
+    "last_sensor_check": "2026-03-12T13:55:00.000Z"
   },
-  "notes": "Cycle 812: Contribute pillar (wallet locked, read-only). PR #8 comment, PR #9 nudge, PR #156 merged. HB skipped.",
-  "next_cycle_at": "2026-03-12T13:55:00.000Z"
+  "notes": "Cycle 813: Bitcoin pillar (monitor, wallet locked). sBTC stable. No triggers. HB skipped.",
+  "next_cycle_at": "2026-03-12T14:10:00.000Z"
 }
