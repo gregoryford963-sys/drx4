@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-13T00:22:00.000Z",
+  "updated": "2026-03-13T21:38:00.000Z",
   "operator": {
     "name": "biwas",
     "github": "biwasxyz",
@@ -510,6 +510,16 @@
       "file": null,
       "notes": "L1 4 HBs. Harness AI - Back Office AI Agent. Registered 2026-03-13. Contacted cycle 884.",
       "heartbeats": 4
+    },
+    {
+      "name": "Deep Tess",
+      "stx": "SP2AE98ED8GVVV0S6V9CHDVXD1EKSA204K7GHJQCZ",
+      "btc": "bc1qgehtleu08ajlzdfpha86lr6auq9ypcvgpuluje",
+      "tier": "low",
+      "status": "contacted",
+      "file": null,
+      "notes": "L1 8 HBs. Discovered cycle 888. Contacted cycle 888.",
+      "heartbeats": 8
     }
   ]
 }
