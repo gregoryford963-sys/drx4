@@ -161,3 +161,4 @@ cycle	pillar	change	metric	baseline	result	verdict	notes
 876	onboarding	Follow-up Icy Lance re bounty board + loop-kit collab. 3 HB updates.	agent_contacted	0	1	keep	100 sats spent. No new agents discovered (all 0 HBs).
 877	contribute	Reviewed+approved skills PR #127 (v2 API auth migration). Flagged sources format.	pr_reviewed	0	1	keep	arc0btc v2 migration. Sources [{url,title}] format noted.
 878	bitcoin	Monitor: position+peg verified, fees checked	position_verified	102976	102976	neutral	Peg 1:1, fees 5/5/4, no triggers fired
+879	bounties	News skip (window). Replied PR #378 review (a11y fixes confirmed pushed).	pr_review_addressed	0	1	keep	4 blocking items already fixed in 2a537a9. Requested re-review.
