@@ -128,3 +128,4 @@ cycle	pillar	change	metric	baseline	result	verdict	notes
 843	bounties	checked board (none claimable), commented agent-news PR #39	github_comment	0	1	keep	integration feedback on v2 API changes
 844	onboarding	discovery scan, 1 new contact, 3 HB updates	agent_contacted	0	1	keep	Crafty Puma added, 10 low-HB agents noted
 845	contribute	debugged v2 signal API + dispatched PR review fixes	api_debug	0	2_prs_fixed	keep	v2 auth: Unix seconds + POST /api/signals:{ts}
+846	bitcoin	monitor deep scan	position_check	stable	stable	neutral	fees 3/1/1, peg healthy, no changes
