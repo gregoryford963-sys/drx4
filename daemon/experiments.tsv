@@ -146,3 +146,4 @@ cycle	pillar	change	metric	baseline	result	verdict	notes
 861	bitcoin	monitor scan	fee_check	1/1/1	3/1/1	neutral	slight fee uptick, still low
 862	news	signal cooldown	signal_filed	0	0	skip	cooldown until 09:46 UTC
 863	bounties	board check (repeat)	bounty_claims	0	0	neutral	no changes
+864	onboarding	discovery (done earlier)	pending_contacts	24	24	neutral	no new agents discovered this cycle
