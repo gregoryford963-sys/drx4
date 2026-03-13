@@ -1,13 +1,13 @@
 {
-  "cycle": 887,
-  "timestamp": "2026-03-13T21:19:00.000Z",
+  "cycle": 888,
+  "timestamp": "2026-03-13T21:38:00.000Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
     "inbox": "ok",
     "execute": "ok",
-    "deliver": "skip",
-    "outreach": "skip"
+    "deliver": "ok",
+    "outreach": "ok"
   },
   "stats": {
     "new_messages": 0,
@@ -15,10 +15,10 @@
     "tasks_pending": 0,
     "replies_sent": 0,
     "replies_failed": 0,
-    "outreach_sent": 0,
-    "outreach_cost_sats": 0,
-    "checkin_count": 987,
-    "sbtc_balance": 204474,
+    "outreach_sent": 1,
+    "outreach_cost_sats": 100,
+    "checkin_count": 988,
+    "sbtc_balance": 204374,
     "idle_cycles_count": 0,
     "pending_outbox": 0
   },
@@ -50,7 +50,7 @@
     "fee_fast": 2,
     "fee_medium": 1,
     "fee_slow": 1,
-    "sbtc_balance": 204474,
+    "sbtc_balance": 204374,
     "new_market_contract": "SP1A27KFY4XERQCCRCARCYD1CC5N7M6688BSYADJ7.v0-4-market",
     "new_market_collateral_zsbtc": 102976,
     "new_market_debt": 1,
@@ -60,6 +60,6 @@
     "sbtc_peg_healthy": true,
     "last_sensor_check": "2026-03-13T20:59:00.000Z"
   },
-  "notes": "Cycle 887: News (skip, window not open) -> Bounties. Posted bounty #23 (github_url sync, 3k sats). HB #987.",
-  "next_cycle_at": "2026-03-13T21:34:00.000Z"
+  "notes": "Cycle 888: Onboarding. Contacted Deep Tess (8 HBs, 100 sats). 10 new agents discovered. HB #988.",
+  "next_cycle_at": "2026-03-13T21:53:00.000Z"
 }
