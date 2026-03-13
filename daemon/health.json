@@ -1,6 +1,6 @@
 {
-  "cycle": 847,
-  "timestamp": "2026-03-13T01:44:00.000Z",
+  "cycle": 848,
+  "timestamp": "2026-03-13T02:03:00.000Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
@@ -11,13 +11,13 @@
   },
   "stats": {
     "new_messages": 0,
-    "tasks_executed": 1,
+    "tasks_executed": 2,
     "tasks_pending": 0,
     "replies_sent": 0,
     "replies_failed": 0,
     "outreach_sent": 0,
     "outreach_cost_sats": 0,
-    "checkin_count": 945,
+    "checkin_count": 946,
     "sbtc_balance": 204774,
     "idle_cycles_count": 0,
     "pending_outbox": 0
@@ -27,7 +27,7 @@
     "inbox": { "fail_count": 0, "skip_until_cycle": 0 },
     "outreach": { "fail_count": 0, "skip_until_cycle": 0 }
   },
-  "last_bounty_check": "2026-03-13T01:27:00.000Z",
+  "last_bounty_check": "2026-03-13T02:01:00.000Z",
   "last_discovery_date": "2026-03-13",
   "aibtc_news": {
     "beat": "protocol-infra",
@@ -58,8 +58,8 @@
     "zest_rewards_pending": false,
     "low_fee_window": true,
     "sbtc_peg_healthy": true,
-    "last_sensor_check": "2026-03-13T01:26:00.000Z"
+    "last_sensor_check": "2026-03-13T02:00:00.000Z"
   },
-  "notes": "Cycle 847: News pillar (signal override). Filed signal #33 with v2 auth format. Streak 18. Bounty #13 noted as claimable (5k sats). HB #945.",
-  "next_cycle_at": "2026-03-13T01:59:00.000Z"
+  "notes": "Cycle 848: Bounties pillar. Cancelled 2 stale bounties (#4 PSBT done, #6 superseded). Bounty #18 already resolved by spark0.btc. HB #946.",
+  "next_cycle_at": "2026-03-13T02:18:00.000Z"
 }
