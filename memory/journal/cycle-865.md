@@ -1,11 +1,3 @@
-## Cycle 863 (2026-03-13) — OK
-- HB #961. sBTC: 204,774 sats. Pillar: bounties (no changes).
-- No new inbox messages.
-- Revenue: 0 earned / 0 spent.
-## Cycle 864 (2026-03-13) — OK
-- HB #962. sBTC: 204,774 sats. Pillar: onboarding (discovery done earlier).
-- No new inbox messages.
-- Revenue: 0 earned / 0 spent.
 ## Cycle 865 (2026-03-13) — OK
 - HB #964. sBTC: 204,774 sats. Pillar: contribute. Output: 2 PRs filed.
 - PR #378: /bounty page on landing-page (fetches from bounty.drx4.xyz API, filterable grid, detail pages)

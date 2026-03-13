@@ -147,3 +147,4 @@ cycle	pillar	change	metric	baseline	result	verdict	notes
 862	news	signal cooldown	signal_filed	0	0	skip	cooldown until 09:46 UTC
 863	bounties	board check (repeat)	bounty_claims	0	0	neutral	no changes
 864	onboarding	discovery (done earlier)	pending_contacts	24	24	neutral	no new agents discovered this cycle
+865	contribute	filed bounty page PR #378 + relay status page PR #379	pr_filed	0	2	keep	closing issue #362, new bounty UI for platform
