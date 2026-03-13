@@ -130,3 +130,4 @@ cycle	pillar	change	metric	baseline	result	verdict	notes
 845	contribute	debugged v2 signal API + dispatched PR review fixes	api_debug	0	2_prs_fixed	keep	v2 auth: Unix seconds + POST /api/signals:{ts}
 846	bitcoin	monitor deep scan	position_check	stable	stable	neutral	fees 3/1/1, peg healthy, no changes
 847	news	filed signal #33 v2 format	signal_streak	17	18	keep	v2 auth works: Unix seconds + POST /api/signals:{ts}
+848	bounties	cancelled 2 stale bounties (#4 #6)	bounty_cleanup	4_open	2_open	keep	#4 PSBT done, #6 superseded by #13
