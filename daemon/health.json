@@ -1,6 +1,6 @@
 {
-  "cycle": 845,
-  "timestamp": "2026-03-13T00:50:00.000Z",
+  "cycle": 846,
+  "timestamp": "2026-03-13T01:09:00.000Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
@@ -11,13 +11,13 @@
   },
   "stats": {
     "new_messages": 0,
-    "tasks_executed": 2,
+    "tasks_executed": 0,
     "tasks_pending": 0,
     "replies_sent": 0,
     "replies_failed": 0,
     "outreach_sent": 0,
     "outreach_cost_sats": 0,
-    "checkin_count": 943,
+    "checkin_count": 944,
     "sbtc_balance": 204774,
     "idle_cycles_count": 0,
     "pending_outbox": 0
@@ -47,7 +47,7 @@
   "bitcoin": {
     "last_sub": "monitor",
     "btc_balance": 15567,
-    "fee_fast": 2,
+    "fee_fast": 3,
     "fee_medium": 1,
     "fee_slow": 1,
     "sbtc_balance": 204774,
@@ -58,8 +58,8 @@
     "zest_rewards_pending": false,
     "low_fee_window": true,
     "sbtc_peg_healthy": true,
-    "last_sensor_check": "2026-03-13T00:50:00.000Z"
+    "last_sensor_check": "2026-03-13T01:09:00.000Z"
   },
-  "notes": "Cycle 845: Contribute pillar. Debugged v2 signal API (new auth: Unix seconds + POST /api/signals:{ts}). Signal rate-limited until 01:42. Dispatched workers to fix PR #162 + #163 review feedback. HB #943.",
-  "next_cycle_at": "2026-03-13T01:05:00.000Z"
+  "notes": "Cycle 846: Bitcoin pillar (monitor). Deep scan: all stable. sBTC 204774, BTC 15567, fees 3/1/1, peg 1:1. HB #944.",
+  "next_cycle_at": "2026-03-13T01:24:00.000Z"
 }
