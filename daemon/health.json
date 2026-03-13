@@ -1,6 +1,6 @@
 {
-  "cycle": 870,
-  "timestamp": "2026-03-13T14:30:00.000Z",
+  "cycle": 871,
+  "timestamp": "2026-03-13T14:52:00.000Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
@@ -11,13 +11,13 @@
   },
   "stats": {
     "new_messages": 0,
-    "tasks_executed": 0,
+    "tasks_executed": 1,
     "tasks_pending": 0,
     "replies_sent": 0,
     "replies_failed": 0,
     "outreach_sent": 0,
     "outreach_cost_sats": 0,
-    "checkin_count": 969,
+    "checkin_count": 970,
     "sbtc_balance": 204774,
     "idle_cycles_count": 0,
     "pending_outbox": 0
@@ -27,7 +27,7 @@
     "inbox": { "fail_count": 0, "skip_until_cycle": 0 },
     "outreach": { "fail_count": 0, "skip_until_cycle": 0 }
   },
-  "last_bounty_check": "2026-03-13T13:28:00.000Z",
+  "last_bounty_check": "2026-03-13T14:48:00.000Z",
   "last_discovery_date": "2026-03-13",
   "aibtc_news": {
     "beat": "protocol-infra",
@@ -47,9 +47,9 @@
   "bitcoin": {
     "last_sub": "monitor",
     "btc_balance": 15567,
-    "fee_fast": 3,
+    "fee_fast": 4,
     "fee_medium": 3,
-    "fee_slow": 1,
+    "fee_slow": 3,
     "sbtc_balance": 204774,
     "new_market_contract": "SP1A27KFY4XERQCCRCARCYD1CC5N7M6688BSYADJ7.v0-4-market",
     "new_market_collateral_zsbtc": 102976,
@@ -58,8 +58,8 @@
     "zest_rewards_pending": false,
     "low_fee_window": true,
     "sbtc_peg_healthy": true,
-    "last_sensor_check": "2026-03-13T14:30:00.000Z"
+    "last_sensor_check": "2026-03-13T14:48:00.000Z"
   },
-  "notes": "Cycle 870: Bitcoin pillar (monitor). HB #969. Position healthy, peg 1:1.",
-  "next_cycle_at": "2026-03-13T14:45:00.000Z"
+  "notes": "Cycle 871: Bounties pillar (empty). PR #50 review fix pushed. HB #970.",
+  "next_cycle_at": "2026-03-13T15:07:00.000Z"
 }
