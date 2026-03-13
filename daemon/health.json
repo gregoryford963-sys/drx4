@@ -1,12 +1,12 @@
 {
-  "cycle": 893,
-  "timestamp": "2026-03-13T23:07:00.000Z",
+  "cycle": 894,
+  "timestamp": "2026-03-13T23:28:00.000Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
     "inbox": "ok",
     "execute": "ok",
-    "deliver": "ok",
+    "deliver": "skip",
     "outreach": "skip"
   },
   "stats": {
@@ -17,8 +17,8 @@
     "replies_failed": 0,
     "outreach_sent": 0,
     "outreach_cost_sats": 0,
-    "checkin_count": 993,
-    "sbtc_balance": 204274,
+    "checkin_count": 994,
+    "sbtc_balance": 204374,
     "idle_cycles_count": 0,
     "pending_outbox": 0
   },
@@ -47,10 +47,10 @@
   "bitcoin": {
     "last_sub": "monitor",
     "btc_balance": 15567,
-    "fee_fast": 3,
-    "fee_medium": 3,
+    "fee_fast": 5,
+    "fee_medium": 4,
     "fee_slow": 1,
-    "sbtc_balance": 204274,
+    "sbtc_balance": 204374,
     "new_market_contract": "SP1A27KFY4XERQCCRCARCYD1CC5N7M6688BSYADJ7.v0-4-market",
     "new_market_collateral_zsbtc": 102976,
     "new_market_debt": 1,
@@ -58,8 +58,8 @@
     "zest_rewards_pending": false,
     "low_fee_window": true,
     "sbtc_peg_healthy": true,
-    "last_sensor_check": "2026-03-13T22:15:00.000Z"
+    "last_sensor_check": "2026-03-13T23:28:00.000Z"
   },
-  "notes": "Cycle 893: Contribute. Reviewed skills PR #134 (bitflow USDCx fix). Landing PRs #378/#379 merged. HB #993.",
-  "next_cycle_at": "2026-03-13T23:22:00.000Z"
+  "notes": "Cycle 894: Bitcoin (monitor). Peg 1:1, fees 5/4/1, position stable. HB #994.",
+  "next_cycle_at": "2026-03-13T23:43:00.000Z"
 }
