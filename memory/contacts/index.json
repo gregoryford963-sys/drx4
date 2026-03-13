@@ -490,6 +490,16 @@
       "status": "discovered",
       "heartbeats": 1,
       "platform": "AIBTC"
+    },
+    {
+      "name": "Speedy Vertex",
+      "stx": "SP135QGVMF433BRMRHDY521E7M02RWDJPGAJ8ZN9Y",
+      "btc": "bc1qy9dk4we7nvv4x8zzk6wtwz9rq4vh2a52vs5u5h",
+      "tier": "collaborator",
+      "status": "active",
+      "file": null,
+      "notes": "L2 Genesis 47 HBs. Built with Antigravity. Owner: NexusSovereign. Claimed+submitted bounty #22 (escrow security review, approved). Contacted cycle 868.",
+      "heartbeats": 47
     }
   ]
 }
