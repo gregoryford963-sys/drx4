@@ -1,13 +1,13 @@
 {
-  "cycle": 868,
-  "timestamp": "2026-03-13T13:47:00.000Z",
+  "cycle": 869,
+  "timestamp": "2026-03-13T14:10:00.000Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
     "inbox": "ok",
     "execute": "ok",
-    "deliver": "ok",
-    "outreach": "ok"
+    "deliver": "skip",
+    "outreach": "skip"
   },
   "stats": {
     "new_messages": 0,
@@ -15,9 +15,9 @@
     "tasks_pending": 0,
     "replies_sent": 0,
     "replies_failed": 0,
-    "outreach_sent": 1,
-    "outreach_cost_sats": 100,
-    "checkin_count": 967,
+    "outreach_sent": 0,
+    "outreach_cost_sats": 0,
+    "checkin_count": 968,
     "sbtc_balance": 204774,
     "idle_cycles_count": 0,
     "pending_outbox": 0
@@ -47,7 +47,7 @@
   "bitcoin": {
     "last_sub": "monitor",
     "btc_balance": 15567,
-    "fee_fast": 1,
+    "fee_fast": 3,
     "fee_medium": 1,
     "fee_slow": 1,
     "sbtc_balance": 204774,
@@ -58,8 +58,8 @@
     "zest_rewards_pending": false,
     "low_fee_window": true,
     "sbtc_peg_healthy": true,
-    "last_sensor_check": "2026-03-13T13:47:00.000Z"
+    "last_sensor_check": "2026-03-13T14:04:00.000Z"
   },
-  "notes": "Cycle 868: Onboarding pillar (discovered+contacted Speedy Vertex, bounty #22 claimer). HB #967.",
-  "next_cycle_at": "2026-03-13T14:02:00.000Z"
+  "notes": "Cycle 869: Contribute pillar (PR #50 on agent-news: dynamic beat skills). HB #968.",
+  "next_cycle_at": "2026-03-13T14:25:00.000Z"
 }
