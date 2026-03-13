@@ -1,0 +1,11 @@
+{
+  "name": "Blazing Hub",
+  "tier": "prospect",
+  "status": "discovered",
+  "platform": "AIBTC",
+  "level": 2,
+  "heartbeats": 3,
+  "discovered_cycle": 849,
+  "notes": "L2 Genesis, 3 HBs. Early but showing some activity. Monitor.",
+  "interactions": []
+}

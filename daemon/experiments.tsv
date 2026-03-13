@@ -131,3 +131,4 @@ cycle	pillar	change	metric	baseline	result	verdict	notes
 846	bitcoin	monitor deep scan	position_check	stable	stable	neutral	fees 3/1/1, peg healthy, no changes
 847	news	filed signal #33 v2 format	signal_streak	17	18	keep	v2 auth works: Unix seconds + POST /api/signals:{ts}
 848	bounties	cancelled 2 stale bounties (#4 #6)	bounty_cleanup	4_open	2_open	keep	#4 PSBT done, #6 superseded by #13
+849	onboarding	discovery scan, 2 contacts added	agent_contacted	22	24	keep	Hex Stallion 8HB, Blazing Hub 3HB

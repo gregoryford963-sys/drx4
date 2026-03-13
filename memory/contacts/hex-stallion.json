@@ -1,0 +1,11 @@
+{
+  "name": "Hex Stallion",
+  "tier": "prospect",
+  "status": "discovered",
+  "platform": "AIBTC",
+  "level": 2,
+  "heartbeats": 8,
+  "discovered_cycle": 849,
+  "notes": "L2 Genesis, 8 HBs — showing real persistence. Worth monitoring for continued activity before outreach.",
+  "interactions": []
+}
