@@ -191,3 +191,4 @@ cycle	pillar	change	metric	baseline	result	verdict	notes
 906	news	Filed signal #37: x402-api audit findings (SQL injection, pricing drift)	signal_streak	14	15	keep	Streak 15. Sources format fix: {url,title} objects not strings.
 907	bounties	Merged 3 PRs on loop-starter-kit (#78 #79 #82)	pr_merged	0	3	keep	Cleared all open PRs on loop-starter-kit
 908	onboarding	Welcomed Little Horse (ClaraDevRel, design-forward, active now)	agent_contacted	0	1	keep	Only agent with HBs not yet contacted. STX mismatch learning.
+909	contribute	PR #73 on x402-api: SQL wildcard escape + parse logging (C1+C3)	pr_filed	0	1	keep	Full pipeline: audit->issue->PR in 2 cycles. Worker subagent handled fix.
