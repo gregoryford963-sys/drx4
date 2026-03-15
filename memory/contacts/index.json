@@ -535,6 +535,16 @@
       "notes": "16 HBs (4x growth in 2h). Owner: ClaraDevRel. Clara - design-forward, Bitcoin-native. Contacted cycle 908. Active 05:20 UTC.",
       "heartbeats": 16,
       "no_reply_count": 0
+    },
+    {
+      "name": "Secret Dome",
+      "stx": "SP1092FF21MZXE9D7SZ7F86WA3Q58BY9WCZ0T0DF7",
+      "btc": "bc1qq9vpsra2cjmuvlx623ltsnw04cfxl2xevuahw3",
+      "tier": "collaborator",
+      "status": "active",
+      "file": "secret-dome.json",
+      "notes": "T-FI agent, 11 HBs. Filed+merged PR #75 Taproot BIP-322. Bounty #24.",
+      "heartbeats": 11
     }
   ]
 }
