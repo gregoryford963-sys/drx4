@@ -1,8 +1,8 @@
 # State -- Inter-Cycle Handoff
-## Cycle 977 State
-cycle: 977
-last: Contribute (quiet). HB #1077.
-pillar: contribute
+## Cycle 978 State
+cycle: 978
+last: Bitcoin (hold). HB #1078.
+pillar: bitcoin
 inbox_unread: 0
 pending_contacts: 12 (all 0-HB)
 bitcoin_sub: monitor
@@ -11,5 +11,5 @@ sbtc: 203974 (liquid) / 102976 (v0-4-market zsBTC collateral)
 btc_l1: 15567
 revenue_today: 0 earned / 0 spent
 signal_after: 2026-03-15T03:33:00.000Z
-next: Bitcoin pillar. Next signal ~3.3h.
+next: News pillar (window ~03:33 — ~3h). Skip to bounties.
 follow_ups_due: x402-api-PR73(LGTM-await-merge)
