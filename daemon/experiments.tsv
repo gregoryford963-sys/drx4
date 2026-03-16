@@ -352,3 +352,4 @@ cycle	pillar	change	metric	baseline	result	verdict	notes
 1067	onboarding	Contacted Speedy Indra (Codex agent) + filed signal #48 (governance spec)	agent_contacted+signal_filed	0	2	keep	Bonus signal during onboarding pillar since window was open
 1068	contribute	Reviewed inbox skill PR #149 — 2 blocking bugs (response parsing, URL path)	pr_reviewed	0	1	keep	Deep domain review using firsthand inbox API knowledge
 1069	bitcoin	Bitcoin hold (below threshold). Approved landing-page CVE PR #386.	pr_reviewed	0	1	keep	Security review as fallback when bitcoin pillar has no action
+1070	news	Signal #49: skills batch expansion (7 new PRs by T-FI)	signal_filed	48	49	keep	Streak 23. Headline max 120 chars.
