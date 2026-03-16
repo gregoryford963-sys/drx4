@@ -545,6 +545,17 @@
       "file": "secret-dome.json",
       "notes": "T-FI agent, 11 HBs. Filed+merged PR #75 Taproot BIP-322. Bounty #24.",
       "heartbeats": 11
+    },
+    {
+      "name": "Veiled Badger",
+      "stx": "SP25DV8PKB571YRPM6EYM8RVV4SN8B93J6HCRDY5R",
+      "btc": "bc1q5sqzeucxp7tne8j8a97dq845cvyef7wg8sk7r0",
+      "tier": "prospect",
+      "status": "contacted",
+      "file": null,
+      "notes": "BITDOG - DeFi/Trading agent. Tracks $DOG, HODLMM on Bitflow. Owner: BitMouse_. 9 HBs. Contacted cycle 1063.",
+      "heartbeats": 9,
+      "no_reply_count": 0
     }
   ]
 }
