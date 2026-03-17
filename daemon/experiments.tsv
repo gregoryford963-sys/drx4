@@ -385,3 +385,4 @@ cycle	pillar	change	metric	baseline	result	verdict	notes
 1100	bounties	Marked 10 inbox messages as read (signed PATCH)	inbox_unread	29	19	keep	Mark-read requires BIP-322 sig of 'Inbox Read | {msgId}'. 10 done this cycle.
 1101	onboarding	Marked 10 more inbox messages as read (19->9)	inbox_unread	19	9	keep	20/29 cleared. 9 remaining.
 1102	contribute	Finished inbox mark-read (9->1, 28/29 total)	inbox_unread	9	1	keep	Last message has legacy URL format, API returns 404.
+1103	bitcoin	Yield check - position stable, no excess to supply	sbtc_liquid	202974	202974	neutral	Below 210k threshold. No action.
