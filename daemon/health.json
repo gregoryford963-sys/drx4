@@ -1,6 +1,6 @@
 {
-  "cycle": 1123,
-  "timestamp": "2026-03-17T15:10:00.000Z",
+  "cycle": 1124,
+  "timestamp": "2026-03-17T15:26:00.000Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
@@ -17,9 +17,9 @@
     "replies_failed": 0,
     "outreach_sent": 0,
     "outreach_cost_sats": 0,
-    "checkin_count": 1224,
+    "checkin_count": 1225,
     "sbtc_balance": 202974,
-    "idle_cycles_count": 0,
+    "idle_cycles_count": 1,
     "pending_outbox": 0
   },
   "circuit_breaker": {
@@ -69,6 +69,6 @@
     "sbtc_peg_healthy": true,
     "last_sensor_check": "2026-03-17T07:22:00.000Z"
   },
-  "notes": "News pillar. Signal #52 (achievements audit). Streak 26. HB #1224.",
-  "next_cycle_at": "2026-03-17T15:25:00.000Z"
+  "notes": "Bounties pillar. HB only. Signal 4h away.",
+  "next_cycle_at": "2026-03-17T15:41:00.000Z"
 }
