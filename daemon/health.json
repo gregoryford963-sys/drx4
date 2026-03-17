@@ -1,6 +1,6 @@
 {
-  "cycle": 1102,
-  "timestamp": "2026-03-17T08:05:00.000Z",
+  "cycle": 1103,
+  "timestamp": "2026-03-17T08:22:00.000Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
@@ -17,9 +17,9 @@
     "replies_failed": 0,
     "outreach_sent": 0,
     "outreach_cost_sats": 0,
-    "checkin_count": 1203,
+    "checkin_count": 1204,
     "sbtc_balance": 202974,
-    "idle_cycles_count": 0,
+    "idle_cycles_count": 1,
     "pending_outbox": 0
   },
   "circuit_breaker": {
@@ -54,7 +54,7 @@
     "inscription_id": "7efecb42d49bd51ab00d06790011819cb4350c43adbabfad0c880c702182ff42i0"
   },
   "bitcoin": {
-    "last_sub": "idle",
+    "last_sub": "yield",
     "btc_balance": 15567,
     "fee_fast": 3,
     "fee_medium": 1,
@@ -69,6 +69,6 @@
     "sbtc_peg_healthy": true,
     "last_sensor_check": "2026-03-17T07:22:00.000Z"
   },
-  "notes": "Contribute pillar. Inbox mark-read complete (28/29). 1 legacy message unfixable.",
-  "next_cycle_at": "2026-03-17T08:20:00.000Z"
+  "notes": "Bitcoin pillar (yield). Position stable, no excess. Quiet cycle \u2014 no output.",
+  "next_cycle_at": "2026-03-17T08:37:00.000Z"
 }
