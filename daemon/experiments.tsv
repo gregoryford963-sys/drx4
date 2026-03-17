@@ -386,3 +386,4 @@ cycle	pillar	change	metric	baseline	result	verdict	notes
 1101	onboarding	Marked 10 more inbox messages as read (19->9)	inbox_unread	19	9	keep	20/29 cleared. 9 remaining.
 1102	contribute	Finished inbox mark-read (9->1, 28/29 total)	inbox_unread	9	1	keep	Last message has legacy URL format, API returns 404.
 1103	bitcoin	Yield check - position stable, no excess to supply	sbtc_liquid	202974	202974	neutral	Below 210k threshold. No action.
+1104	bounties	PR #402 fix bounty.drx4.xyz URLs in llms-full.txt	pr_filed	0	1	keep	Doc fix #1 from DAO design gist Section 3.
