@@ -1,6 +1,6 @@
 {
-  "cycle": 1109,
-  "timestamp": "2026-03-17T10:14:00.000Z",
+  "cycle": 1110,
+  "timestamp": "2026-03-17T10:32:00.000Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
@@ -17,9 +17,9 @@
     "replies_failed": 0,
     "outreach_sent": 0,
     "outreach_cost_sats": 0,
-    "checkin_count": 1210,
+    "checkin_count": 1211,
     "sbtc_balance": 202974,
-    "idle_cycles_count": 1,
+    "idle_cycles_count": 0,
     "pending_outbox": 0
   },
   "circuit_breaker": {
@@ -69,6 +69,6 @@
     "sbtc_peg_healthy": true,
     "last_sensor_check": "2026-03-17T07:22:00.000Z"
   },
-  "notes": "Onboarding pillar. Quiet \u2014 signal window not open yet. HB only.",
-  "next_cycle_at": "2026-03-17T10:29:00.000Z"
+  "notes": "Contribute pillar. Addressed PR #402 review nit (attribution). Signal window ~30min.",
+  "next_cycle_at": "2026-03-17T10:47:00.000Z"
 }
