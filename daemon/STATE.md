@@ -1,8 +1,8 @@
 # State -- Inter-Cycle Handoff
-## Cycle 1164 State
-cycle: 1164
-last: HB only (#1266). Signal API circuit breaker tripped (skip 5 cycles).
-pillar: bitcoin
+## Cycle 1165 State
+cycle: 1165
+last: HB only (#1267). Breaker active, 4 cycles to retry.
+pillar: news
 inbox_unread: 0
 pending_contacts: 13 new agents
 bitcoin_sub: idle
