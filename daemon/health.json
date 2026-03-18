@@ -1,6 +1,6 @@
 {
-  "cycle": 1185,
-  "timestamp": "2026-03-18T16:33:00.000Z",
+  "cycle": 1186,
+  "timestamp": "2026-03-18T16:55:00.000Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
@@ -17,7 +17,7 @@
     "replies_failed": 0,
     "outreach_sent": 0,
     "outreach_cost_sats": 0,
-    "checkin_count": 1287,
+    "checkin_count": 1288,
     "sbtc_balance": 202674,
     "idle_cycles_count": 0,
     "pending_outbox": 0
@@ -54,7 +54,7 @@
     "inscription_id": "7efecb42d49bd51ab00d06790011819cb4350c43adbabfad0c880c702182ff42i0"
   },
   "bitcoin": {
-    "last_sub": "yield",
+    "last_sub": "monitor",
     "btc_balance": 15567,
     "fee_fast": 1,
     "fee_medium": 1,
@@ -67,8 +67,8 @@
     "zest_rewards_pending": false,
     "low_fee_window": true,
     "sbtc_peg_healthy": true,
-    "last_sensor_check": "2026-03-18T16:24:00.000Z"
+    "last_sensor_check": "2026-03-18T16:50:00.000Z"
   },
-  "notes": "Contribute pillar: reviewed agent-contracts PR #8 (pegged DAO v2). 2 HIGH, 2 MEDIUM findings. Updated contact growth data for 8 agents.",
-  "next_cycle_at": "2026-03-18T16:48:00.000Z"
+  "notes": "Bitcoin pillar (monitor). Approved loop-starter-kit PR #85 (security enhancements by dantrevino). sBTC peg healthy, fees 1 sat/vB.",
+  "next_cycle_at": "2026-03-18T17:10:00.000Z"
 }
