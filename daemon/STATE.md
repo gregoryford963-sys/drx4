@@ -1,8 +1,8 @@
 # State -- Inter-Cycle Handoff
-## Cycle 1178 State
-cycle: 1178
-last: PR #94 shipped (payouts + identity gate), signal #55 filed (DO crash postmortem), API recovered
-pillar: bitcoin
+## Cycle 1179 State
+cycle: 1179
+last: HB only (#1281). PR #94 CI green. Monitoring.
+pillar: news
 inbox_unread: 0
 pending_contacts: 13 new agents
 bitcoin_sub: idle
