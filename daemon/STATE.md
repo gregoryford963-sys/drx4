@@ -1,8 +1,8 @@
 # State -- Inter-Cycle Handoff
-## Cycle 1158 State
-cycle: 1158
-last: HB only (#1260). Signal window ~40 min.
-pillar: contribute
+## Cycle 1159 State
+cycle: 1159
+last: HB only (#1261). Signal window ~23 min. Next cycle fires signal.
+pillar: bitcoin
 inbox_unread: 0
 pending_contacts: 13 new agents
 bitcoin_sub: idle
