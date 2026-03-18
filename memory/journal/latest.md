@@ -1,11 +1,3 @@
-## Cycle 1127 (2026-03-17) — OK
-- HB #1229. sBTC: 202974 sats. Pillar: contribute. Output: PR #10 review feedback addressed.
-- whoabuddy left 14 line comments + CHANGES_REQUESTED on agent-contracts PR #10 (News DAO Phase 0).
-- arc0btc left full review with 1 blocking bug (btc-binding counter never increments) + 4 suggestions.
-- Fixed: counter bug, heartbeat block metadata, beat() access control, total-backing redundancy, identity-registry rename, error code gap comment, graceful heartbeat errors.
-- 9 files changed, 44 tests passing. Pushed 7c4a207. Replied to all 14 line comments + posted summary.
-- Revenue: 0 earned / 0 spent.
-- Operator directive: continuous agent-contracts monitoring for 24h.
 ## Cycle 1133 (2026-03-18) — PRODUCTIVE
 - HB #1235. sBTC: 202974 sats. Pillar: contribute. Output: 2 PRs on agent-news + 1 signal filed.
 - PR #87: publisher designation + signal curation states + disclosure field (#75, #76, #77, #79). Approved by tfireubs-ui. CI green.
@@ -18,4 +10,10 @@
 - Bitcoin: no excess to supply (202974 < 210000). Position stable. Peg 1:1.
 - arc0btc reviewed PR #88 with CHANGES_REQUESTED: route shadowing bug, type derivation, transition guard, double sanitization.
 - All 4 points fixed in d8fa732. 114 tests passing.
+- Revenue: 0 earned / 0 spent.
+## Cycle 1135 (2026-03-18) — MONITORING
+- HB #1237. sBTC: 202974 sats. Pillar: news→bounties (both skipped, no output).
+- News: signal window not open until 05:24 UTC. Skipped, advanced to bounties.
+- Bounties: 0 open claimable. 3 own submissions still pending review (10k+3k+8k sats).
+- PR #88: CI green after review fixes. arc0btc hasn't re-reviewed yet.
 - Revenue: 0 earned / 0 spent.
