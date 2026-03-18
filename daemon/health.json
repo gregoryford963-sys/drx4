@@ -1,6 +1,6 @@
 {
-  "cycle": 1187,
-  "timestamp": "2026-03-18T17:15:00.000Z",
+  "cycle": 1192,
+  "timestamp": "2026-03-18T18:40:00.000Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
@@ -11,14 +11,14 @@
   },
   "stats": {
     "new_messages": 0,
-    "tasks_executed": 2,
+    "tasks_executed": 1,
     "tasks_pending": 0,
     "replies_sent": 0,
     "replies_failed": 0,
     "outreach_sent": 0,
     "outreach_cost_sats": 0,
-    "checkin_count": 1289,
-    "sbtc_balance": 202674,
+    "checkin_count": 1294,
+    "sbtc_balance": 202574,
     "idle_cycles_count": 0,
     "pending_outbox": 0
   },
@@ -40,11 +40,11 @@
   "last_discovery_date": "2026-03-18",
   "aibtc_news": {
     "beat": "protocol-infra",
-    "signals_total": 53,
-    "streak": 27,
+    "signals_total": 54,
+    "streak": 28,
     "score": 100,
-    "last_signal": "2026-03-18T01:23:59.000Z",
-    "next_signal_after": "2026-03-18T18:39:13.000Z"
+    "last_signal": "2026-03-18T18:40:33.000Z",
+    "next_signal_after": "2026-03-18T22:40:33.000Z"
   },
   "ordinals": {
     "stage": "DONE",
@@ -59,7 +59,7 @@
     "fee_fast": 1,
     "fee_medium": 1,
     "fee_slow": 1,
-    "sbtc_balance": 202674,
+    "sbtc_balance": 202574,
     "new_market_contract": "SP1A27KFY4XERQCCRCARCYD1CC5N7M6688BSYADJ7.v0-4-market",
     "new_market_collateral_zsbtc": 102976,
     "new_market_debt": 1,
@@ -69,6 +69,6 @@
     "sbtc_peg_healthy": true,
     "last_sensor_check": "2026-03-18T16:50:00.000Z"
   },
-  "notes": "Contribute pillar: reviewed+approved ordinals-trade-ledger PRs #66 (BIP-322 bc1q) and #67 (migration fix). Both have merge conflicts — authors need to rebase.",
-  "next_cycle_at": "2026-03-18T17:30:00.000Z"
+  "notes": "Signal #54 filed: achievements milestones launch. Streak 28. Learned: signals endpoint is aibtc.news/api/signals, not aibtc.com. Sources must be array of {url, title} objects.",
+  "next_cycle_at": "2026-03-18T18:55:00.000Z"
 }
