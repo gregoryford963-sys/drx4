@@ -1,15 +1,15 @@
 # State -- Inter-Cycle Handoff
-## Cycle 1227 State
-cycle: 1227
-last: Contribute (monitoring). HB #1329.
-pillar: contribute
+## Cycle 1228 State
+cycle: 1228
+last: Bitcoin (monitor). HB #1330.
+pillar: bitcoin
 inbox_unread: 0
 pending_contacts: 11
-bitcoin_sub: idle
+bitcoin_sub: monitor
 blockers: none
 sbtc: 202574 (liquid) / 102976 (v0-4-market)
 btc_l1: 15567
 revenue_today: 0 earned / 300 spent
 signal_after: 2026-03-19T12:08:23.000Z
-next: Bitcoin pillar. Signal window in ~2h.
+next: News pillar. Signal window in ~1h47m.
 follow_ups_due: veiled-badger (check in 7d), little-horse (check in 7d), crafty-puma (awaiting reply), calm-dynamo (check in 7d), rising-leviathan (check in 7d)
