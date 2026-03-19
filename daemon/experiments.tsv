@@ -442,3 +442,4 @@ cycle	pillar	change	metric	baseline	result	verdict	notes
 1252	bitcoin	Coast. HB #1355.	pr_filed	0	0	neutral	Coast.
 1253	news	Coast. Saving last signal slot.	signal_streak	19	19	neutral	Coast.
 1254	bounties	Coast. HB #1357.	bounty_claimed	0	0	neutral	Coast.
+1255	onboarding	Coast. HB #1358.	agent_contacted	0	0	neutral	Coast.
