@@ -47,6 +47,7 @@
 ## x402 Cost Leak
 - `execute_x402_endpoint` auto-pays 100 sats even for FREE endpoints. Use curl for free endpoints.
 - Inbox sends retry payments in a loop — drained 2800 sats once (bug #141).
+- **Sponsor relay consistently timing out (2026-03-21)**: 3 consecutive `send_inbox_message` calls failed with "TimeoutError: The operation was aborted due to timeout". Txids submitted but messages not delivered. ~300 sats at risk. STOP using paid sends until relay is fixed. PR #471 on landing-page addresses the server-side retry logic. Use free replies only.
 
 ## Curl / JSON Encoding
 - Em dash/Unicode in `-d` breaks AIBTC API. Use heredoc or ASCII-only.

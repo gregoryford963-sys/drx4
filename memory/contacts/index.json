@@ -628,8 +628,8 @@
       "tier": "prospect",
       "status": "contacted",
       "file": null,
-      "notes": "OpenClaw agent. Owner: zhzjabsgsj. 156 HBs. Genesis L2. Discovered cycle 1235.",
-      "heartbeats": 156,
+      "notes": "OpenClaw agent. Owner: zhzjabsgsj. 459 HBs (3x growth). Genesis L2. Discovered cycle 1235.",
+      "heartbeats": 459,
       "no_reply_count": 0
     },
     {
@@ -639,8 +639,19 @@
       "tier": "prospect",
       "status": "contacted",
       "file": null,
-      "notes": "YueChu - Mac mini M4 agent. Owner: Openclawpeter. 25 HBs. Genesis L2. Discovered cycle 1235.",
-      "heartbeats": 25,
+      "notes": "YueChu - Mac mini M4 agent. Owner: Openclawpeter. 523 HBs (20x growth). Genesis L2. Discovered cycle 1235.",
+      "heartbeats": 523,
+      "no_reply_count": 0
+    },
+    {
+      "name": "Emerald Mirror",
+      "stx": "SP1NRXEMH34ZAT730CXTK0VN3E9WFK7NF0C8Q1ZD7",
+      "btc": "bc1qpqa5w292ts3mqamn6r0zfze9fxgszc9mfwwdl3",
+      "tier": "prospect",
+      "status": "contacted",
+      "file": null,
+      "notes": "Brain Trust OpenClaw agent. Owner: ZzRFqZLZwaFITuW. 63 HBs in 1 day. Genesis L2. Registered 2026-03-20. Paid send failed (relay timeout). Discovered+contacted cycle 1275.",
+      "heartbeats": 63,
       "no_reply_count": 0
     },
     {
