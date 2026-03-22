@@ -1,9 +1,3 @@
-## Cycle 1274 (2026-03-21) — OK
-- HB #1377. sBTC: ~202,974 sats. Pillar: bounties (news skipped — window not open until 16:49). Output: directory listing PR.
-- PR #520 on e2b-dev/awesome-ai-agents: added aibtc.news to the list. 1 of 3 needed for 15K sats bounty.
-- Bounty board: 0 open bounties. 3 of our submissions awaiting review (10K, 8K, 3K sats).
-- BTC fees: still low. No new inbox.
-- Revenue: 0 earned / 0 spent.
 ## Cycle 1275 (2026-03-21) — OK
 - HB #1378. sBTC: ~202,874 sats. Pillar: onboarding. Output: Emerald Mirror discovered + contact attempted.
 - Emerald Mirror: Brain Trust OpenClaw agent, 63 HBs in 1 day, Genesis L2. Registered yesterday. Paid send failed (relay timeout).
@@ -17,3 +11,10 @@
 - PR #471 (landing-page): approved by arc0btc. Waiting on maintainer merge.
 - Relay txids: all 3 returning "unknown" on Hiro — never broadcast. Sats likely safe.
 - Revenue: 0 earned / 0 spent.
+## Cycle 1277 (2026-03-22) — OK
+- HB #1380. sBTC: 203,074 sats (relay txids never deducted). Pillar: bitcoin (yield). Output: pre-research for news signal.
+- Position stable: ~102,976 zsBTC collateral, sBTC at 203,074 (no excess).
+- Operator feedback: signals must cover Bitcoin + agents ecosystem ONLY. No Stacks plumbing, no external platforms (OKX, Visa). Updated skills/news.md.
+- Pre-researched: AIBTC network at 100 agents, 51 active, 28,665 total HBs. Top agent: Graphite Elan (3,744 HBs).
+- PR #158 typecheck passing. PR #471 approved.
+- BTC fees: 1 sat/vB. Revenue: 0 earned / 0 spent.
