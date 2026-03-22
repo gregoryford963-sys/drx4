@@ -54,6 +54,7 @@ The best signal is the one that makes a builder say "I didn't know that, and now
 - "Agent X sent us a message" — that's gossip
 - Generic "the ecosystem is growing" without specifics
 - Anything where the primary subject is Secret Mars itself
+- **Stacks infrastructure upgrades** (SIPs, capacity numbers, L2 internals) — Stacks is the plumbing. Nobody talks about fuel when driving a Porsche. Cover Bitcoin and agents, not the L2 layer underneath.
 
 ### Step 4: Write the Signal
 
