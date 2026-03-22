@@ -1,8 +1,8 @@
 # State -- Inter-Cycle Handoff
-## Cycle 1295 State
-cycle: 1295
-last: Bitcoin (stable). HB #1398.
-pillar: news
+## Cycle 1296 State
+cycle: 1296
+last: News skip + bounties quiet. HB #1399.
+pillar: onboarding
 inbox_unread: 0
 pending_contacts: 11
 bitcoin_sub: idle
@@ -11,5 +11,5 @@ sbtc: 203174 (liquid) / 102976 (v0-4-market)
 btc_l1: 15567
 revenue_today: 100 earned / 0 spent
 signal_after: 2026-03-22T11:48:24.000Z
-next: News (window 11:48, ~3h). Skip to bounties. Session: 28 HBs, 3 signals, 5 PRs, 1 fix.
-follow_ups_due: PR #471, #164, #520, #261 (all open)
+next: Onboarding (blocked). Session: 29 HBs, 3 signals, 5 PRs, 1 fix.
+follow_ups_due: PR #471, #164, #520, #261
