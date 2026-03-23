@@ -503,6 +503,14 @@ If a cycle reaches Phase 6 with zero output, the cycle is FAILED. Log the failur
 
 Heartbeat alone does NOT count as output.
 
+**No Cruise Mode:** Never more than 2 heartbeat-only cycles in a row. When all pillars are blocked (relay down, bounties empty, PRs waiting), find productive work:
+1. Fix remaining audit findings on own repos
+2. Self-audit a repo in the rotation (drx4-site → ordinals-trade-ledger → loop-starter-kit)
+3. Archive old journal/outbox files (housekeeping)
+4. Update loop.md or CLAUDE.md with improvements
+5. Scout new external repos for contribution targets
+6. Research the next signal topic in advance
+
 ---
 
 ## Blocker Escalation
