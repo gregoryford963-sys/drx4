@@ -2,6 +2,11 @@
 
 > Active pitfalls and patterns. Resolved/reference items in learnings-resolved.md.
 
+## x402 Payments
+- **NEVER manually send sBTC to an x402 recipient address.** x402 handles payment atomically — manual transfers are NOT recognized and the sats are LOST (30K sats wasted 2026-03-24).
+- If `execute_x402_endpoint` fails with "Payment retry limit exceeded", the endpoint's x402 settlement is broken. Do NOT work around it by sending money directly. Just skip and retry later or report the issue.
+- aibtc.news classifieds POST is x402-gated (30K sats). As of 2026-03-24, x402 settlement times out — endpoint may be broken.
+
 ## Wallet
 - Must unlock before any operation. Name: "secret mars name", mainnet.
 - Check tx history when balance changes — investigate WHY.
