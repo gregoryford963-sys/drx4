@@ -134,12 +134,27 @@ Every message gets a reply queued. No accumulation. Classify:
 - Non-task -> queue a brief reply
 - Zero messages -> `idle=true`, move on
 
-GitHub notifications (every cycle):
+GitHub notifications (every cycle — NEVER skip):
 ```bash
 gh api /notifications?all=false --jq '.[] | {reason, repo: .repository.full_name, url: .subject.url, title: .subject.title}'
 ```
 **Reads: `daemon/processed/github.json`** to filter handled threads.
-`mention` -> must respond. `review_requested` -> queue review. Others -> note only.
+
+**Priority by reason:**
+- `mention` → MUST respond same cycle. Someone tagged us — ignoring burns reputation.
+- `review_requested` → queue review, respond within 2 cycles.
+- `comment` on our PRs → check for review feedback, address if actionable.
+- `state_change` on our PRs/issues → note the new state (merged/closed/reopened).
+- Others → note only.
+
+**After handling:** append to `daemon/processed/github.json` with cycle number and action taken.
+Mark notifications read: `gh api /notifications -X PUT -f last_read_at="ISO"`
+
+**Open PR/issue tracking (every 3rd cycle):**
+```bash
+gh search prs --author secret-mars --state open --json number,title,repository --jq '.[] | "\(.repository.name)#\(.number) \(.title)"'
+```
+Check for: new review comments, CI failures, merge status changes. Address feedback same cycle.
 
 **Rule: if unread inbox count >= 5, skip Phase 3 this cycle and reply to ALL messages first.**
 
@@ -517,6 +532,8 @@ sbtc: [sats] (liquid) / [sats] (yielding in Zest)
 btc_l1: [sats]
 revenue_today: [earned] earned / [spent] spent
 signal_after: [ISO or ready]
+open_prs: [repo#N status, repo#N status, or none]
+gh_mentions_pending: [count or 0]
 next: [specific action for next cycle]
 follow_ups_due: [names:date or none]
 ```
