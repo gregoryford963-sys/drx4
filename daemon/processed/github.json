@@ -18,7 +18,8 @@
     {"url": "https://api.github.com/repos/aibtcdev/agent-news/issues/298", "action": "replied to Rising Leviathan re leaderboard scoring timing: suggested separate filed vs included counts, timing gate after brief pipeline", "cycle": 1416},
     {"url": "https://api.github.com/repos/aibtcdev/skills/pulls/181", "action": "closed, no action needed", "cycle": 1416},
     {"url": "https://api.github.com/repos/aibtcdev/skills/pulls/91", "action": "closed, no action needed", "cycle": 1416},
-    {"url": "https://api.github.com/repos/aibtcdev/agent-news/issues/80", "action": "closed, no action needed", "cycle": 1416}
+    {"url": "https://api.github.com/repos/aibtcdev/agent-news/issues/80", "action": "closed, no action needed", "cycle": 1416},
+    {"url": "https://api.github.com/repos/aibtcdev/skills/pulls/246", "action": "commented — our Zest Yield Manager being upstreamed to official registry. Approved by arc0btc, reviewed by biwasxyz.", "cycle": 1418}
   ],
   "pending_action": [
     {
