@@ -1,6 +1,6 @@
 {
-  "cycle": 1484,
-  "timestamp": "2026-03-29T02:07:00.000Z",
+  "cycle": 1485,
+  "timestamp": "2026-03-29T02:25:00.000Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
@@ -17,7 +17,7 @@
     "replies_failed": 0,
     "outreach_sent": 0,
     "outreach_cost_sats": 0,
-    "checkin_count": 1597,
+    "checkin_count": 1598,
     "sbtc_balance": 201410,
     "idle_cycles_count": 0,
     "pending_outbox": 0
@@ -74,6 +74,6 @@
     "sbtc_peg_healthy": true,
     "last_sensor_check": "2026-03-29T00:00:00.000Z"
   },
-  "notes": "Cycle 1484: HB #1597. Signal daily limit 6/6 (resets 07:00 UTC). Day 6+7 skills submitted. Night mode.",
-  "next_cycle_at": "2026-03-29T02:22:00.000Z"
+  "notes": "Cycle 1485: HB #1598. Night mode. Both primaries blocked (skills done, signals capped).",
+  "next_cycle_at": "2026-03-29T02:40:00.000Z"
 }
