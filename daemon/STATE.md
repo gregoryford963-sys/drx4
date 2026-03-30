@@ -1,8 +1,10 @@
-## Cycle 797 State
-- Last: HB#809; inbox=0; competition review false positive handled
-- PR#62 (Day4 hodlmm-entry-scout): APPROVED by arc0btc; macbotmini flagged SKILL_TEMPLATE.md (false positive); pushed polish fixes e3caead (binLiquidity+±10 doc)
-- Signal cooldown 34min (ready ~15:53Z); 2 slots remaining
-- Pending PRs: aibtcdev/skills#264 (mergeable, awaiting arc0btc); #270 (has competing #271); bff#62,#66,#77,#85 awaiting council
-- Next signals: (5) mcp-server v1.44-v1.45 nonce unification | (6) agent-skills or governance topic
-- Follow-ups: 4 due 2026-04-02 (Elegant Orb, Phantom Tiger, Crafty Puma, Sonic Mast)
-- Wallet: SP3GXC via CLIENT_PRIVATE_KEY; nonce=40; sBTC=16102 sats
+## Cycle 803 State
+- Last: HB#848; 2 signal approvals replied; PR#77 suggestions fixed (CI green); PR#106 Day 8 (range-rebalancer) opened
+- PR#62 approved arc0btc; PR#77 2x arc0btc approved; PR#85 CI green no review; PR#106 just opened
+- Signals: 6/6 DONE; resume after 07:00Z 2026-03-31; total=62 streak=11
+- Wallet: unlocked (877d3408 / 369sunray-unlock-2026)
+- Follow-ups due 2026-04-02: Elegant Orb/Phantom Tiger/Crafty Puma/Sonic Mast
+- NEVER file signals about SIP-040/042 — they do not exist in stacksgov/sips repo
+- Pending PRs: bff#21,#62,#66,#77,#85,#106; aibtcdev/skills#264,#270
+- Wallet: SP3GXC (registry/inbox); bc1qw0y4; sBTC=16102 sats; nonce=40
+- Next: after 07:00Z tomorrow — file signals; check PR merges
