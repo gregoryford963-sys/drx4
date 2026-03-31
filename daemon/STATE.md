@@ -1,11 +1,12 @@
-## Cycle 824 State
-- Last: HB#869; signal#6 filed (stacks-signer 3.4.0.0.0.0 upgrade); 6/6 daily DONE
-- Signals today: infra (Stacks 3.4 deadline), security (at-block migration), infra (PoX 132 floor), security (18h countdown), security (signer upgrade)
+## Cycle 824 State (updated)
+- Last: HB#869; 6/6 signals done; bounties #27 and #31 claimed (both 10K sats each)
+- BOUNTIES CLAIMED:
+  - #27 (claim_id=23): Stake-Your-Sats Signal Wagering — Clarity escrow + Pyth oracle + leaderboard
+  - #31 (claim_id=24): Prompt-to-DAO — ERC-8004 + Clarity treasury/voting/membership + sBTC
+  - bounty API: use BIP-137 signing, NO stx_address field (causes 401), btc_address only
 - Signals: 6/6 DONE; resume after 07:00Z 2026-04-01; total=64 streak=12
 - BTC block ~943,092 of 943,333 (~241 blocks to Epoch 3.4 activation)
 - PR#77: 3x arc0btc confirmed + merge ping sent; PR#270 re-review requested
-- PR#62 1x approved; PR#85/#106 no reviews; PR#264 1x approved; aibtcdev/skills#264,#270 open
 - Wallet: MCP unlocked (877d3408); operational SP3GXC via bun scripts; sBTC=16102 sats; nonce=40
 - Follow-ups due 2026-04-02: Elegant Orb/Phantom Tiger/Crafty Puma/Sonic Mast
-- NEVER file signals about SIP-040/042; agent-skills beat NOT owned — use security/infrastructure
-- Next: maintenance mode until 07:00Z 2026-04-01; Stacks 3.4 activates ~April 2
+- Next: maintenance until 07:00Z 2026-04-01; start building bounty #27 or #31 when operator confirms
