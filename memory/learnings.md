@@ -274,3 +274,10 @@
 - No PR yet for issue #254 — contribution opportunity
 - When CI shows manifest freshness failure, run `bun run scripts/generate-manifest.ts` and commit skills.json. Always check if manifest failure is pre-existing vs caused by our PR before debugging our own changes.
 - Worktree push must target 'fork' remote, not 'origin'. The 'origin' remote points to aibtcdev/skills (no write access); 'fork' points to gregoryford963-sys/skills. Always use: git push fork <branch>
+
+## aibtc.news Signal Quality
+- Source must be a direct link to the primary source (GitHub release, SIP doc, etc.) — NOT "https://aibtc.com"
+- Rejection reason: "Source is too vague" when source URL is just aibtc.com
+- file-signal.ts now accepts sourceUrl and sourceTitle as 5th and 6th args
+- For GitHub releases: use https://github.com/owner/repo/releases/tag/vX.Y.Z
+- For SIPs: use https://github.com/stacksgov/sips/blob/main/sips/sip-XXX/
