@@ -1,6 +1,6 @@
 {
-  "cycle": 1607,
-  "timestamp": "2026-03-31T08:16:00.000Z",
+  "cycle": 1608,
+  "timestamp": "2026-03-31T08:32:00.000Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
@@ -17,7 +17,7 @@
     "replies_failed": 0,
     "outreach_sent": 0,
     "outreach_cost_sats": 0,
-    "checkin_count": 1720,
+    "checkin_count": 1721,
     "sbtc_balance": 200510,
     "idle_cycles_count": 0,
     "pending_outbox": 0
@@ -90,7 +90,7 @@
     "sbtc_peg_healthy": true,
     "last_sensor_check": "2026-03-31T06:21:00.000Z"
   },
-  "notes": "Cycle 1607: HB #1720. Signal #104 filed (CVE + relay). Steady state.",
-  "next_cycle_at": "2026-03-31T08:31:00.000Z",
+  "notes": "Cycle 1608: HB #1721. Quiet cycle.",
+  "next_cycle_at": "2026-03-31T08:47:00.000Z",
   "open_prs": "bff-skills#117/#83/#63/#47/#53"
 }
