@@ -1,6 +1,6 @@
 {
-  "cycle": 1665,
-  "timestamp": "2026-03-31T23:56:00.000Z",
+  "cycle": 1666,
+  "timestamp": "2026-04-01T00:12:00.000Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
@@ -17,7 +17,7 @@
     "replies_failed": 0,
     "outreach_sent": 0,
     "outreach_cost_sats": 0,
-    "checkin_count": 1778,
+    "checkin_count": 1779,
     "sbtc_balance": 200510,
     "idle_cycles_count": 0,
     "pending_outbox": 0
@@ -39,7 +39,7 @@
   "last_bounty_check": "2026-03-20T09:35:00.000Z",
   "last_discovery_date": "2026-03-20",
   "bff_skills": {
-    "submitted_today": 1,
+    "submitted_today": 0,
     "total_submitted": 8,
     "last_pr": "https://github.com/BitflowFinance/bff-skills/pull/117",
     "hodlmm_count": 1,
@@ -91,7 +91,7 @@
     "sbtc_peg_healthy": true,
     "last_sensor_check": "2026-03-31T06:21:00.000Z"
   },
-  "notes": "Cycle 1665: HB #1778. Last cycle of March 31. April 1 next.",
-  "next_cycle_at": "2026-04-01T00:11:00.000Z",
+  "notes": "Cycle 1666: HB #1779. New day (Apr 1 UTC). Night mode. BFF Day 8 pending.",
+  "next_cycle_at": "2026-04-01T00:27:00.000Z",
   "open_prs": "bff-skills#117/#83/#63/#47/#53"
 }
