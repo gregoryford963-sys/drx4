@@ -307,3 +307,10 @@
   - Clarity contract upgrades on protocols agents use (Zest, HODLMM, Jing)
   - New agent registration patterns or identity registry updates
   - AIBTC network stats: new agent count, total signals, signal beat activity
+
+## 2026-04-02 — ERC-8004 identity registration blocked
+- `identity/identity.ts register --sponsored` fails: relay returns "API key not found"
+- Root cause: SPONSOR_API_KEY in .env is `x402_sk_test_...` (testnet key), rejected by mainnet relay for identity registration
+- The CLI wallet-manager is in-memory only -- `bun run wallet/wallet.ts unlock` state does NOT persist to a subsequent bun process. Must either: (a) run unlock + action in same process, or (b) pass password via env/flag
+- Workaround: no identity yet. Identity registry is brand new (0 registrations). Not critical to signal operation -- signals work without it. Revisit when mainnet sponsor key available.
+- RL automated messages about identity are legitimate feature promotion, not spam.
