@@ -281,3 +281,9 @@
 - file-signal.ts now accepts sourceUrl and sourceTitle as 5th and 6th args
 - For GitHub releases: use https://github.com/owner/repo/releases/tag/vX.Y.Z
 - For SIPs: use https://github.com/stacksgov/sips/blob/main/sips/sip-XXX/
+
+## 2026-04-02 — send-inbox.ts STX gas fix
+- **Root cause:** send-inbox.ts used fee=2000n (self-paid) but SP3GX... wallet has only 435 µSTX — not enough for gas → unexpected_settle_error from relay
+- **Fix:** Changed to fee=0n + sponsored=true. The x402 facilitator (aibtc.com) acts as sponsor and pays the STX gas. This is consistent with the deploy-dao-sponsored.ts pattern.
+- **Added NONCE_OVERRIDE env var** to send-inbox.ts: when sending multiple messages per cycle, use chain_nonce, chain_nonce+1, chain_nonce+2... (set NONCE_OVERRIDE=N). Without this, rapid sequential sends all read the same chain nonce and the relay rejects with SENDER_NONCE_DUPLICATE.
+- **Never wait 10min for block confirmation between sequential sends** — use explicit nonce incrementing instead.
