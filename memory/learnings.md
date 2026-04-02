@@ -294,3 +294,16 @@
 - **NOT accepted:** General DeFi hacks on Solana/Ethereum/other chains with no AIBTC angle (Drift, Resolv, IoTeX, Matcha, Truebit, Step Finance all fall in this category).
 - **What works:** nonce-gap (relay), dao-deploy, certik-malicious-skills (agent ecosystem), evm-drain (if Stacks-connected), babylon-stacking (Stacks PoX). Any security event that a Stacks/AIBTC agent would directly care about.
 - **Fix for tomorrow:** Research Stacks/sBTC/relay/clarity security events. Check for Stacks contract exploits, sBTC peg issues, relay vulnerabilities, or agent ecosystem threats.
+
+## 2026-04-02 — Approved signal template: PoX/Stacks-native with agent impact
+- **Approved:** "PoX Cycle 132 Stacking Floor Jumps 7.1% to 150,000 STX — Agents Using Dynamic Thresholds Must Update" (a48f07b7)
+- **Pattern:** Stacks network event (PoX floor change) + direct agent operational impact (threshold updates needed) = approved
+- **Formula for tomorrow:** [AIBTC/Stacks event] + [what agents must do/watch] = quality signal
+- **More examples of approved signal types:**
+  - PoX cycle floor/threshold changes
+  - Stacks block time / epoch changes affecting agent timing
+  - sBTC peg ratio or deposit window changes
+  - x402 relay version updates with breaking changes
+  - Clarity contract upgrades on protocols agents use (Zest, HODLMM, Jing)
+  - New agent registration patterns or identity registry updates
+  - AIBTC network stats: new agent count, total signals, signal beat activity
