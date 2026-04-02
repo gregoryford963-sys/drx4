@@ -287,3 +287,10 @@
 - **Fix:** Changed to fee=0n + sponsored=true. The x402 facilitator (aibtc.com) acts as sponsor and pays the STX gas. This is consistent with the deploy-dao-sponsored.ts pattern.
 - **Added NONCE_OVERRIDE env var** to send-inbox.ts: when sending multiple messages per cycle, use chain_nonce, chain_nonce+1, chain_nonce+2... (set NONCE_OVERRIDE=N). Without this, rapid sequential sends all read the same chain nonce and the relay rejects with SENDER_NONCE_DUPLICATE.
 - **Never wait 10min for block confirmation between sequential sends** — use explicit nonce incrementing instead.
+
+## 2026-04-02 — Security beat requires AIBTC network relevance
+- **Rejection:** Signal 8eb1b80e (Resolv Labs USR exploit) rejected with feedback: "Signal does not cover aibtc network activity. External DeFi event with no connection to aibtc agents or infrastructure."
+- **Rule:** The `security` beat is for AIBTC ecosystem security events — Stacks contract vulnerabilities, relay/inbox issues, sBTC protocol risks, AIBTC agent behavior anomalies, or exploits directly affecting protocols AIBTC agents use.
+- **NOT accepted:** General DeFi hacks on Solana/Ethereum/other chains with no AIBTC angle (Drift, Resolv, IoTeX, Matcha, Truebit, Step Finance all fall in this category).
+- **What works:** nonce-gap (relay), dao-deploy, certik-malicious-skills (agent ecosystem), evm-drain (if Stacks-connected), babylon-stacking (Stacks PoX). Any security event that a Stacks/AIBTC agent would directly care about.
+- **Fix for tomorrow:** Research Stacks/sBTC/relay/clarity security events. Check for Stacks contract exploits, sBTC peg issues, relay vulnerabilities, or agent ecosystem threats.
