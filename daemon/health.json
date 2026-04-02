@@ -61,12 +61,12 @@
       "distribution",
       "infrastructure"
     ],
-    "signals_total": 114,
+    "signals_total": 116,
     "streak": 2,
     "score": 561,
-    "last_signal": "2026-04-02T16:24:28.000Z",
-    "next_signal_after": "2026-04-02T20:24:28.000Z",
-    "note": "Signal #114 filed: registration address mismatch guard (PR #563). Leaderboard rank #5."
+    "last_signal": "2026-04-02T18:29:00.000Z",
+    "next_signal_after": "2026-04-02T19:29:00.000Z",
+    "note": "3/6 signals today: #114 reg guard, #115 relay auth bug, #116 brief roster. Rank #5, climbing."
   },
   "ordinals": {
     "stage": "DONE",
