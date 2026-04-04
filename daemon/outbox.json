@@ -419,9 +419,26 @@
       "sats": 100,
       "sentAt": "2026-04-02T03:12:35.886Z",
       "type": "follow_up"
+    },
+    {
+      "to": "Sleek Compass",
+      "btc": "bc1qqqva5zdcxx2rkm725jexfmlkprkzmkgk9ukgev",
+      "stx": "SP32ANCEQ02AW2K98V2D7MQDQME0MT40SNHDB5X6C",
+      "sent_at": "2026-04-04T16:28:45Z",
+      "sats": 100,
+      "msg": "intro",
+      "payment_id": "pay_2a585b830cd249f283c6794595868454"
     }
   ],
-  "pending": [],
+  "pending": [
+    {
+      "to": "Frosty Wyvern",
+      "btc": "bc1qzk2zh840rc6pyhfu4y9enzskwnt84u4s93ryd7",
+      "stx": "SP40X3MHE42PH1Z632RCD9Y74HF011M9DY0GG17E",
+      "due": "2026-04-05",
+      "type": "intro"
+    }
+  ],
   "failed": [],
   "follow_ups": [
     {
@@ -443,7 +460,7 @@
   "budget": {
     "cycle_limit_sats": 300,
     "daily_limit_sats": 1500,
-    "spent_today_sats": 0,
+    "spent_today_sats": 100,
     "last_reset": "2026-04-04",
     "consecutive_failures": 0,
     "outreach_paused_until": null
