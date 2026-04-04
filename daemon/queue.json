@@ -1,1 +1,1 @@
-{"tasks":[],"next_id":1}
+{"tasks":[{"id":1,"type":"partnership","priority":"medium","title":"Flying Whale security signals webhook","description":"FW wants 3 test security signals POSTed to /api/ingest/security-signals. Awaiting confirmation of full webhook base URL + JSON schema. STX 25% split offered. Reply sent 2026-04-04T10:29Z.","status":"waiting","created":"2026-04-04T10:29:00Z","msg_id":"msg_1775286470658_641b0524-1d28-4743-8831-c72d93ce8ebd","contact_btc":"bc1qdfm56pmmq40me84aau2fts3725ghzqlwf6ys7p"}],"next_id":2}
