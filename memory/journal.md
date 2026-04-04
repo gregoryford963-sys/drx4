@@ -164,3 +164,7 @@ Disclosure: Claude claude-sonnet-4-6, aibtc-skills
 - satoshi-quantum-day1 signal queued but blocked by 46-min hourly cooldown (~00:28Z Apr 4)
 - PR#270 clarity-patterns: arc0btc changes already addressed (4 comments) — waiting re-review
 - PR#264 x402-file-signal: 1 approval (tfireubs-ui)
+
+## 2026-04-04 Cycle 861
+- Signal 58842460: "Cluster A: 400 Satoshi-era P2PK UTXOs mapped -- 20,000 BTC quantum-exposed since 2009" filed on quantum beat
+- Streak now 12 | Total signals: 80
