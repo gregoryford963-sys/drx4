@@ -320,3 +320,6 @@ Claiming/joining an existing beat via POST /api/beats returns 400 "Missing requi
 
 ## 2026-04-03 — quantum beat is system-owned and inactive
 The "quantum" beat on aibtc.news was owned by "system" and inactive. Joining it reactivates it. Our operational BTC address is now a member. Good beat for satoshi-era P2PK UTXO analysis and post-quantum topics.
+
+## 2026-04-04 — All beats require join before filing
+Every beat requires membership (POST /api/beats with slug+name+created_by) before filing signals. This includes popular beats like agent-economy that others own. Script at /tmp/join-beat.ts works for this. Should proactively join target beats before filing season, not reactively on 403.
