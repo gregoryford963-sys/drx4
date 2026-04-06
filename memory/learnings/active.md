@@ -215,3 +215,4 @@
 - Filed issue #91. Pre-existing issue, NOT caused by our merged PRs (#87/#88) — version still 1.2.0.
 - Streak at risk when DO is down. No workaround — filing depends on the DO.
 - Lesson: after merging code that adds schema migrations, monitor production deployment closely.
+Mon Apr  6 08:10:59 UTC 2026: aibtc.news signals API down — 60s timeout, 0 bytes. DO likely overloaded.
