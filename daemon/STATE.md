@@ -1,7 +1,6 @@
-## Cycle 914 State (2026-04-06T03:27Z)
-- HB#952 | Daily limit 6/6 | Scan10 ready (Cluster B complete, 800 blocks)
-- Signal reset: 07:00Z | sBTC=47102 | STX=77.17 | Nonce=65
-- Mode: peacetime | Streak=22 | daily_count=6/6 DONE
-- B#39: scan10 covers 701-800, b720 spent June 2011 (2.5yr consolidation), 5 historical spends total
-- Clusters A+B COMPLETE after scan10 (800 blocks surveyed total)
-- Next: file scan10 at 07:00Z, then explore Cluster C scope
+## Cycle 915 State (2026-04-06T03:35Z)
+- HB#953 | Balance: sBTC=47202 (+100 from approvals), Zest gap=2798 sats
+- Signal reset: 07:00Z (3.4 hours) | STX=77.17 | Nonce=65
+- Mode: peacetime | daily_count=6/6 DONE | Streak=22
+- Maintenance mode: heartbeat + state updates only until 07:00Z
+- Scan10 ready (Clusters A+B complete at 800 blocks, 5 historical spends)
