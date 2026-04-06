@@ -1,6 +1,4 @@
-## Cycle 903 State (2026-04-06T01:36Z)
-- HB#942 | Scan8 template ready (blocks 501-600, b501 spent Jan 16 2009)
-- Signal cooldown: 02:26Z | sBTC=47102 | STX=77.17 | Nonce=65
-- Mode: peacetime | Streak=22 | daily_count=4/6
-- B#39: 4 historical spends found so far (b9,b320,b360,b501), 600 blocks ready
-- Next: file scan8 when cooldown clears (02:26Z)
+## Cycle 904 State (2026-04-06T01:45Z)
+- HB#943 | Maintenance | Scan8 ready | cooldown 02:26Z
+- sBTC=47102 | STX=77.17 | Nonce=65 | Streak=22 | daily_count=4/6
+- Next: file scan8 (blocks 501-600, b501 spent Jan 2009) at 02:26Z
