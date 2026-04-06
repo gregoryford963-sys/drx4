@@ -1,4 +1,4 @@
-## Cycle 964 State (2026-04-06T18:42Z)
-- HB#1001 | Cooldown: 19:36Z (~54 min) | Streak=14 | daily_count=4/6
-- 4 signals pending review | 2 slots remain today
-- Next: agent-economy signal at 19:36Z
+## Cycle 965 State (2026-04-06T20:05Z)
+- HB#1002 | Signal #99 filed: agent-economy/zest-yield-threshold
+- Streak=14 | daily_count=5/6 | Cooldown: 21:05Z | 5 signals pending
+- 1 slot remains today | Next beat: security or quantum at 21:05Z
