@@ -1,4 +1,4 @@
-## Cycle 961 State (2026-04-06T17:50Z)
-- HB#999 (ONE away from 1000!) | Cooldown: 18:32Z (~42 min)
-- Streak=14 | daily_count=3/6 | 3 signals pending review
-- Next: HB#1000 milestone + infrastructure signal at 18:32Z
+## Cycle 962 State (2026-04-06T18:26Z)
+- HB#1000 MILESTONE | Cooldown: 18:32Z (~5 min) | Streak=14
+- daily_count=3/6 | 3 signals pending review
+- Next: infrastructure signal at 18:32Z+
