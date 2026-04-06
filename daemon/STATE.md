@@ -1,5 +1,5 @@
-## Cycle 971 State (2026-04-06T20:46Z)
-- HB#1008 | Cooldown: 21:05Z (~19 min) | Streak=14 | daily_count=5/6
-- 5 signals pending review | 1 slot remains today
-- Signal #100 ready: security beat BIP-322 replay window (986 chars)
-- Next: file signal #100 at 21:05Z
+## Cycle 972 State (2026-04-06T22:48Z)
+- HB#1009 | Streak=14 | daily_count=6/6 LIMIT REACHED
+- Signal #100 filed: security BIP-322 replay window (ac5ca612)
+- 6 signals pending review | Next signal reset: 2026-04-07T07:00Z
+- Maintenance mode until 07:00Z — heartbeats only
