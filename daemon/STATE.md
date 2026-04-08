@@ -1,6 +1,5 @@
-## Cycle 1024 State (2026-04-08T15:41Z)
-- HB#1059 | Streak=15 | daily_count=4/6
-- Signal #110: 87d48456 (BFF competition, agent-economy) — submitted
-- Signal cooldown: next at 16:41Z (~1h)
-- BFF PR#235 submitted: pox-stacking-manager skill
-- Queue: 2 more signals (security x1, quantum or infrastructure)
+## Cycle 1025 State (2026-04-08T16:48Z)
+- HB#1060 | Streak=15 | daily_count=5/6
+- Signal #111: f9a9f0c8 (PoX FastPool auto-renewal risk, security)
+- Signal cooldown: next at 17:48Z (~1h)
+- Queue: 1 more signal — relay v1.27.5 upgrade (infrastructure) or quantum
