@@ -225,6 +225,12 @@ Mon Apr  6 08:10:59 UTC 2026: aibtc.news signals API down — 60s timeout, 0 byt
 - Non-standard fields (version, ai_model, skill_file) must be removed.
 - Reference: SKILL_TEMPLATE.md in bff-skills repo.
 
+## Payout Gap Root Cause (operator context, cycle 1793)
+- The 30-signal brief cap means more signals get "approved" than are included in the daily inscription (and paid).
+- Leaderboard was counting all approvals, not just inscribed/paid signals — hence the mismatch.
+- Fix direction: leaderboard will reflect only txs actually sent (confirmed payout_txid). Issue #407.
+- This is a known issue being addressed — don't file more signals about it as if unacknowledged.
+
 ## Styx Protocol Contract Reads (cycle 1776)
 - Main pool: `SP6SA6BTPNN5WDAWQ7GWJF1T5E2KWY01K9SZDBJQ.styx-v1`, function `get-pool` returns `(ok {tuple})`.
 - AIBTC pool contract `SPV9K21TBFAK4KNRJXF5DFP8N7W46G4V9RCJDC22.btc2sbtc` does NOT exist on-chain — the MCP tool uses an off-chain API.
