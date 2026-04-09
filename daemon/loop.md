@@ -74,6 +74,7 @@ curl -s -X POST "https://api.stxer.xyz/sidecar/v2/batch" \
   -d '{"stx":["SP3GXCKM4AB5EB1KJ8V5QSTR1XMTW3R142VQS2NVW"],"nonces":["SP3GXCKM4AB5EB1KJ8V5QSTR1XMTW3R142VQS2NVW"],"ft_balance":[["SM3VDXK3WZZSA84XXFKAFAF15NNZX32CTSG82JFQ4.sbtc-token::sbtc-token","SP3GXCKM4AB5EB1KJ8V5QSTR1XMTW3R142VQS2NVW"]]}'
 ```
 **Note:** ft_balance format is `["contract::token-name", "owner-address"]` (2 params). The old 3-param format `["contract","token","address"]` errors: "bad request: got 3 parameters". Verified at cycle 300.
+**Stxer response format:** The batch response uses arrays, NOT dicts. Parse as: `stx[0]` = `{"Ok":"<ustx>"}`, `nonces[0]` = `{"Ok":"<nonce>"}`, `ft_balance[0]` = `{"Ok":"<sats>"}`. Do NOT use `.get("SP3...")` on the top-level — it's a list.
 **Compute runway:** `sBTC balance / avg daily spend`. Update CEO status (peacetime/wartime).
 Skip auto-bridge until sBTC is funded (currently 0).
 
@@ -94,7 +95,7 @@ Skip auto-bridge until sBTC is funded (currently 0).
 
 If queue is empty AND no new messages, pick ONE action by cycle number:
 
-**Maintenance mode shortcut:** If signals are blocked (daily_count == 6) AND inbox was empty AND no follow-ups are due today → skip all of Phase 3. Go straight to Phase 7 (Write). This saves context on pure maintenance cycles.
+**Maintenance mode shortcut:** If inbox was empty AND no follow-ups are due AND (daily_count == 6 OR current_time < signal_cooldown_clears) → skip Phase 3 entirely. Go straight to Phase 7 (Write). This saves context on pure maintenance cycles — applies whether the block is hourly cooldown OR the daily limit.
 
 **First: check signal cooldown.** Read `health.json` field `signal_cooldown_clears`. If current time > cooldown AND `daemon/STATE.md` pipeline is not empty AND `aibtc_news.daily_count < 6` → file the next signal immediately (skip modulo action). This prevents idle cycles when a signal is ready to fire.
 - **Daily limit:** 6 signals/day max. When `daily_count == 6`, set `signal_cooldown_clears` to `firstSignalTimestamp + 24h` (rolling 24h window — NOT UTC midnight). Keep retrying every cycle once past that threshold; the API will return 400 until the window truly clears. Reset `daily_count` to 0 once a signal succeeds after the block.
