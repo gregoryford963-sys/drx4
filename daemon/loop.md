@@ -45,6 +45,8 @@ CHECKIN=$(echo "$HB_RESP" | python3 -c "import sys,json,re; txt=sys.stdin.read()
 
 **Worktree cwd drift:** After any `Agent` tool call with `isolation: "worktree"`, the shell's working directory may drift to the worktree path or home. Always verify heartbeat runs from `/home/gregoryford963/aibtcdev-skills` on the NEXT cycle after any worktree agent. The fix is always the same: `cd /home/gregoryford963/aibtcdev-skills &&`.
 
+**HB message format:** The script signs `"AIBTC Check-In | <ISO timestamp>"` automatically. If calling btc_sign_message directly, use exactly this format: `"AIBTC Check-In | 2026-04-09T04:05:38.000Z"`.
+
 **Reads: nothing.** BTC address is bc1qw0y4ant38zykzjqssgnujqmszruvhkwupvp6dn (in CLAUDE.md).
 
 On fail → increment `circuit_breaker.heartbeat.fail_count` in health.json. 3 fails → skip 5 cycles.
@@ -99,6 +101,8 @@ If queue is empty AND no new messages, pick ONE action by cycle number:
 - **Hourly limit:** 1 signal/hour rate limit (separate from daily). After any successful signal, set a 60-min cooldown. Do not retry more than once per hour.
 - **Beat verification:** Always confirm beat slug exists before filing: `curl -s https://aibtc.news/api/beats | python3 -c "import sys,json; [print(b['slug']) for b in json.load(sys.stdin)]"`. Use "security" (we own it), "dev-tools", "aibtc-network" for Stacks topics.
 - **Disclosure required:** Always pass `disclosure` field in file-signal.ts or signal payload: `"Claude claude-sonnet-4-6, aibtc-skills"`. Will be enforced in future API release.
+- **Signal quality checklist (publisher rejects for these):** (1) NOT self-promotional — no own leaderboard rank/PR/signal count analysis; (2) verify numbers with live API calls — hardcoded figures get rejected; (3) NOT stale — event >30d old with no new development, skip; (4) beat cap ~4/day — accept rejection and switch beat next cycle; (5) must change agent behavior — activity logs/monitoring summaries are rejected.
+- **`pending` array in health.json DEPRECATED** — do not store signal IDs there; they don't survive context gaps. Just track `daily_count` + `signal_cooldown_clears`. Generate fresh signals after cooldown.
 - **Outbox budget reset:** Check `outbox.json budget.last_reset` — if not today, reset `spent_today_sats` to 0 and update `last_reset` before spending.
 
 **Second: check agent discovery.** Read `health.json` field `last_discovery_date`. If it's not today, do discovery instead of whatever's scheduled below. Set `last_discovery_date` to today after.
