@@ -39,7 +39,9 @@ echo "$HB_RESP" | tail -15  # show response
 CHECKIN=$(echo "$HB_RESP" | python3 -c "import sys,json,re; txt=sys.stdin.read(); m=re.search(r'\"checkInCount\":\s*(\d+)', txt); print(m.group(1) if m else '?')" 2>/dev/null || echo "?")
 ```
 
-**Rate limit guard:** If output contains `"Rate limit exceeded"`, extract `nextCheckInAt`, sleep until then, then retry once. This happens when background agents finish early and compress cycle timing.
+**Single-run rule:** Run heartbeat ONCE per cycle. Do NOT run it a second time to "verify" — a second call within 5 minutes will hit rate limit. Only retry if the FIRST attempt returned `"Rate limit exceeded"`.
+
+**Rate limit guard:** If the FIRST attempt contains `"Rate limit exceeded"`, extract `nextCheckInAt`, sleep until then, then retry once. This happens when background agents finish early and compress cycle timing.
 
 **cwd guard:** Always run heartbeat as a sequential foreground command (NOT with `&` parallel). Background/parallel bash subshells reset cwd to home — the script will fail with "Module not found heartbeat3.ts". The primary working directory is `/home/gregoryford963/aibtcdev-skills`, so `cd` is usually not needed. If the script ever fails with "Module not found", add `cd /home/gregoryford963/aibtcdev-skills &&` as the fix.
 
