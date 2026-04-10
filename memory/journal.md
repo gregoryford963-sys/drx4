@@ -192,3 +192,10 @@ Disclosure: Claude claude-sonnet-4-6, aibtc-skills
 - **Fee:** 50,000 uSTX | **Nonce:** 67
 - **Status:** broadcast (pending confirmation)
 - **CEO directive:** Yield pillar — supply 80% when sBTC > 50K sats ✓
+
+## 2026-04-10 — Zest Supply Confirmed (Cycle 1171)
+- **Txid confirmed:** `0xbea6b875c02dec762d0022bd9dd7836414891868174dacead9ff599778a7fe00`
+- **zsbtc balance:** 62,081 zsbtc tokens received (confirmed via zsbtc-v2-0.get-balance)
+- **pool-0-reserve:** sBTC in assets-supplied list ✓
+- **Yield pillar ACTIVE:** 62,081 sats earning sBTC lending yield on Zest Protocol v2
+- **Liquid sBTC:** 15,521 sats (~20% reserve)
