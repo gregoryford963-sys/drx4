@@ -17,7 +17,9 @@ Your addresses (STX, BTC, Taproot) are in conversation context from CLAUDE.md (r
 
 Unlock wallet if STATE.md says locked.
 
-**MCP tools:** Available via ToolSearch in this environment. However, the MCP wallet (`SP1C7XGRFPDHRSZECMGDEYJ7TWHFFQ03JMKE3NHCR`) is DIFFERENT from the operational sBTC wallet (`SP3GXCKM4AB5EB1KJ8V5QSTR1XMTW3R142VQS2NVW` via `CLIENT_PRIVATE_KEY` in `.env`). MCP wallet has 0 sBTC — it cannot send inbox messages. Use bun `send-inbox.ts` for all sBTC sends. MCP tools are useful for: `wallet_status` (operator monitoring), `get_wallet_info`. Avoid using them for transactions.
+**MCP tools:** Available via ToolSearch in this environment. However, the MCP wallet (`SP1C7XGRFPDHRSZECMGDEYJ7TWHFFQ03JMKE3NHCR`) is DIFFERENT from the operational sBTC wallet (`SP3GXCKM4AB5EB1KJ8V5QSTR1XMTW3R142VQS2NVW` via `CLIENT_PRIVATE_KEY` in `.env`). MCP wallet has 0 sBTC — it cannot send inbox messages or execute Zest/DeFi operations. Use bun scripts for all sBTC operations. MCP tools are useful for: `wallet_status` (monitoring), `call_read_only_function` (reading on-chain state), `zest_get_position` (may show null due to indexer lag — verify via `zsbtc-v2-0.get-balance` read-only call).
+
+**Zest yield position (active since 2026-04-10):** 62,081 zsbtc tokens at `SP3GX...`. Liquid sBTC: 15,521 sats. To supply/withdraw, use `aibtcdev-skills/zest-supply.ts` (bun script that signs from CLIENT_PRIVATE_KEY). Dry-run: `bun run zest-supply.ts --amount N`. Confirm: `--confirm`. Verify position: `call_read_only_function` on `SP2VCQJGH7PHP2DJK7Z0V48AGBHQAW3R3ZW1QF4N.zsbtc-v2-0` function `get-balance`.
 
 **Operator `mcp-server status` requests:** Call `mcp__aibtc__wallet_status` and report wallet lock state, address, and network. Note that MCP wallet ≠ operational wallet.
 
@@ -77,8 +79,7 @@ curl -s -X POST "https://api.stxer.xyz/sidecar/v2/batch" \
 ```
 **Note:** ft_balance format is `["contract::token-name", "owner-address"]` (2 params). The old 3-param format `["contract","token","address"]` errors: "bad request: got 3 parameters". Verified at cycle 300.
 **Stxer response format:** The batch response uses arrays, NOT dicts. Parse as: `stx[0]` = `{"Ok":"<ustx>"}`, `nonces[0]` = `{"Ok":"<nonce>"}`, `ft_balance[0]` = `{"Ok":"<sats>"}`. Do NOT use `.get("SP3...")` on the top-level — it's a list.
-**Compute runway:** `sBTC balance / avg daily spend`. Update CEO status (peacetime/wartime).
-Skip auto-bridge until sBTC is funded (currently 0).
+**Compute runway:** `liquid sBTC / avg daily spend`. Note: 62,081 sats are in Zest Protocol (earning yield, not spendable without withdraw). Liquid sBTC for ops: ~15,521 sats. Update CEO status (peacetime/wartime) based on liquid balance only. Zest position check: `call_read_only_function` on `zsbtc-v2-0.get-balance` every 50th cycle to track accrued yield.
 
 **Referral attribution (Bitcoin-native):**
 - If we onboard/fund a new agent, record the BTC funding txid in `memory/contacts.md`.
