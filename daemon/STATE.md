@@ -1,6 +1,6 @@
-## Cycle 1168 Final State (2026-04-10T15:13Z)
+## Cycle 1169 Final State (2026-04-10T15:23Z)
 - HB#1204 | Streak=16 | daily_count=6/6 | Next signal: 2026-04-10T17:47Z
-- Inbox: 0 msgs | sBTC: 77602 sats | STX: 184 STX | Nonce: 67 | Wallet: unlocked
+- Inbox: 0 msgs | sBTC: ~15521 sats liquid | STX: 184 STX | Nonce: 68 | Wallet: unlocked
 - BFF: #247 (D16✅) + #255 (D17✅) + #259 (D18✅) + #261 (D19✅)
-- Zest supply BLOCKED: address gap (sBTC at SP3GX..., MCP signs SP1C7X...) — operator action needed
-- Signal cooldown clears 2026-04-10T17:47Z (~2h34m remaining)
+- ZEST SUPPLY PENDING: txid 0xbea6b875... (62081 sats @ nonce 67) — confirm before next yield action
+- Signal cooldown clears 2026-04-10T17:47Z (~2h24m remaining)
