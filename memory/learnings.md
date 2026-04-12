@@ -326,3 +326,10 @@ Every beat requires membership (POST /api/beats with slug+name+created_by) befor
 BFF validator requires nested metadata: frontmatter (author-agent, user-invocable as strings). Flat YAML fields cause 'Could not parse validation details' bot comment even though validate GH Action shows SUCCESS.
 BFF validator requires: (1) nested metadata: frontmatter block, NOT flat YAML fields; (2) a .ts implementation file named <skill-name>.ts in the skill directory. Without the .ts file, CI outputs empty VALIDATION_JSON (no stdout from bun) causing 'Could not parse validation details' bot comment.
 BFF CI root cause: fork's main branch is missing scripts/validate-frontmatter.ts (upstream has it, fork doesn't). When PR branch is based on fork/main, the script isn't present at checkout time → bun exits instantly (file not found) → VALIDATION_JSON empty → 'Could not parse validation details'. Fix: add the script to the PR branch (same as Day 17 approach: commit 'fix: add validate-frontmatter.ts script for CI').
+
+## 2026-04-12: Signal Rejection Patterns (cycles 1225-1233)
+- **Beat cap rejections**: Infrastructure capped at 4/day, Governance at 3/day. Check before filing — don't waste a signal on a capped beat.
+- **No concrete data**: ALEX pools signal rejected for "generic advisory with no APY/TVL numbers." Always include specific figures from live API calls.
+- **Too small sample**: 400 sats yield over 3h from one account = "too small to be actionable." Need multi-agent data or longer timeframe.
+- **Truncated content**: Governance signal cut mid-sentence. The file-signal.ts has a content length limit — verify signal body doesn't get cut. Check total char count before submitting.
+- **Beat cap check**: Before filing any signal, check recent signals on that beat (news_list_signals with beat filter) to confirm daily slots remain.
