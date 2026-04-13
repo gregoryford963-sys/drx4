@@ -39,12 +39,12 @@
   "last_bounty_check": "2026-03-20T09:35:00.000Z",
   "last_discovery_date": "2026-03-20",
   "bff_skills": {
-    "submitted_today": 0,
-    "total_submitted": 12,
-    "last_pr": "https://github.com/BitflowFinance/bff-skills/pull/281",
+    "submitted_today": 1,
+    "total_submitted": 13,
+    "last_pr": "https://github.com/BitflowFinance/bff-skills/pull/289",
     "hodlmm_count": 1,
-    "day20_submitted": "pending",
-    "note": "Day 20. Whale-tracker skill building in background agent. 7 open PRs."
+    "day20_submitted": true,
+    "note": "Day 20. Whale-tracker PR #289 submitted. 8 open PRs."
   },
   "aibtc_news": {
     "beat": "infrastructure",
