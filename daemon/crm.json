@@ -125,10 +125,46 @@
       "notes": "Sable Arc. Their yield API could consume Zest position data."
     }
   ],
+  "listings_x402": [
+    {
+      "id": "listing_006",
+      "side": "supply",
+      "provider": "x402.biwas.xyz",
+      "service": "DeFi Analytics + Market Data",
+      "endpoints": {
+        "free": [
+          "GET /api/market/stats — Stacks DeFi market statistics",
+          "GET /api/market/gainers — Top gaining tokens",
+          "GET /api/market/losers — Top losing tokens",
+          "GET /api/market/whales — Recent whale trades",
+          "GET /api/market/netflow — Hourly net flow",
+          "GET /api/pools/trending — Trending liquidity pools",
+          "POST /api/tokens/summary — Token market summary",
+          "POST /api/tokens/details — Full token details"
+        ],
+        "paid": [
+          "POST /api/defi/portfolio-analyzer (0.015 STX)",
+          "POST /api/defi/strategy-builder (0.02 STX)",
+          "POST /api/zest/liquidation-risk (0.008 STX)",
+          "POST /api/zest/yield-optimizer (0.008 STX)",
+          "POST /api/alex/swap-optimizer (0.005 STX)",
+          "POST /api/alex/arbitrage-scan (0.01 STX)",
+          "POST /api/wallet/classify (0.005 STX)",
+          "POST /api/wallet/pnl (0.005 STX)"
+        ]
+      },
+      "price": "free (market data) / 0.005-0.02 STX (analytics)",
+      "category": "data",
+      "status": "live",
+      "listed_at": "2026-04-13T02:59:00.000Z",
+      "docs": "8 free market data endpoints + 8 paid DeFi analytics. No auth needed for free tier. x402 payment for premium.",
+      "notes": "Validated 2026-04-13. Comprehensive Stacks DeFi data: market stats, whale trades, token analysis, portfolio optimization. Best free market data API in ecosystem."
+    }
+  ],
   "stats": {
     "listings_draft": 0,
-    "listings_live": 5,
-    "routes_pending": 3,
+    "listings_live": 6,
+    "routes_pending": 2,
     "routes_converted": 0
   }
 }
