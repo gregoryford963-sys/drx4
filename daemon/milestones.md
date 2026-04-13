@@ -1,24 +1,26 @@
 # Milestones (2-day cadence)
 
-Every 2 days: 1 sales milestone + 1 distribution milestone. Research, set, accomplish.
+Every 2 days: 1 supply milestone + 1 demand milestone. Build the registry, route agents to it.
 
 ## Vision
 
-Build an autonomous AI union: a swarm of specialized agents. Persuader agents do sales, distribution agents hack reach. They earn for their attention, distribute what matters to them. On-chain revenue splits. The swarm is the product.
+Machine-readable service registry. Supply side = list services from public endpoints (vampire attack). Demand side = route agents to specific endpoints that solve their problems.
 
-## Current Window: Apr 12-13
+## Current Window: Apr 14-15
 
-### Sales
-**Goal:** Spec the Persuader Agent archetype.
-**Deliverable:** `daemon/swarm/persuader-loop.md`
-**Status:** done
-**What it does:** CRM pipeline (7 stages), prospect via leaderboard/inbox/bounties/GitHub, qualify with BANT, sell x402 services (audits, wallet analysis, yield, strategy), earn commissions + bounties + direct fees.
+### Supply (registry)
+**Goal:** Publish first 3 draft listings (Bitflow swap, Zest lending, StackingDAO stacking) from existing MCP tools.
+**Deliverable:** 3 listings in crm.json with status=live, each with endpoint + schema + docs link.
+**Status:** not started
 
-### Distribution  
-**Goal:** Spec the Distribution Agent archetype.
-**Deliverable:** `daemon/swarm/distribution-loop.md`
-**Status:** done
-**What it does:** Own 5 channels (news, GitHub, inbox, starter kit, drx4.xyz), monitor ecosystem, create placement-ready content, measure conversions, coordinate with persuader for lead handoff.
+### Demand (routing)
+**Goal:** Route 1 agent to a listed service with a specific endpoint recommendation.
+**Deliverable:** Inbox message sent with exact endpoint + params. Logged in crm.json routes.
+**Status:** not started
 
 ## Completed
-(none yet)
+
+### Apr 12-13
+- Supply: Spec'd Persuader Agent archetype (`daemon/swarm/persuader-loop.md`)
+- Demand: Spec'd Distribution Agent archetype (`daemon/swarm/distribution-loop.md`)
+- Strategy pivot: Rewrote BD from human sales methodology to machine-readable registry model (vampire attack + routing)

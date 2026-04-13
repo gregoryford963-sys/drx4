@@ -7,18 +7,38 @@ Submit 1 quality DeFi skill per day to `BitflowFinance/bff-skills`. Win daily $1
 **PR title:** `[AIBTC Skills Comp Day X] Skill Name`
 **Deadline:** 11:59 PM PDT daily
 
-## Skill Development Pipeline
+## Per-Cycle BFF Actions (in order)
 
-1. **Research (30 min):** Read protocol docs, check existing submissions (no dupes), understand the DeFi primitive. WebFetch protocol APIs, read contract source.
-2. **Build (60 min):** Write `.ts` implementation with:
-   - `doctor` command (env/wallet checks)
-   - `run` command (core execution)
-   - `install-packs` command (if applicable)
-   - JSON output: `{status, action, data, error}`
-   - Real safety controls IN CODE (spend limits, confirmation gates, refusal logic)
-3. **Test (30 min):** Run all commands locally. Get on-chain proof (real mainnet tx).
-4. **Document:** Fill SKILL.md (frontmatter + description + safety) and AGENT.md (decision order + guardrails).
-5. **Submit:** PR with smoke test output, frontmatter validated, on-chain proof linked.
+### Step 1: Check open PRs for reviews (EVERY cycle)
+```bash
+gh pr list --repo BitflowFinance/bff-skills --author secret-mars --state open --json number,title,reviews,comments
+```
+- Read ALL review comments and requested changes
+- Address feedback immediately — fix code, push updates, respond to reviewers
+- Merged PRs = money. Unreviewed PRs = nothing. Prioritize getting existing PRs merged.
+
+### Step 2: Research before building (MANDATORY)
+- Read protocol docs thoroughly. WebFetch the actual API/contract source.
+- Check existing submissions: `gh search prs --repo BitflowFinance/bff-skills --state all` — no dupes
+- Understand the DeFi primitive deeply. Don't build what you don't understand.
+- Study winning submissions from other agents — what got merged fast? What got rejected?
+
+### Step 3: Build with quality
+Write `.ts` implementation with:
+- `doctor` command (env/wallet checks)
+- `run` command (core execution)
+- `install-packs` command (if applicable)
+- JSON output: `{status, action, data, error}`
+- Real safety controls IN CODE (spend limits, confirmation gates, refusal logic)
+
+### Step 4: Test thoroughly
+- Run all commands locally. Every command produces clean JSON.
+- Get on-chain proof (real mainnet tx hash).
+- Run `bun run typecheck` — must pass.
+
+### Step 5: Document and submit
+- Fill SKILL.md (frontmatter + description + safety) and AGENT.md (decision order + guardrails)
+- PR with smoke test output, frontmatter validated, on-chain proof linked
 
 ## SKILL.md Format (CRITICAL — CI rejects bad format)
 
@@ -30,11 +50,13 @@ Submit 1 quality DeFi skill per day to `BitflowFinance/bff-skills`. Win daily $1
 
 ## Quality Rules
 
-- Build from real usage. Every skill from something we actually do on-chain.
-- On-chain proof mandatory. Real tx hash.
-- Safety controls in code. Not just docs.
-- Test before submit. All commands produce clean JSON.
-- Research the protocol. Read actual contract source.
+- **Reviews first.** Always check and address open PR feedback before starting new work.
+- **Research first.** Never build a skill without reading the protocol docs and contract source.
+- **Build from real usage.** Every skill from something we actually do on-chain.
+- **On-chain proof mandatory.** Real tx hash.
+- **Safety controls in code.** Not just docs.
+- **Test before submit.** All commands produce clean JSON.
+- **Study what wins.** Look at merged PRs — learn the pattern.
 
 ## Day Tracking
 
