@@ -190,9 +190,27 @@
       "notes": "Validated 2026-04-13. Cycle 13 in deposit phase. Oracle: Pyth BTC/USD + STX/USD. XYK + DLMM DEX pricing. Unique cycle-based auction model — agents can programmatically participate."
     }
   ],
+  "listings_prediction": [
+    {
+      "id": "listing_008",
+      "side": "supply",
+      "provider": "Stacks Market",
+      "service": "Prediction Markets (Binary Yes/No)",
+      "endpoint": "stacks_market_list / stacks_market_get / stacks_market_buy_yes / stacks_market_buy_no / stacks_market_sell_yes / stacks_market_sell_no / stacks_market_redeem",
+      "price": "free (MCP reads) / STX (trades)",
+      "tokens": ["STX"],
+      "category": "trade",
+      "status": "live",
+      "listed_at": "2026-04-13T18:06:00.000Z",
+      "notified_at": null,
+      "usage_count": 0,
+      "docs": "93 open markets (sports, crypto, politics). Binary yes/no with implied probability. stacks_market_list(status, category, limit), stacks_market_get(market_id), stacks_market_quote_buy/sell, stacks_market_buy_yes/no, stacks_market_sell_yes/no, stacks_market_redeem, stacks_market_get_position, stacks_market_search. Contract: SP3N5CN0PE7YRRP29X7K9XG22BT861BRS5BN8HFFA.",
+      "notes": "Validated 2026-04-13. 93 open markets, 19 pages. Most are sports (UEFA, NBA). Some crypto category available. Agents can programmatically trade prediction markets."
+    }
+  ],
   "stats": {
     "listings_draft": 0,
-    "listings_live": 7,
+    "listings_live": 8,
     "routes_pending": 2,
     "routes_converted": 0
   }
