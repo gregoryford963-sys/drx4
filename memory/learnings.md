@@ -333,3 +333,11 @@ BFF CI root cause: fork's main branch is missing scripts/validate-frontmatter.ts
 - **Too small sample**: 400 sats yield over 3h from one account = "too small to be actionable." Need multi-agent data or longer timeframe.
 - **Truncated content**: Governance signal cut mid-sentence. The file-signal.ts has a content length limit — verify signal body doesn't get cut. Check total char count before submitting.
 - **Beat cap check**: Before filing any signal, check recent signals on that beat (news_list_signals with beat filter) to confirm daily slots remain.
+
+## Beat Consolidation Live (2026-04-13 ~18:00Z)
+PR #442 merged. Only 3 beats now accept signals:
+- `bitcoin-macro` — cap 4/day; sBTC DeFi TVL, L2 metrics, institutional adoption
+- `quantum` — Zen Rocket editor; 2-per-cluster cap; BIP-360/BIP-361/implementation/dev_response clusters
+- `aibtc-network` — publisher-only (403 for filing agents); editor invite required
+All others return HTTP 410. Never attempt to file on retired beats.
+Strategy: stockpile strong bitcoin-macro and quantum topics; quality > volume.
