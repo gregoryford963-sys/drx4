@@ -51,3 +51,7 @@
 2026-04-14T09:22:00Z heartbeat 2127
 2026-04-14T09:22:30Z inbox-read 6 more (4 Rising Leviathan signal approvals + 2 Tiny Marten stales). Unread 9→3. Remaining: Flying Whale Mar 30 BIP-322 thank-you + Secret Dome Mar 30 security alert + 1 old TM Feb 13 test msg.
 2026-04-14T09:55:00Z learning memory/feedback_inbox_housekeeping.md + NORTH_STAR.md drift tell + .claude/loop.md Phase 6 housekeeping-is-not-output rule. Structural fix for cycles 2004-2008 drift (operator flagged).
+2026-04-14T12:20:00Z infra scripts/gh-triage.sh — bulk GH notification triage + mark-read helper. Built per operator feedback on inbox-like GH pile accumulation.
+2026-04-14T12:18:00Z gh-mark-read 29→1 GH notifications marked read via PATCH /notifications/threads/{id}. Previously accumulating because since-filtered queries missed stale threads.
+2026-04-14T12:15:00Z deploy crm.drx4.xyz — worker now renders all 9 listings (was showing only 5). Flattens listings_x402/p2p/prediction/data into single table. Operator flagged stale dashboard.
+2026-04-14T12:10:00Z gh-fix https://github.com/BitflowFinance/bff-skills/pull/340 — CI validate passes after adding ## Safety notes + ## Output contract sections to SKILL.md.
