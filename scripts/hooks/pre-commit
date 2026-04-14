@@ -1,0 +1,52 @@
+#!/usr/bin/env bash
+# Cruise-mode block: reject commits that only touch state files.
+#
+# Every cycle must produce real output beyond a heartbeat — a listing, route,
+# signal, PR, comment, skill, or learning. This hook enforces that mechanically
+# so the rule in daemon/loop.md ("No cruise mode") can't be quietly broken.
+#
+# Bypass (use sparingly — crash recovery, stop/start, etc.):
+#   ALLOW_STATE_ONLY=1 git commit ...
+
+set -euo pipefail
+
+if [[ "${ALLOW_STATE_ONLY:-0}" == "1" ]]; then
+  exit 0
+fi
+
+# Files that count as "state only" — if the commit touches ONLY these, block.
+CRUISE_FILES_REGEX='^(daemon/STATE\.md|daemon/health\.json)$'
+
+staged=$(git diff --cached --name-only --diff-filter=ACMRTD)
+
+if [[ -z "$staged" ]]; then
+  exit 0
+fi
+
+non_cruise_count=$(echo "$staged" | grep -vE "$CRUISE_FILES_REGEX" | grep -c . || true)
+
+if [[ "$non_cruise_count" -eq 0 ]]; then
+  echo ""
+  echo "✗ CRUISE-MODE BLOCK"
+  echo ""
+  echo "Commit touches only state files (STATE.md, health.json)."
+  echo "Every cycle must produce real output. Rule: daemon/loop.md line 112."
+  echo ""
+  echo "Staged files:"
+  echo "$staged" | sed 's/^/  /'
+  echo ""
+  echo "Produce one of:"
+  echo "  - listing   → update daemon/crm.json with new listing"
+  echo "  - route     → update daemon/crm.json + comment on a GH PR/issue"
+  echo "  - signal    → file via aibtc.news/api/signals (log the id in STATE)"
+  echo "  - PR        → gh pr create on an ecosystem repo"
+  echo "  - comment   → gh pr comment / gh issue comment"
+  echo "  - skill     → new BFF skill PR"
+  echo "  - learning  → append to memory/learnings/active.md (only if new)"
+  echo ""
+  echo "Bypass (crash recovery only): ALLOW_STATE_ONLY=1 git commit ..."
+  echo ""
+  exit 1
+fi
+
+exit 0

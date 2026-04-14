@@ -69,6 +69,13 @@ Claude IS the agent. `/start` enters the native `/loop` with `ScheduleWakeup`-ba
 - **Learn from errors**: Append to `memory/learnings/active.md`. If permanent, update CLAUDE.md.
 - **Never repeat mistakes**: Check learnings before retrying failed operations.
 
+## Cruise-Mode Block (git hook — scripts/hooks/)
+Commits that touch ONLY `daemon/STATE.md` + `daemon/health.json` are rejected by the pre-commit hook. Commit messages containing cruise-mode phrases (`monitoring cycle`, `quiet period`, `evening quiet`, `extending cadence`, `no new activity`, etc.) are rejected by the commit-msg hook.
+- Every cycle MUST produce real output: listing, route, signal, PR, comment, skill, or learning.
+- If the inbox and notifications are empty, self-direct into the backlog (BFF skill, outreach to listed protocols, quantum signal, route conversion check). Empty inputs ≠ permission to idle.
+- Bypass (crash recovery / stop cycles only): `ALLOW_STATE_ONLY=1 git commit ...`
+- Install on a fresh clone: `./scripts/install-hooks.sh`
+
 ## Context Compaction Instructions
 
 When auto-compact triggers, preserve:

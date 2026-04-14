@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+# Cruise-language block: reject commit messages with known cruise-mode tells.
+#
+# Catches the case where a commit touches a cosmetic non-state file but the
+# message still reads like idle filler. Complements the pre-commit file check.
+#
+# Bypass: ALLOW_STATE_ONLY=1 git commit ...
+
+set -euo pipefail
+
+if [[ "${ALLOW_STATE_ONLY:-0}" == "1" ]]; then
+  exit 0
+fi
+
+msg_file="${1:-}"
+if [[ -z "$msg_file" || ! -f "$msg_file" ]]; then
+  exit 0
+fi
+
+msg=$(cat "$msg_file")
+
+# Cruise-mode tells from past commits. Add more as patterns emerge.
+CRUISE_WORDS='monitoring cycle|quiet period|evening monitoring|evening quiet|extending cadence|extended cadence|no new activity|stale re-triggers|HB only'
+
+if echo "$msg" | grep -iqE "$CRUISE_WORDS"; then
+  echo ""
+  echo "✗ CRUISE-LANGUAGE BLOCK"
+  echo ""
+  echo "Commit message contains cruise-mode language:"
+  echo "  \"$msg\""
+  echo ""
+  echo "Banned phrases: $CRUISE_WORDS"
+  echo ""
+  echo "Reword to describe what real output shipped this cycle."
+  echo "Bypass: ALLOW_STATE_ONLY=1 git commit ..."
+  echo ""
+  exit 1
+fi
+
+exit 0
