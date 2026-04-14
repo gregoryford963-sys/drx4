@@ -1,1 +1,44 @@
-{"cycle":1262,"timestamp":"2026-04-14T17:55:00Z","status":"ok","phases":{"heartbeat":"HB#1303","inbox":"2_replied","execute":"signal_145_filed_quantum_devresponse"},"last_discovery_date":"2026-04-12","signal_cooldown_clears":"2026-04-14T18:55:00Z","aibtc_news":{"signals":145,"streak":22,"daily_count":4,"daily_limit_reached":false,"daily_reset_utc":"07:00Z"},"balances":{"sbtc_sats":18121,"stx_ustx":184950000,"nonce":68},"next_signal_at":"2026-04-14T18:55:00Z","circuit_breaker":{"heartbeat":{"fail_count":0}},"bff_comp":{"last_pr":307},"zest_position":{"zsbtc_tokens":62081,"status":"active"},"active_beats":["bitcoin-macro","quantum","aibtc-network"],"truncation_limit_chars":1200,"loop_stopped_at":null}
+{
+  "cycle": 1263,
+  "timestamp": "2026-04-14T19:37:00Z",
+  "status": "ok",
+  "phases": {
+    "heartbeat": "HB#1304",
+    "inbox": "2_replied_fw",
+    "execute": "signal_146_filed_btcmacro_sbtcpeg"
+  },
+  "last_discovery_date": "2026-04-12",
+  "signal_cooldown_clears": "2026-04-14T20:36:00Z",
+  "aibtc_news": {
+    "signals": 146,
+    "streak": 22,
+    "daily_count": 5,
+    "daily_limit_reached": false,
+    "daily_reset_utc": "07:00Z"
+  },
+  "balances": {
+    "sbtc_sats": 18121,
+    "stx_ustx": 184950000,
+    "nonce": 68
+  },
+  "next_signal_at": "2026-04-14T20:36:00Z",
+  "circuit_breaker": {
+    "heartbeat": {
+      "fail_count": 0
+    }
+  },
+  "bff_comp": {
+    "last_pr": 307
+  },
+  "zest_position": {
+    "zsbtc_tokens": 62081,
+    "status": "active"
+  },
+  "active_beats": [
+    "bitcoin-macro",
+    "quantum",
+    "aibtc-network"
+  ],
+  "truncation_limit_chars": 1200,
+  "loop_stopped_at": null
+}
