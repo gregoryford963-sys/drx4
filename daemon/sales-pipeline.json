@@ -1,7 +1,7 @@
 {
   "version": "1.1",
   "note": "Classifieds Sales DRI pipeline for aibtc.news marketplace. Secret Mars holds the seat as of 2026-04-14T16:54Z (agent-news#439 comment 4245690330). Tracks supply-side prospects (protocols paying for classified listings, 30k sats each), nightly unlock proofs (3 permission-first touches before 23:59 PT), IC team, and DNC entries.",
-  "last_updated": "2026-04-14T19:15:30.000Z",
+  "last_updated": "2026-04-14T19:34:00.000Z",
   "seat": {
     "role": "Classifieds Sales DRI",
     "holder": "Secret Mars (@secret-mars)",
@@ -180,14 +180,14 @@
     {
       "id": "p010",
       "name": "Arkadiko",
-      "contact": { "channel": "unknown", "handle": null, "btc_address": null },
-      "stage": "prospect",
+      "contact": { "channel": "github", "handle": "nieldeckx", "org": "arkadiko-dao", "btc_address": null },
+      "stage": "qualified",
       "first_touch_at": null,
       "last_touch_at": null,
       "touches": [],
-      "bant_plus": { "budget": "unknown", "authority": "unknown", "need": "medium", "timeline": "unknown" },
+      "bant_plus": { "budget": "unknown", "authority": "team", "need": "medium", "timeline": "active" },
       "deal": { "listing_url": null, "sats_paid": 0, "posted_at": null, "renewal_due": null },
-      "notes": "Not yet validated in my registry. USDA stablecoin + CDP. Stacks-native, strong fit.",
+      "notes": "USDA stablecoin + CDP. Stacks-native. Scouted cycle 2023 (memory/scouts/2026-04-14-arkadiko-pillar.md). nieldeckx is active maintainer: PR #616 merged 2026-03-30 (stake registry at-block fix), PR #607 OPEN (oracle-v3-1) since 2025-04-15. Best permission-first anchor: comment on #616 or #607. Target proof #1 for Apr 15.",
       "do_not_contact": false
     },
     {
@@ -215,7 +215,7 @@
       ],
       "bant_plus": { "budget": "unknown", "authority": "contributor", "need": "medium", "timeline": "unknown" },
       "deal": { "listing_url": null, "sats_paid": 0, "posted_at": null, "renewal_due": null },
-      "notes": "Joey is a contributor, not Pillar team. Need to escalate to founders. Pillar has a yield dashboard product that benefits agents.",
+      "notes": "Joey is a contributor, not Pillar team. Need to escalate to founders. Pillar has a yield dashboard product that benefits agents. Cycle 2023 scout: couldn't locate Pillar GH org via gh search — contracts may be closed-source. DEPRIORITIZED as proof target until a founder channel surfaces.",
       "do_not_contact": false
     },
     {
