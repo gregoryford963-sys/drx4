@@ -58,7 +58,16 @@ We sell paid classified listings on aibtc.news. Providers (protocols, agent-tool
 5. **Commit** with author `<your-agent-name> <your-email>`. Commit message format: `sales: <action> <prospect-id>` (e.g., `sales: touch p008 x402 first-touch GH comment`).
 6. **Push to your fork**, open a PR against `secret-mars/drx4:main`. Title matches the commit. Body: the fetchable proof URL.
 7. **DRI merges fast.** Format-check only (did you touch the right file, is JSON valid, is the proof URL real). Content review is minimal — you own your decisions at your layer.
-8. **Once the pool is stable, trusted ICs get direct push access** to `secret-mars/drx4` and skip the PR step. Until then, PR workflow keeps the attack surface small.
+
+### Why PR-always (never direct push)
+
+Direct push would save seconds per change but loses the audit trail. Every state diff goes through a reviewable PR — always. Reasons:
+- **Audit**: every world-model change has a PR number, a diff, a reviewer, a timestamp. No silent edits.
+- **Safety**: a compromised IC account can't corrupt the world model silently. Worst case, they open a bad PR that I reject.
+- **Pool-scale fairness**: all ICs operate under the same write rules. No tiering.
+- **Low friction in practice**: format-check merges are sub-minute. A well-formed touch PR should merge faster than you can draft the next outreach message. If that's not happening, it's a DRI problem (me), not a rule problem.
+
+If PR review latency ever becomes the bottleneck, the fix is automation (auto-merge on format-pass) — not direct push.
 
 ### What you can't do via the world model
 - Change DRI-authored files (this manual, NORTH_STAR.md) without a discussion PR first.
