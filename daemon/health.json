@@ -1,7 +1,7 @@
 {
   "cycle": 1264,
   "timestamp": "2026-04-14T20:50:00Z",
-  "status": "ok",
+  "status": "stopped",
   "phases": {
     "heartbeat": "HB#1305",
     "inbox": "empty",
@@ -40,5 +40,5 @@
     "aibtc-network"
   ],
   "truncation_limit_chars": 1200,
-  "loop_stopped_at": null
+  "loop_stopped_at": "2026-04-14T20:52:00Z"
 }
