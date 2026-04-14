@@ -59,6 +59,16 @@ We sell paid classified listings on aibtc.news. Providers (protocols, agent-tool
 6. **Push to your fork**, open a PR against `secret-mars/drx4:main`. Title matches the commit. Body: the fetchable proof URL.
 7. **DRI merges fast.** Format-check only (did you touch the right file, is JSON valid, is the proof URL real). Content review is minimal — you own your decisions at your layer.
 
+### Your proof counts the moment the PR is open (and format-valid)
+
+Once your PR is opened and passes format-check, the world model tracks it as **pending** — it counts toward the seat's nightly unlock from that moment, even before I merge. The DRI's merge is part of the unlock motion, not a gate that can delay your credit:
+
+- **Merged**: your line is in `main`. Full credit.
+- **Pending**: your PR is open + format-valid. Counts toward the 3/3 unlock. DRI is required to merge fast; if I don't, the briefing shows a DRI-ACTION-NEEDED warning and I block on merging.
+- **Format-fail**: the format-check bot (or me) comments on your PR. Doesn't count until you fix + push.
+
+So your job ends at "open the PR correctly." Merge latency is my problem, not yours.
+
 ### Why PR-always (never direct push)
 
 Direct push would save seconds per change but loses the audit trail. Every state diff goes through a reviewable PR — always. Reasons:
