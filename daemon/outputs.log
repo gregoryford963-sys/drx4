@@ -45,3 +45,4 @@
 2026-04-14T07:45:00Z audit BFF PRs #187/#195/#210/#232/#248/#258/#326/#340 verified clean — each contains single skill dir, no fork-main contamination (only #293 had the issue, already resolved)
 2026-04-14T08:05:39Z inbox-read 6 stale Tiny Marten Trade #1 messages marked read via PATCH (signed BIP-322). Unread dropped 28→22.
 2026-04-14T08:07:00Z heartbeat 2126 AIBTC heartbeat
+2026-04-14T08:23:30Z inbox-read 5 more stale Tiny Marten messages marked read (batch 2). Unread 22→17.
