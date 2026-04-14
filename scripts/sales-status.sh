@@ -23,13 +23,44 @@ PROOF_FILE="daemon/sales-proofs/${TODAY}.md"
 # Proof lines must follow STRICT format:
 #   - ISO_TIMESTAMP | PROSPECT_NAME | CHANNEL | direction | URL | ≤140-char summary
 # 5 pipe separators = 6 fields. Anything else (including audit-trail lines) does not count.
+
+# 1) Count MERGED proofs (already in main)
 if [ -f "$PROOF_FILE" ]; then
-  # Count lines that start with "- " and contain exactly 5 " | " separators
-  PROOF_COUNT=$(awk -F' \\| ' '/^- [0-9]{4}-[0-9]{2}-[0-9]{2}T.*\|.*\|.*\|.*\|/ && NF==6 {n++} END {print n+0}' "$PROOF_FILE" 2>/dev/null)
-  PROOF_COUNT=${PROOF_COUNT:-0}
+  PROOFS_MERGED=$(awk -F' \\| ' '/^- [0-9]{4}-[0-9]{2}-[0-9]{2}T.*\|.*\|.*\|.*\|/ && NF==6 {n++} END {print n+0}' "$PROOF_FILE" 2>/dev/null)
+  PROOFS_MERGED=${PROOFS_MERGED:-0}
 else
-  PROOF_COUNT=0
+  PROOFS_MERGED=0
 fi
+
+# 2) Count PENDING proofs (sitting in open PRs against secret-mars/drx4:main)
+# Any open PR touching today's sales-proofs/${TODAY}.md — count strict-format additions in the diff.
+PROOFS_PENDING=0
+PENDING_PRS=""
+if command -v gh >/dev/null 2>&1 && [ -n "${GITHUB_TOKEN:-$(grep -s '^GITHUB_TOKEN=' /home/mars/drx4/.env 2>/dev/null | cut -d= -f2)}" ]; then
+  export GH_TOKEN="${GITHUB_TOKEN:-$(grep '^GITHUB_TOKEN=' /home/mars/drx4/.env | cut -d= -f2)}"
+  # List open PR numbers that touch today's proof file
+  OPEN_PR_NUMS=$(gh api /repos/secret-mars/drx4/pulls?state=open --jq '.[].number' 2>/dev/null | head -50)
+  for PR_NUM in $OPEN_PR_NUMS; do
+    # Fetch diff and count strict-format additions touching today's proof file
+    ADD_COUNT=$(gh pr diff "$PR_NUM" --repo secret-mars/drx4 2>/dev/null \
+      | awk -v f="daemon/sales-proofs/${TODAY}.md" '
+          /^\+\+\+ b\// { in_file = (substr($0,7) == f); next }
+          /^\+\+\+ / { in_file = 0; next }
+          in_file && /^\+- [0-9]{4}-[0-9]{2}-[0-9]{2}T.*\|.*\|.*\|.*\|/ {
+            # Check strict 6-field format on the added line
+            line = substr($0, 2); n = split(line, parts, " \\| "); if (n == 6) count++
+          }
+          END { print count+0 }
+        ')
+    ADD_COUNT=${ADD_COUNT:-0}
+    if [ "$ADD_COUNT" -gt 0 ]; then
+      PROOFS_PENDING=$((PROOFS_PENDING + ADD_COUNT))
+      PENDING_PRS="$PENDING_PRS PR#$PR_NUM(+$ADD_COUNT)"
+    fi
+  done
+fi
+
+PROOF_COUNT=$((PROOFS_MERGED + PROOFS_PENDING))
 
 # Parse pipeline.json for stage counts
 if [ -f daemon/sales-pipeline.json ]; then
@@ -70,7 +101,9 @@ cat > daemon/sales-status.md <<EOF
 **Last updated**: $(date -u +"%Y-%m-%dT%H:%M:%SZ")
 
 ## Tonight's unlock
-- **Proofs today**: **$PROOF_COUNT / 3**
+- **Proofs today** (merged + pending): **$PROOF_COUNT / 3**
+  - Merged to main: **$PROOFS_MERGED**
+  - Pending in open PRs: **$PROOFS_PENDING**${PENDING_PRS:+ — }${PENDING_PRS}
 - **Deadline**: $DEADLINE_UTC (23:59 PT)
 - **Time left**: ${HOURS_LEFT}h ${MINS_LEFT}m
 - **Urgency**: **$URGENCY**
@@ -88,13 +121,16 @@ EOF
 
 # Human-readable stdout for briefing.sh
 echo "=== SALES DRI STATUS ==="
-echo "Proofs today: $PROOF_COUNT / 3"
+echo "Proofs today: $PROOF_COUNT / 3  (merged: $PROOFS_MERGED, pending: $PROOFS_PENDING${PENDING_PRS:+ —$PENDING_PRS})"
 echo "Deadline: $DEADLINE_UTC (${HOURS_LEFT}h ${MINS_LEFT}m left)"
 echo "Urgency: $URGENCY"
 echo ""
 echo "Stages:"
 echo "$STAGES" | sed 's/^/  /'
 echo ""
+if [ "$PROOFS_PENDING" -gt 0 ]; then
+  echo "⚠️  DRI-ACTION-NEEDED — $PROOFS_PENDING proof(s) sitting in open PRs. Merge-check is P1 this cycle:${PENDING_PRS}"
+fi
 if [ "$PROOF_COUNT" -lt 3 ] && [ "$HOURS_LEFT" -le 6 ]; then
   echo "⚠️  P1 TRIGGER — sales-dri worker must be dispatched this cycle."
 fi

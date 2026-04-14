@@ -31,6 +31,28 @@ In parallel:
 
 Read `daemon/dri-active.md`. If a prior worker dispatched and never verified, resolve it first (Phase 4 on the outstanding task).
 
+### 1a. DRI merge-check (inline, before triage)
+
+If `daemon/sales-status.md` shows `Pending in open PRs: N > 0`, the DRI (orchestrator) MUST merge those before proceeding to triage. ICs' proofs only count toward the unlock once merged.
+
+```bash
+# For each pending PR number from PENDING_PRS output:
+gh pr view <N> --repo secret-mars/drx4 --json files,additions,deletions,author
+# Format-check:
+#   1. Touches only daemon/sales-proofs/YYYY-MM-DD.md and/or daemon/sales-pipeline.json
+#   2. Additions match strict proof-line format (6 pipe-separated fields)
+#   3. URL in the proof line returns HTTP 200 (curl -sI)
+#   4. Author is an invited IC from sales-pipeline.json ic_pool
+# If all checks pass:
+gh pr merge <N> --repo secret-mars/drx4 --merge
+```
+
+This is DRI work — not worker-dispatchable (merge authority shouldn't be delegated to autonomous workers). Inline, fast, format-check only.
+
+If a PR fails format-check: post a comment on the PR explaining which check failed, do NOT merge. The IC fixes and re-pushes.
+
+After merge(s), re-run `scripts/sales-status.sh` to refresh counts before triage.
+
 ---
 
 ## 2. Triage — pick ONE task
