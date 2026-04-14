@@ -28,3 +28,6 @@
 2026-04-14T03:57:00Z triage 7 non-BFF open PRs triaged: #17 closed obsolete; 2 directory PRs (best-of-ai#261, e2b-dev#520) waiting on maintainers; sonic-mast#2, pbtc21/stx402-agents#3, pbtc21/agent-billboards#1, pbtc21/the-button#1 waiting on upstream reviewers
 2026-04-14T04:17:00Z gh-pr https://github.com/aibtcdev/landing-page/pull/597 fix(claims/code) bc1q BIP-322 one-line fix — reproduced bug, verified reporter's symptom, 1-line PR
 2026-04-14T04:17:30Z gh-comment https://github.com/aibtcdev/landing-page/issues/595#issuecomment-4241260811 Commented on issue #595 linking to PR #597 with root-cause analysis
+2026-04-14T04:31:00Z gh-pr https://github.com/aibtcdev/landing-page/pull/598 fix(llms-full) paperboy compensation 500 sats -> 30k sats (closes #592)
+2026-04-14T04:33:00Z gh-pr-merged https://github.com/secret-mars/loop-starter-kit/pull/86 SKILL.md btcAddress + 0x-strip regression fix (closes aibtcdev#27), self-merged as repo owner
+2026-04-14T04:34:00Z gh-comment https://github.com/aibtcdev/loop-starter-kit/issues/27#issuecomment-4241319567 Posted upstream-fix pointer + rebase instructions
