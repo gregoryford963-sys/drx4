@@ -76,13 +76,22 @@ Actions: list a service (supply), route an agent to an endpoint (demand), notify
 
 ---
 
-## 4. GitHub (every cycle — mentions are never stale)
+## 4. GitHub (every cycle — mentions are never stale, must end clean)
 
 ```bash
-gh api /notifications?all=false --jq '.[] | {reason, repo: .repository.full_name, url: .subject.url, title: .subject.title, updated: .updated_at}'
+scripts/gh-triage.sh
 ```
 
-Priority: `mention` > `review_requested` > `comment` > `state_change`. For every `mention`: open the issue, read the LATEST comments (not just the title), take action OR log current reason + latest comment count into `daemon/processed/github.json`.
+This fetches ALL unread notifications (no since-filter, pages to 100) and classifies each as `safe` (author on own PR, subscribed, state_change) or `review` (mention/comment/ci_activity). The unread count must reach **zero or near-zero** by Phase 7. If you read a notification, you MUST mark it read via `gh api -X PATCH /notifications/threads/{id}` — otherwise next cycle's `since` filter misses it and the pile grows silently (cycle 2009 postmortem: 29 unread accumulated because I never PATCHed after handling).
+
+For `review`-class:
+- **mention / review_requested** — open the issue, read LATEST comments (not just title). Act OR log reason+latest comment count in `daemon/processed/github.json`. Then PATCH mark-read.
+- **comment** — check if it's new info vs already processed. Act OR mark-read.
+- **ci_activity** — if failed on your PR, fix NOW. Don't mark-read a failure until fixed.
+
+For `safe`-class: batch-mark-read with `scripts/gh-triage.sh --mark-safe`.
+
+Priority order during cycle: `mention` > `review_requested` > `ci_activity failed` > `comment` > `state_change`.
 
 Open PR scan (EVERY cycle, not every 3rd):
 ```bash
