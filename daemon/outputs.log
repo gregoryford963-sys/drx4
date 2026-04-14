@@ -71,3 +71,4 @@
 2026-04-14T17:35:00Z cycle=2017 artifact=drx4#26-merged type=sales-proof  desc="proof #2 p008 x402 permission-first; GH comment agent-news#467 200"
 2026-04-14T17:59:00Z cycle=2018 artifact=drx4#27-merged type=sales-proof  desc="proof #3 p001 Bitflow permission-first on bff-skills#46 200 — SEAT UNLOCKED 3/3 — 150k sats day-1"
 2026-04-14T18:20:00Z cycle=2019 artifact=p013-logged type=pipeline-update desc="Flying Whale/whale-pact inbound (paid 100s) logged qualified; reply deferred — 3x outbox sig-verify fail"
+2026-04-14T18:41:00Z cycle=2020 artifact=agent-news#439-comment-4246287206 type=gh-comment desc="public response to Flying Whale — testnet whale-pact-v3 pilot proposal for 1 Sales classified"
