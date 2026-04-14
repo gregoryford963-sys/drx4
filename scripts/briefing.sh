@@ -5,6 +5,15 @@
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
+# Self-repair: if core.hooksPath drifted away from scripts/hooks, reset it.
+# This is the first thing the briefing does so future cycles can't silently
+# bypass the cruise-mode block.
+current_hooks_path=$(git config --get core.hooksPath || echo "")
+if [[ "$current_hooks_path" != "scripts/hooks" ]]; then
+  echo "⚠  core.hooksPath drifted ($current_hooks_path) — resetting to scripts/hooks"
+  git config core.hooksPath scripts/hooks
+fi
+
 echo "=== NORTH STAR ==="
 cat daemon/NORTH_STAR.md
 echo ""
