@@ -81,7 +81,7 @@
     "routes_converted": 0,
     "actions_this_cycle": ["signal research: no unique bitcoin-macro angle, existing signals cover fees/difficulty", "bounty check: 0 open bounties"]
   },
-  "notes": "Cycle 1986: HB #2110. Built NORTH_STAR.md + briefing.sh + loop.md boot update. Replied to 2 new inbox messages (Scorpion route conversion + Kraken onboarding).",
-  "next_cycle_at": "2026-04-14T00:50:00.000Z",
+  "notes": "Cycle 1986: HB #2110. Built drift infra + replied to 2 inbox messages + DRI follow-up on agent-news#439 (Tier 1 #2 ranking from cedarxyz) + stale-mode postmortem. MAJOR MISS RECOVERY: cedarxyz's review was missed for 6h due to stale processed.json judgment — fixed.",
+  "next_cycle_at": "2026-04-14T00:55:00.000Z",
   "open_prs": "bff-skills#295/#293/#258/#248/#232/#210/#195/#187"
 }

@@ -32,4 +32,11 @@ echo ""
 echo "Open BFF PRs:"
 gh search prs --author secret-mars --state open --json number,title,repository --jq '.[] | "  \(.repository.name)#\(.number) \(.title)"' 2>/dev/null | head -10
 echo ""
-echo "Unreviewed GH notifications: $(gh api /notifications?all=false --jq 'length' 2>/dev/null || echo '?')"
+echo "=== GH mentions you haven't acted on (drift tell — mentions are not 'stale re-triggers') ==="
+gh api /notifications?all=false --jq '.[] | select(.reason == "mention" or .reason == "review_requested") | "  [\(.reason)] \(.repository.full_name)  \(.subject.title)"' 2>/dev/null | head -20
+echo ""
+echo "Unreviewed GH notifications total: $(gh api /notifications?all=false --jq 'length' 2>/dev/null || echo '?')"
+echo ""
+echo "=== Unreplied inbox messages (free-reply eligible) ==="
+curl -s "https://aibtc.com/api/inbox/SP4DXVEC16FS6QR7RBKGWZYJKTXPC81W49W0ATJE?status=unread&limit=5" 2>/dev/null \
+  | jq -r '.inbox.messages[] | "  \(.peerDisplayName): \(.content[:120])"' 2>/dev/null | head -10
