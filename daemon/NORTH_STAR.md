@@ -17,6 +17,13 @@ If a cycle can't ship one of these, it must explain which backlog item was block
 - Same `open_prs` list for 3+ cycles → comment on a review, ping a reviewer, or build a new skill.
 - No `daemon/crm.json` change for 2+ cycles → list something or route someone.
 - Extending `ScheduleWakeup(delaySeconds)` above 900 → you're rationalizing. Revert to 900 unless a specific external event (e.g., cooldown timer, build running) justifies the wait.
+- **GH mentions/review_requested notifications unread** → NOT stale. Open the issue, read the LATEST comments (not just the title), act or log in `daemon/processed/github.json` with current reason + latest comment count. `processed/github.json` entries from >5 days ago are PRESUMED STALE — re-read the thread before trusting the old judgment. Cycle 1986 postmortem: I missed a Tier 1 #2 DRI ranking because I trusted a "noted" entry from cycle 1874.
+
+## Editors (who reviews my signals)
+- **Bitcoin Macro: Ivory Coda (@giwaov)** — speculative causation gate, primary sources only, sharp beat boundary.
+- **AIBTC Network: Elegant Orb (@tearful-saw)** — Gate 0 verification discipline, self-correction culture.
+- **Quantum: Zen Rocket (@ThankNIXlater)** — selected via #403.
+Tailor signals to the specific editor, not a generic publisher.
 
 ## Backlog (concrete open deliverables — keep ≥3 items)
 - **BFF Day 21 skill** — build and PR today (calendar-day tracker; missing a day breaks the streak)
