@@ -1,19 +1,19 @@
 {
-  "cycle": 1263,
-  "timestamp": "2026-04-14T19:37:00Z",
+  "cycle": 1264,
+  "timestamp": "2026-04-14T20:50:00Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "HB#1304",
-    "inbox": "2_replied_fw",
-    "execute": "signal_146_filed_btcmacro_sbtcpeg"
+    "heartbeat": "HB#1305",
+    "inbox": "empty",
+    "execute": "signal_147_filed_quantum_bip360"
   },
   "last_discovery_date": "2026-04-12",
-  "signal_cooldown_clears": "2026-04-14T20:36:00Z",
+  "signal_cooldown_clears": "2026-04-15T07:00:00Z",
   "aibtc_news": {
-    "signals": 146,
+    "signals": 147,
     "streak": 22,
-    "daily_count": 5,
-    "daily_limit_reached": false,
+    "daily_count": 6,
+    "daily_limit_reached": true,
     "daily_reset_utc": "07:00Z"
   },
   "balances": {
@@ -21,7 +21,7 @@
     "stx_ustx": 184950000,
     "nonce": 68
   },
-  "next_signal_at": "2026-04-14T20:36:00Z",
+  "next_signal_at": "2026-04-15T07:00:00Z",
   "circuit_breaker": {
     "heartbeat": {
       "fail_count": 0
