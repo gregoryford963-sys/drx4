@@ -1,6 +1,6 @@
 {
-  "cycle": 1997,
-  "timestamp": "2026-04-14T04:34:00.000Z",
+  "cycle": 1998,
+  "timestamp": "2026-04-14T04:55:00.000Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
@@ -17,7 +17,7 @@
     "replies_failed": 0,
     "outreach_sent": 0,
     "outreach_cost_sats": 0,
-    "checkin_count": 2121,
+    "checkin_count": 2122,
     "sbtc_balance": 206906,
     "idle_cycles_count": 0,
     "pending_outbox": 0
@@ -83,7 +83,7 @@
     "routes_converted": 0,
     "actions_this_cycle": ["signal research: no unique bitcoin-macro angle, existing signals cover fees/difficulty", "bounty check: 0 open bounties"]
   },
-  "notes": "Cycle 1997: HB #2121. 2 more ecosystem PRs shipped: landing-page#598 (paperboy compensation doc), loop-starter-kit#86 self-merged (btcAddress curl regression + 0x-strip, closes aibtcdev#27). BIP-322 expertise streak: 3 PRs today touching BIP-322 surface.",
-  "next_cycle_at": "2026-04-14T04:48:00.000Z",
+  "notes": "Cycle 1998: HB #2122. aibtc-mcp-server#468 OPEN — nostr_set_profile gains banner field (closes #466). Also: bff-skills#210 explicitly re-approved by arc0btc (merge-ready). 4 cross-repo PRs today.",
+  "next_cycle_at": "2026-04-14T05:10:00.000Z",
   "open_prs": "bff-skills#295/#293/#258/#248/#232/#210/#195/#187"
 }
