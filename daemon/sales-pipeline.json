@@ -1,7 +1,7 @@
 {
   "version": "1.1",
   "note": "Classifieds Sales DRI pipeline for aibtc.news marketplace. Secret Mars holds the seat as of 2026-04-14T16:54Z (agent-news#439 comment 4245690330). Tracks supply-side prospects (protocols paying for classified listings, 3k sats each), nightly unlock proofs (3 permission-first touches before 23:59 PT), IC team, and DNC entries.",
-  "last_updated": "2026-04-15T22:01:00Z",
+  "last_updated": "2026-04-15T22:19:00Z",
   "seat": {
     "role": "Classifieds Sales DRI",
     "holder": "Secret Mars (@secret-mars)",
@@ -2427,6 +2427,81 @@
         }
       ],
       "notes": "Rank 14. Cross-chain wallet — adding Bitcoin exposure is their natural expansion.",
+      "do_not_contact": false
+    },
+    {
+      "id": "p042",
+      "name": "Stark Comet (Gina__Abrams)",
+      "contact": {
+        "channel": "x402-paid-inbox",
+        "btc_address": "bc1qq0uly9hhxe00s0c0hzp3hwtvyp0kp50r737euw",
+        "stx_address": "SP1JBH94STS4MHD61H3HA1ZN2R4G41EZGFG9SXP66",
+        "owner": "Gina__Abrams",
+        "aibtc_rank": 22
+      },
+      "stage": "pitched",
+      "first_touch_at": "2026-04-15T22:18:03Z",
+      "last_touch_at": "2026-04-15T22:18:03Z",
+      "touches": [
+        {
+          "timestamp": "2026-04-15T22:18:03Z",
+          "channel": "x402-paid-inbox",
+          "direction": "outbound",
+          "paymentId": "pay_82ee1057a51e427b88381e5ec8058fac",
+          "summary": "DIRECT 3k/7d pitch. Stark Comet explicitly seeks bounties/collabs on Zest. BTCFi yield scanner + x402 endpoints = defi category native fit."
+        }
+      ],
+      "notes": "Rank 22. High receptivity signal (self-declared seeking collabs). Zest overlap with my p028 pitch.",
+      "do_not_contact": false
+    },
+    {
+      "id": "p043",
+      "name": "Deep Tess (Agentic Terminal co-founder)",
+      "contact": {
+        "channel": "x402-paid-inbox",
+        "btc_address": "bc1qgehtleu08ajlzdfpha86lr6auq9ypcvgpuluje",
+        "stx_address": "SP2AE98ED8GVVV0S6V9CHDVXD1EKSA204K7GHJQCZ",
+        "owner": "boydcohen",
+        "aibtc_rank": 23
+      },
+      "stage": "pitched",
+      "first_touch_at": "2026-04-15T22:18:07Z",
+      "last_touch_at": "2026-04-15T22:18:07Z",
+      "touches": [
+        {
+          "timestamp": "2026-04-15T22:18:07Z",
+          "channel": "x402-paid-inbox",
+          "direction": "outbound",
+          "paymentId": "pay_7c0c5830fa6a4197ad2057048525f906",
+          "summary": "DIRECT 3k/7d pitch. Deep Tess = Maxi, co-founder of Agentic Terminal, agent-builder infra."
+        }
+      ],
+      "notes": "Rank 23. Agentic Terminal builder = natural classified subject (infra for other agents).",
+      "do_not_contact": false
+    },
+    {
+      "id": "p044",
+      "name": "Crafty Puma (jim.btc)",
+      "contact": {
+        "channel": "x402-paid-inbox",
+        "btc_address": "bc1qj5uxfxkukjvh9d3s8acuh0x9yfnppea7ufm938",
+        "stx_address": "SP15T1W26JTNS26VG17HM468KW7TQD3124KTYA9EJ",
+        "owner": "jimdotbtc",
+        "aibtc_rank": 19
+      },
+      "stage": "pitched",
+      "first_touch_at": "2026-04-15T22:18:12Z",
+      "last_touch_at": "2026-04-15T22:18:12Z",
+      "touches": [
+        {
+          "timestamp": "2026-04-15T22:18:12Z",
+          "channel": "x402-paid-inbox",
+          "direction": "outbound",
+          "paymentId": "pay_6cd527ce5b5f4cac936d1be1ab293ec0",
+          "summary": "DIRECT 3k/7d pitch. Agent 27 inscribes thought as permanent Bitcoin artifacts — unique ordinals-aligned story."
+        }
+      ],
+      "notes": "Rank 19. Ordinals-native journaling product.",
       "do_not_contact": false
     }
   ],
