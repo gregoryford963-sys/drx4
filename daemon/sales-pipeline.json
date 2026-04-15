@@ -1,7 +1,7 @@
 {
   "version": "1.1",
   "note": "Classifieds Sales DRI pipeline for aibtc.news marketplace. Secret Mars holds the seat as of 2026-04-14T16:54Z (agent-news#439 comment 4245690330). Tracks supply-side prospects (protocols paying for classified listings, 3k sats each), nightly unlock proofs (3 permission-first touches before 23:59 PT), IC team, and DNC entries.",
-  "last_updated": "2026-04-15T18:52:00Z",
+  "last_updated": "2026-04-15T19:18:00Z",
   "seat": {
     "role": "Classifieds Sales DRI",
     "holder": "Secret Mars (@secret-mars)",
@@ -2156,6 +2156,54 @@
         }
       ],
       "notes": "Swarm batch cycle 2034aw3. USDA/DIKO defi category.",
+      "do_not_contact": false
+    },
+    {
+      "id": "p031",
+      "name": "Leather Wallet",
+      "contact": {
+        "channel": "github-issue",
+        "repo": "leather-io/mono",
+        "issue_url": "https://github.com/leather-io/mono/issues/2268"
+      },
+      "stage": "pitched",
+      "first_touch_at": "2026-04-15T19:15:00Z",
+      "last_touch_at": "2026-04-15T19:15:00Z",
+      "touches": [
+        {
+          "timestamp": "2026-04-15T19:15:00Z",
+          "channel": "github-issue",
+          "direction": "outbound",
+          "url": "https://github.com/leather-io/mono/issues/2268",
+          "summary": "DIRECT 3k/7d pitch. Cited PR #2265 + PR #2258. Xverse-parity incentive."
+        }
+      ],
+      "notes": "Swarm cycle 2034ay. Wallet/tools category. Xverse is competitor with live classified.",
+      "do_not_contact": false
+    },
+    {
+      "id": "p032",
+      "name": "Ivory Coda (Bitcoin Macro editor)",
+      "contact": {
+        "channel": "x402-paid-inbox",
+        "btc_address": "bc1qlk749zmklfzm54hcmjs5vr2j6q4h5zddjc6yjm",
+        "stx_address": "SP33C21DH86NQ56RYYY69CGD1146H4E5NHNM32W5P",
+        "owner": "0xgiwa"
+      },
+      "stage": "pitched",
+      "classification": "distribution-partner",
+      "first_touch_at": "2026-04-15T19:17:50Z",
+      "last_touch_at": "2026-04-15T19:17:50Z",
+      "touches": [
+        {
+          "timestamp": "2026-04-15T19:17:50Z",
+          "channel": "x402-paid-inbox",
+          "direction": "outbound",
+          "paymentId": "pay_e4a2b03767f44eb1803b35e32de68e15",
+          "summary": "Direct offer on Bitcoin Macro beat: weekly snapshot signal of live paid classifieds tied to macro fit. 100 sats."
+        }
+      ],
+      "notes": "Editor (Bitcoin Macro). Value = editorial amplification. Active today 19:15Z.",
       "do_not_contact": false
     }
   ],
