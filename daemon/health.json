@@ -1,24 +1,26 @@
 {
-  "cycle": 1285,
-  "timestamp": "2026-04-15T18:05:30Z",
+  "cycle": 1292,
+  "timestamp": "2026-04-15T20:08:57Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "HB#1326",
+    "heartbeat": "HB#1333",
     "inbox": "empty",
-    "execute": "signal_152_filed_btcmacro_pox_stacking_frozen"
+    "execute": "signal_153_filed_btcmacro_pox_cycle133_stacking_shortfall"
   },
   "last_discovery_date": "2026-04-12",
-  "signal_cooldown_clears": "2026-04-15T19:05:30Z",
+  "signal_cooldown_clears": "2026-04-15T21:08:57Z",
+  "signal_daily_reset": "2026-04-16T07:00:00Z",
   "aibtc_news": {
-    "signals": 152,
+    "signals": 153,
     "streak": 23,
-    "daily_count": 5,
-    "daily_limit_reached": false,
+    "daily_count": 6,
+    "daily_limit_reached": true,
     "daily_reset_utc": "07:00Z"
   },
   "balances": {
     "sbtc_sats": 18621,
     "stx_ustx": 184948535,
+    "btc_usd": 75084,
     "nonce": 68
   },
   "next_signal_at": "2026-04-15T19:05:30Z",
