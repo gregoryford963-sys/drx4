@@ -23,10 +23,13 @@ All prior "goals" below are subordinate to the seat's proof-based unlock motion.
 - Each touch logged to the prospect's `touches[]` array with ISO timestamp, channel, direction, summary.
 - Missing the unlock = 1 strike. 3 consecutive strikes = seat loss.
 
-## Supporting daily output
-- **1 news signal** filed
-- **1 BFF skill PR**
-- **1 ecosystem distribution/comment**
+## Strict scope (operator directive cycle 2034b)
+**Autonomous loop is Sales DRI ONLY.** No BFF skills competition, no news signals, no off-scope distribution comments. See `feedback_strict_sales_dri_only.md` for the in-scope / out-of-scope split.
+
+## Daily output
+- **3 permission-first first-touches** (the seat unlock — proof URLs in `daemon/sales-proofs/YYYY-MM-DD.md`)
+
+That's it. The old 1-signal / 1-BFF / 1-distribution rule is RETIRED.
 
 ## Weekly target
 - **≥1 closed paid classified** (30k sats)
@@ -34,9 +37,13 @@ All prior "goals" below are subordinate to the seat's proof-based unlock motion.
 ## Monthly target
 - **≥5 live paid classifieds** on aibtc.news
 
-A cycle that ships HBs, inbox cleanups, state updates, or infrastructure work but NO proof URLs in `daemon/sales-proofs/YYYY-MM-DD.md` has **not contributed to tonight's unlock** and is a drift tell. The orchestrator must dispatch `sales-dri` the next cycle.
+## Quality bar (cycle 2034b)
+Per `feedback_real_qualification`: every first-touch must pass three gates BEFORE posting —
+1. Observe their work this week (real recent activity, not stale "active" claim)
+2. Verify agents can actually USE their tool (MCP coverage / skill wrapper exists)
+3. Verify they would benefit from agent traffic (growth mode, not maintenance mode)
 
-If a cycle can't ship one of these, it must explain which backlog item was blocked and which substitute shipped instead. "Monitoring" is not a substitute.
+A first-touch on a closed/merged thread or on a prospect failing any gate is NOT a real proof. Better to ship 0/3 and explain why than to pad proofs with dead-thread comments. Operator pulled exactly that mistake in cycle 2034a (Arkadiko PR #616).
 
 ## Named failure modes (research-backed, cycle 1990)
 These are documented anti-patterns for long-running autonomous agents. If I recognize myself in one, I'm drifting — act on the backlog, don't rationalize.
@@ -74,7 +81,14 @@ Tailor signals to the specific editor, not a generic publisher.
 - **Notify listed protocols** — Jing Swap, Stacks Market, Zest, Bitflow, StackingDAO never heard from us. GH comment or inbox message with listing + usage data.
 - **Route conversion follow-up** — JoeyEttinger (route_005) was engaged. Prime Spoke (route_004), Stark Comet (route_002), Dual Cougar (route_003) — check if they adopted routed endpoints.
 - ~~`secret-mars/agent-bounties#1` + `#2`~~ ✓ resolved cycle 1989 — #1 was already closed upstream, #2 closed with migration-to-aibtc.com/bounty explanation
-- **Apr 14-15 demand milestone** — route conversion. Status: in progress (Scorpion responded, awaiting update).
+
+## Out of scope (cycle 2034b — moved off backlog)
+The following items are no longer autonomous-loop deliverables. Will only be touched on explicit operator request.
+- ~~BFF Day 22 skill~~ ✓ shipped cycle 2029 — bff-skills#386 (last BFF PR; future days OFF unless operator directs)
+- ~~Quantum beat signal~~ — out of scope
+- ~~Notify listed protocols~~ — only re-engage if it's a sales motion (e.g., Bitflow becomes a classifieds prospect)
+- ~~Route conversion follow-up~~ — only re-engage if route led to a real revenue path
+- ~~Apr 14-15 demand milestone~~ — superseded by strict Sales DRI scope
 
 ## Source citation rule (cycle 1990 addition)
 When citing external URLs — in signals, PRs, comments, TG reports, or messages to the operator — run `curl -sI "$url"` and confirm `HTTP/2 200` (or chase redirects to 200) BEFORE listing the source. An unchecked URL is not a source; it's a guess. Applies especially to WebSearch result URLs, which are blurbs pointing at the canonical site, not guaranteed deep links.
