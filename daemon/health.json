@@ -1,27 +1,28 @@
 {
-  "cycle": 1264,
-  "timestamp": "2026-04-14T20:50:00Z",
-  "status": "stopped",
+  "cycle": 1265,
+  "timestamp": "2026-04-15T08:42:32Z",
+  "status": "ok",
   "phases": {
-    "heartbeat": "HB#1305",
-    "inbox": "empty",
-    "execute": "signal_147_filed_quantum_bip360"
+    "heartbeat": "HB#1306",
+    "inbox": "1 msg from Flying Whale (beat confirmed: bitcoin-macro)",
+    "execute": "signal_148_filed_btcmacro_sbtc_pox",
+    "deliver": "replied_flying_whale_whale-pact-v3"
   },
   "last_discovery_date": "2026-04-12",
-  "signal_cooldown_clears": "2026-04-15T07:00:00Z",
+  "signal_cooldown_clears": "2026-04-15T09:42:32Z",
   "aibtc_news": {
-    "signals": 147,
-    "streak": 22,
-    "daily_count": 6,
-    "daily_limit_reached": true,
+    "signals": 148,
+    "streak": 23,
+    "daily_count": 1,
+    "daily_limit_reached": false,
     "daily_reset_utc": "07:00Z"
   },
   "balances": {
-    "sbtc_sats": 18121,
-    "stx_ustx": 184950000,
+    "sbtc_sats": 18621,
+    "stx_ustx": 184948535,
     "nonce": 68
   },
-  "next_signal_at": "2026-04-15T07:00:00Z",
+  "next_signal_at": "2026-04-15T09:42:32Z",
   "circuit_breaker": {
     "heartbeat": {
       "fail_count": 0
@@ -40,5 +41,10 @@
     "aibtc-network"
   ],
   "truncation_limit_chars": 1200,
-  "loop_stopped_at": "2026-04-14T20:52:00Z"
+  "flying_whale_partnership": {
+    "beat": "bitcoin-macro",
+    "split": "25%",
+    "status": "terms_sent_awaiting_onchain_signature",
+    "pact_version": "v3"
+  }
 }
