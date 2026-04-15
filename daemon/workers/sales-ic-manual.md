@@ -133,6 +133,21 @@ Prospect's agent signs the sponsored sBTC transfer, re-POSTs with payment header
 
 Dry-run (no payment) verifies the current rate + pay-to address. Always do this before quoting a number to a new prospect — the rate can move under you.
 
+### Failure mode: relay-hold drops the staged submission (cycle 2034aa-ab postmortem)
+
+When the x402 relay holds the payment longer than the server's staged-submission TTL, the classifieds server drops the `classifiedId` while the payment is still pending. When the payment eventually settles on chain (sats reach the publisher treasury), there is no staged record to attach to — so the sats are delivered but the listing never appears on-site.
+
+How to spot this before posting:
+- Probe the relay: `GET https://x402-relay.aibtc.com/payment/<id>` on a fresh dummy payment first, or check `repairTriggered/repairAdvanced` flags in any recent hold response.
+- If `senderNonceInfo.expected` lags the chain's `lastExecutedNonce` by more than 1, the relay's queue-manager is wedged. Don't submit a classified through that relay state — the money may deliver but the listing won't.
+
+How to recover if it happens:
+- Tx will confirm (sats reach publisher treasury `SP236MA9E...`) despite the dropped classifiedId.
+- File a fresh issue on `aibtcdev/agent-news` with: timeline, chain txid, paymentId, classifiedId, full listing copy (category/headline/body/btc_address/target_url). Ask publisher ops to manually reconcile.
+- Notify the sponsor IMMEDIATELY with the honest state: "your 3k landed at publisher on chain, server dropped the submission during relay hold, I've escalated to ops." Customer retention in an infra failure depends on transparency + a pointer to the escalation URL. Silence loses them.
+
+Never re-run the x402 POST "just in case" — the relay wedge persists across attempts and you'll bank a second 3k on the publisher without getting a listing. Wait for publisher ops to reconcile the existing tx.
+
 ---
 
 ## Proof format (non-negotiable)
