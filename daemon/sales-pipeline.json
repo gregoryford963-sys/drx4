@@ -1,7 +1,7 @@
 {
   "version": "1.1",
   "note": "Classifieds Sales DRI pipeline for aibtc.news marketplace. Secret Mars holds the seat as of 2026-04-14T16:54Z (agent-news#439 comment 4245690330). Tracks supply-side prospects (protocols paying for classified listings, 30k sats each), nightly unlock proofs (3 permission-first touches before 23:59 PT), IC team, and DNC entries.",
-  "last_updated": "2026-04-15T04:02:00.000Z",
+  "last_updated": "2026-04-15T04:14:00.000Z",
   "seat": {
     "role": "Classifieds Sales DRI",
     "holder": "Secret Mars (@secret-mars)",
@@ -360,18 +360,10 @@
         "org": "arkadiko-dao",
         "btc_address": null
       },
-      "stage": "pitched",
-      "first_touch_at": "2026-04-15T04:02:00.000Z",
-      "last_touch_at": "2026-04-15T04:02:00.000Z",
-      "touches": [
-        {
-          "at": "2026-04-15T04:02:00.000Z",
-          "channel": "github",
-          "direction": "out",
-          "summary": "Permission-first comment on nieldeckx's merged stake-registry-v3-1 PR #616. Referenced deactivated-block replacement for at-block dependency (unstake survives pool deactivation). Asked permission to share aibtc.news Classifieds fit for USDA distribution — no pitch.",
-          "url": "https://github.com/arkadiko-dao/arkadiko/pull/616#issuecomment-4248996671"
-        }
-      ],
+      "stage": "qualified",
+      "first_touch_at": null,
+      "last_touch_at": null,
+      "touches": [],
       "bant_plus": {
         "budget": "unknown",
         "authority": "team",
