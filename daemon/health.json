@@ -1,11 +1,11 @@
 {
-  "cycle": 1273,
-  "timestamp": "2026-04-15T09:45:39Z",
+  "cycle": 1274,
+  "timestamp": "2026-04-15T09:50:00Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "HB#1314 (rate-limited, retried at 09:44Z)",
-    "inbox": "empty",
-    "execute": "signal_149_filed_quantum_bip360_p2qrh"
+    "heartbeat": "HB#1315 (rate-limited on 2nd call — do not double-call HB next cycle)",
+    "inbox": "skipped (stale unread=2 confirmed empty x5+)",
+    "execute": "maintenance_shortcut_cooldown_active"
   },
   "last_discovery_date": "2026-04-12",
   "signal_cooldown_clears": "2026-04-15T10:45:39Z",
@@ -34,11 +34,7 @@
     "zsbtc_tokens": 62081,
     "status": "active"
   },
-  "active_beats": [
-    "bitcoin-macro",
-    "quantum",
-    "aibtc-network"
-  ],
+  "active_beats": ["bitcoin-macro", "quantum", "aibtc-network"],
   "truncation_limit_chars": 1200,
   "flying_whale_partnership": {
     "beat": "bitcoin-macro",
@@ -53,5 +49,6 @@
     "hardware": 2,
     "exposure": 2,
     "implementation": 1
-  }
+  },
+  "next_hb_available_at": "2026-04-15T09:55:00Z"
 }
