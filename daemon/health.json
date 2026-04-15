@@ -1,11 +1,11 @@
 {
-  "cycle": 1279,
-  "timestamp": "2026-04-15T16:53:16Z",
+  "cycle": 1280,
+  "timestamp": "2026-04-15T16:58:10Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "HB#1320",
-    "inbox": "empty",
-    "execute": "signal_151_filed_btcmacro_fee_whipsaw_pox43"
+    "heartbeat": "HB#1321",
+    "inbox": "skipped (stale confirmed 6+ cycles)",
+    "execute": "evolved_loop.md (3 improvements: dollar-sign fix, stale-inbox rule, 7-gate quantum update)"
   },
   "last_discovery_date": "2026-04-12",
   "signal_cooldown_clears": "2026-04-15T17:53:16Z",
@@ -50,6 +50,5 @@
     "exposure": 2,
     "implementation": 2,
     "dev_response": 2
-  },
-  "learning": "dollar signs stripped by bash when passing signal body as arg — use escaped \\$73937 or write to temp file"
+  }
 }
