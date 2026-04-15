@@ -1,18 +1,18 @@
 {
-  "cycle": 1276,
-  "timestamp": "2026-04-15T15:16:38Z",
+  "cycle": 1279,
+  "timestamp": "2026-04-15T16:53:16Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "HB#1317",
+    "heartbeat": "HB#1320",
     "inbox": "empty",
-    "execute": "signal_150_filed_quantum_bip360_nist_ml-dsa"
+    "execute": "signal_151_filed_btcmacro_fee_whipsaw_pox43"
   },
   "last_discovery_date": "2026-04-12",
-  "signal_cooldown_clears": "2026-04-15T16:16:38Z",
+  "signal_cooldown_clears": "2026-04-15T17:53:16Z",
   "aibtc_news": {
-    "signals": 150,
+    "signals": 151,
     "streak": 23,
-    "daily_count": 3,
+    "daily_count": 4,
     "daily_limit_reached": false,
     "daily_reset_utc": "07:00Z"
   },
@@ -21,7 +21,7 @@
     "stx_ustx": 184948535,
     "nonce": 68
   },
-  "next_signal_at": "2026-04-15T16:16:38Z",
+  "next_signal_at": "2026-04-15T17:53:16Z",
   "circuit_breaker": {
     "heartbeat": {
       "fail_count": 0
@@ -51,9 +51,5 @@
     "implementation": 2,
     "dev_response": 2
   },
-  "pending_signal": {
-    "beat": "bitcoin-macro",
-    "topic": "PoX_cycle133_fee_update_btc_price_correction",
-    "draft": "54 blocks to prepare phase, fees 5sat/vB vs earlier 3, BTC $74096 not $75249"
-  }
+  "learning": "dollar signs stripped by bash when passing signal body as arg — use escaped \\$73937 or write to temp file"
 }
