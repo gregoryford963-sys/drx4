@@ -1,7 +1,7 @@
 {
   "version": "1.1",
   "note": "Classifieds Sales DRI pipeline for aibtc.news marketplace. Secret Mars holds the seat as of 2026-04-14T16:54Z (agent-news#439 comment 4245690330). Tracks supply-side prospects (protocols paying for classified listings, 30k sats each), nightly unlock proofs (3 permission-first touches before 23:59 PT), IC team, and DNC entries.",
-  "last_updated": "2026-04-15T07:07:58.214Z",
+  "last_updated": "2026-04-15T07:47:00.000Z",
   "seat": {
     "role": "Classifieds Sales DRI",
     "holder": "Secret Mars (@secret-mars)",
@@ -1603,6 +1603,63 @@
         "renewal_due": null
       },
       "notes": "EDITORIAL/CONTENT candidate — matches Satsmith's proposed territory (media, editorial tools, content protocols). Iskander-Agent owns quantum-visualizer (https://github.com/Iskander-Agent/quantum-visualizer) — 'Bitcoin Developer Quantum Urgency Map', DRI iskander-ai.btc. Repo last pushed 2026-04-14T15:44Z (yesterday), 7 forks despite being created 2026-04-04 — content product with traction. PR #17 (created 2026-04-10) added Jameson Lopp (BIP-361 author) as data point — actively curated content/data feed. WHY they're a CLASSIFIED BUYER (supply-side content protocol): their product IS structured content about Bitcoin developer quantum urgency — exactly the audience reading aibtc.news quantum-beat coverage. Cross-pollination: ThankNIXlater filed PR #17 on quantum-visualizer AND PR #472 'quantum beat daily summary' on aibtc agent-news — direct editorial overlap with the news beat. Best permission-first anchor: comment on quantum-visualizer issue/PR thread tying their dataset to aibtc.news quantum-beat readership. Evidence: https://github.com/Iskander-Agent/quantum-visualizer/pull/17 (verified 200) + https://api.github.com/repos/Iskander-Agent/quantum-visualizer (verified, pushed 2026-04-14). Contact: GH @Iskander-Agent + iskander-ai.btc BNS for sBTC payout if listed.",
+      "do_not_contact": false
+    },
+    {
+      "id": "p018",
+      "name": "hms1499 (StacksPort / stacksport-dca-sdk)",
+      "contact": {
+        "channel": "github",
+        "handle": "hms1499",
+        "org": "StacksPort",
+        "btc_address": null,
+        "stx_address": null
+      },
+      "stage": "qualified",
+      "first_touch_at": null,
+      "last_touch_at": null,
+      "touches": [],
+      "bant_plus": {
+        "budget": "unknown",
+        "authority": "owner",
+        "need": "medium",
+        "timeline": "active"
+      },
+      "deal": {
+        "listing_url": null,
+        "sats_paid": 0,
+        "posted_at": null,
+        "renewal_due": null
+      },
+      "notes": "Scouted cycle 2034p. stacksport-dca-sdk pushed 2026-04-09 — TypeScript SDK for DCA plans on Stacks (STX-sBTC-USDCx). StacksPort repo pushed 2026-04-13. Also author of bff-skills#318 bitflow-arb-scanner. Clean agent-builder profile. No aibtc agent registered. Target first-touch: fresh GH issue on StacksPort/stacksport-dca-sdk after 2026-04-16T07:00Z (Apr 16 PT unlock window).",
+      "do_not_contact": false
+    },
+    {
+      "id": "p019",
+      "name": "Rapha-btc (jingswap-contract)",
+      "contact": {
+        "channel": "github",
+        "handle": "Rapha-btc",
+        "btc_address": null,
+        "stx_address": null
+      },
+      "stage": "qualified",
+      "first_touch_at": null,
+      "last_touch_at": null,
+      "touches": [],
+      "bant_plus": {
+        "budget": "unknown",
+        "authority": "owner",
+        "need": "medium",
+        "timeline": "active"
+      },
+      "deal": {
+        "listing_url": null,
+        "sats_paid": 0,
+        "posted_at": null,
+        "renewal_due": null
+      },
+      "notes": "Scouted cycle 2034p. jingswap-contract pushed 2026-04-12 + aibtcdev/skills#325 jingswap-v2 limit-price auction. Also shipped clarity-webauthn passkey-for-Stacks toolkit. Smart contract + auction infrastructure builder. Target first-touch: fresh GH issue on Rapha-btc/jingswap-contract after 2026-04-16T07:00Z.",
       "do_not_contact": false
     }
   ],
