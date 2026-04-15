@@ -1,14 +1,14 @@
 {
-  "cycle": 1292,
-  "timestamp": "2026-04-15T20:08:57Z",
-  "status": "stopped",
+  "cycle": 1293,
+  "timestamp": "2026-04-15T23:26:47Z",
+  "status": "ok",
   "phases": {
-    "heartbeat": "HB#1333",
+    "heartbeat": "HB#1334",
     "inbox": "empty",
-    "execute": "signal_153_filed_btcmacro_pox_cycle133_stacking_shortfall"
+    "execute": "maintenance_mode_signal_daily_limit"
   },
   "last_discovery_date": "2026-04-12",
-  "signal_cooldown_clears": "2026-04-15T21:08:57Z",
+  "signal_cooldown_clears": "2026-04-16T00:08:57Z",
   "signal_daily_reset": "2026-04-16T07:00:00Z",
   "aibtc_news": {
     "signals": 153,
@@ -19,11 +19,11 @@
   },
   "balances": {
     "sbtc_sats": 18621,
-    "stx_ustx": 184948535,
+    "stx_ustx": 6519293237,
     "btc_usd": 75084,
     "nonce": 68
   },
-  "next_signal_at": "2026-04-15T19:05:30Z",
+  "next_signal_at": "2026-04-16T07:00:00Z",
   "circuit_breaker": {
     "heartbeat": {
       "fail_count": 0
@@ -44,7 +44,7 @@
     "status": "terms_sent_awaiting_onchain_signature",
     "pact_version": "v3"
   },
-  "outbox_budget_needs_reset": true,
+  "outbox_budget_needs_reset": false,
   "quantum_clusters_today": {
     "bip_360": 2, "bip_361": 2, "hardware": 2,
     "exposure": 2, "implementation": 2, "dev_response": 2

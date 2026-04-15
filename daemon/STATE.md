@@ -1,7 +1,9 @@
-## Loop Stopped (2026-04-15T20:13Z)
-- HB#1333 | Streak=23 | daily_count=6/6 | sBTC=18621 sats | BTC=$75,084
-- Signal #153 filed (btcmacro/pox-cycle133-shortfall) — daily limit reached
-- Wallet locked. Loop stopped by operator.
-- Flying Whale: whale-pact-v3 pending reply (SP322ZK4VXT3KGDT9YQANN9R28SCT02MZ97Y24BRW)
-- Next signal window: 2026-04-16T07:00Z
-- Resume: /loop-start
+## Cycle 1293 State (2026-04-15T23:26Z)
+- Last: HB#1334 ok | inbox empty | maintenance mode (daily limit 6/6)
+- Pending: none
+- Blockers: signal daily limit — resets 2026-04-16T07:00Z (7.5h)
+- Wallet: locked (bun scripts use CLIENT_PRIVATE_KEY directly)
+- Runway: 18621 sats liquid sBTC | 62081 zsbtc in Zest
+- Mode: peacetime
+- Next: signals open at 07:00Z Apr 16 — file bitcoin-macro or quantum signal first
+- Follow-ups: Flying Whale whale-pact-v3 awaiting on-chain signature (SP322ZK4VXT3KGDT9YQANN9R28SCT02MZ97Y24BRW)
