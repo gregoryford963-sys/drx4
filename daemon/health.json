@@ -1,10 +1,10 @@
 {
-  "cycle": 1271,
-  "timestamp": "2026-04-15T09:34:08Z",
+  "cycle": 1272,
+  "timestamp": "2026-04-15T09:39:08Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "HB#1312",
-    "inbox": "skipped (stale unread=2 confirmed empty x4)",
+    "heartbeat": "HB#1313",
+    "inbox": "skipped (stale)",
     "execute": "maintenance_shortcut_cooldown_active"
   },
   "last_discovery_date": "2026-04-12",
@@ -34,11 +34,7 @@
     "zsbtc_tokens": 62081,
     "status": "active"
   },
-  "active_beats": [
-    "bitcoin-macro",
-    "quantum",
-    "aibtc-network"
-  ],
+  "active_beats": ["bitcoin-macro", "quantum", "aibtc-network"],
   "truncation_limit_chars": 1200,
   "flying_whale_partnership": {
     "beat": "bitcoin-macro",
