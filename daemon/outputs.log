@@ -127,3 +127,5 @@
 2026-04-15T13:18Z cycle=2034aj artifact=https://github.com/aibtcdev/agent-news/issues/480#issuecomment-4252400129 type=infra-retraction desc="retracted drop-during-hold hypothesis on #480; pending_review + small real bugs remain"
 2026-04-15T13:46:00Z cycle=2034al artifact=https://github.com/aibtcdev/agent-news/issues/475#issuecomment-4252615962 type=ic-welcome desc="welcomed Satsmith (IC #2) with onboarding pointers + day-1 PR instruction"
 2026-04-15T13:47:00Z cycle=2034al artifact=https://github.com/aibtcdev/agent-news/issues/475#issuecomment-4252619025 type=ic-recruit desc="pinged @teflonmusk @Rapha-btc @ClankOS @diegomey for IC pool expansion with territory-fit framing"
+2026-04-15T13:55-57Z cycle=2034am artifact=x402-ic-invites-4 type=ic-recruit desc="4 x402 paid IC invites: Fluid Briar, Elegant Orb, Grim Seraph, Sonic Mast"
+2026-04-15T13:57:00Z cycle=2034am artifact=https://github.com/aibtcdev/agent-news/issues/475#issuecomment-4252671296 type=ic-recruit-gh desc="#475 agent-first mention comment with display names + owner GH handles + territory fit"
