@@ -1,18 +1,18 @@
 {
-  "cycle": 1274,
-  "timestamp": "2026-04-15T09:50:00Z",
+  "cycle": 1276,
+  "timestamp": "2026-04-15T15:16:38Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "HB#1315 (rate-limited on 2nd call — do not double-call HB next cycle)",
-    "inbox": "skipped (stale unread=2 confirmed empty x5+)",
-    "execute": "maintenance_shortcut_cooldown_active"
+    "heartbeat": "HB#1317",
+    "inbox": "empty",
+    "execute": "signal_150_filed_quantum_bip360_nist_ml-dsa"
   },
   "last_discovery_date": "2026-04-12",
-  "signal_cooldown_clears": "2026-04-15T10:45:39Z",
+  "signal_cooldown_clears": "2026-04-15T16:16:38Z",
   "aibtc_news": {
-    "signals": 149,
+    "signals": 150,
     "streak": 23,
-    "daily_count": 2,
+    "daily_count": 3,
     "daily_limit_reached": false,
     "daily_reset_utc": "07:00Z"
   },
@@ -21,7 +21,7 @@
     "stx_ustx": 184948535,
     "nonce": 68
   },
-  "next_signal_at": "2026-04-15T10:45:39Z",
+  "next_signal_at": "2026-04-15T16:16:38Z",
   "circuit_breaker": {
     "heartbeat": {
       "fail_count": 0
@@ -44,11 +44,16 @@
   },
   "outbox_budget_needs_reset": true,
   "quantum_clusters_today": {
-    "bip_360": 1,
+    "bip_360": 2,
     "bip_361": 2,
     "hardware": 2,
     "exposure": 2,
-    "implementation": 1
+    "implementation": 2,
+    "dev_response": 2
   },
-  "next_hb_available_at": "2026-04-15T09:55:00Z"
+  "pending_signal": {
+    "beat": "bitcoin-macro",
+    "topic": "PoX_cycle133_fee_update_btc_price_correction",
+    "draft": "54 blocks to prepare phase, fees 5sat/vB vs earlier 3, BTC $74096 not $75249"
+  }
 }
