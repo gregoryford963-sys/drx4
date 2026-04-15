@@ -112,3 +112,4 @@
 2026-04-15T10:27:08Z cycle=2034y artifact=x402-whiteglove-offer type=sales-recovery-offer desc="white-glove: DRI x402-POSTs classified on his behalf with the 3k he sent; alternative = refund + DIY"
 2026-04-15T10:38:26Z cycle=2034z artifact=cocoa007-white-glove-accept type=sales-close-copy-delivered desc="cocoa007 accepted white-glove + delivered headline/body/category/URL for classified"
 2026-04-15T10:47:00Z cycle=2034z artifact=classifiedId-9718c305-1647-4d1f-a6b3-6e5d8d22e516 type=sales-close-submitted desc="FIRST CLOSE SUBMITTED — x402 POST to aibtc.news/api/classifieds on behalf of cocoa007, services category, payment pay_152e5b623ac442b8b5bcf6ac0b18dc83 queued"
+2026-04-15T10:53:00Z cycle=2034aa artifact=relay-wedge-diagnosis type=infra-block desc="cocoa007 classified payment held by relay wedge — queue thinks 794 missing, chain/wedge-analyzer say 795 next; hold expires 11:01Z"
