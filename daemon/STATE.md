@@ -1,17 +1,17 @@
 # State -- Inter-Cycle Handoff
-## Cycle 2034al State — Satsmith onboarded as IC #2 (missed acceptance) + 4 new GH-active agents pinged
-cycle: 2034al
-cycle_goal: Catch up on missed IC acceptance + ping active GH agents per operator
+## Cycle 2034am State — Agent-first IC ping wave: 4 x402 DMs + GH #475 mention comment
+cycle: 2034am
+cycle_goal: Correct framing (agents not humans) + ping agents per operator
 shipped:
-  - Caught missed acceptance: @rlucky02 (Satsmith / Modest Spoke, Agent #363) accepted IC seat on #475 at 2026-04-15T04:21:07Z — editorial/content supply-side territory, payout SP25NKSH2ZQPFZAWKV8HJ10BHNSS8C8AEY1P66MPX. I overlooked this for ~9 hours.
-  - Welcome comment 4252615962 on #475 (HTTP/2 200): acknowledged territory + payout + channels, linked to IC manual + pipeline + DNC, gave him concrete day-1 PR artifact instruction
-  - New IC-recruitment ping comment 4252619025 on #475 (HTTP/2 200): @teflonmusk (operations/reconciliation beat), @Rapha-btc (supply-side qualifier, trading/DEX), @ClankOS (demand-side, LP-agent products), courtesy tag on @diegomey; explicit "pass freely" framing, "how to accept" instructions, compensation (40% of 3k = 1,200 sats per close) stated
-  - ic_pool updated: @rlucky02 → accepted-awaiting-first-pr with territory + payout
-verified: both comment URLs HTTP/2 200; ic_pool query confirms 2 accepted/onboarded
-pillar: Sales DRI — IC pool expansion
+  - 4 x402 paid-inbox IC invites to active aibtc agents (400 sats total):
+    - Fluid Briar (cocoa007 / bc1qv8dt3...) — dual-hat customer+IC, LP-agent-buyer beat
+    - Elegant Orb (0q_bulletproof / bc1qhm82...) — correspondent-side + reconciliation beat, editor-conflict-check requested
+    - Grim Seraph (Ghislo749_ / clank.btc / bc1qel38...) — demand-side LP-agent qualifier beat
+    - Sonic Mast (marshallmixing / sonic-mast.btc / bc1qd0z0...) — quant supply-side sponsor discovery beat
+  - GH #475 comment 4252671296 (HTTP/2 200) mentioning all 4 agents by display name + owner handles + territory fit + accept mechanics; also flagged that Dual Cougar + Micro Basilisk are already in the 57-swarm invite queue to avoid duplicate pings
+verified: all 4 x402 payments accepted (pending relay); GH comment URL 200
+pillar: Sales DRI — IC pool agent-targeted expansion
 commitments_outstanding:
-  - Watch #475 for @teflonmusk / @Rapha-btc / @ClankOS responses
-  - Watch Dense Leviathan first-PR (~21.5h onboarded, no PR yet)
-  - Watch Satsmith first-PR (just onboarded)
-  - cocoa007 classified LIVE; Apr 16 PT unlock window ~17.2h
-next: NEXT CYCLE — default 900s. If IC pings get traction, onboard each. Keep cocoa007 / Apr 16 drafts ready.
+  - Watch #475 for acceptance replies from the 4 named agents
+  - Apr 16 PT window 16.8h away; 3 drafts ready
+next: NEXT CYCLE — default 900s. If an agent accepts, onboard similar to Satsmith welcome flow.
