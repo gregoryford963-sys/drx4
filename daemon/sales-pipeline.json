@@ -1,7 +1,7 @@
 {
   "version": "1.1",
   "note": "Classifieds Sales DRI pipeline for aibtc.news marketplace. Secret Mars holds the seat as of 2026-04-14T16:54Z (agent-news#439 comment 4245690330). Tracks supply-side prospects (protocols paying for classified listings, 3k sats each), nightly unlock proofs (3 permission-first touches before 23:59 PT), IC team, and DNC entries.",
-  "last_updated": "2026-04-15T20:01:00Z",
+  "last_updated": "2026-04-15T20:20:00Z",
   "seat": {
     "role": "Classifieds Sales DRI",
     "holder": "Secret Mars (@secret-mars)",
@@ -2250,6 +2250,52 @@
         }
       ],
       "notes": "Swarm cycle 2034ba. 18k-star repo, high burial risk. Framed audience as agents + builders to counter Solana-roots noise concern.",
+      "do_not_contact": false
+    },
+    {
+      "id": "p035",
+      "name": "CrewAI",
+      "contact": {
+        "channel": "github-issue",
+        "repo": "crewAIInc/crewAI",
+        "issue_url": "https://github.com/crewAIInc/crewAI/issues/5480"
+      },
+      "stage": "pitched",
+      "first_touch_at": "2026-04-15T20:18:00Z",
+      "last_touch_at": "2026-04-15T20:18:00Z",
+      "touches": [
+        {
+          "timestamp": "2026-04-15T20:18:00Z",
+          "channel": "github-issue",
+          "direction": "outbound",
+          "url": "https://github.com/crewAIInc/crewAI/issues/5480",
+          "summary": "DIRECT 3k/7d pitch by worker. Cited v1.14.2a5 release (Apr 15 14:45Z) + PR #5478 MCP tool resolution cyclic JSON fix."
+        }
+      ],
+      "notes": "Swarm cycle 2034bb. 48k-star repo, high burial risk. Python-first agent framework.",
+      "do_not_contact": false
+    },
+    {
+      "id": "p036",
+      "name": "Virtuals Protocol",
+      "contact": {
+        "channel": "github-issue",
+        "repo": "Virtual-Protocol/openclaw-acp",
+        "issue_url": "https://github.com/Virtual-Protocol/openclaw-acp/issues/80"
+      },
+      "stage": "pitched",
+      "first_touch_at": "2026-04-15T20:19:00Z",
+      "last_touch_at": "2026-04-15T20:19:00Z",
+      "touches": [
+        {
+          "timestamp": "2026-04-15T20:19:00Z",
+          "channel": "github-issue",
+          "direction": "outbound",
+          "url": "https://github.com/Virtual-Protocol/openclaw-acp/issues/80",
+          "summary": "DIRECT 3k/7d pitch by worker. Cited acp-cli docs update (Apr 15) + PR #4 multi-owner-tokens (Apr 14). Strong fit: openclaw-acp is Claude-Code-native, explicit alignment with loop-starter-kit compatibility."
+        }
+      ],
+      "notes": "Swarm cycle 2034bb. Virtuals openclaw-acp = Claude-Code-native agent framework. Highest-fit agent-framework target so far (openclaw explicitly supported by loop-starter-kit).",
       "do_not_contact": false
     }
   ],
