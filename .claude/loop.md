@@ -63,11 +63,17 @@ Write the decision into `daemon/dri-active.md`.
 
 ## Phase 4 — Act (outreach + better onboarding)
 
-**Outreach — DIRECT PITCH (operator directive), channel by prospect type:**
-- Has aibtc agent (bc1q with recent activity) → **x402 paid inbox** (100 sats/send), reference their specific recent work + DIRECT 3k sats / 7-day offer in the same message
-- No agent, just a GH protocol/team → **fresh GH issue** on their main repo, title "Classifieds placement on aibtc.news — 3k sats / 7 days + audience", body = research + direct offer
-- Research happens BEFORE the pitch (3 gates: observe-this-week + can-agents-use + would-they-grow) but does NOT surface as a "mind if I share?" round-trip.
-- Permission-first is RETIRED for outbound sales per `feedback_direct_pitch`.
+**Outreach — BD-skill canonical shape (invoke `business-dev` skill for full frame):**
+
+Every first-touch follows the BD skill's Reciprocity rule: give 3x before asking 1x. Touch 1 never asks for the sale. Touch 1 delivers 3 value drops plus one SPIN discovery question.
+
+- **Has aibtc agent (bc1q with recent activity)** → **x402 paid inbox** (100 sats/send). Open with their specific recent work + 3 value drops + SPIN close question. Zero price ask in Touch 1.
+- **No agent, just a GH protocol/team** → **fresh GH issue** on their main repo, title naming the VALUE not the ask (e.g. "Agent integration cookbook for [product] v[version]"). Body = cookbook gift + 2 more value drops + single process-question. Pitch comes on Touch 3-4.
+- **Cold outreach cap: 3 new prospects per day.** Everything beyond that is follow-up, closing, or engineering-as-marketing. Violation = wasted sats.
+- **Pre-close sequence:** 1) surface a missed opportunity they care about 2) send data that saves them time or sats 3) solve a problem unrelated to your pitch 4) now propose. See pitch samples at `https://gist.github.com/secret-mars/a3a5f08578ae011aae1541a48fc5ae90`.
+- **7-touch cadence** (BD canonical): Day 0 value intro → Day 2-3 new insight → Day 5-7 social proof → Day 10 diagnostic question → Day 14 useful artifact → Day 21 direct close with cost-of-inaction → Day 30 graceful exit. No "just checking in" — every touch delivers NEW value.
+- **Unity frame** in every pitch: "we're both building on Bitcoin" or equivalent shared identity.
+- Permission-first is RETIRED for outbound sales per `feedback_direct_pitch`, but **value-first is mandatory** per BD skill.
 
 **Onboarding:** keep `daemon/workers/sales-ic-manual.md` + `daemon/sales-pipeline.json` + `#477` fresh enough that an IC who lands at any hour can self-serve. Friction = lost accepts.
 
@@ -116,6 +122,18 @@ Multiple workers in parallel when work is independent (swarm mode).
 - 60–270s: worker still running, paid send awaiting delivery confirm
 - 1200–3600s: explicit cooldown with known ETA
 - > 3600s: operator told me to back off
+
+## BD energy budget per cycle (canonical, from `business-dev` skill)
+
+| Activity | % BD energy | When |
+|---|---|---|
+| Close qualified deals | 30% | Always first |
+| Follow up warm prospects | 25% | After closing attempts |
+| Discovery with new qualified leads | 20% | Mid-cycle |
+| Build free tools (engineering-as-marketing) | 15% | Protected time |
+| Cold outreach + research (Phase 1.5 surveys included) | 10% | Batch, LOW PRIORITY |
+
+Cold cap: **max 3 new cold touches per day.** Everything beyond that is follow-up, closing, or free-tool work. Sends 4+ per day = waste.
 
 ## Addresses + key files
 
