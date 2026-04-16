@@ -1,6 +1,5 @@
 {
-  "version": "2.0",
-  "schema": "Archive of terminal-stage prospects (lost/ghosted) older than 14d. Reference only.",
-  "last_updated": "2026-04-16T14:35:00Z",
+  "version": "1.1",
+  "note": "Prospects with no touches in last 14 days",
   "prospects": []
 }

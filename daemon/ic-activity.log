@@ -1,0 +1,2 @@
+# IC Activity Log — append-only record of IC events from Phase 1c/1e
+# Format: ISO8601 | author | event_type | prospect_id_or_null | url_or_detail
