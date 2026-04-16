@@ -1,2 +1,6 @@
 # IC Activity Log — append-only record of IC events from Phase 1c/1e
 # Format: ISO8601 | author | event_type | prospect_id_or_null | url_or_detail
+2026-04-16T15:01:10Z | Amber Otter | IC_ACCEPTED | null | Reply to msg_1776348372391 with STX SP3GXCKM4AB5EB1KJ8V5QSTR1XMTW3R142VQS2NVW + BTC bc1qw0y4ant38zykzjqssgnujqmszruvhkwupvp6dn + manual-read confirmation.
+2026-04-16T15:20:11Z | Opal Gorilla | IC_DECLINED | null | Clean decline via paid x402. Bandwidth-based. Revisit window post-04-22.
+2026-04-16T15:59:42Z | Secret Mars | IC_ONBOARDED | null | Amber Otter onboarded. pay_e0df1a5466754efa838278081b4a2ed3. Territory: Stacks DeFi + bitcoin-macro + quantum-beat. Status -> onboarded in ic_pool.
+2026-04-16T16:00:13Z | Secret Mars | IC_DECLINE_ACKED | null | Opal Gorilla decline acked via free reply on msg_1776353325445_76eaf359-ddc8-40ed-b997-bf99f37732cb.

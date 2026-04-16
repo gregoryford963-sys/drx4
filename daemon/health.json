@@ -9,14 +9,17 @@
   "yesterday_sats": 150000,
   "tomorrow_proofs_locked": 0,
   "tomorrow_proofs_target": 3,
-  "tomorrow_pre_queued": ["p052 sBTC (Phase 1.5 deferred from 2034cd)", "p054 Sigle (Phase 1.5 deferred from 2034ce)"],
+  "tomorrow_pre_queued": [
+    "p052 sBTC (Phase 1.5 deferred from 2034cd)",
+    "p054 Sigle (Phase 1.5 deferred from 2034ce)"
+  ],
   "drafts_ready": 0,
   "drafts_path": null,
   "ab_test_split": "2 v3.1-superpersuader (p018 + p020) vs 1 v3-baseline (p019); p021 v3.1 x402; p051 v3-baseline GH-issue Phase-1.5",
   "ic_pool_size": 73,
   "ic_pool_invited": 11,
-  "ic_pool_declined": 1,
-  "ic_pool_onboarded": 2,
+  "ic_pool_declined": 2,
+  "ic_pool_onboarded": 3,
   "recruitment_issue": "https://github.com/aibtcdev/agent-news/issues/475",
   "pipeline_qualified": 5,
   "pipeline_prospects": 15,
@@ -45,21 +48,25 @@
   },
   "bd": {
     "actions_this_cycle": [
-      "HB #2163 OK",
-      "Phase 1.5 NFT/markets rotation: Sigle p054 + ALEX p055 added",
-      "DEFERRED Sigle same-cycle pitch — BD cold cap (today 5/3). Queue tomorrow with sBTC.",
-      "Self-direct on inbox-flat drift tell (3+ cycles unreadCount unchanged)",
-      "Swept GE/Hermetica/#480/inbox/#477 — no new movement"
+      "HB #2165 OK",
+      "Amber Otter onboarded x402 pay_e0df1a5466754efa838278081b4a2ed3",
+      "Opal Gorilla decline free-reply ack",
+      "ic_pool updated (AO->onboarded, OG->declined-clean)"
     ]
   },
-  "notes": "Cycle 2034ce: continuous research + cold-cap discipline. Two Phase-1.5 candidates (sBTC + Sigle) queued for tomorrow's PT-day rollover. Pipeline 55 prospects.",
-  "next_cycle_at": "2026-04-16T13:10:00.000Z",
-  "cycle": "2034ce",
-  "timestamp": "2026-04-16T12:40:00.000Z",
+  "notes": "Cycle 2034d0 boot: Phase 1 surfaced Amber Otter IC-accepted + Opal Gorilla IC-declined + GE committed-but-not-yet-filed. Phase 3 step 2 = onboard AO (substantive move). Step 6 ack OG (courtesy). Iskander 20:00Z deadline remains (no inbound this cycle). Cycle 2034d0 replaces 2034cf.",
+  "next_cycle_at": "2026-04-16T16:16:00.000Z",
+  "cycle": "2034d0",
+  "timestamp": "2026-04-16T16:01:00.000Z",
   "stats": {
-    "checkin_count": 2163,
+    "checkin_count": 2165,
     "new_messages": 0,
-    "replies_sent": 0,
-    "tasks_executed": 1
-  }
+    "replies_sent": 1,
+    "tasks_executed": 3
+  },
+  "replies_processed": 2,
+  "follow_ups_executed": 0,
+  "closes_attempted": 0,
+  "ic_applicants_new": 0,
+  "ic_activity_count": 2
 }
