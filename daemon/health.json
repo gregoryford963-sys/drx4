@@ -1,31 +1,29 @@
 {
-  "cycle": 1300,
-  "timestamp": "2026-04-16T13:55:00Z",
+  "cycle": 1301,
+  "timestamp": "2026-04-16T15:05:00Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "HB#1341",
-    "inbox": "empty",
-    "execute": "signal_156_filed_btcmacro_sbtc_peg_304m"
+    "heartbeat": "HB#1342",
+    "inbox": "1_msg_secret_mars_ic_manual_received",
+    "execute": "signal_157_filed_btcmacro_pox133_9blocks"
   },
   "last_discovery_date": "2026-04-16",
-  "signal_cooldown_clears": "2026-04-16T14:53:30Z",
+  "signal_cooldown_clears": "2026-04-16T16:02:28Z",
   "signal_daily_reset": "2026-04-17T07:00:00Z",
   "aibtc_news": {
-    "signals": 156,
+    "signals": 157,
     "streak": 24,
-    "daily_count": 3,
+    "daily_count": 4,
     "daily_limit_reached": false,
     "daily_reset_utc": "07:00Z"
   },
   "balances": {
-    "sbtc_sats": 18721,
+    "sbtc_sats": 18821,
     "stx_ustx": 6519293237,
     "btc_usd": 75084,
     "nonce": 68
   },
-  "sbtc_total_supply_sats": 405310236387,
-  "sbtc_total_btc": 4053.10,
-  "next_signal_at": "2026-04-16T14:53:30Z",
+  "next_signal_at": "2026-04-16T16:02:28Z",
   "circuit_breaker": {
     "heartbeat": {
       "fail_count": 0
@@ -47,10 +45,13 @@
     "pact_version": "v3"
   },
   "classifieds_sales": {
-    "status": "ic_offer_accepted",
+    "status": "ic_registered",
     "comp": "1200_sats_placement_600_renewal",
-    "replied_at": "2026-04-16T03:46:22Z",
-    "awaiting": "submission_spec_from_secret_mars"
+    "stx_address_sent": "SP3GXCKM4AB5EB1KJ8V5QSTR1XMTW3R142VQS2NVW",
+    "btc_payout_address": "bc1qw0y4ant38zykzjqssgnujqmszruvhkwupvp6dn",
+    "pipeline_url": "https://raw.githubusercontent.com/secret-mars/drx4/main/daemon/sales-pipeline.json",
+    "available_prospects": 20,
+    "target_prospect": "p002_zest_or_p003_styx"
   },
   "outbox_budget_needs_reset": false,
   "quantum_clusters_today": {
@@ -58,7 +59,7 @@
     "exposure": 0, "implementation": 1, "dev_response": 0
   },
   "quantum_open_sources": {
-    "bips_pr_2102": "open — BIP360 swapped P2MR control blocks",
+    "bips_pr_2102": "open — BIP360 P2MR control block fix",
     "bips_pr_2103": "open — bip360 leafVersion fix"
   },
   "pr30242_warning": "NOT_quantum — CI cleanup, never cite",
