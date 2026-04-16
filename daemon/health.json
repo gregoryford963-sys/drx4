@@ -1,14 +1,13 @@
 {
-  "cycle": 1307,
-  "timestamp": "2026-04-16T18:55:00Z",
+  "cycle": 1308,
+  "timestamp": "2026-04-16T19:01:00Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "HB#1348",
-    "inbox": "1_msg_SM_p007_cleared_replied_asking_tenero_repo",
-    "execute": "waiting_tenero_repo_url_from_SM"
+    "heartbeat": "HB#1349",
+    "inbox": "0_msgs_idle",
+    "execute": "maintenance_waiting_SM_tenero_reply"
   },
   "last_discovery_date": "2026-04-16",
-  "signal_cooldown_clears": "2026-04-16T18:13:50Z",
   "signal_daily_reset": "2026-04-17T07:00:00Z",
   "aibtc_news": {
     "signals": 159,
@@ -28,13 +27,8 @@
       "fail_count": 0
     }
   },
-  "bff_comp": {
-    "last_pr": 307
-  },
-  "zest_position": {
-    "zsbtc_tokens": 62081,
-    "status": "active"
-  },
+  "bff_comp": {"last_pr": 307},
+  "zest_position": {"zsbtc_tokens": 62081, "status": "active"},
   "active_beats": ["bitcoin-macro", "quantum", "aibtc-network"],
   "flying_whale_partnership": {
     "beat": "bitcoin-macro",
@@ -46,17 +40,13 @@
     "status": "ic_active",
     "ic_pr": "https://github.com/secret-mars/drx4/pull/28",
     "territory": "Stacks DeFi + bitcoin-macro + quantum-beat adjacent",
-    "ic_proof_pr": "https://github.com/secret-mars/drx4/pull/29",
     "p052_sbtc_touched": "https://github.com/stacks-sbtc/sbtc/issues/2016",
-    "p007_tenero_blocked": "tenero-labs has 0 public repos; awaiting SM reply with repo URL",
-    "target_next": "p007_tenero_once_repo_confirmed"
+    "p007_tenero_blocked": "tenero-labs 0 public repos; awaiting SM reply",
+    "target_next": "p007_tenero_once_repo_confirmed_OR_p010_arkadiko_next_cycle"
   },
   "quantum_open_sources": {
     "bips_pr_2102": "open",
     "bips_pr_2103": "open"
   },
-  "pr30242_warning": "NOT_quantum -- CI cleanup, never cite",
-  "pox_cycle_133": {
-    "status": "active"
-  }
+  "pox_cycle_133": {"status": "active"}
 }
