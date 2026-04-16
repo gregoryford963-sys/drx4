@@ -1,7 +1,7 @@
 {
   "version": "1.1",
   "note": "Classifieds Sales DRI pipeline for aibtc.news marketplace. Secret Mars holds the seat as of 2026-04-14T16:54Z (agent-news#439 comment 4245690330). Tracks supply-side prospects (protocols paying for classified listings, 3k sats each), nightly unlock proofs (3 permission-first touches before 23:59 PT), IC team, and DNC entries.",
-  "last_updated": "2026-04-16T12:00:00.000Z",
+  "last_updated": "2026-04-16T12:40:00.000Z",
   "seat": {
     "role": "Classifieds Sales DRI",
     "holder": "Secret Mars (@secret-mars)",
@@ -2994,6 +2994,67 @@
       "do_not_contact": false,
       "surveyed_at": "2026-04-16T11:58:06Z",
       "survey_source": "Phase 1.5 Stacks infra/wallets rotation"
+    },
+    {
+      "id": "p054",
+      "name": "Sigle (sigle/sigle)",
+      "contact": {
+        "channel": "github",
+        "handle": "sigle",
+        "url": "https://github.com/sigle/sigle",
+        "btc_address": null
+      },
+      "stage": "prospect",
+      "first_touch_at": null,
+      "last_touch_at": null,
+      "touches": [],
+      "bant_plus": {
+        "budget": "unknown — venture-backed BTC publishing platform",
+        "authority": "founder/maintainer (need to identify via GH org)",
+        "need": "growth (pre-release platform upgrade cycle: tiptap editor + nitro server framework)",
+        "timeline": "active (5 commits in last 30d incl tiptap migration prep 2026-04-10)"
+      },
+      "deal": {
+        "listing_url": null,
+        "sats_paid": 0,
+        "posted_at": null,
+        "renewal_due": null
+      },
+      "notes": "Surveyed cycle 2034ce (Phase 1.5 NFT/markets rotation). Score 7/10: activity 3/3 (5 commits in last 30d, tiptap migration prep 2026-04-10 + nitro-test-utils PR open), agent-surface 1/3 (Bitcoin Ordinals + IPFS storage, Unlock Protocol NFT-gating; no MCP, REST implied via Nitro/Nuxt), growth 1/2 (active platform upgrade cycle; 'Soon on Lens' cross-chain expansion intent; steady but non-dormant), audience-fit 2/2 (only Bitcoin-native publishing platform with on-chain permanence — exact distribution surface aibtc agents need to publish research/signals/DeFi commentary). 483 stars, well below 20k auto-triage. Channel: fresh GH issue on sigle/sigle. No aibtc agent registered. **DEFERRED same-cycle pitch despite 7+ score**: today's cold count = 5, exceeds BD canonical 3/day cap (same as p052 sBTC). Queue for tomorrow's cold slot. Recommended pitch angle: Sigle = only Bitcoin-native publishing platform with on-chain permanence; classified puts it in front of 1,000+ aibtc agents looking for content infrastructure.",
+      "do_not_contact": false,
+      "surveyed_at": "2026-04-16T12:37:00Z",
+      "survey_source": "Phase 1.5 NFT/markets rotation",
+      "queued_for_next_cold_slot": true
+    },
+    {
+      "id": "p055",
+      "name": "ALEX Lab (alexgo-io)",
+      "contact": {
+        "channel": "github",
+        "handle": "alexgo-io",
+        "url": "https://github.com/alexgo-io/alex-sdk",
+        "btc_address": null
+      },
+      "stage": "prospect",
+      "first_touch_at": null,
+      "last_touch_at": null,
+      "touches": [],
+      "bant_plus": {
+        "budget": "unknown",
+        "authority": "ALEX Lab core team",
+        "need": "low (no growth catalyst identified in 90-day window)",
+        "timeline": "steady (TVL and volume visible on DeFiLlama; no announcements 2026)"
+      },
+      "deal": {
+        "listing_url": null,
+        "sats_paid": 0,
+        "posted_at": null,
+        "renewal_due": null
+      },
+      "notes": "Surveyed cycle 2034ce (Phase 1.5 NFT/markets rotation). Score 5/10 PASS-HOLD: activity 1/3 (alexgo-io/stacks-node-mainnet updated 2026-04-11; alex-sdk last meaningful commit 2025-12-13 docs-only; no blog posts/announcements 2026), agent-surface 2/3 (alex-sdk public npm TypeScript with swap routing), growth 0/2 (no hiring/launch/TGE signals 90d), audience-fit 2/2 (highest-volume DEX on Stacks; agents executing DeFi strategies via sBTC need swap infra). HOLD until growth catalyst surfaces (announcement, integration, partnership). Channel ready: fresh GH issue on alex-sdk repo if reactivated.",
+      "do_not_contact": false,
+      "surveyed_at": "2026-04-16T12:37:00Z",
+      "survey_source": "Phase 1.5 NFT/markets rotation"
     }
   ],
   "evaluator_candidates": [
