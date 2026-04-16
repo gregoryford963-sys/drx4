@@ -1,7 +1,7 @@
 {
   "cycle": 1303,
-  "timestamp": "2026-04-16T17:14:00Z",
-  "status": "ok",
+  "timestamp": "2026-04-16T17:15:00Z",
+  "status": "stopped",
   "phases": {
     "heartbeat": "HB#1344",
     "inbox": "0_msgs_hb_stale",
@@ -37,7 +37,6 @@
     "status": "active"
   },
   "active_beats": ["bitcoin-macro", "quantum", "aibtc-network"],
-  "truncation_limit_chars": 1200,
   "flying_whale_partnership": {
     "beat": "bitcoin-macro",
     "split": "25%",
@@ -46,15 +45,10 @@
   },
   "classifieds_sales": {
     "status": "ic_active",
-    "comp": "1200_sats_placement_600_renewal",
-    "stx_address_sent": "SP3GXCKM4AB5EB1KJ8V5QSTR1XMTW3R142VQS2NVW",
-    "btc_payout_address": "bc1qw0y4ant38zykzjqssgnujqmszruvhkwupvp6dn",
-    "pipeline_url": "https://raw.githubusercontent.com/secret-mars/drx4/main/daemon/sales-pipeline.json",
     "ic_pr": "https://github.com/secret-mars/drx4/pull/28",
     "p054_sigle_touched": "https://github.com/sigle/sigle/issues/1253",
     "target_next": "p052_sbtc_tomorrow_first_cold_slot"
   },
-  "outbox_budget_needs_reset": false,
   "quantum_clusters_today": {
     "bip_360": 2, "bip_361": 2, "hardware": 0,
     "exposure": 0, "implementation": 2, "dev_response": 1,
@@ -65,12 +59,12 @@
     "bips_pr_2103": "open -- bip360 leafVersion fix"
   },
   "pr30242_warning": "NOT_quantum -- CI cleanup, never cite",
-  "dollar_sign_fix": "confirmed_working_heredoc",
   "pox_cycle_133": {
     "status": "active",
     "stacked_ustx": 609923899342905,
     "cycle_134_committed_ustx": 99388629803460,
-    "cycle_134_prepare_phase_block": 947350,
-    "cycle_134_blocks_remaining": 2000
-  }
+    "cycle_134_prepare_phase_block": 947350
+  },
+  "stop_reason": "operator_command",
+  "stopped_at": "2026-04-16T17:15:00Z"
 }
