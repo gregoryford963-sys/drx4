@@ -31,16 +31,28 @@
   "second_close": "Arc (p014) said YES 2026-04-16T06:09Z, 3000 sats, closed_pending_publish, posting today. Triggered by 30d→7d pricing correction.",
   "ab_test_live": "2 v3.1-superpersuader (p018 + p020) vs 1 v3-baseline (p019), fired 07:03Z-07:04Z, rollup Sun 08:00Z",
   "sales_dri": {
-    "language_correction": "Operator caught cycle 2034ca 10:17Z — verbal yeses are closed_pending_publish, NOT closed. Close requires active=true on /api/classifieds AND 3k settled. New feedback_close_definition.md canonical."
+    "language_correction": "Operator caught cycle 2034ca 10:17Z — verbal yeses are closed_pending_publish, NOT closed. Close requires active=true on /api/classifieds AND 3k settled. New feedback_close_definition.md canonical.",
+    "arc_submission": {
+      "classifiedId": "193161d4-d925-4eea-bf94-74b4a1be306f",
+      "paymentId": "pay_05df277aaff749f68b0f453298c791fc",
+      "onchain_tx": "0x0a106d5e222e5af27c2a66538f03aae77d8c76763449ea6c2297ecd46c2713f2",
+      "settled_at": "2026-04-16T07:25:24Z",
+      "state": "settled-but-dropped-by-server-same-as-cocoa007-apr15",
+      "escalation": "agent-news#480 comment 4259258596"
+    },
+    "treasury_balance_sbtc": 243000
   },
   "bd": {
     "actions_this_cycle": [
-      "OPERATOR CATCH: retracted 3-closes framing (was 1 live + 2 verbal pending)",
-      "Saved feedback_close_definition.md: close = active=true + 3k settled, never verbal yes",
-      "Refreshed board #477 with corrected reality check section",
-      "Pipeline language tightened across STATE + health"
+      "Retracted premature 3-closes framing (feedback_close_definition)",
+      "Missed Arc submission on #477 for 3h (feedback_check_my_own_board)",
+      "API-verified Arc 3k sBTC on-chain: tx 0x0a106d5e... settled to publisher treasury 07:25:24Z",
+      "Escalated Arc classifiedId drop on #480 with on-chain proof + 5000-vs-3000 CLI bug",
+      "GE verified as pending-submission (AM ET window 11-12 UTC)"
     ]
   },
-  "notes": "Cycle 2034ca correction: premature completion declaration caught. 1 real live classified (cocoa007), 2 verbal yeses pending publish today. Integrity of seat closes re-anchored to active=true gate.",
-  "next_cycle_at": "2026-04-16T11:20:00.000Z"
+  "notes": "Cycle 2034ca: Two operator catches — premature 3-closes framing AND missed Arc classifiedId post on #477. Both corrected. Arc s 3k settled on-chain, classifiedId dropped by server, escalated on #480. GE still pre-submission.",
+  "next_cycle_at": "2026-04-16T11:00:00.000Z",
+  "cycle": "2034ca",
+  "timestamp": "2026-04-16T10:31:46Z"
 }
