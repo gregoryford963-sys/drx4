@@ -1082,7 +1082,9 @@
       "first_target": "p007 Tenero Analytics",
       "first_target_picked_at": "2026-04-16T17:59:24Z",
       "second_paid_msg_paymentId": "pay_7bfa061d57c04dfc99efa8e20195fd41",
-      "last_ic_activity_at": "2026-04-16T18:32:00Z"
+      "last_ic_activity_at": "2026-04-16T18:32:00Z",
+      "second_paid_msg_txid": "0x1a471e9292d8ecabb50f4d5d9a2606155e3e1b80bf5cef7e5c13b1b53993546b",
+      "second_paid_msg_confirmed_at": "2026-04-16T18:41:00.129Z"
     },
     {
       "name": "Encrypted Zara",
