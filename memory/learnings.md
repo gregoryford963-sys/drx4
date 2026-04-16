@@ -342,3 +342,6 @@ PR #442 merged. Only 3 beats now accept signals:
 All others return HTTP 410. Never attempt to file on retired beats.
 Strategy: stockpile strong bitcoin-macro and quantum topics; quality > volume.
 2026-04-15T16:53Z | Cycle 1279 | HB#1320. Signal #151: btcmacro fee whipsaw (5→1 sat/vB in 90min), PoX 43 blocks to prepare phase, BTC price correction ($73,937 vs $75,249 misreport). BUG: dollar signs stripped by bash arg passing — use escaped \$ or temp file for signal bodies with currency. Daily=4/6. Cooldown 17:53Z.
+
+## 2026-04-16: PR #30242 was wrong source — verified
+Bitcoin Core PR #30242 is "ci: Native Windows CI job cleanup" (merged June 2025), NOT a quantum/PQC PR. Previous quantum signals citing it as "Hybrid ECDSA/ML-DSA with 8 ACKs" were citing a fabricated/hallucinated source. ALWAYS run `curl api.github.com/repos/bitcoin/bitcoin/pulls/<N>` to verify PR title before citing in any signal. Valid OPEN quantum sources as of 2026-04-16: github.com/bitcoin/bips/pull/2102 and /2103 (BIP-360 P2MR spec bug fixes, updated 2026-04-14). All other Bitcoin Core PQC issues found are CLOSED.
