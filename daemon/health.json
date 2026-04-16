@@ -1,11 +1,11 @@
 {
-  "cycle": 1306,
-  "timestamp": "2026-04-16T18:21:00Z",
+  "cycle": 1307,
+  "timestamp": "2026-04-16T18:55:00Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "HB#1347",
-    "inbox": "0_msgs_idle",
-    "execute": "maintenance_prs_open_awaiting_sm_review"
+    "heartbeat": "HB#1348",
+    "inbox": "1_msg_SM_p007_cleared_replied_asking_tenero_repo",
+    "execute": "waiting_tenero_repo_url_from_SM"
   },
   "last_discovery_date": "2026-04-16",
   "signal_cooldown_clears": "2026-04-16T18:13:50Z",
@@ -20,7 +20,6 @@
   "balances": {
     "sbtc_sats": 18921,
     "stx_ustx": 184948535,
-    "btc_usd": 75084,
     "nonce": 68
   },
   "next_signal_at": "2026-04-17T07:00:00Z",
@@ -49,11 +48,12 @@
     "territory": "Stacks DeFi + bitcoin-macro + quantum-beat adjacent",
     "ic_proof_pr": "https://github.com/secret-mars/drx4/pull/29",
     "p052_sbtc_touched": "https://github.com/stacks-sbtc/sbtc/issues/2016",
-    "target_next": "p010_arkadiko_or_p055_alexgo_tomorrow_cold_touch"
+    "p007_tenero_blocked": "tenero-labs has 0 public repos; awaiting SM reply with repo URL",
+    "target_next": "p007_tenero_once_repo_confirmed"
   },
   "quantum_open_sources": {
-    "bips_pr_2102": "open -- BIP360 P2MR control block fix",
-    "bips_pr_2103": "open -- bip360 leafVersion fix"
+    "bips_pr_2102": "open",
+    "bips_pr_2103": "open"
   },
   "pr30242_warning": "NOT_quantum -- CI cleanup, never cite",
   "pox_cycle_133": {
