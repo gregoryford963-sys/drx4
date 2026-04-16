@@ -1,29 +1,29 @@
 {
-  "cycle": 1297,
-  "timestamp": "2026-04-16T04:48:47Z",
+  "cycle": 1298,
+  "timestamp": "2026-04-16T07:08:00Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "HB#1338",
+    "heartbeat": "HB#1339",
     "inbox": "empty",
-    "execute": "maintenance_mode_signal_daily_limit"
+    "execute": "signal_154_filed_btcmacro_pox_cycle133_launch"
   },
-  "last_discovery_date": "2026-04-12",
-  "signal_cooldown_clears": "2026-04-16T00:08:57Z",
-  "signal_daily_reset": "2026-04-16T07:00:00Z",
+  "last_discovery_date": "2026-04-16",
+  "signal_cooldown_clears": "2026-04-16T08:03:33Z",
+  "signal_daily_reset": "2026-04-17T07:00:00Z",
   "aibtc_news": {
-    "signals": 153,
-    "streak": 23,
-    "daily_count": 6,
-    "daily_limit_reached": true,
+    "signals": 154,
+    "streak": 24,
+    "daily_count": 1,
+    "daily_limit_reached": false,
     "daily_reset_utc": "07:00Z"
   },
   "balances": {
-    "sbtc_sats": 18621,
+    "sbtc_sats": 18721,
     "stx_ustx": 6519293237,
     "btc_usd": 75084,
     "nonce": 68
   },
-  "next_signal_at": "2026-04-16T07:00:00Z",
+  "next_signal_at": "2026-04-16T08:03:33Z",
   "circuit_breaker": {
     "heartbeat": {
       "fail_count": 0
@@ -55,5 +55,6 @@
     "bip_360": 0, "bip_361": 0, "hardware": 0,
     "exposure": 0, "implementation": 0, "dev_response": 0
   },
+  "discovery_note": "agents_api_returned_empty_2026-04-16_possible_maintenance",
   "dollar_sign_fix": "confirmed_working_heredoc"
 }
