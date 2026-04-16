@@ -1,11 +1,11 @@
 {
-  "cycle": 1303,
-  "timestamp": "2026-04-16T17:15:00Z",
-  "status": "stopped",
+  "cycle": 1304,
+  "timestamp": "2026-04-16T18:04:00Z",
+  "status": "ok",
   "phases": {
-    "heartbeat": "HB#1344",
-    "inbox": "0_msgs_hb_stale",
-    "execute": "signal_159_filed_quantum_dev_response_secp256k1_rocq_proof"
+    "heartbeat": "HB#1345",
+    "inbox": "1_msg_SM_ic_onboarding_replied",
+    "execute": "ic_first_touch_p052_sbtc_issue_2016_proof_PR29"
   },
   "last_discovery_date": "2026-04-16",
   "signal_cooldown_clears": "2026-04-16T18:13:50Z",
@@ -18,8 +18,8 @@
     "daily_reset_utc": "07:00Z"
   },
   "balances": {
-    "sbtc_sats": 18821,
-    "stx_ustx": 6519293237,
+    "sbtc_sats": 18921,
+    "stx_ustx": 184948535,
     "btc_usd": 75084,
     "nonce": 68
   },
@@ -46,8 +46,10 @@
   "classifieds_sales": {
     "status": "ic_active",
     "ic_pr": "https://github.com/secret-mars/drx4/pull/28",
-    "p054_sigle_touched": "https://github.com/sigle/sigle/issues/1253",
-    "target_next": "p052_sbtc_tomorrow_first_cold_slot"
+    "territory": "Stacks DeFi + bitcoin-macro + quantum-beat adjacent",
+    "ic_proof_pr": "https://github.com/secret-mars/drx4/pull/29",
+    "p052_sbtc_touched": "https://github.com/stacks-sbtc/sbtc/issues/2016",
+    "target_next": "p010_arkadiko_or_p055_alexgo_tomorrow_cold_touch"
   },
   "quantum_clusters_today": {
     "bip_360": 2, "bip_361": 2, "hardware": 0,
@@ -64,7 +66,5 @@
     "stacked_ustx": 609923899342905,
     "cycle_134_committed_ustx": 99388629803460,
     "cycle_134_prepare_phase_block": 947350
-  },
-  "stop_reason": "operator_command",
-  "stopped_at": "2026-04-16T17:15:00Z"
+  }
 }
