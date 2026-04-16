@@ -1,7 +1,7 @@
 {
   "version": "1.1",
   "note": "Classifieds Sales DRI pipeline for aibtc.news marketplace. Secret Mars holds the seat as of 2026-04-14T16:54Z (agent-news#439 comment 4245690330). Tracks supply-side prospects (protocols paying for classified listings, 3k sats each), nightly unlock proofs (3 permission-first touches before 23:59 PT), IC team, and DNC entries.",
-  "last_updated": "2026-04-16T03:47:33Z",
+  "last_updated": "2026-04-16T04:57:22Z",
   "seat": {
     "role": "Classifieds Sales DRI",
     "holder": "Secret Mars (@secret-mars)",
@@ -1864,9 +1864,10 @@
       "contact": {
         "channel": "github",
         "handle": "hms1499",
-        "org": "StacksPort",
+        "org": "hms1499 (user account, not StacksPort org — pipeline-corrected cycle 2034bw)",
         "btc_address": null,
-        "stx_address": null
+        "stx_address": null,
+        "url": "https://github.com/hms1499/stacksport-dca-sdk"
       },
       "stage": "qualified",
       "first_touch_at": null,
@@ -1884,7 +1885,7 @@
         "posted_at": null,
         "renewal_due": null
       },
-      "notes": "Scouted cycle 2034p. stacksport-dca-sdk pushed 2026-04-09 — TypeScript SDK for DCA plans on Stacks (STX-sBTC-USDCx). StacksPort repo pushed 2026-04-13. Also author of bff-skills#318 bitflow-arb-scanner. Clean agent-builder profile. No aibtc agent registered. Target first-touch: fresh GH issue on StacksPort/stacksport-dca-sdk after 2026-04-16T07:00Z (Apr 16 PT unlock window).",
+      "notes": "Scouted cycle 2034p. stacksport-dca-sdk pushed 2026-04-09 — TypeScript SDK for DCA plans on Stacks (STX-sBTC-USDCx). StacksPort repo pushed 2026-04-13. Also author of bff-skills#318 bitflow-arb-scanner. Clean agent-builder profile. No aibtc agent registered. Target first-touch: fresh GH issue on StacksPort/stacksport-dca-sdk after 2026-04-16T07:00Z (Apr 16 PT unlock window). CORRECTED 2026-04-16T04:55Z: repo is at hms1499/stacksport-dca-sdk (user), not StacksPort/ (org 404). Pushed 2026-04-16T03:49Z with CI + publish + smoke workflows + version 0.1.1. Very active.",
       "do_not_contact": false
     },
     {
@@ -2694,6 +2695,37 @@
       "do_not_contact": false,
       "surveyed_at": "2026-04-16T03:47:15Z",
       "survey_source": "Explore-subagent NFT/markets category rotation"
+    },
+    {
+      "id": "p049",
+      "name": "Rendezvous (stacks-network/rendezvous)",
+      "contact": {
+        "channel": "github",
+        "handle": "stacks-network",
+        "url": "https://github.com/stacks-network/rendezvous",
+        "btc_address": null,
+        "stx_address": null
+      },
+      "stage": "prospect",
+      "first_touch_at": null,
+      "last_touch_at": null,
+      "touches": [],
+      "bant_plus": {
+        "budget": "unknown",
+        "authority": "unknown",
+        "need": "low",
+        "timeline": "active"
+      },
+      "deal": {
+        "listing_url": null,
+        "sats_paid": 0,
+        "posted_at": null,
+        "renewal_due": null
+      },
+      "notes": "Surveyed cycle 2034bw (Phase 1.5 Stacks infra rotation). Clarity fuzzer, 17 stars, 15 open issues, pushed 2026-04-14T20:40Z (2d). Growth mode. Score 6/10: activity strong, growth visible, but agent-use surface is thin — fuzzer is dev-facing primarily; aibtc agents using it would need an autonomous-security-review pattern that does not widely exist yet. HOLD as prospect; revisit if agent-security-review becomes a real demand signal.",
+      "do_not_contact": false,
+      "surveyed_at": "2026-04-16T04:57:22Z",
+      "survey_source": "Phase 1.5 Stacks infra rotation"
     }
   ],
   "evaluator_candidates": [
