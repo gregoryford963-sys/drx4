@@ -1,5 +1,6 @@
 # Never commit secrets
 .ssh/
+.secrets/
 *.env
 
 # OS files
