@@ -9,6 +9,7 @@
   "yesterday_sats": 150000,
   "tomorrow_proofs_locked": 0,
   "tomorrow_proofs_target": 3,
+  "tomorrow_pre_queued": ["p052 sBTC (Phase 1.5 deferred from cycle 2034cd due to BD cold cap)"],
   "drafts_ready": 0,
   "drafts_path": null,
   "ab_test_split": "2 v3.1-superpersuader (p018 + p020) vs 1 v3-baseline (p019); p021 v3.1-superpersuader x402 channel; p051 v3-baseline GH-issue Phase-1.5",
@@ -18,19 +19,19 @@
   "ic_pool_onboarded": 2,
   "recruitment_issue": "https://github.com/aibtcdev/agent-news/issues/475",
   "pipeline_qualified": 5,
-  "pipeline_prospects": 11,
+  "pipeline_prospects": 13,
   "pipeline_pitched": 29,
   "pipeline_posted": 1,
   "pipeline_support_case": 1,
   "pipeline_in_closing": 0,
   "pipeline_closed_pending_publish": 2,
-  "pipeline_total": 51,
+  "pipeline_total": 53,
   "live_classifieds": 2,
-  "live_classifieds_note": "cocoa007 HODLMM + Xverse Agent Wallet (organic 15:58Z — not my close, publisher revenue only). Arc 193161d4 dropped server-side, escalated #480. GE window 11-12Z now overdue.",
+  "live_classifieds_note": "cocoa007 HODLMM + Xverse Agent Wallet (organic 15:58Z — not my close, publisher revenue only). Arc 193161d4 dropped server-side, escalated #480. GE window 11-12Z expired without submission; await GE self-flag or auto-surface.",
   "pipeline_first_engagement": "Iskander-Agent p017 replied Apr 15T20:22Z; yes/no deadline Apr 16T20:00Z",
-  "pricing_corrections_posted": 3,
-  "second_close": "Arc (p014) said YES 2026-04-16T06:09Z, 3000 sats settled but classifiedId 193161d4 dropped — closed_pending_publish, awaiting reconciliation on #480.",
-  "ab_test_live": "5 first-touches today: 3 GH issue (07:03-04Z, A/B), 1 x402 inbox (p021 11:16Z), 1 GH issue Phase-1.5 (p051 11:21Z). Rollup Sun 08:00Z.",
+  "cold_count_today": 5,
+  "bd_cold_cap_per_day": 3,
+  "cold_cap_status": "EXCEEDED — 5/3. Phase 1.5 sBTC pitch deferred to tomorrow per cap discipline. Operator can override if same-cycle mandate trumps BD canonical.",
   "sales_dri": {
     "language_correction": "Operator caught cycle 2034ca 10:17Z — verbal yeses are closed_pending_publish, NOT closed. Close requires active=true on /api/classifieds AND 3k settled. New feedback_close_definition.md canonical.",
     "arc_submission": {
@@ -39,30 +40,27 @@
       "onchain_tx": "0x0a106d5e222e5af27c2a66538f03aae77d8c76763449ea6c2297ecd46c2713f2",
       "settled_at": "2026-04-16T07:25:24Z",
       "state": "settled-but-dropped-by-server-same-as-cocoa007-apr15",
-      "escalation": "agent-news#480 comment 4259258596",
-      "cli_bug_fixed_by_arc": "Arc shipped fix for 5k-vs-3k display bug at commit c5a908c1 (not yet verifiable on arc-starter main; pending push)"
+      "escalation": "agent-news#480 comment 4259258596"
     },
     "treasury_balance_sbtc": 243000,
-    "phase_1_5_outcome_2034cc": "Hermetica scored 8/10 (DAO governance PR #187 + DIA + sBTC yield + $11.3M TVL). Pitched same cycle as p051 via fresh GH issue #189. Lisa Network dormant, do_not_contact."
+    "phase_1_5_outcome_2034cd": "Stacks infra/wallets rotation: sBTC 8/10 (p052) + Ryder 5/10 (p053) added. sBTC same-cycle pitch DEFERRED due to BD cold cap (today 5/3). Queue tomorrow first cold slot."
   },
   "bd": {
     "actions_this_cycle": [
-      "HB #2161 OK",
-      "Worker template pricing corrected 3k/30d -> 3k/7d + CPM anchor",
-      "p021 Micro Basilisk Agent #77 pitched via x402 (channel re-routed has-agent rule)",
-      "Phase 1.5 Stacks DeFi rotation: Hermetica 8/10 surveyed + same-cycle pitched (p051 issue #189)",
-      "Today proofs 5/3 UNLOCKED (3 morning A/B + p021 + p051)",
-      "Board #477 rewritten with cycle 2034cc snapshot"
+      "HB #2162 OK",
+      "Phase 1.5 Stacks infra/wallets rotation: sBTC 8/10 + Ryder 5/10 added (p052, p053)",
+      "DEFERRED sBTC same-cycle pitch — BD cold cap discipline (today 5/3) trumps Phase 1.5 same-cycle mandate. Documented for operator review.",
+      "Swept GE window (no filing), Hermetica #189 (no reply), #480 (no new comments), inbox (no new messages)"
     ]
   },
-  "notes": "Cycle 2034cc: same-cycle Phase 1.5 conversion (Hermetica scout-to-pitch in one cycle). Worker template pricing fix prevents stale 30d quotes propagating. GE window overdue, monitoring next cycle. Pipeline 51 prospects.",
-  "next_cycle_at": "2026-04-16T11:55:00.000Z",
-  "cycle": "2034cc",
-  "timestamp": "2026-04-16T11:24:00.000Z",
+  "notes": "Cycle 2034cd: continuous research delivered (sBTC + Ryder added). Cold-cap conflict with Phase 1.5 same-cycle rule surfaced; defaulted to cold cap. Operator can override on next direction. Pipeline 53 prospects. GE window expired without filing.",
+  "next_cycle_at": "2026-04-16T12:30:00.000Z",
+  "cycle": "2034cd",
+  "timestamp": "2026-04-16T12:00:00.000Z",
   "stats": {
-    "checkin_count": 2161,
+    "checkin_count": 2162,
     "new_messages": 0,
     "replies_sent": 0,
-    "tasks_executed": 5
+    "tasks_executed": 2
   }
 }

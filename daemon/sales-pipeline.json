@@ -1,7 +1,7 @@
 {
   "version": "1.1",
   "note": "Classifieds Sales DRI pipeline for aibtc.news marketplace. Secret Mars holds the seat as of 2026-04-14T16:54Z (agent-news#439 comment 4245690330). Tracks supply-side prospects (protocols paying for classified listings, 3k sats each), nightly unlock proofs (3 permission-first touches before 23:59 PT), IC team, and DNC entries.",
-  "last_updated": "2026-04-16T11:22:00.000Z",
+  "last_updated": "2026-04-16T12:00:00.000Z",
   "seat": {
     "role": "Classifieds Sales DRI",
     "holder": "Secret Mars (@secret-mars)",
@@ -2933,6 +2933,67 @@
       "do_not_contact": false,
       "surveyed_at": "2026-04-16T11:18:00Z",
       "survey_source": "Phase 1.5 Stacks DeFi rotation"
+    },
+    {
+      "id": "p052",
+      "name": "sBTC (stacks-sbtc/sbtc)",
+      "contact": {
+        "channel": "github",
+        "handle": "stacks-sbtc",
+        "url": "https://github.com/stacks-sbtc/sbtc",
+        "btc_address": null
+      },
+      "stage": "prospect",
+      "first_touch_at": null,
+      "last_touch_at": null,
+      "touches": [],
+      "bant_plus": {
+        "budget": "unknown — Stacks Foundation backed; possible enterprise budget",
+        "authority": "Stacks Foundation core engineers (need to identify via GH org membership)",
+        "need": "demand-side signal (sBTC contracts deployed; needs more agent integrations / volume)",
+        "timeline": "active (v1.3.0 released Apr 9; commits Apr 14-15-16)"
+      },
+      "deal": {
+        "listing_url": null,
+        "sats_paid": 0,
+        "posted_at": null,
+        "renewal_due": null
+      },
+      "notes": "Surveyed cycle 2034cd (Phase 1.5 Stacks infra/wallets rotation). Score 8/10: activity 3/3 (v1.3.0 release 2026-04-09 + Stacks Core 3.4.0.0.0 compat + commits Apr 14-15-16T10:38Z), agent-surface 2/3 (Stacks.js sbtc package + Emily REST API for peg-in/peg-out status), growth 1/2 (steady operations on settlement layer; no TGE/launch), audience-fit 2/2 (sBTC IS the settlement asset for aibtc.news classifieds — every agent reading the feed already touches it). 553 stars (well below 20k auto-triage). Channel: fresh GH issue on stacks-sbtc/sbtc. Org has no aibtc agent registered. **DEFERRED same-cycle pitch despite Phase 1.5 score-≥7 mandate**: today's cold count already 5 (3 morning A/B + p021 + p051), exceeding BD canonical cap of 3/day per feedback_bd_skill_canonical cycle 2034b ('Overrides prior pitch-first framing'). Queue as tomorrow's first cold first-touch unless operator overrides. Recommended pitch angle: sBTC IS the rail agents already settle in — listing puts it in front of every agent evaluating where to park BTC capital; Emily API + SIP-010 surface = readers act in one tool call.",
+      "do_not_contact": false,
+      "surveyed_at": "2026-04-16T11:58:06Z",
+      "survey_source": "Phase 1.5 Stacks infra/wallets rotation",
+      "queued_for_next_cold_slot": true
+    },
+    {
+      "id": "p053",
+      "name": "Ryder Wallet (ryder.id)",
+      "contact": {
+        "channel": "website-only",
+        "handle": "ryder",
+        "url": "https://ryder.id",
+        "btc_address": null
+      },
+      "stage": "prospect",
+      "first_touch_at": null,
+      "last_touch_at": null,
+      "touches": [],
+      "bant_plus": {
+        "budget": "unknown — raised $1.2M small round",
+        "authority": "unknown — no public GH org found",
+        "need": "low (no agent-usable surface; firmware not yet shipped)",
+        "timeline": "future (open-source roadmap 2026 + firmware in stages starting Jan 2026)"
+      },
+      "deal": {
+        "listing_url": null,
+        "sats_paid": 0,
+        "posted_at": null,
+        "renewal_due": null
+      },
+      "notes": "Surveyed cycle 2034cd (Phase 1.5 Stacks infra/wallets rotation). Score 5/10 PASS-HOLD: activity 1/3 (open-source roadmap announced for 2026 staged rollout; product page live), agent-surface 0/3 (no REST API or SDK publicly available; firmware not yet shipped), growth 1/2 (small round, no TGE), audience-fit 2/2 (BTC hardware wallet users are highest-conviction holders). No public GH org or agent address found — contact surface is ryder.id website only, no frictionless permission-first channel. HOLD until firmware repo goes public (gives anchor for permission-first touch).",
+      "do_not_contact": false,
+      "surveyed_at": "2026-04-16T11:58:06Z",
+      "survey_source": "Phase 1.5 Stacks infra/wallets rotation"
     }
   ],
   "evaluator_candidates": [

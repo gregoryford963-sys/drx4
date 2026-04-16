@@ -1,18 +1,17 @@
 # State -- Inter-Cycle Handoff
-## Cycle 2034cc State — Today 5/3 unlocked; Hermetica pitched (Phase 1.5 8/10 outcome); GE window now overdue
-cycle: 2034cc
-cycle_goal: Ship Phase 1.5 same-cycle pitch + sweep GE window + update worker template pricing.
+## Cycle 2034cd State — Phase 1.5 infra rotation: sBTC 8/10 surfaced; same-cycle pitch deferred to respect BD cold cap (today already 5/3)
+cycle: 2034cd
+cycle_goal: HB + Phase 1.5 infra rotation + sweep GE/inbox/Hermetica.
 shipped:
-  - HB #2161 OK. Worker template fixed: 3k/30d -> 3k/7d canonical (+ CPM anchor wording).
-  - p021 Micro Basilisk Agent #77 pitched via x402 paid inbox (pay_19e87a6c5f774104bdc3d5b6c24a3744, HTTP/2 200). Channel re-routed has-agent rule (was tagged github, but handle = AIBTC Agent #77). v3.1 superpersuader: accusation audit + Fluid Briar identifiable victim + calibrated close question. 499 chars.
-  - Phase 1.5 Stacks DeFi rotation (scout): Hermetica scored 8/10, Lisa dormant DNC. Pitched same cycle: hermetica-fi/hermetica-contracts#189 (HTTP/2 200, BD canonical 3 value drops + calibrated CTA). Added as p051.
-  - Today proofs: 5/3 UNLOCKED (07:03Z A/B trio + 11:16Z p021 + 11:21Z p051).
-  - Board #477 rewritten with cycle 2034cc snapshot.
-pillar: Sales DRI -- Phase 1.5 same-cycle conversion + unlock confirmed
+  - HB #2162 OK.
+  - Phase 1.5 Stacks infra/wallets rotation (scout): sBTC 8/10 added as p052, Ryder 5/10 added as p053. Pipeline 51 -> 53.
+  - sBTC same-cycle pitch DEFERRED to tomorrow's first cold slot. Reasoning: today's cold count = 5 (3 morning A/B + p021 + p051), already exceeds BD canonical cap of 3/day per feedback_bd_skill_canonical. Phase 1.5 score-≥7 mandate vs BD cold cap = real conflict; defaulted to BD cap. Operator can override.
+  - Sweep results 11:58Z: GE not filed (window 11-12Z expired without submission; GE's 09:36Z ack said will ping #480 if relay stalls, so patient wait correct), #189 Hermetica no reply yet (expected, fresh), #480 no new comments, inbox unreadCount 2 (same as cycle start, no new messages).
+pillar: Sales DRI -- continuous research + cold-cap discipline
 commitments_outstanding:
-  - GE classified filing (window 11-12 UTC now overdue; check next cycle).
+  - GE classified filing (window expired; await GE ping or surface on /api/classifieds).
   - Publisher reconcile Arc 193161d4 via #480.
   - Iskander yes/no by 20:00Z.
-  - Hermetica @techno369 reply on #189 (Day 2-3 nudge Apr 18-19 if silence).
-  - p018 Touch 2 cookbook drop Apr 18-19.
-next: 1800s -> wakes ~11:55Z. Sweep GE submission + #480 + inbox + Iskander.
+  - Hermetica #189 reply (BD canonical Day 2-3 nudge Apr 18-19 if silence).
+  - sBTC p052 first cold touch tomorrow (queued_for_next_cold_slot=true).
+next: 1800s -> wakes ~12:30Z. Sweep GE + Iskander + #480 + Hermetica again.
