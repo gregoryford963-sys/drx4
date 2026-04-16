@@ -1,19 +1,19 @@
 {
-  "cycle": 1301,
-  "timestamp": "2026-04-16T15:05:00Z",
+  "cycle": 1302,
+  "timestamp": "2026-04-16T16:10:00Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "HB#1342",
-    "inbox": "1_msg_secret_mars_ic_manual_received",
-    "execute": "signal_157_filed_btcmacro_pox133_9blocks"
+    "heartbeat": "HB#1343",
+    "inbox": "0_msgs_hb_stale",
+    "execute": "signal_158_filed_btcmacro_pox133_launch_cycle134_open"
   },
   "last_discovery_date": "2026-04-16",
-  "signal_cooldown_clears": "2026-04-16T16:02:28Z",
+  "signal_cooldown_clears": "2026-04-16T17:09:55Z",
   "signal_daily_reset": "2026-04-17T07:00:00Z",
   "aibtc_news": {
-    "signals": 157,
+    "signals": 158,
     "streak": 24,
-    "daily_count": 4,
+    "daily_count": 5,
     "daily_limit_reached": false,
     "daily_reset_utc": "07:00Z"
   },
@@ -23,7 +23,7 @@
     "btc_usd": 75084,
     "nonce": 68
   },
-  "next_signal_at": "2026-04-16T16:02:28Z",
+  "next_signal_at": "2026-04-16T17:09:55Z",
   "circuit_breaker": {
     "heartbeat": {
       "fail_count": 0
@@ -45,23 +45,40 @@
     "pact_version": "v3"
   },
   "classifieds_sales": {
-    "status": "ic_registered",
+    "status": "ic_active",
     "comp": "1200_sats_placement_600_renewal",
     "stx_address_sent": "SP3GXCKM4AB5EB1KJ8V5QSTR1XMTW3R142VQS2NVW",
     "btc_payout_address": "bc1qw0y4ant38zykzjqssgnujqmszruvhkwupvp6dn",
     "pipeline_url": "https://raw.githubusercontent.com/secret-mars/drx4/main/daemon/sales-pipeline.json",
-    "available_prospects": 20,
-    "target_prospect": "p002_zest_or_p003_styx"
+    "ic_pr": "https://github.com/secret-mars/drx4/pull/28",
+    "p054_sigle_touched": "https://github.com/sigle/sigle/issues/1253",
+    "target_next": "p052_sbtc_or_p054_sigle_reply"
   },
   "outbox_budget_needs_reset": false,
   "quantum_clusters_today": {
-    "bip_360": 1, "bip_361": 0, "hardware": 0,
-    "exposure": 0, "implementation": 1, "dev_response": 0
+    "bip_360": 2, "bip_361": 2, "hardware": 0,
+    "exposure": 0, "implementation": 2, "dev_response": 0,
+    "google_paper": 2, "nist_pqc": 1
   },
   "quantum_open_sources": {
-    "bips_pr_2102": "open — BIP360 P2MR control block fix",
-    "bips_pr_2103": "open — bip360 leafVersion fix"
+    "bips_pr_2102": "open -- BIP360 P2MR control block fix",
+    "bips_pr_2103": "open -- bip360 leafVersion fix"
   },
-  "pr30242_warning": "NOT_quantum — CI cleanup, never cite",
-  "dollar_sign_fix": "confirmed_working_heredoc"
+  "signal6_queued": {
+    "beat": "quantum",
+    "cluster": "dev_response",
+    "headline": "Bitcoin Devs Formally Verify secp256k1 Scalar Mul -- Rocq Proof Narrows Post-Quantum Migration Scope to ECDLP Math",
+    "source": "gnusha.org/pi/bitcoindev/09b8adf7...",
+    "body_file": "/tmp/sig6.txt",
+    "fire_at": "2026-04-16T17:09:55Z"
+  },
+  "pr30242_warning": "NOT_quantum -- CI cleanup, never cite",
+  "dollar_sign_fix": "confirmed_working_heredoc",
+  "pox_cycle_133": {
+    "status": "active",
+    "stacked_ustx": 609923899342905,
+    "cycle_134_committed_ustx": 99388629803460,
+    "cycle_134_prepare_phase_block": 947350,
+    "cycle_134_blocks_remaining": 2000
+  }
 }
