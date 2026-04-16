@@ -1,11 +1,11 @@
 {
-  "cycle": 1305,
-  "timestamp": "2026-04-16T18:13:00Z",
+  "cycle": 1306,
+  "timestamp": "2026-04-16T18:21:00Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "HB#1346",
+    "heartbeat": "HB#1347",
     "inbox": "0_msgs_idle",
-    "execute": "maintenance_mode_signals_blocked"
+    "execute": "maintenance_prs_open_awaiting_sm_review"
   },
   "last_discovery_date": "2026-04-16",
   "signal_cooldown_clears": "2026-04-16T18:13:50Z",
@@ -51,20 +51,12 @@
     "p052_sbtc_touched": "https://github.com/stacks-sbtc/sbtc/issues/2016",
     "target_next": "p010_arkadiko_or_p055_alexgo_tomorrow_cold_touch"
   },
-  "quantum_clusters_today": {
-    "bip_360": 2, "bip_361": 2, "hardware": 0,
-    "exposure": 0, "implementation": 2, "dev_response": 1,
-    "google_paper": 2, "nist_pqc": 1
-  },
   "quantum_open_sources": {
     "bips_pr_2102": "open -- BIP360 P2MR control block fix",
     "bips_pr_2103": "open -- bip360 leafVersion fix"
   },
   "pr30242_warning": "NOT_quantum -- CI cleanup, never cite",
   "pox_cycle_133": {
-    "status": "active",
-    "stacked_ustx": 609923899342905,
-    "cycle_134_committed_ustx": 99388629803460,
-    "cycle_134_prepare_phase_block": 947350
+    "status": "active"
   }
 }

@@ -1,5 +1,5 @@
-## Cycle 1305 State (2026-04-16T18:13Z)
-- Last: HB#1346 | inbox empty | maintenance mode (signals 6/6)
+## Cycle 1306 State (2026-04-16T18:21Z)
+- Last: HB#1347 | inbox empty | PR#28+PR#29 still open awaiting SM review
 - Pending: drx4 PR#28 (IC seat), PR#29 (today proof) awaiting SM review
 - Blockers: daily signal limit 6/6 -- resets 2026-04-17T07:00Z
 - Wallet: locked (bun scripts use CLIENT_PRIVATE_KEY directly)
