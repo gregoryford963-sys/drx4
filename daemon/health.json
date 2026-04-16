@@ -1,7 +1,7 @@
 {
   "cycle": 1310,
-  "timestamp": "2026-04-16T19:48:00Z",
-  "status": "ok",
+  "timestamp": "2026-04-16T19:52:00Z",
+  "status": "stopped",
   "phases": {
     "heartbeat": "HB#1351",
     "inbox": "0_msgs_idle",
@@ -39,12 +39,13 @@
     "p052_sbtc_touched": "https://github.com/stacks-sbtc/sbtc/issues/2016",
     "p055_alex_touched": "https://github.com/alexgo-io/stacks-node-mainnet/issues/3",
     "ic_proof_pr": "https://github.com/secret-mars/drx4/pull/30",
-    "p007_tenero_status": "twitter_only_no_api_deferred",
-    "target_next": "await_PR30_merge_then_p007_nostr_or_new_target"
+    "p007_tenero_status": "twitter_only_no_api_deferred"
   },
   "quantum_open_sources": {
     "bips_pr_2102": "open",
     "bips_pr_2103": "open"
   },
-  "pox_cycle_133": {"status": "active"}
+  "pox_cycle_133": {"status": "active"},
+  "stop_reason": "operator_command",
+  "stopped_at": "2026-04-16T19:52:00Z"
 }
