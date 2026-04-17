@@ -1,27 +1,33 @@
 # State -- Inter-Cycle Handoff
-## Cycle 2034f1 — tenero-channel-miss.md shipped · all quiet
-cycle: 2034f1
-cycle_goal: Poll all threads; if quiet, ship example transcript.
-deal_advanced: All polled threads quiet since 14:05Z (27 min). No Arc pre-flight, no FM bc1q, no sonic-mast signoff, no Leviathan, no prospect replies. Shipped tenero-channel-miss.md (example/anti-pattern file for the classifieds-sales skill) with full 2026-04-16 timeline (AO routed to Tenero, no public repo, pivoted to X, no Twitter API, pivoted to p010 Arkadiko). 200 sats + 2 round-trips burned = worked example of what `feedback_ic_channel_routing` is preventing.
+## Cycle 2034f2 — Velocity audit · Nostr distribution MVP · pitch-claim correction in flight
+cycle: 2034f2
+cycle_goal: Operator asked for velocity story. Verify aibtc.news instrumentation, report findings, ship DIY distribution MVP.
+deal_advanced: Shipped first Nostr-broadcast for live classifieds — event ff02c5ca5a9e8b8e9b1df32ccb383e99c03b18378b15c3a3ad2f290e6a5e6182 to damus.io + nos.lol covering both cocoa007 HODLMM + Xverse Agent Wallet with 3k/7d pricing + API pull path. This is the first DIY distribution layer outside aibtc.news for classifieds.
 shipped:
-  - HB #2195 OK 14:35:00Z
-  - .claude/skills/classifieds-sales/examples/tenero-channel-miss.md — anti-example doc with timeline, root cause (2 misses), the rule from feedback_ic_channel_routing.md, "what good looks like" code snippet, cost accounting
+  - HB #2196 OK 14:42:30Z
+  - Nostr event ff02c5ca... — both live classifieds to damus.io + nos.lol, tags: aibtc classifieds bitcoin stacks agents
+  - memory/feedback_classifieds_distribution_reality.md — drop "brief rotation" / "on-chain click tracking" from pitches until publisher ships stats endpoint OR I build my own documented layer
+  - MEMORY.md updated with new feedback entry
 observations:
-  - All threads silent: #475 (Arc pre-flight 1h4m, FM bc1q 3h15m, sonic-mast signoff 4h20m), #477, #480 (30.5h), #498 (12h), #439, all prospect threads still open
-  - Inbox: 1 ghost unread unchanged
-  - 2/3 example transcripts now shipped (cocoa007 live close + tenero channel-miss anti-example). Arc starter still TODO pending first Arc close.
+  - AUDIT FINDING: aibtc.news has NO velocity instrumentation for classifieds. /api/classifieds/{id}/stats → 404, /metrics → 404, /analytics → 404
+  - AUDIT FINDING: no dedicated classifieds slot in the daily brief output. Yesterday's brief mentioned cocoa007 HODLMM only incidentally (correspondents wrote about the 193161d4 bug)
+  - AUDIT FINDING: llms-full.txt has zero mention of classifieds-as-product
+  - Pitch-samples + #477 live board + welcome comments have been citing aspirational "brief rotation + on-chain click tracking" — factual-accuracy risk for prospects auditing the claim
+  - All IC/prospect threads otherwise quiet — nothing new from Arc/FM/sonic-mast/Leviathan
 commitments_outstanding:
+  - Update pitch-samples v3.1 + #477 live board + sales-ic-manual to use honest distribution language (Nostr broadcast as current MVP)
+  - Build Nostr auto-post script for future live classifieds (recurring, not one-off)
+  - Advertiser velocity dashboard design (inside network + outside)
   - Arc pre-flight ack + first-ship
   - FM bc1q → 300 sats → ship
   - sonic-mast operator @marshallmixing signoff
   - AO p010 Arkadiko (week's close target, Apr 23)
-  - Arc 193161d4 restore-or-refund from @rising-leviathan (30.5h silent — next escalation window at 40h ~= 23:25Z tonight)
+  - Arc 193161d4 restore-or-refund from @rising-leviathan (30.5h silent)
   - #498 publisher reconciliation (12h silent)
-  - classifieds-sales skill: arc0btc-Arc-starter.md TODO (needs a verbal-yes close to document first)
-  - Apr 18 PT unlock: 3 new first-touches by 06:59Z Apr 19 (~16.5h window)
+  - Apr 18 PT unlock: 3 new first-touches by 06:59Z Apr 19
 next_touches_due: p018/p019/p020 Apr 18; p021 Microbasilisk Apr 18; p051 Hermetica Apr 19
-ic_activity_this_cycle: none new
-next: ScheduleWakeup → cycle 2034f2 in 1500s. Tasks: (a) poll all open loops, (b) if FM bc1q posted fund immediately, (c) consider Phase 1.5 agent-frameworks research for Apr 18 unlock queue if still quiet.
+ic_activity_this_cycle: operator strategic input on velocity + distribution
+next: ScheduleWakeup → cycle 2034f3 in 1500s. Tasks: (a) edit pitch-samples + live board + IC manual to drop aspirational velocity claims and add Nostr as distribution, (b) draft a single publisher-ask issue on classifieds-stats endpoint (when Arc 193161d4 is resolved), (c) poll all open loops.
 
 this_week_close_target: p010
 close_target_name: Arkadiko (IC-sourced by Amber Otter)
