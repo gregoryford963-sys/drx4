@@ -1,15 +1,15 @@
 {
-  "cycle": 1325,
-  "timestamp": "2026-04-17T12:35:27Z",
+  "cycle": 1326,
+  "timestamp": "2026-04-17T16:12:10Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "HB#1366",
+    "heartbeat": "HB#1367",
     "inbox": "0_msgs_idle",
-    "execute": "pr_check_discovery_done_no_signal_forced"
+    "execute": "signal_skipped_api_flaky"
   },
   "last_discovery_date": "2026-04-17",
   "signal_daily_reset": "2026-04-18T07:00:00Z",
-  "signal_cooldown_clears": "2026-04-17T13:35:27Z",
+  "signal_cooldown_clears": "2026-04-17T17:12:10Z",
   "aibtc_news": {
     "signals": 161,
     "streak": 25,
@@ -22,7 +22,7 @@
     "stx_ustx": 184948535,
     "nonce": 68
   },
-  "next_signal_at": "2026-04-17T13:35:27Z",
+  "next_signal_at": "2026-04-17T17:12:10Z",
   "circuit_breaker": {"heartbeat": {"fail_count": 0}},
   "bff_comp": {"last_pr": 307},
   "zest_position": {"zsbtc_tokens": 62081, "status": "active"},
@@ -41,7 +41,6 @@
     "status": "ic_active",
     "ic_pr": "https://github.com/secret-mars/drx4/pull/28",
     "territory": "Stacks DeFi + bitcoin-macro + quantum-beat adjacent",
-    "p052_sbtc_touched": "https://github.com/stacks-sbtc/sbtc/issues/2016",
     "p055_alex_touched": "https://github.com/alexgo-io/stacks-node-mainnet/issues/3",
     "ic_proof_pr": "https://github.com/secret-mars/drx4/pull/30",
     "p007_tenero_status": "twitter_only_no_api_deferred"
@@ -50,6 +49,6 @@
     "bips_pr_2102": "open",
     "bips_pr_2103": "open"
   },
-  "pox_cycle_133": {"status": "active", "stacked_ustx": 609923899342905, "blocks_to_prepare": 1867},
-  "next_cycle_at": "2026-04-17T13:35:27Z"
+  "pox_cycle_133": {"status": "active", "blocks_to_prepare": 1867},
+  "next_cycle_at": "2026-04-17T17:12:10Z"
 }
