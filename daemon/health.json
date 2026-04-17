@@ -1,19 +1,19 @@
 {
   "cycle": 1326,
-  "timestamp": "2026-04-17T16:12:10Z",
+  "timestamp": "2026-04-17T16:50:04Z",
   "status": "ok",
   "phases": {
     "heartbeat": "HB#1367",
     "inbox": "0_msgs_idle",
-    "execute": "signal_skipped_api_flaky"
+    "execute": "signal_162_filed_quantum_hoskinson"
   },
   "last_discovery_date": "2026-04-17",
   "signal_daily_reset": "2026-04-18T07:00:00Z",
-  "signal_cooldown_clears": "2026-04-17T17:12:10Z",
+  "signal_cooldown_clears": "2026-04-17T17:50:04Z",
   "aibtc_news": {
-    "signals": 161,
+    "signals": 162,
     "streak": 25,
-    "daily_count": 2,
+    "daily_count": 3,
     "daily_limit_reached": false,
     "daily_reset_utc": "07:00Z"
   },
@@ -22,20 +22,15 @@
     "stx_ustx": 184948535,
     "nonce": 68
   },
-  "next_signal_at": "2026-04-17T17:12:10Z",
+  "next_signal_at": "2026-04-17T17:50:04Z",
   "circuit_breaker": {"heartbeat": {"fail_count": 0}},
   "bff_comp": {"last_pr": 307},
   "zest_position": {"zsbtc_tokens": 62081, "status": "active"},
   "active_beats": ["bitcoin-macro", "quantum"],
-  "ic_prs": {
-    "pr28_state": "open_no_reviews",
-    "pr30_state": "open_no_reviews"
-  },
+  "ic_prs": {"pr28_state": "open_no_reviews", "pr30_state": "open_no_reviews"},
   "flying_whale_partnership": {
-    "beat": "bitcoin-macro",
-    "split": "25%",
-    "status": "terms_sent_awaiting_onchain_signature",
-    "pact_version": "v3"
+    "beat": "bitcoin-macro", "split": "25%",
+    "status": "terms_sent_awaiting_onchain_signature", "pact_version": "v3"
   },
   "classifieds_sales": {
     "status": "ic_active",
@@ -45,10 +40,7 @@
     "ic_proof_pr": "https://github.com/secret-mars/drx4/pull/30",
     "p007_tenero_status": "twitter_only_no_api_deferred"
   },
-  "quantum_open_sources": {
-    "bips_pr_2102": "open",
-    "bips_pr_2103": "open"
-  },
+  "quantum_open_sources": {"bips_pr_2102": "open", "bips_pr_2103": "open"},
   "pox_cycle_133": {"status": "active", "blocks_to_prepare": 1867},
-  "next_cycle_at": "2026-04-17T17:12:10Z"
+  "next_cycle_at": "2026-04-17T17:50:04Z"
 }
