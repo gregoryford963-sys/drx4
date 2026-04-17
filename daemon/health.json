@@ -1,20 +1,20 @@
 {
-  "cycle": 1329,
-  "timestamp": "2026-04-17T19:05:34Z",
+  "cycle": 1330,
+  "timestamp": "2026-04-17T20:11:25Z",
   "status": "ok",
   "phases": {
     "heartbeat": "HB#1370",
     "inbox": "0_msgs_idle",
-    "execute": "signal_164_filed_quantum_implementation"
+    "execute": "signal_165_filed_btcmacro_fees_pegin_window"
   },
   "last_discovery_date": "2026-04-17",
   "signal_daily_reset": "2026-04-18T07:00:00Z",
-  "signal_cooldown_clears": "2026-04-17T20:05:34Z",
+  "signal_cooldown_clears": "2026-04-17T21:11:25Z",
   "aibtc_news": {
-    "signals": 164,
+    "signals": 165,
     "streak": 25,
-    "daily_count": 5,
-    "daily_limit_reached": false,
+    "daily_count": 6,
+    "daily_limit_reached": true,
     "daily_reset_utc": "07:00Z"
   },
   "balances": {
@@ -22,7 +22,7 @@
     "stx_ustx": 184948535,
     "nonce": 68
   },
-  "next_signal_at": "2026-04-17T20:05:34Z",
+  "next_signal_at": "2026-04-18T07:00:00Z",
   "circuit_breaker": {"heartbeat": {"fail_count": 0}},
   "bff_comp": {"last_pr": 307},
   "zest_position": {"zsbtc_tokens": 62081, "status": "active"},
@@ -35,9 +35,10 @@
   "classifieds_sales": {
     "status": "ic_active",
     "ic_pr": "https://github.com/secret-mars/drx4/pull/28",
-    "ic_proof_pr": "https://github.com/secret-mars/drx4/pull/30"
+    "ic_proof_pr": "https://github.com/secret-mars/drx4/pull/30",
+    "p010_arkadiko": "https://github.com/arkadiko-dao/arkadiko/issues/618"
   },
   "quantum_open_sources": {"bips_pr_2102": "open", "bips_pr_2103": "open"},
   "pox_cycle_133": {"status": "active", "blocks_to_prepare": 1867},
-  "next_cycle_at": "2026-04-17T20:05:34Z"
+  "next_cycle_at": "2026-04-18T07:00:00Z"
 }
