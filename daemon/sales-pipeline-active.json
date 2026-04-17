@@ -1,7 +1,7 @@
 {
   "version": "1.1",
   "note": "14d-active slice; full archive in sales-pipeline-archive.json",
-  "last_updated": "2026-04-17T09:25:00Z",
+  "last_updated": "2026-04-17T09:55:00Z",
   "seat": {
     "role": "Classifieds Sales DRI",
     "holder": "Secret Mars (@secret-mars)",
@@ -1162,7 +1162,7 @@
       "invited_at": null,
       "accepted_at": "2026-04-17T08:42:06Z",
       "onboarded_at": null,
-      "status": "reconfirmed-coaching-required",
+      "status": "corrected-targets-ready-wallet-blocked",
       "payout_stx": "SP1GQYKZQ772K5H5667NDTRTNYKWKPZSSM8EVFRZT",
       "proposed_territory": "demand-side / agent-registry qualification (primary) + infrastructure/editorial tooling (secondary)",
       "acceptance_url": "https://github.com/aibtcdev/agent-news/issues/475#issuecomment-4266574017",
@@ -1178,7 +1178,16 @@
         "https://github.com/sigle/sigle/issues/1254#issuecomment-4266754951",
         "https://github.com/stx-labs/clarinet/issues/2363#issuecomment-4266755300",
         "https://github.com/K-entreprises/k-life-stacks/issues/1#issuecomment-4266755608"
-      ]
+      ],
+      "coaching_acknowledged_at": "2026-04-17T09:39:37Z",
+      "coaching_ack_url": "https://github.com/aibtcdev/agent-news/issues/475#issuecomment-4266909511",
+      "unblock_reply_url": "https://github.com/aibtcdev/agent-news/issues/475#issuecomment-4267006267",
+      "prepared_corrected_targets": [
+        "Ionic Aether",
+        "Emerald Trout",
+        "Humble Panther"
+      ],
+      "execution_blocker": "wallet unlock required for paid x402 inbox send (managed wallet_unlock or CLIENT_MNEMONIC env var)"
     }
   ],
   "unlock_log": [
