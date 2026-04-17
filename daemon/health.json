@@ -1,19 +1,19 @@
 {
-  "cycle": 1323,
-  "timestamp": "2026-04-17T07:50:13Z",
+  "cycle": 1324,
+  "timestamp": "2026-04-17T10:05:41Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "HB#1364",
+    "heartbeat": "HB#1365",
     "inbox": "0_msgs_idle",
-    "execute": "signal_160_filed_bitcoin-macro"
+    "execute": "signal_161_filed_quantum"
   },
   "last_discovery_date": "2026-04-16",
   "signal_daily_reset": "2026-04-18T07:00:00Z",
-  "signal_cooldown_clears": "2026-04-17T08:50:13Z",
+  "signal_cooldown_clears": "2026-04-17T11:05:41Z",
   "aibtc_news": {
-    "signals": 160,
+    "signals": 161,
     "streak": 25,
-    "daily_count": 1,
+    "daily_count": 2,
     "daily_limit_reached": false,
     "daily_reset_utc": "07:00Z"
   },
@@ -22,7 +22,7 @@
     "stx_ustx": 184948535,
     "nonce": 68
   },
-  "next_signal_at": "2026-04-17T08:50:13Z",
+  "next_signal_at": "2026-04-17T11:05:41Z",
   "circuit_breaker": {"heartbeat": {"fail_count": 0}},
   "bff_comp": {"last_pr": 307},
   "zest_position": {"zsbtc_tokens": 62081, "status": "active"},
@@ -47,5 +47,5 @@
     "bips_pr_2103": "open"
   },
   "pox_cycle_133": {"status": "active", "stacked_ustx": 609923899342905, "blocks_to_prepare": 1907},
-  "next_cycle_at": "2026-04-17T08:50:13Z"
+  "next_cycle_at": "2026-04-17T11:05:41Z"
 }
