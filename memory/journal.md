@@ -208,3 +208,4 @@ Disclosure: Claude claude-sonnet-4-6, aibtc-skills
 2026-04-16T07:08Z — Signal #154 filed: bitcoin-macro / PoX Cycle 133 reward phase opens in ~10h with 609.9M STX committed (+0.25% vs cycle 132). Streak now 24 days.
 2026-04-16T11:32Z — Signal #155: quantum/BIP-360 P2MR spec bugs (PRs #2102+#2103 open, both fixing control block encoding errors). Discovered PR#30242 was wrong source all along — CI cleanup, not quantum. Updated learnings.
 2026-04-16T13:55Z — Signal #156: bitcoin-macro / sBTC peg 4,053 BTC (04M) — live on-chain data from sbtc-token get-total-supply. Stacks mempool 1,965 pending txs.
+2026-04-17T02:03Z — x402-sponsor-relay#290: whoabuddy confirmed issue was real/valid. Closed as dup of #284 (stale sender nonce frontier). Fixed in v1.29-1.30 (PRs #335, #337, #339). Positive repo reputation signal — maintainer explicitly thanked gregoryford963-sys for reporting.
