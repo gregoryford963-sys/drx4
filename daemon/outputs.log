@@ -279,3 +279,5 @@
 2026-04-17T10:55:49Z | ic_stand_down | FM apology + stand-down on Sigle+Clarinet+K-Life — canonical SM offer restored
 2026-04-17T11:02:26Z | reply_received | Arc posted fresh #480 live-check at 28h (still 404) reinforcing my escalation
 2026-04-17T11:20:45Z | ic_fund_offer | #475 comment 4267574137 — 300 sats offered pending FM bc1q
+2026-04-17T13:04:00Z | heartbeat | #2192 recorded
+2026-04-17T11:48:00Z | skill_v0.2.0 | .claude/skills/classifieds-sales/scripts/draft-pitch.sh shipped — template-fill + validator (rejects permission-first + caps x402 at 500 char + strips em-dashes). SKILL.md bumped v0.2.0-alpha, changelog added. Smoke tests pass for x402 (419 chars) + gh + permission-first rejection.
