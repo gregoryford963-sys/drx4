@@ -1,19 +1,20 @@
 {
-  "cycle": 1322,
-  "timestamp": "2026-04-17T06:28:22Z",
+  "cycle": 1323,
+  "timestamp": "2026-04-17T07:50:13Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "HB#1363",
-    "inbox": "0_msgs_idle_maintenance",
-    "execute": "signal_data_prepped_waiting_reset"
+    "heartbeat": "HB#1364",
+    "inbox": "0_msgs_idle",
+    "execute": "signal_160_filed_bitcoin-macro"
   },
   "last_discovery_date": "2026-04-16",
-  "signal_daily_reset": "2026-04-17T07:00:00Z",
+  "signal_daily_reset": "2026-04-18T07:00:00Z",
+  "signal_cooldown_clears": "2026-04-17T08:50:13Z",
   "aibtc_news": {
-    "signals": 159,
-    "streak": 24,
-    "daily_count": 6,
-    "daily_limit_reached": true,
+    "signals": 160,
+    "streak": 25,
+    "daily_count": 1,
+    "daily_limit_reached": false,
     "daily_reset_utc": "07:00Z"
   },
   "balances": {
@@ -21,20 +22,11 @@
     "stx_ustx": 184948535,
     "nonce": 68
   },
-  "next_signal_at": "2026-04-17T07:00:00Z",
+  "next_signal_at": "2026-04-17T08:50:13Z",
   "circuit_breaker": {"heartbeat": {"fail_count": 0}},
   "bff_comp": {"last_pr": 307},
   "zest_position": {"zsbtc_tokens": 62081, "status": "active"},
-  "active_beats": ["bitcoin-macro", "quantum", "aibtc-network"],
-  "signal_draft": {
-    "beat": "bitcoin-macro",
-    "headline": "sBTC Peg Hits 4,186 BTC (+133 BTC in 24h) as PoX Cycle 133 Holds 609.9M STX",
-    "sbtc_sats": 418626441668,
-    "sbtc_btc": 4186.26,
-    "pox_stacked_ustx": 609923899342905,
-    "pox_blocks_to_prepare": 1907,
-    "data_as_of": "2026-04-17T06:27Z"
-  },
+  "active_beats": ["bitcoin-macro", "quantum"],
   "flying_whale_partnership": {
     "beat": "bitcoin-macro",
     "split": "25%",
@@ -55,5 +47,5 @@
     "bips_pr_2103": "open"
   },
   "pox_cycle_133": {"status": "active", "stacked_ustx": 609923899342905, "blocks_to_prepare": 1907},
-  "next_cycle_at": "2026-04-17T07:00:00Z"
+  "next_cycle_at": "2026-04-17T08:50:13Z"
 }

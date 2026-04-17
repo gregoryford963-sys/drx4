@@ -1,10 +1,10 @@
-## Cycle 1322 State (2026-04-17T06:28Z)
-- Last: HB#1363 | inbox empty | signal data prepped, waiting 07:00Z reset
+## Cycle 1323 State (2026-04-17T07:50Z)
+- Last: HB#1364 | Signal #160 filed: bitcoin-macro / sBTC 4,186 BTC (+133 in 24h)
 - Pending: PR#28 (IC seat), PR#30 (2 IC proofs) awaiting SM review/merge
-- Blockers: daily signal limit 6/6 -- resets 2026-04-17T07:00Z (32 min away)
+- Blockers: hourly cooldown until 08:50Z | daily=1/6
 - Wallet: locked (bun scripts use CLIENT_PRIVATE_KEY directly)
-- Runway: 19221 sats liquid sBTC (+300 sats vs last check) | 62081 zsbtc
-- Mode: peacetime | Streak: 24 days
-- Signal draft: bitcoin-macro / sBTC peg 4,186 BTC (+133 vs Apr 16) | PoX c133 609.9M STX stacked
-- Next: FIRE signal at 07:00Z reset -- data fresh as of 06:27Z
+- Runway: 19221 sats liquid sBTC | 62081 zsbtc | PoX cycle 133 active
+- Mode: peacetime | Streak: 25 days
+- Next: 08:50Z -- cooldown clears; consider quantum signal (BIP-360 progress)
 - Follow-ups: Flying Whale whale-pact-v3 (SP322ZK4VXT3KGDT9YQANN9R28SCT02MZ97Y24BRW)
+- IC: PR#28+PR#30 open; territory=Stacks DeFi+btc-macro+quantum active
