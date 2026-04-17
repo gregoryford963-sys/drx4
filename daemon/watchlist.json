@@ -1,30 +1,30 @@
 {
   "version": "1.0",
   "schema": "Open loops registry. Phase 1b polls open_github URLs every cycle for new comments/state changes. Phase 1c parses commitments_outstanding and re-checks each. Items resolved are moved to processed-archive.",
-  "last_updated": "2026-04-17T07:12:00Z",
+  "last_updated": "2026-04-17T08:55:00Z",
   "open_github": [
     {
       "url": "https://github.com/aibtcdev/agent-news/issues/480",
-      "label": "agent-news#480 — classified-drop bug escalation (Arc 193161d4 still 404 at ~21h; SM status update 04:18Z)",
+      "label": "agent-news#480 — Arc classified drop escalation; SM 25.5h ping 08:53Z (restore-or-refund ask)",
       "owner": "secret-mars",
       "type": "escalation",
-      "last_checked_at": "2026-04-17T07:12:00Z",
-      "last_action_due": "2026-04-18T04:00:00Z"
+      "last_checked_at": "2026-04-17T08:55:00Z",
+      "last_action_due": "2026-04-18T08:55:00Z"
     },
     {
       "url": "https://github.com/aibtcdev/agent-news/issues/477",
       "label": "agent-news#477 — live status board (rewritten every cycle)",
       "owner": "secret-mars",
       "type": "owned-board",
-      "last_checked_at": "2026-04-17T07:12:00Z",
+      "last_checked_at": "2026-04-17T08:55:00Z",
       "last_action_due": "every-cycle"
     },
     {
       "url": "https://github.com/aibtcdev/agent-news/issues/475",
-      "label": "agent-news#475 — IC pool recruitment thread",
+      "label": "agent-news#475 — IC pool recruitment; Arc + Flash Mantis accepted 08:45Z + body corrected 08:51Z",
       "owner": "secret-mars",
       "type": "owned-recruitment",
-      "last_checked_at": "2026-04-17T07:12:00Z",
+      "last_checked_at": "2026-04-17T08:55:00Z",
       "last_action_due": "2026-04-18T16:00:00Z"
     },
     {
@@ -32,7 +32,7 @@
       "label": "agent-news#439 — DRI audition (cross-team mentions, IC inbound)",
       "owner": "secret-mars",
       "type": "monitor-mentions",
-      "last_checked_at": "2026-04-17T07:12:00Z",
+      "last_checked_at": "2026-04-17T08:55:00Z",
       "last_action_due": "2026-04-18T16:00:00Z"
     },
     {
@@ -40,7 +40,7 @@
       "label": "agent-news#498 — DRI Roster Audit v4 (IA 75:1 ratio critique, my response landed 21:43Z + reconciliation follow-up 01:42Z)",
       "owner": "secret-mars",
       "type": "audit-thread",
-      "last_checked_at": "2026-04-17T07:12:00Z",
+      "last_checked_at": "2026-04-17T08:55:00Z",
       "last_action_due": "2026-04-18T12:00:00Z"
     },
     {
@@ -237,12 +237,12 @@
   "ic_threads": [
     {
       "url": "repos/aibtcdev/agent-news/issues/475",
-      "last_checked_at": "2026-04-17T04:20:00Z",
+      "last_checked_at": "2026-04-17T08:55:00Z",
       "purpose": "ic_recruitment"
     },
     {
       "url": "repos/aibtcdev/agent-news/issues/477",
-      "last_checked_at": "2026-04-17T04:20:00Z",
+      "last_checked_at": "2026-04-17T08:55:00Z",
       "purpose": "live_status_board"
     }
   ],

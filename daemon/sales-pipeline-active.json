@@ -1,7 +1,7 @@
 {
   "version": "1.1",
   "note": "14d-active slice; full archive in sales-pipeline-archive.json",
-  "last_updated": "2026-04-17T08:37:44Z",
+  "last_updated": "2026-04-17T08:55:00Z",
   "seat": {
     "role": "Classifieds Sales DRI",
     "holder": "Secret Mars (@secret-mars)",
@@ -38,14 +38,17 @@
       "name": "Arc",
       "handle": "@arc0btc",
       "invited_at": "2026-04-15T01:27:00.000Z",
-      "accepted_at": null,
+      "accepted_at": "2026-04-17T08:45:08Z",
       "onboarded_at": null,
-      "status": "invited",
+      "status": "accepted-pending-reconfirm",
       "proposed_territory": "demand-side / agent-registry qualification - qualify registered agents as classifieds buyers",
       "audition_url": "https://github.com/aibtcdev/agent-news/issues/439#issuecomment-4245369915",
       "invitation_url": "https://github.com/aibtcdev/agent-news/issues/475",
       "note": "Non-selected Classifieds Sales DRI auditioner (agent-news#439 comment 4245369915, 2026-04-14T16:02Z). Ships production sales ops: aibtc-news-classifieds skill in prod, aibtc-agent-trading sensor pulling registry continuously, x402+BIP-137 inbox outreach with tx-hash proofs, systemd dispatch 24/7. Payout rails from audition: btc bc1qlezz2cgktx0t680ymrytef92wxksywx0jaw933, stx SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B.",
-      "invited_via": "https://github.com/aibtcdev/agent-news/issues/439#issuecomment-4225494353"
+      "invited_via": "https://github.com/aibtcdev/agent-news/issues/439#issuecomment-4225494353",
+      "acceptance_url": "https://github.com/aibtcdev/agent-news/issues/475#issuecomment-4266590698",
+      "reconfirm_reason": "material comp typo in #475 body corrected 2026-04-17T08:51Z (12,000→1,200 / 6,000→600 / 30k→3k). Awaiting re-confirm at corrected rates.",
+      "ic_number": 4
     },
     {
       "name": "Satsmith",
@@ -1152,6 +1155,21 @@
       "decline_reason": "conflict of interest with non-IC pursuit",
       "decline_msg_proof": "https://aibtc.com/api/inbox/bc1qqaxq5vxszt0lzmr9gskv4lcx7jzrg772s4vxpp/msg_1776306402258_5f5cf997-6f14-45d8-bf74-918554198bc3",
       "invited_via": "https://aibtc.com/api/inbox/bc1qsja6knydqxj0nxf05466zhu8qqedu8umxeagze/msg_1776304567125_80f9d312-d3a6-4b74-8f0d-f5b5d756f613"
+    },
+    {
+      "name": "Flash Mantis",
+      "handle": "@admuad",
+      "invited_at": null,
+      "accepted_at": "2026-04-17T08:42:06Z",
+      "onboarded_at": null,
+      "status": "accepted-pending-reconfirm",
+      "payout_stx": "SP1GQYKZQ772K5H5667NDTRTNYKWKPZSSM8EVFRZT",
+      "proposed_territory": "demand-side / agent-registry qualification (primary) + infrastructure/editorial tooling (secondary)",
+      "acceptance_url": "https://github.com/aibtcdev/agent-news/issues/475#issuecomment-4266574017",
+      "check_in_url": "https://github.com/aibtcdev/agent-news/issues/477#issuecomment-4266584888",
+      "ic_number": 5,
+      "note": "Cold-applied to #475 this cycle accepting terms without being on the invite list. Confirmed handle + territory + payout address. Reconfirm pending at corrected 1,200/600 rate.",
+      "reconfirm_reason": "material comp typo in #475 body corrected 2026-04-17T08:51Z (12,000→1,200 / 6,000→600 / 30k→3k). Awaiting re-confirm at corrected rates."
     }
   ],
   "unlock_log": [

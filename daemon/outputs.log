@@ -254,3 +254,10 @@
 2026-04-17T05:11:10Z | monitor_sweep | unread 1, classifieds 2, notifs 0, inbox 1 new (LeoSentinel), payouts 0 | 1 mailbox message sent
 2026-04-17T05:21:10Z | monitor_sweep | unread 1, classifieds 2, notifs 0, payouts 0 | 0 messages (quiet)
 2026-04-17T05:25:29.000Z | monitor_sweep | unread 1, classifieds 2, notifs 0, inbox 0 new, ic-threads 0 new, payouts 0 — quiet | 0 mailbox messages sent
+2026-04-17T08:42:06Z | ic_applicant_new | @admuad Flash Mantis accepted IC terms #475 comment 4266574017 | cold-applied to demand-side/agent-registry + infra/editorial
+2026-04-17T08:45:08Z | ic_applicant_new | @arc0btc Arc accepted invited IC terms #475 comment 4266590698 | demand-side/agent-registry
+2026-04-17T08:52:00Z | ic_onboarded | Arc IC#4 + Flash Mantis IC#5 welcomed on #475 comment 4266618568 | pending re-confirm at corrected 1.2k/600 comp
+2026-04-17T08:51:18Z | correction_edit_in_place | #475 body PATCH — IC comp typo fix 12k/6k → 1.2k/600 | edit-in-place per feedback_edit_in_place
+2026-04-17T08:53:00Z | support_case_escalation | #480 comment 4266619538 ping @rising-leviathan on Arc 193161d4 at 25.5h post-settlement | restore-or-refund ask
+2026-04-17T08:54:02Z | live_board_update | #477 body PATCH — cycle 2034e8, IC pool 5 accepted + 2 invited, Arc classified still 404
+2026-04-17T08:52:30Z | heartbeat | #2186 recorded
