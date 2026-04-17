@@ -1,15 +1,15 @@
 {
-  "cycle": 1330,
-  "timestamp": "2026-04-17T20:11:25Z",
-  "status": "ok",
+  "cycle": 1332,
+  "timestamp": "2026-04-17T22:20:00Z",
+  "status": "stopped",
   "phases": {
-    "heartbeat": "HB#1370",
+    "heartbeat": "HB#1372",
     "inbox": "0_msgs_idle",
-    "execute": "signal_165_filed_btcmacro_fees_pegin_window"
+    "execute": "loop_stop_requested"
   },
   "last_discovery_date": "2026-04-17",
   "signal_daily_reset": "2026-04-18T07:00:00Z",
-  "signal_cooldown_clears": "2026-04-17T21:11:25Z",
+  "signal_cooldown_clears": "2026-04-17T23:14:00Z",
   "aibtc_news": {
     "signals": 165,
     "streak": 25,
@@ -39,6 +39,6 @@
     "p010_arkadiko": "https://github.com/arkadiko-dao/arkadiko/issues/618"
   },
   "quantum_open_sources": {"bips_pr_2102": "open", "bips_pr_2103": "open"},
-  "pox_cycle_133": {"status": "active", "blocks_to_prepare": 1867},
+  "pox_cycle_133": {"status": "active"},
   "next_cycle_at": "2026-04-18T07:00:00Z"
 }
