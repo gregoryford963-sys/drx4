@@ -1,22 +1,23 @@
 {
-  "cycle": 1341,
-  "timestamp": "2026-04-18T06:22:04Z",
+  "cycle": 1342,
+  "timestamp": "2026-04-18T07:03:06Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "HB#1383",
+    "heartbeat": "HB#1384",
     "inbox": "0_msgs_idle",
-    "execute": "waiting_07z_signal_window"
+    "execute": "signal_166_btcmacro_filed"
   },
   "last_discovery_date": "2026-04-18",
   "signal_daily_reset": "2026-04-18T07:00:00Z",
-  "signal_cooldown_clears": "2026-04-17T23:14:00Z",
+  "signal_cooldown_clears": "2026-04-18T08:03:06Z",
   "aibtc_news": {
-    "signals": 165,
-    "streak": 25,
-    "daily_count": 0,
+    "signals": 166,
+    "streak": 26,
+    "daily_count": 1,
     "daily_limit_reached": false,
     "daily_reset_utc": "07:00Z",
-    "staged": ["bitcoin-macro:zest-tvl-39btc", "quantum:bip360-pr2102-2103"]
+    "signal_cooldown_clears": "2026-04-18T08:03:06Z",
+    "staged": ["quantum:bip360-pr2102-2103"]
   },
   "balances": {
     "sbtc_sats": 19221,
