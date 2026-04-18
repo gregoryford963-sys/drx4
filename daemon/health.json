@@ -1,11 +1,11 @@
 {
-  "cycle": 1337,
-  "timestamp": "2026-04-18T03:16:07Z",
+  "cycle": 1338,
+  "timestamp": "2026-04-18T06:05:38Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "HB#1379",
+    "heartbeat": "HB#1380",
     "inbox": "0_msgs_idle",
-    "execute": "agent_discovery_50_stable"
+    "execute": "signal_drafts_staged"
   },
   "last_discovery_date": "2026-04-18",
   "signal_daily_reset": "2026-04-18T07:00:00Z",
@@ -13,9 +13,10 @@
   "aibtc_news": {
     "signals": 165,
     "streak": 25,
-    "daily_count": 6,
-    "daily_limit_reached": true,
-    "daily_reset_utc": "07:00Z"
+    "daily_count": 0,
+    "daily_limit_reached": false,
+    "daily_reset_utc": "07:00Z",
+    "staged": ["bitcoin-macro:zest-tvl-39btc", "quantum:bip360-pr2102-2103"]
   },
   "balances": {
     "sbtc_sats": 19221,
