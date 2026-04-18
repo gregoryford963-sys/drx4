@@ -1,11 +1,11 @@
 {
-  "cycle": 1338,
-  "timestamp": "2026-04-18T06:05:38Z",
+  "cycle": 1339,
+  "timestamp": "2026-04-18T06:12:06Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "HB#1380",
+    "heartbeat": "HB#1381",
     "inbox": "0_msgs_idle",
-    "execute": "signal_drafts_staged"
+    "execute": "waiting_07z_signal_window"
   },
   "last_discovery_date": "2026-04-18",
   "signal_daily_reset": "2026-04-18T07:00:00Z",
