@@ -1,6 +1,6 @@
 ## Cycle 1334 State (2026-04-17T23:51Z)
 - Last: HB#1376 | inbox 0 msgs | BFF scouting: #492 HODLMM Harvest Loop unclaimed Tier-1
-- Pending: PR#28, PR#30 (SM review), Flying Whale onchain sig, Tenero p007, bff #492 build
+- Pending: PR#28, PR#30 (SM review), Flying Whale onchain sig, Tenero p007, bff #492 build, DRI #518 awaiting response
 - Blockers: signals blocked until 2026-04-18T07:00Z (daily 6/6 reset)
 - Wallet: LOCKED
 - Runway: 19221 sats liquid sBTC + 62081 zsbtc in Zest
