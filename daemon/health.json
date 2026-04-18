@@ -1,11 +1,11 @@
 {
-  "cycle": 1333,
-  "timestamp": "2026-04-17T23:41:27Z",
+  "cycle": 1334,
+  "timestamp": "2026-04-17T23:51:00Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "HB#1375",
+    "heartbeat": "HB#1376",
     "inbox": "0_msgs_idle",
-    "execute": "platform_docs_check_pr_status"
+    "execute": "bff_scout_492_unclaimed"
   },
   "last_discovery_date": "2026-04-17",
   "signal_daily_reset": "2026-04-18T07:00:00Z",
@@ -40,5 +40,6 @@
   },
   "quantum_open_sources": {"bips_pr_2102": "open", "bips_pr_2103": "open"},
   "pox_cycle_133": {"status": "active"},
-  "next_cycle_at": "2026-04-18T04:41:00Z"
+  "bff_targets": {"492": "hodlmm-harvest-loop", "status": "unclaimed_tier1_hodlmm_bonus"},
+  "next_cycle_at": "2026-04-18T07:05:00Z"
 }
