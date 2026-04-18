@@ -1,11 +1,11 @@
 {
-  "cycle": 1334,
-  "timestamp": "2026-04-17T23:51:00Z",
+  "cycle": 1335,
+  "timestamp": "2026-04-18T01:08:11Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "HB#1376",
+    "heartbeat": "HB#1377",
     "inbox": "0_msgs_idle",
-    "execute": "bff_scout_492_unclaimed"
+    "execute": "balance_check_peacetime"
   },
   "last_discovery_date": "2026-04-17",
   "signal_daily_reset": "2026-04-18T07:00:00Z",
@@ -41,5 +41,6 @@
   "quantum_open_sources": {"bips_pr_2102": "open", "bips_pr_2103": "open"},
   "pox_cycle_133": {"status": "active"},
   "bff_targets": {"492": "hodlmm-harvest-loop", "status": "unclaimed_tier1_hodlmm_bonus"},
+  "dri_application": {"issue": "aibtcdev/agent-news#518", "seat": "revenue_strategist", "status": "pending"},
   "next_cycle_at": "2026-04-18T07:05:00Z"
 }
