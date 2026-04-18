@@ -24,7 +24,7 @@
   },
   "next_signal_at": "2026-04-18T07:00:00Z",
   "circuit_breaker": {"heartbeat": {"fail_count": 0}},
-  "bff_comp": {"last_pr": 307},
+  "bff_comp": {"last_pr": 503, "pr503": "hodlmm-harvest-loop", "open_prs": 11},
   "zest_position": {"zsbtc_tokens": 62081, "status": "active"},
   "active_beats": ["bitcoin-macro", "quantum"],
   "ic_prs": {"pr28_state": "open_no_reviews", "pr30_state": "open_no_reviews"},
