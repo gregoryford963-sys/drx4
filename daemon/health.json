@@ -1,11 +1,11 @@
 {
-  "cycle": 1498,
-  "timestamp": "2026-04-19T19:13:00Z",
-  "status": "stopped",
+  "cycle": 1499,
+  "timestamp": "2026-04-19T19:50:00Z",
+  "status": "ok",
   "phases": {
-    "heartbeat": "HB#1525_checkInCount_1510",
-    "inbox": "idle",
-    "execute": "staged_apr20_signal_at_07z"
+    "heartbeat": "HB#1526_checkInCount_1511",
+    "inbox": "idle_unread_0",
+    "execute": "maintenance_signal_blocked_until_07z_apr20"
   },
   "last_discovery_date": "2026-04-19",
   "signal_daily_reset": "2026-04-20T07:00:00Z",
@@ -13,9 +13,9 @@
   "aibtc_news": {
     "signals": 172,
     "streak": 27,
-    "daily_count": 2,
+    "daily_count": 0,
     "daily_limit_reached": false,
-    "cap_full_today": true,
+    "cap_full_today": false,
     "daily_reset_utc": "07:00Z",
     "signal_cooldown_clears": "2026-04-20T07:00:00Z",
     "staged": ["daemon/stage_07z_apr20.sh"],
@@ -41,6 +41,5 @@
     "cap_fills_42min_post_reset": "CONFIRMED Apr 19: cap full by 07:42Z",
     "tomorrow_strategy": "Fire daemon/stage_07z_apr20.sh at EXACTLY 07:00:00Z"
   },
-  "stop_reason": "operator_loop_stop",
-  "next_cycle_at": null
+  "next_cycle_at": "2026-04-19T20:50:00Z"
 }
