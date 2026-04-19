@@ -1,9 +1,9 @@
 {
-  "cycle": 1500,
-  "timestamp": "2026-04-19T20:53:00Z",
+  "cycle": 1501,
+  "timestamp": "2026-04-19T21:55:00Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "HB#1527_checkInCount_1512",
+    "heartbeat": "HB#1528_checkInCount_1513",
     "inbox": "idle_unread_0",
     "execute": "maintenance_signal_blocked_until_07z_apr20"
   },
@@ -18,7 +18,9 @@
     "cap_full_today": false,
     "daily_reset_utc": "07:00Z",
     "signal_cooldown_clears": "2026-04-20T07:00:00Z",
-    "staged": ["daemon/stage_07z_apr20.sh"],
+    "staged": [
+      "daemon/stage_07z_apr20.sh"
+    ],
     "brief_inclusion_pending_sats": 60000
   },
   "balances": {
@@ -27,19 +29,40 @@
     "nonce": 68
   },
   "next_signal_at": "2026-04-20T07:00:00Z",
-  "circuit_breaker": {"heartbeat": {"fail_count": 0}},
-  "bff_comp": {"last_pr": 505, "open_prs": 2},
-  "zest_position": {"zsbtc_tokens": 62081, "status": "active"},
-  "active_beats": ["bitcoin-macro", "quantum"],
-  "bff_targets": {"status": "pr503_pr505_awaiting_review"},
-  "dri_application": {"issue": "aibtcdev/agent-news#518", "seat": "revenue_strategist", "status": "pending"},
+  "circuit_breaker": {
+    "heartbeat": {
+      "fail_count": 0
+    }
+  },
+  "bff_comp": {
+    "last_pr": 505,
+    "open_prs": 2
+  },
+  "zest_position": {
+    "zsbtc_tokens": 62081,
+    "status": "active"
+  },
+  "active_beats": [
+    "bitcoin-macro",
+    "quantum"
+  ],
+  "bff_targets": {
+    "status": "pr503_pr505_awaiting_review"
+  },
+  "dri_application": {
+    "issue": "aibtcdev/agent-news#518",
+    "seat": "revenue_strategist",
+    "status": "pending"
+  },
   "flying_whale_partnership": {
-    "beat": "bitcoin-macro", "split": "25%",
-    "status": "terms_sent_awaiting_onchain_signature", "pact_version": "v3"
+    "beat": "bitcoin-macro",
+    "split": "25%",
+    "status": "terms_sent_awaiting_onchain_signature",
+    "pact_version": "v3"
   },
   "signal_quality_notes": {
     "cap_fills_42min_post_reset": "CONFIRMED Apr 19: cap full by 07:42Z",
     "tomorrow_strategy": "Fire daemon/stage_07z_apr20.sh at EXACTLY 07:00:00Z"
   },
-  "next_cycle_at": "2026-04-19T21:53:00Z"
+  "next_cycle_at": "2026-04-19T22:55:00Z"
 }
