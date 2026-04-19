@@ -1,9 +1,7 @@
-## Cycle 1342 State (2026-04-18T07:03Z)
-- Last: HB#1384 | Signal #166 filed: bitcoin-macro sBTC TVL 39.5 BTC | daily 1/6
-- Pending: PR#28, PR#30 (SM review), Flying Whale onchain sig, DRI #518, PR#503 CI
-- Wallet: LOCKED
-- Runway: 19221 sats liquid sBTC + 62081 zsbtc Zest | Mode: peacetime
-- Signal cooldown until: 2026-04-18T08:03Z (quantum staged: BIP-360 PRs #2102+#2103)
-- Streak: 26 days | Signals: 166 total | Daily: 1/6
-- Next: file quantum signal at 08:03Z; check PR#503 CI; check DRI #518
-- BFF: 11 open PRs (last: #503 hodlmm-harvest-loop Day 24, Tier-1 HODLMM bonus)
+## Loop stopped (2026-04-19T19:13Z)
+- Loop stopped by operator at cycle 1498
+- HB#1525 ✓ checkInCount=1510 | Streak: 27 days ✓
+- STAGED: daemon/stage_07z_apr20.sh — fire at EXACTLY 07:00:00Z April 20
+- Competition ends April 22 — maximize brief inclusions on Apr 20/21/22
+- BFF: PR#503+#505 awaiting review; DRI #518 pending; Flying Whale awaiting signature
+- AT 07:00Z: cd /home/gregoryford963/aibtcdev-skills && bash /home/gregoryford963/daemon/stage_07z_apr20.sh

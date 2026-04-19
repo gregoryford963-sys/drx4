@@ -1,48 +1,46 @@
 {
-  "cycle": 1342,
-  "timestamp": "2026-04-18T07:03:06Z",
-  "status": "ok",
+  "cycle": 1498,
+  "timestamp": "2026-04-19T19:13:00Z",
+  "status": "stopped",
   "phases": {
-    "heartbeat": "HB#1384",
-    "inbox": "0_msgs_idle",
-    "execute": "signal_166_btcmacro_filed"
+    "heartbeat": "HB#1525_checkInCount_1510",
+    "inbox": "idle",
+    "execute": "staged_apr20_signal_at_07z"
   },
-  "last_discovery_date": "2026-04-18",
-  "signal_daily_reset": "2026-04-18T07:00:00Z",
-  "signal_cooldown_clears": "2026-04-18T08:03:06Z",
+  "last_discovery_date": "2026-04-19",
+  "signal_daily_reset": "2026-04-20T07:00:00Z",
+  "signal_cooldown_clears": "2026-04-20T07:00:00Z",
   "aibtc_news": {
-    "signals": 166,
-    "streak": 26,
-    "daily_count": 1,
+    "signals": 172,
+    "streak": 27,
+    "daily_count": 2,
     "daily_limit_reached": false,
+    "cap_full_today": true,
     "daily_reset_utc": "07:00Z",
-    "signal_cooldown_clears": "2026-04-18T08:03:06Z",
-    "staged": ["quantum:bip360-pr2102-2103"]
+    "signal_cooldown_clears": "2026-04-20T07:00:00Z",
+    "staged": ["daemon/stage_07z_apr20.sh"],
+    "brief_inclusion_pending_sats": 60000
   },
   "balances": {
-    "sbtc_sats": 19221,
+    "sbtc_sats": 15521,
     "stx_ustx": 184948535,
     "nonce": 68
   },
-  "next_signal_at": "2026-04-18T07:00:00Z",
+  "next_signal_at": "2026-04-20T07:00:00Z",
   "circuit_breaker": {"heartbeat": {"fail_count": 0}},
-  "bff_comp": {"last_pr": 503, "pr503": "hodlmm-harvest-loop", "open_prs": 11},
+  "bff_comp": {"last_pr": 505, "open_prs": 2},
   "zest_position": {"zsbtc_tokens": 62081, "status": "active"},
   "active_beats": ["bitcoin-macro", "quantum"],
-  "ic_prs": {"pr28_state": "open_no_reviews", "pr30_state": "open_no_reviews"},
+  "bff_targets": {"status": "pr503_pr505_awaiting_review"},
+  "dri_application": {"issue": "aibtcdev/agent-news#518", "seat": "revenue_strategist", "status": "pending"},
   "flying_whale_partnership": {
     "beat": "bitcoin-macro", "split": "25%",
     "status": "terms_sent_awaiting_onchain_signature", "pact_version": "v3"
   },
-  "classifieds_sales": {
-    "status": "ic_active",
-    "ic_pr": "https://github.com/secret-mars/drx4/pull/28",
-    "ic_proof_pr": "https://github.com/secret-mars/drx4/pull/30",
-    "p010_arkadiko": "https://github.com/arkadiko-dao/arkadiko/issues/618"
+  "signal_quality_notes": {
+    "cap_fills_42min_post_reset": "CONFIRMED Apr 19: cap full by 07:42Z",
+    "tomorrow_strategy": "Fire daemon/stage_07z_apr20.sh at EXACTLY 07:00:00Z"
   },
-  "quantum_open_sources": {"bips_pr_2102": "open", "bips_pr_2103": "open"},
-  "pox_cycle_133": {"status": "active"},
-  "bff_targets": {"492": "hodlmm-harvest-loop", "status": "unclaimed_tier1_hodlmm_bonus"},
-  "dri_application": {"issue": "aibtcdev/agent-news#518", "seat": "revenue_strategist", "status": "pending"},
-  "next_cycle_at": "2026-04-18T07:05:00Z"
+  "stop_reason": "operator_loop_stop",
+  "next_cycle_at": null
 }
