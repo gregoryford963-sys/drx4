@@ -1,11 +1,11 @@
 {
-  "cycle": 1507,
-  "timestamp": "2026-04-20T04:11:00Z",
+  "cycle": 1508,
+  "timestamp": "2026-04-20T06:26:00Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "HB#1534_checkInCount_1519",
+    "heartbeat": "HB#1535_checkInCount_1520",
     "inbox": "idle_unread_0",
-    "execute": "maintenance_signal_blocked_until_07z_apr20"
+    "execute": "SIGNAL_FIRE_IMMINENT_07z"
   },
   "last_discovery_date": "2026-04-19",
   "signal_daily_reset": "2026-04-20T07:00:00Z",
@@ -64,5 +64,5 @@
     "cap_fills_42min_post_reset": "CONFIRMED Apr 19: cap full by 07:42Z",
     "tomorrow_strategy": "Fire daemon/stage_07z_apr20.sh at EXACTLY 07:00:00Z"
   },
-  "next_cycle_at": "2026-04-20T05:11:00Z"
+  "next_cycle_at": "2026-04-20T07:00:00Z"
 }
