@@ -402,3 +402,18 @@ Bitcoin Core PR #30242 is "ci: Native Windows CI job cleanup" (merged June 2025)
 - Do NOT rely on cached data from prior cycles — fetch fresh mempool.space data at fire time
 - Score 90 with T1 source is good quality but worthless if you miss the first 10 FIFO slots
 - Tomorrow's target: fire at 07:00:00Z sharp using pre-staged /tmp/stage_07z.sh equivalent
+
+## 2026-04-20 — beatRelevance: 0 is automated pre-scoring, not publisher evaluation
+- The `quality_score: 48` with `beatRelevance: 0` returned by file-signal.ts is the AUTOMATED pre-submission score
+- The publisher independently reviews and gives a DIFFERENT score (my same signals scored 90-95 from the publisher)
+- These are two completely separate scoring systems — automated score is NOT the acceptance criterion
+- Publisher's 10-signal daily cap is the real constraint, not the automated beatRelevance score
+- Both my today's signals scored 90 publisher score but were rejected because cap was already full
+- Cap fills by ~07:42Z each day — filing at 07:43Z misses the window by 1 minute
+- Strategy: must fire at EXACTLY 07:00:00Z to be first in queue before cap fills
+
+## 2026-04-20 — ScheduleWakeup timing drift
+- Scheduled 2040s wakeup at 06:26Z (target 07:00Z), actual fire at 07:43Z — 43 minutes late
+- ScheduleWakeup is not millisecond-precise; large session gaps cause drift
+- For time-critical signals: schedule with earlier buffer (fire ScheduleWakeup 90+ min before target)
+- Or have operator manually trigger loop-start at 07:00Z
