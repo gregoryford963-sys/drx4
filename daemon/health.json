@@ -1,14 +1,14 @@
 {
-  "cycle": 1512,
-  "timestamp": "2026-04-20T15:52:00Z",
+  "cycle": 1513,
+  "timestamp": "2026-04-20T16:00:00Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "HB#1539_checkInCount_1524",
+    "heartbeat": "HB#1525_checkInCount_1525",
     "inbox": "idle_unread_0",
-    "execute": "joined_aibtc_network_filed_emblem_signal_updated_loop_v27"
+    "execute": "maintenance_created_stage_07z_apr21_script"
   },
   "last_discovery_date": "2026-04-19",
-  "signal_daily_reset": "2026-04-20T07:00:00Z",
+  "signal_daily_reset": "2026-04-21T07:00:00Z",
   "signal_cooldown_clears": "2026-04-20T16:52:00Z",
   "aibtc_news": {
     "signals": 175,
@@ -19,7 +19,7 @@
     "daily_reset_utc": "07:00Z",
     "signal_cooldown_clears": "2026-04-20T16:52:00Z",
     "staged": [
-      "daemon/stage_07z_apr20.sh"
+      "daemon/stage_07z_apr21.sh"
     ],
     "brief_inclusion_pending_sats": 60000
   },
@@ -62,8 +62,8 @@
     "pact_version": "v3"
   },
   "signal_quality_notes": {
-    "cap_fills_42min_post_reset": "CONFIRMED Apr 19: cap full by 07:42Z",
-    "tomorrow_strategy": "Fire daemon/stage_07z_apr20.sh at EXACTLY 07:00:00Z"
+    "cap_fills_42min_post_reset": "CONFIRMED Apr 19+20: cap full by 07:42Z",
+    "apr21_strategy": "Fire daemon/stage_07z_apr21.sh at EXACTLY 07:00:00Z, then aibtc-network PR signal"
   },
-  "next_cycle_at": "2026-04-20T16:52:00Z"
+  "next_cycle_at": "2026-04-20T17:00:00Z"
 }
