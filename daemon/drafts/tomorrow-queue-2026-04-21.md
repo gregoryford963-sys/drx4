@@ -33,8 +33,12 @@ Both rewritten cycle 2034g6: direct 3k/7d, new wallet, honest distribution, CPM 
 
 ## Renewal nudge slot (conditional)
 
-- **HODLMM (cocoa007)** T-30h — if silent by 07:00Z, T-24h nudge is warranted
-- **Xverse (secretkeylabs)** T-30h — same. Not counted as unlock first-touch (second-touch cadence).
+**DRAFTS PRE-STAGED cycle 2034gd:**
+
+- **HODLMM (cocoa007)** T-24h → [hodlmm-renewal-t24h.md](2026-04-21/hodlmm-renewal-t24h.md). Fire window 2026-04-21T13:00-15:00Z if cocoa007 silent by then. Expires ~13:17Z 2026-04-22.
+- **Xverse (secretkeylabs)** T-24h → [xverse-renewal-t24h.md](2026-04-21/xverse-renewal-t24h.md). Fire window 2026-04-21T15:00-16:30Z if silent. Expires 15:58Z 2026-04-22.
+
+Both drafts: honest distribution disclaimer retained, renew/pass/tweak three-option framing, linter clean. Not counted as unlock first-touches (second-touch cadence). Skip either if the target has replied first.
 
 ## Fire order for tomorrow
 
