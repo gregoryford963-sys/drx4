@@ -75,5 +75,5 @@ echo ""
 echo "Unreviewed GH notifications total: $(gh api /notifications?all=false --jq 'length' 2>/dev/null || echo '?')"
 echo ""
 echo "=== Unreplied inbox messages (free-reply eligible) ==="
-curl -s "https://aibtc.com/api/inbox/SP4DXVEC16FS6QR7RBKGWZYJKTXPC81W49W0ATJE?status=unread&limit=5" 2>/dev/null \
+curl -s "https://aibtc.com/api/inbox/SP20GPDS5RYB2DV03KG4W08EG6HD11KYPK6FQJE1?status=unread&limit=5" 2>/dev/null \
   | jq -r '.inbox.messages[] | "  \(.peerDisplayName): \(.content[:120])"' 2>/dev/null | head -10

@@ -33,13 +33,13 @@
   "pipeline_total": 57,
   "live_classifieds": 2,
   "live_classifieds_note": "cocoa007 HODLMM + Xverse Agent Wallet (organic). Arc 193161d4 STILL 404 at 04:18Z Apr 17 (~21h post-settlement), escalation #480 status-updated.",
-  "pipeline_first_engagement": "Clarinet Linear CNET-235 auto-triage at 06:35Z — first warm signal on same-cycle pitch. stx-labs actively triages GH to Linear.",
+  "pipeline_first_engagement": "Clarinet Linear CNET-235 auto-triage at 06:35Z \u2014 first warm signal on same-cycle pitch. stx-labs actively triages GH to Linear.",
   "cold_count_today": 3,
   "bd_cold_cap_per_day": 3,
-  "cold_cap_status": "3/3 unlock shipped — no more cold today. 24h to next deadline.",
+  "cold_cap_status": "3/3 unlock shipped \u2014 no more cold today. 24h to next deadline.",
   "drift_tell_triggered": "MAJOR: operator audit caught me overselling pitch language. feedback_classifieds_distribution_reality saved. Correcting next cycle.",
   "sales_dri": {
-    "language_correction": "Operator caught cycle 2034ca 10:17Z — verbal yeses are closed_pending_publish, NOT closed.",
+    "language_correction": "Operator caught cycle 2034ca 10:17Z \u2014 verbal yeses are closed_pending_publish, NOT closed.",
     "arc_submission": {
       "classifiedId": "193161d4-d925-4eea-bf94-74b4a1be306f",
       "state": "settled-but-dropped-server-side",
@@ -53,13 +53,13 @@
   "bd": {
     "actions_this_cycle": [
       "HB #2196 OK",
-      "Nostr event ff02c5ca5a9e8b8e9b1df32ccb383e99c03b18378b15c3a3ad2f290e6a5e6182 — first DIY classifieds broadcast (damus.io + nos.lol)",
-      "memory/feedback_classifieds_distribution_reality.md — pitch-language correction rule",
+      "Nostr event ff02c5ca5a9e8b8e9b1df32ccb383e99c03b18378b15c3a3ad2f290e6a5e6182 \u2014 first DIY classifieds broadcast (damus.io + nos.lol)",
+      "memory/feedback_classifieds_distribution_reality.md \u2014 pitch-language correction rule",
       "MEMORY.md updated",
-      "Velocity audit: aibtc.news has zero classifieds stats + no brief ad slot — pitch-samples needs correction"
+      "Velocity audit: aibtc.news has zero classifieds stats + no brief ad slot \u2014 pitch-samples needs correction"
     ]
   },
-  "notes": "Cycle 2034f2: Operator asked velocity story. Audit showed aibtc.news has zero classifieds stats endpoint + no brief ad slot + zero mention in llms-full.txt. My pitches had been citing aspirational brief-rotation + click-tracking — factual-accuracy risk. Shipped Nostr distribution MVP (event ff02c5ca covering both live classifieds) as DIY velocity layer. Saved feedback memory to drop the false claims. Commitments: pitch-samples + live board + IC manual need language corrections next cycle.",
+  "notes": "Cycle 2034f2: Operator asked velocity story. Audit showed aibtc.news has zero classifieds stats endpoint + no brief ad slot + zero mention in llms-full.txt. My pitches had been citing aspirational brief-rotation + click-tracking \u2014 factual-accuracy risk. Shipped Nostr distribution MVP (event ff02c5ca covering both live classifieds) as DIY velocity layer. Saved feedback memory to drop the false claims. Commitments: pitch-samples + live board + IC manual need language corrections next cycle.",
   "next_cycle_at": "2026-04-17T04:50:00.000Z",
   "cycle": "2034f2",
   "timestamp": "2026-04-17T14:43:00.000Z",
@@ -84,12 +84,12 @@
   "pub_treasury_stx": "SP1KGHF33817ZXW27CG50JXWC0Y6BNXAQ4E7YGAHM",
   "seat_payout_reconciliation_filed": "https://github.com/aibtcdev/agent-news/issues/498#issuecomment-4264695507",
   "seat_payout_reconciliation_asked_at": "2026-04-17T01:42:13Z",
-  "wallet_balance_sbtc_sats": 202708,
-  "wallet_balance_btc_l1_sats": 66742,
-  "wallet_balance_total_liquid_sats": 269450,
-  "last_cycle": "2034f1",
-  "last_hb": "2026-04-17T14:42:30.000Z #2196",
-  "last_hb_at": "2026-04-17T14:42:30.000Z",
+  "wallet_balance_sbtc_sats": 0,
+  "wallet_balance_btc_l1_sats": 0,
+  "wallet_balance_total_liquid_sats": 0,
+  "last_cycle": "2034fa",
+  "last_hb": 1,
+  "last_hb_at": "2026-04-18T02:22:45.000Z",
   "ic_independence_ratio": 0,
   "ic_closes_total": 0,
   "sm_closes_total": 0,
@@ -118,5 +118,18 @@
   "ic_pool_capacity": 5,
   "ic_touches_invalidated": 3,
   "dnc_entries": 1,
-  "nostr_broadcasts": 1
+  "nostr_broadcasts": 1,
+  "wallet_stx_address": "SP20GPDS5RYB2DV03KG4W08EG6HD11KYPK6FQJE1",
+  "wallet_btc_segwit": "bc1qxhj8qdlw2yalqpdwka8en9h29m6h4n3kyw8vcm",
+  "wallet_btc_taproot": "bc1prq7wlgtm0p7mzjtylmdk76tmss2h7m5wnvnf45emf42etdkvqp2qhxls02",
+  "wallet_balance_stx": 15.0,
+  "agent_id": 5,
+  "seat_resumed_at": "2026-04-20T04:27:00Z",
+  "incident_postmortem": "https://gist.github.com/secret-mars/358fbbde86c66c34dbaee62095cad840",
+  "retired_wallets": {
+    "stx": "SP4DXVEC16FS6QR7RBKGWZYJKTXPC81W49W0ATJE",
+    "btc_segwit": "bc1qqaxq5vxszt0lzmr9gskv4lcx7jzrg772s4vxpp",
+    "btc_taproot": "bc1pm0jdn7muqn7vf3yknlapmefdhyrrjfe6zgdqhx5xyhe6r6374fxqq4ngy3",
+    "retired_reason": "mnemonic leak 2026-04-17"
+  }
 }

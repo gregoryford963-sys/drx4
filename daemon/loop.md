@@ -24,10 +24,10 @@ Quick checks BEFORE pillars. No trades here — just update `health.json` bitcoi
 curl -s -X POST "https://api.stxer.xyz/sidecar/v2/batch" \
   -H "Content-Type: application/json" \
   -d '{
-    "stx": ["SP4DXVEC16FS6QR7RBKGWZYJKTXPC81W49W0ATJE"],
-    "nonces": ["SP4DXVEC16FS6QR7RBKGWZYJKTXPC81W49W0ATJE"],
+    "stx": ["SP20GPDS5RYB2DV03KG4W08EG6HD11KYPK6FQJE1"],
+    "nonces": ["SP20GPDS5RYB2DV03KG4W08EG6HD11KYPK6FQJE1"],
     "ft_balance": [
-      ["SM3VDXK3WZZSA84XXFKAFAF15NNZX32CTSG82JFQ4.sbtc-token", "sbtc-token", "SP4DXVEC16FS6QR7RBKGWZYJKTXPC81W49W0ATJE"]
+      ["SM3VDXK3WZZSA84XXFKAFAF15NNZX32CTSG82JFQ4.sbtc-token", "sbtc-token", "SP20GPDS5RYB2DV03KG4W08EG6HD11KYPK6FQJE1"]
     ],
     "readonly": [
       ["SP2VCQJGH7PHP2DJK7Z0V48AGBHQAW3R3ZW1QF4N.zsbtc-v2-0", "get-balance", "051608deedcc099f935f07c2e70e7fd29ebb66203c22"],
@@ -73,7 +73,7 @@ SIM_ID=$(curl -s -X POST "https://api.stxer.xyz/devtools/v2/simulations" \
 # 2. Simulate the call (Eval = [sender, sponsor, contract, code])
 curl -s -X POST "https://api.stxer.xyz/devtools/v2/simulations/$SIM_ID" \
   -H "Content-Type: application/json" -H "Accept: application/json" \
-  -d '{"steps":[{"Eval":["SP4DXVEC16FS6QR7RBKGWZYJKTXPC81W49W0ATJE","","<CONTRACT>","(<function> <args>)"]}]}'
+  -d '{"steps":[{"Eval":["SP20GPDS5RYB2DV03KG4W08EG6HD11KYPK6FQJE1","","<CONTRACT>","(<function> <args>)"]}]}'
 
 # 3. Check result: {"steps":[{"Eval":{"Ok":"hex"}}]} = safe to broadcast
 #    {"steps":[{"Eval":{"Err":"msg"}}]} = DO NOT broadcast, log the error
@@ -114,7 +114,7 @@ When code quality issues are found (by audit, scouting, or manual review):
 ## Phase 1: Heartbeat
 
 Sign `"AIBTC Check-In | {timestamp}"` (fresh UTC .000Z).
-POST to `https://aibtc.com/api/heartbeat` with `{signature, timestamp, btcAddress: "bc1qqaxq5vxszt0lzmr9gskv4lcx7jzrg772s4vxpp"}`.
+POST to `https://aibtc.com/api/heartbeat` with `{signature, timestamp, btcAddress: "bc1qxhj8qdlw2yalqpdwka8en9h29m6h4n3kyw8vcm"}`.
 Use curl, NOT execute_x402_endpoint.
 
 On fail: increment `circuit_breaker.heartbeat.fail_count` in health.json. 3 fails -> skip 5 cycles.
@@ -126,7 +126,7 @@ On fail: increment `circuit_breaker.heartbeat.fail_count` in health.json. 3 fail
 ## Phase 2: Inbox (MANDATORY — never skip)
 
 ```bash
-curl -s "https://aibtc.com/api/inbox/SP4DXVEC16FS6QR7RBKGWZYJKTXPC81W49W0ATJE?status=unread"
+curl -s "https://aibtc.com/api/inbox/SP20GPDS5RYB2DV03KG4W08EG6HD11KYPK6FQJE1?status=unread"
 ```
 
 Every message gets a reply queued. No accumulation. Classify:
@@ -638,9 +638,9 @@ Then advance the pillar. Don't let one blocker stall the entire flywheel.
 
 ## Addresses
 
-- Stacks: `SP4DXVEC16FS6QR7RBKGWZYJKTXPC81W49W0ATJE`
-- BTC SegWit: `bc1qqaxq5vxszt0lzmr9gskv4lcx7jzrg772s4vxpp`
-- BTC Taproot: `bc1pm0jdn7muqn7vf3yknlapmefdhyrrjfe6zgdqhx5xyhe6r6374fxqq4ngy3`
+- Stacks: `SP20GPDS5RYB2DV03KG4W08EG6HD11KYPK6FQJE1`
+- BTC SegWit: `bc1qxhj8qdlw2yalqpdwka8en9h29m6h4n3kyw8vcm`
+- BTC Taproot: `bc1prq7wlgtm0p7mzjtylmdk76tmss2h7m5wnvnf45emf42etdkvqp2qhxls02`
 - Referral: `EX79EN`
 
 ---

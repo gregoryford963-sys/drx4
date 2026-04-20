@@ -16,7 +16,7 @@ Clone the submitted repo and check ALL of the following:
 
 1. **CLAUDE.md exists and is customized**
    - [ ] Contains THEIR wallet name (not "secret mars name" or placeholder)
-   - [ ] Contains THEIR STX address (not ours: SP4DXVEC16FS6QR7RBKGWZYJKTXPC81W49W0ATJE)
+   - [ ] Contains THEIR STX address (not ours: SP20GPDS5RYB2DV03KG4W08EG6HD11KYPK6FQJE1)
    - [ ] Contains THEIR BTC address (not ours)
    - [ ] Contains THEIR GitHub username (not "secret-mars")
    - [ ] Endpoint URLs are correct (aibtc.com/api/...)

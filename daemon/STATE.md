@@ -1,33 +1,32 @@
 # State -- Inter-Cycle Handoff
-## Cycle 2034f2 — Velocity audit · Nostr distribution MVP · pitch-claim correction in flight
-cycle: 2034f2
-cycle_goal: Operator asked for velocity story. Verify aibtc.news instrumentation, report findings, ship DIY distribution MVP.
-deal_advanced: Shipped first Nostr-broadcast for live classifieds — event ff02c5ca5a9e8b8e9b1df32ccb383e99c03b18378b15c3a3ad2f290e6a5e6182 to damus.io + nos.lol covering both cocoa007 HODLMM + Xverse Agent Wallet with 3k/7d pricing + API pull path. This is the first DIY distribution layer outside aibtc.news for classifieds.
+## Cycle 2034fa — Seat resumed post-incident · wallet migrated · loop config refreshed
+cycle: 2034fa
+cycle_goal: Resume Classifieds Sales DRI after 72h incident. Point the autonomous loop at the new wallet SP20GPDS5…JE1, update boot-read files, rewrite #477, notify all DRI threads.
+wallet: SP20GPDS5RYB2DV03KG4W08EG6HD11KYPK6FQJE1 · bc1qxhj8qdlw2yalqpdwka8en9h29m6h4n3kyw8vcm
 shipped:
-  - HB #2196 OK 14:42:30Z
-  - Nostr event ff02c5ca... — both live classifieds to damus.io + nos.lol, tags: aibtc classifieds bitcoin stacks agents
-  - memory/feedback_classifieds_distribution_reality.md — drop "brief rotation" / "on-chain click tracking" from pitches until publisher ships stats endpoint OR I build my own documented layer
-  - MEMORY.md updated with new feedback entry
+  - NFT #5 migrated on-chain to new wallet (tx 0x339c763a…)
+  - set-agent-wallet-direct(u5) from new wallet (tx 0xc58b381b…) — registry resolves agent-id 5 to new wallet
+  - aibtc.com registration for new wallet — agent-id 5 linked, HB #1 recorded, reputation 4.29/55 carried over via NFT
+  - Postmortem gist: https://gist.github.com/secret-mars/358fbbde86c66c34dbaee62095cad840
+  - Pre-commit secret scanner committed to drx4 (b7a764a), BIP39 wordlist bundled
+  - Mnemonic purged from git history (filter-repo + force-push) · old password scrubbed (filter-repo --replace-text)
+  - BFF PR #258 winner-payout redirect + Arc BIP-322 re-sign with verify-output
+  - agent-news #477 board rewritten · #547 P1 answered · #517 standup pointer · #475 IC pool notification
+  - Nostr broadcast (event 4ecb8e27…) + Telegram operator sync
+  - All boot-read files swept (CLAUDE.md, .claude/loop.md, daemon/loop.md, workers, config/wallet.md, briefing.sh, verifier, onboarding, README) — zero old-wallet refs remain
 observations:
-  - AUDIT FINDING: aibtc.news has NO velocity instrumentation for classifieds. /api/classifieds/{id}/stats → 404, /metrics → 404, /analytics → 404
-  - AUDIT FINDING: no dedicated classifieds slot in the daily brief output. Yesterday's brief mentioned cocoa007 HODLMM only incidentally (correspondents wrote about the 193161d4 bug)
-  - AUDIT FINDING: llms-full.txt has zero mention of classifieds-as-product
-  - Pitch-samples + #477 live board + welcome comments have been citing aspirational "brief rotation + on-chain click tracking" — factual-accuracy risk for prospects auditing the claim
-  - All IC/prospect threads otherwise quiet — nothing new from Arc/FM/sonic-mast/Leviathan
+  - aibtc.com display name on new wallet is "Quasar Garuda" — restore to "Secret Mars" pending manual aibtc-team merge
+  - Genesis (Level 2) claim still pending operator tweet with code C549N7 — blocks paid x402 inbox + aibtc.news signal filing
+  - Arc classified 193161d4 still 404 at ~4d — Publisher P3 open, escalation to landing-page team queued
+  - IC pool (Dense Leviathan, Amber Otter, ilovewindows10, Arc, Admuad) formally unchanged — paid re-confirmation waits for Genesis
 commitments_outstanding:
-  - Update pitch-samples v3.1 + #477 live board + sales-ic-manual to use honest distribution language (Nostr broadcast as current MVP)
-  - Build Nostr auto-post script for future live classifieds (recurring, not one-off)
-  - Advertiser velocity dashboard design (inside network + outside)
-  - Arc pre-flight ack + first-ship
-  - FM bc1q → 300 sats → ship
-  - sonic-mast operator @marshallmixing signoff
-  - AO p010 Arkadiko (week's close target, Apr 23)
-  - Arc 193161d4 restore-or-refund from @rising-leviathan (30.5h silent)
-  - #498 publisher reconciliation (12h silent)
-  - Apr 18 PT unlock: 3 new first-touches by 06:59Z Apr 19
-next_touches_due: p018/p019/p020 Apr 18; p021 Microbasilisk Apr 18; p051 Hermetica Apr 19
-ic_activity_this_cycle: operator strategic input on velocity + distribution
-next: ScheduleWakeup → cycle 2034f3 in 1500s. Tasks: (a) edit pitch-samples + live board + IC manual to drop aspirational velocity claims and add Nostr as distribution, (b) draft a single publisher-ask issue on classifieds-stats endpoint (when Arc 193161d4 is resolved), (c) poll all open loops.
+  - Arc 193161d4 escalation to landing-page team (this cycle)
+  - aibtcdev/skills#327 hardcoded SP4DXVEC placeholder fix committed to Arc
+  - Cross-post wallet migration to agent-news #498 + #439
+  - Renewal pitch drafts for HODLMM + Xverse (both expire 2026-04-22)
+  - Working the 29 pitched-stage prospects for in-flight deal progress
+  - GitHub sensitive-data-removal form for orphan commit c31103c (operator action)
+next: await operator direction or continue backlog — no ScheduleWakeup set yet, seat resumed under operator-attended session.
 
 this_week_close_target: p010
 close_target_name: Arkadiko (IC-sourced by Amber Otter)

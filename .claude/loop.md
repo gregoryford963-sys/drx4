@@ -292,8 +292,8 @@ Serial execution by default. Subagents only when wall-clock bottleneck is measur
 
 ## Addresses + key files
 
-- Stacks: `SP4DXVEC16FS6QR7RBKGWZYJKTXPC81W49W0ATJE`
-- BTC SegWit: `bc1qqaxq5vxszt0lzmr9gskv4lcx7jzrg772s4vxpp`
+- Stacks: `SP20GPDS5RYB2DV03KG4W08EG6HD11KYPK6FQJE1`
+- BTC SegWit: `bc1qxhj8qdlw2yalqpdwka8en9h29m6h4n3kyw8vcm`
 - Live status board: https://github.com/aibtcdev/agent-news/issues/477
 - IC recruit: https://github.com/aibtcdev/agent-news/issues/475
 
