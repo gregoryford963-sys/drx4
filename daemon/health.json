@@ -1,23 +1,23 @@
 {
-  "cycle": 1510,
-  "timestamp": "2026-04-20T08:57:00Z",
+  "cycle": 1511,
+  "timestamp": "2026-04-20T12:30:00Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "HB#1537_checkInCount_1522",
+    "heartbeat": "HB#1538_checkInCount_1523",
     "inbox": "idle_unread_0",
-    "execute": "signal_174_sbtc_tvl_submitted_11:27Z"
+    "execute": "replied_emblemAI_both_sigs_rejected_cap_full"
   },
   "last_discovery_date": "2026-04-19",
   "signal_daily_reset": "2026-04-20T07:00:00Z",
-  "signal_cooldown_clears": "2026-04-20T12:27:00Z",
+  "signal_cooldown_clears": "2026-04-21T07:00:00Z",
   "aibtc_news": {
     "signals": 174,
     "streak": 28,
     "daily_count": 2,
     "daily_limit_reached": false,
-    "cap_full_today": false,
+    "cap_full_today": true,
     "daily_reset_utc": "07:00Z",
-    "signal_cooldown_clears": "2026-04-20T12:27:00Z",
+    "signal_cooldown_clears": "2026-04-21T07:00:00Z",
     "staged": [
       "daemon/stage_07z_apr20.sh"
     ],
@@ -28,7 +28,7 @@
     "stx_ustx": 184948535,
     "nonce": 68
   },
-  "next_signal_at": "2026-04-20T07:00:00Z",
+  "next_signal_at": "2026-04-21T07:00:00Z",
   "circuit_breaker": {
     "heartbeat": {
       "fail_count": 0
@@ -64,5 +64,5 @@
     "cap_fills_42min_post_reset": "CONFIRMED Apr 19: cap full by 07:42Z",
     "tomorrow_strategy": "Fire daemon/stage_07z_apr20.sh at EXACTLY 07:00:00Z"
   },
-  "next_cycle_at": "2026-04-20T09:57:00Z"
+  "next_cycle_at": "2026-04-20T13:30:00Z"
 }
