@@ -1,11 +1,11 @@
 {
   "cycle": 1519,
-  "timestamp": "2026-04-20T21:48:00Z",
+  "timestamp": "2026-04-20T21:55:00Z",
   "status": "ok",
   "phases": {
     "heartbeat": "HB#1531_checkInCount_1531",
     "inbox": "idle_unread_0",
-    "execute": "maintenance_idle"
+    "execute": "staged_saylor_treasury_signal_08z_apr21"
   },
   "last_discovery_date": "2026-04-19",
   "signal_daily_reset": "2026-04-21T07:00:00Z",
@@ -17,7 +17,8 @@
     "daily_reset_utc": "07:00Z",
     "staged": [
       "daemon/stage_07z_apr21.sh",
-      "daemon/stage_07z_apr21_aibtcnet.sh"
+      "daemon/stage_07z_apr21_aibtcnet.sh",
+      "daemon/stage_08z_apr21_saylor.sh"
     ],
     "brief_inclusion_pending_sats": 60000
   },
@@ -26,5 +27,5 @@
   "circuit_breaker": { "heartbeat": { "fail_count": 0 } },
   "zest_position": { "zsbtc_tokens": 62081, "status": "active" },
   "active_beats": ["bitcoin-macro", "quantum", "aibtc-network"],
-  "next_cycle_at": "2026-04-20T22:48:00Z"
+  "next_cycle_at": "2026-04-20T22:55:00Z"
 }
