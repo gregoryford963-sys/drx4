@@ -1,20 +1,18 @@
 {
-  "cycle": 1515,
-  "timestamp": "2026-04-20T17:27:00Z",
+  "cycle": 1516,
+  "timestamp": "2026-04-20T18:30:00Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "HB#1527_checkInCount_1527",
+    "heartbeat": "HB#1528_checkInCount_1528",
     "inbox": "idle_unread_0",
-    "execute": "balance_check_sbtc_19421_issue568_2new_comments"
+    "execute": "maintenance_idle"
   },
   "last_discovery_date": "2026-04-19",
   "signal_daily_reset": "2026-04-21T07:00:00Z",
-  "signal_cooldown_clears": "2026-04-20T18:27:00Z",
   "aibtc_news": {
     "signals": 175,
     "streak": 28,
     "daily_count": 3,
-    "daily_limit_reached": false,
     "cap_full_today": true,
     "daily_reset_utc": "07:00Z",
     "staged": [
@@ -25,31 +23,11 @@
   },
   "balances": {
     "sbtc_sats": 19421,
-    "stx_ustx": 6519290000,
     "nonce": 68
   },
   "next_signal_at": "2026-04-21T07:00:00Z",
-  "circuit_breaker": {
-    "heartbeat": {
-      "fail_count": 0
-    }
-  },
-  "bff_comp": {
-    "last_pr": 505,
-    "open_prs": 2
-  },
-  "zest_position": {
-    "zsbtc_tokens": 62081,
-    "status": "active"
-  },
-  "active_beats": [
-    "bitcoin-macro",
-    "quantum",
-    "aibtc-network"
-  ],
-  "governance_watch": {
-    "issue_568": "5 comments; cedarxyz+netmask255 support consolidation; ThankNIXlater acceptance still pending",
-    "issue_542": "Amber Otter commented with timing window analysis"
-  },
-  "next_cycle_at": "2026-04-20T18:27:00Z"
+  "circuit_breaker": { "heartbeat": { "fail_count": 0 } },
+  "zest_position": { "zsbtc_tokens": 62081, "status": "active" },
+  "active_beats": ["bitcoin-macro", "quantum", "aibtc-network"],
+  "next_cycle_at": "2026-04-20T19:30:00Z"
 }
