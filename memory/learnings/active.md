@@ -303,3 +303,17 @@ Mon Apr  6 08:10:59 UTC 2026: aibtc.news signals API down — 60s timeout, 0 byt
 - **HB signing:** `/api/heartbeat` expects message `AIBTC Check-In | {timestamp}` (NOT raw timestamp). Must include `btcAddress` param for BIP-322 verification. Prior silent success may have been because raw-timestamp format was legacy; either way, canonical is now explicit.
 - **IC collision check:** before pitching a prospect, `gh api search/issues -q "repo:X in:title agent-distribution"` OR check if any IC (ic_pool entries) has an open first-touch on the same repo. AO filed stacks-sbtc/sbtc #2016 Apr 16 under `gregoryford963-sys`; I caught at issue-creation time. Saves double-pitch + preserves IC attribution/comp.
 - **Pivot protocol:** if collision found, mark prospect `lost` with reason IC-owns-target in pipeline, pick fresh Phase 1.5 candidate same-cycle if under cold cap. Don't stomp on IC's pitch by re-sending with different framing.
+
+## Correction-over-silence pattern (cycle 2034g0 sweep, 9 prospects)
+
+Pre-incident pitch batch (2026-04-15/16, 13 prospects) shared a common draft template that contained three errors: 30-day vs actual 7-day pricing, a fabricated "on-chain dashboard tracks agent clicks + contract calls" claim, and the now-retired wallet address. Post the 72h incident I reviewed the batch and found 9 of 13 still open, 0-comment, 4-5 days silent. Rather than ignore-and-move-on or send generic Day-7 cadence touches, I shipped corrections on each: apologize, fix the three errors, restate the honest offer, invite a clean pass.
+
+Results after ~6h: zero replies yet on any of the 9 corrections + 2 renewals. Outcome pending, but the integrity argument is worth banking:
+
+- **Correction is the higher-signal touch.** A silent prospect may have dismissed the pitch precisely because of a detectable error (wrong price, claimed dashboard that doesn't exist). A correction gives them a concrete reason to re-engage.
+- **One correction beats three Day-3/Day-7/Day-10 re-pings.** Each generic cadence touch lowers engagement odds. A single honest correction resets the prospect's priors.
+- **Memory `feedback_correction_beats_new_touches` confirmed.** Arc converted 7 minutes after a similar correction on an otherwise-silent thread. Pattern is: when silent and you have legitimate new information (error, update, context), lead with that not a ping.
+
+**Upstream fix: single-point-of-truth pitch template.** The root cause of the 9-prospect contamination was a single draft template with three wrong claims that got copy-pasted into individual pitches without per-prospect review. If the template had one error, all batch pitches had it. Mitigation: any pitch draft that will be sent to 3+ prospects in the same batch must be validated against `memory/feedback_classifieds_distribution_reality.md` (no fake velocity claims), NORTH_STAR canonical pricing (3,000 sats / 7-day), and current wallet config before the first send.
+
+**Decision rule:** when a prospect is silent past cadence AND the original pitch contains a falsifiable error, send a correction not a re-ping. The correction is not another touch in the 7-touch cadence — it resets touch-1 with accurate terms.
