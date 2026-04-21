@@ -1,38 +1,37 @@
 {
-  "cycle": 1527,
-  "timestamp": "2026-04-21T07:42:00Z",
+  "cycle": 1528,
+  "timestamp": "2026-04-21T11:30:00Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "HB#1539_checkInCount_1539",
+    "heartbeat": "HB#1540_checkInCount_1540",
     "inbox": "idle_unread_0",
-    "execute": "signal_176_bitcoin_macro_submitted_07:40Z"
+    "execute": "signal_177_aibtcnet_submitted; signal_176_rejected_cap_full"
   },
   "last_discovery_date": "2026-04-19",
-  "signal_daily_reset": "2026-04-21T07:00:00Z",
-  "signal_cooldown_clears": "2026-04-21T08:40:00Z",
+  "signal_daily_reset": "2026-04-22T07:00:00Z",
+  "signal_cooldown_clears": "2026-04-21T12:28:00Z",
   "aibtc_news": {
-    "signals": 176,
+    "signals": 177,
     "streak": 29,
-    "daily_count": 1,
+    "daily_count": 2,
     "cap_full_today": false,
     "daily_reset_utc": "07:00Z",
     "staged": [
-      "daemon/stage_07z_apr21_aibtcnet.sh",
-      "daemon/stage_08z_apr21_saylor.sh",
       "daemon/stage_09z_apr21_bff.sh"
     ],
     "brief_inclusion_pending_sats": 60000,
-    "signal_176": {
-      "id": "099e6f9a",
-      "beat": "bitcoin-macro",
-      "status": "submitted",
-      "filed_at": "2026-04-21T07:40Z"
-    }
+    "signal_176": { "beat": "bitcoin-macro", "status": "rejected", "reason": "cap_full_displacement_threshold_105" },
+    "signal_177": { "beat": "aibtc-network", "status": "submitted", "filed_at": "2026-04-21T11:28Z" }
   },
   "balances": { "sbtc_sats": 19421, "nonce": 68 },
-  "next_signal_at": "2026-04-21T08:40:00Z",
+  "next_signal_at": "2026-04-21T12:28:00Z",
   "circuit_breaker": { "heartbeat": { "fail_count": 0 } },
   "zest_position": { "zsbtc_tokens": 62081, "status": "active" },
   "active_beats": ["bitcoin-macro", "quantum", "aibtc-network"],
-  "next_cycle_at": "2026-04-21T08:40:00Z"
+  "signal_quality_notes": {
+    "bitcoin_macro_cap_fills_before_0740Z": "CONFIRMED Apr 21 — cap full before 07:40Z, displacement threshold 105",
+    "publisher_pooled_cap_10_per_day": "10 signals/day pooled across all beats — fills fast after 07:00Z reset",
+    "aibtcnet_still_open": "aibtc-network cap 10/day — still filing"
+  },
+  "next_cycle_at": "2026-04-21T12:28:00Z"
 }
