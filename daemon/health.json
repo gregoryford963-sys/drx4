@@ -1,32 +1,38 @@
 {
-  "cycle": 1526,
-  "timestamp": "2026-04-21T05:38:00Z",
+  "cycle": 1527,
+  "timestamp": "2026-04-21T07:42:00Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "HB#1538_checkInCount_1538",
+    "heartbeat": "HB#1539_checkInCount_1539",
     "inbox": "idle_unread_0",
-    "execute": "pre_fire_standby_82min"
+    "execute": "signal_176_bitcoin_macro_submitted_07:40Z"
   },
   "last_discovery_date": "2026-04-19",
   "signal_daily_reset": "2026-04-21T07:00:00Z",
+  "signal_cooldown_clears": "2026-04-21T08:40:00Z",
   "aibtc_news": {
-    "signals": 175,
-    "streak": 28,
-    "daily_count": 0,
+    "signals": 176,
+    "streak": 29,
+    "daily_count": 1,
     "cap_full_today": false,
     "daily_reset_utc": "07:00Z",
     "staged": [
-      "daemon/stage_07z_apr21.sh",
       "daemon/stage_07z_apr21_aibtcnet.sh",
       "daemon/stage_08z_apr21_saylor.sh",
       "daemon/stage_09z_apr21_bff.sh"
     ],
-    "brief_inclusion_pending_sats": 60000
+    "brief_inclusion_pending_sats": 60000,
+    "signal_176": {
+      "id": "099e6f9a",
+      "beat": "bitcoin-macro",
+      "status": "submitted",
+      "filed_at": "2026-04-21T07:40Z"
+    }
   },
   "balances": { "sbtc_sats": 19421, "nonce": 68 },
-  "next_signal_at": "2026-04-21T07:00:00Z",
+  "next_signal_at": "2026-04-21T08:40:00Z",
   "circuit_breaker": { "heartbeat": { "fail_count": 0 } },
   "zest_position": { "zsbtc_tokens": 62081, "status": "active" },
   "active_beats": ["bitcoin-macro", "quantum", "aibtc-network"],
-  "next_cycle_at": "2026-04-21T06:53:00Z"
+  "next_cycle_at": "2026-04-21T08:40:00Z"
 }
