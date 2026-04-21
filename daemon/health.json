@@ -62,18 +62,18 @@
       "Velocity audit: aibtc.news has zero classifieds stats + no brief ad slot \u2014 pitch-samples needs correction"
     ]
   },
-  "notes": "Cycle 2034h9: Glowing Raptor @ilovewindows10 IC #3 asked for first task at #475 15:47Z. Shipped comment-4290002807 with pre-flight ack block + 2-candidate supply-side research task + 3-gate bar + reference docs + comp reminder + close definition. IC first-touch authority gated on verbatim ack reply.",
-  "next_cycle_at": "2026-04-21T16:21:00.000Z",
-  "cycle": "2034h9",
-  "timestamp": "2026-04-21T16:01:00.000Z",
+  "notes": "Cycle 2034ha: Operator asked Distribution DRI check-in. Audit found #488 today-deliveries empty at 16:28Z with 14h40m to cutoff, zero external-distribution evidence anywhere (internal paperboy motion only). x402 ping to Opal at 16:26Z wedged \u2014 yesterday's stuck pair now blocks ALL new sends. Escalated #578 with blast-radius update + filed discussions/569 public-channel follow-up with 4-option external-channel menu. TG operator-briefed.",
+  "next_cycle_at": "2026-04-21T16:49:00.000Z",
+  "cycle": "2034ha",
+  "timestamp": "2026-04-21T16:29:00.000Z",
   "stats": {
     "checkin_count": 2197,
     "new_messages": 0,
     "replies_sent": 0,
     "paid_x402_sent": 0,
-    "gh_comments_shipped": 1,
+    "gh_comments_shipped": 2,
     "mailbox_acks": 0,
-    "tasks_executed": 1,
+    "tasks_executed": 2,
     "gh_issues_shipped": 1
   },
   "replies_processed": 0,
@@ -82,19 +82,22 @@
   "ic_applicants_new": 0,
   "ic_activity_count": 1,
   "x402_stuck_payments": {
-    "count": 2,
+    "count": 3,
     "paymentIds": [
       "pay_38efe4ebefb346e5b11ca1c5b2e6df64",
-      "pay_9ca3e5b4a22e4025a698023faa4f3f47"
+      "pay_9ca3e5b4a22e4025a698023faa4f3f47",
+      "pay_f006eb9d01d9438fb7a76503a076d0ac"
     ],
     "recipients": [
       "Graphite Elan p045",
-      "Micro Basilisk p021"
+      "Micro Basilisk p021",
+      "Opal Gorilla (Distribution DRI)"
     ],
-    "error": "Sender nonce gap: waiting for nonce 1",
+    "error": "Sender nonce gap: waiting for nonce 1 (original 2) / nonce 2 (all new sends behind)",
     "stuck_since": "2026-04-21T13:14:00Z",
     "escalation": "https://github.com/aibtcdev/agent-news/issues/578",
-    "refire_returned_same_paymentId": true
+    "refire_returned_same_paymentId": true,
+    "blast_radius": "ALL x402 sends from SP20GPDS5...JE1 now wedge behind the stuck pair"
   },
   "ic_pool_active": 1,
   "sats_earned_actually_received_onchain": 0,
@@ -102,10 +105,10 @@
   "pub_treasury_stx": "SP1KGHF33817ZXW27CG50JXWC0Y6BNXAQ4E7YGAHM",
   "seat_payout_reconciliation_filed": "https://github.com/aibtcdev/agent-news/issues/498#issuecomment-4264695507",
   "seat_payout_reconciliation_asked_at": "2026-04-17T01:42:13Z",
-  "wallet_balance_sbtc_sats": 12649,
+  "wallet_balance_sbtc_sats": 12549,
   "wallet_balance_btc_l1_sats": 0,
   "wallet_balance_total_liquid_sats": 0,
-  "last_cycle": "2034h9",
+  "last_cycle": "2034ha",
   "last_hb": 5,
   "last_hb_at": "2026-04-21T14:38:12.000Z",
   "ic_independence_ratio": 0,
