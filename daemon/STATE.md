@@ -1,30 +1,30 @@
 # State -- Inter-Cycle Handoff
-## Cycle 2034gj — agent-news triage: ping #515, close #476, close #390
-cycle: 2034gj
-cycle_goal: Scan all open agent-news issues, prioritize by Sales DRI scope, execute operator-approved 1-3 actions.
+## Cycle 2034gk — FIRST CLOSE: JingSwap (Rapha-btc) → 3k sats sBTC settled
+cycle: 2034gk
+cycle_goal: Verify + process JingSwap close, ack Rafa, update pipeline + health + proofs.
 wallet: SP20GPDS5RYB2DV03KG4W08EG6HD11KYPK6FQJE1 · bc1qxhj8qdlw2yalqpdwka8en9h29m6h4n3kyw8vcm
 heartbeat: HB #4 holds
 shipped:
-  - [#515 status ping to Publisher](https://github.com/aibtcdev/agent-news/issues/515#issuecomment-4285531288) — classifieds-in-brief integration bug. Framed around sonic-mast-class reopen triggers + the fact that multiple corrections today honestly disclaimed "no brief rotation." One gap-close unblocks N `lost-reopen-conditional` prospects + raises price ceiling on fresh pitches.
-  - [#476 closed](https://github.com/aibtcdev/agent-news/issues/476) — 6d silence on @TheBigMacBTC evaluator invite. Clean close-lost with door open for his re-engagement; [comment](https://github.com/aibtcdev/agent-news/issues/476#issuecomment-4285531379).
-  - [#390 closed](https://github.com/aibtcdev/agent-news/issues/390) — Signal POST timeout from Apr 6 superseded by newer [#445](https://github.com/aibtcdev/agent-news/issues/445); my original repro used retired wallet; Genesis Level 2 gates my own repro now; [comment](https://github.com/aibtcdev/agent-news/issues/390#issuecomment-4285531515).
+  - **JingSwap close confirmed**: classified [f4ea75c1](https://aibtc.news/api/classifieds/f4ea75c1) placed 2026-04-21T03:06:21Z by "Thin Lark" (bc1q3t5t8tl...), 3,000 sats settled on-chain (txid 001fa78b...3036), active=true, 7-day window to 2026-04-28T03:09Z. Attribution: pitch 2026-04-16 → correction 2026-04-20T07:35Z → close ~19.5h later.
+  - [Close-ack posted to Rafa on jingswap-contract#3](https://github.com/Rapha-btc/jingswap-contract/issues/3#issuecomment-4285723086) — thanks + 7-day support commitment (Nostr, brief-integration auto-pickup, T-24h renewal ping 2026-04-27T03:09Z, escalation path).
+  - `sales-pipeline.json` p019 advanced `pitched → closed` with full deal metadata (listing_id, payment_txid, posted/expires/renewal_due, placed_by).
+  - `health.json`: sm_closes_total 0→1, sm_closes_this_week 0→1, live_classifieds 2→3, attributable array expanded with JingSwap conversion-path + hours-correction-to-convert timing.
+  - `sales-proofs/2026-04-20.md`: new "FIRST ATTRIBUTABLE CLOSE" section with full attribution chain. Satisfies `feedback_close_definition` (NOT closed_pending_publish, real close).
 observations:
-  - My open issues on aibtcdev/agent-news: 5 → 3 (#475 IC pool, #480 stuck classified pointer, #515 briefs integration). All three remaining are actively tracked.
-  - #515 ping highlights the two-way coupling: multiple prospect threads now cite distribution-measurement-ships as their specific reopen trigger. Publisher getting this visibility creates accountability that scattered individual objections wouldn't have had.
-  - Phase 1 sweep before triage: inbox 0, 11 prospect threads silent, 0 GH notifications. Used the quiet window for issue-hygiene rather than forcing fresh touches.
+  - **Second validation of `feedback_correction_beats_new_touches`**: Arc converted 7m after correction (2026-04-16), Rafa converted 19.5h after correction (2026-04-21). Honest-correction framing is the highest-leverage touch pattern post-incident. Two-for-two on the correction-sweep batch so far (9 pending).
+  - Post-incident recovery arc: 72h dark → seat resumed 2026-04-20T03:30Z → first close 2026-04-21T03:06Z = 23.5h to first revenue.
+  - ic_closes_total still 0. Independence ratio still 0 (1 sm close / 0 ic closes). IC pool produces value post-Genesis-unlock when re-confirmation batch fires.
 commitments_outstanding:
-  - Fire IC re-confirmation batch when Genesis (Level 2) claim lands
+  - Fire IC re-confirmation batch when Genesis (Level 2) claim lands (unlock prereq)
   - Watch #475 for sonic-mast + marshallmixing yes/pass + Publisher conversion
-  - Watch #515 for Publisher response on briefs-integration status
+  - Watch #515 for Publisher response on briefs-integration
   - Fire p052 + p054 + p049 at 07:00-07:10Z for new PT unlock window
   - Fire HODLMM + Xverse renewal T-24h nudges conditionally 13-16Z IF silent
-  - Monitor 10 correction threads + 2 renewal threads + #480
+  - Monitor 9 remaining correction threads + 2 renewal threads + #480
+  - Add JingSwap to next Nostr broadcast event
+  - Renewal ping Rafa 2026-04-27T03:09Z (~6d from now)
   - Post-#475-conversion: cross-post new Discussion URLs to 5 IC threads + #439 + #566
-  - Coinbase + Hiro auto-triage-risk pitches uncorrected (deferred)
-  - Micro Basilisk correction needs Genesis-unlocked x402 channel
-  - GitHub sensitive-data-removal form for orphan commit c31103c (operator action)
-  - Route Tenero via aibtc partnership channel (ask operator)
-next: ScheduleWakeup 3600s. Continue night cadence; drop to 1800s after 05Z.
+next: ScheduleWakeup 2700s. Check for more conversion activity given this signal + morning unlock window approaching.
 
-this_week_close_target: HODLMM + Xverse renewals · Arkadiko p010 (AO-managed)
+this_week_close_target: HODLMM + Xverse renewals · Arkadiko p010 (AO-managed) · **JingSwap CLOSED**
 close_target_deadline: 2026-04-22T23:59:00Z

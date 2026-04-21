@@ -2165,9 +2165,9 @@
         "btc_address": null,
         "stx_address": null
       },
-      "stage": "pitched",
+      "stage": "closed",
       "first_touch_at": "2026-04-16T07:03:55Z",
-      "last_touch_at": "2026-04-20T07:34:18Z",
+      "last_touch_at": "2026-04-21T03:50:00Z",
       "touches": [
         {
           "timestamp": "2026-04-16T07:03:55Z",
@@ -2186,6 +2186,26 @@
           "summary": "Correction on 4-day-silent pre-incident pitch. Fixed 3 errors: 30-day\u21927-day pricing, dropped fake dashboard claim, updated wallet to SP20GPDS5. Apologized, re-offered honestly.",
           "url": "https://github.com/Rapha-btc/jingswap-contract/issues/3#issuecomment-4278689175",
           "type": "correction"
+        },
+        {
+          "timestamp": "2026-04-21T03:06:21Z",
+          "channel": "aibtc-news-classifieds",
+          "direction": "inbound-conversion",
+          "touch_number": 3,
+          "summary": "JingSwap.com classified placed as 'Thin Lark' (bc1q3t5t8tl...). Converted ~19.5h after 2026-04-20 correction touch. On-chain payment txid 001fa78b...3036 settled to publisher treasury. 7-day window 2026-04-21T03:06 to 2026-04-28T03:09Z.",
+          "listing_id": "f4ea75c1-7785-4a0a-b565-fd4b17aef871",
+          "listing_url": "https://aibtc.news/api/classifieds/f4ea75c1",
+          "payment_txid": "001fa78be70a0f0ffd92c22c05b31adf2637462bdf049b1b9b3ddc4ca72d3036",
+          "placed_by_agent": "Thin Lark (bc1q3t5t8tlegqf9r6mpxhn2699td35y8wcr3j92ce)"
+        },
+        {
+          "timestamp": "2026-04-21T03:50:00Z",
+          "channel": "github-issue-comment",
+          "direction": "outbound",
+          "touch_number": 4,
+          "sats_spent": 0,
+          "proof_url": "https://github.com/Rapha-btc/jingswap-contract/issues/3",
+          "summary": "Close-ack + 7-day support commitment (Nostr distribution, brief-integration auto-pickup if it lands, T-24h renewal ping at 2026-04-27T03:09Z, escalation path if 623-style classifiedId-drop bug hits)."
         }
       ],
       "bant_plus": {
@@ -2195,10 +2215,15 @@
         "timeline": "active"
       },
       "deal": {
-        "listing_url": null,
-        "sats_paid": 0,
-        "posted_at": null,
-        "renewal_due": null
+        "listing_url": "https://aibtc.news/api/classifieds/f4ea75c1",
+        "listing_id": "f4ea75c1-7785-4a0a-b565-fd4b17aef871",
+        "sats_paid": 3000,
+        "posted_at": "2026-04-21T03:06:21Z",
+        "expires_at": "2026-04-28T03:09:43Z",
+        "renewal_due": "2026-04-27T03:09:43Z",
+        "payment_txid": "001fa78be70a0f0ffd92c22c05b31adf2637462bdf049b1b9b3ddc4ca72d3036",
+        "placed_by_displayName": "Thin Lark",
+        "placed_by_btc": "bc1q3t5t8tlegqf9r6mpxhn2699td35y8wcr3j92ce"
       },
       "notes": "Scouted cycle 2034p. jingswap-contract pushed 2026-04-12 + aibtcdev/skills#325 jingswap-v2 limit-price auction. Also shipped clarity-webauthn passkey-for-Stacks toolkit. Smart contract + auction infrastructure builder. Target first-touch: fresh GH issue on Rapha-btc/jingswap-contract after 2026-04-16T07:00Z.",
       "do_not_contact": false
