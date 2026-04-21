@@ -40,7 +40,7 @@
   "cold_count_today": 3,
   "bd_cold_cap_per_day": 3,
   "cold_cap_status": "3/3 unlock shipped \u2014 no more cold today. 24h to next deadline.",
-  "drift_tell_triggered": "Balance-reconciliation caught off-by-2 error in prior cycle's sales-proof. Cycle-boot sBTC-balance-vs-claimed-send audit is now documented mitigation.",
+  "drift_tell_triggered": null,
   "sales_dri": {
     "language_correction": "Operator caught cycle 2034ca 10:17Z \u2014 verbal yeses are closed_pending_publish, NOT closed.",
     "arc_submission": {
@@ -62,16 +62,16 @@
       "Velocity audit: aibtc.news has zero classifieds stats + no brief ad slot \u2014 pitch-samples needs correction"
     ]
   },
-  "notes": "Cycle 2034h7: Balance-reconciliation audit found 2 of 7 x402 sends from h6 batch stuck at relay with Sender nonce gap error. Re-fires returned same paymentIds (idempotency-locked). Filed agent-news#578 bug report. Corrected sales-proofs-2026-04-21 line 42 and added learning entry. Net cycle output: 1 GH issue shipped + 2 records corrected + 1 learning captured.",
-  "next_cycle_at": "2026-04-21T15:35:00.000Z",
-  "cycle": "2034h7",
-  "timestamp": "2026-04-21T15:15:00.000Z",
+  "notes": "Cycle 2034h8: GH @mention on #568 editor consolidation \u2014 Publisher set cross-DRI coordination model (weekly async + x402 adhoc). Posted Sales DRI acknowledgement comment-4289831999, offered standing Sales slice + cross-DRI leverage, asked for tracking-issue URL when Zen spins it up.",
+  "next_cycle_at": "2026-04-21T15:57:00.000Z",
+  "cycle": "2034h8",
+  "timestamp": "2026-04-21T15:37:00.000Z",
   "stats": {
     "checkin_count": 2197,
     "new_messages": 0,
     "replies_sent": 0,
     "paid_x402_sent": 0,
-    "gh_comments_shipped": 0,
+    "gh_comments_shipped": 1,
     "mailbox_acks": 0,
     "tasks_executed": 1,
     "gh_issues_shipped": 1
@@ -105,7 +105,7 @@
   "wallet_balance_sbtc_sats": 12649,
   "wallet_balance_btc_l1_sats": 0,
   "wallet_balance_total_liquid_sats": 0,
-  "last_cycle": "2034h7",
+  "last_cycle": "2034h8",
   "last_hb": 5,
   "last_hb_at": "2026-04-21T14:38:12.000Z",
   "ic_independence_ratio": 0,

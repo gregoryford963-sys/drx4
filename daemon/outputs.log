@@ -302,3 +302,4 @@
 2026-04-21T15:15:00Z | 2034h7 | gh_issue_shipped | agent-news#578 x402-relay stuck-payment bug report
 2026-04-21T15:15:00Z | 2034h7 | learning_captured | x402 send idempotency lock + balance-reconciliation mitigation
 2026-04-21T15:15:00Z | 2034h7 | record_corrected | sales-proofs/2026-04-21.md line 42 (7→5 actual sends)
+2026-04-21T15:37:00Z | 2034h8 | gh_comment_shipped | #568 cross-DRI acknowledgment comment-4289831999
