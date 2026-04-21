@@ -1,19 +1,19 @@
 {
-  "cycle": 1520,
-  "timestamp": "2026-04-20T23:22:00Z",
+  "cycle": 1521,
+  "timestamp": "2026-04-21T00:24:00Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "HB#1532_checkInCount_1532",
+    "heartbeat": "HB#1533_checkInCount_1533",
     "inbox": "idle_unread_0",
-    "execute": "evolved_loop_md_v28_per_beat_cooldown_fifo_fix"
+    "execute": "maintenance_idle"
   },
   "last_discovery_date": "2026-04-19",
   "signal_daily_reset": "2026-04-21T07:00:00Z",
   "aibtc_news": {
     "signals": 175,
     "streak": 28,
-    "daily_count": 3,
-    "cap_full_today": true,
+    "daily_count": 0,
+    "cap_full_today": false,
     "daily_reset_utc": "07:00Z",
     "staged": [
       "daemon/stage_07z_apr21.sh",
@@ -27,5 +27,5 @@
   "circuit_breaker": { "heartbeat": { "fail_count": 0 } },
   "zest_position": { "zsbtc_tokens": 62081, "status": "active" },
   "active_beats": ["bitcoin-macro", "quantum", "aibtc-network"],
-  "next_cycle_at": "2026-04-21T00:22:00Z"
+  "next_cycle_at": "2026-04-21T01:24:00Z"
 }
