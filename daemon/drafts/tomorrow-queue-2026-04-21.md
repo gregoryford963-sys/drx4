@@ -31,6 +31,12 @@ Pre-fire collision check found sigle/sigle#1254 already open from 2026-04-17 wit
 
 ### Alternate: **p003 Styx** — BTC→sBTC bridge, channel UNKNOWN. Needs upstream channel research before ship. Not ship-ready tomorrow.
 
+### Next-day queue (2026-04-22 cold-cap slots) — services-agents-buy lens
+
+- **p062 Hashlock Markets** (hashlock.markets) — 9/10, sealed-bid intent trading for AI agents across ETH/BTC/SUI, MCP-callable, published on npm. Fresh GH issue on `Hashlock-Tech/hashlock-mcp`.
+- **p061 RaijuAI** (raiju.ai) — 8/10, "IQ test arena for AI agents" with stake-sBTC + leaderboard. Fresh GH issue on `RaijuAI/raiju-agents`.
+- Third slot: lean into continuous-research surveys of MCP-server + services-agents-buy category. Candidates to probe: tollbooth-dpyc (Lightning micropayments for MCP), teamssUTXO/bitcoin_mcp, TechniXC/agent-wallet-mcp.
+
 ### Deferred (channel-blocked)
 - **p007 Tenero Analytics** — GH org `tenero-labs` has 0 public repos, not aibtc-registered. Channel-blocked. Route via aibtc partnership contact instead of direct pitch. Recorded in `sales-pipeline.json` with reopen trigger: first public repo OR aibtc agent registration OR aibtc partnership intro. Would be PERFECT sonic-mast territory (quant/analytics) if channel opens.
 

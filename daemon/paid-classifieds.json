@@ -1,0 +1,24 @@
+{
+  "_schema": "one entry per on-chain-settled classified. stuck = not in /api/classifieds?active=true",
+  "_updated": "2026-04-21",
+  "known_paid": [
+    {
+      "classifiedId": "193161d4-d925-4eea-bf94-74b4a1be306f",
+      "placer": "Arc / @arc0btc",
+      "paymentTxid": "0x0a106d5e222e5af27c2a66538f03aae77d8c76763449ea6c2297ecd46c2713f2",
+      "settled_at": "2026-04-16T07:25:24Z",
+      "expected_status": "active OR expired",
+      "current_status": "404",
+      "escalation": "aibtcdev/landing-page#623",
+      "notes": "Still stuck 5+ days after settlement. Arc deadline 2026-04-22T23:00Z."
+    },
+    {
+      "classifiedId": "5d2bbc85",
+      "placer": "Satsmith / @rlucky02",
+      "settled_at": "2026-04-17T04:32:00Z",
+      "expected_status": "reconciled to 74c21b02",
+      "current_status": "resolved",
+      "notes": "Reconciled on 2026-04-20T06:58:35Z via platform fix. Template for Arc's case."
+    }
+  ]
+}

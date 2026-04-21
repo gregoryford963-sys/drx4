@@ -1,35 +1,27 @@
 # State -- Inter-Cycle Handoff
-## Cycle 2034h2 — OPERATOR FUNDED, 7 x402 SENDS FIRED
-cycle: 2034h2
-cycle_goal: Verify operator funding receipt + fire the full Genesis-previously-blocked x402 queue.
+## Cycle 2034h3 — 5-priority strategic execution shipped
+cycle: 2034h3
+cycle_goal: Execute all 5 diagnosed strategic priorities per operator "execute all" directive.
 wallet: SP20GPDS5RYB2DV03KG4W08EG6HD11KYPK6FQJE1 · bc1qxhj8qdlw2yalqpdwka8en9h29m6h4n3kyw8vcm
 heartbeat: HB #4 holds
 shipped:
-  - **Operator funded seat wallet**: 13,149 sats sBTC received from SP1M8KHCJXB3SBR... at 2026-04-21T13:06:51Z. 131 x402-messages of total runway.
-  - **7 x402 paid inbox sends fired 13:12-13:15Z** (700 sats spend, all staged pending confirmation):
-    1. Amber Otter IC #2 (`pay_3ac3c1da40be4826956df5c66a4ff069`)
-    2. Glowing Raptor IC #3 (`pay_377510b6a7fb46619d075bed08807ccd`)
-    3. Flash Mantis IC #5 (`pay_083942ed90ba4dd39b64391685a01d48`)
-    4. Arc IC #4 Arc-specific variant (`pay_bc0916cd9eea4e53b31ca1809b651223`)
-    5. Vivid Manticore p060 warm-lead (`pay_dbc8e9fd69124810b602e202634bc053`)
-    6. Graphite Elan p045 stalled-verbal-yes (`pay_38efe4ebefb346e5b11ca1c5b2e6df64`)
-    7. Micro Basilisk p021 correction (`pay_9ca3e5b4a22e4025a698023faa4f3f47`)
-  - Dense Leviathan has no aibtc agent registered — will reach via GH on @Cheryllacher's public surface.
-  - Sales pipeline updated: p060/p045/p021 touches records. IC touches logged in daemon proofs.
-  - Live board body updated (13:18Z): IC pool row shows batch-fired status, missed-warm-leads section shows all 3 ✅ delivered, open-commitments updated.
+  - **Priority 1: [#515 ceiling escalation](https://github.com/aibtcdev/agent-news/issues/515#issuecomment-4288931668)** — reframed the gap as conversion-ceiling (sonic-mast reopen trigger verbatim + 2-week throughput data + 40% bug tax). Asks for concrete timeline commit on brief-integration + stats endpoint + 193161d4 reconcile.
+  - **Priority 2: [agent-news#576 demand-side proposal](https://github.com/aibtcdev/agent-news/issues/576)** — reader sats-back Option A (50 sats flat / 40% revenue share) to grow denominator 65 → 100+ provably-polling agents. Ship path: Phase 1 now, Phase 2 post-#515, Phase 3 Q3.
+  - **Priority 3: [scripts/audit-stuck-classifieds.sh](https://github.com/secret-mars/drx4/blob/main/scripts/audit-stuck-classifieds.sh)** — nightly auditable check for on-chain-settled-but-not-live classifieds. Seeds `daemon/paid-classifieds.json` with known cases. Currently flags Arc 193161d4 stuck.
+  - **Priority 4: p061 RaijuAI + p062 Hashlock Markets** — 2 services-agents-buy surveys added to pipeline (8/10, 9/10). Both fresh GH channel, queued for tomorrow.
+  - **Priority 5: [IC territory-guidance update on #475](https://github.com/aibtcdev/agent-news/issues/475#issuecomment-4288959627)** — shifts prospecting lens to services-agents-buy vs dev-tooling-agents-could-use. Per-IC refinements for each of Amber Otter, Glowing Raptor, Flash Mantis, Arc, sonic-mast.
 observations:
-  - Phase 1 sweep: inbox 0 unread pre-batch, 8 active threads silent, no prior Deep Tess reply.
-  - Operator directive "continue the sales" + funding = clear authorization. Executed the full queue per publicly-stated priority in one window.
-  - Watch window now open on 7 new touches + Deep Tess (sent ~2h ago).
+  - Phase 1 sweep: inbox 0 unread, no rapid replies to 7 morning x402 sends (all within 30-min window), 0 GH notifications.
+  - Sales-week recap as foundation of this cycle: 3 live classifieds, 1 SM-attributable close (JingSwap), 40% bug-tax, 65-agent denominator = all 5 priorities are direct responses to the diagnosed friction.
 commitments_outstanding:
   - Dense Leviathan IC #1 reach via GH (no aibtc agent)
-  - Watch for replies on all 7 fresh sends + Deep Tess + HODLMM + Xverse + sigle
+  - Watch Publisher response on #515 + #576 + #623
+  - Watch 7 fresh x402 sends + Deep Tess + HODLMM for replies
   - Fire Xverse T-24h renewal nudge 15:00-16:30Z IF silent
   - T-11h pivot ping on #623 at ~Apr 22 12:00Z
-  - Watch #475 for sonic-mast + Publisher conversion
-  - Watch #515 for Publisher response on briefs-integration
+  - Tomorrow: fire p062 Hashlock + p061 RaijuAI + 1 more surveyed services-agents-buy candidate for 3-slot unlock
   - Renewal ping Rafa 2026-04-27T03:09Z
-next: ScheduleWakeup 1200s. Watch for rapid replies (correction/re-ping touches tend to reply within 1-3h).
+next: ScheduleWakeup 1200s.
 
-this_week_close_target: JingSwap CLOSED · HODLMM T-24h · Xverse T-2.75h · 7 new x402 touches awaiting · Arc #623 · Deep Tess
+this_week_close_target: JingSwap CLOSED · HODLMM T-24h nudged · Xverse T-2h · 7 new x402 touches · 2 fresh services-agents-buy queued · ceiling-unblock push to Publisher
 close_target_deadline: 2026-04-22T23:59:00Z

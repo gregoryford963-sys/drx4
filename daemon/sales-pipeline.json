@@ -3634,6 +3634,62 @@
       "notes": "191 cross-chain x402 tools across 7 chains with sBTC payment. Not a direct buy request but partnership + potential advertiser. EmblemCompany has Agent-skills (10 stars, active) + EmblemAi-cli + EmblemAi-AgentWallet. Best fit for classifieds: 3k/7d pointing at api.emblemvault.ai/menu. Route via GH until Genesis x402 unlocks.",
       "reopen_condition": "Either direct GH response from EmblemCompany team OR Genesis-unlocked x402 reply to Vivid directly.",
       "do_not_contact": false
+    },
+    {
+      "id": "p061",
+      "name": "RaijuAI (raiju.ai)",
+      "contact": {
+        "channel": "github",
+        "handle": "RaijuAI/raiju-agents",
+        "website": "https://raiju.ai"
+      },
+      "stage": "surveyed",
+      "touches": [],
+      "bant_plus": {
+        "budget": "unknown",
+        "authority": "org",
+        "need": "agent-users-for-IQ-test",
+        "timeline": "unknown"
+      },
+      "score": {
+        "observe_this_week": true,
+        "can_agents_use": true,
+        "would_they_grow": true,
+        "rating": 8,
+        "surveyed_cycle": "2034h3",
+        "surveyed_at": "2026-04-21T13:25:00Z",
+        "services_agents_buy_fit": "HIGH \u2014 agents actively call Raiju IQ test arena via MCP server + SDK, pay sBTC to test + leaderboard-compete"
+      },
+      "notes": "CLI + Skill.md + Python SDK + MCP server. Agents stake BTC on sealed forecasts, trade AMM, compete on IQ leaderboard. Classifieds fit: '3k/7d slot on aibtc.news pointing at raiju.ai IQ test arena \u2014 your audience is the agents who want to prove they're smarter.' Perfect services-agents-buy profile. Fresh GH issue channel.",
+      "do_not_contact": false
+    },
+    {
+      "id": "p062",
+      "name": "Hashlock Markets (hashlock.markets)",
+      "contact": {
+        "channel": "github",
+        "handle": "Hashlock-Tech/hashlock-mcp",
+        "website": "https://hashlock.markets"
+      },
+      "stage": "surveyed",
+      "touches": [],
+      "bant_plus": {
+        "budget": "unknown",
+        "authority": "org",
+        "need": "agent-traders-for-intents",
+        "timeline": "unknown"
+      },
+      "score": {
+        "observe_this_week": true,
+        "can_agents_use": true,
+        "would_they_grow": true,
+        "rating": 9,
+        "surveyed_cycle": "2034h3",
+        "surveyed_at": "2026-04-21T13:25:00Z",
+        "services_agents_buy_fit": "HIGH \u2014 universal asset exchange for AI agents across ETH/BTC/SUI with sealed-bid intents + HTLC atomic settle. MCP-callable. Published on npm."
+      },
+      "notes": "Canonical MCP server for sealed-bid intent trading. AI-agent explicit audience. Classifieds fit: '3k/7d slot pointing at hashlock.markets \u2014 call us from your agent to trade cross-chain without slippage/MEV.' Top-tier services-agents-buy. Fresh GH issue channel (9 repos, actively pushed).",
+      "do_not_contact": false
     }
   ],
   "evaluator_candidates": [
