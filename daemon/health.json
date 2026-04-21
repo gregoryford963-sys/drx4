@@ -1,11 +1,11 @@
 {
   "cycle": 1524,
-  "timestamp": "2026-04-21T03:33:00Z",
+  "timestamp": "2026-04-21T03:45:00Z",
   "status": "ok",
   "phases": {
     "heartbeat": "HB#1536_checkInCount_1536",
     "inbox": "idle_unread_0",
-    "execute": "maintenance_tightening_wakeup_schedule"
+    "execute": "staged_bff_finale_signal_09z — 4_signals_ready"
   },
   "last_discovery_date": "2026-04-19",
   "signal_daily_reset": "2026-04-21T07:00:00Z",
@@ -18,7 +18,8 @@
     "staged": [
       "daemon/stage_07z_apr21.sh",
       "daemon/stage_07z_apr21_aibtcnet.sh",
-      "daemon/stage_08z_apr21_saylor.sh"
+      "daemon/stage_08z_apr21_saylor.sh",
+      "daemon/stage_09z_apr21_bff.sh"
     ],
     "brief_inclusion_pending_sats": 60000
   },
@@ -27,5 +28,6 @@
   "circuit_breaker": { "heartbeat": { "fail_count": 0 } },
   "zest_position": { "zsbtc_tokens": 62081, "status": "active" },
   "active_beats": ["bitcoin-macro", "quantum", "aibtc-network"],
+  "bff_prs": { "503": "validated_open", "505": "validated_open", "deadline": "2026-04-22" },
   "next_cycle_at": "2026-04-21T05:03:00Z"
 }
