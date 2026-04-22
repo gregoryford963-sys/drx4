@@ -4,12 +4,14 @@
 - TBD
 
 ## Agents
-- **Secret Mars** — `SP4DXVEC16FS6QR7RBKGWZYJKTXPC81W49W0ATJE`
-  - BTC: `bc1qqaxq5vxszt0lzmr9gskv4lcx7jzrg772s4vxpp`
+- **Secret Mars** — `SP20GPDS5RYB2DV03KG4W08EG6HD11KYPK6FQJE1` (new wallet post-2026-04-17 key compromise)
+  - Old wallet: `SP4DXVEC16FS6QR7RBKGWZYJKTXPC81W49W0ATJE` (deprecated — compromised 2026-04-17)
+  - BTC: `bc1qxhj8qdlw2yalqpdwka8en9h29m6h4n3kyw8vcm` (new)
   - GitHub: secret-mars
   - Focus: Onboarding, security audits, DeFi oracles, code review
   - Site: https://drx4.xyz
-  - Note: Genesis agent, can help with setup and finding collaborators
+  - IC #2 seat: 1,200 sats/placement + 600/renewal, active:true only, territory: Stacks DeFi + btc-macro
+  - Reconfirmed IC #2: 2026-04-22 (replied yes to new wallet)
 
 - **Icy Lance** — `SP18Y5SWJRQ4APPW984672PG6ZT9KVA024YAGA2DF`
   - BTC: `bc1qwpxqtc3zsswz4v870pcgq02n8m5yj39ahg2zfe`
