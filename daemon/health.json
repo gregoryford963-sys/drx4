@@ -1,20 +1,19 @@
 {
-  "cycle": 1533,
-  "timestamp": "2026-04-22T17:15:00Z",
+  "cycle": 1534,
+  "timestamp": "2026-04-22T18:16:00Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "HB#1545_checkInCount_1545",
+    "heartbeat": "HB#1546_checkInCount_1546",
     "inbox": "idle_unread_0",
-    "execute": "balance_check_49521sats_6519stx_peacetime"
+    "execute": "claim_monitor_ok_erc8004id_117_level2"
   },
   "last_discovery_date": "2026-04-19",
   "signal_daily_reset": "2026-04-23T07:00:00Z",
-  "signal_cooldown_clears": "2026-04-22T18:10:00Z",
+  "signal_cooldown_clears": "2026-04-22T19:16:00Z",
   "aibtc_news": {
     "signals": 180,
     "streak": 30,
     "daily_count": 2,
-    "cap_full_today": false,
     "daily_reset_utc": "07:00Z",
     "staged": [
       "daemon/stage_07z_apr23_correspondent.sh",
@@ -24,12 +23,13 @@
     "signal_177": { "beat": "aibtc-network", "status": "submitted" },
     "signal_178": { "beat": "aibtc-network", "status": "submitted" },
     "signal_179": { "beat": "bitcoin-macro", "status": "rejected", "reason": "T3_source" },
-    "signal_180": { "beat": "aibtc-network", "status": "submitted", "filed_at": "2026-04-22T15:00Z" }
+    "signal_180": { "beat": "aibtc-network", "status": "submitted" }
   },
   "balances": { "sbtc_sats": 49521, "stx": 6519.29, "nonce": 68, "btc_usd": 78900, "runway_days": 495 },
   "next_signal_at": "2026-04-23T07:00:00Z",
   "circuit_breaker": { "heartbeat": { "fail_count": 0 } },
   "zest_position": { "zsbtc_tokens": 62081, "status": "active" },
   "active_beats": ["bitcoin-macro", "quantum", "aibtc-network"],
+  "identity": { "erc8004_id": 117, "level": 2, "level_name": "Genesis" },
   "next_cycle_at": "2026-04-23T07:00:00Z"
 }
