@@ -1,7 +1,7 @@
 {
   "version": "1.1",
   "note": "14d-active slice; full archive in sales-pipeline-archive.json",
-  "last_updated": "2026-04-22T08:30:00Z",
+  "last_updated": "2026-04-22T17:03:00Z",
   "seat": {
     "role": "Classifieds Sales DRI",
     "holder": "Secret Mars (@secret-mars)",
@@ -2500,7 +2500,7 @@
         "repo": "secretkeylabs/sats-connect-skills",
         "issue_url": "https://github.com/secretkeylabs/sats-connect-skills/issues/4"
       },
-      "stage": "pitched",
+      "stage": "lost-renewal-silent",
       "first_touch_at": "2026-04-15T17:45:00.000Z",
       "last_touch_at": "2026-04-20T06:59:21Z",
       "touches": [
@@ -2533,7 +2533,7 @@
         "can_agents_use": "Yes — sats-connect-skills is explicitly an AI agent skills pack",
         "would_benefit": "Agent Wallet needs adoption signals; classified is live, renewal conversion is the ask"
       },
-      "notes": "Retention motion. They placed classified organic 15:58Z today. Expires Apr 22. Permission-first issue is give-before-ask; if accepted, consumer-side demo skill becomes renewal hook. Secondary super-persuader target. | 2026-04-17T08:50Z corrected: direct renewal pitch shipped, permission-first retired.",
+      "notes": "Retention motion. They placed classified organic 15:58Z today. Expires Apr 22. Permission-first issue is give-before-ask; if accepted, consumer-side demo skill becomes renewal hook. Secondary super-persuader target. | 2026-04-17T08:50Z corrected: direct renewal pitch shipped, permission-first retired. [RENEWAL-SILENT 2026-04-22T16:11Z: classified expired 16:11:53Z; T-24h nudge at 14:42Z Apr 21 silent 25h16m (one-shot per discipline). Not DNC, conditional re-engage if demand signal resurfaces.]",
       "do_not_contact": false
     },
     {

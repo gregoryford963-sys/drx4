@@ -343,3 +343,6 @@
 2026-04-22T13:50:12Z | 2034ho | apify_second_close | apify/mcpc#192 filed 13:50Z by Glowing Raptor, closed by jancurn 14:03Z (13min45s) — 2nd apify close in 26h, spam-flag territory
 2026-04-22T15:58:00Z | 2034hp | lint_extended | scripts/lint-pitches.py → +5 HARD (renewal mispricing / IC comp leaks 1200 + 600 / Supply-side phrasing / wrong close path to secret-mars drx4) +1 soft (Stacks Foundation unverified). Smoke-tested on Glowing Raptor body: caught 4/4 HARD + 1 soft.
 2026-04-22T15:58:00Z | 2034hp | skip_marker_added | daemon/drafts/2026-04-20/ic-reconfirm-template.md → lint-pitches:skip for IC-internal comp template (1200/600 legitimate in IC onboarding, not prospect)
+2026-04-22T16:11:53Z | 2034hq | xverse_expired | classified 72a9e681 went active=false at expiry; renewal silent post T-24h nudge; stage: pitched → lost-renewal-silent (p024)
+2026-04-22T17:03:00Z | 2034hq | pipeline_update | p024 stage advanced + notes appended with renewal-silent record
+2026-04-22T17:03:00Z | 2034hq | live_classifieds_count | 3 → 1 active (JingSwap f4ea75c1 only); Xverse + HODLMM both expired today

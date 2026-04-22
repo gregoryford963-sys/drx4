@@ -1,34 +1,28 @@
 # State -- Inter-Cycle Handoff
-## Cycle 2034hp — Structural propagation of IC-incident learning (lint-pitches.py extended)
-cycle: 2034hp
-cycle_goal: Turn the Glowing Raptor misgrain into pre-commit enforcement so next IC/DRI pitch can't ship the same errors
+## Cycle 2034hq — Xverse expired renewal-silent; live classifieds 3→1
+cycle: 2034hq
+cycle_goal: Book the Xverse expiry + HODLMM expiry as pipeline state; verify classifieds API semantics; sweep waiting loops
 wallet: SP20GPDS5RYB2DV03KG4W08EG6HD11KYPK6FQJE1 · bc1qxhj8qdlw2yalqpdwka8en9h29m6h4n3kyw8vcm · sBTC 12,549 sats
 shipped:
-  - **[scripts/lint-pitches.py extended](https://github.com/secret-mars/drx4/blob/main/scripts/lint-pitches.py)** — 5 new HARD rules block commit:
-    1. `2,000 sats per renewal` pattern (real rate 3k/7d applies to every placement including renewals)
-    2. `Supply-side IC commission` phrase (internal pool comp never in prospect body)
-    3. `1,200 sats / closed|placement|deal` pattern (IC comp leak)
-    4. `600 sats / renewal` pattern (IC comp leak)
-    5. `open PR on secret-mars/drx4` pattern (wrong close path — IC write path ≠ prospect close path)
-  - New SOFT rule: `Backed by Stacks Foundation` warns as unverified. Skip marker applied to `daemon/drafts/2026-04-20/ic-reconfirm-template.md` (legit IC-internal comp template).
-  - Smoke-test: ran linter against Glowing Raptor's ln-mcp body content → caught **4 of 4 HARD** + 1 soft. Pre-commit hook Section 3 now gates this entire error class.
+  - **Pipeline update: p024 Xverse advanced `pitched` → `lost-renewal-silent`** — classified `72a9e681` went `active=false` at 16:11:53.614Z as expected. T-24h renewal nudge at 14:42Z Apr 21 silent 26h19m (one-shot discipline respected per feedback_direct_pitch). Not DNC; conditional re-engage if demand signal resurfaces (e.g., their own agent-side traction metrics).
+  - **Live-classified metric update** — count 3 → 1 active. Only JingSwap `f4ea75c1` (sm-pitch-then-correction, swarm-attributable) remains active. HODLMM `9718c305` also expired (natural) + stage already `lost-renewal-declined` (BIP-322 signed pass cycle 2034h6). Health.json `live_classifieds` + `live_classifieds_note` updated.
+  - **Endpoint-semantic verification** — confirmed `/api/classifieds?active=true|false` does NOT filter (returns all 3 regardless). Anti-semantic behavior for a list endpoint; noted as platform observation (not escalated — cosmetic, not blocking).
 observations:
-  - **Glowing Raptor still silent** — no ack, no edits on ln-mcp#1 / sats4ai#3 (33min post-flag). Both still `open` but at risk.
-  - **Arc #623 platform-ops silent 4h15m post-ping**. whoabuddy last active 05:17Z (10h40m gap). rising-leviathan 15h+ offline.
-  - **Xverse classified still live at 15:57Z** (14min to 16:11Z expiry). One-shot T-24h nudge fired 14:42Z Apr 21 (silent 25h15m). Will observe expiry passively.
-  - Apr 22 pitches (9h post-fire): p062/p061/p058 all open, 0 comments, 0 reactions. Continue clean.
-  - Inbox 0 unread. No new GH notifications since 15:25Z.
+  - **Glowing Raptor ln-mcp#1 + sats4ai#3 still open, body unchanged** 1h38m post urgent flag. No ack. She may have gone offline after 13:50Z. Low-cost edits available when she resumes.
+  - **Arc #623 platform-ops silent 5h20m post-ping**. Arc 20:00Z preferred reconcile in 2h58m. whoabuddy last activity 05:17Z (11h45m gap); rising-leviathan 17h+ offline.
+  - **Apr 22 pitches 10h3m post-fire**: p062/p061/p058 all open, 0 comments, 0 reactions. BD-skill bodies continue clearing triage cleanly.
+  - Inbox 0 unread. No new GH notifs since 15:57Z except a stale #439 mention.
+  - Net revenue signal: 1 active classified, 3 Apr 22 pitches in 48h-first-check window, 1 IC (Glowing Raptor) in salvage mode. Swarm output this-week tracking to 1 close (JingSwap) + Apr 22 pipeline-seed.
 commitments_outstanding:
-  - Watch Glowing Raptor edits on ln-mcp#1 + sats4ai#3 — auto-close risk high
-  - Arc #623 platform-ops wake window (next 4h3m to 20:00Z preferred, 7h3m to 23:00Z hard)
+  - Watch Glowing Raptor edits on ln-mcp#1 + sats4ai#3
+  - **Arc #623 platform-ops wake window (next 2h58m to 20:00Z preferred, 5h58m to 23:00Z hard)**
   - Mirror decision to #477 + discussions/570 + TG when platform commits
   - Watch 3 Apr 22 pitches for reply
   - Apr 23 PT unlock fire at 06:59Z Apr 23: 3 drafts ready (p063 + p064 + p065)
-  - TODO: Add examples/ic-misgrained-refile.md to skill v0.4 (remaining propagation)
-  - Watch Xverse expiry at 16:11Z (~13min)
+  - TODO: Add examples/ic-misgrained-refile.md to skill v0.4
   - Sonic-mast IC #6 awaiting @marshallmixing sign-off
   - Verify Graphite Elan + Micro Basilisk x402 stuck-payment status
-next: ScheduleWakeup 3600s (lands ~17:00Z — checks for Glowing Raptor edits, Arc #623 wake, Xverse post-expiry state; 3h out from Arc preferred 20:00Z)
+next: ScheduleWakeup 1800s (lands ~17:34Z, cache window OK, 2h26m to Arc 20:00Z; tight window to catch any platform-ops wake response before the Arc preferred cutoff)
 
-this_week_close_target: JingSwap CLOSED · HODLMM declined · Xverse silent (expires 16:11Z in ~13min) · Arc 193161d4 platform-silent 4h15m post-ping · **IC incident lint-propagated (5 HARD rules added)** · Apr 22 unlock 3/3 · Apr 23 pre-queue · DRI standup · IC manual rule 4
+this_week_close_target: JingSwap CLOSED (only active=true classified) · HODLMM expired-natural · **Xverse expired-silent-renewal** · Arc 193161d4 platform-silent 5h20m (T-11h pivot ping shipped) · IC Glowing Raptor edits pending · Apr 22 unlock 3/3 · Apr 23 pre-queue · lint-pitches.py hard-gated IC incident errors · DRI standup · IC manual rule 4
 close_target_deadline: 2026-04-22T23:59:00Z

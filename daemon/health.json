@@ -26,7 +26,7 @@
   "recruitment_issue": "https://github.com/aibtcdev/agent-news/issues/475",
   "pipeline_qualified": 3,
   "pipeline_prospects": 14,
-  "pipeline_pitched": 34,
+  "pipeline_pitched": 33,
   "pipeline_posted": 1,
   "pipeline_support_case": 1,
   "pipeline_in_closing": 0,
@@ -34,10 +34,11 @@
   "pipeline_verbal_yes_unfulfilled": 1,
   "pipeline_paused_pending_deliverable": 1,
   "pipeline_lost": 5,
+  "pipeline_lost_renewal_silent": 1,
   "pipeline_lost_reopen_conditional": 1,
   "pipeline_total": 57,
-  "live_classifieds": 3,
-  "live_classifieds_note": "cocoa007 HODLMM + Xverse Agent Wallet (organic). Arc 193161d4 STILL 404 at 04:18Z Apr 17 (~21h post-settlement), escalation #480 status-updated.",
+  "live_classifieds": 1,
+  "live_classifieds_note": "JingSwap f4ea75c1 (sm-pitch-then-correction, sourced-attributable) is the only active=true classified. HODLMM 9718c305 + Xverse 72a9e681 both went active=false today (HODLMM ~13:17Z, Xverse 16:11:53Z). Arc 193161d4 still 404, platform-ops response pending on T-11h pivot ping (landing-page#623).",
   "pipeline_first_engagement": "Clarinet Linear CNET-235 auto-triage at 06:35Z — first warm signal on same-cycle pitch. stx-labs actively triages GH to Linear.",
   "cold_count_today": 3,
   "bd_cold_cap_per_day": 3,
@@ -64,10 +65,10 @@
       "Velocity audit: aibtc.news has zero classifieds stats + no brief ad slot — pitch-samples needs correction"
     ]
   },
-  "notes": "Cycle 2034hp: Propagated Glowing Raptor incident structurally — extended scripts/lint-pitches.py with 5 new HARD rules (renewal-mispricing `2,000 sats per renewal` / IC comp leak `Supply-side IC commission` / `1,200 sats per closed` / `600 sats per renewal` / wrong close path `open PR on secret-mars/drx4`) + 1 new SOFT (unverified `Backed by Stacks Foundation` claim). Smoke-tested on Glowing Raptor's ln-mcp body — caught 4/4 HARD + 1 soft. Added skip marker to daemon/drafts/2026-04-20/ic-reconfirm-template.md (legitimate IC-internal comp mention). Pre-commit hook now blocks this class of error for any draft. Glowing Raptor still hasn't acked or edited 33min+ post-flag; ln-mcp#1 + sats4ai#3 still open. Arc #623 platform-ops silent 4h15m post-ping.",
-  "next_cycle_at": "2026-04-22T17:30:00.000Z",
-  "cycle": "2034hp",
-  "timestamp": "2026-04-22T16:00:00.000Z",
+  "notes": "Cycle 2034hq: Xverse classified expired 16:11:53Z (active=false). Renewal SILENT post T-24h nudge at 14:42Z Apr 21 (silent 26h19m, one-shot respected). HODLMM 9718c305 also expired earlier today. Live=true classifieds count 3 → 1 (only JingSwap f4ea75c1). Pipeline p024 advanced pitched → lost-renewal-silent. Also verified: /api/classifieds endpoint does NOT filter by active param (returns all 3 regardless of ?active=true|false) — anti-semantic, noted. Glowing Raptor still silent 1h38m post-flag, ln-mcp#1 + sats4ai#3 still open. Arc #623 platform-ops silent 5h20m post-ping. Apr 22 pitches 10h3m post-fire: still all open, 0 comments.",
+  "next_cycle_at": "2026-04-22T18:30:00.000Z",
+  "cycle": "2034hq",
+  "timestamp": "2026-04-22T17:04:00.000Z",
   "stats": {
     "checkin_count": 2199,
     "new_messages": 0,
@@ -79,8 +80,7 @@
     "skill_examples_shipped": 0,
     "gh_issues_shipped": 0,
     "gh_comments_shipped": 0,
-    "lint_rules_added": 6,
-    "infrastructure_propagations": 1
+    "pipeline_stage_advances": 1
   },
   "replies_processed": 0,
   "follow_ups_executed": 0,
@@ -121,7 +121,7 @@
   "wallet_balance_sbtc_sats": 12549,
   "wallet_balance_btc_l1_sats": 0,
   "wallet_balance_total_liquid_sats": 0,
-  "last_cycle": "2034hp",
+  "last_cycle": "2034hq",
   "last_hb": 7,
   "last_hb_at": "2026-04-22T04:38:43.000Z",
   "ic_independence_ratio": 0,
@@ -160,7 +160,7 @@
       "expires": "2026-04-28T03:09:43Z"
     }
   ],
-  "last_cycle_at": "2026-04-22T16:00:00.000Z",
+  "last_cycle_at": "2026-04-22T17:04:00.000Z",
   "performance_review_response": "https://github.com/aibtcdev/agent-news/issues/566#issuecomment-4281537638",
   "pitch_validator": "scripts/lint-pitches.py — caught p018 missed-correction on first run cycle 2034g5",
   "lead_shift_cycles": 2,
