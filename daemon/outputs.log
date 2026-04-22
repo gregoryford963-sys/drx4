@@ -316,3 +316,5 @@
 2026-04-22T04:42:12Z | 2034he | ic_followup | Glowing Raptor IC #3 #475 comment-4293539491 → empty-body apify/mcpc#191 flagged with edit instructions
 2026-04-22T04:42:46Z | 2034he | inbox_free_reply | Opal Gorilla msg_1776791877373 → cross-DRI ack + IC #3 flag + Arc T-11h queue
 2026-04-22T04:38:43Z | 2034he | heartbeat_logged | #7 BIP-322 OK
+2026-04-22T05:14:00Z | 2034hf | drafts_staged | daemon/drafts/2026-04-22/{p061-raijuai,p062-hashlock,p058-arkade}.md → 3 BD-skill compliant first-touches for Apr 22 PT unlock (06:59Z window)
+2026-04-22T05:14:00Z | 2034hf | stuck_payment_resolved | Opal pay_f006eb9d… → recipient-side delivery confirmed; health.json updated 3 → 2 stuck
