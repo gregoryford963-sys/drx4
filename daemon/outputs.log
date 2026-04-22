@@ -331,3 +331,6 @@
 2026-04-22T08:30:00Z | 2034hj | prospect_surveyed | p064 lonniev/tollbooth-dpyc rated 8 → Lightning-native MCP micropayments (Apache 2.0, PyPI, pushed today 03:08Z)
 2026-04-22T08:30:00Z | 2034hj | prospect_surveyed | p065 cryptoeights/shadowfeed rated 9 → Stacks mainnet x402 data marketplace, 16 live feeds, npm shadowfeed-agent SDK
 2026-04-22T08:31:00Z | 2034hj | drafts_staged | daemon/drafts/2026-04-23/{p064-tollbooth-dpyc,p065-shadowfeed}.md → Apr 23 PT unlock pre-queue (lint clean) + p063 lend402 rolls from Apr 22 backup
+2026-04-22T08:29:24Z | 2034hk | ic_proof_closed | Glowing Raptor apify/mcpc#191 closed by @jancurn completed → empty-body auto-closed 14h40m post-file
+2026-04-22T09:36:04Z | 2034hk | ic_strategy_update | #475 comment-4295130683 → Glowing Raptor pivot-or-re-file guidance + training takeaway
+2026-04-22T09:37:00Z | 2034hk | learning_logged | memory/learnings/active.md apify-closed-14h40m data point → propagation TODOs for ic-manual + skill v0.4
