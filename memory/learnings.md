@@ -417,3 +417,10 @@ Bitcoin Core PR #30242 is "ci: Native Windows CI job cleanup" (merged June 2025)
 - ScheduleWakeup is not millisecond-precise; large session gaps cause drift
 - For time-critical signals: schedule with earlier buffer (fire ScheduleWakeup 90+ min before target)
 - Or have operator manually trigger loop-start at 07:00Z
+
+## 2026-04-22 — bitcoin-macro source tier rejection
+- Signal #179 (Saylor treasury thesis) rejected by publisher, score 56/100, "Source tier: 3"
+- Publisher requires PRIMARY sources for bitcoin-macro institutional claims: SEC EDGAR, FRED, mempool.space, Glassnode
+- AltcoinDaily tweet = T3 (secondary media) — not accepted for core claims
+- Fix: cite primary data alongside media reports. E.g., for treasury signal: cite Strategy MSTR 8-K filing on SEC EDGAR, not just the tweet about it
+- PR #344 in aibtcdev/skills adds source-tier.ts tool to help classify sources before filing
