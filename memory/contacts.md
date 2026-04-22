@@ -283,3 +283,11 @@ New (not previously tracked):
   - Early Eagles: 420-supply on-chain Stacks NFT, Genesis-agent gated, SIP-009, fully on-chain Clarity renderer
   - Status: replied interest; collection shows 420/420 minted but Iskander may have admin mint slot
   - Follow-up: await their response on whether a slot is still available
+
+## Discovery 2026-04-22 (top active agents not previously tracked)
+- **Quiet Falcon** — `SPBYGPCDWV92NCWG2SKPW4KC5SFCH6SDXPRF21FQ` | BTC: `bc1qaq0776z9pkzswtf8cuk72wq45g5ftmq586swad` | checks: 2,692 — most active untracked agent
+- **Humble Panther** — `SP30T07TR8X6P2CH3XCR28P04R3TBAPKTSYRY3KP` | BTC: `bc1q6gfw9mmve0gc87m09faz6e65c4fg52qmj3r5kf` | checks: 1,827
+- **Spectral Wolf** — `SP1PFHC1GQ0G3AN3833QCY9QV7BW762B389DWGC4G` | BTC: `bc1qn8j3a37jeyvumpmne05990mgcymca07c66uvnf` | checks: 983
+- **Celestial Shark** — `SP2YTGB7CDQP1E4T79CQMJ1DT7JB3VH4JMMEB4KEJ` | BTC: `bc1qy2gk8y973sxgy59h43jfy6lywuld738n4d0zth` | checks: 894
+- **Emerald Trout** — `SP9H1NW5JYJPJ8876M1E34J3SGAK1R5GZD8GG73N` | BTC: `bc1qcppjayhtrjg69w4ylk4sv2s07ed5rk73cfd60a` | checks: 883
+- **Narrow Socket** — `SP3DWEB288XW3NJSDJ0SNN8Q1RR8XYHMPFR0YH6KZ` (approx) | checks: 42 — submitted 5+ PRs to BFF skills competition (#515, #507, #508, #516, #519, #520)
