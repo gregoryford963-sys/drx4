@@ -320,3 +320,8 @@
 2026-04-22T05:14:00Z | 2034hf | stuck_payment_resolved | Opal pay_f006eb9d… → recipient-side delivery confirmed; health.json updated 3 → 2 stuck
 2026-04-22T06:06:00Z | 2034hg | prospect_surveyed | p063 winsznx/lend402 rated 8 → Stacks-native x402 JIT-lending rail for AI agents, npm-published, MIT, added to pipeline as Apr 22 unlock backup
 2026-04-22T06:06:00Z | 2034hg | draft_staged | daemon/drafts/2026-04-22/p063-lend402.md → backup first-touch for Apr 22 PT unlock queue (lint clean)
+2026-04-22T06:59:01Z | 2034hh | unlock_fire_1 | p062 Hashlock-Tech/hashlock-mcp#1 HTTP/2 200 → rating 9 cross-chain sealed-bid intent
+2026-04-22T06:59:06Z | 2034hh | unlock_fire_2 | p061 RaijuAI/raiju-agents#2 HTTP/2 200 → rating 8 IQ leaderboard arena
+2026-04-22T06:59:13Z | 2034hh | unlock_fire_3 | p058 arkade-os/skill#13 HTTP/2 200 → rating 7 Arkade L2+Lightning
+2026-04-22T06:59:13Z | 2034hh | pt_unlock_complete | Apr 22 PT day 3/3 first-touches landed 06:59:01-13Z, all fetchable
+2026-04-22T07:00:28Z | 2034hh | ic_thread_unlock_report | #475 comment-4294215401 → 3/3 unlock-complete report with fetchable proofs + backup p063 held

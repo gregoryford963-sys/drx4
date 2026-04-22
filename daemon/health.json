@@ -1,7 +1,7 @@
 {
   "proofs_today_merged": 3,
   "proofs_today_pending": 0,
-  "deadline_utc": "2026-04-18T06:59:00Z",
+  "deadline_utc": "2026-04-23T06:59:00Z",
   "unlock_target": 3,
   "unlocked_today": true,
   "sats_earned_today": 0,
@@ -24,7 +24,7 @@
   "recruitment_issue": "https://github.com/aibtcdev/agent-news/issues/475",
   "pipeline_qualified": 3,
   "pipeline_prospects": 14,
-  "pipeline_pitched": 31,
+  "pipeline_pitched": 34,
   "pipeline_posted": 1,
   "pipeline_support_case": 1,
   "pipeline_in_closing": 0,
@@ -39,7 +39,7 @@
   "pipeline_first_engagement": "Clarinet Linear CNET-235 auto-triage at 06:35Z — first warm signal on same-cycle pitch. stx-labs actively triages GH to Linear.",
   "cold_count_today": 3,
   "bd_cold_cap_per_day": 3,
-  "cold_cap_status": "3/3 unlock shipped — no more cold today. 24h to next deadline.",
+  "cold_cap_status": "3/3 unlock shipped at 06:59:01-13Z Apr 22 → Hashlock-Tech + RaijuAI + arkade-os. No more cold today. 23h58m to next deadline.",
   "drift_tell_triggered": null,
   "sales_dri": {
     "language_correction": "Operator caught cycle 2034ca 10:17Z — verbal yeses are closed_pending_publish, NOT closed.",
@@ -62,22 +62,21 @@
       "Velocity audit: aibtc.news has zero classifieds stats + no brief ad slot — pitch-samples needs correction"
     ]
   },
-  "notes": "Cycle 2034hg: Pre-rollover idle slot used for fresh ecosystem survey. Found p063 winsznx/lend402 — Stacks-native x402 JIT-lending rail for AI agents (npm @winsznx/lend402, MIT, pushed Apr 19, solo dev 148 repos). 3-gate pass (rating 8). Added to pipeline.json + drafted p063-lend402.md as Apr 22 unlock backup (lint clean). Queue now 4 drafts (3 primary + 1 backup). GH/inbox quiet, Glowing Raptor apify/mcpc#191 still body-empty (1h22m post-flag), Arc #623 no platform movement.",
-  "next_cycle_at": "2026-04-22T06:55:00.000Z",
-  "cycle": "2034hg",
-  "timestamp": "2026-04-22T06:06:00.000Z",
+  "notes": "Cycle 2034hh: APR 22 PT UNLOCK SHIPPED 3/3 at 06:59:01-13Z. Fired pre-staged queue at rollover: p062 Hashlock-Tech/hashlock-mcp#1 (rated 9, sealed-bid intent trading, cross-chain HTLC npm @hashlock-tech/mcp) + p061 RaijuAI/raiju-agents#2 (rated 8, IQ leaderboard arena MCP+SDK+CLI) + p058 arkade-os/skill#13 (rated 7, Arkade L2+Lightning+USDC agent integration). All proofs HTTP/2 200. BD-skill compliant, direct 3k/7d offer, JingSwap peer proof. Logged to daemon/sales-proofs/2026-04-22.md + reported #475 comment-4294215401. p063 lend402 held as backup. Pipeline: 3 surveyed → pitched, touches[] populated.",
+  "next_cycle_at": "2026-04-22T07:30:00.000Z",
+  "cycle": "2034hh",
+  "timestamp": "2026-04-22T07:01:00.000Z",
   "stats": {
     "checkin_count": 2199,
     "new_messages": 0,
     "replies_sent": 0,
     "paid_x402_sent": 0,
-    "gh_comments_shipped": 0,
+    "gh_comments_shipped": 1,
     "mailbox_acks": 0,
-    "tasks_executed": 5,
+    "tasks_executed": 4,
     "skill_examples_shipped": 0,
-    "gh_issues_shipped": 0,
-    "drafts_staged": 1,
-    "prospects_surveyed": 1
+    "gh_issues_shipped": 3,
+    "first_touches_shipped": 3
   },
   "replies_processed": 0,
   "follow_ups_executed": 0,
@@ -118,7 +117,7 @@
   "wallet_balance_sbtc_sats": 12549,
   "wallet_balance_btc_l1_sats": 0,
   "wallet_balance_total_liquid_sats": 0,
-  "last_cycle": "2034hg",
+  "last_cycle": "2034hh",
   "last_hb": 7,
   "last_hb_at": "2026-04-22T04:38:43.000Z",
   "ic_independence_ratio": 0,
@@ -157,7 +156,7 @@
       "expires": "2026-04-28T03:09:43Z"
     }
   ],
-  "last_cycle_at": "2026-04-22T06:06:00.000Z",
+  "last_cycle_at": "2026-04-22T07:01:00.000Z",
   "performance_review_response": "https://github.com/aibtcdev/agent-news/issues/566#issuecomment-4281537638",
   "pitch_validator": "scripts/lint-pitches.py — caught p018 missed-correction on first run cycle 2034g5",
   "lead_shift_cycles": 2,

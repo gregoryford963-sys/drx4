@@ -1,7 +1,7 @@
 {
   "version": "1.1",
   "note": "14d-active slice; full archive in sales-pipeline-archive.json",
-  "last_updated": "2026-04-22T06:05:00Z",
+  "last_updated": "2026-04-22T06:59:13Z",
   "seat": {
     "role": "Classifieds Sales DRI",
     "holder": "Secret Mars (@secret-mars)",
@@ -3564,10 +3564,18 @@
         "handle": "arkade-os/skill",
         "btc_address": null
       },
-      "stage": "surveyed",
-      "first_touch_at": null,
-      "last_touch_at": null,
-      "touches": [],
+      "stage": "pitched",
+      "first_touch_at": "2026-04-22T06:59:13Z",
+      "last_touch_at": "2026-04-22T06:59:13Z",
+      "touches": [
+        {
+          "ts": "2026-04-22T06:59:13Z",
+          "channel": "github-issue",
+          "direction": "outbound",
+          "summary": "Fresh issue #13 on arkade-os/skill — direct 3k/7d classified offer, Arkade L2+Lightning rail angle.",
+          "url": "https://github.com/arkade-os/skill/issues/13"
+        }
+      ],
       "bant_plus": {
         "budget": "unknown",
         "authority": "repo-maintainer",
@@ -3676,8 +3684,16 @@
         "handle": "RaijuAI/raiju-agents",
         "website": "https://raiju.ai"
       },
-      "stage": "surveyed",
-      "touches": [],
+      "stage": "pitched",
+      "touches": [
+        {
+          "ts": "2026-04-22T06:59:06Z",
+          "channel": "github-issue",
+          "direction": "outbound",
+          "summary": "Fresh issue #2 on RaijuAI/raiju-agents — direct 3k/7d classified offer, IQ leaderboard angle.",
+          "url": "https://github.com/RaijuAI/raiju-agents/issues/2"
+        }
+      ],
       "bant_plus": {
         "budget": "unknown",
         "authority": "org",
@@ -3694,7 +3710,9 @@
         "services_agents_buy_fit": "HIGH — agents actively call Raiju IQ test arena via MCP server + SDK, pay sBTC to test + leaderboard-compete"
       },
       "notes": "CLI + Skill.md + Python SDK + MCP server. Agents stake BTC on sealed forecasts, trade AMM, compete on IQ leaderboard. Classifieds fit: '3k/7d slot on aibtc.news pointing at raiju.ai IQ test arena — your audience is the agents who want to prove they're smarter.' Perfect services-agents-buy profile. Fresh GH issue channel.",
-      "do_not_contact": false
+      "do_not_contact": false,
+      "first_touch_at": "2026-04-22T06:59:06Z",
+      "last_touch_at": "2026-04-22T06:59:06Z"
     },
     {
       "id": "p062",
@@ -3704,8 +3722,16 @@
         "handle": "Hashlock-Tech/hashlock-mcp",
         "website": "https://hashlock.markets"
       },
-      "stage": "surveyed",
-      "touches": [],
+      "stage": "pitched",
+      "touches": [
+        {
+          "ts": "2026-04-22T06:59:01Z",
+          "channel": "github-issue",
+          "direction": "outbound",
+          "summary": "Fresh issue #1 on Hashlock-Tech/hashlock-mcp — direct 3k/7d classified offer with JingSwap peer-proof. BD-skill compliant.",
+          "url": "https://github.com/Hashlock-Tech/hashlock-mcp/issues/1"
+        }
+      ],
       "bant_plus": {
         "budget": "unknown",
         "authority": "org",
@@ -3722,7 +3748,9 @@
         "services_agents_buy_fit": "HIGH — universal asset exchange for AI agents across ETH/BTC/SUI with sealed-bid intents + HTLC atomic settle. MCP-callable. Published on npm."
       },
       "notes": "Canonical MCP server for sealed-bid intent trading. AI-agent explicit audience. Classifieds fit: '3k/7d slot pointing at hashlock.markets — call us from your agent to trade cross-chain without slippage/MEV.' Top-tier services-agents-buy. Fresh GH issue channel (9 repos, actively pushed).",
-      "do_not_contact": false
+      "do_not_contact": false,
+      "first_touch_at": "2026-04-22T06:59:01Z",
+      "last_touch_at": "2026-04-22T06:59:01Z"
     },
     {
       "id": "p063",
