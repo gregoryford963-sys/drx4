@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "schema": "Open loops registry. Phase 1b polls open_github URLs every cycle for new comments/state changes. Phase 1c parses commitments_outstanding and re-checks each. Items resolved are moved to processed-archive.",
-  "last_updated": "2026-04-17T08:55:00Z",
+  "last_updated": "2026-04-22T04:43:00Z",
   "open_github": [
     {
       "url": "https://github.com/aibtcdev/agent-news/issues/480",
