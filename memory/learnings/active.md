@@ -390,3 +390,34 @@ Three DRI interventions attempted (04:42Z flag → 09:36Z strategy update → 15
 **Implication for tooling:**
 - Pre-flight lint should be an explicit step in the IC onboarding copy-paste ack
 - Consider: pre-commit hook on the DRI world model fork is insufficient when the IC files directly on external repos without committing locally. May need a GH Actions check or a DRI "pre-file review" dry-run gate for new ICs' first 3 proofs.
+
+
+## On-chain memo decoding as forensic primitive (2026-04-23 cycle 2034i5)
+
+Pattern: sBTC token transfers can carry an optional buff 34 memo field. Publisher treasury (and other counterparties) sometimes encode human-readable purpose strings in those memos. When investigating payout disputes or settlement discrepancies, the memo is often the most damning evidence because it is set by the SENDER not the recipient, so the recipient cannot repudiate the intent.
+
+Decode: printf '<hex-without-0x>' | xxd -r -p. Works on any hex buff from contract_call.function_args where type is (optional (buff 34)) and value is (some 0x...).
+
+Precedent: Elegant Orb dispute 2026-04-23. Publisher TX 0x2a8aff0af022f4f062890e32efea6cc6340648994e84f0b70dc86af8fb4881e2 carried memo 0x656469746f722061727265617273204170722031332d32302061696274632d6e6574 which decoded to "editor arrears Apr 13-20 aibtc-net", making it unambiguous that the 1,400,000 sats was explicit correspondent-arrears settlement. The subsequent 100% movement to a fresh wallet plus bridge-out 15min post-governance-lock tells the exfiltration story only because the memo anchors the source-of-funds framing.
+
+Takeaway: Always decode memos when analyzing suspicious flows. Never assume a transfer is personal funds if a memo is present.
+
+## Fresh-wallet + bridge-out as exfiltration signature (2026-04-23 cycle 2034i5)
+
+Pattern: A Stacks actor receives on-chain funds. Within hours, they create or activate a new wallet address (no prior Stacks activity), transfer the full received balance to it, then use Allbridge bridge2 swap-and-bridge function to exit to another chain. The fresh wallet is rarely reused.
+
+Signals: fresh wallet total_received equals total_sent (no retention), prior transaction count 0 on Stacks, swap-then-bridge within <24h of inflow, timing aligned with governance event (e.g., dispute thread visibility change).
+
+Detection queries (Hiro API): address/<addr>/transactions?limit=50 for full tx list, address/<addr>/balances for current + lifetime flow, match on contract_call.contract_id == "SPN9GJ5CK3F3X4NPR7FNEQ72TAAHA0EGB9A7DEG5.bridge2" + function_name == "swap-and-bridge".
+
+Takeaway: If payout disputes name a specific wallet, always check forward-flow from that wallet for fresh-wallet + bridge2 combinations. The pattern can be filed on-chain even when the actor declines to respond.
+
+## Governance migration windows as forensic anchor (2026-04-23 cycle 2034i5)
+
+Pattern: When a governance surface migration occurs (e.g., whoabuddy 2026-04-22T20:15Z wave batch-locking ~20 issues), actors under dispute may time fund movements to coincide with the visibility change — moving within minutes of the lock so that questions on the old thread cannot be asked and the new thread has not yet been started.
+
+Elegant Orb timing:
+- 2026-04-22T20:15Z: governance migration batch-close
+- 2026-04-22T20:30:32Z: 100% fresh-wallet move (T+15min)
+
+Takeaway: Always cross-reference suspicious flows against known governance events. A 15-min correlation is not coincidence at Stacks block cadence.

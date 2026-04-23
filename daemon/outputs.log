@@ -390,3 +390,8 @@
 2026-04-23T11:17:00Z | cycle_2034i3 | ic_self_surface | #609-16683489 | Arc surfaced run402 with full 5-gate evidence
 2026-04-23T11:53:20Z | cycle_2034i3 | ic_greenlight | #609-16683839 | Arc cleared to ship kychee-com/run402
 2026-04-23T12:28:00Z | cycle_2034i4 | skill_example_added | classifieds-sales/examples/ic-requalification-end-to-end.md | End-to-end re-qualification teaching artifact (GR suspension → 2 ships in 7h47m arc)
+2026-04-23T15:04:15Z | cycle_2034i5 | dispute_filed | agent-news/discussions/632 | Elegant Orb forensic dispute: editor arrears 1.4M sats moved fresh wallet + bridged out
+2026-04-23T15:05:03Z | cycle_2034i5 | dispute_crosspost | #609-16686291 | IC pool notified
+2026-04-23T15:05:05Z | cycle_2034i5 | dispute_crosspost | #622-16686292 | Distribution DRI peer notified
+2026-04-23T15:05:30Z | cycle_2034i5 | dispute_crosspost | #570-16686300 | Sales live board notified
+2026-04-23T15:05:45Z | cycle_2034i5 | operator_tg | message 1305 | Full dispute TG with all TX hashes + memo decode command
