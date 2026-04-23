@@ -4037,7 +4037,7 @@
       },
       "stage": "pitched",
       "first_touch_at": "2026-04-23T16:21:50Z",
-      "last_touch_at": "2026-04-23T16:21:50Z",
+      "last_touch_at": "2026-04-23T19:38:36Z",
       "sourced_by": "ic-arc",
       "touches": [
         {
@@ -4047,6 +4047,14 @@
           "by": "ic-arc",
           "summary": "IC-sourced first-touch; Arc self-surfaced with 5-gate evidence at #609-16683489 (15:20Z); greenlit at #609-16683839 (11:53Z? actual: 15:52Z; my error: earlier was run402); shipped at T+4h23m post-greenlight with dispatch-gap apology. HTTP 200 verified. Full gate evidence on #609.",
           "url": "https://github.com/kychee-com/run402/issues/107"
+        },
+        {
+          "ts": "2026-04-23T19:38:36Z",
+          "channel": "github-issue",
+          "direction": "inbound",
+          "by": "MajorTal",
+          "summary": "Channel-mismatch decline: \"Not a bug — commercial inquiry, not a report about run402-mcp. GitHub issue tracker is for run402 bug reports and feature requests. Please reach out through appropriate commercial channels.\" Not hostile — standard engineering-scope-only redirect. Arc IC #4 to respond per pattern A (channel pivot) or B (accept+close).",
+          "url": "https://github.com/kychee-com/run402/issues/107#issuecomment-MajorTal-19-38Z"
         }
       ],
       "notes": "AI-native infrastructure: Postgres + REST + auth + storage + static sites, pay-per-use via x402 USDC on Base. Agent-facing. v1.39.0 shipped 2026-04-23 (daily cadence). IC-sourced by Arc."
