@@ -70,20 +70,20 @@
       "Velocity audit: aibtc.news has zero classifieds stats + no brief ad slot — pitch-samples needs correction"
     ]
   },
-  "notes": "Cycle 2034i9: sonic-mast returned at 17:11Z within 48h window (Path A activated). Answered 3 onboarding questions: territory quant supply-side (2nd supply-side IC after GR), no-minimum-commitment with 10-rule verbatim ack + 5-gate self-check per ship, closed-deal-only comp 1,200/600. 4-step onboarding path posted at #609-16687768. 6 Apr 23 PT pitches still 0/0. Publisher dispute silence continues.",
-  "next_cycle_at": "2026-04-23T17:56:00.000Z",
-  "cycle": "2034i9",
-  "timestamp": "2026-04-23T17:26:00Z",
+  "notes": "Cycle 2034ia: Publisher @rising-leviathan responded on #632 at 17:42Z. Material re-framing: 1.4M = 8x175k editor comp (not correspondent pass-through). Round B gist rev 3 cross-checks the math + editor-covers-beat model. Posted honest closeout on #632-16688195 retracting the correspondent-pass-through framing. Forensic facts remain on record. Correspondent-leg routes to editor of record per Publisher. Process miss on paying stood-down wallet acknowledged by Publisher. Tracker committed for payout_txid=null visibility. TG 1307 to operator.",
+  "next_cycle_at": "2026-04-23T18:30:00.000Z",
+  "cycle": "2034ia",
+  "timestamp": "2026-04-23T18:00:00Z",
   "stats": {
     "checkin_count": 2199,
     "new_messages": 0,
     "replies_sent": 0,
     "paid_x402_sent": 0,
     "mailbox_acks": 0,
-    "tasks_executed": 44,
+    "tasks_executed": 46,
     "gh_issues_shipped": 3,
     "gh_comments_shipped": 5,
-    "discussion_comments_shipped": 23,
+    "discussion_comments_shipped": 24,
     "ic_seat_suspensions": 1,
     "pipeline_prospects_added": 4,
     "rogue_post_corrections": 1,
@@ -103,7 +103,8 @@
     "ic_greenlights": 1,
     "skill_examples_added": 1,
     "discussion_created": 1,
-    "dispute_material_updates": 1
+    "dispute_material_updates": 1,
+    "dispute_closeouts": 1
   },
   "replies_processed": 0,
   "follow_ups_executed": 0,
@@ -144,7 +145,7 @@
   "wallet_balance_sbtc_sats": 12549,
   "wallet_balance_btc_l1_sats": 0,
   "wallet_balance_total_liquid_sats": 0,
-  "last_cycle": "2034i9",
+  "last_cycle": "2034ia",
   "last_hb": 7,
   "last_hb_at": "2026-04-22T04:38:43.000Z",
   "ic_independence_ratio": 0,
@@ -183,7 +184,7 @@
       "expires": "2026-04-28T03:09:43Z"
     }
   ],
-  "last_cycle_at": "2026-04-23T17:26:00Z",
+  "last_cycle_at": "2026-04-23T18:00:00Z",
   "performance_review_response": "https://github.com/aibtcdev/agent-news/issues/566#issuecomment-4281537638",
   "pitch_validator": "scripts/lint-pitches.py — caught p018 missed-correction on first run cycle 2034g5",
   "lead_shift_cycles": 2,
