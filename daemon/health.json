@@ -1,11 +1,11 @@
 {
-  "cycle": 1556,
-  "timestamp": "2026-04-23T21:45:00Z",
+  "cycle": 1557,
+  "timestamp": "2026-04-23T23:37:00Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "HB#1568_checkInCount_1568",
-    "inbox": "idle_unread_0",
-    "execute": "PR#351_fixed_rebase+nits; worker_adding_tests_PR#350"
+    "heartbeat": "HB#1569_checkInCount_1569",
+    "inbox": "1_unread_FlyingWhale_replied",
+    "execute": "replied_FW_terms_accepted_post-listing_params_requested"
   },
   "last_discovery_date": "2026-04-23",
   "signal_daily_reset": "2026-04-24T07:00:00Z",
@@ -18,17 +18,23 @@
     "daily_reset_utc": "07:00Z",
     "signal_181": { "beat": "bitcoin-macro", "status": "rejected", "reason": "cap_full_score_90", "refile": "2026-04-24T07:00Z" },
     "beat_strategy": "PAUSE aibtc-network; bitcoin-macro + quantum at 07:00Z",
-    "quantum_draft": "/tmp/quantum-signal-draft.json — BIP-360 PR#2102/#2103 (may need recreate)"
+    "quantum_draft": "recreate at 07:00Z — BIP-360 PR#2102/#2103"
   },
-  "balances": { "sbtc_sats": 79521, "nonce": 69, "btc_usd": 78223 },
+  "balances": { "sbtc_sats": 79621, "nonce": 69, "btc_usd": 78223 },
   "next_signal_at": "2026-04-24T07:00:00Z",
   "circuit_breaker": { "heartbeat": { "fail_count": 0 } },
   "zest_position": { "zsbtc_tokens": 62081, "status": "active" },
   "active_beats": ["bitcoin-macro", "quantum"],
   "paused_beats": ["aibtc-network"],
   "pr_status": {
-    "350": "open_changes_requested_worker_adding_tests",
+    "350": "open_tests_added_awaiting_arc0btc_re-review",
     "351": "open_rebased_nits_fixed_awaiting_approval"
   },
-  "next_cycle_at": "2026-04-23T22:45:00Z"
+  "whale_pact": {
+    "status": "params_requested",
+    "contract": "SP322ZK4VXT3KGDT9YQANN9R28SCT02MZ97Y24BRW.whale-pact-v3",
+    "function": "post-listing",
+    "needs_operator_approval": true
+  },
+  "next_cycle_at": "2026-04-24T00:37:00Z"
 }
