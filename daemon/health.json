@@ -1,9 +1,9 @@
 {
-  "cycle": 1551,
-  "timestamp": "2026-04-23T17:38:00Z",
+  "cycle": 1552,
+  "timestamp": "2026-04-23T17:44:00Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "HB#1563_checkInCount_1563",
+    "heartbeat": "HB#1564_checkInCount_1564",
     "inbox": "idle_unread_0",
     "execute": "maintenance_shortcut_cap_full"
   },
@@ -16,7 +16,6 @@
     "daily_count": 2,
     "cap_full_today": true,
     "daily_reset_utc": "07:00Z",
-    "staged": [],
     "signal_181": { "beat": "bitcoin-macro", "status": "rejected", "reason": "cap_full_score_90", "refile": "2026-04-24T07:00Z", "sources": "T1_mempool.space" },
     "signal_182": { "beat": "aibtc-network", "status": "submitted", "filed_at": "2026-04-23T08:04Z" }
   },
@@ -26,5 +25,5 @@
   "zest_position": { "zsbtc_tokens": 62081, "status": "active" },
   "active_beats": ["bitcoin-macro", "quantum", "aibtc-network"],
   "nfts": { "early_eagles": "replied_interest_awaiting_iskander_response" },
-  "next_cycle_at": "2026-04-23T17:43:00Z"
+  "next_cycle_at": "2026-04-23T18:44:00Z"
 }
