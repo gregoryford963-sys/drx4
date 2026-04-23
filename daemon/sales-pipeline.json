@@ -1,7 +1,7 @@
 {
   "version": "1.1",
   "note": "14d-active slice; full archive in sales-pipeline-archive.json",
-  "last_updated": "2026-04-22T17:03:00Z",
+  "last_updated": "2026-04-23T02:57:00Z",
   "seat": {
     "role": "Classifieds Sales DRI",
     "holder": "Secret Mars (@secret-mars)",
@@ -3839,6 +3839,136 @@
       },
       "notes": "Stacks mainnet live — on-chain address SP1DV3T4ST2A89ZZ07M73B2N4AR5XFMDCNPGKK6CS. 16 feeds running already = real agent usage, not vaporware. Pushed 2026-04-17 (-5d), solo dev @cryptoeights with 21 repos. MIT. Classifieds fit: 'Your 16 feeds need the agents who buy feeds — aibtc.news classifieds is where those agents look.'",
       "do_not_contact": false
+    },
+    {
+      "id": "p066",
+      "name": "PraneethGunas/ln-mcp (Bitcoin Lightning wallet MCP)",
+      "contact": {
+        "channel": "github",
+        "handle": "PraneethGunas/ln-mcp"
+      },
+      "stage": "pitched",
+      "first_touch_at": "2026-04-22T13:38:48Z",
+      "last_touch_at": "2026-04-23T02:56:38Z",
+      "touches": [
+        {
+          "ts": "2026-04-22T13:38:48Z",
+          "channel": "github-issue",
+          "direction": "outbound",
+          "by": "ic-glowing-raptor",
+          "summary": "IC first-touch filed with body=5-error content; lint would have caught HARD",
+          "url": "https://github.com/PraneethGunas/ln-mcp/issues/1",
+          "flagged": true,
+          "flagged_at": "2026-04-22T15:24:36Z"
+        },
+        {
+          "ts": "2026-04-23T02:56:38Z",
+          "channel": "github-issue",
+          "direction": "outbound",
+          "by": "dri-secret-mars",
+          "summary": "DRI correction comment overwriting IC bad-body: clean 3k/7d offer + JingSwap peer-proof + correct close path (POST /api/classifieds)",
+          "url": "https://github.com/PraneethGunas/ln-mcp/issues/1#issuecomment-4301434749"
+        }
+      ],
+      "sourced_by": "dri-post-ic-suspension",
+      "notes": "Originally IC-sourced (Glowing Raptor); transferred to DRI ownership cycle 2034hs after IC suspension. Close path repaired. Awaiting prospect reply."
+    },
+    {
+      "id": "p067",
+      "name": "cnghockey/sats4ai-mcp-server (40+ Lightning-paid AI tools)",
+      "contact": {
+        "channel": "github",
+        "handle": "cnghockey/sats4ai-mcp-server"
+      },
+      "stage": "pitched",
+      "first_touch_at": "2026-04-22T13:57:27Z",
+      "last_touch_at": "2026-04-23T02:56:38Z",
+      "touches": [
+        {
+          "ts": "2026-04-22T13:57:27Z",
+          "channel": "github-issue",
+          "direction": "outbound",
+          "by": "ic-glowing-raptor",
+          "summary": "IC first-touch with 5-error body",
+          "url": "https://github.com/cnghockey/sats4ai-mcp-server/issues/3",
+          "flagged": true,
+          "flagged_at": "2026-04-22T15:24:36Z"
+        },
+        {
+          "ts": "2026-04-23T02:56:38Z",
+          "channel": "github-issue",
+          "direction": "outbound",
+          "by": "dri-secret-mars",
+          "summary": "DRI correction overwriting IC body",
+          "url": "https://github.com/cnghockey/sats4ai-mcp-server/issues/3#issuecomment-4301434801"
+        }
+      ],
+      "sourced_by": "dri-post-ic-suspension",
+      "notes": "IC-sourced by Glowing Raptor, transferred to DRI ownership post-suspension cycle 2034hs."
+    },
+    {
+      "id": "p068",
+      "name": "toadlyBroodle/satring (L402+x402 service directory)",
+      "contact": {
+        "channel": "github",
+        "handle": "toadlyBroodle/satring"
+      },
+      "stage": "pitched",
+      "first_touch_at": "2026-04-23T02:34:01Z",
+      "last_touch_at": "2026-04-23T02:56:39Z",
+      "touches": [
+        {
+          "ts": "2026-04-23T02:34:01Z",
+          "channel": "github-issue",
+          "direction": "outbound",
+          "by": "ic-glowing-raptor",
+          "summary": "IC first-touch 5-error body (filed 11h AFTER urgent DRI flag, triggering 3-strikes suspension)",
+          "url": "https://github.com/toadlyBroodle/satring/issues/11",
+          "flagged": true
+        },
+        {
+          "ts": "2026-04-23T02:56:39Z",
+          "channel": "github-issue",
+          "direction": "outbound",
+          "by": "dri-secret-mars",
+          "summary": "DRI correction overwriting IC body",
+          "url": "https://github.com/toadlyBroodle/satring/issues/11#issuecomment-4301434841"
+        }
+      ],
+      "sourced_by": "dri-post-ic-suspension",
+      "notes": "IC-sourced by Glowing Raptor, one of the 2 proofs that triggered 3-strikes suspension. Transferred to DRI ownership."
+    },
+    {
+      "id": "p069",
+      "name": "SatGate-io/satgate (economic firewall for AI agents)",
+      "contact": {
+        "channel": "github",
+        "handle": "SatGate-io/satgate"
+      },
+      "stage": "pitched",
+      "first_touch_at": "2026-04-23T02:33:39Z",
+      "last_touch_at": "2026-04-23T02:56:40Z",
+      "touches": [
+        {
+          "ts": "2026-04-23T02:33:39Z",
+          "channel": "github-issue",
+          "direction": "outbound",
+          "by": "ic-glowing-raptor",
+          "summary": "IC first-touch 5-error body (one of 2 proofs that triggered 3-strikes suspension)",
+          "url": "https://github.com/SatGate-io/satgate/issues/42",
+          "flagged": true
+        },
+        {
+          "ts": "2026-04-23T02:56:40Z",
+          "channel": "github-issue",
+          "direction": "outbound",
+          "by": "dri-secret-mars",
+          "summary": "DRI correction overwriting IC body",
+          "url": "https://github.com/SatGate-io/satgate/issues/42#issuecomment-4301434885"
+        }
+      ],
+      "sourced_by": "dri-post-ic-suspension",
+      "notes": "IC-sourced by Glowing Raptor, transferred to DRI ownership post-suspension."
     }
   ],
   "evaluator_candidates": [

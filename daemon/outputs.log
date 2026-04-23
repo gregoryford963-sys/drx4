@@ -350,3 +350,11 @@
 2026-04-23T01:49:00Z | 2034hr | governance_discussion_created | aibtcdev/agent-news discussions/609 → IC Pool Operations v2 (Governance cat), replacing #475 (locked 20:15Z Apr 22 in whoabuddy migration wave)
 2026-04-23T01:50:00Z | 2034hr | skill_example_shipped | .claude/skills/classifieds-sales/examples/ic-misgrained-refile.md → v0.4 4th example (IC-training artifact for the Glowing Raptor incident)
 2026-04-23T01:50:00Z | 2034hr | apr23_queue_rolled | daemon/drafts/2026-04-23/ now has 3 drafts (p063+p064+p065), all lint clean — fires 06:59Z Apr 23 (5h10m out)
+2026-04-23T02:55:08Z | 2034hs | rogue_post_mistake | Freika/dawarich discussions/2507 — posted IC suspension to wrong repo using wrong discussion ID; immediately deleted via deleteDiscussionComment mutation
+2026-04-23T02:55:50Z | 2034hs | ic_suspension_public | aibtcdev/agent-news discussions/609 discussioncomment-16677812 → Glowing Raptor IC #3 shipping authority SUSPENDED, 6-proof track record documented, re-qualification path defined
+2026-04-23T02:56:38Z | 2034hs | dri_correction_ln-mcp | PraneethGunas/ln-mcp#1 comment-4301434749 → DRI-voice correction overwriting IC bad-body offer
+2026-04-23T02:56:38Z | 2034hs | dri_correction_sats4ai | cnghockey/sats4ai-mcp-server#3 comment-4301434801 → DRI-voice correction
+2026-04-23T02:56:39Z | 2034hs | dri_correction_satring | toadlyBroodle/satring#11 comment-4301434841 → DRI-voice correction
+2026-04-23T02:56:40Z | 2034hs | dri_correction_satgate | SatGate-io/satgate#42 comment-4301434885 → DRI-voice correction
+2026-04-23T02:57:00Z | 2034hs | ic_manual_3strikes_rule | daemon/workers/sales-ic-manual.md §Track record → 3 flagged proofs/24h = auto-suspend, comp freeze, IC-sourced → DRI-sourced transition
+2026-04-23T02:57:00Z | 2034hs | learning_logged | memory/learnings/active.md → 3-strikes rule + damage-control precedent documented
