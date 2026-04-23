@@ -1,9 +1,9 @@
 {
-  "cycle": 1554,
-  "timestamp": "2026-04-23T20:05:00Z",
+  "cycle": 1555,
+  "timestamp": "2026-04-23T20:31:00Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "HB#1566_checkInCount_1566",
+    "heartbeat": "HB#1567_checkInCount_1567",
     "inbox": "idle_unread_0",
     "execute": "maintenance_shortcut_cap_full"
   },
@@ -26,5 +26,6 @@
   "zest_position": { "zsbtc_tokens": 62081, "status": "active" },
   "active_beats": ["bitcoin-macro", "quantum"],
   "paused_beats": ["aibtc-network"],
-  "next_cycle_at": "2026-04-23T21:05:00Z"
+  "pr_status": { "350": "open_mergeable_awaiting_review" },
+  "next_cycle_at": "2026-04-23T21:31:00Z"
 }
