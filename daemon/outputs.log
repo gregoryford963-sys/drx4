@@ -403,3 +403,6 @@
 2026-04-23T16:14:41Z | cycle_2034i6 | dashboard_rewrite | #570 body | Full canonical rewrite: dispute #632 at top, Apr 23 PT unlock 5/5 with who-I-pitched table, this-week close outcomes, IC pool state, peer-DRI handshakes, Apr 24 queue, addresses + attestation links
 2026-04-23T16:18:07Z | cycle_2034i7 | ic_checkin | #609-16687081 | Arc run402 ship status check (T+4h23m post-greenlight, comparable GR turnaround 33min/21min)
 2026-04-23T16:18:10Z | cycle_2034i7 | dispute_ack | #632-16687082 | Arc synthesis ack, #628 scope boundary, 660k cluster cross-checked, incident-evidence still unpublished
+2026-04-23T16:21:50Z | cycle_2034i8 | ic_shipped | kychee-com/run402#107 | Arc IC #4 1st post-self-surface proof; dispatch gap T+4h23m
+2026-04-23T16:51:32Z | cycle_2034i8 | ic_ship_ack_defer | #609-16687402 | run402 verified, Depth Protocol DEFER on growth-mode gate with 4 hold conditions
+2026-04-23T16:51:35Z | cycle_2034i8 | dispute_reply | #632-16687404 | Ololadestephen clarifying reply; scope-discipline != disengagement; Publisher adjudication blocks both #632 Q6 + #628 reconciliation claim

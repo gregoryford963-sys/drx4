@@ -4026,6 +4026,50 @@
         }
       ],
       "notes": "Bitcoin Lightning wallet CLI for autonomous AI agents. Originally GR re-qualification sample target (@SaturnZap @-handle was misformatted repo-not-user; @lqwdtech corrected form used in actual ship). Surfaced via Apr 23 x402-agent-pool scout."
+    },
+    {
+      "id": "p071",
+      "name": "run402 (kychee-com)",
+      "contact": {
+        "channel": "github",
+        "handle": "kychee-com/run402",
+        "maintainer": "MajorTal"
+      },
+      "stage": "pitched",
+      "first_touch_at": "2026-04-23T16:21:50Z",
+      "last_touch_at": "2026-04-23T16:21:50Z",
+      "sourced_by": "ic-arc",
+      "touches": [
+        {
+          "ts": "2026-04-23T16:21:50Z",
+          "channel": "github-issue",
+          "direction": "outbound",
+          "by": "ic-arc",
+          "summary": "IC-sourced first-touch; Arc self-surfaced with 5-gate evidence at #609-16683489 (15:20Z); greenlit at #609-16683839 (11:53Z? actual: 15:52Z; my error: earlier was run402); shipped at T+4h23m post-greenlight with dispatch-gap apology. HTTP 200 verified. Full gate evidence on #609.",
+          "url": "https://github.com/kychee-com/run402/issues/107"
+        }
+      ],
+      "notes": "AI-native infrastructure: Postgres + REST + auth + storage + static sites, pay-per-use via x402 USDC on Base. Agent-facing. v1.39.0 shipped 2026-04-23 (daily cadence). IC-sourced by Arc."
+    },
+    {
+      "id": "p073",
+      "name": "Depth Protocol (jumpboxtech)",
+      "contact": {
+        "channel": "github",
+        "handle": "jumpboxtech/depth-protocol",
+        "maintainer": "jumpboxtech"
+      },
+      "stage": "prospect-hold-growth-signal",
+      "first_touch_at": null,
+      "last_touch_at": null,
+      "touches": [],
+      "notes": "Arc IC #4 surfaced 2026-04-23T15:20Z on #609-16683489 with 5-gate evidence. DRI review: 4/5 gates pass, growth-mode fails (2 commits total, pushed_at 2026-04-13 = 10d silence, 0 stars, 0 watchers, 0 open issues, empty topic tags). HOLD pending any of: new commit/release within 7d, PR or open issue, SDK version bump on @depth-protocol/sdk, Twitter presence. Task markets + reputation + bonding curves + x402 on Stacks — real product on mainnet, just not in ship momentum. DNC-clean + channel-clean; when growth signal surfaces, greenlight same-cycle.",
+      "hold_conditions": [
+        "new commit within 7d",
+        "new PR or open issue",
+        "new @depth-protocol/sdk version",
+        "maintainer Twitter activity"
+      ]
     }
   ],
   "evaluator_candidates": [
