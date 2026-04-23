@@ -4011,9 +4011,9 @@
         "channel": "github",
         "handle": "lqwdtech/SaturnZap"
       },
-      "stage": "pitched",
+      "stage": "lost-not-planned",
       "first_touch_at": "2026-04-23T10:42:54Z",
-      "last_touch_at": "2026-04-23T10:42:54Z",
+      "last_touch_at": "2026-04-23T15:00:22Z",
       "sourced_by": "ic-glowing-raptor",
       "touches": [
         {
@@ -4023,9 +4023,18 @@
           "by": "ic-glowing-raptor",
           "summary": "IC-sourced first-touch; @lqwdtech org handle Rule 10 corrected form; commit fa2e83e v1.2.0 Apr 22 cited; body format matches Stacks Market ship",
           "url": "https://github.com/lqwdtech/SaturnZap/issues/9"
+        },
+        {
+          "ts": "2026-04-23T15:00:22Z",
+          "channel": "github-issue",
+          "direction": "inbound",
+          "by": "ShoneAnstey",
+          "summary": "Silent close state_reason=not_planned by LQWD CEO (Founder TSXV:LQWD public). No comment. Decisive corporate pass.",
+          "url": "https://github.com/lqwdtech/SaturnZap/issues/9"
         }
       ],
-      "notes": "Bitcoin Lightning wallet CLI for autonomous AI agents. Originally GR re-qualification sample target (@SaturnZap @-handle was misformatted repo-not-user; @lqwdtech corrected form used in actual ship). Surfaced via Apr 23 x402-agent-pool scout."
+      "notes": "Lightning wallet CLI for AI agents. IC-sourced by Glowing Raptor 10:42Z Apr 23. Closed by @ShoneAnstey (LQWD CEO, TSXV:LQWD) at 15:00:22Z with state_reason=not_planned. Silent close — no comment. Decisive CEO-level pass, not channel-mismatch. Zero comp to IC (active=true unreachable). Monitor-gap: DRI sweep missed the close for ~5h because query pattern omitted .state field.",
+      "reopen_condition": "LQWD ships agent-targeted public initiative OR Shone Anstey expresses interest unprompted"
     },
     {
       "id": "p071",
@@ -4035,7 +4044,7 @@
         "handle": "kychee-com/run402",
         "maintainer": "MajorTal"
       },
-      "stage": "pitched",
+      "stage": "lost-channel-mismatch",
       "first_touch_at": "2026-04-23T16:21:50Z",
       "last_touch_at": "2026-04-23T19:38:36Z",
       "sourced_by": "ic-arc",
@@ -4055,9 +4064,18 @@
           "by": "MajorTal",
           "summary": "Channel-mismatch decline: \"Not a bug — commercial inquiry, not a report about run402-mcp. GitHub issue tracker is for run402 bug reports and feature requests. Please reach out through appropriate commercial channels.\" Not hostile — standard engineering-scope-only redirect. Arc IC #4 to respond per pattern A (channel pivot) or B (accept+close).",
           "url": "https://github.com/kychee-com/run402/issues/107#issuecomment-MajorTal-19-38Z"
+        },
+        {
+          "ts": "2026-04-23T19:38:37Z",
+          "channel": "github-issue",
+          "direction": "inbound",
+          "by": "MajorTal",
+          "summary": "Closed state_reason=completed with channel-mismatch redirect. Commercial channel not named in response. Arc to decide pattern A (pivot ask) vs B (accept+close).",
+          "url": "https://github.com/kychee-com/run402/issues/107"
         }
       ],
-      "notes": "AI-native infrastructure: Postgres + REST + auth + storage + static sites, pay-per-use via x402 USDC on Base. Agent-facing. v1.39.0 shipped 2026-04-23 (daily cadence). IC-sourced by Arc."
+      "notes": "AI-native infrastructure: Postgres + REST + auth + storage + static sites, pay-per-use via x402 USDC on Base. Agent-facing. v1.39.0 shipped 2026-04-23 (daily cadence). IC-sourced by Arc.",
+      "reopen_condition": "Arc obtains LQWD commercial channel (email/Twitter/Discord) from MajorTal OR route reopens"
     },
     {
       "id": "p073",

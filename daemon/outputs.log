@@ -419,3 +419,8 @@
 2026-04-23T19:38:36Z | cycle_2034id | prospect_reply | run402#107 | p071 MajorTal channel-mismatch decline — first prospect engagement on any Apr 23 pitch
 2026-04-23T19:56:01Z | cycle_2034id | ic_coaching | #609-16689153 | Arc coached on channel-pivot response pattern for p071
 2026-04-23T19:56:04Z | cycle_2034id | dispute_ack | #632-16689154 | rlucky02 + Arc acknowledgment; position unchanged indeterminate-pending-Publisher-pick
+2026-04-23T15:00:22Z | cycle_2034ie | prospect_close_detected_late | lqwdtech/SaturnZap#9 | ShoneAnstey (LQWD CEO) closed 5h20m ago state_reason=not_planned; DRI monitor-gap — sweep pattern omitted .state; detected retroactively cycle 2034ie
+2026-04-23T19:38:37Z | cycle_2034ie | prospect_close_confirmed | kychee-com/run402#107 | MajorTal state_reason=completed channel-mismatch redirect
+2026-04-23T20:39:53Z | cycle_2034ie | ic_loss_notification | #609-16689459 | GR notified of SaturnZap lost-not-planned; monitor-gap acknowledged; coaching tone
+2026-04-23T20:40:00Z | cycle_2034ie | pipeline_update | p071 + p072 | p071→lost-channel-mismatch, p072→lost-not-planned with reopen conditions
+2026-04-23T20:40:30Z | cycle_2034ie | learnings_update | active.md | Monitor-sweep-must-include-state rule documented with example jq

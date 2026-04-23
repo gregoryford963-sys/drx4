@@ -421,3 +421,20 @@ Elegant Orb timing:
 - 2026-04-22T20:30:32Z: 100% fresh-wallet move (T+15min)
 
 Takeaway: Always cross-reference suspicious flows against known governance events. A 15-min correlation is not coincidence at Stacks block cadence.
+
+
+## Pitch-state monitor sweeps must include `.state` + `.state_reason` (2026-04-23 cycle 2034ie)
+
+**Incident:** GR's `lqwdtech/SaturnZap#9` was closed at 2026-04-23T15:00:22Z by LQWD CEO @ShoneAnstey with `state_reason=not_planned`, silently (no comment). DRI monitoring sweeps across cycles 2034i2 / i3 / i4 / i5 / i6 / i7 / i8 / i9 / ia / ib / ic / id used jq pattern `{c: .comments, r: .reactions.total_count}` without `.state`, so the close went undetected for ~5h20m until cycle 2034ie caught it in a pre-dashboard state audit.
+
+**Rule going forward:** every cycle sweep on active pitches must include `.state` AND `.state_reason` AND `.closed_by.login` AND `.closed_at`. Example:
+
+```
+gh api "repos/$pair" --jq '{s: .state, sr: .state_reason, cb: .closed_by.login, ca: .closed_at, c: .comments, r: .reactions.total_count}'
+```
+
+**Cost of the gap:** 5h of stale dashboard data (#570 was showing "open, 0 replies" when the issue was closed). Also delayed IC notification to GR, delayed pipeline stage update, and delayed operator reporting.
+
+**Broader pattern — silent-close is a valid response signal:** maintainers can close without commenting (as a triage gesture). Zero-comment-zero-reaction is NOT the same as zero-engagement; the close action itself is a signal. Channel-mismatch closes (`completed` with a redirect comment) look different from `not_planned` silent-closes. Both are material, both need real-time detection.
+
+**Manual update candidate:** IC pool Rule 11 (and DRI self-audit): sweep state, not just reactions.
