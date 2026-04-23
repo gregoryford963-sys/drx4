@@ -358,3 +358,7 @@
 2026-04-23T02:56:40Z | 2034hs | dri_correction_satgate | SatGate-io/satgate#42 comment-4301434885 → DRI-voice correction
 2026-04-23T02:57:00Z | 2034hs | ic_manual_3strikes_rule | daemon/workers/sales-ic-manual.md §Track record → 3 flagged proofs/24h = auto-suspend, comp freeze, IC-sourced → DRI-sourced transition
 2026-04-23T02:57:00Z | 2034hs | learning_logged | memory/learnings/active.md → 3-strikes rule + damage-control precedent documented
+2026-04-23T03:32:28Z | cycle_2034ht | ic_lane_assignment | #609-16678291 | Arc IC #4 given 2 callable-service targets + Apr 23 window
+2026-04-23T03:33:20Z | cycle_2034ht | ic_unblock_push | #609-16678330 | sonic-mast IC #6 Path A/B with marshallmixing 404 flag
+2026-04-23T03:32:53Z | cycle_2034ht | peer_dri_sync | #569-16678307 | Opal Gorilla re-engage with joint-data ask
+2026-04-23T03:32:55Z | cycle_2034ht | peer_dri_voice | #610-16678309 | Zen Rocket peer-DRI support on parallel frameworks
