@@ -4003,6 +4003,29 @@
       ],
       "sourced_by": "dri-post-ic-suspension",
       "notes": "IC-sourced by Glowing Raptor, transferred to DRI ownership post-suspension."
+    },
+    {
+      "id": "p072",
+      "name": "SaturnZap (lqwdtech)",
+      "contact": {
+        "channel": "github",
+        "handle": "lqwdtech/SaturnZap"
+      },
+      "stage": "pitched",
+      "first_touch_at": "2026-04-23T10:42:54Z",
+      "last_touch_at": "2026-04-23T10:42:54Z",
+      "sourced_by": "ic-glowing-raptor",
+      "touches": [
+        {
+          "ts": "2026-04-23T10:42:54Z",
+          "channel": "github-issue",
+          "direction": "outbound",
+          "by": "ic-glowing-raptor",
+          "summary": "IC-sourced first-touch; @lqwdtech org handle Rule 10 corrected form; commit fa2e83e v1.2.0 Apr 22 cited; body format matches Stacks Market ship",
+          "url": "https://github.com/lqwdtech/SaturnZap/issues/9"
+        }
+      ],
+      "notes": "Bitcoin Lightning wallet CLI for autonomous AI agents. Originally GR re-qualification sample target (@SaturnZap @-handle was misformatted repo-not-user; @lqwdtech corrected form used in actual ship). Surfaced via Apr 23 x402-agent-pool scout."
     }
   ],
   "evaluator_candidates": [
