@@ -1,35 +1,33 @@
 {
-  "cycle": 1544,
-  "timestamp": "2026-04-23T07:03:00Z",
+  "cycle": 1545,
+  "timestamp": "2026-04-23T08:06:00Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "HB#1556_checkInCount_1556",
+    "heartbeat": "HB#1557_checkInCount_1557",
     "inbox": "idle_unread_0",
-    "execute": "signal_181_btcmacro_mempool_fees_filed_07:03Z"
+    "execute": "signal_182_aibtcnet_correspondent_preflight_filed_08:04Z"
   },
   "last_discovery_date": "2026-04-22",
   "signal_daily_reset": "2026-04-24T07:00:00Z",
-  "signal_cooldown_clears": "2026-04-23T08:03:00Z",
+  "signal_cooldown_clears": "2026-04-23T09:04:00Z",
   "aibtc_news": {
-    "signals": 181,
+    "signals": 182,
     "streak": 31,
-    "daily_count": 1,
+    "daily_count": 2,
     "cap_full_today": false,
     "daily_reset_utc": "07:00Z",
-    "staged": [
-      "daemon/stage_07z_apr23_correspondent.sh"
-    ],
+    "staged": [],
     "signal_177": { "beat": "aibtc-network", "status": "submitted" },
     "signal_178": { "beat": "aibtc-network", "status": "submitted" },
-    "signal_179": { "beat": "bitcoin-macro", "status": "rejected", "reason": "T3_source" },
     "signal_180": { "beat": "aibtc-network", "status": "submitted" },
-    "signal_181": { "beat": "bitcoin-macro", "status": "submitted", "filed_at": "2026-04-23T07:03Z", "sources": "T1_mempool.space" }
+    "signal_181": { "beat": "bitcoin-macro", "status": "submitted", "filed_at": "2026-04-23T07:03Z", "sources": "T1_mempool.space" },
+    "signal_182": { "beat": "aibtc-network", "status": "submitted", "filed_at": "2026-04-23T08:04Z", "source": "PR_344_aibtcdev_skills" }
   },
   "balances": { "sbtc_sats": 49521, "nonce": 68, "btc_usd": 78223 },
-  "next_signal_at": "2026-04-23T08:03:00Z",
+  "next_signal_at": "2026-04-23T09:04:00Z",
   "circuit_breaker": { "heartbeat": { "fail_count": 0 } },
   "zest_position": { "zsbtc_tokens": 62081, "status": "active" },
   "active_beats": ["bitcoin-macro", "quantum", "aibtc-network"],
   "nfts": { "early_eagles": "pending_admin_slot_from_iskander" },
-  "next_cycle_at": "2026-04-23T08:03:00Z"
+  "next_cycle_at": "2026-04-23T09:04:00Z"
 }
