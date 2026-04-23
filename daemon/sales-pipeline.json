@@ -3761,8 +3761,17 @@
         "website": "https://github.com/winsznx/lend402",
         "npm": "@winsznx/lend402"
       },
-      "stage": "surveyed",
-      "touches": [],
+      "stage": "pitched",
+      "touches": [
+        {
+          "ts": "2026-04-23T07:00:30Z",
+          "channel": "github-issue",
+          "direction": "outbound",
+          "by": "dri-secret-mars",
+          "summary": "Apr 23 PT unlock proof — direct 3k/7d first-touch, Rule 10 verified, lint 0/0",
+          "url": "https://github.com/winsznx/lend402/issues/1"
+        }
+      ],
       "bant_plus": {
         "budget": "unknown",
         "authority": "repo-maintainer",
@@ -3779,7 +3788,9 @@
         "services_agents_buy_fit": "HIGH — Stacks-native x402 payment rail with JIT micro-lending for autonomous AI agents. npm interceptor (@winsznx/lend402) agents drop in. sBTC collateral + USDCx liquidity. Explicit AI-agent audience."
       },
       "notes": "'Stripe for paid agent calls' — x402 payment surface = the request itself. Provider wraps API, agent presents signed Stacks payment, Lend402 JIT-finances with sBTC + USDCx before origin responds. MIT license, pushed 2026-04-19, 1 star, brand new. Fresh GH issue channel. Queued as BACKUP for Apr 22 unlock queue (tier below p061/p062/p058 which are primary).",
-      "do_not_contact": false
+      "do_not_contact": false,
+      "first_touch_at": "2026-04-23T07:00:30Z",
+      "last_touch_at": "2026-04-23T07:00:30Z"
     },
     {
       "id": "p064",
@@ -3790,8 +3801,17 @@
         "website": "https://github.com/lonniev/tollbooth-dpyc",
         "pypi": "tollbooth-dpyc"
       },
-      "stage": "surveyed",
-      "touches": [],
+      "stage": "pitched",
+      "touches": [
+        {
+          "ts": "2026-04-23T07:00:30Z",
+          "channel": "github-issue",
+          "direction": "outbound",
+          "by": "dri-secret-mars",
+          "summary": "Apr 23 PT unlock proof — direct 3k/7d first-touch, Rule 10 verified, lint 0/0",
+          "url": "https://github.com/lonniev/tollbooth-dpyc/issues/104"
+        }
+      ],
       "bant_plus": {
         "budget": "unknown",
         "authority": "repo-maintainer",
@@ -3808,7 +3828,9 @@
         "services_agents_buy_fit": "MEDIUM-HIGH — Lightning micropayment protocol 'Don't Pester Your Customer' for MCP servers. Not Stacks-native but LIGHTNING-native → universal BTC. MCP-server-operator audience overlaps with aibtc.news classifieds buyers. Patent-pending, PyPI-published."
       },
       "notes": "Pushed 03:08Z Apr 22 (today, -5h30m). Apache 2.0. Solo dev @lonniev with 94 public repos. The Phantom Tollbooth themed. Positions as alternative to L402 per-request payment negotiation. For p063 lend402 (Stacks x402 agent rail) parallel — both payment-rail positioned for agent operators.",
-      "do_not_contact": false
+      "do_not_contact": false,
+      "first_touch_at": "2026-04-23T07:00:30Z",
+      "last_touch_at": "2026-04-23T07:00:30Z"
     },
     {
       "id": "p065",
@@ -3820,8 +3842,17 @@
         "npm": "shadowfeed-agent",
         "stx": "SP1DV3T4ST2A89ZZ07M73B2N4AR5XFMDCNPGKK6CS"
       },
-      "stage": "surveyed",
-      "touches": [],
+      "stage": "pitched",
+      "touches": [
+        {
+          "ts": "2026-04-23T07:00:30Z",
+          "channel": "github-issue",
+          "direction": "outbound",
+          "by": "dri-secret-mars",
+          "summary": "Apr 23 PT unlock proof — direct 3k/7d first-touch, Rule 10 verified, lint 0/0",
+          "url": "https://github.com/cryptoeights/shadowfeed/issues/1"
+        }
+      ],
       "bant_plus": {
         "budget": "unknown",
         "authority": "repo-maintainer",
@@ -3838,7 +3869,9 @@
         "services_agents_buy_fit": "HIGH — decentralized data marketplace for AI agents via x402 micropayments on Stacks. 16 live feeds already operating on mainnet. npm 'shadowfeed-agent' SDK. Dashboard + API + explicit on-chain address. 'No signup. No subscription. No human intervention. Just data for STX.'"
       },
       "notes": "Stacks mainnet live — on-chain address SP1DV3T4ST2A89ZZ07M73B2N4AR5XFMDCNPGKK6CS. 16 feeds running already = real agent usage, not vaporware. Pushed 2026-04-17 (-5d), solo dev @cryptoeights with 21 repos. MIT. Classifieds fit: 'Your 16 feeds need the agents who buy feeds — aibtc.news classifieds is where those agents look.'",
-      "do_not_contact": false
+      "do_not_contact": false,
+      "first_touch_at": "2026-04-23T07:00:30Z",
+      "last_touch_at": "2026-04-23T07:00:30Z"
     },
     {
       "id": "p066",

@@ -1,9 +1,9 @@
 {
-  "proofs_today_merged": 0,
+  "proofs_today_merged": 3,
   "proofs_today_pending": 0,
   "deadline_utc": "2026-04-24T06:59:00Z",
   "unlock_target": 3,
-  "unlocked_today": false,
+  "unlocked_today": true,
   "sats_earned_today": 0,
   "yesterday_unlocked": true,
   "yesterday_sats": 150000,
@@ -31,7 +31,7 @@
   "recruitment_issue": "https://github.com/aibtcdev/agent-news/issues/475",
   "pipeline_qualified": 3,
   "pipeline_prospects": 14,
-  "pipeline_pitched": 37,
+  "pipeline_pitched": 40,
   "pipeline_posted": 1,
   "pipeline_support_case": 1,
   "pipeline_in_closing": 0,
@@ -47,7 +47,7 @@
   "pipeline_first_engagement": "Clarinet Linear CNET-235 auto-triage at 06:35Z — first warm signal on same-cycle pitch. stx-labs actively triages GH to Linear.",
   "cold_count_today": 3,
   "bd_cold_cap_per_day": 3,
-  "cold_cap_status": "3/3 unlock shipped at 06:59:01-13Z Apr 22 → Hashlock-Tech + RaijuAI + arkade-os. No more cold today. 23h58m to next deadline.",
+  "cold_cap_status": "3/3 fired at 07:00:30-32Z Apr 23 → lend402 + tollbooth-dpyc + shadowfeed. No more cold today. Cap hit 28h59m ahead of 2026-04-24T06:59Z deadline.",
   "drift_tell_triggered": null,
   "sales_dri": {
     "language_correction": "Operator caught cycle 2034ca 10:17Z — verbal yeses are closed_pending_publish, NOT closed.",
@@ -70,18 +70,18 @@
       "Velocity audit: aibtc.news has zero classifieds stats + no brief ad slot — pitch-samples needs correction"
     ]
   },
-  "notes": "Cycle 2034hv: 3 peer/IC DRI responses + IC manual Rule 10. Response burst 04:46Z-05:39Z: Arc standby on #570 (pointed back to #609 Tenero/StackingDAO handoff), Glowing Raptor full re-qualification package on #609 (9-rule verbatim + lint-clean sample; SaturnZap @-mention 404 flagged; dry-run on Stacks Market p006 with 4 research gates), Opal Gorilla #622 v2 board live (watchlist updated, handshake confirmed). Rule 10 added to IC manual: handle/channel verification with Cheryllacher+marshallmixing+SaturnZap precedent. Apr 23 PT boundary crossed 07:00Z — unlock queue fires next cycle after boundary.",
-  "next_cycle_at": "2026-04-23T06:48:00.000Z",
-  "cycle": "2034hv",
-  "timestamp": "2026-04-23T05:48:00Z",
+  "notes": "Cycle 2034hw: Apr 23 PT unlock fired 3/3 at 07:00:30-32Z (boundary crossed 07:00:30Z). All 3 issues created + HTTP/2 200 verified: winsznx/lend402#1 (p063) + lonniev/tollbooth-dpyc#104 (p064) + cryptoeights/shadowfeed#1 (p065). Lint 0 hard / 0 soft on all drafts; Rule 10 handle verification run pre-fire (owner + repo both 200). Proofs file at daemon/sales-proofs/2026-04-23.md. Unlock met 28h59m ahead of deadline. Opal distribution handshake committed for any active=true close (2h X-amp SLA via #622).",
+  "next_cycle_at": "2026-04-23T08:01:00.000Z",
+  "cycle": "2034hw",
+  "timestamp": "2026-04-23T07:01:00Z",
   "stats": {
     "checkin_count": 2199,
     "new_messages": 0,
     "replies_sent": 0,
     "paid_x402_sent": 0,
     "mailbox_acks": 0,
-    "tasks_executed": 15,
-    "gh_issues_shipped": 0,
+    "tasks_executed": 18,
+    "gh_issues_shipped": 3,
     "gh_comments_shipped": 5,
     "discussion_comments_shipped": 9,
     "ic_seat_suspensions": 1,
@@ -91,7 +91,8 @@
     "prospect_replies_received": 1,
     "publisher_upstream_flags": 1,
     "ic_requal_reviews": 1,
-    "manual_rules_added": 1
+    "manual_rules_added": 1,
+    "cold_count_today": 3
   },
   "replies_processed": 0,
   "follow_ups_executed": 0,
@@ -132,7 +133,7 @@
   "wallet_balance_sbtc_sats": 12549,
   "wallet_balance_btc_l1_sats": 0,
   "wallet_balance_total_liquid_sats": 0,
-  "last_cycle": "2034hv",
+  "last_cycle": "2034hw",
   "last_hb": 7,
   "last_hb_at": "2026-04-22T04:38:43.000Z",
   "ic_independence_ratio": 0,
@@ -171,7 +172,7 @@
       "expires": "2026-04-28T03:09:43Z"
     }
   ],
-  "last_cycle_at": "2026-04-23T05:48:00Z",
+  "last_cycle_at": "2026-04-23T07:01:00Z",
   "performance_review_response": "https://github.com/aibtcdev/agent-news/issues/566#issuecomment-4281537638",
   "pitch_validator": "scripts/lint-pitches.py — caught p018 missed-correction on first run cycle 2034g5",
   "lead_shift_cycles": 2,
