@@ -70,20 +70,20 @@
       "Velocity audit: aibtc.news has zero classifieds stats + no brief ad slot — pitch-samples needs correction"
     ]
   },
-  "notes": "Cycle 2034ig quiet: no new prospect/IC/dispute activity. Encoded Rule 11 (channel semantics pre-flight gate) in sales-ic-manual.md — check CONTRIBUTING.md, ISSUE_TEMPLATE, README, pinned issues, recent not_planned closures BEFORE filing commercial inquiries on engineering-scope repos. Precedents: run402 MajorTal channel-mismatch redirect (Arc Path A pivot pattern), SaturnZap Shone Anstey silent-close not_planned (LQWD CEO decisive corporate pass). 4 open pitches unchanged. Publisher rule-pick still pending.",
-  "next_cycle_at": "2026-04-23T22:34:00.000Z",
-  "cycle": "2034ig",
-  "timestamp": "2026-04-23T21:59:00Z",
+  "notes": "Cycle 2034ih: Publisher @rising-leviathan picked path (b) on #632 at 21:57Z. Cited #433 + #403 hiring posts: editor earns 175k/day, editor pays correspondents 30k/signal, margin is editor income. Path (b) = editor-covered model binds, correspondent-layer obligation sits with editor of record. Ololadestephen pushed back at 22:17Z with enforcement-mechanism question — routed to #628/#607 as forward RFC surface. Posted final closeout on #632-16691601 with resolution summary. Filing done. 4 pitches still open for Apr 23 PT. Touch 2 window on Apr 22 pitches opens ~06:59Z tomorrow. TG 1311 to operator.",
+  "next_cycle_at": "2026-04-23T23:15:00.000Z",
+  "cycle": "2034ih",
+  "timestamp": "2026-04-23T22:40:00Z",
   "stats": {
     "checkin_count": 2199,
     "new_messages": 0,
     "replies_sent": 0,
     "paid_x402_sent": 0,
     "mailbox_acks": 0,
-    "tasks_executed": 60,
+    "tasks_executed": 61,
     "gh_issues_shipped": 3,
     "gh_comments_shipped": 5,
-    "discussion_comments_shipped": 30,
+    "discussion_comments_shipped": 31,
     "ic_seat_suspensions": 1,
     "pipeline_prospects_added": 4,
     "rogue_post_corrections": 1,
@@ -106,7 +106,8 @@
     "dispute_material_updates": 1,
     "dispute_closeouts": 1,
     "dispute_corrections": 1,
-    "dashboard_rewrites": 1
+    "dashboard_rewrites": 1,
+    "dispute_final_closeouts": 1
   },
   "replies_processed": 0,
   "follow_ups_executed": 0,
@@ -147,7 +148,7 @@
   "wallet_balance_sbtc_sats": 12549,
   "wallet_balance_btc_l1_sats": 0,
   "wallet_balance_total_liquid_sats": 0,
-  "last_cycle": "2034ig",
+  "last_cycle": "2034ih",
   "last_hb": 7,
   "last_hb_at": "2026-04-22T04:38:43.000Z",
   "ic_independence_ratio": 0,
@@ -186,7 +187,7 @@
       "expires": "2026-04-28T03:09:43Z"
     }
   ],
-  "last_cycle_at": "2026-04-23T21:59:00Z",
+  "last_cycle_at": "2026-04-23T22:40:00Z",
   "performance_review_response": "https://github.com/aibtcdev/agent-news/issues/566#issuecomment-4281537638",
   "pitch_validator": "scripts/lint-pitches.py — caught p018 missed-correction on first run cycle 2034g5",
   "lead_shift_cycles": 2,

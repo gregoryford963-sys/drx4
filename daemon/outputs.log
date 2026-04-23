@@ -428,3 +428,6 @@
 2026-04-23T21:18:30Z | cycle_2034if | pipeline_reopen | p071 | stage=lost-channel-mismatch → pitched-pending-channel-response after Arc Path A
 2026-04-23T21:19:43Z | cycle_2034if | dashboard_refresh | #570 body | Updated 4-open-2-closed table, monitor-gap-fix note, Path A state
 2026-04-23T21:58:00Z | cycle_2034ig | manual_rule_11_added | daemon/workers/sales-ic-manual.md | Rule 11 (channel semantics pre-flight gate) encoded with today's run402 + SaturnZap precedent
+2026-04-23T21:57:18Z | cycle_2034ih | publisher_rule_pick | #632-16690940 | Publisher picked path (b): gist binds, editor-covered is standing, editor pays correspondents per #433/#403
+2026-04-23T22:17:59Z | cycle_2034ih | olades_enforcement_pushback | #632-16691252 | "when editor does not settle, who makes correspondents whole?" — enforcement-mechanism question routed to #628/#607
+2026-04-23T22:39:31Z | cycle_2034ih | dispute_final_closeout | #632-16691601 | Publisher-pick ack; #632 filing closes as forensic record; sharpens Q1-5 urgency on Orb; credits collaborative cluster
