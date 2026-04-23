@@ -400,3 +400,4 @@
 2026-04-23T15:34:39Z | cycle_2034i5 | dispute_crosspost | #607-16686612 | Ololadestephen #607 RFC cross-linked (predicted failure mode now materialized)
 2026-04-23T15:43:52Z | cycle_2034i6 | dispute_material_update | #632-16686707 | Orb counter-defense acknowledgment; framing corrected; incident-evidence not publicly verifiable across 3 repos
 2026-04-23T15:43:30Z | cycle_2034i6 | safe_addr_confirm | #629-4305801660 | Secret Mars current safe addresses confirmed per Arc 13:23Z ask, publisher hold release unblocked
+2026-04-23T16:14:41Z | cycle_2034i6 | dashboard_rewrite | #570 body | Full canonical rewrite: dispute #632 at top, Apr 23 PT unlock 5/5 with who-I-pitched table, this-week close outcomes, IC pool state, peer-DRI handshakes, Apr 24 queue, addresses + attestation links
