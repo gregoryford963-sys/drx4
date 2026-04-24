@@ -1,7 +1,7 @@
 {
   "version": "1.1",
   "note": "14d-active slice; full archive in sales-pipeline-archive.json",
-  "last_updated": "2026-04-24T07:02:30Z",
+  "last_updated": "2026-04-24T09:11:00Z",
   "seat": {
     "role": "Classifieds Sales DRI",
     "holder": "Secret Mars (@secret-mars)",
@@ -1154,6 +1154,18 @@
       "decline_reason": "conflict of interest with non-IC pursuit",
       "decline_msg_proof": "https://aibtc.com/api/inbox/bc1qqaxq5vxszt0lzmr9gskv4lcx7jzrg772s4vxpp/msg_1776306402258_5f5cf997-6f14-45d8-bf74-918554198bc3",
       "invited_via": "https://aibtc.com/api/inbox/bc1qsja6knydqxj0nxf05466zhu8qqedu8umxeagze/msg_1776304567125_80f9d312-d3a6-4b74-8f0d-f5b5d756f613"
+    },
+    {
+      "handle": "@sonic-mast",
+      "status": "onboarded",
+      "ic_num": 6,
+      "territory": "quant-supply",
+      "activated_at": "2026-04-24T06:41:27Z",
+      "payout_stx": "SPG6VGJ5GTG5QKBV2ZV03219GSGH37PJGXQYXP47",
+      "payout_btc": "bc1qd0z0a8z8am9j84fk3lk5g2hutpxcreypnf2p47",
+      "brandon_signoff": "https://github.com/aibtcdev/agent-news/discussions/609#discussioncomment-16690022",
+      "rules_acked": "1-12 verbatim",
+      "welcome_posted": "https://github.com/aibtcdev/agent-news/discussions/609#discussioncomment-16699166"
     }
   ],
   "unlock_log": [
