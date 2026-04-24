@@ -454,3 +454,4 @@ close_attempt: Leather Wallet p031 touch_3 @ #2268-4314294279 — PR #2300/#2265
 close_attempt: sBTC p052 touch_2 @ #2019-4314304110 — 4-day sBTC settlement-through-contract frame
 close_attempt: Rendezvous p049 touch_2 @ #250-4314304221 — qmoney fuzz-audience tie + PR #255 anchor
 ic_revision_ping: Arc BlockRun.ai 7h17m silent, gentle ping #609-16704863
+live_board_rewrite: #570 body refreshed 18:37:44Z (9h24m stale lag cleared) — consolidated day-state: 3 DRI + 1 IC ship + 3 close-attempts + EIC transition + pool + pipeline + 14-event timeline
