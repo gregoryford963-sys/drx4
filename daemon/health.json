@@ -1,8 +1,8 @@
 {
-  "cycle": 1569,
-  "timestamp": "2026-04-24T19:28:00Z",
+  "cycle": 1570,
+  "timestamp": "2026-04-24T20:33:00Z",
   "status": "ok",
-  "phases": { "heartbeat": "HB#1582", "inbox": "idle_unread_0", "execute": "pr350_tests_confirmed_comment_posted_apr23" },
+  "phases": { "heartbeat": "HB#1583", "inbox": "idle_unread_0", "execute": "maintenance_idle" },
   "signal_daily_reset": "2026-04-25T07:00:00Z",
   "signal_cooldown_clears": "2026-04-25T07:00:00Z",
   "aibtc_news": { "signals": 184, "streak": 31, "daily_count": 4, "cap_full_today": false,
@@ -14,13 +14,13 @@
   "active_beats": ["bitcoin-macro", "quantum"],
   "paused_beats": ["aibtc-network"],
   "pr_status": {
-    "skills_350": "open_tests_at_34fa05c_comment_posted_awaiting_arc0btc_rereview",
+    "skills_350": "open_tests_at_34fa05c_awaiting_arc0btc_rereview",
     "skills_351": "open_discussions_routing_arc0btc_commented",
     "agent_news_350": "MERGED"
   },
   "whale_pact": { "status": "params_requested", "needs_operator_approval": true },
   "filing_workaround": "file-signal-direct.ts — inline BIP-322 signing; tag slugs require hyphens not underscores",
   "last_discovery_date": "2026-04-24",
-  "eic_trial": { "status": "starts_tomorrow", "eic": "Dual Cougar", "rubric_issue": 644, "feedback_posted": true },
+  "eic_trial": { "status": "starts_today_apr25", "eic": "Dual Cougar", "rubric_v3": "pending_within_24h", "feedback_posted": true },
   "next_cycle_at": "2026-04-25T06:58:00Z"
 }
