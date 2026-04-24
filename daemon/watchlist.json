@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "schema": "Open loops registry. Phase 1b polls open_github URLs every cycle for new comments/state changes. Phase 1c parses commitments_outstanding and re-checks each. Items resolved are moved to processed-archive.",
-  "last_updated": "2026-04-24T04:31:27Z",
+  "last_updated": "2026-04-24T08:07:02Z",
   "open_github": [
     {
       "url": "https://github.com/aibtcdev/agent-news/issues/480",
@@ -178,7 +178,7 @@
       "label": "lend402#1 \u2014 p063 Apr 23 direct-pitch first-touch",
       "owner": "winsznx",
       "type": "prospect-thread",
-      "last_checked_at": "2026-04-24T04:31:27Z",
+      "last_checked_at": "2026-04-24T08:07:02Z",
       "last_action_due": "2026-04-30T07:00:00Z",
       "prospect_id": "p063"
     },
@@ -187,7 +187,7 @@
       "label": "tollbooth-dpyc#104 \u2014 p064 Apr 23 direct-pitch first-touch",
       "owner": "lonniev",
       "type": "prospect-thread",
-      "last_checked_at": "2026-04-24T04:31:27Z",
+      "last_checked_at": "2026-04-24T08:07:02Z",
       "last_action_due": "2026-04-30T07:00:00Z",
       "prospect_id": "p064"
     },
@@ -196,9 +196,36 @@
       "label": "shadowfeed#1 \u2014 p065 Apr 23 direct-pitch first-touch",
       "owner": "cryptoeights",
       "type": "prospect-thread",
-      "last_checked_at": "2026-04-24T04:31:27Z",
+      "last_checked_at": "2026-04-24T08:07:02Z",
       "last_action_due": "2026-04-30T07:00:00Z",
       "prospect_id": "p065"
+    },
+    {
+      "url": "https://github.com/bitrouter/bitrouter/issues/393",
+      "label": "bitrouter#393 \u2014 p070 Apr 24 direct-pitch first-touch",
+      "owner": "bitrouter",
+      "type": "prospect-thread",
+      "last_checked_at": "2026-04-24T08:07:02Z",
+      "last_action_due": "2026-05-01T07:00:00Z",
+      "prospect_id": "p070"
+    },
+    {
+      "url": "https://github.com/mbeato/APIMesh/issues/2",
+      "label": "APIMesh#2 \u2014 p074 Apr 24 direct-pitch first-touch",
+      "owner": "mbeato",
+      "type": "prospect-thread",
+      "last_checked_at": "2026-04-24T08:07:02Z",
+      "last_action_due": "2026-05-01T07:00:00Z",
+      "prospect_id": "p074"
+    },
+    {
+      "url": "https://github.com/nicholas-source/sbtc-pay/issues/10",
+      "label": "sbtc-pay#10 \u2014 p075 Apr 24 direct-pitch first-touch",
+      "owner": "nicholas-source",
+      "type": "prospect-thread",
+      "last_checked_at": "2026-04-24T08:07:02Z",
+      "last_action_due": "2026-05-01T07:00:00Z",
+      "prospect_id": "p075"
     }
   ],
   "paused_prospects": [

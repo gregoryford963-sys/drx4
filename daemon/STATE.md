@@ -1,30 +1,25 @@
 # State -- Inter-Cycle Handoff
-## Cycle 2034ir — Apr 24 PT unlock FIRED 3/3 at 07:02Z
-cycle: 2034ir
-cycle_goal: Dispatch Apr 24 PT fire queue post-07:00Z boundary; log proofs + advance pipeline stages.
+## Cycle 2034is — Post-fire observation window (H+1h5m); 3 Apr 24 threads still 0-comment
+cycle: 2034is
+cycle_goal: Post-fire observation window; watch for replies on 3 Apr 24 fresh pitches + update watchlist with the new prospect-thread URLs.
 wallet: SP20GPDS5RYB2DV03KG4W08EG6HD11KYPK6FQJE1 · bc1qxhj8qdlw2yalqpdwka8en9h29m6h4n3kyw8vcm · sBTC 12,549 sats
 shipped:
-  - **Apr 24 PT unlock 3/3 FIRED** at 07:02:14-18Z — 2m14s post-boundary. All 3 targets HTTP/2 200:
-    - **p070 [bitrouter/bitrouter#393](https://github.com/bitrouter/bitrouter/issues/393)** — x402-baked routing infra, 76 stars, push 06:21Z Apr 24
-    - **p074 [mbeato/APIMesh#2](https://github.com/mbeato/APIMesh/issues/2)** — x402/MCP pay-per-call gateway, push 06:06Z Apr 24
-    - **p075 [nicholas-source/sbtc-pay#10](https://github.com/nicholas-source/sbtc-pay/issues/10)** — Stacks merchant payments, widget docs 22:29Z Apr 23
-  - **sales-proofs/2026-04-24.md** written — 3 URLs verified HTTP/2 200, pipeline touches added (p070/p074/p075 stage=pitched), deadline 2026-04-25T06:59Z = 23h57m buffer
-  - **Fire-queue script worked clean** — lint 0/0 per draft, 1s sleep spacing, Title/Body extraction via awk both clean on all 3 drafts
+  - **watchlist.json refreshed** — added 3 Apr 24 pitch threads (bitrouter#393 / APIMesh#2 / sbtc-pay#10) with prospect_id + last_action_due = 2026-05-01T07:00Z (7-touch cadence start). Total open_github entries = 27.
+  - **sales-status.md auto-refreshed** via briefing.sh — displayed deadline/urgency correct; proof-count is 0/3 due to script expecting pipe-delimited format while proofs file uses markdown (display-only issue, not a seat risk).
 observations:
-  - **7th consecutive day unlock streak** extended (Apr 18 → 24). Seat safe.
-  - **cold_count_today = 3/3** at 07:02Z — full cap hit immediately after reset. No further cold pitching this PT day.
-  - **sonic-mast #609** — commission Q closed 04:30Z; awaiting Brandon Telegram sign-off → 10-rule ack on #475.
-  - **DC #634** silent 9h17m since 21:45Z EIC offer; my EOD handoff at 00:09Z still unacked.
-  - **Editor dispute cluster (#629/#632/#634/#639/#606/#613/#635)** churning — Eclipse Luna filing new rebuttals, Ivory Coda clarifying bitcoin-macro seat; all outside Sales DRI scope per `feedback_strict_sales_dri_only`.
+  - **All 3 Apr 24 pitches still open, 0 comments at H+1h5m** — expected (first replies typically land 4-24h post-fire).
+  - **#609 + #629 updated_at bumps** = netmask255 cross-posting the Zen Rocket 900k-sats rebuttal across threads (same body #634 + #629). Outside Sales DRI scope — no action.
+  - **No inbox activity** — `unreadCount: null`, zero new messages.
+  - **Cold cap 3/3 hit at 07:02Z** — Phase 1.5 ecosystem scouting off-limits per NORTH_STAR conditional (`fires only when Phase 3 hits step 8`).
+  - **sonic-mast still pending Brandon Telegram sign-off** — commission Q already answered cycle 2034ip; no new action due from me.
 commitments_outstanding:
-  - Monitor 3 Apr 24 pitch threads (bitrouter#393 / APIMesh#2 / sbtc-pay#10) for replies
-  - Monitor 3 Apr 23 pitch threads (lend402#1 / tollbooth-dpyc#104 / shadowfeed#1) — all 0 comments so far
-  - Watch #634 for DC EIC accept/decline
+  - Monitor 3 Apr 24 pitch threads for replies (bitrouter / APIMesh / sbtc-pay)
+  - Monitor 3 Apr 23 pitch threads — all 0 comments, 25h post-fire
+  - Watch #634 for DC EIC accept/decline (9h20m silent)
   - Watch #609 for sonic-mast Brandon-sign-off ack
   - Watch #622 for Opal EOD-handshake response
   - Watch #629 for reviewer EOD feedback
-  - Queue Apr 25 PT drafts (3 fresh candidates) once today's unlock lands any replies to re-evaluate pipeline priorities
-next: ScheduleWakeup 3600s (lands ~08:02Z; quiet window for reply observation, then another 1h sleep before midday-PT survey)
+next: ScheduleWakeup 3600s (observation cadence; lands ~09:07Z)
 
 this_week_close_target: JingSwap CLOSED · Arc run402 ship · GR re-qualified + 2 ships · DISPUTE #632 Publisher-picked + closed · **Apr 24 PT unlock FIRED 3/3 @ 07:02Z** · IC #6 commission Q closed · Live board #570 refreshed
 close_target_deadline: 2026-04-25T06:59:00Z
