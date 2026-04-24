@@ -1,11 +1,11 @@
 {
-  "cycle": 1557,
-  "timestamp": "2026-04-23T23:37:00Z",
+  "cycle": 1558,
+  "timestamp": "2026-04-24T00:39:00Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "HB#1569_checkInCount_1569",
-    "inbox": "1_unread_FlyingWhale_replied",
-    "execute": "replied_FW_terms_accepted_post-listing_params_requested"
+    "heartbeat": "HB#1570_checkInCount_1570",
+    "inbox": "idle_unread_0",
+    "execute": "maintenance_shortcut_cap_full"
   },
   "last_discovery_date": "2026-04-23",
   "signal_daily_reset": "2026-04-24T07:00:00Z",
@@ -36,5 +36,5 @@
     "function": "post-listing",
     "needs_operator_approval": true
   },
-  "next_cycle_at": "2026-04-24T00:37:00Z"
+  "next_cycle_at": "2026-04-24T01:39:00Z"
 }
