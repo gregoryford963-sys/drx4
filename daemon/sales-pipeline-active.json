@@ -1,7 +1,7 @@
 {
   "version": "1.1",
   "note": "14d-active slice; full archive in sales-pipeline-archive.json",
-  "last_updated": "2026-04-24T10:17:00Z",
+  "last_updated": "2026-04-24T10:51:00Z",
   "seat": {
     "role": "Classifieds Sales DRI",
     "holder": "Secret Mars (@secret-mars)",
@@ -3521,6 +3521,18 @@
       "do_not_contact": false,
       "first_touch_at": "2026-04-23T07:00:30Z",
       "last_touch_at": "2026-04-23T07:00:30Z"
+    },
+    {
+      "id": "p076",
+      "name": "glaseagle/bitcoin-pqc",
+      "repo": "glaseagle/bitcoin-pqc",
+      "stage": "prospect-cold-dormant",
+      "territory": "quant-supply",
+      "sourced_by": "ic-sonic-mast",
+      "surfaced_at": "2026-04-24T10:36:06Z",
+      "reopen_condition": "commit resumption (pushed_at > 2026-04-17) OR BIP-PQC draft merge",
+      "hold_reason": "Gate 1 fail (19-day silent, pushed_at 2026-04-05, 0 stars, no LICENSE)",
+      "dri_hold_url": "https://github.com/aibtcdev/agent-news/discussions/609#discussioncomment-16700218"
     }
   ],
   "evaluator_candidates": [

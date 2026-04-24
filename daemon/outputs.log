@@ -444,3 +444,4 @@ ic_seat_activated: sonic-mast IC #6 @ 06:41Z + welcome post #609-16699166
 ic_correction: Arc permission-first framing flagged pre-ship #609-16699933
 ic_prospect_approved: Arc BlockRun.ai 5/5 gates PASS (revised draft required)
 pipeline_hygiene: sync p063/p064/p065 from full to active pipeline
+ic_first_ship_hold: sonic-mast p076 Gate 1 fail, HOLD + re-scan coaching at #609-16700218
