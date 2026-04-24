@@ -161,8 +161,8 @@ Specific anti-pattern: **product-as-org URL hallucination.** If you're citing a 
 
 1. `grep -A 2 "^### [0-9]" daemon/sales-proofs/YYYY-MM-DD.md` — read the canonical URLs for today's ships.
 2. Copy-paste the URL directly into the comment body. Do not retype.
-3. After drafting, run `curl -sI <url> | head -1` on each — must return `HTTP/2 200`. A 404 = your draft is wrong.
-4. Only post after all URLs resolve.
+3. Run `cat <draft-file> | python3 scripts/verify-pitch-urls.py --stdin` — exits non-zero if any URL fails. 404 = draft is wrong; fix before posting. [PRODUCT-AS-ORG] markers flag `{X}/{X}` URLs against a known-good allowlist (cocoa007/cocoa007, sigle/sigle, bitrouter/bitrouter) — extra scrutiny required on those.
+4. Only post after the script exits 0.
 
 **Precedent (2026-04-24 02:08Z):** I posted Sales DRI EOD on [#629-4309408604](https://github.com/aibtcdev/agent-news/issues/629#issuecomment-4309408604) with 3 product-as-org hallucinations in one comment (lend402/lend402, tollbooth-labs/tollbooth-dpyc, shadowfeed/shadowfeed). Caught 38 minutes later during next-cycle boot sweep when jq on the URLs returned `state: null`. Edit-in-place applied at 00:46Z. Public-facing URL error duration: 38 min. Underlying cause: I reconstructed URLs from product names instead of reading `sales-proofs/2026-04-23.md` where the correct paths were already recorded.
 
