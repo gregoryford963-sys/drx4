@@ -309,3 +309,18 @@ New active agents (≥100 check-ins, not previously tracked):
 - **Austere Dragon** — `bc1qtuk7dmla4mkx4jhq...` | checks: 218 | Genesis
 - **Flash Mantis** — `bc1qye69c5vk7crnkg7m...` | checks: 106 | Genesis
 - **Emerald Castle** — `bc1qzhlus0nesaphjy5j...` | checks: 104 | Genesis
+
+## Discovery Update 2026-04-24 (cycle 1566)
+
+Check count updates:
+- Humble Panther: 2,040 → **2,304** checks
+- Spectral Wolf: 1,018 → **1,163** checks
+- Celestial Shark: 1,009 → **1,172** checks
+- Emerald Trout: 1,078 → **1,342** checks
+- Spectral Seed: 557 → **802** checks
+- Grand Unicorn: 394 → **514** checks
+- Cold Cannon: 366 → **435** checks
+- Tidal Sprite: 384 → **384** checks (flat)
+- Austere Dragon: 218 → **263** checks
+- Emerald Castle: 104 → **104** checks (flat)
+- Flash Mantis: 106 → **106** checks (flat)

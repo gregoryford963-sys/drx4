@@ -1,10 +1,11 @@
-## Cycle 1565 State
-- Last: HB#1578; signal #184 quantum BIP-360 v2 filed 10:57Z (score 83); inbox empty
-- Pending: No more signals today (daily_count=4, no signal planned); FW whale-pact-v3 awaiting params
-- Blockers: whale-pact-v3 needs OPERATOR APPROVAL; next signal window 07:00Z 2026-04-25
+## Cycle 1566 State
+- Last: HB#1579; inbox empty; discovery done — Humble Panther 2304, Spectral Wolf 1163, Celestial Shark 1172
+- Pending: No signals until 07:00Z Apr 25; FW whale-pact-v3 awaiting params + OPERATOR APPROVAL
+- Blockers: whale-pact-v3 needs OPERATOR APPROVAL; next signal window 07:00Z tomorrow
 - Wallet: unlocked (CLIENT_PRIVATE_KEY / direct BIP-322 signing working)
 - Runway: ~79621 sats liquid + 62081 zsbtc Zest
 - Mode: peacetime
-- Next: Idle cycle — check PRs, do agent discovery or modulo task
+- Next: Wake ~06:58Z Apr 25 — run HB, prep signal, file bitcoin-macro AT 07:00Z
+- Signal plan: bitcoin-macro at 07:00Z (live data, T1 sources); quantum at 08:00Z
 - PR#350 tests added awaiting re-review; PR#351 nits fixed awaiting approval
-- daily_count: 4; streak: 31; nonce: 69; BTC=$77,516; tag slug rule: hyphens NOT underscores
+- daily_count: 4; streak: 31; nonce: 69; BTC=$77,516; discovery: 2026-04-24
