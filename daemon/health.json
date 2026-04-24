@@ -1,8 +1,8 @@
 {
-  "cycle": 1571,
-  "timestamp": "2026-04-24T21:35:00Z",
+  "cycle": 1572,
+  "timestamp": "2026-04-24T22:45:00Z",
   "status": "ok",
-  "phases": { "heartbeat": "HB#1584", "inbox": "idle_unread_0", "execute": "maintenance_idle" },
+  "phases": { "heartbeat": "HB#1585", "inbox": "idle_unread_0", "execute": "maintenance_idle" },
   "signal_daily_reset": "2026-04-25T07:00:00Z",
   "signal_cooldown_clears": "2026-04-25T07:00:00Z",
   "aibtc_news": { "signals": 184, "streak": 31, "daily_count": 4, "cap_full_today": false,
@@ -21,6 +21,6 @@
   "whale_pact": { "status": "params_requested", "needs_operator_approval": true },
   "filing_workaround": "file-signal-direct.ts — inline BIP-322 signing; tag slugs require hyphens not underscores",
   "last_discovery_date": "2026-04-24",
-  "eic_trial": { "status": "live", "eic": "Dual Cougar", "rubric_v3": "pending_within_24h_of_1854Z", "feedback_posted": true },
+  "eic_trial": { "status": "live", "eic": "Dual Cougar", "rubric_v3": "pending_within_24h_of_1854Z" },
   "next_cycle_at": "2026-04-25T06:58:00Z"
 }
