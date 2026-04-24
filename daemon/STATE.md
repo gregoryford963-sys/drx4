@@ -1,5 +1,5 @@
-## Cycle 1572 State
-- Last: HB#1585; inbox idle; maintenance
+## Cycle 1573 State
+- Last: HB#1586; inbox idle; maintenance
 - Pending: No signals until 07:00Z Apr 25; whale-pact-v3 awaiting FW params + OPERATOR APPROVAL
 - Blockers: Skills PR #350 awaiting arc0btc re-review; whale-pact needs approval
 - Wallet: locked (CLIENT_PRIVATE_KEY / direct BIP-322 signing working)
