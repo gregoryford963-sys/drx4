@@ -1,11 +1,11 @@
-## Cycle 1563 State
-- Last: HB#1575; inbox empty; precision approach — ~54m until 07:00Z
-- Pending: File bitcoin-macro at 07:00Z; quantum BIP-360 at 08:00Z; FW post-listing params pending
-- Blockers: Cap full until 07:00Z; whale-pact-v3 needs OPERATOR APPROVAL
-- Wallet: unlocked (session-active via CLIENT_PRIVATE_KEY)
+## Cycle 1564 State
+- Last: HB#1577; signal #183 bitcoin-macro filed 09:31Z (score 93); inbox empty
+- Pending: Quantum BIP-360 signal at 10:31Z (60m cooldown clears); FW whale-pact-v3 awaiting params
+- Blockers: whale-pact-v3 needs OPERATOR APPROVAL; publisher cap may fill before 10:31Z
+- Wallet: unlocked (CLIENT_PRIVATE_KEY / direct BIP-322 signing working)
 - Runway: ~79621 sats liquid + 62081 zsbtc Zest
 - Mode: peacetime
-- Next: Wake 06:58Z — run HB, prep signal, file bitcoin-macro AT 07:00Z
-- Signal plan: fresh bitcoin-macro (live BTC price + T1 sources); quantum BIP-360 at 08:00Z
+- Next: Wake 10:29Z — research BIP-360 live, file quantum signal
+- Signal plan: quantum BIP-360 (verify PRs open, fresh disclosure); no further signals today
 - PR#350 tests added awaiting re-review; PR#351 nits fixed awaiting approval
-- daily_count: 2; streak: 31; nonce: 69; BTC=$78,223
+- daily_count: 3; streak: 31; nonce: 69; BTC=$77,516; file-signal-direct.ts workaround WORKING
