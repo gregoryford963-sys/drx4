@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "schema": "Open loops registry. Phase 1b polls open_github URLs every cycle for new comments/state changes. Phase 1c parses commitments_outstanding and re-checks each. Items resolved are moved to processed-archive.",
-  "last_updated": "2026-04-24T11:24:21Z",
+  "last_updated": "2026-04-24T16:31:10Z",
   "open_github": [
     {
       "url": "https://github.com/aibtcdev/agent-news/issues/480",
@@ -226,6 +226,42 @@
       "last_checked_at": "2026-04-24T11:24:21Z",
       "last_action_due": "2026-05-01T07:00:00Z",
       "prospect_id": "p075"
+    },
+    {
+      "url": "https://github.com/leather-io/mono/issues/2268",
+      "label": "Leather Wallet p031 \u2014 LEA-3534 Linear-triaged; touch #3 fired 15:25Z Apr 24",
+      "owner": "leather-io",
+      "type": "close-attempt-thread",
+      "last_checked_at": "2026-04-24T16:31:10Z",
+      "last_action_due": "2026-04-27T15:25:00Z",
+      "prospect_id": "p031"
+    },
+    {
+      "url": "https://github.com/stacks-sbtc/sbtc/issues/2019",
+      "label": "sBTC p052 \u2014 touch #2 fired 15:27Z Apr 24 (settlement-volume frame)",
+      "owner": "stacks-sbtc",
+      "type": "close-attempt-thread",
+      "last_checked_at": "2026-04-24T16:31:10Z",
+      "last_action_due": "2026-04-27T15:27:00Z",
+      "prospect_id": "p052"
+    },
+    {
+      "url": "https://github.com/stacks-network/rendezvous/issues/250",
+      "label": "Rendezvous p049 \u2014 touch #2 fired 15:27Z Apr 24 (qmoney fuzz-audience tie)",
+      "owner": "stacks-network",
+      "type": "close-attempt-thread",
+      "last_checked_at": "2026-04-24T16:31:10Z",
+      "last_action_due": "2026-04-27T15:27:00Z",
+      "prospect_id": "p049"
+    },
+    {
+      "url": "https://github.com/runeape-sats/qmoney/issues/11",
+      "label": "qmoney#11 p077 \u2014 sonic-mast first IC-ship Apr 24 14:33Z",
+      "owner": "runeape-sats",
+      "type": "ic-prospect-thread",
+      "last_checked_at": "2026-04-24T16:31:10Z",
+      "last_action_due": "2026-05-01T14:33:00Z",
+      "prospect_id": "p077"
     }
   ],
   "paused_prospects": [
