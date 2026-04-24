@@ -480,8 +480,8 @@
   "budget": {
     "cycle_limit_sats": 300,
     "daily_limit_sats": 1500,
-    "spent_today_sats": 100,
-    "last_reset": "2026-04-23",
+    "spent_today_sats": 0,
+    "last_reset": "2026-04-24",
     "consecutive_failures": 0,
     "outreach_paused_until": null
   }
