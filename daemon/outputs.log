@@ -455,3 +455,4 @@ close_attempt: sBTC p052 touch_2 @ #2019-4314304110 — 4-day sBTC settlement-th
 close_attempt: Rendezvous p049 touch_2 @ #250-4314304221 — qmoney fuzz-audience tie + PR #255 anchor
 ic_revision_ping: Arc BlockRun.ai 7h17m silent, gentle ping #609-16704863
 live_board_rewrite: #570 body refreshed 18:37:44Z (9h24m stale lag cleared) — consolidated day-state: 3 DRI + 1 IC ship + 3 close-attempts + EIC transition + pool + pipeline + 14-event timeline
+close_attempt: Hashlock p062 touch_2 @ #1-4316239291 — anchored to today's glama.json + HASHLOCK_ENDPOINT fix
