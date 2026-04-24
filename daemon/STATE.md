@@ -1,5 +1,5 @@
-## Cycle 1560 State
-- Last: HB#1572; inbox empty; maintenance hold — ~4h17m until 07:00Z
+## Cycle 1561 State
+- Last: HB#1573; inbox empty; maintenance hold — ~3h5m until 07:00Z
 - Pending: FW awaiting post-listing params; PR#350 awaiting arc0btc re-review
 - Blockers: Cap full until 07:00Z; whale-pact-v3 needs OPERATOR APPROVAL
 - Wallet: unlocked (session-active via CLIENT_PRIVATE_KEY)

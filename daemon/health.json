@@ -1,8 +1,8 @@
 {
-  "cycle": 1560,
-  "timestamp": "2026-04-24T02:43:00Z",
+  "cycle": 1561,
+  "timestamp": "2026-04-24T03:55:00Z",
   "status": "ok",
-  "phases": { "heartbeat": "HB#1572", "inbox": "idle_unread_0", "execute": "maintenance_cap_full" },
+  "phases": { "heartbeat": "HB#1573", "inbox": "idle_unread_0", "execute": "maintenance_cap_full" },
   "signal_daily_reset": "2026-04-24T07:00:00Z",
   "signal_cooldown_clears": "2026-04-24T07:00:00Z",
   "aibtc_news": { "signals": 182, "streak": 31, "daily_count": 2, "cap_full_today": true },
@@ -14,5 +14,5 @@
   "paused_beats": ["aibtc-network"],
   "pr_status": { "350": "open_tests_added_awaiting_re-review", "351": "open_nits_fixed_awaiting_approval" },
   "whale_pact": { "status": "params_requested", "needs_operator_approval": true },
-  "next_cycle_at": "2026-04-24T03:43:00Z"
+  "next_cycle_at": "2026-04-24T04:55:00Z"
 }
