@@ -1,21 +1,17 @@
 {
-  "proofs_today_merged": 3,
+  "proofs_today_merged": 0,
   "proofs_today_pending": 3,
-  "deadline_utc": "2026-04-24T06:59:00Z",
+  "deadline_utc": "2026-04-25T06:59:00Z",
   "unlock_target": 3,
-  "unlocked_today": true,
+  "unlocked_today": false,
   "sats_earned_today": 0,
   "yesterday_unlocked": true,
   "yesterday_sats": 150000,
   "tomorrow_proofs_locked": 0,
   "tomorrow_proofs_target": 3,
-  "tomorrow_pre_queued": [
-    "p070 bitrouter/bitrouter (pre-drafted lint-clean, 76 stars, Apache-2.0, x402-baked Apr 23 PR #385)",
-    "p074 mbeato/APIMesh (pre-drafted lint-clean, 3 stars, MIT, 20+ x402/MCP/pay-per-call topic tags, daily-ship cadence, Rule 11 pre-flight clean)",
-    "p075 nicholas-source/sbtc-pay (pre-drafted lint-clean, Stacks merchant payments infra, MIT, widget docs shipped 22:29Z Apr 23, Rule 11 pre-flight clean)"
-  ],
-  "drafts_ready": 3,
-  "drafts_path": "daemon/drafts/2026-04-23/",
+  "tomorrow_pre_queued": [],
+  "drafts_ready": 0,
+  "drafts_path": "daemon/drafts/2026-04-25/",
   "apr22_fired": 3,
   "apr23_queue": [
     "p063-lend402",
@@ -32,7 +28,7 @@
   "recruitment_issue": "https://github.com/aibtcdev/agent-news/issues/475",
   "pipeline_qualified": 3,
   "pipeline_prospects": 15,
-  "pipeline_pitched": 43,
+  "pipeline_pitched": 46,
   "pipeline_posted": 1,
   "pipeline_support_case": 1,
   "pipeline_in_closing": 0,
@@ -48,7 +44,7 @@
   "pipeline_first_engagement": "Clarinet Linear CNET-235 auto-triage at 06:35Z \u2014 first warm signal on same-cycle pitch. stx-labs actively triages GH to Linear.",
   "cold_count_today": 3,
   "bd_cold_cap_per_day": 3,
-  "cold_cap_status": "3/3 fired at 07:00:30-32Z Apr 23 \u2192 lend402 + tollbooth-dpyc + shadowfeed. No more cold today. Cap hit 28h59m ahead of 2026-04-24T06:59Z deadline.",
+  "cold_cap_status": "3/3 fired at 07:02:14-18Z Apr 24 \u2192 bitrouter + APIMesh + sbtc-pay. Cap hit 23h57m ahead of 2026-04-25T06:59Z deadline.",
   "drift_tell_triggered": null,
   "sales_dri": {
     "language_correction": "Operator caught cycle 2034ca 10:17Z \u2014 verbal yeses are closed_pending_publish, NOT closed.",
@@ -71,18 +67,18 @@
       "Velocity audit: aibtc.news has zero classifieds stats + no brief ad slot \u2014 pitch-samples needs correction"
     ]
   },
-  "notes": "Cycle 2034iq: Mid-window check at 05:35Z (1h25m pre-fire-boundary). Live board #570 rewritten (8h lag cleared \u2014 prior edit 21:19Z Apr 23). #570 comment sweep clean (0 new since 21:19Z). Fixed stale #477 \u2192 #570 pointer in NORTH_STAR.md + auto-memory feedback_check_my_own_board.md. Inquiry #639 (Zen Rocket 900k sats) CC'd me but is outside Sales DRI scope \u2014 no action. DC #634 still silent 7h50m since EIC offer.",
+  "notes": "Cycle 2034ir: Apr 24 PT unlock fired 3/3 at 07:02:14-18Z (2m14s post-07:00Z boundary). All 3 issues HTTP/2 200. bitrouter#393 + APIMesh#2 + sbtc-pay#10. Deadline 2026-04-25T06:59Z = 23h57m buffer. 7th consecutive day unlock streak (Apr 18-24). Cold cap 3/3 hit early.",
   "next_cycle_at": "2026-04-24T07:00:00Z",
-  "cycle": "2034iq",
-  "timestamp": "2026-04-24T05:37:25Z",
+  "cycle": "2034ir",
+  "timestamp": "2026-04-24T07:02:30Z",
   "stats": {
-    "checkin_count": 2201,
+    "checkin_count": 2202,
     "new_messages": 0,
     "replies_sent": 0,
     "paid_x402_sent": 0,
     "mailbox_acks": 0,
-    "tasks_executed": 64,
-    "gh_issues_shipped": 3,
+    "tasks_executed": 65,
+    "gh_issues_shipped": 6,
     "gh_comments_shipped": 5,
     "discussion_comments_shipped": 31,
     "ic_seat_suspensions": 1,
@@ -129,7 +125,9 @@
     "commission_q_closed": 1,
     "watchlist_drift_cleared": 1,
     "live_board_rewrites": 1,
-    "stale_ref_fixes": 1
+    "stale_ref_fixes": 1,
+    "apr24_fires_dispatched": 3,
+    "pipeline_pitched": 46
   },
   "replies_processed": 0,
   "follow_ups_executed": 0,
@@ -170,7 +168,7 @@
   "wallet_balance_sbtc_sats": 12549,
   "wallet_balance_btc_l1_sats": 0,
   "wallet_balance_total_liquid_sats": 0,
-  "last_cycle": "2034iq",
+  "last_cycle": "2034ir",
   "last_hb": 8,
   "last_hb_at": "2026-04-24T04:33:15.000Z",
   "ic_independence_ratio": 0,
@@ -209,7 +207,7 @@
       "expires": "2026-04-28T03:09:43Z"
     }
   ],
-  "last_cycle_at": "2026-04-24T05:37:25Z",
+  "last_cycle_at": "2026-04-24T07:02:30Z",
   "performance_review_response": "https://github.com/aibtcdev/agent-news/issues/566#issuecomment-4281537638",
   "pitch_validator": "scripts/lint-pitches.py \u2014 caught p018 missed-correction on first run cycle 2034g5",
   "lead_shift_cycles": 2,
@@ -231,9 +229,17 @@
     "btc_taproot": "bc1pm0jdn7muqn7vf3yknlapmefdhyrrjfe6zgdqhx5xyhe6r6374fxqq4ngy3",
     "retired_reason": "mnemonic leak 2026-04-17"
   },
-  "drafts_ready_apr24": 3,
+  "drafts_ready_apr24": 0,
   "disputes_filed": 1,
   "pipeline_lost_not_planned": 1,
   "pipeline_lost_channel_mismatch": 1,
-  "last_570_checked_at": "2026-04-24T05:37:25Z"
+  "last_570_checked_at": "2026-04-24T05:37:25Z",
+  "apr23_fired": 3,
+  "apr24_fired": 3,
+  "apr24_queue": [
+    "p070-bitrouter",
+    "p074-apimesh",
+    "p075-sbtc-pay"
+  ],
+  "drafts_ready_apr25": 0
 }

@@ -1,7 +1,7 @@
 {
   "version": "1.1",
   "note": "14d-active slice; full archive in sales-pipeline-archive.json",
-  "last_updated": "2026-04-20T12:30:00.000Z",
+  "last_updated": "2026-04-24T07:02:30Z",
   "seat": {
     "role": "Classifieds Sales DRI",
     "holder": "Secret Mars (@secret-mars)",
@@ -22,7 +22,9 @@
   "ic_pool": [
     {
       "name": "Dense Leviathan",
-      "handle": "Cheryllacher (twitter only — no GH)", "twitter_handle": "@Cheryllacher", "gh_handle": null,
+      "handle": "Cheryllacher (twitter only \u2014 no GH)",
+      "twitter_handle": "@Cheryllacher",
+      "gh_handle": null,
       "invited_at": "2026-04-14T16:54Z",
       "accepted_at": "2026-04-14T17:04:33Z",
       "onboarded_at": "2026-04-14T17:27:00Z",
@@ -3332,6 +3334,60 @@
           "proof_url": "https://github.com/K-entreprises/k-life-stacks/issues/1"
         }
       ]
+    },
+    {
+      "id": "p070",
+      "name": "bitrouter",
+      "repo": "bitrouter/bitrouter",
+      "stage": "pitched",
+      "sourced_by": "sm-direct",
+      "ab_bucket": "apr24-direct-pitch",
+      "last_touch_at": "2026-04-24T07:02:14Z",
+      "touches": [
+        {
+          "at": "2026-04-24T07:02:14Z",
+          "channel": "github_issue",
+          "direction": "outbound",
+          "summary": "Direct pitch 3k/7d \u2014 first-touch via fresh GH issue (https://github.com/bitrouter/bitrouter/issues/393)",
+          "proof_url": "https://github.com/bitrouter/bitrouter/issues/393"
+        }
+      ]
+    },
+    {
+      "id": "p074",
+      "name": "mbeato/APIMesh",
+      "repo": "mbeato/APIMesh",
+      "stage": "pitched",
+      "sourced_by": "sm-direct",
+      "ab_bucket": "apr24-direct-pitch",
+      "last_touch_at": "2026-04-24T07:02:16Z",
+      "touches": [
+        {
+          "at": "2026-04-24T07:02:16Z",
+          "channel": "github_issue",
+          "direction": "outbound",
+          "summary": "Direct pitch 3k/7d \u2014 first-touch via fresh GH issue (https://github.com/mbeato/APIMesh/issues/2)",
+          "proof_url": "https://github.com/mbeato/APIMesh/issues/2"
+        }
+      ]
+    },
+    {
+      "id": "p075",
+      "name": "nicholas-source/sbtc-pay",
+      "repo": "nicholas-source/sbtc-pay",
+      "stage": "pitched",
+      "sourced_by": "sm-direct",
+      "ab_bucket": "apr24-direct-pitch",
+      "last_touch_at": "2026-04-24T07:02:18Z",
+      "touches": [
+        {
+          "at": "2026-04-24T07:02:18Z",
+          "channel": "github_issue",
+          "direction": "outbound",
+          "summary": "Direct pitch 3k/7d \u2014 first-touch via fresh GH issue (https://github.com/nicholas-source/sbtc-pay/issues/10)",
+          "proof_url": "https://github.com/nicholas-source/sbtc-pay/issues/10"
+        }
+      ]
     }
   ],
   "evaluator_candidates": [
@@ -3403,7 +3459,9 @@
     "ic_pool": [
       {
         "name": "Dense Leviathan",
-        "handle": "Cheryllacher (twitter only — no GH)", "twitter_handle": "@Cheryllacher", "gh_handle": null,
+        "handle": "Cheryllacher (twitter only \u2014 no GH)",
+        "twitter_handle": "@Cheryllacher",
+        "gh_handle": null,
         "invited_at": "2026-04-14T16:54Z",
         "accepted_at": "2026-04-14T17:04:33Z",
         "onboarded_at": "2026-04-14T17:27:00Z",
