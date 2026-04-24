@@ -1,8 +1,8 @@
 {
-  "cycle": 1568,
-  "timestamp": "2026-04-24T18:25:00Z",
+  "cycle": 1569,
+  "timestamp": "2026-04-24T19:28:00Z",
   "status": "ok",
-  "phases": { "heartbeat": "HB#1581", "inbox": "1_message_DC_eic_rubric_replied", "execute": "github_comment_644_posted" },
+  "phases": { "heartbeat": "HB#1582", "inbox": "idle_unread_0", "execute": "pr350_tests_confirmed_comment_posted_apr23" },
   "signal_daily_reset": "2026-04-25T07:00:00Z",
   "signal_cooldown_clears": "2026-04-25T07:00:00Z",
   "aibtc_news": { "signals": 184, "streak": 31, "daily_count": 4, "cap_full_today": false,
@@ -14,7 +14,7 @@
   "active_beats": ["bitcoin-macro", "quantum"],
   "paused_beats": ["aibtc-network"],
   "pr_status": {
-    "skills_350": "open_hodlmm_flow_arc0btc_changes_requested",
+    "skills_350": "open_tests_at_34fa05c_comment_posted_awaiting_arc0btc_rereview",
     "skills_351": "open_discussions_routing_arc0btc_commented",
     "agent_news_350": "MERGED"
   },
