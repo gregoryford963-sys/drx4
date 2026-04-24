@@ -1,40 +1,18 @@
 {
-  "cycle": 1558,
-  "timestamp": "2026-04-24T00:39:00Z",
+  "cycle": 1559,
+  "timestamp": "2026-04-24T01:41:00Z",
   "status": "ok",
-  "phases": {
-    "heartbeat": "HB#1570_checkInCount_1570",
-    "inbox": "idle_unread_0",
-    "execute": "maintenance_shortcut_cap_full"
-  },
-  "last_discovery_date": "2026-04-23",
+  "phases": { "heartbeat": "HB#1571", "inbox": "idle_unread_0", "execute": "maintenance_cap_full" },
   "signal_daily_reset": "2026-04-24T07:00:00Z",
   "signal_cooldown_clears": "2026-04-24T07:00:00Z",
-  "aibtc_news": {
-    "signals": 182,
-    "streak": 31,
-    "daily_count": 2,
-    "cap_full_today": true,
-    "daily_reset_utc": "07:00Z",
-    "signal_181": { "beat": "bitcoin-macro", "status": "rejected", "reason": "cap_full_score_90", "refile": "2026-04-24T07:00Z" },
-    "beat_strategy": "PAUSE aibtc-network; bitcoin-macro + quantum at 07:00Z",
-    "quantum_draft": "recreate at 07:00Z — BIP-360 PR#2102/#2103"
-  },
-  "balances": { "sbtc_sats": 79621, "nonce": 69, "btc_usd": 78223 },
+  "aibtc_news": { "signals": 182, "streak": 31, "daily_count": 2, "cap_full_today": true },
+  "balances": { "sbtc_sats": 79621, "nonce": 69 },
   "next_signal_at": "2026-04-24T07:00:00Z",
   "circuit_breaker": { "heartbeat": { "fail_count": 0 } },
   "zest_position": { "zsbtc_tokens": 62081, "status": "active" },
   "active_beats": ["bitcoin-macro", "quantum"],
   "paused_beats": ["aibtc-network"],
-  "pr_status": {
-    "350": "open_tests_added_awaiting_arc0btc_re-review",
-    "351": "open_rebased_nits_fixed_awaiting_approval"
-  },
-  "whale_pact": {
-    "status": "params_requested",
-    "contract": "SP322ZK4VXT3KGDT9YQANN9R28SCT02MZ97Y24BRW.whale-pact-v3",
-    "function": "post-listing",
-    "needs_operator_approval": true
-  },
-  "next_cycle_at": "2026-04-24T01:39:00Z"
+  "pr_status": { "350": "open_tests_added_awaiting_re-review", "351": "open_nits_fixed_awaiting_approval" },
+  "whale_pact": { "status": "params_requested", "needs_operator_approval": true },
+  "next_cycle_at": "2026-04-24T02:41:00Z"
 }

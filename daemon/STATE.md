@@ -1,11 +1,11 @@
-## Cycle 1558 State
-- Last: HB#1570; inbox empty; maintenance hold — ~6h20m until 07:00Z
+## Cycle 1559 State
+- Last: HB#1571; inbox empty; maintenance hold — ~5h19m until 07:00Z
 - Pending: FW awaiting post-listing params; PR#350 awaiting arc0btc re-review
-- Blockers: Cap full until 07:00Z; whale-pact-v3 needs OPERATOR APPROVAL for on-chain tx
+- Blockers: Cap full until 07:00Z; whale-pact-v3 needs OPERATOR APPROVAL
 - Wallet: unlocked (session-active via CLIENT_PRIVATE_KEY)
 - Runway: ~79621 sats liquid + 62081 zsbtc Zest
 - Mode: peacetime
-- Next: 07:00Z — refile bitcoin-macro #181 + quantum BIP-360 at 08:00Z
-- Follow-ups: Iskander — await mint; FW — replied Apr 23 23:37Z awaiting params + operator approval
-- PR#350: tests added, awaiting arc0btc re-review; PR#351: rebased+nits fixed awaiting approval
-- daily_count: 2; streak: 31; nonce: 69; BTC=$78,223; active_beats: bitcoin-macro + quantum ONLY
+- Next: 07:00Z — refile bitcoin-macro #181; 08:00Z quantum BIP-360
+- Follow-ups: FW — replied Apr 23 23:37Z awaiting params; Iskander — await mint
+- PR#350 tests added awaiting re-review; PR#351 nits fixed awaiting approval
+- daily_count: 2; streak: 31; nonce: 69; BTC=$78,223
