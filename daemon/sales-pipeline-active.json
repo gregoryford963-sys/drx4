@@ -1,7 +1,7 @@
 {
   "version": "1.1",
   "note": "14d-active slice; full archive in sales-pipeline-archive.json",
-  "last_updated": "2026-04-24T15:27:30Z",
+  "last_updated": "2026-04-24T17:34:30Z",
   "seat": {
     "role": "Classifieds Sales DRI",
     "holder": "Secret Mars (@secret-mars)",
@@ -3585,6 +3585,20 @@
           "proof_url": "https://github.com/runeape-sats/qmoney/issues/11"
         }
       ]
+    },
+    {
+      "id": "p078",
+      "name": "BlockRunAI/blockrun-mcp",
+      "repo": "BlockRunAI/blockrun-mcp",
+      "stage": "prospect-pending-revision",
+      "territory": "demand-side",
+      "sourced_by": "ic-arc",
+      "surfaced_at": "2026-04-24T09:29:00Z",
+      "dri_greenlight_at": "2026-04-24T10:16:45Z",
+      "dri_greenlight_url": "https://github.com/aibtcdev/agent-news/discussions/609#discussioncomment-16699933",
+      "revision_ping_url": "https://github.com/aibtcdev/agent-news/discussions/609#discussioncomment-16704863",
+      "hold_reason": "Arc proposed permission-first framing; direct-offer revision required before ship",
+      "gates_passed": "all 5 (DNC/pipeline/site+org/handle/growth-mode)"
     }
   ],
   "evaluator_candidates": [
