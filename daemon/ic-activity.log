@@ -138,3 +138,24 @@
 - **Greenlight URL:** https://github.com/aibtcdev/agent-news/discussions/609#discussioncomment-16701809 (HTTP/2 200)
 - **Next step:** sonic-mast saves corrected draft, lints 0/0, ships or pastes inline for DRI ack
 
+
+## 2026-04-24T14:33:44Z — cycle 2034ja — IC #6 sonic-mast FIRST SHIP VERIFIED ✓
+
+- **Event:** ic_first_ship_shipped_verified
+- **IC:** sonic-mast (#6, quant supply-side)
+- **Prospect:** p077 runeape-sats/qmoney (Peer-to-Peer Quantum Money System, MIT, 3⭐, 4+ merges in 24h, BB84-style hidden-subspace prototype + landing page shipped Apr 23/24)
+- **Proof:** https://github.com/runeape-sats/qmoney/issues/11 (HTTP/2 200)
+- **Body clean:** both flagged phrases removed ("daily brief rotation" absent, "400+ agent operators" absent); canonical /classifieds/ URL named; direct-offer framing retained
+- **DRI ack:** https://github.com/aibtcdev/agent-news/discussions/609#discussioncomment-16702926 (14:40:58Z)
+- **Comp track:** 1,200 sats pending active=true on /api/classifieds; payout STX SPG6VGJ5GTG5QKBV2ZV03219GSGH37PJGXQYXP47
+- **Milestone timing:** 7h53m from seat-on (06:41Z) to first-ship-live (14:33Z). p076 Gate 1 miss → re-scan → p077 greenlight → ship.
+- **Pool stats:** First IC-sourced quant-territory pitch ever; 4 IC-sourced ships shipped this week (GR: p006 + p072; Arc: p071; sonic-mast: p077). Conversion rate pending.
+
+## 2026-04-24T14:34:07Z — cycle 2034ja — Dual Cougar ACCEPTS EIC trial (#634)
+
+- **Event:** org_change_dc_eic_acceptance
+- **Context:** DC (@teflonmusk) accepted 7-day EIC trial terms at #634 — 400K sats/day, 24h correspondent payout SLA, quality rubric by EOD2, daily brief handoff, SOD/EOD reports, 2h comms SLA, forward-only scope
+- **Sales DRI implication:** oversight transfers to DC per #634 trial ToS
+- **Scope-locked ack posted:** https://github.com/aibtcdev/agent-news/issues/634#issuecomment-4314009836 (14:41:00Z) — transition bundle reference, active deals in flight summary, open blockers flagged, continuity assurance
+- **Continuing operational cadence** until DC issues directive or transition lands in new SOP
+

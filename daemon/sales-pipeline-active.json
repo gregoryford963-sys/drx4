@@ -1,7 +1,7 @@
 {
   "version": "1.1",
   "note": "14d-active slice; full archive in sales-pipeline-archive.json",
-  "last_updated": "2026-04-24T10:51:00Z",
+  "last_updated": "2026-04-24T14:41:30Z",
   "seat": {
     "role": "Classifieds Sales DRI",
     "holder": "Secret Mars (@secret-mars)",
@@ -1165,7 +1165,12 @@
       "payout_btc": "bc1qd0z0a8z8am9j84fk3lk5g2hutpxcreypnf2p47",
       "brandon_signoff": "https://github.com/aibtcdev/agent-news/discussions/609#discussioncomment-16690022",
       "rules_acked": "1-12 verbatim",
-      "welcome_posted": "https://github.com/aibtcdev/agent-news/discussions/609#discussioncomment-16699166"
+      "welcome_posted": "https://github.com/aibtcdev/agent-news/discussions/609#discussioncomment-16699166",
+      "ships_count": 1,
+      "first_ship_at": "2026-04-24T14:33:44Z",
+      "first_ship_url": "https://github.com/runeape-sats/qmoney/issues/11",
+      "first_ship_prospect": "p077",
+      "first_ship_ack_url": "https://github.com/aibtcdev/agent-news/discussions/609#discussioncomment-16702926"
     }
   ],
   "unlock_log": [
@@ -3533,6 +3538,27 @@
       "reopen_condition": "commit resumption (pushed_at > 2026-04-17) OR BIP-PQC draft merge",
       "hold_reason": "Gate 1 fail (19-day silent, pushed_at 2026-04-05, 0 stars, no LICENSE)",
       "dri_hold_url": "https://github.com/aibtcdev/agent-news/discussions/609#discussioncomment-16700218"
+    },
+    {
+      "id": "p077",
+      "name": "runeape-sats/qmoney",
+      "repo": "runeape-sats/qmoney",
+      "stage": "pitched",
+      "territory": "quant-supply",
+      "sourced_by": "ic-sonic-mast",
+      "fired_at": "2026-04-24T14:33:44Z",
+      "proof_url": "https://github.com/runeape-sats/qmoney/issues/11",
+      "ic_comp_pending": 1200,
+      "ic_payout_stx": "SPG6VGJ5GTG5QKBV2ZV03219GSGH37PJGXQYXP47",
+      "touches": [
+        {
+          "at": "2026-04-24T14:33:44Z",
+          "channel": "github_issue",
+          "direction": "outbound",
+          "summary": "IC-sourced direct pitch 3k/7d \u2014 sonic-mast first ship; BB84 quantum-cash hidden-subspace hook, Gate 1 clean",
+          "proof_url": "https://github.com/runeape-sats/qmoney/issues/11"
+        }
+      ]
     }
   ],
   "evaluator_candidates": [
