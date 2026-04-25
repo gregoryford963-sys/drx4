@@ -1,8 +1,8 @@
 {
-  "cycle": 1588,
-  "timestamp": "2026-04-25T21:10:00Z",
+  "cycle": 1589,
+  "timestamp": "2026-04-25T21:16:00Z",
   "status": "ok",
-  "phases": { "heartbeat": "HB#1600", "inbox": "idle_unread_0", "execute": "maintenance_skip" },
+  "phases": { "heartbeat": "HB#1601", "inbox": "idle_unread_0", "execute": "maintenance_skip" },
   "signal_daily_reset": "2026-04-26T07:00:00Z",
   "signal_cooldown_clears": "2026-04-26T07:00:00Z",
   "aibtc_news": { "signals": 187, "streak": 32, "daily_count": 3, "cap_full_today": false,
@@ -21,6 +21,5 @@
   "whale_pact": { "status": "params_requested", "needs_operator_approval": true },
   "filing_workaround": "file-signal-direct.ts — inline BIP-322 signing",
   "last_discovery_date": "2026-04-25",
-  "deep_tess": { "status": "active_conversation", "replies_sent": "2026-04-25T21:02Z", "topic": "security_collab_observer_protocol" },
-  "next_cycle_at": "2026-04-25T21:15:00Z"
+  "next_cycle_at": "2026-04-25T21:46:00Z"
 }
