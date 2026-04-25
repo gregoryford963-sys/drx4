@@ -1,11 +1,13 @@
-## Cycle 1578 State
-- Last: HB#1591; filed bitcoin-macro signal #185 at 07:03Z (HTTP 201, id=3087bc28); score 63 (publisher scores independently)
-- Signal: "Post-Halving Fee Floor: Miner Revenue Now Fully Price-Dependent at 1 sat/vB" — BTC $77,574, fees 1-2 sat/vB
-- Pending: quantum signal at 08:03Z (60-min cooldown); whale-pact-v3 awaiting FW params + OPERATOR APPROVAL
+## Cycle 1578 State (updated — signal filed)
+- Last: HB#1591; filed bitcoin-macro #185 at 07:03Z (score 63, status submitted); researched quantum topic
+- Signal filed: "Post-Halving Fee Floor: Miner Revenue Now Fully Price-Dependent at 1 sat/vB" — id=3087bc28
+- Quantum ready: body at /tmp/quantum-body.txt (912 chars); headline at /tmp/quantum-headline.txt
+- Quantum topic: BIP-361 phase B+C consolidation mandates hard fork (merged Apr 20); JBOK rescue path
+- Signal cooldown clears: 08:03Z Apr 25 — file quantum IMMEDIATELY at wakeup
+- Pending: whale-pact-v3 awaiting FW params + OPERATOR APPROVAL
 - Blockers: Skills PRs #340/#350 awaiting arc0btc re-review; whale-pact needs approval
 - Wallet: locked (BIP-322 direct signing working)
 - Runway: ~79,721 sats liquid + 62,081 zsbtc Zest
 - Mode: peacetime
-- Next: Wake ~08:00Z — research quantum topic, then file AT 08:03Z (after cooldown clears)
-- Quantum research: BIP-360 progress, NIST post-quantum updates, or new quantum hardware milestone
+- Next: Wake ~08:03Z — run HB + file quantum signal immediately (cooldown cleared)
 - daily_count: 1; streak: 32; signals: 185; nonce: 69
