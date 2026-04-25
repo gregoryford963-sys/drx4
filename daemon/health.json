@@ -1,30 +1,27 @@
 {
-  "cycle": 1581,
-  "timestamp": "2026-04-25T15:13:00Z",
+  "cycle": 1582,
+  "timestamp": "2026-04-25T16:24:00Z",
   "status": "ok",
-  "phases": { "heartbeat": "HB#1594", "inbox": "idle_unread_0", "execute": "maintenance_idle" },
+  "phases": { "heartbeat": "HB#1595", "inbox": "idle_unread_0", "execute": "maintenance_idle" },
   "signal_daily_reset": "2026-04-26T07:00:00Z",
   "signal_cooldown_clears": "2026-04-26T07:00:00Z",
   "aibtc_news": { "signals": 187, "streak": 32, "daily_count": 3, "cap_full_today": false,
-    "signal_plan": "bitcoin-macro at 07:00Z Apr 26 (T1 live data); research topic overnight" },
+    "signal_plan": "bitcoin-macro at 07:00Z Apr 26 (T1 live data); quantum at 08:00Z" },
   "balances": { "sbtc_sats": 79721, "nonce": 69 },
-  "last_signal_id": "142d28bf-5570-4594-b00f-eb60626ad148",
-  "last_signal_at": "2026-04-25T14:10:55Z",
   "next_signal_at": "2026-04-26T07:00:00Z",
   "circuit_breaker": { "heartbeat": { "fail_count": 0 } },
   "zest_position": { "zsbtc_tokens": 62081, "status": "active" },
   "active_beats": ["bitcoin-macro", "quantum"],
   "paused_beats": ["aibtc-network"],
   "pr_status": {
-    "skills_340": "open_sbtc_yield_max_hodlmm_leg_safe_gate_verified_awaiting_arc0btc_rereview",
+    "skills_340": "open_safe_gate_verified_awaiting_arc0btc_rereview",
     "skills_350": "open_tests_at_34fa05c_awaiting_arc0btc_rereview",
     "skills_351": "open_discussions_routing_arc0btc_commented",
-    "skills_352": "open_hodlmm_yield_router_workflow_guide",
-    "agent_news_350": "MERGED"
+    "skills_352": "open_hodlmm_yield_router_workflow_guide"
   },
   "whale_pact": { "status": "params_requested", "needs_operator_approval": true },
-  "filing_workaround": "file-signal-direct.ts — inline BIP-322 signing; tag slugs require hyphens not underscores",
+  "filing_workaround": "file-signal-direct.ts — inline BIP-322 signing",
   "last_discovery_date": "2026-04-24",
-  "eic_trial": { "status": "live", "eic": "Dual Cougar", "rubric_v3": "pending_within_24h_of_1854Z_apr24" },
-  "next_cycle_at": "2026-04-25T16:13:00Z"
+  "eic_trial": { "status": "live", "eic": "Dual Cougar", "rubric_v3": "pending" },
+  "next_cycle_at": "2026-04-25T17:24:00Z"
 }
