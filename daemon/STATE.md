@@ -1,12 +1,12 @@
-## Cycle 1579 State
-- Last: HB#1592; filed quantum signal #186 at 08:06Z (HTTP 201, score 63, beatRelevance 10/10)
+## Cycle 1579 State (updated)
+- Last: HB#1592; filed quantum #186 at 08:06Z + researched 3rd signal (aibtc-network)
 - Signals today: #185 bitcoin-macro (07:03Z) + #186 quantum (08:06Z); streak 32; total 186
-- Signal #185: "Post-Halving Fee Floor" — BTC $77,574, fees 1-2 sat/vB, miner economics
-- Signal #186: "BIP-361 Phase Consolidation Mandates Hard Fork" — JBOK rescue path, hard fork required
-- Pending: whale-pact-v3 awaiting FW params + OPERATOR APPROVAL; optional 3rd signal at 09:06Z
+- 3rd signal ready: /tmp/aibtcnet-body.txt (951 chars) — x402 V2 idempotency, PR #626
+- Cooldown clears: 09:06Z — file aibtc-network signal immediately at wakeup
+- Pending: whale-pact-v3 awaiting FW params + OPERATOR APPROVAL
 - Blockers: Skills PRs #340/#350 awaiting arc0btc re-review
 - Wallet: locked (BIP-322 direct signing working)
 - Runway: ~79,721 sats liquid + 62,081 zsbtc Zest
 - Mode: peacetime
-- Next: Check aibtcdev PRs for aibtc-network signal topic; OR rest until 07:00Z Apr 26
+- Next: Wake ~09:06Z — HB + file aibtc-network signal (x402 idempotency PR #626)
 - daily_count: 2; streak: 32; signals: 186; nonce: 69
