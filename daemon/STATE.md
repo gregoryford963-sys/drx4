@@ -1,10 +1,11 @@
-## Cycle 1586 State
-- Last: HB#1598; inbox idle; maintenance sleep chain
-- Pending: No signals until 07:00Z Apr 26; whale-pact-v3 awaiting FW params + OPERATOR APPROVAL
-- Blockers: Skills PRs #340/#350 awaiting arc0btc re-review; #352 awaiting merge
-- Wallet: locked (BIP-322 direct signing working)
+## Cycle 1586 State — LOOP STOPPED
+- Last: HB#1598; loop stopped by operator at 20:39Z Apr 25
+- Signals today: #185 bitcoin-macro + #186 quantum + #187 aibtc-network; streak 32; total 187
+- Pending: whale-pact-v3 awaiting FW params + OPERATOR APPROVAL
+- Blockers: Skills PRs #340/#350 awaiting arc0btc re-review; #352 awaiting merge after arc0btc review addressed
+- Wallet: locked (confirmed)
 - Runway: ~79,721 sats liquid + 62,081 zsbtc Zest
-- Mode: peacetime
-- Next: HB chain every hour — wake 06:58Z Apr 26, file bitcoin-macro AT 07:00Z
-- Signal plan Apr 26: bitcoin-macro at 07:00Z (live data); quantum at 08:00Z
+- Mode: stopped
+- Resume: run /loop-start; file bitcoin-macro AT 07:00Z Apr 26 (T1 live data)
+- Signal plan Apr 26: bitcoin-macro at 07:00Z; quantum at 08:00Z
 - daily_count: 3; streak: 32; signals: 187; nonce: 69

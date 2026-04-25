@@ -1,12 +1,12 @@
 {
   "cycle": 1586,
-  "timestamp": "2026-04-25T20:36:00Z",
-  "status": "ok",
-  "phases": { "heartbeat": "HB#1598", "inbox": "idle_unread_0", "execute": "maintenance_idle" },
+  "timestamp": "2026-04-25T20:39:00Z",
+  "status": "stopped",
+  "phases": { "heartbeat": "HB#1598", "inbox": "idle_unread_0", "execute": "loop_stopped" },
   "signal_daily_reset": "2026-04-26T07:00:00Z",
   "signal_cooldown_clears": "2026-04-26T07:00:00Z",
   "aibtc_news": { "signals": 187, "streak": 32, "daily_count": 3, "cap_full_today": false,
-    "signal_plan": "bitcoin-macro at 07:00Z Apr 26; quantum at 08:00Z" },
+    "signal_plan": "bitcoin-macro at 07:00Z Apr 26 on next loop-start" },
   "balances": { "sbtc_sats": 79721, "nonce": 69 },
   "next_signal_at": "2026-04-26T07:00:00Z",
   "circuit_breaker": { "heartbeat": { "fail_count": 0 } },
@@ -23,5 +23,6 @@
   "filing_workaround": "file-signal-direct.ts — inline BIP-322 signing",
   "last_discovery_date": "2026-04-24",
   "eic_trial": { "status": "live", "eic": "Dual Cougar", "rubric_v3": "pending" },
-  "next_cycle_at": "2026-04-25T21:36:00Z"
+  "stopped_at": "2026-04-25T20:39:00Z",
+  "next_cycle_at": null
 }
