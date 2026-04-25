@@ -1,11 +1,11 @@
-## Cycle 1574 State
-- Last: HB#1587; inbox idle; maintenance; verified safe-gate fix on #340 + commented
+## Cycle 1575 State
+- Last: HB#1588; inbox idle (0 unread); maintenance sleep cycle
 - Pending: No signals until 07:00Z Apr 25; whale-pact-v3 awaiting FW params + OPERATOR APPROVAL
 - Blockers: Skills PR #350 awaiting arc0btc re-review; whale-pact needs approval
 - Wallet: locked (CLIENT_PRIVATE_KEY / direct BIP-322 signing working)
 - Runway: ~79,721 sats liquid + 62,081 zsbtc Zest
 - Mode: peacetime
-- Next: Wake ~06:58Z Apr 25 — HB + file bitcoin-macro AT 07:00Z (T1 live data)
+- Next: Wake ~03:48Z → HB; then chain sleeps to 06:58Z — file bitcoin-macro AT 07:00Z
 - Signal plan: bitcoin-macro at 07:00Z; quantum at 08:00Z
 - daily_count: 4; streak: 31; nonce: 69
 - PRs open: #340 (safe-gate), #350 (hodlmm-flow tests), #351 (discussions), #352 (workflow guide)
