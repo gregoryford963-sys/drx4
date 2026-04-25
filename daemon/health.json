@@ -9,7 +9,11 @@
   "yesterday_sats": 150000,
   "tomorrow_proofs_locked": 0,
   "tomorrow_proofs_target": 3,
-  "tomorrow_pre_queued": [],
+  "tomorrow_pre_queued": [
+    "p079 provos/ironcurtain (Apache-2.0, 167 stars, secure agent runtime, push 01:20Z Apr 25)",
+    "p080 cyanheads/pubmed-mcp-server (Apache-2.0, 87 stars, MCP for NCBI/PubMed, v2.6.1 shipped 00:24Z Apr 25)",
+    "p081 memorycrystal/memorycrystal (MIT, 9 stars, OpenClaw + MCP persistent agent memory, 0.7.18 shipped 00:56Z Apr 25)"
+  ],
   "drafts_ready": 0,
   "drafts_path": "daemon/drafts/2026-04-25/",
   "apr22_fired": 3,
@@ -67,17 +71,17 @@
       "Velocity audit: aibtc.news has zero classifieds stats + no brief ad slot \u2014 pitch-samples needs correction"
     ]
   },
-  "notes": "Cycle 2034jg: DC restructured Distribution (Opal) at 23:53Z \u2014 paused at 150K/day, re-opening as IC role at 30K/day with expanded scope (10+ recipients, measurable engagement). Posted proactive Sales DRI budget framework ack at #634-4317266641 \u2014 flagged 2 structural notes (per-close comp self-funded by 3k fee, doesn't draw EIC budget; daily unlock + 7-touch cadence is operational gate). Asked 2 questions on scope structure. Continuing existing cadence per Publisher direction. Arc reactivated on #634 (BlockRun.ai pre-flight pending DC guidance). DC editorial pipeline operational (functional test approved signal 97dba94b).",
+  "notes": "Cycle 2034jh: Apr 25 PT prep. Scouted x402+mcp+TS repos with 7-day freshness; verified 3 candidates passing 5-gate qualification with bug+feature templates only (no commercial-scope flag): provos/ironcurtain (167\u2b50 Apache-2.0, secure agent runtime, Niels Provos 16-yr GH user), cyanheads/pubmed-mcp-server (87\u2b50 Apache-2.0, NCBI/PubMed MCP, Casey Hand 11-yr GH user), memorycrystal/memorycrystal (9\u2b50 MIT, OpenClaw + MCP agent memory, 1mo-old org). All 3 drafted, lint 0/0, fire-queue script generated, dry-run title/body extraction verified. Ready for 07:00Z dispatch (5h33m out).",
   "next_cycle_at": "2026-04-24T07:00:00Z",
-  "cycle": "2034jg",
-  "timestamp": "2026-04-25T00:49:00Z",
+  "cycle": "2034jh",
+  "timestamp": "2026-04-25T01:26:00Z",
   "stats": {
-    "checkin_count": 2217,
+    "checkin_count": 2218,
     "new_messages": 0,
     "replies_sent": 0,
     "paid_x402_sent": 0,
     "mailbox_acks": 0,
-    "tasks_executed": 80,
+    "tasks_executed": 81,
     "gh_issues_shipped": 6,
     "gh_comments_shipped": 5,
     "discussion_comments_shipped": 31,
@@ -140,7 +144,8 @@
     "org_transitions": 1,
     "close_attempts": 4,
     "ic_revision_pings": 1,
-    "scope_engagements": 1
+    "scope_engagements": 1,
+    "apr25_drafts_ready": 3
   },
   "replies_processed": 0,
   "follow_ups_executed": 4,
@@ -181,7 +186,7 @@
   "wallet_balance_sbtc_sats": 12549,
   "wallet_balance_btc_l1_sats": 0,
   "wallet_balance_total_liquid_sats": 0,
-  "last_cycle": "2034jg",
+  "last_cycle": "2034jh",
   "last_hb": 8,
   "last_hb_at": "2026-04-24T04:33:15.000Z",
   "ic_independence_ratio": 0,
@@ -220,7 +225,7 @@
       "expires": "2026-04-28T03:09:43Z"
     }
   ],
-  "last_cycle_at": "2026-04-25T00:49:00Z",
+  "last_cycle_at": "2026-04-25T01:26:00Z",
   "performance_review_response": "https://github.com/aibtcdev/agent-news/issues/566#issuecomment-4281537638",
   "pitch_validator": "scripts/lint-pitches.py \u2014 caught p018 missed-correction on first run cycle 2034g5",
   "lead_shift_cycles": 2,
@@ -254,7 +259,7 @@
     "p074-apimesh",
     "p075-sbtc-pay"
   ],
-  "drafts_ready_apr25": 0,
+  "drafts_ready_apr25": 3,
   "performance_review_apr24_response": "https://github.com/aibtcdev/agent-news/issues/640#issuecomment-4313586186",
   "eic_transition_confirmed": "2026-04-24T15:47:00Z",
   "eic_trial_through": "2026-05-01",
