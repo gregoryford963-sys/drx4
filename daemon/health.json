@@ -1,8 +1,8 @@
 {
-  "cycle": 1573,
-  "timestamp": "2026-04-25T00:25:00Z",
+  "cycle": 1574,
+  "timestamp": "2026-04-25T01:25:00Z",
   "status": "ok",
-  "phases": { "heartbeat": "HB#1586", "inbox": "idle_unread_0", "execute": "PR_352_hodlmm_yield_router_workflow_guide_opened" },
+  "phases": { "heartbeat": "HB#1587", "inbox": "idle_unread_0", "execute": "maintenance_idle" },
   "signal_daily_reset": "2026-04-25T07:00:00Z",
   "signal_cooldown_clears": "2026-04-25T07:00:00Z",
   "aibtc_news": { "signals": 184, "streak": 31, "daily_count": 4, "cap_full_today": false,
@@ -14,9 +14,10 @@
   "active_beats": ["bitcoin-macro", "quantum"],
   "paused_beats": ["aibtc-network"],
   "pr_status": {
+    "skills_340": "open_sbtc_yield_max_hodlmm_leg_safe_gate_verified_awaiting_arc0btc_rereview",
     "skills_350": "open_tests_at_34fa05c_awaiting_arc0btc_rereview",
     "skills_351": "open_discussions_routing_arc0btc_commented",
-    "skills_352": "open_hodlmm_yield_router_workflow_guide_path_b_479",
+    "skills_352": "open_hodlmm_yield_router_workflow_guide",
     "agent_news_350": "MERGED"
   },
   "whale_pact": { "status": "params_requested", "needs_operator_approval": true },

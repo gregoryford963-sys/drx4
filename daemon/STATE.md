@@ -1,5 +1,5 @@
-## Cycle 1573 State (updated)
-- Last: HB#1586; opened PR #352 (hodlmm-yield-router workflow guide, Path B of bff-skills#479)
+## Cycle 1574 State
+- Last: HB#1587; inbox idle; maintenance; verified safe-gate fix on #340 + commented
 - Pending: No signals until 07:00Z Apr 25; whale-pact-v3 awaiting FW params + OPERATOR APPROVAL
 - Blockers: Skills PR #350 awaiting arc0btc re-review; whale-pact needs approval
 - Wallet: locked (CLIENT_PRIVATE_KEY / direct BIP-322 signing working)
@@ -7,4 +7,5 @@
 - Mode: peacetime
 - Next: Wake ~06:58Z Apr 25 — HB + file bitcoin-macro AT 07:00Z (T1 live data)
 - Signal plan: bitcoin-macro at 07:00Z; quantum at 08:00Z
-- daily_count: 4; streak: 31; nonce: 69; PR #352 open for review
+- daily_count: 4; streak: 31; nonce: 69
+- PRs open: #340 (safe-gate), #350 (hodlmm-flow tests), #351 (discussions), #352 (workflow guide)
