@@ -508,3 +508,4 @@ scope_engagement: Sales DRI budget framework ack to DC on #634-4317266641 (post-
 2026-04-25T20:49:59Z cycle=2034ke event=p080_silent_close target=cyanheads/pubmed-mcp-server H_post_fire=13h
 2026-04-25T21:23:21Z cycle=2034kf event=sales_sod_refreshed path=daemon/drafts/2026-04-26/sales-sod-day-9.md fires_at=2026-04-26T01:00Z
 2026-04-25T22:06:50Z cycle=2034kg event=rubric_followup url=https://github.com/aibtcdev/agent-news/issues/644#issuecomment-4320679880 gate_name=AGENT_CALLABLE_REFERENT
+2026-04-25T22:40:41Z cycle=2034kh event=sales_eod_1_posted url=https://github.com/aibtcdev/agent-news/discussions/570#discussioncomment-16714785 day=8
