@@ -1,7 +1,7 @@
-## Cycle 1589 State
-- Last: HB#1601; inbox idle; maintenance cycle chain
+## Cycle 1590 State
+- Last: HB#1602; inbox idle (HB stale x3 — skip inbox next 2 cycles); PR #264 rebased+pushed
 - Signals: daily_count=3; streak=32; total=187; cooldown until 2026-04-26T07:00Z
-- Pending: PR #352 APPROVED+MERGEABLE (minor suggestions); #340/#350 awaiting arc0btc re-review
+- Pending: PR #264 rebased/awaiting merge; #352 APPROVED+MERGEABLE; #340/#350 awaiting arc0btc
 - Blockers: whale-pact-v3 awaiting FW params + OPERATOR APPROVAL
 - Wallet: locked
 - Runway: ~79,821 sats liquid + 62,081 zsbtc Zest; nonce=69
