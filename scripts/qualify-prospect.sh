@@ -40,6 +40,35 @@ owner="${repo%%/*}"
 
 echo "=== Prospect: $repo ==="
 
+# === Component 4: Shared DNC fetch (fail-closed) ===
+# Per Sales-Distribution Shared Ops v0.1 #650-4320194803, canonical DNC list is
+# https://raw.githubusercontent.com/Robotbot69/aibtc-distribution-log/main/DNC.md
+# Fail-closed: any fetch error → abort with no verdict.
+DNC_URL="https://raw.githubusercontent.com/Robotbot69/aibtc-distribution-log/main/DNC.md"
+DNC_CONTENT=$(curl -fsS --max-time 8 "$DNC_URL" 2>/dev/null || echo "")
+if [[ -z "$DNC_CONTENT" ]]; then
+  echo "ERROR: canonical DNC.md fetch failed (fail-closed; cannot qualify without DNC check)" >&2
+  exit 3
+fi
+
+# Parse explicit per-agent opt-outs (table rows after "## Explicit opt-outs")
+dnc_handles=$(echo "$DNC_CONTENT" | awk '
+  /^## Explicit opt-outs/ {start=1; next}
+  /^##/ && start {start=0}
+  start && /^\|/ && !/^\| —/ && !/^\| Agent/ && !/^\|---/ {
+    gsub(/^\|[[:space:]]*/, ""); split($0, a, "|"); gsub(/[[:space:]]/, "", a[1]);
+    if (a[1] != "") print a[1]
+  }
+')
+# Also extract DRI-peer + staff rule-based handles (Component 4 cross-channel rule)
+rule_handles="rising-leviathan pbtc21 whoabuddy cedarxyz secret-mars Robotbot69"
+
+if echo "$dnc_handles $rule_handles" | grep -wq "$owner"; then
+  echo "DNC HIT: owner '$owner' is on canonical DNC list — SKIP" >&2
+  exit 2
+fi
+# end DNC fail-closed block
+
 # Fetch repo + owner data
 repo_json=$(gh api "repos/$repo" 2>/dev/null || echo '{}')
 owner_json=$(gh api "users/$owner" 2>/dev/null || echo '{}')
