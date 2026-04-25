@@ -2,6 +2,21 @@
 
 > Active pitfalls and patterns. Resolved/reference items in learnings-resolved.md.
 
+## briefing 0/3 false-negative — strict-format proof line dependency (cycle 2034jn — 2026-04-25)
+
+`scripts/sales-status.sh` (called by `briefing.sh`) counts daily proofs by parsing strict-format lines:
+`- ISO_TIMESTAMP | PROSPECT_NAME | CHANNEL | direction | URL | summary` (5 pipe separators, 6 fields, leading `-` bullet).
+
+Without these strict lines the briefing reports `Proofs today: 0/3` and `Urgency: OK — time remaining` even when 3 proofs landed — a false-negative that masks an actual unlock.
+
+My Apr 25 `daemon/sales-proofs/2026-04-25.md` was written in narrative format (markdown headers + per-proof bullets) which is human-readable but doesn't match the awk regex. Briefing showed 0/3 for ~2h post-fire until I appended the strict-format block at 09:30Z.
+
+**Rule: every `daemon/sales-proofs/YYYY-MM-DD.md` MUST include a strict-format block.** The narrative section is fine but is human-only — the strict block is the machine-counted truth. Add 3 strict-format lines per fire as part of the post-fire ritual, immediately after writing the human narrative section.
+
+**Backfill TODO when low on real Sales work:** Apr 23 + Apr 24 proof files are also missing strict-format blocks; same pattern, 0/3 in their daily briefing. Backfilling makes future history-look-up reliable.
+
+**How to apply:** Update `scripts/fire-queue-YYYY-MM-DD.sh` template to emit the strict-format lines automatically when a fire succeeds. Currently the script only logs URLs to `*.md.firelog`; should also append the strict-format proof line atomically. That eliminates the manual step.
+
 ## Talent Protocol / grinder-farm anti-prospect pattern (cycle 2034in — 2026-04-24)
 
 Scouted `Earnwithalee7890/StacksRank` for Apr 25 queue. Looked strong at surface level: "ultimate reputation & DeFi platform for Stacks Builders", 3 stars, 8 topics including `clarity-lang + leather-wallet + reputation`, Clarity 3 contracts, live `stacks-rank.vercel.app` homepage, fresh commits Apr 23.
