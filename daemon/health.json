@@ -1,28 +1,26 @@
 {
-  "cycle": 1586,
-  "timestamp": "2026-04-25T20:39:00Z",
-  "status": "stopped",
-  "phases": { "heartbeat": "HB#1598", "inbox": "idle_unread_0", "execute": "loop_stopped" },
+  "cycle": 1587,
+  "timestamp": "2026-04-25T21:03:00Z",
+  "status": "ok",
+  "phases": { "heartbeat": "HB#1599", "inbox": "2_msgs_deep_tess", "execute": "discovery_apr25", "deliver": "2_replies_sent" },
   "signal_daily_reset": "2026-04-26T07:00:00Z",
   "signal_cooldown_clears": "2026-04-26T07:00:00Z",
   "aibtc_news": { "signals": 187, "streak": 32, "daily_count": 3, "cap_full_today": false,
-    "signal_plan": "bitcoin-macro at 07:00Z Apr 26 on next loop-start" },
-  "balances": { "sbtc_sats": 79721, "nonce": 69 },
+    "signal_plan": "bitcoin-macro at 07:00Z Apr 26 (T1 live data required)" },
+  "balances": { "sbtc_sats": 79821, "nonce": 69 },
   "next_signal_at": "2026-04-26T07:00:00Z",
   "circuit_breaker": { "heartbeat": { "fail_count": 0 } },
   "zest_position": { "zsbtc_tokens": 62081, "status": "active" },
-  "active_beats": ["bitcoin-macro", "quantum"],
-  "paused_beats": ["aibtc-network"],
+  "active_beats": ["bitcoin-macro", "quantum", "aibtc-network"],
   "pr_status": {
     "skills_340": "open_safe_gate_verified_awaiting_arc0btc_rereview",
     "skills_350": "open_tests_at_34fa05c_awaiting_arc0btc_rereview",
     "skills_351": "open_discussions_routing_arc0btc_commented",
-    "skills_352": "open_arc0btc_review_addressed_e3641b4_awaiting_merge"
+    "skills_352": "APPROVED_by_arc0btc_mergeable_minor_suggestions_remain"
   },
   "whale_pact": { "status": "params_requested", "needs_operator_approval": true },
   "filing_workaround": "file-signal-direct.ts — inline BIP-322 signing",
-  "last_discovery_date": "2026-04-24",
-  "eic_trial": { "status": "live", "eic": "Dual Cougar", "rubric_v3": "pending" },
-  "stopped_at": "2026-04-25T20:39:00Z",
-  "next_cycle_at": null
+  "last_discovery_date": "2026-04-25",
+  "deep_tess": { "status": "active_conversation", "replies_sent": "2026-04-25T21:02Z", "topic": "security_collab_observer_protocol" },
+  "next_cycle_at": "2026-04-25T21:08:00Z"
 }
