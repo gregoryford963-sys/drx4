@@ -1,7 +1,7 @@
 {
   "version": "1.1",
   "note": "14d-active slice; full archive in sales-pipeline-archive.json",
-  "last_updated": "2026-04-23T02:57:00Z",
+  "last_updated": "2026-04-25T09:28:00Z",
   "seat": {
     "role": "Classifieds Sales DRI",
     "holder": "Secret Mars (@secret-mars)",
@@ -4103,6 +4103,114 @@
         "new PR or open issue",
         "new @depth-protocol/sdk version",
         "maintainer Twitter activity"
+      ]
+    },
+    {
+      "id": "p070",
+      "name": "bitrouter",
+      "repo": "bitrouter/bitrouter",
+      "stage": "pitched",
+      "sourced_by": "sm-direct",
+      "ab_bucket": "apr24-direct-pitch",
+      "last_touch_at": "2026-04-24T07:02:14Z",
+      "touches": [
+        {
+          "at": "2026-04-24T07:02:14Z",
+          "channel": "github_issue",
+          "direction": "outbound",
+          "summary": "Direct pitch 3k/7d — first-touch via fresh GH issue",
+          "proof_url": "https://github.com/bitrouter/bitrouter/issues/393"
+        }
+      ]
+    },
+    {
+      "id": "p074",
+      "name": "mbeato/APIMesh",
+      "repo": "mbeato/APIMesh",
+      "stage": "pitched",
+      "sourced_by": "sm-direct",
+      "ab_bucket": "apr24-direct-pitch",
+      "last_touch_at": "2026-04-24T07:02:16Z",
+      "touches": [
+        {
+          "at": "2026-04-24T07:02:16Z",
+          "channel": "github_issue",
+          "direction": "outbound",
+          "summary": "Direct pitch 3k/7d — first-touch via fresh GH issue",
+          "proof_url": "https://github.com/mbeato/APIMesh/issues/2"
+        }
+      ]
+    },
+    {
+      "id": "p075",
+      "name": "nicholas-source/sbtc-pay",
+      "repo": "nicholas-source/sbtc-pay",
+      "stage": "pitched",
+      "sourced_by": "sm-direct",
+      "ab_bucket": "apr24-direct-pitch",
+      "last_touch_at": "2026-04-24T07:02:18Z",
+      "touches": [
+        {
+          "at": "2026-04-24T07:02:18Z",
+          "channel": "github_issue",
+          "direction": "outbound",
+          "summary": "Direct pitch 3k/7d — first-touch via fresh GH issue",
+          "proof_url": "https://github.com/nicholas-source/sbtc-pay/issues/10"
+        }
+      ]
+    },
+    {
+      "id": "p079",
+      "name": "provos/ironcurtain",
+      "repo": "provos/ironcurtain",
+      "stage": "pitched",
+      "sourced_by": "sm-direct",
+      "ab_bucket": "apr25-direct-pitch",
+      "last_touch_at": "2026-04-25T07:00:03Z",
+      "touches": [
+        {
+          "at": "2026-04-25T07:00:03Z",
+          "channel": "github_issue",
+          "direction": "outbound",
+          "summary": "Direct pitch 3k/7d — first-touch via fresh GH issue (secure agent runtime, Apache-2.0 167⭐)",
+          "proof_url": "https://github.com/provos/ironcurtain/issues/204"
+        }
+      ]
+    },
+    {
+      "id": "p080",
+      "name": "cyanheads/pubmed-mcp-server",
+      "repo": "cyanheads/pubmed-mcp-server",
+      "stage": "pitched",
+      "sourced_by": "sm-direct",
+      "ab_bucket": "apr25-direct-pitch",
+      "last_touch_at": "2026-04-25T07:00:05Z",
+      "touches": [
+        {
+          "at": "2026-04-25T07:00:05Z",
+          "channel": "github_issue",
+          "direction": "outbound",
+          "summary": "Direct pitch 3k/7d — first-touch via fresh GH issue (MCP NCBI/PubMed/MeSH, Apache-2.0 87⭐)",
+          "proof_url": "https://github.com/cyanheads/pubmed-mcp-server/issues/45"
+        }
+      ]
+    },
+    {
+      "id": "p081",
+      "name": "memorycrystal/memorycrystal",
+      "repo": "memorycrystal/memorycrystal",
+      "stage": "pitched",
+      "sourced_by": "sm-direct",
+      "ab_bucket": "apr25-direct-pitch",
+      "last_touch_at": "2026-04-25T07:00:08Z",
+      "touches": [
+        {
+          "at": "2026-04-25T07:00:08Z",
+          "channel": "github_issue",
+          "direction": "outbound",
+          "summary": "Direct pitch 3k/7d — first-touch via fresh GH issue (OpenClaw + MCP agent memory, MIT 9⭐)",
+          "proof_url": "https://github.com/memorycrystal/memorycrystal/issues/2"
+        }
       ]
     }
   ],

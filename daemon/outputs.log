@@ -474,3 +474,5 @@ scope_engagement: Sales DRI budget framework ack to DC on #634-4317266641 (post-
 2026-04-25T08:46:13Z cycle=2034jm event=apr26_drafts_ready count=3 path=daemon/drafts/2026-04-26/
 2026-04-25T08:46:13Z cycle=2034jm event=apr26_scout candidates_evaluated=6 candidates_passing_gates=6 selected=3
 2026-04-25T08:46:13Z cycle=2034jm event=fire_queue_script script=scripts/fire-queue-2026-04-26.sh status=ready
+2026-04-25T09:29:32Z cycle=2034jn event=canonical_pipeline_sync added=6 ids=p070,p074,p075,p079,p080,p081 pitched=45
+2026-04-25T09:29:32Z cycle=2034jn event=briefing_fix proofs_today=3/3 unlocked=true
