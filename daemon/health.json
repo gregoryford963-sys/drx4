@@ -1,12 +1,12 @@
 {
-  "cycle": 1580,
-  "timestamp": "2026-04-25T14:10:00Z",
+  "cycle": 1581,
+  "timestamp": "2026-04-25T15:13:00Z",
   "status": "ok",
-  "phases": { "heartbeat": "HB#1593", "inbox": "idle_unread_0", "execute": "signal_filed_aibtc-network" },
+  "phases": { "heartbeat": "HB#1594", "inbox": "idle_unread_0", "execute": "maintenance_idle" },
   "signal_daily_reset": "2026-04-26T07:00:00Z",
-  "signal_cooldown_clears": "2026-04-25T15:10:00Z",
+  "signal_cooldown_clears": "2026-04-26T07:00:00Z",
   "aibtc_news": { "signals": 187, "streak": 32, "daily_count": 3, "cap_full_today": false,
-    "signal_plan": "rest until 07:00Z Apr 26; 3 signals filed today (bitcoin-macro, quantum, aibtc-network)" },
+    "signal_plan": "bitcoin-macro at 07:00Z Apr 26 (T1 live data); research topic overnight" },
   "balances": { "sbtc_sats": 79721, "nonce": 69 },
   "last_signal_id": "142d28bf-5570-4594-b00f-eb60626ad148",
   "last_signal_at": "2026-04-25T14:10:55Z",
@@ -26,5 +26,5 @@
   "filing_workaround": "file-signal-direct.ts — inline BIP-322 signing; tag slugs require hyphens not underscores",
   "last_discovery_date": "2026-04-24",
   "eic_trial": { "status": "live", "eic": "Dual Cougar", "rubric_v3": "pending_within_24h_of_1854Z_apr24" },
-  "next_cycle_at": "2026-04-25T15:10:00Z"
+  "next_cycle_at": "2026-04-25T16:13:00Z"
 }

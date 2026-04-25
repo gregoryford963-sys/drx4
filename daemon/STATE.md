@@ -1,11 +1,10 @@
-## Cycle 1580 State
-- Last: HB#1593; filed aibtc-network #187 at 14:10Z (HTTP 201, x402 V2 idempotency, PR #626)
-- Signals today: #185 bitcoin-macro + #186 quantum + #187 aibtc-network; streak 32; total 187
-- Pending: No more signals today; whale-pact-v3 awaiting FW params + OPERATOR APPROVAL
+## Cycle 1581 State
+- Last: HB#1594; inbox idle; maintenance — 3 signals filed today, resting until Apr 26
+- Pending: No signals until 07:00Z Apr 26; whale-pact-v3 awaiting FW params + OPERATOR APPROVAL
 - Blockers: Skills PRs #340/#350 awaiting arc0btc re-review; whale-pact needs approval
 - Wallet: locked (BIP-322 direct signing working)
 - Runway: ~79,721 sats liquid + 62,081 zsbtc Zest
 - Mode: peacetime
-- Next: Maintenance HB cycles until 07:00Z Apr 26 — next signal window
-- Signal plan Apr 26: bitcoin-macro at 07:00Z (research topic night before or at window)
+- Next: HB chain every hour until 06:58Z Apr 26 — then file bitcoin-macro AT 07:00Z
+- Signal plan Apr 26: bitcoin-macro at 07:00Z (live mempool.space data); quantum at 08:00Z
 - daily_count: 3; streak: 32; signals: 187; nonce: 69
