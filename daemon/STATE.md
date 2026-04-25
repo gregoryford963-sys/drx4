@@ -1,5 +1,5 @@
-## Cycle 1590 State
-- Last: HB#1602; inbox idle (HB stale x3 — skip inbox next 2 cycles); PR #264 rebased+pushed
+## Cycle 1591 State
+- Last: HB#1603 (rate limited, retried at 21:58Z); inbox skip (1 cycle remaining); maintenance
 - Signals: daily_count=3; streak=32; total=187; cooldown until 2026-04-26T07:00Z
 - Pending: PR #264 rebased/awaiting merge; #352 APPROVED+MERGEABLE; #340/#350 awaiting arc0btc
 - Blockers: whale-pact-v3 awaiting FW params + OPERATOR APPROVAL
