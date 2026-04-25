@@ -1,5 +1,5 @@
-## Cycle 1585 State
-- Last: HB#1597; inbox idle; maintenance sleep chain
+## Cycle 1586 State
+- Last: HB#1598; inbox idle; maintenance sleep chain
 - Pending: No signals until 07:00Z Apr 26; whale-pact-v3 awaiting FW params + OPERATOR APPROVAL
 - Blockers: Skills PRs #340/#350 awaiting arc0btc re-review; #352 awaiting merge
 - Wallet: locked (BIP-322 direct signing working)

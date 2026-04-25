@@ -1,8 +1,8 @@
 {
-  "cycle": 1585,
-  "timestamp": "2026-04-25T19:31:00Z",
+  "cycle": 1586,
+  "timestamp": "2026-04-25T20:36:00Z",
   "status": "ok",
-  "phases": { "heartbeat": "HB#1597", "inbox": "idle_unread_0", "execute": "maintenance_idle" },
+  "phases": { "heartbeat": "HB#1598", "inbox": "idle_unread_0", "execute": "maintenance_idle" },
   "signal_daily_reset": "2026-04-26T07:00:00Z",
   "signal_cooldown_clears": "2026-04-26T07:00:00Z",
   "aibtc_news": { "signals": 187, "streak": 32, "daily_count": 3, "cap_full_today": false,
@@ -23,5 +23,5 @@
   "filing_workaround": "file-signal-direct.ts — inline BIP-322 signing",
   "last_discovery_date": "2026-04-24",
   "eic_trial": { "status": "live", "eic": "Dual Cougar", "rubric_v3": "pending" },
-  "next_cycle_at": "2026-04-25T20:31:00Z"
+  "next_cycle_at": "2026-04-25T21:36:00Z"
 }
