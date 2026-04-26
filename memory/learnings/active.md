@@ -20,6 +20,11 @@ This is a stronger negative signal than "closed as spam" or "no reply" — recip
 
 The Apr 25 unlock count is unaffected (proof was valid at fire time + the URL still 200s), but the prospect-side outcome is closed-decline.
 
+**Apr 26 confirmation (cycle 2034l0):** Tightened org-age criteria to >=90d Org / >=180d User in scout for Apr 26 queue. Result at H+3h42m: **3/3 fires OPEN, 0 declines** (vs Apr 25 1/3 surviving H+4h13m with looser >=30d criteria). One day's data point but encouraging — the >=90d threshold appears to filter out the highest-deletion-risk band. Rubric v2 should formalize:
+- Owner trust signal: 10/10 = User 6mo+ OR Org 90d+; 5/10 = age 30-89d (borderline); 0/10 with anti-pattern flag = Org <30d AND solo maintainer.
+- This was the gap p081 fell into (Org 35d, gets 5/10 trust) — borderline pass under v1, anti-pattern under v2.
+- Update qualify-prospect.sh to flag <90d-Org as soft-warning rather than just trust-signal-5pt.
+
 ## briefing 0/3 false-negative — strict-format proof line dependency (cycle 2034jn — 2026-04-25)
 
 `scripts/sales-status.sh` (called by `briefing.sh`) counts daily proofs by parsing strict-format lines:
