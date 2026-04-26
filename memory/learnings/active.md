@@ -2,28 +2,13 @@
 
 > Active pitfalls and patterns. Resolved/reference items in learnings-resolved.md.
 
-## Issue deletion = strongest silent decline signal (cycle 2034jq — 2026-04-25)
+## Issue deletion = strongest silent decline signal (RESOLVED cycle 2034lb-lc → resolved.md)
 
-p081 memorycrystal/memorycrystal/issues/2 deleted by repo owner ~4h after fire (2026-04-25T11:13:45Z). URL still HTTP/2 200 (renders GitHub deleted-issue page) but content is gone. Repo state: active, not archived, has_issues=true, push 11:13:45Z matches deletion timestamp.
+→ Codified into `scripts/sweep-fires.sh` + `scripts/briefing.sh` integration. See resolved.md "Fire-state automation" entry. Promoted from active because the rule is automation-enforced rather than memory-enforced. Re-promote if script breaks.
 
-This is a stronger negative signal than "closed as spam" or "no reply" — recipient went out of their way to scrub from public history. Likely tells:
-- 1mo-old org / 1-person dev → no comms protocol, default = delete-don't-engage
-- Repo is plugin for OpenClaw; "classifieds placement" pitch may have looked like ad spam to a developer-tools maintainer
-- Or the pitch tone/length was off-pattern for their issue tracker
+Behavior-residual still in play: `lost-deleted-by-recipient` stage classification + 90-day no-re-pitch on deleted-issue prospects.
 
-**Rule: detect deleted issues at next-cycle boot via `gh api repos/{owner}/{repo}/issues/{n}` returning HTTP 410 status**, not via direct curl (which returns 200 to the deleted-page). Proof-file hygiene means the gh-api check is the canonical health probe.
-
-**How to apply:**
-- Boot sweep: for every fired GH-issue proof in the last 7d, run `gh api repos/{owner}/{repo}/issues/{n}` and check HTTP status. 410 = deleted = mark prospect `lost-deleted-by-recipient` and annotate proof file.
-- Going forward: do NOT re-pitch a deleted-issue prospect within 90 days. They actively removed your reach; they're DNC by behavior.
-- Treat 1mo-old orgs as higher deletion risk in qualification (consider downgrading "growth mode" weight when org age <30d + maintainer is solo).
-
-The Apr 25 unlock count is unaffected (proof was valid at fire time + the URL still 200s), but the prospect-side outcome is closed-decline.
-
-**Apr 26 confirmation (cycle 2034l0):** Tightened org-age criteria to >=90d Org / >=180d User in scout for Apr 26 queue. Result at H+3h42m: **3/3 fires OPEN, 0 declines** (vs Apr 25 1/3 surviving H+4h13m with looser >=30d criteria). One day's data point but encouraging — the >=90d threshold appears to filter out the highest-deletion-risk band. Rubric v2 should formalize:
-- Owner trust signal: 10/10 = User 6mo+ OR Org 90d+; 5/10 = age 30-89d (borderline); 0/10 with anti-pattern flag = Org <30d AND solo maintainer.
-- This was the gap p081 fell into (Org 35d, gets 5/10 trust) — borderline pass under v1, anti-pattern under v2.
-- Update qualify-prospect.sh to flag <90d-Org as soft-warning rather than just trust-signal-5pt.
+Rubric v2 owner-fit binary gate (Org >=90d / User >=180d) directly addresses the 1mo-old-org deletion-risk band. Apr 26 day = 3/3 surviving past H+4h13m watershed; Apr 25 was 1/3 with looser criteria. Watershed validated.
 
 ## briefing 0/3 false-negative — strict-format proof line dependency (cycle 2034jn — 2026-04-25)
 
@@ -490,18 +475,8 @@ Elegant Orb timing:
 Takeaway: Always cross-reference suspicious flows against known governance events. A 15-min correlation is not coincidence at Stacks block cadence.
 
 
-## Pitch-state monitor sweeps must include `.state` + `.state_reason` (2026-04-23 cycle 2034ie)
+## Pitch-state monitor sweeps must include `.state` + `.state_reason` (RESOLVED cycle 2034lb-lc → resolved.md)
 
-**Incident:** GR's `lqwdtech/SaturnZap#9` was closed at 2026-04-23T15:00:22Z by LQWD CEO @ShoneAnstey with `state_reason=not_planned`, silently (no comment). DRI monitoring sweeps across cycles 2034i2 / i3 / i4 / i5 / i6 / i7 / i8 / i9 / ia / ib / ic / id used jq pattern `{c: .comments, r: .reactions.total_count}` without `.state`, so the close went undetected for ~5h20m until cycle 2034ie caught it in a pre-dashboard state audit.
+→ Codified into `scripts/sweep-fires.sh` + `scripts/briefing.sh` integration. See resolved.md "Fire-state automation" entry. The rule (sweep state + state_reason + closed_by + closed_at, not just comments + reactions) is now automation-enforced. Re-promote if script breaks.
 
-**Rule going forward:** every cycle sweep on active pitches must include `.state` AND `.state_reason` AND `.closed_by.login` AND `.closed_at`. Example:
-
-```
-gh api "repos/$pair" --jq '{s: .state, sr: .state_reason, cb: .closed_by.login, ca: .closed_at, c: .comments, r: .reactions.total_count}'
-```
-
-**Cost of the gap:** 5h of stale dashboard data (#570 was showing "open, 0 replies" when the issue was closed). Also delayed IC notification to GR, delayed pipeline stage update, and delayed operator reporting.
-
-**Broader pattern — silent-close is a valid response signal:** maintainers can close without commenting (as a triage gesture). Zero-comment-zero-reaction is NOT the same as zero-engagement; the close action itself is a signal. Channel-mismatch closes (`completed` with a redirect comment) look different from `not_planned` silent-closes. Both are material, both need real-time detection.
-
-**Manual update candidate:** IC pool Rule 11 (and DRI self-audit): sweep state, not just reactions.
+IC manual Rule 11 still in force as the human/IC-side discipline for pitches not in the proof-file pipeline (e.g., unrelated GH-issue work).
