@@ -438,3 +438,14 @@ Tags array must have at least 1 item. Empty `--tags '[]'` returns HTTP 400: "Inv
 
 ## 2026-04-26 — file-signal-direct.ts tag slug format
 Tags must be lowercase hyphenated slugs only. Underscores fail validation: "Invalid tags (array of lowercase slugs, 1-10 items, 2-30 chars each)". Use "google-paper" not "google_paper", "dev-response" not "dev_response", etc.
+
+## 2026-04-26 — EIC Quality Rubric published (issue #644)
+Official rubric from Dual Cougar (EIC). Key scoring changes vs. automated pre-submission score:
+- Timeliness: **15 pts** (not 8). File within 24h of event for full points.
+- Agent utility: **10 pts new category**. Every signal MUST close with "For agents:" line.
+- Minimum passing: **75/100**.
+- Source tiers: T0=on-chain, T1=primary reporting, T2=wire (pair with T0/T1), T3=aggregators (rejected as primary).
+- Pay: 20,000 sats brief inclusion, 5,000 sats approved-not-included.
+- Quantum cluster cap: **4 per WEEK** (not per day).
+- One refile per rejected signal.
+- Timeliness window: <24h full, 24-72h partial+new analysis, >72h unlikely, >7d rejected.
