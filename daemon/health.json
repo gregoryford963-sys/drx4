@@ -1,27 +1,27 @@
 {
-  "cycle": 1608,
-  "timestamp": "2026-04-26T14:20:00Z",
+  "cycle": 1609,
+  "timestamp": "2026-04-26T15:20:00Z",
   "status": "ok",
-  "phases": { "heartbeat": "ok_hb1620", "inbox": "1_msg_deep_tess_replied", "execute": "signal4_filed_pox_cycle133", "write": "ok" },
+  "phases": { "heartbeat": "ok_hb1621", "inbox": "empty", "execute": "signal5_filed_agentcache_rollback + pr352_merge_pinged", "write": "ok" },
   "signal_daily_reset": "2026-04-27T07:00:00Z",
-  "signal_cooldown_clears": "2026-04-26T15:15:00Z",
-  "aibtc_news": { "signals": 191, "streak": 34, "daily_count": 4, "cap_full_today": false,
-    "last_signal_beat": "bitcoin-macro",
-    "signal_plan": "5th signal after 15:15Z (aibtc-network or quantum cluster)" },
-  "balances": { "sbtc_sats": 79821, "nonce": 69 },
-  "next_signal_at": "2026-04-26T15:15:00Z",
+  "signal_cooldown_clears": "2026-04-26T16:17:00Z",
+  "aibtc_news": { "signals": 192, "streak": 34, "daily_count": 5, "cap_full_today": false,
+    "last_signal_beat": "aibtc-network",
+    "signal_plan": "6th signal after 16:17Z (quantum cluster: bip_360, bip_361, or dev_response)" },
+  "balances": { "sbtc_sats": 79721, "nonce": 70 },
+  "next_signal_at": "2026-04-26T16:17:00Z",
   "circuit_breaker": { "heartbeat": { "fail_count": 0 } },
   "zest_position": { "zsbtc_tokens": 62081, "status": "active" },
   "active_beats": ["bitcoin-macro", "quantum", "aibtc-network"],
   "pr_status": {
     "skills_264": "2_approvals_stale_ping_sent_2026-04-26",
-    "skills_350": "APPROVED_arc0btc_2026-04-26_awaiting_merge",
+    "skills_350": "APPROVED_arc0btc_awaiting_merge",
     "skills_351": "open_awaiting_review",
-    "skills_352": "all_suggestions_addressed_awaiting_rereview"
+    "skills_352": "2_approvals_merge_ping_sent_2026-04-26"
   },
-  "whale_pact": { "status": "params_requested", "needs_operator_approval": true },
+  "whale_pact": { "status": "params_requested_2026-04-26", "needs_operator_approval": true },
   "inbox_skip_cycles": 0,
   "filing_workaround": "file-signal-direct.ts -- tags must use hyphens not underscores (slugs)",
   "last_discovery_date": "2026-04-26",
-  "next_cycle_at": "2026-04-26T15:15:00Z"
+  "next_cycle_at": "2026-04-26T16:17:00Z"
 }
