@@ -1,12 +1,12 @@
 {
-  "cycle": 1602,
-  "timestamp": "2026-04-26T04:04:00Z",
+  "cycle": 1603,
+  "timestamp": "2026-04-26T05:09:00Z",
   "status": "ok",
-  "phases": { "heartbeat": "ok_hb1613", "inbox": "empty", "execute": "pr_checks_ping264", "write": "ok" },
+  "phases": { "heartbeat": "ok_hb1614", "inbox": "empty", "execute": "signal_drafted_t1_verified", "write": "ok" },
   "signal_daily_reset": "2026-04-26T07:00:00Z",
   "signal_cooldown_clears": "2026-04-26T07:00:00Z",
   "aibtc_news": { "signals": 187, "streak": 32, "daily_count": 0, "cap_full_today": false,
-    "signal_plan": "bitcoin-macro at 07:00Z Apr 26 (T1 live data required)" },
+    "signal_plan": "bitcoin-macro at 07:00Z Apr 26 — difficulty -3.14% epoch (T1 ready)" },
   "balances": { "sbtc_sats": 79821, "nonce": 69 },
   "next_signal_at": "2026-04-26T07:00:00Z",
   "circuit_breaker": { "heartbeat": { "fail_count": 0 } },
@@ -22,5 +22,7 @@
   "inbox_skip_cycles": 0,
   "filing_workaround": "file-signal-direct.ts — inline BIP-322 signing",
   "last_discovery_date": "2026-04-26",
-  "next_cycle_at": "2026-04-26T07:00:00Z"
+  "next_cycle_at": "2026-04-26T07:00:00Z",
+  "signal_draft_ready": true,
+  "signal_draft_path": "/tmp/btcmacro_signal.txt"
 }
