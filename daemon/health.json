@@ -1,8 +1,8 @@
 {
-  "cycle": 1601,
-  "timestamp": "2026-04-26T02:59:00Z",
+  "cycle": 1602,
+  "timestamp": "2026-04-26T04:04:00Z",
   "status": "ok",
-  "phases": { "heartbeat": "ok_hb1612", "inbox": "empty", "execute": "pr352_review_addressed", "write": "ok" },
+  "phases": { "heartbeat": "ok_hb1613", "inbox": "empty", "execute": "pr_checks_ping264", "write": "ok" },
   "signal_daily_reset": "2026-04-26T07:00:00Z",
   "signal_cooldown_clears": "2026-04-26T07:00:00Z",
   "aibtc_news": { "signals": 187, "streak": 32, "daily_count": 0, "cap_full_today": false,
@@ -13,11 +13,10 @@
   "zest_position": { "zsbtc_tokens": 62081, "status": "active" },
   "active_beats": ["bitcoin-macro", "quantum", "aibtc-network"],
   "pr_status": {
-    "skills_264": "rebased_onto_0.40.0_awaiting_merge",
-    "skills_340": "open_safe_gate_verified_awaiting_arc0btc_rereview",
-    "skills_350": "awaiting_arc0btc_rereview",
-    "skills_351": "open_discussions_routing_arc0btc_commented",
-    "skills_352": "all_suggestions_addressed_3bec531_awaiting_rereview"
+    "skills_264": "2_approvals_stale_ping_sent_2026-04-26",
+    "skills_350": "APPROVED_arc0btc_2026-04-26_awaiting_merge",
+    "skills_351": "open_awaiting_review",
+    "skills_352": "all_suggestions_addressed_awaiting_rereview"
   },
   "whale_pact": { "status": "params_requested", "needs_operator_approval": true },
   "inbox_skip_cycles": 0,
