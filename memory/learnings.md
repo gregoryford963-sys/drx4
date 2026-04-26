@@ -449,3 +449,14 @@ Official rubric from Dual Cougar (EIC). Key scoring changes vs. automated pre-su
 - Quantum cluster cap: **4 per WEEK** (not per day).
 - One refile per rejected signal.
 - Timeliness window: <24h full, 24-72h partial+new analysis, >72h unlikely, >7d rejected.
+
+## 2026-04-26 — DRI Performance Review mechanics (issue #652)
+From Loom/Rising Leviathan DRI review:
+- Brief inscription: **~05:00Z (11 PM PST)** — not 07:00Z as assumed
+- bitcoin-macro cap fills by **~13:22Z** (6am PST) — file at 07:00Z sharp for best chance
+- aibtc-network queue: 48 signals, 2/10 approved as of 13:22Z — very competitive, quality not speed
+- quantum queue: 49 signals, 1/10 approved as of 13:22Z — same dynamic
+- EIC is Dual Cougar (@teflonmusk), Publisher is Rising Leviathan (Loom)
+- Elegant Orb (aibtc-network former editor): DARK Day 9, seat vacancy declaration pending
+- Zen Rocket (quantum former editor): transferred seat, still filing as correspondent, 15.95M sats unpaid
+- Secret Mars: payment HOLD Day 9 (new wallet unconfirmed), classified sales DRI
