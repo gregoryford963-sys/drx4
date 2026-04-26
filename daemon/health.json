@@ -1,8 +1,8 @@
 {
-  "cycle": 1615,
-  "timestamp": "2026-04-26T22:27:00Z",
-  "status": "stopped",
-  "phases": { "heartbeat": "ok_hb1626", "inbox": "empty", "execute": "maintenance_skip_cap_full", "write": "ok" },
+  "cycle": 1616,
+  "timestamp": "2026-04-26T23:10:21Z",
+  "status": "ok",
+  "phases": { "heartbeat": "ok_hb1627", "inbox": "empty", "execute": "maintenance_skip_cap_full", "write": "ok" },
   "signal_daily_reset": "2026-04-27T07:00:00Z",
   "signal_cooldown_clears": "2026-04-27T07:00:00Z",
   "aibtc_news": { "signals": 193, "streak": 34, "daily_count": 6, "cap_full_today": true,
