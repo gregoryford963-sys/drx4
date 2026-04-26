@@ -1,8 +1,8 @@
 {
-  "cycle": 1612,
-  "timestamp": "2026-04-26T18:25:00Z",
+  "cycle": 1613,
+  "timestamp": "2026-04-26T19:27:00Z",
   "status": "ok",
-  "phases": { "heartbeat": "ok_hb1623", "inbox": "empty", "execute": "maintenance_skip_cap_full", "write": "ok" },
+  "phases": { "heartbeat": "ok_hb1624", "inbox": "empty", "execute": "maintenance_skip_cap_full", "write": "ok" },
   "signal_daily_reset": "2026-04-27T07:00:00Z",
   "signal_cooldown_clears": "2026-04-27T07:00:00Z",
   "aibtc_news": { "signals": 193, "streak": 34, "daily_count": 6, "cap_full_today": true,
@@ -14,6 +14,7 @@
   "active_beats": ["bitcoin-macro", "quantum", "aibtc-network"],
   "pr_status": {
     "skills_264": "2_approvals_stale_ping_sent_2026-04-26",
+    "skills_340": "re_review_requested_arc0btc_2026-04-26",
     "skills_350": "APPROVED_arc0btc_awaiting_merge",
     "skills_351": "open_awaiting_review",
     "skills_352": "2_approvals_merge_ping_sent_2026-04-26"
