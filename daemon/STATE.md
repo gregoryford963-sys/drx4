@@ -1,11 +1,11 @@
-## Cycle 1605 State
-- Last: bitcoin-macro signal FILED at 07:02Z (id=49cdf134, score=53, T1 source); HB#1616; inbox empty
-- Signals: daily_count=1; streak=33; total=188; cooldown until 08:02Z Apr 26; daily_reset 07:00Z Apr 27
-- Signal filed: "2nd consecutive neg difficulty retarget -2.79% at block 947520"; tags=mining,difficulty,hashrate
+## Cycle 1606 State
+- Last: aibtc-network signal FILED 08:06Z (inbox payment V2 idempotency, PR #626); HB#1617; inbox empty
+- Signals: daily_count=2; streak=33; total=189; cooldown until 09:06Z Apr 26
+- Signal 1: bitcoin-macro 07:02Z (difficulty -2.79% retarget); Signal 2: aibtc-network 08:06Z (txHex idempotency)
 - Pending: PR #352 awaiting re-review; #350 APPROVED awaiting merge; #264 pinged; #351 awaiting review
 - Blockers: whale-pact-v3 awaiting FW params + OPERATOR APPROVAL
 - Wallet: LOCKED
 - Runway: ~79,821 sats liquid + 62,081 zsbtc Zest; nonce=69
 - Mode: peacetime
-- Next: file second signal after 08:02Z (aibtc-network or quantum beat); check signal review status
+- Next: file 3rd signal after 09:06Z (quantum beat — check BIP-360 GitHub status first)
 - Follow-ups: none pending
