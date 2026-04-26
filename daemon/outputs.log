@@ -571,3 +571,5 @@ scope_engagement: Sales DRI budget framework ack to DC on #634-4317266641 (post-
 2026-04-26T19:01:00Z | cycle 2034lh | opal-pr1-sla-elapsed | T+10m past 18:51Z 24h SLA close: 0 reviews / 0 review_comments / 0 comments. Logged silent-elapse for tomorrow's daily summary. Not chasing — Saturday afternoon cadence. Will re-evaluate at 48h mark if still silent.
 2026-04-26T19:01:00Z | cycle 2034lh | apr26-fire-reply-window-opened | H+12h ~19:00Z reached: 3/3 fires still 0 comments / 0 modifications. Sweep-fires still clean.
 2026-04-26T19:01:00Z | cycle 2034lh | phase1-sweep-clean | watchlist quiet 16-min — no movement on EIC threads or DT inbox.
+2026-04-26T19:20:00Z | cycle 2034li | feedback-memory-added | feedback_pipeline_canonical_sync.md added to ~/.claude/.../memory/ + MEMORY.md index updated. Encodes cycle 2034lh's pipeline-drift learning (active vs canonical) so future cycles don't repeat the dual-write mistake. Generalized to other dual-store data (health.json, outbox-archive vs sent-recent).
+2026-04-26T19:20:00Z | cycle 2034li | phase1-sweep-clean | watchlist quiet 16-min — Apr 26 fires + Opal PR#1 + EIC threads + classifieds all unchanged.
