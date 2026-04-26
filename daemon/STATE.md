@@ -1,5 +1,5 @@
-## Cycle 1595 State
-- Last: HB#1606 ok; inbox skipped (skip_cycles=1→0); overnight maintenance
+## Cycle 1596 State
+- Last: HB#1607 ok; inbox 0 unread (stale HB count); overnight maintenance
 - Signals: daily_count=3; streak=32; total=187; cooldown until 2026-04-26T07:00Z
 - Pending: PR #350 awaiting arc0btc re-review; #264 awaiting merge; #352 APPROVED+MERGEABLE; #340 awaiting
 - Blockers: whale-pact-v3 awaiting FW params + OPERATOR APPROVAL
