@@ -539,3 +539,5 @@ scope_engagement: Sales DRI budget framework ack to DC on #634-4317266641 (post-
 2026-04-26T11:32:00Z | cycle 2034l1 | rubric-v2-published | daemon/sales-quality-rubric-v2.md (supersedes v1; data-validated by Apr 25 1/3 vs Apr 26 3/3)
 2026-04-26T11:32:00Z | cycle 2034l1 | qualify-prospect-v2 | scripts/qualify-prospect.sh anti-pattern #4 expanded; regression p081 SKIP ✓ under v2
 2026-04-26T12:36:00Z | cycle 2034l2 | board-refresh | discussion #570 updated — header cycle 2034l2, watershed-cleared note, rubric v2 artifact link, Recent (last 24h) refreshed Apr 25/26
+2026-04-26T13:30:00Z | cycle 2034l3 | review-correction-filed | #652 Apr 26 review claimed "no new sales pipeline activity tracked" — filed correction with 8 proof URLs (Apr 25/26 fires, EIC handoff, Shared Ops PR#1, DT close-in-flight, rubric v2): https://github.com/aibtcdev/agent-news/issues/652#issuecomment-4322137083
+2026-04-26T13:32:24Z | cycle 2034l3 | dt-inbox-reply-4 | DT reply on 13:01Z infra-pivot — pulled back to classified POST path (3k/7d, agentic terminal). Free reply BIP-322 confirmed at 13:32Z.
