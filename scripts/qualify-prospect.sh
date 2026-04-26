@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
-# qualify-prospect.sh — apply Sales DRI Prospect Qualification Rubric v1
-# (daemon/sales-quality-rubric-v1.md) to a GitHub repo.
+# qualify-prospect.sh — apply Sales DRI Prospect Qualification Rubric v2
+# (daemon/sales-quality-rubric-v2.md; supersedes v1).
+# v2 changes (2026-04-26 cycle 2034l1):
+#   - Anti-pattern #4 tightened: Org <90d AND solo (proxy: owner_repos <= 3)
+#   - Owner trust banded: 10 (Org>=90d OR User>=180d) / 5 (30-89d) / 0 (<30d)
+#     [matches v1 implementation; codified in v2 doc]
 #
 # Usage:
 #   scripts/qualify-prospect.sh <owner>/<repo>
@@ -110,9 +114,18 @@ if [[ -n "$owner_created" ]]; then
   owner_age_days=$(( ($(date -u +%s) - $(date -u -d "$owner_created" +%s)) / 86400 ))
 fi
 
-# 1mo-old solo org → high deletion risk
-if [[ "$owner_type" == "Organization" ]] && (( owner_age_days < 30 )); then
-  antipattern_hits+=("1mo-old org high-deletion-risk per p081 learning")
+# Anti-pattern #4 (rubric v2): Org <90d AND solo (proxy: owner_repos <= 3) → high deletion risk
+# Strict <30d Org always flags; 30-89d flags only if solo.
+if [[ "$owner_type" == "Organization" ]]; then
+  if (( owner_age_days < 30 )); then
+    antipattern_hits+=("Org <30d high-deletion-risk per p081 learning (rubric v2)")
+  elif (( owner_age_days < 90 )) && (( owner_repos <= 3 )); then
+    antipattern_hits+=("Org <90d AND solo (${owner_repos} repos) — rubric v2 stricter (Apr 26 validation)")
+  fi
+fi
+# v2 User-side: <60d User AND solo (very new account)
+if [[ "$owner_type" == "User" ]] && (( owner_age_days < 60 )); then
+  antipattern_hits+=("User <60d (rubric v2 floor)")
 fi
 
 # Topic tag check (talent-protocol, buildathon, hackathon)
