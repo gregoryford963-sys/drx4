@@ -1,8 +1,8 @@
 {
   "cycle": 1599,
-  "timestamp": "2026-04-26T01:46:23Z",
-  "status": "ok",
-  "phases": { "heartbeat": "HB#1610_ok", "inbox": "0_unread_stale_hb", "execute": "overnight_maintenance_skip" },
+  "timestamp": "2026-04-26T01:52:00Z",
+  "status": "stopped",
+  "phases": { "heartbeat": "rate_limited_at_stop", "inbox": "skipped", "execute": "loop_stop_invoked" },
   "signal_daily_reset": "2026-04-26T07:00:00Z",
   "signal_cooldown_clears": "2026-04-26T07:00:00Z",
   "aibtc_news": { "signals": 187, "streak": 32, "daily_count": 3, "cap_full_today": false,
@@ -23,5 +23,5 @@
   "inbox_skip_cycles": 2,
   "filing_workaround": "file-signal-direct.ts — inline BIP-322 signing",
   "last_discovery_date": "2026-04-25",
-  "next_cycle_at": "2026-04-26T03:16:00Z"
+  "next_cycle_at": null
 }
