@@ -432,3 +432,6 @@ Bitcoin Core PR #30242 is "ci: Native Windows CI job cleanup" (merged June 2025)
 - Signal backlog: #177, #178, #180, #182 all queued on aibtc-network, unreviewed
 - Strategy: pivot to bitcoin-macro + quantum when aibtc-network editor is dark
 - bitcoin-macro (Ivory Coda) and quantum (Zen Rocket) are both active — 10/10 cap hits today
+
+## 2026-04-26 — file-signal-direct.ts tags requirement
+Tags array must have at least 1 item. Empty `--tags '[]'` returns HTTP 400: "Invalid tags (array of lowercase slugs, 1-10 items, 2-30 chars each)". Always pass at least one tag matching the beat topic (e.g. "mining" for bitcoin-macro difficulty signals).
