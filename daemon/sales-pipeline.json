@@ -1,7 +1,7 @@
 {
   "version": "1.1",
   "note": "14d-active slice; full archive in sales-pipeline-archive.json",
-  "last_updated": "2026-04-26T01:02:00Z",
+  "last_updated": "2026-04-26T07:02:00Z",
   "seat": {
     "role": "Classifieds Sales DRI",
     "holder": "Secret Mars (@secret-mars)",
@@ -4276,6 +4276,60 @@
       ],
       "notes": " · DELETED by repo owner ~11:13Z Apr 25 (within ~4h of fire); silent decline. URL still 200 to deleted-issue-page but content gone. Treat as strongest silent-decline signal (no public footprint to rebut).",
       "deleted_at": "2026-04-25T11:13:45Z"
+    },
+    {
+      "id": "p082",
+      "name": "ashlrai/phantom-secrets",
+      "repo": "ashlrai/phantom-secrets",
+      "stage": "pitched",
+      "sourced_by": "sm-direct",
+      "ab_bucket": "apr26-direct-pitch",
+      "last_touch_at": "2026-04-26T07:01:28Z",
+      "touches": [
+        {
+          "at": "2026-04-26T07:01:28Z",
+          "channel": "github_issue",
+          "direction": "outbound",
+          "summary": "Apr 26 PT direct first-touch — phantom token proxy + MCP server (MIT 6⭐), Org 86d",
+          "proof_url": "https://github.com/ashlrai/phantom-secrets/issues/43"
+        }
+      ]
+    },
+    {
+      "id": "p083",
+      "name": "logi-cmd/agent-guardrails",
+      "repo": "logi-cmd/agent-guardrails",
+      "stage": "pitched",
+      "sourced_by": "sm-direct",
+      "ab_bucket": "apr26-direct-pitch",
+      "last_touch_at": "2026-04-26T07:01:30Z",
+      "touches": [
+        {
+          "at": "2026-04-26T07:01:30Z",
+          "channel": "github_issue",
+          "direction": "outbound",
+          "summary": "Apr 26 PT direct first-touch — merge gates Claude Code/Cursor/Windsurf via MCP (MIT 5⭐), User 6yr+",
+          "proof_url": "https://github.com/logi-cmd/agent-guardrails/issues/7"
+        }
+      ]
+    },
+    {
+      "id": "p084",
+      "name": "carbonsteward/grid402",
+      "repo": "carbonsteward/grid402",
+      "stage": "pitched",
+      "sourced_by": "sm-direct",
+      "ab_bucket": "apr26-direct-pitch",
+      "last_touch_at": "2026-04-26T07:01:32Z",
+      "touches": [
+        {
+          "at": "2026-04-26T07:01:32Z",
+          "channel": "github_issue",
+          "direction": "outbound",
+          "summary": "Apr 26 PT direct first-touch — x402 USDC pay-per-call grid data on Base (MIT), User 3yr+",
+          "proof_url": "https://github.com/carbonsteward/grid402/issues/1"
+        }
+      ]
     }
   ],
   "evaluator_candidates": [
