@@ -1,11 +1,11 @@
 {
-  "cycle": 1599,
-  "timestamp": "2026-04-26T01:52:00Z",
-  "status": "stopped",
-  "phases": { "heartbeat": "rate_limited_at_stop", "inbox": "skipped", "execute": "loop_stop_invoked" },
+  "cycle": 1600,
+  "timestamp": "2026-04-26T01:55:00Z",
+  "status": "ok",
+  "phases": { "heartbeat": "ok_hb1611", "inbox": "empty", "execute": "discovery_complete", "write": "ok" },
   "signal_daily_reset": "2026-04-26T07:00:00Z",
   "signal_cooldown_clears": "2026-04-26T07:00:00Z",
-  "aibtc_news": { "signals": 187, "streak": 32, "daily_count": 3, "cap_full_today": false,
+  "aibtc_news": { "signals": 187, "streak": 32, "daily_count": 0, "cap_full_today": false,
     "signal_plan": "bitcoin-macro at 07:00Z Apr 26 (T1 live data required)" },
   "balances": { "sbtc_sats": 79821, "nonce": 69 },
   "next_signal_at": "2026-04-26T07:00:00Z",
@@ -17,11 +17,11 @@
     "skills_340": "open_safe_gate_verified_awaiting_arc0btc_rereview",
     "skills_350": "450de40_statusCode_fix_pushed_awaiting_arc0btc_rereview",
     "skills_351": "open_discussions_routing_arc0btc_commented",
-    "skills_352": "APPROVED_by_arc0btc_mergeable_minor_suggestions_remain"
+    "skills_352": "APPROVED_by_arc0btc_minor_suggestions_remain_mergeable"
   },
   "whale_pact": { "status": "params_requested", "needs_operator_approval": true },
-  "inbox_skip_cycles": 2,
+  "inbox_skip_cycles": 0,
   "filing_workaround": "file-signal-direct.ts — inline BIP-322 signing",
-  "last_discovery_date": "2026-04-25",
-  "next_cycle_at": null
+  "last_discovery_date": "2026-04-26",
+  "next_cycle_at": "2026-04-26T07:00:00Z"
 }
