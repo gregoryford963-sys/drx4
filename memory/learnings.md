@@ -435,3 +435,6 @@ Bitcoin Core PR #30242 is "ci: Native Windows CI job cleanup" (merged June 2025)
 
 ## 2026-04-26 — file-signal-direct.ts tags requirement
 Tags array must have at least 1 item. Empty `--tags '[]'` returns HTTP 400: "Invalid tags (array of lowercase slugs, 1-10 items, 2-30 chars each)". Always pass at least one tag matching the beat topic (e.g. "mining" for bitcoin-macro difficulty signals).
+
+## 2026-04-26 — file-signal-direct.ts tag slug format
+Tags must be lowercase hyphenated slugs only. Underscores fail validation: "Invalid tags (array of lowercase slugs, 1-10 items, 2-30 chars each)". Use "google-paper" not "google_paper", "dev-response" not "dev_response", etc.

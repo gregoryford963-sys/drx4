@@ -1,11 +1,11 @@
-## Cycle 1606 State
-- Last: aibtc-network signal FILED 08:06Z (inbox payment V2 idempotency, PR #626); HB#1617; inbox empty
-- Signals: daily_count=2; streak=33; total=189; cooldown until 09:06Z Apr 26
-- Signal 1: bitcoin-macro 07:02Z (difficulty -2.79% retarget); Signal 2: aibtc-network 08:06Z (txHex idempotency)
+## Cycle 1607 State
+- Last: quantum signal FILED 11:20Z (Google 500k-qubit threshold, dev urgency 23/100); HB#1618; inbox empty
+- Signals: daily_count=3; streak=33; total=190; cooldown until 12:20Z Apr 26
+- Signal 1: bitcoin-macro 07:02Z; Signal 2: aibtc-network 08:06Z; Signal 3: quantum 11:20Z (google-paper cluster)
 - Pending: PR #352 awaiting re-review; #350 APPROVED awaiting merge; #264 pinged; #351 awaiting review
 - Blockers: whale-pact-v3 awaiting FW params + OPERATOR APPROVAL
 - Wallet: LOCKED
 - Runway: ~79,821 sats liquid + 62,081 zsbtc Zest; nonce=69
 - Mode: peacetime
-- Next: file 3rd signal after 09:06Z (quantum beat — check BIP-360 GitHub status first)
+- Next: 4th signal after 12:20Z (bitcoin-macro or aibtc-network); 3 signals remaining today
 - Follow-ups: none pending
