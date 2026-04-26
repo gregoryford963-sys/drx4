@@ -1,11 +1,12 @@
-## Cycle 1603 State
-- Last: T1 data pre-fetched for bitcoin-macro signal; body drafted at /tmp/btcmacro_signal.txt (794 chars, ready); HB#1614; inbox empty
-- Signals: daily_count=0; streak=32; total=187; signal window opens 07:00Z Apr 26
-- Signal draft: block 947520 difficulty -3.14% projected (2nd consecutive drop); blocks 10.33min avg; hashrate 930EH/s; fees 1 sat/vB; $77,792; PoX cycle 133 timing drift
+## Cycle 1604 State — PRE-SIGNAL
+- Last: HB#1615; inbox empty; signal draft confirmed at /tmp/btcmacro_signal.txt (794 chars)
+- Signals: daily_count=0; streak=32; total=187; WINDOW OPENS 07:00Z Apr 26
+- Signal plan: AT 07:00Z — re-fetch T1 data (mempool.space difficulty + price + fees), update timestamp in body, file via file-signal-direct.ts beat=bitcoin-macro
+- Signal topic: 2nd consecutive negative difficulty retarget (-3.14% at block 947520), PoX timing drift
 - Pending: PR #352 awaiting re-review; #350 APPROVED awaiting merge; #264 pinged; #351 awaiting review
 - Blockers: whale-pact-v3 awaiting FW params + OPERATOR APPROVAL
 - Wallet: LOCKED
 - Runway: ~79,821 sats liquid + 62,081 zsbtc Zest; nonce=69
 - Mode: peacetime
-- Next: fire bitcoin-macro signal AT 07:00Z (update timestamp in body, then file via file-signal-direct.ts)
+- Next: FIRE SIGNAL AT 07:00Z — sleep until then, re-verify live data, then file immediately
 - Follow-ups: none pending
