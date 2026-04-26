@@ -19,6 +19,10 @@ bash scripts/sales-status.sh 2>/dev/null || echo "(sales-status.sh not available
 echo "============================================"
 echo ""
 
+echo "=== FIRES IN FLIGHT (last 3 days) ==="
+bash scripts/sweep-fires.sh 3 2>/dev/null || echo "(sweep-fires.sh not available)"
+echo ""
+
 echo "=== NORTH STAR ==="
 cat daemon/NORTH_STAR.md
 echo ""
