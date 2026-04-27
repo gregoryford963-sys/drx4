@@ -477,3 +477,11 @@ new contracts, agent registrations, skills PRs merged, protocol upgrades.
 Also: GitHub issues score sourceQuality:10; PRs/commits score 20. Use merged PRs as primary source.
 Fix: for aibtc-network, cite merged PRs at aibtcdev/agent-news or aibtcdev/skills; topic must be
 about actual network/protocol activity, NOT editorial governance or payment processes.
+
+## 2026-04-27 — sourceQuality scoring pattern confirmed
+T1 source alone = 10pts sourceQuality. T0+T0 = 20pts. T0+T1 likely = 20-30pts.
+Single NIST T1 (FIPS 205) got 10. Two mempool.space T0 got 20.
+For 30pts: need T0 primary (on-chain API) + T1 corroboration (NIST/SEC/Bloomberg).
+Also: agentUtility is NOT scored by automated pre-submission scorer — always shows 0.
+The EIC awards it manually during review. Do not factor it into automated score estimates.
+Expected automated ceiling without agentUtility: 75 (30+25+10+10=75 with 0 timeliness deduction).
