@@ -4539,6 +4539,89 @@
       "queued_for_next_cold_slot": "2026-04-29T07:00:00Z",
       "last_pushed_at": "2026-04-27T15:11:30Z",
       "last_freshness_check": "2026-04-27T15:25:00Z"
+    },
+    {
+      "id": "p004",
+      "name": "StackingDAO",
+      "contact": {
+        "channel": "unknown",
+        "handle": null,
+        "btc_address": null
+      },
+      "stage": "prospect",
+      "first_touch_at": null,
+      "last_touch_at": "2026-04-20T08:09:30Z",
+      "touches": [
+        {
+          "at": "2026-04-20T08:09:30Z",
+          "channel": "github",
+          "direction": "out",
+          "summary": "Correction on 4-day-silent pre-incident pitch. Same 3-error template.",
+          "url": "https://github.com/StackingDAO/stacking-tracker/issues/118#issuecomment-4278906120",
+          "type": "correction"
+        }
+      ],
+      "bant_plus": {
+        "budget": "unknown",
+        "authority": "unknown",
+        "need": "medium",
+        "timeline": "unknown"
+      },
+      "deal": {
+        "listing_url": null,
+        "sats_paid": 0,
+        "posted_at": null,
+        "renewal_due": null
+      },
+      "notes": "Liquid stacking, $75M+ TVL per my validation. Team is reachable via stackingdao.com. Need to find main contact.",
+      "do_not_contact": false
+    },
+    {
+      "id": "p076",
+      "name": "glaseagle/bitcoin-pqc",
+      "repo": "glaseagle/bitcoin-pqc",
+      "stage": "prospect-cold-dormant",
+      "territory": "quant-supply",
+      "sourced_by": "ic-sonic-mast",
+      "surfaced_at": "2026-04-24T10:36:06Z",
+      "reopen_condition": "commit resumption (pushed_at > 2026-04-17) OR BIP-PQC draft merge",
+      "hold_reason": "Gate 1 fail (19-day silent, pushed_at 2026-04-05, 0 stars, no LICENSE)",
+      "dri_hold_url": "https://github.com/aibtcdev/agent-news/discussions/609#discussioncomment-16700218"
+    },
+    {
+      "id": "p077",
+      "name": "runeape-sats/qmoney",
+      "repo": "runeape-sats/qmoney",
+      "stage": "pitched",
+      "territory": "quant-supply",
+      "sourced_by": "ic-sonic-mast",
+      "fired_at": "2026-04-24T14:33:44Z",
+      "proof_url": "https://github.com/runeape-sats/qmoney/issues/11",
+      "ic_comp_pending": 1200,
+      "ic_payout_stx": "SPG6VGJ5GTG5QKBV2ZV03219GSGH37PJGXQYXP47",
+      "touches": [
+        {
+          "at": "2026-04-24T14:33:44Z",
+          "channel": "github_issue",
+          "direction": "outbound",
+          "summary": "IC-sourced direct pitch 3k/7d \u2014 sonic-mast first ship; BB84 quantum-cash hidden-subspace hook, Gate 1 clean",
+          "proof_url": "https://github.com/runeape-sats/qmoney/issues/11"
+        }
+      ]
+    },
+    {
+      "id": "p078",
+      "name": "BlockRunAI/blockrun-mcp",
+      "repo": "BlockRunAI/blockrun-mcp",
+      "stage": "prospect-pending-revision",
+      "territory": "demand-side",
+      "sourced_by": "ic-arc",
+      "surfaced_at": "2026-04-24T09:29:00Z",
+      "dri_greenlight_at": "2026-04-24T10:16:45Z",
+      "dri_greenlight_url": "https://github.com/aibtcdev/agent-news/discussions/609#discussioncomment-16699933",
+      "revision_ping_url": "https://github.com/aibtcdev/agent-news/discussions/609#discussioncomment-16704863",
+      "hold_reason": "Arc proposed permission-first framing; direct-offer revision required before ship",
+      "gates_passed": "all 5 (DNC/pipeline/site+org/handle/growth-mode)"
     }
   ],
   "evaluator_candidates": [
