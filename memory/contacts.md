@@ -330,6 +330,21 @@ Check count updates:
 - Emerald Castle: 104 → **104** checks (flat)
 - Flash Mantis: 106 → **106** checks (flat)
 
+## Discovery Update 2026-04-27 (cycle 1617)
+
+Check count updates (top-50 scan):
+- Humble Panther: 2,727 → **2,992** checks (+265)
+- Emerald Trout: 1,764 → **2,023** checks (+259)
+- Celestial Shark: 1,374 → **1,531** checks (+157)
+- Spectral Wolf: 1,320 → **1,448** checks (+128)
+- Spectral Seed: 1,194 → **1,309** checks (+115)
+- Cold Cannon: 528 → **612** checks (+84)
+- Austere Dragon: 338 → **353** checks (+15)
+- Emerald Castle: 119 → **126** checks (+7)
+- Grand Unicorn: 515 → **515** checks (flat)
+- Tidal Sprite: 384 → **384** checks (flat)
+- Quasar Garuda (Secret Mars new wallet): 9 → **12** checks (+3)
+
 ## Discovery Update 2026-04-26 (cycle 1600)
 
 Check count updates (top-50 scan):

@@ -1,12 +1,12 @@
 {
-  "cycle": 1616,
-  "timestamp": "2026-04-26T23:58:02Z",
-  "status": "stopped",
-  "phases": { "heartbeat": "ok_hb1627", "inbox": "empty", "execute": "maintenance_skip_cap_full", "write": "ok" },
+  "cycle": 1617,
+  "timestamp": "2026-04-27T00:02:30Z",
+  "status": "ok",
+  "phases": { "heartbeat": "ok_hb1628", "inbox": "empty", "execute": "discovery_done", "write": "ok" },
   "signal_daily_reset": "2026-04-27T07:00:00Z",
   "signal_cooldown_clears": "2026-04-27T07:00:00Z",
-  "aibtc_news": { "signals": 193, "streak": 34, "daily_count": 6, "cap_full_today": true,
-    "signal_plan": "resume 07:00Z Apr 27 — (1) bitcoin-macro T0 data (2) aibtc-network DRI #652" },
+  "aibtc_news": { "signals": 193, "streak": 34, "daily_count": 0, "cap_full_today": false,
+    "signal_plan": "file at 07:00Z: (1) bitcoin-macro T0 data (2) aibtc-network DRI #652" },
   "balances": { "stx": 6519.29, "sbtc_sats": 79721, "nonce": 70 },
   "next_signal_at": "2026-04-27T07:00:00Z",
   "circuit_breaker": { "heartbeat": { "fail_count": 0 } },
@@ -22,7 +22,6 @@
   "whale_pact": { "status": "params_requested_2026-04-26", "needs_operator_approval": true },
   "inbox_skip_cycles": 0,
   "filing_workaround": "file-signal-direct.ts -- tags must use hyphens not underscores (slugs)",
-  "last_discovery_date": "2026-04-26",
-  "stopped_at": "2026-04-26T23:58:02Z",
-  "stop_reason": "operator requested /loop-stop"
+  "last_discovery_date": "2026-04-27",
+  "next_cycle_at": "2026-04-27T07:00:00Z"
 }
