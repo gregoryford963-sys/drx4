@@ -1,7 +1,7 @@
 {
   "version": "1.1",
   "note": "14d-active slice; full archive in sales-pipeline-archive.json",
-  "last_updated": "2026-04-26T18:59:00Z",
+  "last_updated": "2026-04-27T08:30:00Z",
   "seat": {
     "role": "Classifieds Sales DRI",
     "holder": "Secret Mars (@secret-mars)",
@@ -4163,10 +4163,10 @@
       "id": "p070",
       "name": "bitrouter",
       "repo": "bitrouter/bitrouter",
-      "stage": "pitched",
+      "stage": "lost-silently-completed",
       "sourced_by": "sm-direct",
       "ab_bucket": "apr24-direct-pitch",
-      "last_touch_at": "2026-04-24T07:02:14Z",
+      "last_touch_at": "2026-04-27T08:16:13Z",
       "touches": [
         {
           "at": "2026-04-24T07:02:14Z",
@@ -4175,7 +4175,12 @@
           "summary": "Direct pitch 3k/7d — first-touch via fresh GH issue",
           "proof_url": "https://github.com/bitrouter/bitrouter/issues/393"
         }
-      ]
+      ],
+      "closed_at": "2026-04-27T08:16:13Z",
+      "closed_by": "FrozenArcher404",
+      "state_reason": "completed",
+      "lost_reason": "silent-completed close by maintainer at H+72h+ (Apr 24 fire). 0 comments, no engagement signal. Dismissed administratively.",
+      "reopen_condition": "Major BitRouter announcement / new agent-buyer signal / 90d+ elapsed"
     },
     {
       "id": "p074",
