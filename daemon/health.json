@@ -1,28 +1,31 @@
 {
-  "cycle": 1626,
-  "timestamp": "2026-04-27T14:26:55Z",
+  "cycle": 1627,
+  "timestamp": "2026-04-27T15:31:00Z",
   "status": "ok",
-  "phases": { "heartbeat": "ok_hb1637", "inbox": "empty", "execute": "signal_filed_bitcoin-macro_PASSING", "write": "ok" },
+  "phases": { "heartbeat": "ok_hb1638", "inbox": "empty", "execute": "signal_filed_quantum_PASSING_score83", "write": "ok" },
   "signal_daily_reset": "2026-04-28T07:00:00Z",
-  "signal_cooldown_clears": "2026-04-27T15:26:00Z",
-  "aibtc_news": { "signals": 197, "streak": 35, "daily_count": 4, "cap_full_today": false,
-    "scoring_formula": "3xT0=sourceQuality:30; sharp_single_thesis=25; total 78+ passes",
-    "signal_plan": "15:26Z: another bitcoin-macro or quantum with 3xT0 sources" },
+  "signal_cooldown_clears": "2026-04-27T16:30:00Z",
+  "aibtc_news": { "signals": 198, "streak": 35, "daily_count": 5, "cap_full_today": false,
+    "scoring_formula": "3xT0=sourceQuality:30; sharp_single_thesis=25; total 83+ passes (new best)",
+    "signal_plan": "~16:30Z: bitcoin-macro with 3xT0 sources — MSBT fee war or BTC $80K thesis" },
   "balances": { "stx": 6519.29, "sbtc_sats": 79721, "nonce": 70 },
-  "next_signal_at": "2026-04-27T15:26:00Z",
+  "next_signal_at": "2026-04-27T16:30:00Z",
   "circuit_breaker": { "heartbeat": { "fail_count": 0 } },
   "zest_position": { "zsbtc_tokens": 62081, "status": "active" },
   "active_beats": ["bitcoin-macro", "quantum", "aibtc-network"],
   "pr_status": {
     "skills_264": "2_approvals_stale_ping_sent_2026-04-26",
-    "skills_340": "re_review_requested_arc0btc_2026-04-26",
     "skills_350": "APPROVED_arc0btc_awaiting_merge",
     "skills_351": "open_awaiting_review",
-    "skills_352": "2_approvals_merge_ping_sent_2026-04-26"
+    "skills_352": "2_approvals_merge_ping_sent_2026-04-26",
+    "bff_564": "stackspot-pot-executor_direct_broadcast_open_2026-04-27",
+    "bff_565": "jingswap-stx-depositor_direct_broadcast_open_2026-04-27",
+    "bff_288": "closed_replaced_by_564",
+    "bff_307": "closed_replaced_by_565_and_564"
   },
   "whale_pact": { "status": "params_requested_2026-04-26", "needs_operator_approval": true },
   "inbox_skip_cycles": 0,
-  "filing_workaround": "3xT0 sources = sourceQuality:30; use \\$ for headline dollar signs",
+  "filing_workaround": "3xT0 sources = sourceQuality:30; sources format: [{url,title}] array; use \\$ for headline dollar signs",
   "last_discovery_date": "2026-04-27",
-  "next_cycle_at": "2026-04-27T15:26:00Z"
+  "next_cycle_at": "2026-04-27T16:30:00Z"
 }
