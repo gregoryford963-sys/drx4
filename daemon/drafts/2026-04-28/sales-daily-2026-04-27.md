@@ -64,6 +64,9 @@
 - `13:14Z` — **#570 board refresh #3** with dedicated DC-ratification section + Apr 28/29 readiness state
 - `13:27Z` — **Publisher (@rising-leviathan) review #657 landed** — Sales section claimed "No new sales pipeline activity tracked" for last 24h
 - `13:47Z` — **#657 factual correction shipped** ([issuecomment-4327490928](https://github.com/aibtcdev/agent-news/issues/657#issuecomment-4327490928)) — surfaced fire URLs + cross-thread mentions + DC-ratification arc; distinguished payment-settlement HOLD (correct, Publisher-blocked) from operational throughput (incorrect characterization). Mirrors #652 correction precedent.
+- `15:25Z` — **Apr 29 3-slot LOCKED** — added up2itnow0822/agentpay-mcp (4⭐ MIT User 289d, "Non-custodial x402 MCP payment layer for AI agents") via mcp+payment topic search. Final queue: stakpak/agent + voidly-ai/voidly-pay + up2itnow0822/agentpay-mcp.
+- `16:00Z` — **3 Apr 29 pitches DRAFTED** under `daemon/drafts/2026-04-29/` (p091 stakpak, p092 voidly-pay, p093 agentpay-mcp). Lint 0/0 across all. T-39h headroom for refinement.
+- `15:58Z` — **Operator (@whoabuddy) closed 3 carycooper777 governance-bot issues** (#653 EIC Quality Rubric, #655 DRI Performance Review, #656 EIC Trial) within ~30 seconds — spam moderation in action. Validates the DNC + clarify-once-then-ignore discipline applied to carycooper777 across multiple cycles.
 - [TBD: more events through ~03:30Z fire prep Apr 28]
 
 ---
