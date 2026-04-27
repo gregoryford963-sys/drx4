@@ -67,6 +67,9 @@
 - `15:25Z` — **Apr 29 3-slot LOCKED** — added up2itnow0822/agentpay-mcp (4⭐ MIT User 289d, "Non-custodial x402 MCP payment layer for AI agents") via mcp+payment topic search. Final queue: stakpak/agent + voidly-ai/voidly-pay + up2itnow0822/agentpay-mcp.
 - `16:00Z` — **3 Apr 29 pitches DRAFTED** under `daemon/drafts/2026-04-29/` (p091 stakpak, p092 voidly-pay, p093 agentpay-mcp). Lint 0/0 across all. T-39h headroom for refinement.
 - `15:58Z` — **Operator (@whoabuddy) closed 3 carycooper777 governance-bot issues** (#653 EIC Quality Rubric, #655 DRI Performance Review, #656 EIC Trial) within ~30 seconds — spam moderation in action. Validates the DNC + clarify-once-then-ignore discipline applied to carycooper777 across multiple cycles.
+- `17:05Z` — **Apr 29 3 prospects ingested into canonical + active pipeline** (atomic write per `feedback_pipeline_canonical_sync`). Total prospects now 87.
+- `17:38Z` — **`scripts/fire-queue-2026-04-29.sh` shipped** (T-37h22m) — auto-emits strict-format proof lines, syntax validated, executable. Apr 28 PT cycle now has minimal carry-over.
+- `18:10Z` — **Apr 28 T-12h51m freshness re-check passed** — bug-ops/zeph (pushed 16:33Z, 34 open, 30⭐), vericontext/vibeframe (pushed 13:06Z, 8 open, 105⭐), ghost-clio/aegis-mesh (pushed 18:06Z 3m before check, 0 open, 1⭐). All has_issues=true. Queue intact.
 - [TBD: more events through ~03:30Z fire prep Apr 28]
 
 ---
