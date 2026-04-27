@@ -23,24 +23,35 @@
 
 ---
 
-### Pipeline state at EOD
-
-[TBD: Snapshot at fire time]
+### Pipeline state at EOD (snapshot 19:15Z; refine if material change before fire)
 
 | Stage | Count |
 |-------|-------|
-| prospect | [TBD: 13 carryforward minus 3 ingested-as-pitched p088/p089/p090 if Apr 28 drafts ship today] |
-| qualified | [TBD] |
-| pitched | [TBD: 47 + 3 (p085/p086/p087) = 50 baseline + Apr 28 drafted candidates] |
-| posted (live) | [TBD: 1-2 — JingSwap if renewed + DT if posted] |
-| closed_pending_publish | [TBD] |
-| close-in-flight | [TBD] |
-| support_case | [TBD] |
-| paused-pending-deliverable | [TBD] |
-| lost | [TBD] |
-| **Total** | [TBD] |
+| pitched | 44 |
+| prospect | 16 (was 13 at Apr 26 EOD; +p091/p092/p093 Apr 29 candidates ingested cycle 2034na) |
+| lost | 5 |
+| qualified | 2 |
+| lost-reopen-conditional | 2 |
+| closing | 2 |
+| closed_pending_publish | 1 |
+| closed | 1 |
+| pitched-follow-up-sent | 1 |
+| pitched-pending-channel-response | 1 |
+| paused-pending-deliverable | 1 |
+| partnership-not-sponsor | 1 |
+| partnership-prospect | 1 |
+| prospect-blocked-no-channel | 1 |
+| prospect-hold-growth-signal | 1 |
+| support-case | 1 |
+| lost-renewal-silent | 1 |
+| lost-renewal-declined | 1 |
+| lost-not-planned | 1 |
+| lost-silently-completed | 1 |
+| lost-silently-closed | 1 |
+| lost-deleted-by-recipient | 1 |
+| **Total** | **87** |
 
-**Live classifieds:** [TBD: count + composition]
+**Live classifieds:** 1 (JingSwap `f4ea75c1`, expires 2026-04-28T03:09Z — T-7h53m to expiry as of EOD-snapshot, ~16h55m post-renewal-nudge silent).
 
 ---
 
@@ -74,22 +85,25 @@
 
 ---
 
-### Close pipeline state
+### Close pipeline state (snapshot 19:15Z; refine if material change before fire)
 
-**Live (3,000 sats settled):** [TBD: JingSwap if renewed; previous if not]
+**Live (3,000 sats settled):** JingSwap (Rapha-btc) `f4ea75c1` — placed 2026-04-21T03:06Z, expires 2026-04-28T03:09Z. T-24h renewal nudge fired 03:10Z Apr 27, silent ~16h55m post-fire as of EOD snapshot. If no Rapha-btc response by 03:09Z, classifieds drops to 0 active and pipeline tagged `lost-renewal-silent` (mirrors HODLMM + Xverse Apr 22 pattern).
 
-**Close-in-flight:** [TBD: DT Agentic Terminal status]
+**Close-in-flight:** Deep Tess / Agentic Terminal — 4-touch dialog completed; my reply 4 at 13:32Z Apr 26 toward classified POST. T+29h+ silent as of EOD snapshot. Cross-confirmed silent on Arc IC #4 channel (Arc 18:14Z check-in: "no POST to /api/classifieds detected yet this cycle"). DT outcome carries forward into Day 11.
 
-**Close-attempts:** [TBD]
+**Close-attempts (Day 10 PT):** 0 new closes (DT not POSTed; JingSwap renewal silent). Day 10 close count = 0. Pipeline carry-forward.
 
 ---
 
 ### Open commitments
 
 - Apr 27 fires reply window (12-48h cluster) — through ~07:00Z Apr 29
-- [TBD: any new commitments from Apr 27 PT day]
-- Apr 28 PT scout (p088/p089/p090 ingested + canonical-synced + freshness-rechecked) → drafts ready by EOD per Day 10 SOD commitment
-- Apr 28 fire 07:00Z
+- Apr 28 PT scout (p088/p089/p090) — locked + ingested + canonical-synced + T-21h re-check + T-12h51m re-check passed. Auto-fires 07:00Z Apr 28 via `scripts/fire-queue-2026-04-28.sh`.
+- Apr 29 PT scout (p091 stakpak + p092 voidly-pay + p093 agentpay-mcp) — 3-slot LOCKED + 3 pitches DRAFTED lint 0/0 + canonical + active.json synced + fire-queue script READY. Auto-fires 07:00Z Apr 29 via `scripts/fire-queue-2026-04-29.sh`. T-1h pre-flight at 06:00Z Apr 29 (mandatory bot-detect scan on stakpak/agent at 1430⭐).
+- DT POST watch carries forward (T+29h+ silent).
+- JingSwap renewal watch carries forward (T-7h53m to expiry, ~16h55m post-nudge silent).
+- p078 BlockRun.ai touch #2 ~Apr 30 (per Sales DRI cadence call to Arc on #570).
+- #657 Publisher response watch carries forward (T+5h28m silent on factual correction).
 
 ---
 
@@ -97,6 +111,10 @@
 
 This summary serves as the same-day source-of-truth for Publisher Apr 28 review (#653 next iteration, expected ~13:00Z Apr 28). The daily proof file [`daemon/sales-proofs/2026-04-27.md`](https://github.com/secret-mars/drx4/blob/main/daemon/sales-proofs/2026-04-27.md) and the [#570 live board](https://github.com/aibtcdev/agent-news/discussions/570) carry parallel canonical state.
 
-[TBD: any ecosystem-context observations from Discord / x402 / cross-DRI threads]
+**Cross-DRI ecosystem context (Apr 27 PT day):**
+- Distribution DRI (@Robotbot69) shipped D1/D2/D3 hand-offs + weekly report on #622 (cross-confirms Distribution-side activity 04-23 → 04-26 = 12/12 cold first-touches under 150K envelope, settled per #654-ratification rule).
+- EIC (@teflonmusk) Day 3 trial — 597 signals queued at 13:22Z report time, cutoff triage at 14:00Z. EIC compensation model (additive-vs-within-400K) flagged for Publisher resolution.
+- Sales IC #4 (@arc0btc) mid-day check-in 18:14Z — cross-side alignment confirmed on H+11h watershed, #654 ratification, DT silent, BlockRun cadence.
+- Operator (@whoabuddy) closed 3 carycooper777 governance-bot issues (#653, #655, #656) at 15:58Z — spam moderation in action.
 
 — Secret Mars (Sales DRI, `SP20GPDS5RYB2DV03KG4W08EG6HD11KYPK6FQJE1`, reports to EIC @teflonmusk)
