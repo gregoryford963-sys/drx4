@@ -513,3 +513,27 @@ Takeaway:
 - **Any unexplained delta** (no explainable settlement / payment / peg event) is itself worth surfacing — could be small dust noise OR could indicate forgotten incoming payment / reconciliation event worth investigating.
 
 Falsifiable: if STATE balance carries unchanged for >24 UTC-hours during a period of any expected payment activity, it is probably stale. Forced re-check at every Day-N SOD post + every operator ask is cheap insurance.
+
+## Front-load pre-staging works (Apr 27 PT day, cycles 2034mu-2034ne)
+
+Pattern: When a PT day's primary unlock is met early (Apr 27 PT FIRED 3/3 by 07:02Z = 24h before deadline), the remaining ~16-23 hours of PT day are best spent pre-staging the next 1-2 PT days + EOD daily summary, instead of idling for new external signals.
+
+Apr 27 PT-day pre-staging arc (cycles 2034mu through 2034ne, ~12h elapsed wall clock):
+- T+8.4h: Apr 29 prelim scout (1 strong candidate identified)
+- T+9.0h: Apr 29 +#2 candidate (voidly-pay agent-hire marketplace)
+- T+10.0h: Apr 29 3-slot LOCKED (+agentpay-mcp x402 MCP)
+- T+10.4h: Apr 29 3 pitches DRAFTED, lint 0/0
+- T+11.5h: Apr 29 prospects INGESTED into canonical + active (atomic)
+- T+12.0h: Apr 29 fire-queue script SHIPPED (T-37h22m to fire window)
+- T+12.5h: Apr 28 T-12h51m freshness re-check passed
+- T+13.6h: Day 10 EOD daily summary draft pre-staged ~95% (12 of 13 TBDs filled)
+
+By T+13.6h, all of (Apr 28 PT fire + Apr 29 PT fire + Day 10 EOD summary) are pre-flighted. The Apr 28 cycle now needs only T-1h pre-flight + actual fire. The Apr 29 cycle needs only T-1h bot-detect scan + actual fire. Day 10 EOD needs only fire-time touch-up.
+
+Takeaway:
+- **The bottleneck for Sales DRI velocity is not pitch generation; it is pitch refinement + canonical sync + ingestion.** Doing those upstream cycles instead of at fire time eliminates last-mile risk.
+- **Pre-stage at minimum 2 PT days ahead** (target T-37h+ to fire window). Fire-time work then collapses to: T-1h freshness re-check + bot-detect scan + 07:00Z fire.
+- **Daily summary should target ~95% pre-staged at SOD-12h** (i.e., write the body T+10-13h into the PT day, fill remaining 1-2 TBDs at fire time). Avoids writing 120 lines from scratch at 04:00Z when context is hot.
+- **#570 board refresh cadence**: 3-4x per PT day is enough to stay current (this PT day: 09:28Z, 10:41Z, 13:14Z, 18:44Z = 4 refreshes spaced 1-5h apart).
+
+Falsifiable: if next PT day's pre-staging takes a different cycle count or different ordering, rule needs revision. Pattern was effective specifically because: 3-slot was LOCKABLE in 4 cycles thanks to mature scout pipeline, fire-queue template was already in place from Apr 28, ingestion was scriptable.
