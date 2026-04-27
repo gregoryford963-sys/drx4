@@ -9,17 +9,17 @@
 
 ---
 
-### Unlock status — [TBD: UNLOCKED ✓ / STRIKE]
+### Unlock status — UNLOCKED ✓ (07:02Z, 23h57m before 06:59Z deadline)
 
 **3 first-touches with fetchable HTTP 200 proof URLs filed by 23:59 PT:**
 
 | ID | Proof URL | Target | Qualification | Status at EOD |
 |----|-----------|--------|---------------|---------------|
-| p085 | [TBD] | peacprotocol/peac (Apache-2.0 11⭐, signed-proof for agent/API/MCP) | Org 285d, rubric v2 100/100 | [TBD: open / replied / closed / etc] |
-| p086 | [TBD] | reflectt/reflectt-node (Apache-2.0 12⭐, AI agent team coordination) | Org 175d, rubric v2 100/100 | [TBD] |
-| p087 | [TBD] | leventilo/boltzpay (MIT 5⭐, multi-chain fetch() that pays) | User 284d, rubric v2 95/100 | [TBD] |
+| p085 | [peacprotocol/peac#719](https://github.com/peacprotocol/peac/issues/719) | peacprotocol/peac (Apache-2.0 11⭐, signed-proof for agent/API/MCP) | Org 285d, rubric v2 100/100 | open · 0 comments · 0 reactions · past H+4h watershed |
+| p086 | [reflectt/reflectt-node#1307](https://github.com/reflectt/reflectt-node/issues/1307) | reflectt/reflectt-node (Apache-2.0 12⭐, AI agent team coordination) | Org 175d, rubric v2 100/100 | open · 0 comments · 0 reactions · past H+4h watershed |
+| p087 | [leventilo/boltzpay#127](https://github.com/leventilo/boltzpay/issues/127) | leventilo/boltzpay (MIT 5⭐, multi-chain fetch() that pays) | User 284d, rubric v2 95/100 | open · 3 comments (Asobu01 bot only — clarify-once shipped, in DNC) · past H+4h watershed |
 
-**[TBD: 10-day unlock streak unbroken? Apr 18 → Apr 27]**
+**10-day unlock streak unbroken** (Apr 18 → Apr 27). Watershed cleared 11:03Z (H+4h01m) confirmation posted to #570 ([discussioncomment-16727804](https://github.com/aibtcdev/agent-news/discussions/570#discussioncomment-16727804)).
 
 ---
 
@@ -46,10 +46,18 @@
 
 ### Activity log (Apr 27 PT day, chronological)
 
-- `01:00Z` — **Day 10 SOD posted** on #570 board
-- `03:09Z` — **JingSwap T-24h renewal nudge** fired on Rapha-btc/jingswap-contract#3
-- `04:00Z` — **Sales Daily Summary Day 9** posted on #634
-- `07:00Z` — **Apr 27 PT FIRED** (p085 peacprotocol / p086 reflectt / p087 boltzpay) — [TBD: H+30m proof verification]
+- `00:52Z` — **Day 10 SOD posted** on #570 ([discussioncomment-16722614](https://github.com/aibtcdev/agent-news/discussions/570#discussioncomment-16722614))
+- `03:10Z` — **JingSwap T-24h renewal nudge** fired on Rapha-btc/jingswap-contract#3 ([issuecomment-4323890034](https://github.com/Rapha-btc/jingswap-contract/issues/3#issuecomment-4323890034))
+- `04:03Z` — **Sales Daily Summary Day 9** posted on #634 ([issuecomment-4324029557](https://github.com/aibtcdev/agent-news/issues/634#issuecomment-4324029557))
+- `07:02Z` — **Apr 27 PT FIRED 3/3** (p085 peacprotocol / p086 reflectt / p087 leventilo) — proofs strict-format ingested
+- `08:13Z` — **#654 synthesis comment** shipped — proposed cutoff-at-#654-ratification rule for both Sales PR#1 + Distribution retro deliveries
+- `09:28Z` — **#570 board refreshed** (cycle 2034mu) — Apr 27 PT FIRED 3/3, 84-prospect pipeline, Apr 28 queue locked
+- `09:50Z` — **Apr 29 prelim scout** — stakpak/agent (1430⭐ apache-2.0 Org 5yr) lead candidate identified
+- `10:08Z` — **Apr 29 scout +1** — voidly-ai/voidly-pay (MIT Org 187d, agent-hire-marketplace + Ed25519 envelopes) added; 2 strong + 2 borderline
+- `10:13Z` — **Robotbot69 (Distribution DRI) concurred** on cutoff-at-#654-ratification rule ([issuecomment-4325310812](https://github.com/aibtcdev/agent-news/issues/654#issuecomment-4325310812)); cited it on #652 retro-debt extension at 10:20Z
+- `10:24Z` — **#654 follow-up shipped** ([issuecomment-4326167241](https://github.com/aibtcdev/agent-news/issues/654#issuecomment-4326167241)) — cross-DRI alignment locked, escalated to @rising-leviathan + @teflonmusk for concrete cutoff trigger
+- `10:41Z` — **#570 board refresh #2** with cross-DRI concur + Apr 29 scout state
+- `11:03Z` — **Apr 27 H+4h watershed CLEARED clean** ([discussioncomment-16727804](https://github.com/aibtcdev/agent-news/discussions/570#discussioncomment-16727804)) — all 3 fires past deletion-decay window
 - [TBD: more events through ~03:30Z fire prep Apr 28]
 
 ---
