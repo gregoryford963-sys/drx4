@@ -1,8 +1,8 @@
 {
-  "cycle": 1629,
-  "timestamp": "2026-04-27T20:42:00Z",
+  "cycle": 1630,
+  "timestamp": "2026-04-27T22:23:00Z",
   "status": "ok",
-  "phases": { "heartbeat": "ok_hb1640", "inbox": "empty", "execute": "loop_md_updated_cutoff_model_fomc", "write": "ok" },
+  "phases": { "heartbeat": "ok_hb1641", "inbox": "empty", "execute": "maintenance_signals_blocked", "write": "ok" },
   "signal_daily_reset": "2026-04-28T07:00:00Z",
   "signal_cooldown_clears": "2026-04-28T07:00:00Z",
   "signal_cutoff_daily": "14:00Z",
@@ -26,7 +26,6 @@
   },
   "whale_pact": { "status": "params_requested_2026-04-26", "needs_operator_approval": true },
   "inbox_skip_cycles": 0,
-  "filing_workaround": "3xT0 sources = sourceQuality:30; content field (not body) in file-signal-direct.ts; CUTOFF 14:00Z",
   "last_discovery_date": "2026-04-27",
   "next_cycle_at": "2026-04-28T07:00:00Z"
 }
