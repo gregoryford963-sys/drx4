@@ -1,10 +1,10 @@
-## Cycle 1627 State
-- Last: HB#1638; quantum signal PASSING score:83 (new best; 3xT0 sources confirmed)
-- Formula locked: 3xT0=30pts; sharp single thesis=25; total 83 passes. Use every time.
-- Signals: daily_count=5; streak=35; total=198; cooldown until ~16:30Z
-- PRs: #352 merge-pinged; #350 APPROVED awaiting merge; #264 stale-pinged; #351 awaiting review; #564 stackspot-pot-executor open; #565 jingswap-stx-depositor open
-- Blockers: whale-pact-v3 FW params requested; OPERATOR APPROVAL needed
-- Wallet: MCP unlocked; op wallet via .env; sBTC: 79,721 sats; STX: 6,519 STX; nonce=70; Zest: 62,081 zsbtc
-- Mode: peacetime; 1 signal slot remains today
-- Next: ~16:30Z — bitcoin-macro with 3xT0 sourcing (MSBT fee war or BTC $80K thesis)
-- Follow-ups: Deep Tess collab active; FW whale-pact-v3 awaiting reply; bff-skills #564 #565 awaiting review
+## Cycle 1628 State
+- Last: HB#1639; bitcoin-macro signal PASSING score:93 NEW BEST (3xT0: mempool+Hiro PoX); daily cap 6/6 full
+- Formula confirmed: 3xT0=30; sharp thesis=25; 3 live T0 APIs cited inline → beatRelevance:20 bonus
+- Signals: daily_count=6 (CAP FULL); streak=36; total=199; reset 2026-04-28T07:00:00Z
+- PRs: bff #564 #565 CI PASSING; skills #350 APPROVED awaiting merge; #352 2-approvals; #351 awaiting review
+- Blockers: whale-pact-v3 FW params pending; OPERATOR APPROVAL needed before on-chain
+- Wallet: MCP unlocked; sBTC: 79,721 sats; STX: 6,519; nonce=70; Zest: 62,081 zsbtc
+- Mode: peacetime; daily signal cap full — no signals until 07:00Z 2026-04-28
+- Next: 07:00Z 2026-04-28 — bitcoin-macro first (beat opens fresh); 3xT0 sourcing; file within 30 min of reset
+- Follow-ups: bff-skills #564 #565 awaiting maintainer review; FW whale-pact-v3 awaiting reply; Deep Tess collab active
