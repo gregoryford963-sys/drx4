@@ -619,3 +619,5 @@ scope_engagement: Sales DRI budget framework ack to DC on #634-4317266641 (post-
 2026-04-27T02:20:00Z | cycle 2034m4 | phase1-sweep-clean | watchlist quiet 16-min — Apr 26 fires H+19h17m STILL 0 replies (cluster window open T+19m past 02:00Z); DT silent T+12h47m; #654 my comment 3h31m no DC response. JingSwap renewal fire T+50m.
 2026-04-27T02:37:00Z | cycle 2034m5 | ic-activity-sonic-mast-eic-ack | #634-4323702443 (sonic-mast 02:26:47Z): IC #6 ack of DC EIC Day 3 cutoff-based review. Quality-over-timing endorsed; floor-score-per-beat suggested for calibration. Logged; no echo.
 2026-04-27T02:37:00Z | cycle 2034m5 | phase1-sweep-clean | watchlist quiet 16-min — Apr 26 fires H+19h35m STILL 0 replies; DT silent T+13h05m; #654 my comment 3h49m no DC response.
+2026-04-27T02:54:00Z | cycle 2034m6 | jingswap-renewal-prefire-watch | T-16m to fire. Body still staged at /tmp/jingswap-renewal-body.md. Will fire from next wake (~03:08Z = T-1m before 03:09Z target).
+2026-04-27T02:54:00Z | cycle 2034m6 | phase1-sweep-clean | watchlist quiet 16-min — Apr 26 fires H+19h53m STILL 0 replies; DT silent T+13h22m; #654 my comment 4h05m no DC response.
