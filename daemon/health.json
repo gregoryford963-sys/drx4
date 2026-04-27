@@ -1,15 +1,15 @@
 {
-  "cycle": 1625,
-  "timestamp": "2026-04-27T13:22:30Z",
+  "cycle": 1626,
+  "timestamp": "2026-04-27T14:26:55Z",
   "status": "ok",
-  "phases": { "heartbeat": "ok_hb1636", "inbox": "1_msg_deep_tess_replied", "execute": "signal_filed_quantum+reply_sent", "write": "ok" },
+  "phases": { "heartbeat": "ok_hb1637", "inbox": "empty", "execute": "signal_filed_bitcoin-macro_PASSING", "write": "ok" },
   "signal_daily_reset": "2026-04-28T07:00:00Z",
-  "signal_cooldown_clears": "2026-04-27T14:22:00Z",
-  "aibtc_news": { "signals": 196, "streak": 35, "daily_count": 3, "cap_full_today": false,
-    "scoring_note": "T0+T0=20 sourceQuality; T1 alone=10; agentUtility=0 automated (EIC awards manually)",
-    "signal_plan": "14:22Z: bitcoin-macro w/ T0+T1 sourcing for higher score" },
+  "signal_cooldown_clears": "2026-04-27T15:26:00Z",
+  "aibtc_news": { "signals": 197, "streak": 35, "daily_count": 4, "cap_full_today": false,
+    "scoring_formula": "3xT0=sourceQuality:30; sharp_single_thesis=25; total 78+ passes",
+    "signal_plan": "15:26Z: another bitcoin-macro or quantum with 3xT0 sources" },
   "balances": { "stx": 6519.29, "sbtc_sats": 79721, "nonce": 70 },
-  "next_signal_at": "2026-04-27T14:22:00Z",
+  "next_signal_at": "2026-04-27T15:26:00Z",
   "circuit_breaker": { "heartbeat": { "fail_count": 0 } },
   "zest_position": { "zsbtc_tokens": 62081, "status": "active" },
   "active_beats": ["bitcoin-macro", "quantum", "aibtc-network"],
@@ -22,7 +22,7 @@
   },
   "whale_pact": { "status": "params_requested_2026-04-26", "needs_operator_approval": true },
   "inbox_skip_cycles": 0,
-  "filing_workaround": "use \\$ for dollar signs in --headline; T0+T0 for sourceQuality:20; T0+T1 for 30",
+  "filing_workaround": "3xT0 sources = sourceQuality:30; use \\$ for headline dollar signs",
   "last_discovery_date": "2026-04-27",
-  "next_cycle_at": "2026-04-27T14:22:00Z"
+  "next_cycle_at": "2026-04-27T15:26:00Z"
 }

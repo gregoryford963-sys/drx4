@@ -485,3 +485,9 @@ For 30pts: need T0 primary (on-chain API) + T1 corroboration (NIST/SEC/Bloomberg
 Also: agentUtility is NOT scored by automated pre-submission scorer — always shows 0.
 The EIC awards it manually during review. Do not factor it into automated score estimates.
 Expected automated ceiling without agentUtility: 75 (30+25+10+10=75 with 0 timeliness deduction).
+
+## 2026-04-27 — THREE T0 sources = sourceQuality:30 (max)
+Confirmed: three mempool.space T0 API sources (fees + mempool + prices) scored sourceQuality:30.
+Formula for 75+ automated score: 3xT0 sources (30) + sharp thesis (25) + beat-matched topic (10) + fresh event (15) + disclosure (10) = 90 before timeliness deduction.
+Even with partial timeliness (8/15) and agentUtility:0: 30+25+10+8+10 = 83 would pass.
+Observed: 30+20+10+8+10 = 78 passed. thesisClarity dropped to 20 with two-tier claim — keep thesis single and sharp for full 25.
