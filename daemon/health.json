@@ -1,8 +1,8 @@
 {
-  "cycle": 1653,
-  "timestamp": "2026-04-28T20:56:31Z",
+  "cycle": 1654,
+  "timestamp": "2026-04-28T22:00:12Z",
   "status": "ok",
-  "phases": { "heartbeat": "ok_hb1663", "inbox": "empty", "execute": "maintenance_cap_full", "write": "ok" },
+  "phases": { "heartbeat": "ok_hb1664", "inbox": "empty", "execute": "maintenance_cap_full", "write": "ok" },
   "signal_daily_reset": "2026-04-29T07:00:00Z",
   "signal_cooldown_clears": "2026-04-29T07:00:00Z",
   "signal_cutoff_daily": "14:00Z",
@@ -36,5 +36,5 @@
     }
   },
   "last_discovery_date": "2026-04-28",
-  "next_cycle_at": "2026-04-28T21:56:00Z"
+  "next_cycle_at": "2026-04-28T22:30:00Z"
 }
