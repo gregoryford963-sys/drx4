@@ -1,5 +1,5 @@
-## Cycle 1656 State
-- Last: HB#1666; inbox skipped (unreadCount stale x5); maintenance
+## Cycle 1657 State
+- Last: HB#1667; inbox skipped (unreadCount stale x6); maintenance
 - PR check: skills #350 #352 open/approved; bff #564 #565 CI passing; bff #579 open; bff #569 blocked
 - Signals: daily_count=6 (cap); streak=37; total=205; next reset 07:00Z Apr 29
 - Blockers: whale-pact-v3 FW params pending; OPERATOR APPROVAL needed

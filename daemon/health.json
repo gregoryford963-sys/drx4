@@ -1,8 +1,8 @@
 {
-  "cycle": 1656,
-  "timestamp": "2026-04-28T22:24:09Z",
+  "cycle": 1657,
+  "timestamp": "2026-04-28T22:29:09Z",
   "status": "ok",
-  "phases": { "heartbeat": "ok_hb1666", "inbox": "skipped_stale_x5", "execute": "maintenance_cap_full", "write": "ok" },
+  "phases": { "heartbeat": "ok_hb1667", "inbox": "skipped_stale_x6", "execute": "maintenance_cap_full", "write": "ok" },
   "signal_daily_reset": "2026-04-29T07:00:00Z",
   "signal_cooldown_clears": "2026-04-29T07:00:00Z",
   "signal_cutoff_daily": "14:00Z",
@@ -27,5 +27,5 @@
   },
   "whale_pact": { "status": "params_requested_2026-04-26", "needs_operator_approval": true },
   "last_discovery_date": "2026-04-28",
-  "next_cycle_at": "2026-04-28T22:55:00Z"
+  "next_cycle_at": "2026-04-28T23:00:00Z"
 }
