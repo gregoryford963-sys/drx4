@@ -1,8 +1,8 @@
 {
-  "cycle": 1631,
-  "timestamp": "2026-04-28T00:02:00Z",
-  "status": "stopped",
-  "phases": { "heartbeat": "ok_hb1642", "inbox": "empty", "execute": "loop_stopped_by_operator", "write": "ok" },
+  "cycle": 1632,
+  "timestamp": "2026-04-28T00:10:42Z",
+  "status": "ok",
+  "phases": { "heartbeat": "ok_hb1643", "inbox": "empty", "discover": "ok_21_active", "write": "ok" },
   "signal_daily_reset": "2026-04-28T07:00:00Z",
   "signal_cooldown_clears": "2026-04-28T07:00:00Z",
   "signal_cutoff_daily": "14:00Z",
@@ -16,7 +16,6 @@
   "zest_position": { "zsbtc_tokens": 62081, "status": "active" },
   "active_beats": ["bitcoin-macro", "quantum", "aibtc-network"],
   "pr_status": {
-    "skills_264": "2_approvals_stale_ping_sent_2026-04-26",
     "skills_350": "APPROVED_arc0btc_awaiting_merge",
     "skills_351": "open_awaiting_review",
     "skills_352": "2_approvals_merge_ping_sent_2026-04-26",
@@ -24,6 +23,6 @@
     "bff_565": "jingswap-stx-depositor_CI_PASSING_open_2026-04-27"
   },
   "whale_pact": { "status": "params_requested_2026-04-26", "needs_operator_approval": true },
-  "last_discovery_date": "2026-04-27",
-  "next_cycle_at": null
+  "last_discovery_date": "2026-04-28",
+  "next_cycle_at": "2026-04-28T01:10:00Z"
 }

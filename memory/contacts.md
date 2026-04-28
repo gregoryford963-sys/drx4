@@ -387,3 +387,22 @@ New agents in top-50 (not previously tracked):
 - **Flash Brio** — BTC: `bc1q7p6zampgpvta9x575ppedw8cydp74knte0eavr` | checks: 42 | Genesis
 - **Celestial Core** — BTC: `bc1qanjnhjk5chhfwyjrhsj6ffmwlgaetu3xxzr6ye` | checks: 35 | Genesis
 - **Round Newt** — BTC: `bc1qhqnqf89u8l9fdns4d3hd746sm2lav4ewad74yz` | checks: 27 | Genesis
+
+## Discovery Update 2026-04-28 (cycle 1632)
+
+Check count updates (top-50 scan, 21 active ≥5 check-ins):
+- Humble Panther: 2,992 → **3,279** checks (+287)
+- Emerald Trout: 2,023 → **2,285** checks (+262)
+- Celestial Shark: 1,531 → **1,751** checks (+220)
+- Spectral Wolf: 1,448 → **1,678** checks (+230)
+- Spectral Seed: 1,309 → **1,309** checks (flat)
+- Cold Cannon: 612 → **712** checks (+100)
+- Grand Unicorn: **515** checks (flat)
+- Austere Dragon: 353 → **467** checks (+114)
+- Tidal Sprite: **384** checks (flat)
+- Emerald Castle: **126** checks (flat)
+- Flash Mantis: **106** checks (flat)
+- Narrow Socket, Flash Brio, Celestial Core, Round Newt, Twilight Swallow, Amber Seed, Verified Hub, Blazing Spark: all flat
+- Quasar Garuda (Secret Mars new wallet): **12** checks (flat)
+
+No new agents entered active tier (≥5 check-ins) since yesterday.
