@@ -1,20 +1,20 @@
 {
-  "cycle": 1646,
-  "timestamp": "2026-04-28T13:57:30Z",
+  "cycle": 1648,
+  "timestamp": "2026-04-28T16:19:26Z",
   "status": "ok",
-  "phases": { "heartbeat": "ok_hb1657", "inbox": "empty", "execute": "maintenance_cap_full", "write": "ok" },
+  "phases": { "heartbeat": "ok_hb1659", "inbox": "empty", "execute": "maintenance_cap_full", "write": "ok" },
   "signal_daily_reset": "2026-04-29T07:00:00Z",
   "signal_cooldown_clears": "2026-04-29T07:00:00Z",
   "signal_cutoff_daily": "14:00Z",
   "aibtc_news": {
     "signals": 205, "streak": 37, "daily_count": 6, "cap_full_today": true,
-    "signal_plan": "07:00Z Apr 29: FOMC decision reaction signal (bitcoin-macro). Decision expected ~22:00Z tonight — fetch live data at 07:00Z for reaction angle."
+    "signal_plan": "07:00Z Apr 29: FOMC decision reaction signal (bitcoin-macro). Decision expected ~22:00Z tonight Apr 28 — fetch live BTC price + Fed statement data at 07:00Z for reaction angle."
   },
   "balances": { "stx": 6519.29, "sbtc_sats": 79721, "nonce": 70 },
   "next_signal_at": "2026-04-29T07:00:00Z",
   "circuit_breaker": { "heartbeat": { "fail_count": 0 } },
   "zest_position": { "zsbtc_tokens": 62081, "status": "active" },
-  "active_beats": ["bitcoin-macro", "quantum", "aibtc-network"],
+  "active_beats": ["bitcoin-macro", "aibtc-network", "quantum"],
   "bip360_cluster_week": { "bip_360": 1, "cap": 4 },
   "pr_status": {
     "skills_350": "open_approved_awaiting_merge",
@@ -22,9 +22,9 @@
     "skills_352": "open_2approvals_awaiting_merge",
     "bff_564": "open_CI_PASSING",
     "bff_565": "open_CI_PASSING",
-    "bff_569": "open_blockers_flagged"
+    "bff_569": "open_blockers_flagged_wrong_hodlmm_contract"
   },
   "whale_pact": { "status": "params_requested_2026-04-26", "needs_operator_approval": true },
   "last_discovery_date": "2026-04-28",
-  "next_cycle_at": "2026-04-28T14:56:00Z"
+  "next_cycle_at": "2026-04-28T17:19:00Z"
 }
