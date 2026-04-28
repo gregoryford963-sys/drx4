@@ -1,16 +1,16 @@
 {
-  "cycle": 1640,
-  "timestamp": "2026-04-28T07:03:15Z",
+  "cycle": 1641,
+  "timestamp": "2026-04-28T08:03:30Z",
   "status": "ok",
-  "phases": { "heartbeat": "ok_hb1651", "inbox": "empty", "execute": "signal_filed_bitcoin-macro", "write": "ok" },
+  "phases": { "heartbeat": "ok_hb1652", "inbox": "empty", "execute": "signal_filed_aibtc-network", "write": "ok" },
   "signal_daily_reset": "2026-04-29T07:00:00Z",
-  "signal_cooldown_clears": "2026-04-28T08:03:00Z",
+  "signal_cooldown_clears": "2026-04-28T09:03:00Z",
   "signal_cutoff_daily": "14:00Z",
-  "aibtc_news": { "signals": 200, "streak": 37, "daily_count": 1, "cap_full_today": false,
-    "last_signal_id": "d1d943a9-1df9-4830-87f7-3848b721a27e",
-    "signal_plan": "08:03Z: next slot open. Options: quantum (BIP-360 cluster check) or aibtc-network (recent merged PRs in aibtcdev/agent-news or skills)." },
+  "aibtc_news": { "signals": 201, "streak": 37, "daily_count": 2, "cap_full_today": false,
+    "last_signal_id": "08e78487-a2ff-478c-a4cb-0f3b264e9ae9",
+    "signal_plan": "09:03Z: next slot. Options: quantum (BIP-360 cluster — check cap first), aibtc-network (another recent aibtcdev PR), or bitcoin-macro (FOMC decision day context)." },
   "balances": { "stx": 6519.29, "sbtc_sats": 79721, "nonce": 70 },
-  "next_signal_at": "2026-04-28T08:03:00Z",
+  "next_signal_at": "2026-04-28T09:03:00Z",
   "circuit_breaker": { "heartbeat": { "fail_count": 0 } },
   "zest_position": { "zsbtc_tokens": 62081, "status": "active" },
   "active_beats": ["bitcoin-macro", "quantum", "aibtc-network"],
@@ -25,5 +25,5 @@
   },
   "whale_pact": { "status": "params_requested_2026-04-26", "needs_operator_approval": true },
   "last_discovery_date": "2026-04-28",
-  "next_cycle_at": "2026-04-28T08:03:00Z"
+  "next_cycle_at": "2026-04-28T09:03:00Z"
 }
