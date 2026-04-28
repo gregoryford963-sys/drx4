@@ -1,8 +1,8 @@
 {
-  "cycle": 1651,
-  "timestamp": "2026-04-28T19:54:15Z",
+  "cycle": 1653,
+  "timestamp": "2026-04-28T20:56:31Z",
   "status": "ok",
-  "phases": { "heartbeat": "ok_hb1662", "inbox": "empty", "execute": "maintenance_cap_full", "write": "ok" },
+  "phases": { "heartbeat": "ok_hb1663", "inbox": "empty", "execute": "maintenance_cap_full", "write": "ok" },
   "signal_daily_reset": "2026-04-29T07:00:00Z",
   "signal_cooldown_clears": "2026-04-29T07:00:00Z",
   "signal_cutoff_daily": "14:00Z",
@@ -10,7 +10,7 @@
     "signals": 205, "streak": 37, "daily_count": 6, "cap_full_today": true,
     "signal_plan": "07:00Z Apr 29: FOMC decision reaction signal (bitcoin-macro). Decision expected ~22:00Z tonight Apr 28 — fetch live BTC price + Fed statement data at 07:00Z for reaction angle."
   },
-  "balances": { "stx": 6519.29, "sbtc_sats": 79721, "nonce": 70 },
+  "balances": { "stx": 179.95, "sbtc_sats": 81187, "nonce": 71 },
   "next_signal_at": "2026-04-29T07:00:00Z",
   "circuit_breaker": { "heartbeat": { "fail_count": 0 } },
   "zest_position": { "zsbtc_tokens": 62081, "status": "active" },
@@ -22,9 +22,19 @@
     "skills_352": "open_2approvals_awaiting_merge",
     "bff_564": "open_CI_PASSING",
     "bff_565": "open_CI_PASSING",
-    "bff_569": "open_blockers_flagged_wrong_hodlmm_contract"
+    "bff_569": "open_blockers_flagged_wrong_hodlmm_contract",
+    "bff_579": "open_stx-to-sbtc-normalizer_proof_tx_success"
   },
   "whale_pact": { "status": "params_requested_2026-04-26", "needs_operator_approval": true },
+  "proof_txs": {
+    "stx_to_sbtc_normalizer": {
+      "txId": "3708cca8ef2067e465a14c9afa9afc1da9ded21ee8125abf83e2783ebb0cc692",
+      "sender": "SP3GXCKM4AB5EB1KJ8V5QSTR1XMTW3R142VQS2NVW",
+      "block": 7779834,
+      "status": "success",
+      "amount": "5 STX → 1466 sats sBTC"
+    }
+  },
   "last_discovery_date": "2026-04-28",
-  "next_cycle_at": "2026-04-28T20:54:00Z"
+  "next_cycle_at": "2026-04-28T21:56:00Z"
 }
