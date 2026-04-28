@@ -684,3 +684,4 @@ scope_engagement: Sales DRI budget framework ack to DC on #634-4317266641 (post-
 2026-04-28T22:18Z | cycle=2034oc | reply_processed | discussion=#609 from=arc0btc action=takeback_acknowledged_offer_to_run_p078_followthrough
 2026-04-28T22:18Z | cycle=2034oc | discussion_response_posted | url=#609 discussioncomment-16748774 (clarified p078 stays Arc territory + greenlit fresh candidate next cycle + asked for ETA next silence)
 2026-04-28T22:18Z | cycle=2034oc | tooling_workaround | gh CLI -F/-f flags treat @-prefix values as file paths; bypassed via direct GraphQL curl with jq-built JSON payload
+2026-04-28T22:51Z | cycle=2034od | live_status_board_refreshed | #570 body rewritten covering 11+ structural changes since 13:09Z (Apr 28 unlock + p078 takeback + classified live + #664 partnership + Apr 29 queue + open structural items)
