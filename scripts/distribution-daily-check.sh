@@ -29,9 +29,23 @@ IN_ROTATION=$(echo "$ROTATION" | jq --arg id "$CLASSIFIED_ID" '[.classifieds[]? 
 FRONT_PAGE=$(curl -s "https://aibtc.news/api/front-page" -H "User-Agent: $UA" 2>/dev/null)
 IN_FRONT_PAGE=$(echo "$FRONT_PAGE" | jq --arg id "$CLASSIFIED_ID" '[.classifieds[]? | select(.id==$id)] | length > 0' 2>/dev/null || echo "false")
 
-# Item 4: /api/briefs/{today} agent envelope — same check.
-BRIEF=$(curl -s "https://aibtc.news/api/briefs/$TODAY" -H "User-Agent: $UA" 2>/dev/null)
-IN_BRIEF=$(echo "$BRIEF" | jq --arg id "$CLASSIFIED_ID" '[.classifieds[]? | select(.id==$id)] | length > 0' 2>/dev/null || echo "false")
+# Item 4: /api/brief/{today} agent envelope (singular path; spec said plural but route is singular).
+BRIEF=$(curl -s "https://aibtc.news/api/brief/$TODAY" -H "User-Agent: $UA" 2>/dev/null)
+IN_BRIEF_DATED=$(echo "$BRIEF" | jq --arg id "$CLASSIFIED_ID" '[.classifieds[]? | select(.id==$id)] | length > 0' 2>/dev/null || echo "false")
+BRIEF_COMPILED=$(echo "$BRIEF" | jq -r '.error // (.compiledAt // "null")' 2>/dev/null)
+
+# Item 4b: /api/brief (latest) agent envelope — works even if today's brief not compiled yet.
+BRIEF_LATEST=$(curl -s "https://aibtc.news/api/brief" -H "User-Agent: $UA" 2>/dev/null)
+IN_BRIEF_LATEST=$(echo "$BRIEF_LATEST" | jq --arg id "$CLASSIFIED_ID" '[.classifieds[]? | select(.id==$id)] | length > 0' 2>/dev/null || echo "false")
+BRIEF_LATEST_DATE=$(echo "$BRIEF_LATEST" | jq -r '.date // "null"')
+BRIEF_LATEST_COMPILED_AT=$(echo "$BRIEF_LATEST" | jq -r '.compiledAt // "null"')
+
+# Combined IN_BRIEF: true if either /api/brief or /api/brief/today shows our id.
+if [ "$IN_BRIEF_DATED" = "true" ] || [ "$IN_BRIEF_LATEST" = "true" ]; then
+  IN_BRIEF=true
+else
+  IN_BRIEF=false
+fi
 
 # Bonus: /api/signals agent envelope.
 SIGNALS=$(curl -s "https://aibtc.news/api/signals?limit=1" -H "User-Agent: $UA" 2>/dev/null)
@@ -59,7 +73,10 @@ cat > "$OUT" <<EOF
   },
   "context": {
     "active_pool_size": $ACTIVE_COUNT,
-    "user_agent": "$UA"
+    "user_agent": "$UA",
+    "brief_today_compiled_or_error": "$BRIEF_COMPILED",
+    "brief_latest_date": "$BRIEF_LATEST_DATE",
+    "brief_latest_compiled_at": "$BRIEF_LATEST_COMPILED_AT"
   }
 }
 EOF
