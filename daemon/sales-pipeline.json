@@ -3130,9 +3130,9 @@
         "url": "https://github.com/alexgo-io/alex-sdk",
         "btc_address": null
       },
-      "stage": "pitched",
+      "stage": "follow-up",
       "first_touch_at": "2026-04-16T19:43:00Z",
-      "last_touch_at": "2026-04-16T19:43:00Z",
+      "last_touch_at": "2026-04-28T04:20:00Z",
       "touches": [
         {
           "timestamp": "2026-04-16T19:43:00Z",
@@ -3144,6 +3144,14 @@
           "sats_spent": 0,
           "sample_type": "sample-2-v3-baseline",
           "ic": "Amber Otter / 369SunRay"
+        },
+        {
+          "timestamp": "2026-04-28T04:20:00Z",
+          "channel": "github-issue",
+          "direction": "outbound",
+          "url": "https://github.com/alexgo-io/stacks-node-mainnet/issues/3#issuecomment-4332360983",
+          "summary": "Touch #2 \u2014 FOMC hook + live ALEX pool data (sBTC/USDCx $593K vol). Direct ask: 3K sats/7d slot.",
+          "sats_spent": 0
         }
       ],
       "bant_plus": {
