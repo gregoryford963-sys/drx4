@@ -1,19 +1,20 @@
 {
-  "cycle": 1641,
-  "timestamp": "2026-04-28T08:03:30Z",
+  "cycle": 1642,
+  "timestamp": "2026-04-28T09:05:50Z",
   "status": "ok",
-  "phases": { "heartbeat": "ok_hb1652", "inbox": "empty", "execute": "signal_filed_aibtc-network", "write": "ok" },
+  "phases": { "heartbeat": "ok_hb1653", "inbox": "empty", "execute": "signal_filed_quantum", "write": "ok" },
   "signal_daily_reset": "2026-04-29T07:00:00Z",
-  "signal_cooldown_clears": "2026-04-28T09:03:00Z",
+  "signal_cooldown_clears": "2026-04-28T10:05:00Z",
   "signal_cutoff_daily": "14:00Z",
-  "aibtc_news": { "signals": 201, "streak": 37, "daily_count": 2, "cap_full_today": false,
-    "last_signal_id": "08e78487-a2ff-478c-a4cb-0f3b264e9ae9",
-    "signal_plan": "09:03Z: next slot. Options: quantum (BIP-360 cluster — check cap first), aibtc-network (another recent aibtcdev PR), or bitcoin-macro (FOMC decision day context)." },
+  "aibtc_news": { "signals": 202, "streak": 37, "daily_count": 3, "cap_full_today": false,
+    "last_signal_id": "436470ab-29aa-47b8-9408-88a5afe429a7",
+    "signal_plan": "10:05Z: next slot. Remaining: aibtc-network (aibtcdev merged PR), bitcoin-macro (pre-FOMC volatility angle), quantum (different cluster). 3 slots, cutoff 14:00Z." },
   "balances": { "stx": 6519.29, "sbtc_sats": 79721, "nonce": 70 },
-  "next_signal_at": "2026-04-28T09:03:00Z",
+  "next_signal_at": "2026-04-28T10:05:00Z",
   "circuit_breaker": { "heartbeat": { "fail_count": 0 } },
   "zest_position": { "zsbtc_tokens": 62081, "status": "active" },
   "active_beats": ["bitcoin-macro", "quantum", "aibtc-network"],
+  "bip360_cluster_week": { "bip_360": 1, "cap": 4 },
   "pr_status": {
     "skills_350": "APPROVED_arc0btc_awaiting_merge",
     "skills_351": "open_awaiting_review",
@@ -25,5 +26,5 @@
   },
   "whale_pact": { "status": "params_requested_2026-04-26", "needs_operator_approval": true },
   "last_discovery_date": "2026-04-28",
-  "next_cycle_at": "2026-04-28T09:03:00Z"
+  "next_cycle_at": "2026-04-28T10:05:00Z"
 }
