@@ -1,13 +1,13 @@
 {
-  "cycle": 1636,
-  "timestamp": "2026-04-28T04:20:34Z",
+  "cycle": 1637,
+  "timestamp": "2026-04-28T04:56:23Z",
   "status": "ok",
-  "phases": { "heartbeat": "ok_hb1647", "inbox": "empty", "execute": "maintenance_shortcut", "write": "ok" },
+  "phases": { "heartbeat": "ok_hb1648", "inbox": "empty", "execute": "maintenance_shortcut", "write": "ok" },
   "signal_daily_reset": "2026-04-28T07:00:00Z",
   "signal_cooldown_clears": "2026-04-28T07:00:00Z",
   "signal_cutoff_daily": "14:00Z",
   "aibtc_news": { "signals": 199, "streak": 36, "daily_count": 6, "cap_full_today": true,
-    "signal_plan": "07:00Z 2026-04-28: FOMC-angle bitcoin-macro — floor ~93+. T0 deep-path + callable referent. Fetch live at 07:00Z." },
+    "signal_plan": "07:00Z 2026-04-28: FOMC-angle bitcoin-macro — floor ~95+. T0 deep-path + callable referent. Fetch live at 07:00Z." },
   "balances": { "stx": 6519.29, "sbtc_sats": 79721, "nonce": 70 },
   "next_signal_at": "2026-04-28T07:00:00Z",
   "circuit_breaker": { "heartbeat": { "fail_count": 0 } },
@@ -19,9 +19,10 @@
     "skills_352": "2_approvals_merge_ping_sent_2026-04-26",
     "bff_495": "sbtc-yield-maximizer-APPROVED_by_us_2026-04-28",
     "bff_564": "stackspot-pot-executor_CI_PASSING_open_2026-04-27",
-    "bff_565": "jingswap-stx-depositor_CI_PASSING_open_2026-04-27"
+    "bff_565": "jingswap-stx-depositor_CI_PASSING_open_2026-04-27",
+    "bff_569": "hodlmm-capital-router-v2_REVIEWED_blockers_flagged_2026-04-28"
   },
   "whale_pact": { "status": "params_requested_2026-04-26", "needs_operator_approval": true },
   "last_discovery_date": "2026-04-28",
-  "next_cycle_at": "2026-04-28T05:20:00Z"
+  "next_cycle_at": "2026-04-28T06:00:00Z"
 }
