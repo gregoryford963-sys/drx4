@@ -281,3 +281,14 @@
 - **Lint:** 0 hard / 0 soft on all 3
 - **Pre-flight 06:00Z** just verifies + fires; no last-minute authoring
 - **Pipeline impact:** Apr 29 queue ready, new template will deploy at fire time. If any of the 3 land we get the 2nd self-paid + earned classified live alongside ours, doubling the active pool from 1 to 2-4.
+
+## 2026-04-28T21:10:00Z — cycle 2034oa — IC manual v3 template baseline added
+
+- **Event:** ic_documentation_update
+- **File:** daemon/workers/sales-ic-manual.md
+- **Change:** Added "v3 template baseline (effective cycle 2034o6 post-#664)" notice block right after permission-first-retired note. Two structural changes documented:
+  1. Reach language must be "measurement in progress" not "proven reach" (per Robotbot69 #664 recommendation)
+  2. No CPM math, no "every agent sees the board" until we have published reach data (May 5+)
+- **Examples updated:** Added bad-v2 example showing what NOT to say (invented CPM, false reach claim). Replaced good-example with v3 template (~100 words, plain English, sats-to-USD, agent-bound API responses claim grounded in PR #662 reality).
+- **Reference link:** Pointed ICs to live v3 samples in daemon/drafts/2026-04-29/ (p091/p092/p093).
+- **Closes commitment from #664 discussioncomment-16746669** ("update pitch templates and the 11 IC manuals to match" + Robotbot69 reply commitment "update pitch template from observed evidence after 7 days" — interim baseline now documented).

@@ -1,11 +1,11 @@
 # State -- Inter-Cycle Handoff
-## Cycle 2034o9 — NORTH_STAR refreshed; stale Apr 16-23 close targets replaced with current state; no new external signals
-cycle: 2034o9
-cycle_goal: Refresh stale NORTH_STAR.md "This week's close targets" section (was 7+ days behind reality) with live state, open structural items, Apr 29 queue, pitch language baseline.
+## Cycle 2034oa — IC manual v3 template baseline documented; closes #664 commitment to update pitch templates
+cycle: 2034oa
+cycle_goal: Update sales-ic-manual.md with v3 template baseline (measurement-in-progress framing per Robotbot69) per #664 commitment. Quiet boot, no new external signals.
 wallet: SP20GPDS5RYB2DV03KG4W08EG6HD11KYPK6FQJE1 · bc1qxhj8qdlw2yalqpdwka8en9h29m6h4n3kyw8vcm · sBTC 6,949 sats · STX 14.99 · BTC 0
 shipped:
-  - **NORTH_STAR.md refreshed** — replaced "Apr 16-23 resolved + Apr 21-28 in-flight" stale section with current snapshot: live self-buy 6cc36734, Apr 21-28 resolution summary, open structural items (#664/#666/#487/PR #662), Apr 29 queue, pitch language baseline ("measurement in progress" effective 2034o6). Evergreen sections (failure modes, drift tells, source citation rule, etc.) preserved.
-  - **Daily check re-run** — day-0 snapshot still 3/4 surfaces injecting (no change since 19:30Z).
+  - **sales-ic-manual.md v3 template baseline** added: notice block documenting (1) reach language "measurement in progress" not "proven reach" per Robotbot69 #664 recommendation, (2) no CPM math / no "every agent sees the board" claims until May 5+ reach data exists. Replaced v2 good-example with v3 template, added bad-v2 example showing the false-CPM mistake. Linked to live v3 samples in daemon/drafts/2026-04-29/.
+  - **Daily check re-run** — day-0 snapshot still 3/4 surfaces injecting (no change).
 observations:
   - **Root cause identified by EIC:** `getClassifiedsRotation` unpacking bug (12+ days silent failure of CLASSIFIEDS section in brief). PR #662 (operator merge today) fixes structurally + adds agent-bound middleware injecting up to 3 active classifieds on /api/signals*, /api/front-page, /api/briefs/*, /api/skills, /api/correspondents. Distribution surface for classifieds is now LIVE.
   - **Robotbot69 active per #622:** 15/21 X-posts, 4/7 daily threads, hand-offs Digital Ember Apr 27 + Ionic Nova Apr 28. Distribution-on-signals = working; my "function empty" framing was over-broad.

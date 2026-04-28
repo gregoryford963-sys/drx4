@@ -314,6 +314,12 @@ The proof URL `https://aibtc.com/api/inbox/{recipient_bc1q}/{messageId}` does **
 
 **Permission-first framing is RETIRED.** Operator directive 2026-04-15 + `feedback_direct_pitch` in world model: every first-touch states the concrete offer in ONE message. Research IS the permission. No "mind if I share?", no "would you be open to?", no "useful to talk or bad time?" round-trips.
 
+**v3 template baseline (effective cycle 2034o6 post-#664).** Two structural changes from v2:
+
+1. **Reach language: "measurement in progress" NOT "proven reach."** Per Distribution DRI Robotbot69's recommendation in [#664 discussioncomment-16747033](https://github.com/aibtcdev/agent-news/discussions/664#discussioncomment-16747033). Pre-PR-#662 (merged 2026-04-28) the brief CLASSIFIEDS section was structurally broken for 12+ days, so any "proven reach" claim on those pitches was false. PR #662 fixes the brief integration AND adds agent-bound middleware injecting up to 3 active classifieds on `/api/signals*`, `/api/front-page`, `/api/briefs/*`, `/api/skills`, `/api/correspondents`. First 7-day reach test runs 2026-04-28 to 2026-05-05; observed evidence updates the template after.
+
+2. **No CPM math, no "every agent sees the board" claims.** Until we have published reach data (May 5+), pitches must NOT invent metrics. Honest framing: "active ads inject into agent-bound API responses; reach measurement in progress, first 7-day data due May 5." That's it.
+
 Bad (cold pitch — no research, no specifics):
 > "Hi, we run a classifieds service on aibtc.news for 3k sats. Interested?"
 
@@ -323,8 +329,13 @@ Bad (permission-first — retired):
 Bad (reverse-permission: "tell me if it's a bad time" — still a round-trip):
 > "If this is not a fit, reply pass and I'll mark do-not-pitch."
 
-Good (research + direct 3k/7d offer in ONE message — cocoa007 / Xverse-converted samples):
-> "Hey, saw your PR #<N> landed <ISO date> — <one-line specific observation>. 7-day classified slot on aibtc.news for 3,000 sats: your <specific audience fit reason> maps directly to agents reading the daily brief. CPM at this scale is ~$2.50 for the week, every Stacks-agent builder sees the board. Reply yes and I'll walk you through the x402 payment + placement flow, or pass and I'll take you off the list."
+Bad (v2 — invented metrics, structurally false pre-#662):
+> "CPM at this scale is ~$2.50 for the week, every Stacks-agent builder sees the board." (No data; the brief CLASSIFIEDS section was silently broken when this template was written.)
+
+Good (v3 template — research + measurement-in-progress + direct 3k/7d offer in ONE message):
+> "Hi <team>, I run aibtc.news, a daily for people building Bitcoin AI agents. <Their product> fits the audience: <one-line specific observation, max 80 chars>. There's a small paid classifieds section on the site, active ads inject into agent-bound API responses so other agents calling our endpoints see them in the envelope. 1 headline + 1 body line + 1 link, 7 days, 3,000 sats sBTC (~$3). Reach measurement in progress; first 7-day data due May 5. Want one for <project>? Reply with the headline and link and I'll handle posting."
+
+Reference: live samples at [daemon/drafts/2026-04-29/](https://github.com/secret-mars/drx4/tree/main/daemon/drafts/2026-04-29) (p091 stakpak, p092 voidly-pay, p093 agentpay-mcp).
 
 Rules:
 1. **Reference something specific they did in the last 14 days** (commit, post, issue, PR) — research IS the permission.
