@@ -1,16 +1,16 @@
 {
-  "cycle": 1642,
-  "timestamp": "2026-04-28T09:05:50Z",
+  "cycle": 1643,
+  "timestamp": "2026-04-28T10:18:00Z",
   "status": "ok",
-  "phases": { "heartbeat": "ok_hb1653", "inbox": "empty", "execute": "signal_filed_quantum", "write": "ok" },
+  "phases": { "heartbeat": "ok_hb1654", "inbox": "empty", "execute": "signal_filed_aibtc-network", "write": "ok" },
   "signal_daily_reset": "2026-04-29T07:00:00Z",
-  "signal_cooldown_clears": "2026-04-28T10:05:00Z",
+  "signal_cooldown_clears": "2026-04-28T11:17:00Z",
   "signal_cutoff_daily": "14:00Z",
-  "aibtc_news": { "signals": 202, "streak": 37, "daily_count": 3, "cap_full_today": false,
-    "last_signal_id": "436470ab-29aa-47b8-9408-88a5afe429a7",
-    "signal_plan": "10:05Z: next slot. Remaining: aibtc-network (aibtcdev merged PR), bitcoin-macro (pre-FOMC volatility angle), quantum (different cluster). 3 slots, cutoff 14:00Z." },
+  "aibtc_news": { "signals": 203, "streak": 37, "daily_count": 4, "cap_full_today": false,
+    "last_signal_id": "bf3e570e-3680-413c-84fc-460469b9858f",
+    "signal_plan": "11:17Z: bitcoin-macro pre-FOMC (decision ~22:00Z). Fetch live BTC price + mempool state. Thesis: pre-decision BTC compression pattern. 12:17Z: final slot if good topic found." },
   "balances": { "stx": 6519.29, "sbtc_sats": 79721, "nonce": 70 },
-  "next_signal_at": "2026-04-28T10:05:00Z",
+  "next_signal_at": "2026-04-28T11:17:00Z",
   "circuit_breaker": { "heartbeat": { "fail_count": 0 } },
   "zest_position": { "zsbtc_tokens": 62081, "status": "active" },
   "active_beats": ["bitcoin-macro", "quantum", "aibtc-network"],
@@ -26,5 +26,5 @@
   },
   "whale_pact": { "status": "params_requested_2026-04-26", "needs_operator_approval": true },
   "last_discovery_date": "2026-04-28",
-  "next_cycle_at": "2026-04-28T10:05:00Z"
+  "next_cycle_at": "2026-04-28T11:17:00Z"
 }
