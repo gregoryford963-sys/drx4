@@ -3799,9 +3799,9 @@
         "url": "https://github.com/bug-ops/zeph",
         "btc_address": null
       },
-      "stage": "pitched",
+      "stage": "lost-rejected-as-spam",
       "first_touch_at": "2026-04-28T08:54:00Z",
-      "last_touch_at": "2026-04-28T08:54:00Z",
+      "last_touch_at": "2026-04-28T11:30:00Z",
       "touches": [
         {
           "timestamp": "2026-04-28T08:54:00Z",
@@ -3812,6 +3812,15 @@
           "sats_spent": 0,
           "proof_url": "https://github.com/bug-ops/zeph/issues/3541",
           "summary": "Apr 28 PT direct first-touch \u2014 Rust AI agent runtime where every context token earns its place"
+        },
+        {
+          "at": "2026-04-28T11:30:00Z",
+          "channel": "github_issue",
+          "direction": "inbound-rejection",
+          "summary": "Maintainer bug-ops closed issue #3541 as spam at 2026-04-28T11:07:39Z (H+2h14m). Comment: 'Off-topic advertising. Closing as spam.' Stage: pitched -> lost-rejected-as-spam. No reply per BD discipline.",
+          "type": "maintainer-rejection-explicit",
+          "url": "https://github.com/bug-ops/zeph/issues/3541#issuecomment",
+          "stage_transition": "pitched -> lost-rejected-as-spam"
         }
       ],
       "bant_plus": {

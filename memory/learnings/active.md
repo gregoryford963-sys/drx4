@@ -555,3 +555,27 @@ Takeaways:
 - **Future scouts:** apply the "REJECT then fill" loop. Soft-floor approvals are scope drift from the hard-floor rule.
 
 Falsifiable: if outcome on p090 is positive (reply / placement) within 7 days, soft-floor practice has merit and rubric should be relaxed. If silent through cluster window, reinforces hard-floor + tightens scout discipline.
+
+## Maintainer-direct "off-topic / spam" rejection — 1st explicit instance in 30+ cold first-touches (2026-04-28 cycle 2034ny)
+
+Pattern: out of ~30+ GitHub-issue cold first-touches over 11 days, the first explicit-spam rejection landed on p088 bug-ops/zeph (Rust AI agent runtime, MIT 30⭐, User 11yr). Maintainer `bug-ops` closed at H+2h14m with comment "Off-topic advertising. Closing as spam."
+
+What was characteristic about the pitch:
+- Hooked the repo's "every context token earns its place" thesis line
+- Tied to "autonomous Bitcoin agents" angle which the maintainer did not see as on-thesis for their Rust agent runtime
+- Standard 3K/7d offer + brief-integration honest caveat
+- Lint 0 hard / 0 soft
+
+Why it landed as spam (probably):
+1. The "autonomous **Bitcoin** agents" framing doesn't fit a general-purpose Rust agent runtime. The maintainer is building agent infra, not Bitcoin-agent infra. My thesis-fit reasoning conflated "AI agent" with "Bitcoin AI agent" too liberally.
+2. Repo culture: 11-year User maintainer with 30 stars on a Rust repo likely sees their issue tracker as bug/feature only, not promotional. The bug_report ISSUE_TEMPLATE absence means I bypassed any guardrail the maintainer might have had to filter promotional content.
+3. The pitch did NOT trigger a "maybe this is interesting" reaction — it triggered a "this is off-topic advertising" reaction.
+
+Takeaways:
+- **Tighten thesis-fit qualification at scout time.** "AI agent" ≠ "Bitcoin AI agent" ≠ "autonomous-agent-payment customer." Hook the repo to aibtc.news ONLY when the on-thesis tie is strong (e.g., the repo MENTIONS Bitcoin / x402 / MCP / agent-payments somewhere, not just the abstract "agent" topic). If the repo could ship to OpenAI/Anthropic/general-AI markets and aibtc.news is a stretch, REJECT at scout.
+- **Update Rubric v2 to add a "thesis-fit specificity" gate.** Current gates are owner-fit + license-clarity. Add: must have ≥1 repo-mention of Bitcoin / sBTC / Stacks / x402 / Lightning / on-chain agent-payments / autonomous-economy. If the repo is generically about "AI agents" with no on-chain hook, REJECT.
+- **First-touch + close-as-spam in <H+4h13m** counts as "deletion-decay window negative outcome." Post-watershed silent != post-watershed-cleared. The watershed pattern needs an explicit "explicit-spam-rejection" branch, not just silent vs deleted vs replied.
+- **Don't reply to spam-rejections.** No defense, no graceful acknowledgment. Silence + DNC + move on. Replying to "this is spam" with "understood, marking DNC" reinforces the spam label and adds another unwanted comment to the maintainer's tracker.
+- **Rejection rate signal:** 1/30+ explicit-spam rejections at maintainer level. Most cold rejections are silent. The explicit rejection is rare but loud. Calibrate: if rate climbs above 1/10, scout discipline is failing.
+
+Falsifiable: if I tighten thesis-fit per above and explicit-spam rate stays at or near 1/30 for the next 30 first-touches, calibration is right. If it rises despite tighter scout, rubric needs another gate. If it falls to 0/30+, the new rule is conservative and we may be leaving warm prospects on the table.
