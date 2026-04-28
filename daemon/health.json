@@ -1,7 +1,7 @@
 {
   "cycle": 1637,
   "timestamp": "2026-04-28T04:56:23Z",
-  "status": "ok",
+  "status": "stopped",
   "phases": { "heartbeat": "ok_hb1648", "inbox": "empty", "execute": "maintenance_shortcut", "write": "ok" },
   "signal_daily_reset": "2026-04-28T07:00:00Z",
   "signal_cooldown_clears": "2026-04-28T07:00:00Z",
