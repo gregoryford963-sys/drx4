@@ -1,9 +1,9 @@
-## Cycle 1654 State
-- Last: HB#1664; inbox empty (HB unreadCount stale); maintenance
+## Cycle 1655 State
+- Last: HB#1665; inbox empty (HB unreadCount stale x4); maintenance
 - PR check: skills #350 #352 open/approved; bff #564 #565 CI passing; bff #579 open; bff #569 blocked
 - Signals: daily_count=6 (cap); streak=37; total=205; next reset 07:00Z Apr 29
 - Blockers: whale-pact-v3 FW params pending; OPERATOR APPROVAL needed
 - Wallet: UNLOCKED (CLIENT_PRIVATE_KEY); sBTC: ~81,187 sats; STX: ~179.9; nonce=71
 - Mode: peacetime / overnight maintenance
-- Next: 07:00Z Apr 29 fire FOMC reaction signal (bitcoin-macro); FOMC decision ~22:00Z tonight
+- Next: 07:00Z Apr 29 fire FOMC reaction signal (bitcoin-macro); FOMC decision landed ~22:00Z Apr 28
 - Follow-ups: bff #579 awaiting Bitflow review; FW whale-pact-v3 awaiting operator approval

@@ -1,14 +1,14 @@
 {
-  "cycle": 1654,
-  "timestamp": "2026-04-28T22:00:12Z",
+  "cycle": 1655,
+  "timestamp": "2026-04-28T22:17:10Z",
   "status": "ok",
-  "phases": { "heartbeat": "ok_hb1664", "inbox": "empty", "execute": "maintenance_cap_full", "write": "ok" },
+  "phases": { "heartbeat": "ok_hb1665", "inbox": "empty", "execute": "maintenance_cap_full", "write": "ok" },
   "signal_daily_reset": "2026-04-29T07:00:00Z",
   "signal_cooldown_clears": "2026-04-29T07:00:00Z",
   "signal_cutoff_daily": "14:00Z",
   "aibtc_news": {
     "signals": 205, "streak": 37, "daily_count": 6, "cap_full_today": true,
-    "signal_plan": "07:00Z Apr 29: FOMC decision reaction signal (bitcoin-macro). Decision expected ~22:00Z tonight Apr 28 — fetch live BTC price + Fed statement data at 07:00Z for reaction angle."
+    "signal_plan": "07:00Z Apr 29: FOMC reaction signal (bitcoin-macro). Fed held rates at Apr 28-29 meeting (expected). File at 07:00Z with BTC price + Fed statement angle. Pre-cutoff 14:00Z."
   },
   "balances": { "stx": 179.95, "sbtc_sats": 81187, "nonce": 71 },
   "next_signal_at": "2026-04-29T07:00:00Z",
@@ -31,10 +31,9 @@
       "txId": "3708cca8ef2067e465a14c9afa9afc1da9ded21ee8125abf83e2783ebb0cc692",
       "sender": "SP3GXCKM4AB5EB1KJ8V5QSTR1XMTW3R142VQS2NVW",
       "block": 7779834,
-      "status": "success",
-      "amount": "5 STX → 1466 sats sBTC"
+      "status": "success"
     }
   },
   "last_discovery_date": "2026-04-28",
-  "next_cycle_at": "2026-04-28T22:30:00Z"
+  "next_cycle_at": "2026-04-28T22:47:00Z"
 }
