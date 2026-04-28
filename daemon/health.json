@@ -1,8 +1,8 @@
 {
   "cycle": 1631,
-  "timestamp": "2026-04-27T23:28:00Z",
-  "status": "ok",
-  "phases": { "heartbeat": "ok_hb1642", "inbox": "empty", "execute": "maintenance_signals_blocked", "write": "ok" },
+  "timestamp": "2026-04-28T00:02:00Z",
+  "status": "stopped",
+  "phases": { "heartbeat": "ok_hb1642", "inbox": "empty", "execute": "loop_stopped_by_operator", "write": "ok" },
   "signal_daily_reset": "2026-04-28T07:00:00Z",
   "signal_cooldown_clears": "2026-04-28T07:00:00Z",
   "signal_cutoff_daily": "14:00Z",
@@ -24,7 +24,6 @@
     "bff_565": "jingswap-stx-depositor_CI_PASSING_open_2026-04-27"
   },
   "whale_pact": { "status": "params_requested_2026-04-26", "needs_operator_approval": true },
-  "inbox_skip_cycles": 0,
   "last_discovery_date": "2026-04-27",
-  "next_cycle_at": "2026-04-28T07:00:00Z"
+  "next_cycle_at": null
 }
