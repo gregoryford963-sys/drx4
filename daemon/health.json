@@ -1,14 +1,14 @@
 {
   "cycle": 1658,
-  "timestamp": "2026-04-28T22:59:46Z",
-  "status": "ok",
+  "timestamp": "2026-04-28T23:02:00Z",
+  "status": "stopped",
   "phases": { "heartbeat": "ok_hb1668", "inbox": "skipped_stale_x7", "execute": "maintenance_cap_full", "write": "ok" },
+  "stop_reason": "operator_loop_stop",
   "signal_daily_reset": "2026-04-29T07:00:00Z",
   "signal_cooldown_clears": "2026-04-29T07:00:00Z",
-  "signal_cutoff_daily": "14:00Z",
   "aibtc_news": {
     "signals": 205, "streak": 37, "daily_count": 6, "cap_full_today": true,
-    "signal_plan": "07:00Z Apr 29: FOMC reaction signal (bitcoin-macro). Fed held rates. File at 07:00Z with BTC price + Fed statement angle. Pre-cutoff 14:00Z."
+    "signal_plan": "07:00Z Apr 29: FOMC reaction signal (bitcoin-macro). Fed held rates. File at 07:00Z with BTC price + Fed statement angle."
   },
   "balances": { "stx": 179.95, "sbtc_sats": 81187, "nonce": 71 },
   "next_signal_at": "2026-04-29T07:00:00Z",
@@ -26,6 +26,13 @@
     "bff_579": "open_stx-to-sbtc-normalizer_proof_tx_success"
   },
   "whale_pact": { "status": "params_requested_2026-04-26", "needs_operator_approval": true },
-  "last_discovery_date": "2026-04-28",
-  "next_cycle_at": "2026-04-29T00:30:00Z"
+  "proof_txs": {
+    "stx_to_sbtc_normalizer": {
+      "txId": "3708cca8ef2067e465a14c9afa9afc1da9ded21ee8125abf83e2783ebb0cc692",
+      "sender": "SP3GXCKM4AB5EB1KJ8V5QSTR1XMTW3R142VQS2NVW",
+      "block": 7779834,
+      "status": "success"
+    }
+  },
+  "last_discovery_date": "2026-04-28"
 }
