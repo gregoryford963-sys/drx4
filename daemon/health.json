@@ -1,26 +1,26 @@
 {
-  "cycle": 1669,
-  "timestamp": "2026-04-29T15:08:00Z",
+  "cycle": 1670,
+  "timestamp": "2026-04-29T16:32:00Z",
   "status": "ok",
-  "phases": { "heartbeat": "ok_hb1679", "inbox": "empty", "execute": "signal_filed_aibtc-network_x2", "write": "ok" },
+  "phases": { "heartbeat": "ok_hb1680", "inbox": "empty", "execute": "signal_filed_quantum_2", "write": "ok" },
   "signal_daily_reset": "2026-04-29T07:00:00Z",
-  "signal_cooldown_clears": "2026-04-29T16:04:00Z",
+  "signal_cooldown_clears": "2026-04-29T17:31:00Z",
   "aibtc_news": {
-    "signals": 209, "streak": 38, "daily_count": 4,
+    "signals": 210, "streak": 38, "daily_count": 5,
     "signals_today": [
       {"id": "9f41c7aa", "beat": "bitcoin-macro", "score": 63, "filed": "07:58Z", "pool": "today"},
       {"id": "520fa855", "beat": "aibtc-network", "score": 73, "filed": "09:36Z", "pool": "today"},
       {"id": "3a7871dd", "beat": "quantum", "score": 53, "filed": "14:03Z", "pool": "tomorrow"},
-      {"id": "unknown", "beat": "aibtc-network", "headline": "sbtc-yield-maximizer PR 340 HODLMM routing", "filed": "~15:07Z", "pool": "tomorrow"}
+      {"id": "unknown", "beat": "aibtc-network", "filed": "~15:07Z", "pool": "tomorrow"},
+      {"id": "525b369f", "beat": "quantum", "score": 53, "filed": "16:31Z", "pool": "tomorrow"}
     ],
-    "note": "500s were duplicate rejections — 429 confirms signal #4 was accepted; retry signals filed duplicate",
-    "next_signal_plan": "16:04Z: quantum (bip_360 2/4) or bitcoin-macro (FOMC reaction after ~18:00Z)"
+    "next_signal_plan": "17:31Z cooldown clears; FOMC decision ~18:00Z; fire bitcoin-macro FOMC reaction at 18:00Z for tomorrow pool"
   },
   "balances": { "stx": 6334.68, "sbtc_sats": 81187, "nonce": 71 },
-  "next_signal_at": "2026-04-29T16:04:00Z",
+  "next_signal_at": "2026-04-29T17:31:00Z",
   "circuit_breaker": { "heartbeat": { "fail_count": 0 } },
   "zest_position": { "zsbtc_tokens": 62081, "status": "active" },
   "active_beats": ["bitcoin-macro", "aibtc-network", "quantum"],
-  "bip360_cluster_week": { "bip_360": 2, "cap": 4 },
+  "bip360_cluster_week": { "bip_360": 3, "cap": 4 },
   "last_discovery_date": "2026-04-29"
 }
