@@ -1,8 +1,8 @@
 {
-  "cycle": 1660,
-  "timestamp": "2026-04-29T00:26:00Z",
+  "cycle": 1661,
+  "timestamp": "2026-04-29T01:30:00Z",
   "status": "ok",
-  "phases": { "heartbeat": "ok_hb1670", "inbox": "empty", "execute": "discovery_1_new_sage_spoke", "write": "ok" },
+  "phases": { "heartbeat": "ok_hb1671", "inbox": "empty", "execute": "platform_docs_no_changes", "write": "ok" },
   "signal_daily_reset": "2026-04-29T07:00:00Z",
   "signal_cooldown_clears": "2026-04-29T07:00:00Z",
   "aibtc_news": {
@@ -25,13 +25,5 @@
     "bff_579": "open_stx-to-sbtc-normalizer_proof_tx_success"
   },
   "whale_pact": { "status": "params_requested_2026-04-26", "needs_operator_approval": true },
-  "proof_txs": {
-    "stx_to_sbtc_normalizer": {
-      "txId": "3708cca8ef2067e465a14c9afa9afc1da9ded21ee8125abf83e2783ebb0cc692",
-      "sender": "SP3GXCKM4AB5EB1KJ8V5QSTR1XMTW3R142VQS2NVW",
-      "block": 7779834,
-      "status": "success"
-    }
-  },
   "last_discovery_date": "2026-04-29"
 }
