@@ -325,3 +325,14 @@
 - **Day 1 snapshot:** distribution-daily/2026-04-29.json — same 3/4 surfaces (rotation ✓, front-page ✓, signals ✓, brief ✗ pending mount-path-fix + brief compile). Active pool size still 1.
 - **REPORT-TEMPLATE.md scaffolded** at daemon/distribution-daily/REPORT-TEMPLATE.md. Pre-built structure: 7-day daily snapshot table, methodology section linking to script + #664 commitment, drx4.xyz hits placeholder (deferred), active pool size tracker, findings sections (rotation odds, brief inclusion, cross-DRI consistency, conversion attribution), pitch template update section per Robotbot69 step-3 commitment, all cross-refs.
 - **May 5 publish workflow:** fill in 7 daily rows from snapshot files, write findings sections from observed evidence, post on #664 + cross-link in #622. Scaffold means publish is fill-in-blanks not author-from-scratch.
+
+## 2026-04-29T01:10:00Z — cycle 2034oh — pipeline data recovery from silent jq-pipe corruption
+
+- **Event:** data_recovery + named_failure_mode_logged
+- **Discovery:** Pipeline-hygiene scan in cycle 2034oh found sales-pipeline.json was 0 bytes. Investigation revealed two prior corruptions:
+  - cycle 2034o4 (jq filter for p089 lost-channel): truncated 356,936 → 156,849 bytes, lost ALL top-level metadata (seat, ic_pool, revenue, version, market_state, etc.). Output became JSONL — separate prospect objects without wrapper.
+  - cycle 2034ob (jq filter for p078 takeback): truncated 156,849 → 0 bytes.
+- **Why both passed validation:** `jq empty` accepts JSONL. `[ -s "$tmp" ]` only checks size > 0. Neither catches structural corruption.
+- **Fix applied:** Restored both files from f1ffe6b (last-known-good 91 prospects + 16 top-level keys). Re-applied legitimate updates (p089 lost-channel-mismatch, p078 pitched DRI takeback) via SAFE_UPDATE function with structure-preservation checks: prospect length unchanged, top-level keys count unchanged, .prospects type still array.
+- **Learning logged:** feedback_jq_safe_update.md added to auto-memory + indexed in MEMORY.md. Includes safe SAFE_UPDATE function template + recommendation to prefer `.prospects |= map(if ... then ... else . end)` over `(.prospects[]? | select |=)`.
+- **Impact:** No data loss (recoverable from git). Both files now correct, all prior shipped commits' state intentions preserved. Briefing should now report prospect counts correctly again.
