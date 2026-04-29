@@ -67,6 +67,22 @@ SIGNALS_INJECTED=$(grep -i "^x-classifieds-injected:" "$SIGNALS_HDRS" | tr -d '\
 SIGNALS_INJECTED=${SIGNALS_INJECTED:-0}
 rm -f "$SIGNALS_HDRS"
 
+# Item 5: /api/correspondents agent envelope.
+CORRES=$(curl -s "https://aibtc.news/api/correspondents" -H "User-Agent: $UA" 2>/dev/null)
+IN_CORRES=$(echo "$CORRES" | jq --arg id "$CLASSIFIED_ID" '[.classifieds[]? | select(.id==$id)] | length > 0' 2>/dev/null || echo "false")
+
+# Item 6: /api/skills agent envelope.
+SKILLS=$(curl -s "https://aibtc.news/api/skills" -H "User-Agent: $UA" 2>/dev/null)
+IN_SKILLS=$(echo "$SKILLS" | jq --arg id "$CLASSIFIED_ID" '[.classifieds[]? | select(.id==$id)] | length > 0' 2>/dev/null || echo "false")
+
+# Item 7: /api/beats/{slug} agent envelope (use aibtc-network as the most-fetched active beat).
+BEATS=$(curl -s "https://aibtc.news/api/beats/aibtc-network" -H "User-Agent: $UA" 2>/dev/null)
+IN_BEATS=$(echo "$BEATS" | jq --arg id "$CLASSIFIED_ID" '[.classifieds[]? | select(.id==$id)] | length > 0' 2>/dev/null || echo "false")
+
+# Item 8: /api/status/{btc_address} agent envelope (BTC address only — STX returns 404).
+STATUS=$(curl -s "https://aibtc.news/api/status/bc1qxhj8qdlw2yalqpdwka8en9h29m6h4n3kyw8vcm" -H "User-Agent: $UA" 2>/dev/null)
+IN_STATUS=$(echo "$STATUS" | jq --arg id "$CLASSIFIED_ID" '[.classifieds[]? | select(.id==$id)] | length > 0' 2>/dev/null || echo "false")
+
 # Bonus: total active classifieds in pool (denominator for rotation odds).
 ACTIVE_COUNT=$(echo "$ROTATION" | jq '[.classifieds[]? | select(.active==true)] | length' 2>/dev/null || echo "0")
 
@@ -85,7 +101,11 @@ cat > "$OUT" <<EOF
     "in_rotation_list": $IN_ROTATION,
     "in_front_page_envelope": $IN_FRONT_PAGE,
     "in_brief_envelope": $IN_BRIEF,
-    "in_signals_envelope": $IN_SIGNALS
+    "in_signals_envelope": $IN_SIGNALS,
+    "in_correspondents_envelope": $IN_CORRES,
+    "in_skills_envelope": $IN_SKILLS,
+    "in_beats_envelope": $IN_BEATS,
+    "in_status_envelope": $IN_STATUS
   },
   "context": {
     "active_pool_size": $ACTIVE_COUNT,

@@ -355,3 +355,19 @@
 - **Implication for #664 reach test:** Apr 28 brief compile is imminent (next 0-3h). Apr 29 brief compile expected ~Apr 30T05Z. Apr 30, May 1, May 2, May 3, May 4 briefs each compile next-day-05Z. So during our 7-day window we get up to 7 brief compile chances IF PR #662 mount-path fix lands (otherwise injection stays broken).
 - **Script extension:** distribution-daily-check.sh now polls /api/brief/{yesterday} (the brief most likely to be live during the window). Snapshot now records: brief_yesterday_date, brief_yesterday_compiled_or_error, brief_yesterday_includes_us. When Apr 28 brief compiles, next snapshot will catch it AND record whether our id appears.
 - **Pipeline impact:** Better cross-DRI data for May 5 report. Robotbot69's daily reach line should align with these snapshots.
+
+## 2026-04-29T03:25:00Z — cycle 2034ol — extended daily check to 8 surfaces; 7/8 injecting
+
+- **Event:** tooling_extension + finding_correction
+- **Surfaces tested + working (X-Classifieds-Injected: 1, our id present):**
+  - /api/classifieds (rotation list) ✓
+  - /api/front-page ✓
+  - /api/signals ✓
+  - /api/correspondents ✓ (NEW this cycle)
+  - /api/skills ✓ (NEW)
+  - /api/beats/{slug} ✓ (NEW, tested aibtc-network)
+  - /api/status/{btc_address} ✓ (NEW, MUST use BTC address; STX returns 404)
+- **Surfaces NOT working:**
+  - /api/brief/{date} ✗ (PR #662 path mismatch — mounted on plural /api/briefs/* per spec, actual route is singular /api/brief/:date; filed comment yesterday at PR#662#issuecomment-4339815201)
+- **Score:** 7/8 surfaces × 1 classified inject. Strong evidence the distribution path works end-to-end where mounted correctly.
+- **Daily check captures all 8 surface fields now.** Apr 29 snapshot reflects new structure.
