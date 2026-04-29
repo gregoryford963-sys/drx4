@@ -96,10 +96,12 @@ if [[ -f "$TODAY_SNAP" ]]; then
     .surfaces as $s |
     .context as $c |
     "  Listing: \(.classified_id[:8])... status=\($l.status) active=\($l.active)",
-    "  Surfaces injecting (7/8 expected; brief blocked PR #662):",
+    "  Envelope surfaces (7/8 expected; brief envelope blocked on PR #662 path-fix):",
     "    rotation=\($s.in_rotation_list) front-page=\($s.in_front_page_envelope) signals=\($s.in_signals_envelope) brief=\($s.in_brief_envelope)",
     "    correspondents=\($s.in_correspondents_envelope) skills=\($s.in_skills_envelope) beats=\($s.in_beats_envelope) status=\($s.in_status_envelope)",
-    "  Context: active_pool=\($c.active_pool_size) brief_yday=\($c.brief_yesterday_compiled_or_error)"
+    "  Brief text body (compile-time, separate from envelope):",
+    "    yday=\($c.brief_yesterday_date) compiled=\($c.brief_yesterday_compiled_or_error) text_includes_us=\($c.brief_yesterday_text_includes_us // "n/a")",
+    "  Context: active_pool=\($c.active_pool_size)"
   ' "$TODAY_SNAP" 2>/dev/null
   echo ""
 fi

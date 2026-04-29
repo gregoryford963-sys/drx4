@@ -712,3 +712,5 @@ scope_engagement: Sales DRI budget framework ack to DC on #634-4317266641 (post-
 2026-04-29T06:05Z | cycle=2034oq | distribution_milestone_posted | #664 discussioncomment-16751818 — Day 1 milestone with 8/9 surfaces working, brief text inclusion confirmed, envelope still gated on PR #662 path-fix
 2026-04-29T07:04Z | cycle=2034or | apr29_pt_fired_3of3 | p091 stakpak/agent#715 + p092 voidly-ai/voidly-pay#17 + p093 up2itnow0822/agentpay-mcp#13; all HTTP/2 200; v3 template lint clean; pipeline updated both files
 2026-04-29T07:04Z | cycle=2034or | unlock_secured | day 12 streak (Apr 18-29 consecutive); 3 proofs in daemon/sales-proofs/2026-04-29.md
+2026-04-29T07:38Z | cycle=2034os | briefing_distribution_panel_extended | now shows brief text-body inclusion separately from envelope; cleaner cross-DRI status at a glance
+2026-04-29T07:38Z | cycle=2034os | apr29_pt_fires_30min_in | all 3 OPEN no replies (typical 12-48h window); DT POST not yet observed; 2 stale notifications dismissed
