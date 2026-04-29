@@ -1,13 +1,16 @@
 # State -- Inter-Cycle Handoff
-## Cycle 2034ou — open loops triaged: leventilo bot-misroute + #657 reclassified + p085-p087 data gap
-cycle: 2034ou
-cycle_goal: Triage stale open loops. leventilo#127 = Asobu01 AI bot misroute (lost). #657 = Robotbot69 perf review, not my factual correction (removing). p085-p087 not in pipeline (data gap).
+## Cycle 2034ov — email channel ACTIVE per operator directive; 3/3 nurture emails sent (vibeframe + JingSwap + reflectt)
+cycle: 2034ov
+cycle_goal: Operator directive "go full on sales using gmail." Email channel unpaused. 3 verified-email re-engages sent in v3 template (warm pipeline contacts, nurture type, bypass cold cap).
 wallet: SP20GPDS5RYB2DV03KG4W08EG6HD11KYPK6FQJE1 · bc1qxhj8qdlw2yalqpdwka8en9h29m6h4n3kyw8vcm · sBTC 6,949 sats · STX 14.99 · BTC 0
 shipped:
-  - **leventilo/boltzpay#127 triaged as lost-bot-misrouted** — Asobu01 (Devin-style AI bot) misrouted classifieds offer as bug-fix despite my clarification. No human leventilo engagement. Pattern documented.
-  - **#657 reclassified** — this is "DRI Performance Review — 2026-04-27" by Publisher rising-leviathan, NOT a factual correction on me. Earlier STATE attribution was wrong. Removed from commitments_outstanding.
-  - **Data gap noted** — p085 peacprotocol / p086 reflectt / p087 leventilo (Apr 27 PT fires) have proofs in sales-proofs/2026-04-27.md but no records in sales-pipeline.json. Fire-queue script writes proofs but not pipeline entries.
-  - **Apr 29 PT fires T+1.5h:** all 3 OPEN, 0 replies (typical). DT POST not yet observed. Robotbot69 Day 1 daily report not yet posted.
+  - **Operator directive cycle 2034ov:** "go full on sales using gmail as well it should be understandable." Email channel UNPAUSED. reference_email_channel.md updated.
+  - **3 nurture emails sent** (warm pipeline re-engages via v3 template ~190 words, plain English, "measurement in progress" framing):
+    - vibeframe → kiyeon.jeon.21@gmail.com (Resend 32b2c245). Explicitly invited email pivot on #179.
+    - JingSwap → raphisidor@gmail.com (Resend 6185d37b). Renewal nudge after Apr 28 silent expiry; emphasizes PR #662 distribution upgrades.
+    - reflectt → kai@itskai.dev (Resend 3521dcc2). Apr 27 silent re-engage.
+  - **Pipeline update:** p089 lost-channel-mismatch → pitched-via-email; p019 lost-renewal-silent → renewal-nudge-via-email; touches[] + email_resend_id + email_to fields added.
+  - **Apr 29 PT fires T+2h:** all 3 still OPEN, 0 replies. DT POST not yet observed.
 observations:
   - **Root cause identified by EIC:** `getClassifiedsRotation` unpacking bug (12+ days silent failure of CLASSIFIEDS section in brief). PR #662 (operator merge today) fixes structurally + adds agent-bound middleware injecting up to 3 active classifieds on /api/signals*, /api/front-page, /api/briefs/*, /api/skills, /api/correspondents. Distribution surface for classifieds is now LIVE.
   - **Robotbot69 active per #622:** 15/21 X-posts, 4/7 daily threads, hand-offs Digital Ember Apr 27 + Ionic Nova Apr 28. Distribution-on-signals = working; my "function empty" framing was over-broad.

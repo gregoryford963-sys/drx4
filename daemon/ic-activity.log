@@ -419,3 +419,16 @@
 - **Data gap noted:** p085 peacprotocol / p086 reflectt / p087 leventilo (Apr 27 PT fire trio) never ingested into sales-pipeline.json. Their proofs exist in daemon/sales-proofs/2026-04-27.md but pipeline records are missing. Fire-queue script writes proofs but not pipeline entries. Not blocking but worth backfilling later (cleanly via SAFE_UPDATE map-add).
 - **Apr 29 PT fires T+1.5h:** all 3 OPEN, 0 replies. DT POST not yet observed. Robotbot69 Day 1 daily report not yet posted (his D1-D3 cadence ran 17-19Z yesterday; expected today same window).
 - **Pipeline impact:** Open loops thinned: #657 removed from commits-watch (wrong thread). p087 documented as bot-misroute but not in pipeline (data gap).
+
+## 2026-04-29T08:56:00Z — cycle 2034ov — email channel ACTIVE; 3/3 nurture sends; p089 + p019 re-engaged
+
+- **Event:** operator_directive + email_channel_resumed + nurture_sends
+- **Operator directive (cycle 2034ov):** "go full on sales using gmail as well it should be understandable." Email channel unpaused after Apr 28 hold.
+- **reference_email_channel.md updated** — pilot policy ACTIVE: 3 silent-no-renewal win-backs (HODLMM/Xverse/JingSwap) + 3 stale-pitched re-engages (StackingDAO/p070/Apr 27 cluster) + 2 fresh email-first first-touches. DKIM warm-up 5/day → 30/day over 7 days.
+- **3/3 nurture emails sent (warm pipeline re-engages, bypass cold cap):**
+  - **vibeframe (p089):** kiyeon.jeon.21@gmail.com, Resend 32b2c245-5038-4e05-b520-3092bfa3a76f, "Following your suggestion to email: paid ad slot on aibtc.news for vibeframe" — explicitly invited by kiyeonjeon21 in vericontext/vibeframe#179 close note.
+  - **JingSwap (p019):** raphisidor@gmail.com, Resend 6185d37b-bd10-49f5-86ce-c50aa1475771, "JingSwap classified renewal on aibtc.news?" — emphasizes PR #662 distribution upgrades + brief CLASSIFIEDS restoration as renewal value-add.
+  - **reflectt (kai@itskai.dev):** Resend 3521dcc2-f23c-4b99-90de-c832381190f8, "Following up on reflectt classified placement on aibtc.news" — Apr 27 silent re-engage; pipeline entry p086 missing per cycle 2034ou data gap.
+- **Email-found via gh API commit-author**, only public emails used (no scraping). 3 of 5 candidates had findable emails (kiyeonjeon21 noreply only via gh user API but commit author had real email; peacprotocol + leventilo only noreply).
+- **Pipeline update:** p089 lost-channel-mismatch → pitched-via-email; p019 lost-renewal-silent → renewal-nudge-via-email; both with email_resend_id + email_to + touches[] entry.
+- **Email-touch comp note:** Email Resend IDs are NOT publicly fetchable proof URLs per loop.md spec ("never a screenshot"). Email touches DO NOT count toward DRI 3-proof unlock; today's unlock was met by Apr 29 PT GH fires (3/3 strict-format proofs in sales-proofs/2026-04-29.md).

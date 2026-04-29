@@ -2190,9 +2190,9 @@
         "btc_address": null,
         "stx_address": null
       },
-      "stage": "lost-renewal-silent",
+      "stage": "renewal-nudge-via-email",
       "first_touch_at": "2026-04-16T07:03:55Z",
-      "last_touch_at": "2026-04-28T03:10:00Z",
+      "last_touch_at": "2026-04-29T08:55:00Z",
       "touches": [
         {
           "timestamp": "2026-04-16T07:03:55Z",
@@ -2247,6 +2247,13 @@
           "type": "lifecycle-transition",
           "expiry_at": "2026-04-28T03:09:43.647Z",
           "stage_transition": "closed -> lost-renewal-silent"
+        },
+        {
+          "at": "2026-04-29T08:55:00Z",
+          "channel": "email",
+          "direction": "outbound",
+          "url": "resend:6185d37b-bd10-49f5-86ce-c50aa1475771",
+          "summary": "Renewal nudge via email after lost-renewal-silent f4ea75c1; emphasizes PR #662 distribution upgrades + brief CLASSIFIEDS restoration"
         }
       ],
       "bant_plus": {
@@ -2267,7 +2274,10 @@
         "placed_by_btc": "bc1q3t5t8tlegqf9r6mpxhn2699td35y8wcr3j92ce"
       },
       "notes": "Scouted cycle 2034p. jingswap-contract pushed 2026-04-12 + aibtcdev/skills#325 jingswap-v2 limit-price auction. Also shipped clarity-webauthn passkey-for-Stacks toolkit. Smart contract + auction infrastructure builder. Target first-touch: fresh GH issue on Rapha-btc/jingswap-contract after 2026-04-16T07:00Z.",
-      "do_not_contact": false
+      "do_not_contact": false,
+      "email_pitched_at": "2026-04-29T08:55:00Z",
+      "email_resend_id": "6185d37b-bd10-49f5-86ce-c50aa1475771",
+      "email_to": "raphisidor@gmail.com"
     },
     {
       "id": "p020",
@@ -4418,9 +4428,9 @@
         "url": "https://github.com/vericontext/vibeframe",
         "btc_address": null
       },
-      "stage": "lost-channel-mismatch",
+      "stage": "pitched-via-email",
       "first_touch_at": "2026-04-28T08:54:00Z",
-      "last_touch_at": "2026-04-28T08:54:00Z",
+      "last_touch_at": "2026-04-29T08:54:41Z",
       "touches": [
         {
           "timestamp": "2026-04-28T08:54:00Z",
@@ -4431,6 +4441,13 @@
           "sats_spent": 0,
           "proof_url": "https://github.com/vericontext/vibeframe/issues/179",
           "summary": "Apr 28 PT direct first-touch — AI-native MCP-ready video editor CLI"
+        },
+        {
+          "at": "2026-04-29T08:54:41Z",
+          "channel": "email",
+          "direction": "outbound",
+          "url": "resend:32b2c245-5038-4e05-b520-3092bfa3a76f",
+          "summary": "Email re-engage after lost-channel-mismatch on #179 — kiyeonjeon21 explicitly invited email pivot; v3 template ~190 words"
         }
       ],
       "bant_plus": {
@@ -4455,7 +4472,10 @@
       "last_freshness_check": "2026-04-26T18:40:17Z",
       "lost_at": "2026-04-28T17:50:00Z",
       "lost_reason": "vibeframe maintainer kiyeonjeon21 closed not-planned per repo spam policy; pivot path = email channel (operator-paused 2026-04-28)",
-      "reopen_condition": "email channel unpaused + maintainer email obtainable"
+      "reopen_condition": "email channel unpaused + maintainer email obtainable",
+      "email_pitched_at": "2026-04-29T08:54:41Z",
+      "email_resend_id": "32b2c245-5038-4e05-b520-3092bfa3a76f",
+      "email_to": "kiyeon.jeon.21@gmail.com"
     },
     {
       "id": "p090",
