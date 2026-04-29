@@ -1,8 +1,8 @@
 {
-  "cycle": 1672,
-  "timestamp": "2026-04-29T18:11:00Z",
+  "cycle": 1673,
+  "timestamp": "2026-04-29T18:15:04Z",
   "status": "ok",
-  "phases": { "heartbeat": "ok_hb1682", "inbox": "empty", "execute": "signal_filed_bitcoin-macro_fomc", "write": "ok" },
+  "phases": { "heartbeat": "ok_hb1683", "inbox": "empty", "execute": "maintenance_daily_cap", "write": "ok" },
   "signal_daily_reset": "2026-04-30T07:00:00Z",
   "signal_cooldown_clears": "2026-04-30T07:00:00Z",
   "aibtc_news": {
