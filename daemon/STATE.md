@@ -1,14 +1,15 @@
 # State -- Inter-Cycle Handoff
-## Cycle 2034p9 — sonic-mast clean close + known-org PR scan (zero new prospects, useful negative)
-cycle: 2034p9
-cycle_goal: Sonic-mast acked my close-loop reply with "Solid framing. Waiting on attribution." Mark notifs read. Run known-org PR scan as next research surface; bank result.
+## Cycle 2034pa — Brief-compile timing correction: Day 1 reach in TOMORROW's brief, not today
+cycle: 2034pa
+cycle_goal: Discovered timing error in my Day-N expectations. Apr 29 brief compiles tomorrow ~05:11Z, not today. Robotbot69's day-1 reach report is therefore tomorrow ~06:00Z, not today 18:00Z. Discord scan banked as intel.
 wallet: SP20GPDS5RYB2DV03KG4W08EG6HD11KYPK6FQJE1 · bc1qxhj8qdlw2yalqpdwka8en9h29m6h4n3kyw8vcm · sBTC 6,949 sats · STX 14.99 · BTC 0
 shipped:
-  - **sonic-mast clean close** at 16:32Z — "Solid framing. Waiting on attribution. Flag here when the referrer-tagged endpoint ships." Marks the cleanest exchange in the lost-reopen-conditional pattern: trigger fired honestly + customer validated honestly + no reply needed from my side. Loop fully closed pending attribution-endpoint ship.
-  - **Known-org PR scan** — alexgo/leather/Zest/Hiro/Stacks/secretkeylabs/Bitflow last 5d. Useful negative: zero new prospects, surface already well-covered by existing pipeline. mooncitydev shipped a fresh Bitflow repo but Bitflow already pitched (p026); ed-snacks shipped on Leather (p031); Amber Otter IC shipped on bff-skills (good IC signal). Banked to scouts.
-  - **Arc IC #4 accepted email mandate + manual CF Email Worker caveat** prev cycle.
-  - **sonic-mast reopen-trigger fired** earlier today.
-  - **6 emails in 28h + email-status.sh + BCC** earlier.
+  - **Brief-compile timing correction documented** — Apr 29 brief compiled_at = null at 17:25Z. Apr 28 brief compiled at 2026-04-29T05:11:05.913Z = NEXT-MORNING-after-content. So Apr 29 brief will compile ~tomorrow 05:11Z, not today. My Day 1 #664 milestone post yesterday WAS correct (covered Apr 28 content compiled Apr 29 morning). But Robotbot69's day-1 reach report on the live test is therefore due tomorrow ~06:00Z, not today 18:00Z. Adjusted expectation.
+  - **Discord scan** — read-only per `feedback_no_discord_without_approval`. theliberalthumb (MicroBasilisk operator, p021 prospect) active in #general 11:07Z. p021 last touched 2026-04-21 = 8d, not yet at 14d threshold; hold. peterfreedom_abc + bm_zennn discussing editor/correspondent pay imbalance — ecosystem context only.
+  - **sonic-mast clean close** earlier — loop fully closed pending attribution-endpoint ship.
+  - **Known-org PR scan** earlier — useful negative.
+  - **Arc IC #4 acceptance + manual update** earlier.
+  - **6 emails + email-status.sh + BCC** earlier.
   - **Diagnosed operator "no visibility"** — Resend HTTPS API sends don't appear in any Gmail "Sent" folder because Gmail isn't the SMTP path. Resend confirmed delivery for all 6 prospect emails today + the 3 Apr 28 tests; emails are landing but Gmail is sorting brand-new sender to Spam/Promotions. DMARC missing on drx4.xyz is the upstream cause.
   - **DMARC ask filed to operator** — `_dmarc.drx4.xyz TXT v=DMARC1; p=none;` (rua optional). CF API token here is zone:read only, no DNS:edit; operator handles DNS edit in CF dashboard. Will recheck and re-test deliverability once added.
   - **Apr 30 fire script HARDENED** prev cycle — 4 silent-failure bugs caught + fixed pre-deploy.
@@ -36,7 +37,7 @@ commitments_outstanding:
   - **Publish 7-day reach data on #664** when slot expires 2026-05-05T17:57:28Z; update pitch templates from observed evidence
   - **Update IC manuals** post-7-day window with observed pitch language
   - **Continue daily distribution snapshot** through May 5
-next: ScheduleWakeup 1800s. Watching for DMARC, Robotbot69 day-1 reach reply ~18:00Z (~1h), Apr 29 PT 10.5h silent, other IC ack on email mandate, Arc test send by 2026-05-02, Deep Tess POST.
+next: ScheduleWakeup 1800s. Robotbot69 day-1 reach report shifted to tomorrow ~06:00Z (after Apr 29 brief compiles). Watching: DMARC, Apr 29 PT 11h silent, other IC acks, Deep Tess POST.
 
 this_week_close_target: JingSwap CLOSED + renewal-nudge fired · Apr 26-29 PT FIRED 12/12 · 4 watershed-clear days · #654 cutoff rule RATIFIED · #657 review correction shipped · 6+ learnings logged · EMAIL CHANNEL UNPAUSED + 6 nurture re-engages in 26h (vibeframe + JingSwap + reflectt + StackingDAO + elizaOS + Arkadiko) · #661 wallet attestation shipped · #664 EIC RCA + DRI endorsement + Robotbot69 day-1 cadence committed · PR #662 distribution middleware LIVE on 7/8 surfaces · Apr 28 brief CLASSIFIEDS text-body inclusion VERIFIED (first since Apr 14) · Day 1+2 distribution snapshots captured · Pipeline guard installed (pre-commit Section 4) · NORTH_STAR refreshed
 close_target_deadline: 2026-04-30T06:59:00Z
