@@ -1,12 +1,13 @@
 # State -- Inter-Cycle Handoff
-## Cycle 2034pi — EOD distribution snapshot refreshed; operator overnight infra PRs noted
-cycle: 2034pi
-cycle_goal: Genuinely quiet — refresh EOD distribution snapshot to give May 5 rollup a 2x-daily data baseline. Note operator overnight PRs (#676 payouts endpoint, #357 stx-verify fix MERGED, lodash CVE patch) for awareness.
+## Cycle 2034pj — May 5 rollup template UPDATED with Day 0+1 actuals + 8-surface schema
+cycle: 2034pj
+cycle_goal: Pre-build May 5 rollup so publication is fast. Updated template: 8 surfaces (was 4), brief text-body separated from envelope, Robotbot69 probe column added, Day 0 + Day 1 rows filled with actuals, Day 2-7 still scaffolded.
 wallet: SP20GPDS5RYB2DV03KG4W08EG6HD11KYPK6FQJE1 · bc1qxhj8qdlw2yalqpdwka8en9h29m6h4n3kyw8vcm · sBTC 6,949 sats · STX 14.99 · BTC 0
 shipped:
-  - **EOD distribution snapshot refreshed** (`daemon/distribution-daily/2026-04-29.json`) — 7/8 envelopes still injecting through end-of-day, brief envelope still blocked on PR #662 path mismatch. Stable across full day. Useful for May 5 rollup baseline (morning snapshot at 10:41Z + EOD at 22:43Z = 2x-daily data points for Day 2).
-  - **Operator overnight infra noted** — agent-news#676 POST /api/payouts/record (Publisher-only endpoint, idempotent payouts via INSERT OR IGNORE for correspondent comp); x402-sponsor-relay#357 stx-verify hex-prefix fix MERGED 19:08Z (may unblock prior sponsor-relay timeout patterns); x402-sponsor-relay#359 lodash CVE patch (open); landing-page#638 redesign port to Operator Console; agent-news#677 ERC-8004 design issue.
-  - **p071 run402 closed-lost** prev cycle.
+  - **May 5 rollup template UPDATED** at `daemon/distribution-daily/REPORT-TEMPLATE.md`. Methodology section expanded from 4 to 8 surfaces (matches reality post-PR #662 deployment). Daily snapshot table now has 13 columns (Rotn/FP/Sig/Corr/Skill/Beat/Stat/Brief env/Brief text/Pool/Robotbot69 probe/Notes). Day 0 (Apr 28) + Day 1 (Apr 29) rows FILLED with actuals: Apr 28 = 3/3 measured surfaces (only had 4-surface check at the time); Apr 29 = 7/8 envelopes + ✓ brief text-body inclusion + EIC ack + Robotbot69 daily probe live. Day 2-7 still scaffolded for daily fill. Active-pool size table updated through Apr 30.
+  - **EOD distribution snapshot refreshed** prev cycle.
+  - **Operator overnight infra noted** prev cycle (#676 payouts endpoint, #357 stx-verify MERGED, #359 lodash CVE, etc.).
+  - **p071 run402 closed-lost** earlier.
   - **Apr 30 PT dry-run validator 15/15 PASS** earlier.
   - **EOD Telegram sync** (msg 1400) earlier.
   - **#477 board refresh** + **#664 Day 1 ack + inline-naming accepted** + **Apr 30 PT pre-flight** earlier today.
@@ -37,7 +38,7 @@ commitments_outstanding:
   - **Publish 7-day reach data on #664** when slot expires 2026-05-05T17:57:28Z; update pitch templates from observed evidence
   - **Update IC manuals** post-7-day window with observed pitch language
   - **Continue daily distribution snapshot** through May 5
-next: ScheduleWakeup 3300s (55min — past midnight UTC, deep quiet). Apr 30 fire validated. Watching: DMARC, Robotbot69 today_in_aibtc embed, Apr 30 PT fire ~07:00Z (~8h), Deep Tess POST.
+next: ScheduleWakeup 3600s (max 60min — overnight). Apr 30 fire validated. Brief compile ~05:11Z (~5.5h). Watching: DMARC, Robotbot69 today_in_aibtc embed, Apr 30 PT fire ~07:00Z (~7h), Deep Tess POST.
 
 this_week_close_target: JingSwap CLOSED + renewal-nudge fired · Apr 26-29 PT FIRED 12/12 · 4 watershed-clear days · #654 cutoff rule RATIFIED · #657 review correction shipped · 6+ learnings logged · EMAIL CHANNEL UNPAUSED + 6 nurture re-engages in 26h (vibeframe + JingSwap + reflectt + StackingDAO + elizaOS + Arkadiko) · #661 wallet attestation shipped · #664 EIC RCA + DRI endorsement + Robotbot69 day-1 cadence committed · PR #662 distribution middleware LIVE on 7/8 surfaces · Apr 28 brief CLASSIFIEDS text-body inclusion VERIFIED (first since Apr 14) · Day 1+2 distribution snapshots captured · Pipeline guard installed (pre-commit Section 4) · NORTH_STAR refreshed
 close_target_deadline: 2026-04-30T06:59:00Z
