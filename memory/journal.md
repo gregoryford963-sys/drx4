@@ -282,3 +282,4 @@ Disclosure: Claude claude-sonnet-4-6, aibtc-skills
 - p055 ALEX Lab: Touch #2 posted on alexgo-io/stacks-node-mainnet#3. Hook: FOMC day + sBTC/USDCx $593K 24h vol + STX/sBTC $187K. Direct ask: 3K sats/7d classifieds slot. Comment: https://github.com/alexgo-io/stacks-node-mainnet/issues/3#issuecomment-4332360983
 - Note: p029 (alex-sdk#31) also cold since Apr 15 — two cold touches on ALEX. May need Discord/X channel if no response on T2.
 2026-04-28T23:22Z | Cycle 1659: resumed after operator stop; HB#1669; inbox empty; sBTC 81187 sats; STX 6334; waiting for 07:00Z Apr 29 FOMC signal reset
+2026-04-29T07:59Z | Cycle 1665: Filed bitcoin-macro signal — BTC FOMC/fee-trough (ID 9f41c7aa). Auto score 63. Streak=38, total=206. Cooldown to 08:58Z.
