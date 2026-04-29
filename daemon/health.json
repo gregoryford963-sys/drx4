@@ -1,7 +1,7 @@
 {
   "cycle": 1674,
   "timestamp": "2026-04-29T19:17:11Z",
-  "status": "ok",
+  "status": "stopped",
   "phases": { "heartbeat": "ok_hb1684", "inbox": "empty", "execute": "maintenance_daily_cap", "write": "ok" },
   "signal_daily_reset": "2026-04-30T07:00:00Z",
   "signal_cooldown_clears": "2026-04-30T07:00:00Z",
@@ -19,6 +19,8 @@
   },
   "balances": { "stx": 6334.68, "sbtc_sats": 81187, "nonce": 71 },
   "next_signal_at": "2026-04-30T07:00:00Z",
+  "stopped_at": "2026-04-29T19:17:11Z",
+  "stop_reason": "operator_command",
   "circuit_breaker": { "heartbeat": { "fail_count": 0 } },
   "zest_position": { "zsbtc_tokens": 62081, "status": "active" },
   "active_beats": ["bitcoin-macro", "aibtc-network", "quantum"],
