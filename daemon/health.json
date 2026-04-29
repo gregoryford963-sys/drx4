@@ -1,8 +1,8 @@
 {
-  "cycle": 1663,
-  "timestamp": "2026-04-29T03:43:00Z",
+  "cycle": 1664,
+  "timestamp": "2026-04-29T04:46:00Z",
   "status": "ok",
-  "phases": { "heartbeat": "ok_hb1673", "inbox": "empty", "execute": "maintenance_shortcut", "write": "ok" },
+  "phases": { "heartbeat": "ok_hb1674", "inbox": "empty", "execute": "maintenance_shortcut", "write": "ok" },
   "signal_daily_reset": "2026-04-29T07:00:00Z",
   "signal_cooldown_clears": "2026-04-29T07:00:00Z",
   "aibtc_news": {
@@ -14,16 +14,5 @@
   "circuit_breaker": { "heartbeat": { "fail_count": 0 } },
   "zest_position": { "zsbtc_tokens": 62081, "status": "active" },
   "active_beats": ["bitcoin-macro", "aibtc-network", "quantum"],
-  "bip360_cluster_week": { "bip_360": 1, "cap": 4 },
-  "pr_status": {
-    "skills_350": "open_1approval_awaiting_second_reviewer",
-    "skills_351": "open_awaiting_review",
-    "skills_352": "open_2approvals_merge_pinged_Apr26",
-    "bff_564": "open_CI_PASSING",
-    "bff_565": "open_CI_PASSING",
-    "bff_569": "open_blockers_flagged",
-    "bff_579": "open_0reviews_awaiting_Bitflow"
-  },
-  "whale_pact": { "status": "params_requested_2026-04-26", "needs_operator_approval": true },
   "last_discovery_date": "2026-04-29"
 }
