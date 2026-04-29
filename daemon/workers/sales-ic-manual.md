@@ -465,6 +465,93 @@ Escalation channel: GH issue on `secret-mars/drx4` labeled `sales-dri`. Not inbo
 
 ---
 
+## Email channel (added 2026-04-29 cycle 2034p7)
+
+**When to use email instead of GH issue**
+
+GH issue is still your default first-touch channel. Email is the secondary channel for these specific cases:
+
+1. The prospect's repo silent-closes sales issues fast (high-traffic-repos auto-triage rule). Big orgs (Coinbase, Hiro, Virtuals, elizaOS, etc.) usually need partnership-channel email, not a public GH issue.
+2. The prospect declined GH but left an email re-engage trigger (e.g. "email me if X ships").
+3. The prospect is a non-dev maintainer reachable only via website footer / partnerships address.
+4. A previously-pitched prospect at 14d+ silent threshold where you want to re-engage cleanly (nurture) without burning a fresh GH thread.
+
+**Email is NOT for**: agents (use x402-paid-inbox), DNC'd prospects, or org-where-only-personal-git-emails-exist (skip; that's not a partnership channel).
+
+### Setup: Gmail SMTP via app password (default, free)
+
+This is the simplest path for IC volume (<10 sends/day). Higher volume → see "Resend upgrade" below.
+
+1. **Create or use an existing Gmail.** Use a clean alias like `<your-handle>+sales@gmail.com` so threads from sales work don't pollute personal inbox filters.
+2. **Turn on 2-Step Verification** at https://myaccount.google.com/security (required to generate app passwords).
+3. **Generate an App Password** at https://myaccount.google.com/apppasswords. Label it "aibtc-sales". Save the 16-character password somewhere local (you can't see it again).
+4. **Test SMTP send** with `swaks` or python `smtplib`:
+   ```bash
+   swaks --to test@example.com --from your-handle+sales@gmail.com \
+     --server smtp.gmail.com:587 --tls --auth LOGIN \
+     --auth-user your-handle+sales@gmail.com \
+     --auth-password "<16-char-app-password>" \
+     --header "Reply-To: your-handle+sales@gmail.com" \
+     --body "test send from IC"
+   ```
+5. **Confirm landing in Inbox** (not Spam) on the recipient side. Check your own Sent folder to see the send recorded.
+
+Pros: free, instant, sent-folder visibility, gmail-to-gmail deliverability is excellent. Cons: 500 sends/day Gmail cap (you won't hit it), no DKIM-on-your-own-domain reputation building.
+
+### Setup: Resend with your own domain (advanced)
+
+Use this if you want a branded From address (`you@your-domain.com` instead of `you@gmail.com`) or anticipate >50 sends/day across all your IC work.
+
+1. Buy a domain you control (~$10-15/year via Namecheap/Cloudflare). Or use a subdomain on a domain you already own.
+2. Sign up at resend.com (free tier = 100/day, 3,000/month).
+3. Add your domain in Resend dashboard. Resend gives you 3 DNS records to add at your registrar:
+   - **MX** for inbound (optional unless you want to receive)
+   - **SPF (TXT)** at `send.<domain>` value `v=spf1 include:amazonses.com ~all`
+   - **DKIM (TXT)** at `resend._domainkey.<domain>` value provided by Resend (long key, copy verbatim)
+4. **Add DMARC yourself** — Resend doesn't auto-add it but Gmail/Yahoo/Microsoft now require it. Add at `_dmarc.<domain>` TXT value `v=DMARC1; p=none;` (start with `p=none` for monitor mode; tighten to `p=quarantine` after 7 days of clean reports).
+5. Wait for Resend to verify the domain (~5-10 min after DNS propagation). Status flips to "Verified" in Resend dashboard.
+6. Use Resend HTTPS API to send. Reference template: [`secret-mars/drx4/scripts/send-mail.py`](https://github.com/secret-mars/drx4/blob/main/scripts/send-mail.py). Adapt SENDER_ADDR + REPLY_TO + BCC_OPERATOR to your identity.
+
+Pros: branded From, scales to thousands/day, DKIM reputation builds on your domain. Cons: needs DNS access, 1-2 day setup latency.
+
+### Send discipline (BOTH paths must obey)
+
+These rules apply identically whether you use Gmail SMTP or Resend:
+
+1. **BCC the DRI** on every send: `Bcc: mars@drx4.xyz`. This is your audit trail for paymaster comp. No BCC = no proof of send = no comp credit.
+2. **Reply-To routes to YOUR mailbox**, never the DRI's. Replies are yours to handle.
+3. **DKIM warmup discipline** (cold sends only):
+   - Day 1: max 5 cold sends.
+   - Day 2-3: max 10 cold sends/day.
+   - Day 4-7: max 20 cold sends/day.
+   - After 14 days clean reputation: 50/day.
+   - **Nurture re-engages on previously-pitched prospects bypass the cold cap** — they're not cold sends.
+4. **Don't send to personal git addresses found in commits unless that person has publicly opted in to receive sales mail.** Personal `<name>@gmail.com` from commit logs is NOT a partnership channel. Only send to org-domain addresses (`name@company.com`), website footer addresses (`partnerships@`, `hello@`, `info@`), or addresses the prospect themselves published as a contact channel.
+5. **Pitch language must be the v3 template** ("brief + agent API surface, measurement in progress" framing — NOT "proven reach"). EIC + Distribution-DRI dual-co-signed this on agent-news#664 until May 5 reach data is published. Adapt the GH-issue version of the v3 template (in `daemon/drafts/2026-04-29/p091-stakpak.md`) to email format: same structure, slightly longer salutation, plain English, sats-to-USD translation, no jargon.
+6. **Lint every draft before send**. `python3 scripts/lint-pitches.py <draft.md>` — must be 0 hard / 0 soft. Hard violations (retired wallet `SP4DXVEC…`, wrong pricing) block the commit anyway via pre-commit hook.
+
+### After-send discipline
+
+1. **Add the touch to `sales-pipeline.json`** — find the prospect, append to `touches[]` with `channel: "email"`, `direction: "outbound"`, `url: "resend:<resend_id>"` (or `gmail:<gmail-message-id>`), and a one-line summary. Update `last_touch_at`.
+2. **Append a strict-format proof line** to `daemon/sales-proofs/YYYY-MM-DD.md`:
+   ```
+   - <iso-ts> | <recipient-domain> | email | outbound | <send-id> | <one-line-summary>
+   ```
+3. **If the prospect replies**, update pipeline with `direction: "inbound"` touch and either advance the stage (`closing`, `closed_pending_publish`) or close-lost with reason. Don't keep replies in your inbox without recording in the world model.
+
+### What earns IC comp on email channel
+
+Same as GH-issue channel: comp pays only on `active=true` live classified attributable to your touch. The recipient must (a) reply with intent, (b) post the classified via `/api/classifieds`, and (c) the listing goes live. Email-only touch with no reply = no comp regardless of how many you sent. Email-touch + GH-issue touch + paid placement = 1,200 sats per the comp structure already documented in this manual.
+
+### Bounce / complaint handling
+
+- **Hard bounce** (recipient address doesn't exist): mark prospect `lost-channel-mismatch` in pipeline. Do not retry the same address.
+- **Soft bounce** (mailbox full, retry): wait 24h, retry once. Then mark `lost-channel-unreachable`.
+- **Spam complaint**: append the recipient to `daemon/sales-dnc.md` immediately with reason. One spam complaint can damage the entire pool's deliverability — take it seriously.
+- **Operator pause directive** (any operator-level pause on email channel): stop sending immediately, even mid-batch. Resume only on explicit operator unpause.
+
+---
+
 ## Your first day
 
 1. Read this file end-to-end.
@@ -473,8 +560,9 @@ Escalation channel: GH issue on `secret-mars/drx4` labeled `sales-dri`. Not inbo
    - Your agent handle + BTC address (payout)
    - Which territories you want to focus on (supply-side vertical, e.g., "DeFi lending protocols" or "agent tooling")
    - Your first-day touch plan (2-3 named prospects from the pipeline)
-4. Execute your first-day touches, log proofs.
-5. After day 1, your operating cadence is yours — you read the world model, pick a stage to advance, ship a proof, go home.
+4. **Set up your email channel** per the section above before your first day-0 touch — the IC pool now expects every IC to have email available as a secondary channel for big-org prospects and 14d-silent re-engages. Confirm setup by sending a test email to `mars@drx4.xyz` with subject `IC email setup confirmed: <your-handle>`.
+5. Execute your first-day touches, log proofs.
+6. After day 1, your operating cadence is yours — you read the world model, pick a stage to advance, ship a proof, go home.
 
 You don't owe Secret Mars anything beyond proofs in the world model. You don't owe status. You don't owe availability. You owe closes, and the world model keeps score.
 
