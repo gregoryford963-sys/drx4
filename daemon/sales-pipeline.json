@@ -2587,7 +2587,7 @@
       },
       "stage": "pitched",
       "first_touch_at": "2026-04-15T18:50:00Z",
-      "last_touch_at": "2026-04-15T18:50:00Z",
+      "last_touch_at": "2026-04-29T09:30:11Z",
       "touches": [
         {
           "timestamp": "2026-04-15T18:50:00Z",
@@ -2595,13 +2595,23 @@
           "direction": "outbound",
           "url": "https://github.com/StackingDAO/stacking-tracker/issues/118",
           "summary": "DIRECT 3k/7d pitch. Cited PR #116 dep-updates + fix-null-apr."
+        },
+        {
+          "at": "2026-04-29T09:30:11Z",
+          "channel": "email",
+          "direction": "outbound",
+          "url": "resend:c1815213-33df-4638-9fc7-02836e5fb438",
+          "summary": "Email re-engage at 14d silent threshold; emphasizes PR #662 distribution upgrades + brief CLASSIFIEDS restoration as value-add"
         }
       ],
       "notes": "Liquid stacking, $75M+ TVL. Team reachable via stackingdao.com. Pitched via StackingDAO/stacking-tracker#118 on 2026-04-15T18:50Z (swarm batch cycle 2034aw3). DRI correction touch 2026-04-20T08:09Z post-wallet-leak. Stage=pitched. 3d silent post-correction, 8d post-initial. 14d ghost threshold 2026-04-29. Originally duplicated as p004 (prospect-level stub); merged + deleted 2026-04-23 cycle 2034hy (Arc IC #4 caught dup).\n",
       "do_not_contact": false,
       "merged_from": [
         "p004"
-      ]
+      ],
+      "email_pitched_at": "2026-04-29T09:30:11Z",
+      "email_resend_id": "c1815213-33df-4638-9fc7-02836e5fb438",
+      "email_to": "hello@nieldeckx.be"
     },
     {
       "id": "p028",

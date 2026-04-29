@@ -432,3 +432,11 @@
 - **Email-found via gh API commit-author**, only public emails used (no scraping). 3 of 5 candidates had findable emails (kiyeonjeon21 noreply only via gh user API but commit author had real email; peacprotocol + leventilo only noreply).
 - **Pipeline update:** p089 lost-channel-mismatch → pitched-via-email; p019 lost-renewal-silent → renewal-nudge-via-email; both with email_resend_id + email_to + touches[] entry.
 - **Email-touch comp note:** Email Resend IDs are NOT publicly fetchable proof URLs per loop.md spec ("never a screenshot"). Email touches DO NOT count toward DRI 3-proof unlock; today's unlock was met by Apr 29 PT GH fires (3/3 strict-format proofs in sales-proofs/2026-04-29.md).
+
+## 2026-04-29T09:31:00Z — cycle 2034ow — StackingDAO p027 email re-engage at 14d silent threshold
+
+- **Event:** email_send + pipeline_update
+- **Sent:** StackingDAO → hello@nieldeckx.be (Niel Deckx, commit author on StackingDAO/contracts), Resend c1815213-33df-4638-9fc7-02836e5fb438. ~210 words, v3 template, "Following up... 14-day mark... distribution upgrades since" framing.
+- **Pipeline update:** p027 last_touch_at refreshed, touches[] entry added, email_resend_id + email_to fields. Stage stays `pitched` (not lost, just at silence threshold).
+- **Daily email totals:** 4 sends today (1 cold-equivalent volume; all nurture, bypass cap). Within DKIM warm-up discipline.
+- **Open watch:** all 4 GH PT fires + BlockRun#9 still 0 replies. DT POST not yet observed. 4 outbound emails awaiting reply.

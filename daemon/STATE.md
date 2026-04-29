@@ -1,16 +1,12 @@
 # State -- Inter-Cycle Handoff
-## Cycle 2034ov — email channel ACTIVE per operator directive; 3/3 nurture emails sent (vibeframe + JingSwap + reflectt)
-cycle: 2034ov
-cycle_goal: Operator directive "go full on sales using gmail." Email channel unpaused. 3 verified-email re-engages sent in v3 template (warm pipeline contacts, nurture type, bypass cold cap).
+## Cycle 2034ow — StackingDAO p027 email re-engage at 14d silent threshold; 4 emails sent today total
+cycle: 2034ow
+cycle_goal: Continue full-sales mode. p027 StackingDAO at exactly 14d silent — perfect re-engage timing. Email sent to hello@nieldeckx.be (commit author on StackingDAO/contracts).
 wallet: SP20GPDS5RYB2DV03KG4W08EG6HD11KYPK6FQJE1 · bc1qxhj8qdlw2yalqpdwka8en9h29m6h4n3kyw8vcm · sBTC 6,949 sats · STX 14.99 · BTC 0
 shipped:
-  - **Operator directive cycle 2034ov:** "go full on sales using gmail as well it should be understandable." Email channel UNPAUSED. reference_email_channel.md updated.
-  - **3 nurture emails sent** (warm pipeline re-engages via v3 template ~190 words, plain English, "measurement in progress" framing):
-    - vibeframe → kiyeon.jeon.21@gmail.com (Resend 32b2c245). Explicitly invited email pivot on #179.
-    - JingSwap → raphisidor@gmail.com (Resend 6185d37b). Renewal nudge after Apr 28 silent expiry; emphasizes PR #662 distribution upgrades.
-    - reflectt → kai@itskai.dev (Resend 3521dcc2). Apr 27 silent re-engage.
-  - **Pipeline update:** p089 lost-channel-mismatch → pitched-via-email; p019 lost-renewal-silent → renewal-nudge-via-email; touches[] + email_resend_id + email_to fields added.
-  - **Apr 29 PT fires T+2h:** all 3 still OPEN, 0 replies. DT POST not yet observed.
+  - **StackingDAO p027 email re-engage** → hello@nieldeckx.be (Niel Deckx, commit author on StackingDAO/contracts). Resend c1815213. 14-day silent threshold, perfect re-engage timing. Pipeline updated.
+  - **4 emails sent today total:** vibeframe (Resend 32b2c245) + JingSwap (Resend 6185d37b) + reflectt (Resend 3521dcc2) + StackingDAO (Resend c1815213). All nurture (warm pipeline re-engages, bypass cold cap). Within DKIM warm-up discipline.
+  - **Apr 29 PT fires T+2.5h:** all 3 still OPEN, 0 replies. DT POST not yet observed. Inbox unread = 0.
 observations:
   - **Root cause identified by EIC:** `getClassifiedsRotation` unpacking bug (12+ days silent failure of CLASSIFIEDS section in brief). PR #662 (operator merge today) fixes structurally + adds agent-bound middleware injecting up to 3 active classifieds on /api/signals*, /api/front-page, /api/briefs/*, /api/skills, /api/correspondents. Distribution surface for classifieds is now LIVE.
   - **Robotbot69 active per #622:** 15/21 X-posts, 4/7 daily threads, hand-offs Digital Ember Apr 27 + Ionic Nova Apr 28. Distribution-on-signals = working; my "function empty" framing was over-broad.

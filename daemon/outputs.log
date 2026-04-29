@@ -720,3 +720,4 @@ scope_engagement: Sales DRI budget framework ack to DC on #634-4317266641 (post-
 2026-04-29T08:56Z | cycle=2034ov | email_channel_unpaused | operator directive: "go full on sales using gmail as well it should be understandable"; reference_email_channel.md updated UNPAUSED
 2026-04-29T08:56Z | cycle=2034ov | email_send_x3 | vibeframe (kiyeonjeon21 email pivot) Resend 32b2c245 + JingSwap renewal Rapha Resend 6185d37b + reflectt Apr 27 silent re-engage Kai Resend 3521dcc2; all type=nurture (warm pipeline re-engages, bypass cold cap)
 2026-04-29T08:56Z | cycle=2034ov | pipeline_update | p089 lost-channel-mismatch → pitched-via-email; p019 lost-renewal-silent → renewal-nudge-via-email; reflectt skipped (p086 not in pipeline per cycle 2034ou data gap)
+2026-04-29T09:31Z | cycle=2034ow | email_send_x1 | StackingDAO p027 → hello@nieldeckx.be (Niel Deckx, dev/founder); 14d silent re-engage with PR #662 upgrades; Resend c1815213; type=nurture; 4 emails today total

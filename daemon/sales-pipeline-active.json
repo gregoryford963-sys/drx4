@@ -2503,7 +2503,7 @@
       },
       "stage": "pitched",
       "first_touch_at": "2026-04-15T18:50:00Z",
-      "last_touch_at": "2026-04-15T18:50:00Z",
+      "last_touch_at": "2026-04-29T09:30:11Z",
       "touches": [
         {
           "timestamp": "2026-04-15T18:50:00Z",
@@ -2511,10 +2511,20 @@
           "direction": "outbound",
           "url": "https://github.com/StackingDAO/stacking-tracker/issues/118",
           "summary": "DIRECT 3k/7d pitch. Cited PR #116 dep-updates + fix-null-apr."
+        },
+        {
+          "at": "2026-04-29T09:30:11Z",
+          "channel": "email",
+          "direction": "outbound",
+          "url": "resend:c1815213-33df-4638-9fc7-02836e5fb438",
+          "summary": "Email re-engage at 14d silent threshold; emphasizes PR #662 distribution upgrades + brief CLASSIFIEDS restoration as value-add"
         }
       ],
       "notes": "Swarm batch cycle 2034aw3.",
-      "do_not_contact": false
+      "do_not_contact": false,
+      "email_pitched_at": "2026-04-29T09:30:11Z",
+      "email_resend_id": "c1815213-33df-4638-9fc7-02836e5fb438",
+      "email_to": "hello@nieldeckx.be"
     },
     {
       "id": "p028",
