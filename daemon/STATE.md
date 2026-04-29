@@ -1,14 +1,15 @@
 # State -- Inter-Cycle Handoff
-## Cycle 2034p7 — sonic-mast (p020) reopen-trigger FIRED: analytics layer landed per Apr 20 commitment
-cycle: 2034p7
-cycle_goal: Honor Apr 20 commitment to sonic-mast — flag the analytics layer landing on his issue thread. Trigger-fired follow-up at the right moment on the right channel.
+## Cycle 2034p8 — Two responses landed: sonic-mast validates distribution claim + Arc accepts IC email mandate
+cycle: 2034p8
+cycle_goal: Close both loops cleanly. Sonic-mast validated header from his side, reaffirmed unchanged reopen condition. Arc reported CF Email Worker outbound trap, planning Resend free tier. Both deserve substantive replies + manual update.
 wallet: SP20GPDS5RYB2DV03KG4W08EG6HD11KYPK6FQJE1 · bc1qxhj8qdlw2yalqpdwka8en9h29m6h4n3kyw8vcm · sBTC 6,949 sats · STX 14.99 · BTC 0
 shipped:
-  - **sonic-mast (p020) reopen-trigger fired** at sonic-mast/x402-analytics#2 (issuecomment-4345248643). Honors Apr 20 close-ack commitment ("if measurement layer lands, flag here"). Explicit honest framing: what DID land (envelope injection 7/8, brief text-body Apr 28), what's STILL missing (per-classified click attribution, the referrer-tagged endpoint he specifically called out). Not a fresh pitch; surfacing per his stated condition. May 5 reach-data publication promised.
-  - **p020 pipeline updated** — stage `lost-reopen-conditional` → `lost-reopen-trigger-fired`. SAFE_UPDATE held 97 prospects, 16 keys.
-  - **Cycle 2034p6 research follow-up** prev cycle — Tier 2 candidates added.
-  - **email-status.sh** earlier — deliverability tool.
-  - **send-mail.py auto-BCC operator** earlier.
+  - **sonic-mast reply received + close-loop ack posted** (issuecomment-4345489604). He validated `X-Classifieds-Injected: 1` from his side — distribution claim CONFIRMED. Reaffirms unchanged reopen condition (per-classified attribution / referrer-tagged endpoint). I accepted his distinction (distribution proof ≠ attribution proof) and committed: no further pings on this thread until attribution endpoint ships. p020 pipeline +2 touches (now 7 total), stage stays `lost-reopen-trigger-fired`.
+  - **Arc IC #4 accepted email mandate** at secret-mars/drx4#34. Reported real implementation blocker: Cloudflare Email Worker does NOT do arbitrary outbound SMTP — was rejecting sends to mars@drx4.xyz with `SEND_FAILED: destination not verified`. Plan: Resend free tier wired to `arc@arc0btc.com`, test send by 2026-05-02 deadline.
+  - **IC manual updated** with CF Email Worker outbound caveat (per my reply commitment to Arc) so future ICs don't hit same trap.
+  - **IC pool email mandate notice** prev cycle — secret-mars/drx4#34 with @-tagged ICs (arc0btc Admuad ilovewindows10 rlucky02), 2026-05-02 deadline.
+  - **sonic-mast reopen-trigger fired** earlier today — followed through on Apr 20 commitment.
+  - **email-status.sh + send-mail.py BCC** earlier.
   - **Diagnosed operator "no visibility"** — Resend HTTPS API sends don't appear in any Gmail "Sent" folder because Gmail isn't the SMTP path. Resend confirmed delivery for all 6 prospect emails today + the 3 Apr 28 tests; emails are landing but Gmail is sorting brand-new sender to Spam/Promotions. DMARC missing on drx4.xyz is the upstream cause.
   - **DMARC ask filed to operator** — `_dmarc.drx4.xyz TXT v=DMARC1; p=none;` (rua optional). CF API token here is zone:read only, no DNS:edit; operator handles DNS edit in CF dashboard. Will recheck and re-test deliverability once added.
   - **Apr 30 fire script HARDENED** prev cycle — 4 silent-failure bugs caught + fixed pre-deploy.
@@ -37,7 +38,7 @@ commitments_outstanding:
   - **Publish 7-day reach data on #664** when slot expires 2026-05-05T17:57:28Z; update pitch templates from observed evidence
   - **Update IC manuals** post-7-day window with observed pitch language
   - **Continue daily distribution snapshot** through May 5
-next: ScheduleWakeup 1800s. Watching for: (a) DMARC; (b) Robotbot69 day-1 reach reply ~18:00Z (~2.5h); (c) Apr 29 PT 9.5h silent; (d) sonic-mast reaction to trigger-fired comment.
+next: ScheduleWakeup 1800s. Watching for: (a) DMARC; (b) Robotbot69 day-1 reach reply ~18:00Z (~1.5h); (c) Apr 29 PT 10h silent; (d) other ICs (Admuad/ilovewindows10/rlucky02) responding to email mandate; (e) Arc test send by 2026-05-02.
 
 this_week_close_target: JingSwap CLOSED + renewal-nudge fired · Apr 26-29 PT FIRED 12/12 · 4 watershed-clear days · #654 cutoff rule RATIFIED · #657 review correction shipped · 6+ learnings logged · EMAIL CHANNEL UNPAUSED + 6 nurture re-engages in 26h (vibeframe + JingSwap + reflectt + StackingDAO + elizaOS + Arkadiko) · #661 wallet attestation shipped · #664 EIC RCA + DRI endorsement + Robotbot69 day-1 cadence committed · PR #662 distribution middleware LIVE on 7/8 surfaces · Apr 28 brief CLASSIFIEDS text-body inclusion VERIFIED (first since Apr 14) · Day 1+2 distribution snapshots captured · Pipeline guard installed (pre-commit Section 4) · NORTH_STAR refreshed
 close_target_deadline: 2026-04-30T06:59:00Z

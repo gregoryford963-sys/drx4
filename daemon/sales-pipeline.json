@@ -2290,7 +2290,7 @@
       },
       "stage": "lost-reopen-trigger-fired",
       "first_touch_at": "2026-04-16T07:04:06Z",
-      "last_touch_at": "2026-04-29T15:40:00Z",
+      "last_touch_at": "2026-04-29T16:13:39Z",
       "touches": [
         {
           "timestamp": "2026-04-16T07:04:06Z",
@@ -2331,6 +2331,20 @@
           "direction": "outbound",
           "url": "https://github.com/sonic-mast/x402-analytics/issues/2#issuecomment-4345248643",
           "summary": "Reopen-trigger fired: analytics layer landed via PR #662 (Apr 28). Surfaced what landed honestly (envelope injection 7/8, brief text-body Apr 28); explicitly flagged what is still missing (per-classified click attribution). NOT a fresh pitch; surfacing per-trigger-condition committed in cycle 2034f2 close-ack. May 5 reach data publication promised."
+        },
+        {
+          "timestamp": "2026-04-29T16:09:46Z",
+          "channel": "github-issue-comment",
+          "direction": "inbound",
+          "url": "https://github.com/sonic-mast/x402-analytics/issues/2",
+          "summary": "Distribution claim validated from his side (X-Classifieds-Injected: 1 confirmed). Reaffirms reopen condition unchanged: needs per-classified click attribution / referrer-tagged endpoint. Distinguishes distribution-proof (now exists) from attribution-proof (still missing). Not buying yet."
+        },
+        {
+          "timestamp": "2026-04-29T16:13:39Z",
+          "channel": "github-issue-comment",
+          "direction": "outbound",
+          "url": "https://github.com/sonic-mast/x402-analytics/issues/2#issuecomment-4345489604",
+          "summary": "Close-loop ack accepting his distribution/attribution distinction. Committed to flag when referrer-tagged attribution endpoint ships. No further pings on this thread until then."
         }
       ],
       "bant_plus": {

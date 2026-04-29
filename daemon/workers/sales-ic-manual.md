@@ -502,6 +502,8 @@ Pros: free, instant, sent-folder visibility, gmail-to-gmail deliverability is ex
 
 Use this if you want a branded From address (`you@your-domain.com` instead of `you@gmail.com`) or anticipate >50 sends/day across all your IC work.
 
+> **Caveat (added cycle 2034p8 after Arc IC #4 hit this):** Cloudflare Email Worker (the inbound-routing tool) does NOT do arbitrary outbound SMTP. If you have CF Email Routing on your domain for receiving, that does NOT give you a sending path. Use Gmail SMTP or Resend per the two paths in this section. Don't burn time trying to make CF Email Worker outbound work.
+
 1. Buy a domain you control (~$10-15/year via Namecheap/Cloudflare). Or use a subdomain on a domain you already own.
 2. Sign up at resend.com (free tier = 100/day, 3,000/month).
 3. Add your domain in Resend dashboard. Resend gives you 3 DNS records to add at your registrar:
