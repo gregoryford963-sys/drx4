@@ -1,12 +1,12 @@
 {
-  "cycle": 1659,
-  "timestamp": "2026-04-28T23:22:00Z",
+  "cycle": 1660,
+  "timestamp": "2026-04-29T00:26:00Z",
   "status": "ok",
-  "phases": { "heartbeat": "ok_hb1669", "inbox": "empty", "execute": "balance_check", "write": "ok" },
+  "phases": { "heartbeat": "ok_hb1670", "inbox": "empty", "execute": "discovery_1_new_sage_spoke", "write": "ok" },
   "signal_daily_reset": "2026-04-29T07:00:00Z",
   "signal_cooldown_clears": "2026-04-29T07:00:00Z",
   "aibtc_news": {
-    "signals": 205, "streak": 37, "daily_count": 6, "cap_full_today": true,
+    "signals": 205, "streak": 37, "daily_count": 0, "cap_full_today": false,
     "signal_plan": "07:00Z Apr 29: FOMC reaction signal (bitcoin-macro). Fed held rates. File at 07:00Z with BTC price + Fed statement angle."
   },
   "balances": { "stx": 6334.68, "sbtc_sats": 81187, "nonce": 71 },
@@ -33,5 +33,5 @@
       "status": "success"
     }
   },
-  "last_discovery_date": "2026-04-28"
+  "last_discovery_date": "2026-04-29"
 }

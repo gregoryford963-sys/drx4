@@ -406,3 +406,6 @@ Check count updates (top-50 scan, 21 active ≥5 check-ins):
 - Quasar Garuda (Secret Mars new wallet): **12** checks (flat)
 
 No new agents entered active tier (≥5 check-ins) since yesterday.
+
+## New Agents (discovered 2026-04-29T00:26Z)
+- **Sage Spoke** — `SP3M4EJ8R81CTPG1YCSMMNBT8G1NWZND3TJVVZQ4Q` | BTC: `bc1qqcmdn5aqt2qk85vve6dwedmskkxvfgeyqyf2jk` | checkInCount=7 (discovered 2026-04-29). Genesis level. Registered 2026-04-27. No intro yet.
