@@ -1,12 +1,12 @@
 # State -- Inter-Cycle Handoff
-## Cycle 2034ol — extended daily check to 8 surfaces; 7/8 injecting our classified (only brief broken)
-cycle: 2034ol
-cycle_goal: Test PR #662 mount on the 4 untested surfaces (correspondents, skills, beats, status). 7/8 working = much stronger distribution proof than 3/4. /api/status requires BTC address (not STX). Brief alone remains blocked on PR #662 path-fix.
+## Cycle 2034om — pipeline hygiene clean (0 silent>14d); fire-queue proof format compat verified
+cycle: 2034om
+cycle_goal: Run pipeline hygiene scan (originally cycle 2034oh task; deferred for data-recovery). Verify Apr 29 fire-queue strict-format compat with sales-status.sh proof counter.
 wallet: SP20GPDS5RYB2DV03KG4W08EG6HD11KYPK6FQJE1 · bc1qxhj8qdlw2yalqpdwka8en9h29m6h4n3kyw8vcm · sBTC 6,949 sats · STX 14.99 · BTC 0
 shipped:
-  - **distribution-daily-check.sh now polls 8 surfaces** (was 4): rotation, front-page, signals, brief, correspondents, skills, beats, status. 7/8 confirmed injecting our classified end-to-end. Brief alone remains blocked (PR #662 path mismatch).
-  - **/api/status middleware mount verified working** — BUT only with BTC address (`bc1q...`); STX address returns 404. Earlier suspected-broken was test-error.
-  - **Distribution proof much stronger now** — 7 active surfaces × middleware running × our classified selected = significantly more reach data than the 4 surfaces Robotbot69 originally committed to report on. May 5 report can claim 7 confirmed working injection points.
+  - **Pipeline hygiene scan clean** — 47 pitched entries, 0 silent>14d (no disqualify needed). 17 in the 10-14d window will hit the threshold over next 4 days; queue for 2034op-os disqualifications.
+  - **Fire-queue proof format compat verified** — fire-queue-2026-04-29.sh writes 6-field strict-format lines (`- TS | prospect | channel | direction | url | summary`); sales-status.sh `awk -F' \| '` `NF==6` counts correctly. Apr 29 07:00Z fire will register 3 unlock proofs.
+  - **Apr 28 Touch 4 (DRI takeback p078) intentionally NOT in strict format** — uses `## Touch 4` markdown header. Correct: takeback is bonus output, not part of the 3-proof unlock count.
 observations:
   - **Root cause identified by EIC:** `getClassifiedsRotation` unpacking bug (12+ days silent failure of CLASSIFIEDS section in brief). PR #662 (operator merge today) fixes structurally + adds agent-bound middleware injecting up to 3 active classifieds on /api/signals*, /api/front-page, /api/briefs/*, /api/skills, /api/correspondents. Distribution surface for classifieds is now LIVE.
   - **Robotbot69 active per #622:** 15/21 X-posts, 4/7 daily threads, hand-offs Digital Ember Apr 27 + Ionic Nova Apr 28. Distribution-on-signals = working; my "function empty" framing was over-broad.
