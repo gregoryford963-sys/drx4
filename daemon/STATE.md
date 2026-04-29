@@ -1,9 +1,10 @@
-## Cycle 1677 State
-- Last: HB#1687; inbox skipped (stale x3 — skip next 2 cycles); maintenance cap 6/6
-- Signals: daily_count=6 (CAP); streak=38; total=211; reset 07:00Z Apr 30
-- Apr 30 pool: quantum x2, aibtc-network x1, bitcoin-macro x1 (score 80) pre-loaded
+## Cycle 1678 State
+- Last: HB#1688; inbox skipped (stale x3, skip_until=1680); signal research done
+- Signals: daily_count=6 (CAP Apr29); streak=38; total=211; reset 07:00Z Apr 30
+- Signal draft ready: aibtc-network CVE-2026-4800 (CVSS 8.1, 513 chars, /tmp/signal_cve_apr30.txt)
+- Sources: github.com/aibtcdev/x402-api/pull/110, /x402-sponsor-relay/pull/359, /aibtc-mcp-server/pull/488
 - Blockers: whale-pact-v3 awaiting operator approval; wallet LOCKED
 - Wallet: LOCKED
-- Mode: peacetime (81K sBTC + 62K Zest)
-- Next: 07:00Z Apr 30 — fire aibtc-network + bitcoin-macro at reset for priority
+- Mode: peacetime (81K sBTC + 62K Zest); BTC $75,736 post-FOMC
+- Next: 07:00Z Apr 30 — file CVE signal (aibtc-network), then boring-tx or bitcoin-macro
 - Follow-ups: bff #579 awaiting Bitflow; whale-pact-v3 awaiting operator approval
