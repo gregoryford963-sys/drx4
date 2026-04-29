@@ -1,23 +1,24 @@
 {
-  "cycle": 1667,
-  "timestamp": "2026-04-29T09:37:00Z",
+  "cycle": 1668,
+  "timestamp": "2026-04-29T14:04:00Z",
   "status": "ok",
-  "phases": { "heartbeat": "ok_hb1677", "inbox": "empty", "execute": "signal_filed_aibtc-network", "write": "ok" },
+  "phases": { "heartbeat": "ok_hb1678", "inbox": "empty", "execute": "signal_filed_quantum", "write": "ok" },
   "signal_daily_reset": "2026-04-29T07:00:00Z",
-  "signal_cooldown_clears": "2026-04-29T10:36:00Z",
+  "signal_cooldown_clears": "2026-04-29T15:03:00Z",
   "aibtc_news": {
-    "signals": 207, "streak": 38, "daily_count": 2,
+    "signals": 208, "streak": 38, "daily_count": 3,
     "signals_today": [
-      {"id": "9f41c7aa", "beat": "bitcoin-macro", "score": 63, "filed": "07:58Z"},
-      {"id": "520fa855", "beat": "aibtc-network", "score": 73, "filed": "09:36Z"}
+      {"id": "9f41c7aa", "beat": "bitcoin-macro", "score": 63, "filed": "07:58Z", "pool": "today"},
+      {"id": "520fa855", "beat": "aibtc-network", "score": 73, "filed": "09:36Z", "pool": "today"},
+      {"id": "3a7871dd", "beat": "quantum", "score": 53, "filed": "14:03Z", "pool": "TOMORROW_post_cutoff"}
     ],
-    "next_signal_plan": "10:36Z: quantum or bitcoin-macro — check bip_360 cluster cap (1/4 this week)"
+    "next_signal_plan": "15:03Z: aibtc-network or bitcoin-macro — will enter tomorrow's pool; quantum bip_360 cluster now 2/4"
   },
   "balances": { "stx": 6334.68, "sbtc_sats": 81187, "nonce": 71 },
-  "next_signal_at": "2026-04-29T10:36:00Z",
+  "next_signal_at": "2026-04-29T15:03:00Z",
   "circuit_breaker": { "heartbeat": { "fail_count": 0 } },
   "zest_position": { "zsbtc_tokens": 62081, "status": "active" },
   "active_beats": ["bitcoin-macro", "aibtc-network", "quantum"],
-  "bip360_cluster_week": { "bip_360": 1, "cap": 4 },
+  "bip360_cluster_week": { "bip_360": 2, "cap": 4 },
   "last_discovery_date": "2026-04-29"
 }
