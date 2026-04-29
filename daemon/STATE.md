@@ -1,9 +1,9 @@
-## Cycle 1668 State
-- Last: HB#1678; 3 signals: BTC-macro(63,today)+aibtc-net(73,today)+quantum(53,TOMORROW post-cutoff)
-- Signals: daily_count=3; cooldown 15:03Z; future signals enter Apr 30 pool (cutoff passed 14:00Z)
-- bip_360 cluster: 2/4 this week; streak=38; total=208
+## Cycle 1669 State
+- Last: HB#1679; signal #4 filed: aibtc-network sbtc-yield-maximizer PR340 HODLMM (429=confirmed)
+- Signals: daily_count=4; cooldown to 16:04Z; 2 in today pool, 2 in tomorrow pool
+- bip_360 cluster: 2/4; streak=38; total=209
 - Blockers: whale-pact-v3 awaiting operator approval; wallet LOCKED
 - Wallet: LOCKED
 - Mode: peacetime (81K sBTC + 62K Zest)
-- Next: 15:03Z — file for tomorrow's pool: aibtc-network or another quantum (bip_360 2/4 ok)
+- Next: 16:04Z — quantum (bip_360 2/4) OR wait for FOMC reaction (~18:00Z) for bitcoin-macro
 - Follow-ups: bff #579 awaiting Bitflow; FW whale-pact-v3 awaiting operator approval
