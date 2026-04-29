@@ -1,23 +1,16 @@
 {
-  "cycle": 1670,
-  "timestamp": "2026-04-29T16:32:00Z",
+  "cycle": 1671,
+  "timestamp": "2026-04-29T17:34:00Z",
   "status": "ok",
-  "phases": { "heartbeat": "ok_hb1680", "inbox": "empty", "execute": "signal_filed_quantum_2", "write": "ok" },
+  "phases": { "heartbeat": "ok_hb1681", "inbox": "empty", "execute": "holding_for_fomc", "write": "ok" },
   "signal_daily_reset": "2026-04-29T07:00:00Z",
   "signal_cooldown_clears": "2026-04-29T17:31:00Z",
   "aibtc_news": {
     "signals": 210, "streak": 38, "daily_count": 5,
-    "signals_today": [
-      {"id": "9f41c7aa", "beat": "bitcoin-macro", "score": 63, "filed": "07:58Z", "pool": "today"},
-      {"id": "520fa855", "beat": "aibtc-network", "score": 73, "filed": "09:36Z", "pool": "today"},
-      {"id": "3a7871dd", "beat": "quantum", "score": 53, "filed": "14:03Z", "pool": "tomorrow"},
-      {"id": "unknown", "beat": "aibtc-network", "filed": "~15:07Z", "pool": "tomorrow"},
-      {"id": "525b369f", "beat": "quantum", "score": 53, "filed": "16:31Z", "pool": "tomorrow"}
-    ],
-    "next_signal_plan": "17:31Z cooldown clears; FOMC decision ~18:00Z; fire bitcoin-macro FOMC reaction at 18:00Z for tomorrow pool"
+    "next_signal_plan": "18:00Z FOMC decision — file bitcoin-macro FOMC reaction immediately. 1 slot remaining today."
   },
   "balances": { "stx": 6334.68, "sbtc_sats": 81187, "nonce": 71 },
-  "next_signal_at": "2026-04-29T17:31:00Z",
+  "next_signal_at": "2026-04-29T18:00:00Z",
   "circuit_breaker": { "heartbeat": { "fail_count": 0 } },
   "zest_position": { "zsbtc_tokens": 62081, "status": "active" },
   "active_beats": ["bitcoin-macro", "aibtc-network", "quantum"],
