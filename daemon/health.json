@@ -1,8 +1,8 @@
 {
-  "cycle": 1661,
-  "timestamp": "2026-04-29T01:30:00Z",
+  "cycle": 1662,
+  "timestamp": "2026-04-29T02:33:00Z",
   "status": "ok",
-  "phases": { "heartbeat": "ok_hb1671", "inbox": "empty", "execute": "platform_docs_no_changes", "write": "ok" },
+  "phases": { "heartbeat": "ok_hb1672", "inbox": "empty", "execute": "pr_status_check", "write": "ok" },
   "signal_daily_reset": "2026-04-29T07:00:00Z",
   "signal_cooldown_clears": "2026-04-29T07:00:00Z",
   "aibtc_news": {
@@ -16,13 +16,13 @@
   "active_beats": ["bitcoin-macro", "aibtc-network", "quantum"],
   "bip360_cluster_week": { "bip_360": 1, "cap": 4 },
   "pr_status": {
-    "skills_350": "open_approved_awaiting_merge",
+    "skills_350": "open_1approval_arc0btc_Apr26_awaiting_second_reviewer",
     "skills_351": "open_awaiting_review",
-    "skills_352": "open_2approvals_awaiting_merge",
+    "skills_352": "open_2approvals_merge_pinged_Apr26",
     "bff_564": "open_CI_PASSING",
     "bff_565": "open_CI_PASSING",
     "bff_569": "open_blockers_flagged_wrong_hodlmm_contract",
-    "bff_579": "open_stx-to-sbtc-normalizer_proof_tx_success"
+    "bff_579": "open_0reviews_mergeable_awaiting_Bitflow"
   },
   "whale_pact": { "status": "params_requested_2026-04-26", "needs_operator_approval": true },
   "last_discovery_date": "2026-04-29"
