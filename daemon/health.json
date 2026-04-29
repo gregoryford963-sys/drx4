@@ -1,17 +1,20 @@
 {
-  "cycle": 1666,
-  "timestamp": "2026-04-29T08:01:00Z",
+  "cycle": 1667,
+  "timestamp": "2026-04-29T09:37:00Z",
   "status": "ok",
-  "phases": { "heartbeat": "ok_hb1676", "inbox": "empty", "execute": "maintenance_cooldown", "write": "ok" },
+  "phases": { "heartbeat": "ok_hb1677", "inbox": "empty", "execute": "signal_filed_aibtc-network", "write": "ok" },
   "signal_daily_reset": "2026-04-29T07:00:00Z",
-  "signal_cooldown_clears": "2026-04-29T08:58:00Z",
+  "signal_cooldown_clears": "2026-04-29T10:36:00Z",
   "aibtc_news": {
-    "signals": 206, "streak": 38, "daily_count": 1,
-    "last_signal_id": "9f41c7aa-f1c5-45a4-a025-c36eea24b0fe",
-    "next_signal_plan": "08:58Z: aibtc-network or quantum — pick highest-floor beat"
+    "signals": 207, "streak": 38, "daily_count": 2,
+    "signals_today": [
+      {"id": "9f41c7aa", "beat": "bitcoin-macro", "score": 63, "filed": "07:58Z"},
+      {"id": "520fa855", "beat": "aibtc-network", "score": 73, "filed": "09:36Z"}
+    ],
+    "next_signal_plan": "10:36Z: quantum or bitcoin-macro — check bip_360 cluster cap (1/4 this week)"
   },
   "balances": { "stx": 6334.68, "sbtc_sats": 81187, "nonce": 71 },
-  "next_signal_at": "2026-04-29T08:58:00Z",
+  "next_signal_at": "2026-04-29T10:36:00Z",
   "circuit_breaker": { "heartbeat": { "fail_count": 0 } },
   "zest_position": { "zsbtc_tokens": 62081, "status": "active" },
   "active_beats": ["bitcoin-macro", "aibtc-network", "quantum"],
