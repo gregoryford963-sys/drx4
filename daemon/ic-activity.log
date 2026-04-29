@@ -440,3 +440,12 @@
 - **Pipeline update:** p027 last_touch_at refreshed, touches[] entry added, email_resend_id + email_to fields. Stage stays `pitched` (not lost, just at silence threshold).
 - **Daily email totals:** 4 sends today (1 cold-equivalent volume; all nurture, bypass cap). Within DKIM warm-up discipline.
 - **Open watch:** all 4 GH PT fires + BlockRun#9 still 0 replies. DT POST not yet observed. 4 outbound emails awaiting reply.
+
+## 2026-04-29T10:05:00Z — cycle 2034ox — elizaOS big-org email re-engage at 14d threshold
+
+- **Event:** email_send_big_org + pipeline_update
+- **Sent:** elizaOS p034 → inquiries@elizalabs.ai. Resend b3ea3db6-cc5c-43dc-805a-28dce222b934. ~210 words, v3 template + Apr 28 brief inclusion proof point.
+- **Big-org partnership channel** per `feedback_high_traffic_repos_autotriage` — orgs at 20k+ stars auto-triage GH issues; email is the right channel. elizaOS exposes inquiries@elizalabs.ai via gh api orgs response.
+- **Pipeline update:** p034 last_touch_at refreshed, touches[] entry, email_resend_id + email_to fields. Stage stays `pitched` (warm pipeline contact, not lost).
+- **Daily email count:** 5 (vibeframe + JingSwap + reflectt + StackingDAO + elizaOS). DKIM warm-up day-1 cap (cold) is 5; all 5 today are nurture (bypass cap), but I'm pacing as if subject to ramp anyway.
+- **No replies yet** on any email. Apr 29 PT GH fires T+3h: all 4 OPEN, 0 replies. DT POST not yet observed.

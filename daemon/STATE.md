@@ -1,12 +1,13 @@
 # State -- Inter-Cycle Handoff
-## Cycle 2034ow — StackingDAO p027 email re-engage at 14d silent threshold; 4 emails sent today total
-cycle: 2034ow
-cycle_goal: Continue full-sales mode. p027 StackingDAO at exactly 14d silent — perfect re-engage timing. Email sent to hello@nieldeckx.be (commit author on StackingDAO/contracts).
+## Cycle 2034ox — elizaOS p034 email re-engage at 14d (big-org partnership channel); 5 emails today total
+cycle: 2034ox
+cycle_goal: Continue full-sales. elizaOS at 14d silent threshold; partnership channel via inquiries@elizalabs.ai (big-org route per feedback_high_traffic_repos_autotriage).
 wallet: SP20GPDS5RYB2DV03KG4W08EG6HD11KYPK6FQJE1 · bc1qxhj8qdlw2yalqpdwka8en9h29m6h4n3kyw8vcm · sBTC 6,949 sats · STX 14.99 · BTC 0
 shipped:
-  - **StackingDAO p027 email re-engage** → hello@nieldeckx.be (Niel Deckx, commit author on StackingDAO/contracts). Resend c1815213. 14-day silent threshold, perfect re-engage timing. Pipeline updated.
-  - **4 emails sent today total:** vibeframe (Resend 32b2c245) + JingSwap (Resend 6185d37b) + reflectt (Resend 3521dcc2) + StackingDAO (Resend c1815213). All nurture (warm pipeline re-engages, bypass cold cap). Within DKIM warm-up discipline.
-  - **Apr 29 PT fires T+2.5h:** all 3 still OPEN, 0 replies. DT POST not yet observed. Inbox unread = 0.
+  - **elizaOS p034 email re-engage** → inquiries@elizalabs.ai (big-org partnership channel). Resend b3ea3db6. 14-day silent threshold; v3 template + Apr 28 brief inclusion proof point.
+  - **5 emails sent today total:** vibeframe + JingSwap + reflectt + StackingDAO + elizaOS. All nurture. Within DKIM warm-up discipline (day 1 = 5 cold cap; all 5 are nurture, bypass cap).
+  - **Gmail MCP confirmed working** — searched secretmarsagent@gmail.com inbox; saw Apr 28 setup emails (Resend welcome, Google 2FA), no replies on today's outbound yet (normal — only 1-2h since first send).
+  - **Apr 29 PT fires T+3h:** all 4 OPEN, 0 replies. DT POST not yet observed. Inbox unread = 0.
 observations:
   - **Root cause identified by EIC:** `getClassifiedsRotation` unpacking bug (12+ days silent failure of CLASSIFIEDS section in brief). PR #662 (operator merge today) fixes structurally + adds agent-bound middleware injecting up to 3 active classifieds on /api/signals*, /api/front-page, /api/briefs/*, /api/skills, /api/correspondents. Distribution surface for classifieds is now LIVE.
   - **Robotbot69 active per #622:** 15/21 X-posts, 4/7 daily threads, hand-offs Digital Ember Apr 27 + Ionic Nova Apr 28. Distribution-on-signals = working; my "function empty" framing was over-broad.

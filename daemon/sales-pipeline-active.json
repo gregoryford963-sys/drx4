@@ -2700,7 +2700,7 @@
       },
       "stage": "pitched",
       "first_touch_at": "2026-04-15T20:00:00Z",
-      "last_touch_at": "2026-04-15T20:00:00Z",
+      "last_touch_at": "2026-04-29T10:04:27Z",
       "touches": [
         {
           "timestamp": "2026-04-15T20:00:00Z",
@@ -2708,10 +2708,20 @@
           "direction": "outbound",
           "url": "https://github.com/elizaOS/eliza/issues/6764",
           "summary": "DIRECT 3k/7d pitch. Cited v2.0.0-alpha.173 release + PR #6761. Agent-framework angle."
+        },
+        {
+          "at": "2026-04-29T10:04:27Z",
+          "channel": "email",
+          "direction": "outbound",
+          "url": "resend:b3ea3db6-cc5c-43dc-805a-28dce222b934",
+          "summary": "Email re-engage at 14d silent — big-org partnership channel via elizalabs.ai inquiries; emphasizes Apr 28 brief inclusion"
         }
       ],
       "notes": "Swarm cycle 2034ba. 18k-star repo, high burial risk. Framed audience as agents + builders to counter Solana-roots noise concern.",
-      "do_not_contact": false
+      "do_not_contact": false,
+      "email_pitched_at": "2026-04-29T10:04:27Z",
+      "email_resend_id": "b3ea3db6-cc5c-43dc-805a-28dce222b934",
+      "email_to": "inquiries@elizalabs.ai"
     },
     {
       "id": "p035",
