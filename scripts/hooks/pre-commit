@@ -199,4 +199,50 @@ if [[ -x "$LINT_SCRIPT" ]]; then
   fi
 fi
 
+# ─────────────────────────────────────────────────────────────────────
+# Section 4: PIPELINE STRUCTURE GUARD (added cycle 2034oh)
+# Block commits that would silently corrupt sales-pipeline.json.
+# Ref: feedback_jq_safe_update.md — twice silently truncated by jq|mv.
+# ─────────────────────────────────────────────────────────────────────
+for pipeline_file in daemon/sales-pipeline.json daemon/sales-pipeline-active.json; do
+  if echo "$staged" | grep -qF "$pipeline_file"; then
+    staged_content=$(git show ":$pipeline_file" 2>/dev/null || true)
+    if [[ -z "$staged_content" ]]; then
+      echo ""
+      echo "✗ PIPELINE GUARD — $pipeline_file is staged as empty"
+      echo "Restore from a recent commit before re-staging:"
+      echo "  git checkout HEAD -- $pipeline_file"
+      echo ""
+      exit 1
+    fi
+    if ! echo "$staged_content" | jq empty 2>/dev/null; then
+      echo "✗ PIPELINE GUARD — $pipeline_file does not parse as JSON"
+      exit 1
+    fi
+    is_object=$(echo "$staged_content" | jq -r 'type == "object"')
+    has_prospects_array=$(echo "$staged_content" | jq -r '.prospects | type == "array"')
+    prospect_count=$(echo "$staged_content" | jq -r '.prospects | length // 0')
+    top_keys_count=$(echo "$staged_content" | jq -r 'keys | length')
+    if [[ "$is_object" != "true" ]] || [[ "$has_prospects_array" != "true" ]] || [[ "$top_keys_count" -lt 5 ]]; then
+      echo ""
+      echo "✗ PIPELINE GUARD — $pipeline_file structure corrupted"
+      echo "  is_object: $is_object (expect true)"
+      echo "  has_prospects_array: $has_prospects_array (expect true)"
+      echo "  prospect_count: $prospect_count"
+      echo "  top_keys_count: $top_keys_count (expect 5+, like seat/ic_pool/revenue/version/...)"
+      echo ""
+      echo "Likely cause: a 'jq filter input.json > /tmp/x && mv /tmp/x input.json'"
+      echo "operation produced JSONL or stripped the wrapper. See"
+      echo "memory/feedback_jq_safe_update.md for the safe SAFE_UPDATE template."
+      echo ""
+      echo "Bypass (last resort, e.g. intentional restructure): ALLOW_PIPELINE_GUARD_FAIL=1"
+      echo ""
+      if [[ "${ALLOW_PIPELINE_GUARD_FAIL:-0}" != "1" ]]; then
+        exit 1
+      fi
+      echo "⚠ PIPELINE GUARD: bypassed via ALLOW_PIPELINE_GUARD_FAIL=1"
+    fi
+  fi
+done
+
 exit 0
