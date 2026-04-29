@@ -43,6 +43,16 @@
 - **topic:sbtc** — found winsznx/lend402 (added Tier 2) + Velocity-BPA/n8n-nodes-stacks (Tier 2). Same dev winsznx already in Tier 1 with saturn-optimizer.
 - **yield bitcoin agent** — empty result.
 
+## Cycle 2034p9 follow-up — known-org PR scan (alexgo / leather / Zest / Hiro / Stacks / secretkeylabs / Bitflow)
+
+- **alexgo-io / Zest-Protocol / hirosystems / secretkeylabs** — no PRs in last 5d. Quiet orgs.
+- **leather-io/mono#2306** by `ed-snacks` (Apr 29) — "migrate to expo". Leather already pitched (p031); fresh contributor doesn't unlock new pitch since org-level decision-maker is the gate.
+- **stacks-network** — core-node PRs only (`wileyj`, `federico-stacks`, `brice-stacks`). Not sales targets.
+- **BitflowFinance/price-monitoring#1** by `mooncitydev` (Apr 29) — fresh org-owned repo (created 2026-03-22, 0 stars). Bitflow already pitched (p026, 14d silent today). Don't double-pitch a different repo of same org per high-traffic-repos discipline.
+- **BitflowFinance/bff-skills#579** by `gregoryford963-sys` (Apr 28) — that's Amber Otter (IC) shipping a stx-to-sbtc-normalizer in Bitflow. Useful signal that IC pool is producing demand-side touches.
+
+Net: zero new prospects from this scan. Surface is well-covered by existing pipeline. Useful negative result.
+
 ## Next research surveys to run
 
 - Discord aibtc.com #general for "looking for x402"
