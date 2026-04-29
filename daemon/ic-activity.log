@@ -336,3 +336,14 @@
 - **Fix applied:** Restored both files from f1ffe6b (last-known-good 91 prospects + 16 top-level keys). Re-applied legitimate updates (p089 lost-channel-mismatch, p078 pitched DRI takeback) via SAFE_UPDATE function with structure-preservation checks: prospect length unchanged, top-level keys count unchanged, .prospects type still array.
 - **Learning logged:** feedback_jq_safe_update.md added to auto-memory + indexed in MEMORY.md. Includes safe SAFE_UPDATE function template + recommendation to prefer `.prospects |= map(if ... then ... else . end)` over `(.prospects[]? | select |=)`.
 - **Impact:** No data loss (recoverable from git). Both files now correct, all prior shipped commits' state intentions preserved. Briefing should now report prospect counts correctly again.
+
+## 2026-04-29T02:18:00Z — cycle 2034oj — Apr 29 PT pre-flight verified + brief compile drought noted
+
+- **Event:** preflight_verification + structural_observation
+- **Apr 29 PT fire-queue verified ready:** scripts/fire-queue-2026-04-29.sh exists, syntax ok, references all 3 v3 drafts (p091 stakpak / p092 voidly-pay / p093 agentpay-mcp). All 3 target repos verified live + accepting issues:
+  - stakpak/agent: 1,447⭐ (up from 1,430 at scout time), has_issues=true, pushed 14h ago, Org not archived
+  - voidly-ai/voidly-pay: 0⭐ MIT, has_issues=true, pushed 16 min ago (extremely fresh), Org not archived
+  - up2itnow0822/agentpay-mcp: 4⭐, has_issues=true, pushed today, User not archived
+  - Fire pre-flight at 06:00Z is just timer wait — no last-minute authoring needed.
+- **Structural observation (worth flagging):** Apr 28 brief NEVER compiled (compiledAt: null in /api/brief/2026-04-28). Apr 29 brief record exists but also compiledAt: null. So even with PR #662 mount-path fix (filed yesterday), brief inclusion can't fire because no brief exists to inject into. Compile is Publisher-manual via POST /api/brief/compile. This compounds the brief-surface gap into a 2-cause blocker (mount path AND compile cadence). Adding to commitments_outstanding to monitor.
+- **Pipeline impact:** Apr 29 PT timing sound. Brief surface remains structurally blocked until both Publisher resumes compile + PR #662 path-fix lands.
