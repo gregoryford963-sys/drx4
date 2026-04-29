@@ -1,6 +1,5 @@
-## Cycle 1673 State
-- Last: HB#1683; inbox empty (HB count stale); maintenance (daily cap 6/6)
-- FOMC: Fed held 3.5-3.75%; BTC fell to $75,902 (-1.4%); no dovish pivot signal
+## Cycle 1674 State
+- Last: HB#1684; inbox empty (HB unreadCount stale x2); maintenance (daily cap 6/6)
 - Signals: daily_count=6 (CAP HIT); streak=38; total=211; next reset 07:00Z Apr 30
 - Apr 30 pool pre-loaded: 4 signals (quantum x2, aibtc-network x1, bitcoin-macro x1)
 - Blockers: whale-pact-v3 awaiting operator approval; wallet LOCKED
