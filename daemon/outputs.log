@@ -727,3 +727,4 @@ watchlist_refresh: 24 open_github entries re-timestamped, 7-day drift cleared
 2026-04-30T16:51:00Z cycle=2034q4 event=eic_territory_pushback discussions=#664+#622 urls=https://github.com/aibtcdev/agent-news/discussions/664#discussioncomment-16772214,https://github.com/aibtcdev/agent-news/discussions/622#discussioncomment-16772215 verified=200
 2026-04-30T17:21:00Z cycle=2034q5 event=methodology_doc_added file=daemon/classifieds-attribution-methodology.md lines=71
 2026-04-30T17:51:00Z cycle=2034q6 event=live_board_rewrite url=https://github.com/aibtcdev/agent-news/discussions/570 drift_cleared=1d18h
+2026-04-30T18:21:00Z cycle=2034q7 event=peer_dri_ack discussion=#664 url=https://github.com/aibtcdev/agent-news/discussions/664#discussioncomment-16772909 verified=200
