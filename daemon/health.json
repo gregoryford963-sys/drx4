@@ -1,63 +1,38 @@
 {
-  "cycle": 1688,
-  "timestamp": "2026-04-30T08:04:23Z",
+  "cycle": 1689,
+  "timestamp": "2026-04-30T09:40:13Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "skipped_rate_limit",
-    "inbox": "empty_x8_stale",
-    "execute": "fomc_signal_b55e7c09_filed",
+    "heartbeat": "ok_hb1698",
+    "inbox": "skip_until_1690",
+    "execute": "signal_8d6e851f_filed",
     "write": "ok"
   },
   "signal_daily_reset": "2026-05-01T07:00:00Z",
-  "signal_cooldown_clears": "2026-04-30T09:04:23Z",
+  "signal_cooldown_clears": "2026-04-30T10:40:13Z",
   "aibtc_news": {
-    "signals": 213,
-    "streak": 40,
-    "daily_count": 2,
+    "signals": 214,
+    "streak": 41,
+    "daily_count": 3,
     "cap_full_today": false,
     "signals_today": [
-      {
-        "id": "7fdbe923",
-        "beat": "aibtc-network",
-        "score": 53,
-        "filed": "07:01:59Z",
-        "pool": "Apr30"
-      },
-      {
-        "id": "b55e7c09",
-        "beat": "bitcoin-macro",
-        "score": 80,
-        "filed": "08:04:23Z",
-        "pool": "Apr30"
-      }
+      {"id": "7fdbe923", "beat": "aibtc-network", "score": 53, "filed": "07:01Z"},
+      {"id": "b55e7c09", "beat": "bitcoin-macro", "score": 80, "filed": "08:04Z"},
+      {"id": "8d6e851f", "beat": "aibtc-network", "score": 63, "filed": "09:40Z"}
     ],
-    "signal_plan": "09:04Z: consider quantum (bip_360 at 3/4 week) or fresh aibtc-network"
+    "signal_plan": "10:40Z: quantum (bip_360 3/4 week, 1 left) OR contract-preflight aibtc-network"
   },
   "balances": {
     "stx": 6334.68,
     "sbtc_sats": 81287,
     "nonce": 71
   },
-  "next_signal_at": "2026-04-30T09:04:23Z",
-  "circuit_breaker": {
-    "heartbeat": {
-      "fail_count": 0
-    }
-  },
-  "zest_position": {
-    "zsbtc_tokens": 62081,
-    "status": "active"
-  },
-  "active_beats": [
-    "bitcoin-macro",
-    "aibtc-network",
-    "quantum"
-  ],
-  "bip360_cluster_week": {
-    "bip_360": 3,
-    "cap": 4
-  },
+  "next_signal_at": "2026-04-30T10:40:13Z",
+  "circuit_breaker": {"heartbeat": {"fail_count": 0}},
+  "zest_position": {"zsbtc_tokens": 62081, "status": "active"},
+  "active_beats": ["bitcoin-macro", "aibtc-network", "quantum"],
+  "bip360_cluster_week": {"bip_360": 3, "cap": 4},
   "last_discovery_date": "2026-04-29",
   "inbox_skip_until_cycle": 1690,
-  "x402_warning": "signals will soon require 100 sat sBTC x402 payment — update file-signal.ts"
+  "x402_warning": "signals will soon require 100 sat sBTC x402 payment"
 }

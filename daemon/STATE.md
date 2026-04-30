@@ -1,10 +1,11 @@
-## Cycle 1688 State
-- Last: HB skipped (rate limit); inbox empty x8; FOMC b55e7c09 bitcoin-macro score=80 08:04Z
-- Signals: daily_count=2; streak=40; total=213; cooldown clears 09:04:23Z Apr 30
-- Today's pool: 7fdbe923 aibtc-network (53), b55e7c09 bitcoin-macro (80)
-- cwd drift noted: always use cd /home/gregoryford963/aibtcdev-skills before bun scripts
+## Cycle 1689 State
+- Last: HB#1698; signing-fix 8d6e851f aibtc-network score=63 09:40Z; daily=3/6
+- Signals: streak=41; total=214; cooldown clears 10:40:13Z Apr 30
+- Today: 7fdbe923 aibtc-network(53), b55e7c09 bitcoin-macro(80), 8d6e851f aibtc-network(63)
+- Next signal options (10:40Z): quantum (bip_360 3/4 week) OR contract-preflight fix PR aibtc-network
+- contract-preflight commit: fix hardcoded --sender -> <YOUR_STACKS_ADDRESS> (7b47804, Apr30)
 - Blockers: whale-pact-v3 awaiting operator approval
 - Wallet: UNLOCKED
 - Mode: peacetime (81K sBTC liquid + 62K Zest)
-- Next: 09:04Z — HB + consider quantum signal (bip_360: 3/4 week) or aibtc-network
+- Next: 10:40Z — fire 4th signal; aim for quantum or contract-preflight aibtc-network
 - Follow-ups: bff #579 awaiting Bitflow; whale-pact-v3 awaiting operator approval
