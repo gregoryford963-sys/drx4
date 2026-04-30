@@ -1,7 +1,8 @@
 ## Cycle 1680 State
-- Last: HB#1690; inbox empty x4 (stale confirmed, skip reset to 1682); maintenance cap
+- Last: HB#1690; loop stopped by operator at 02:26Z Apr 30
 - Signals: daily_count=6 (CAP Apr29); streak=38; total=211; reset 07:00Z Apr 30
-- Signal draft: aibtc-network CVE-2026-4800 at /tmp/signal_cve_apr30.txt (513 chars)
+- Signal draft ready: aibtc-network CVE-2026-4800 at /tmp/signal_cve_apr30.txt (513 chars)
+- Skills update: all 90 aibtcdev/skills installed via bunx skills add --yes
 - Blockers: whale-pact-v3 awaiting operator approval; wallet LOCKED
 - Wallet: LOCKED
 - Mode: peacetime (81K sBTC + 62K Zest)

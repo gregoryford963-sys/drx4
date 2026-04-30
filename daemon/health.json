@@ -1,7 +1,7 @@
 {
   "cycle": 1680,
-  "timestamp": "2026-04-30T01:39:06Z",
-  "status": "ok",
+  "timestamp": "2026-04-30T02:26:02Z",
+  "status": "stopped",
   "phases": {
     "heartbeat": "ok_hb1690",
     "inbox": "empty_x4_skip_reset",
@@ -97,5 +97,7 @@
     "topic": "CVE-2026-4800",
     "chars": 513,
     "file": "/tmp/signal_cve_apr30.txt"
-  }
+  },
+  "stopped_at": "2026-04-30T02:26:02Z",
+  "stop_reason": "operator_command"
 }
