@@ -1,11 +1,11 @@
 {
-  "cycle": 1678,
-  "timestamp": "2026-04-29T23:17:07Z",
+  "cycle": 1679,
+  "timestamp": "2026-04-30T00:38:05Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1688",
+    "heartbeat": "ok_hb1689",
     "inbox": "skipped_stale",
-    "execute": "signal_research_prep",
+    "execute": "maintenance_daily_cap",
     "write": "ok"
   },
   "signal_daily_reset": "2026-04-30T07:00:00Z",
