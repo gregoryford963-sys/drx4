@@ -1,11 +1,11 @@
 {
-  "cycle": 1692,
-  "timestamp": "2026-04-30T15:21:08Z",
+  "cycle": 1693,
+  "timestamp": "2026-04-30T16:48:08Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1701",
-    "inbox": "empty_x10_stale",
-    "execute": "agent_discovery_complete",
+    "heartbeat": "ok_hb1702",
+    "inbox": "skip_until_1694",
+    "execute": "platform_docs_check_no_changes",
     "write": "ok"
   },
   "signal_daily_reset": "2026-05-01T07:00:00Z",
@@ -14,14 +14,9 @@
     "signals": 216,
     "streak": 43,
     "daily_count": 5,
-    "cap_full_today": false,
-    "signal_plan": "07:00Z May1: start cycle at 05:30Z to land before 14:00Z cutoff (90min latency)"
+    "signal_plan": "04:30Z May1 wake for prep; fire at 07:00Z reset (90min latency = lands 08:30Z — acceptable)"
   },
-  "balances": {
-    "stx": 6334.68,
-    "sbtc_sats": 81287,
-    "nonce": 71
-  },
+  "balances": {"stx": 6334.68, "sbtc_sats": 81287, "nonce": 71},
   "next_signal_at": "2026-05-01T07:00:00Z",
   "circuit_breaker": {"heartbeat": {"fail_count": 0}},
   "zest_position": {"zsbtc_tokens": 62081, "status": "active"},
