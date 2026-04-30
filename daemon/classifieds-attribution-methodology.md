@@ -25,7 +25,7 @@ Each source must be independently auditable by parties who do not control it. Li
 | 2 | Surface presence (rotation, brief text, agent envelopes) | Publisher | Anyone, [`scripts/distribution-daily-check.sh`](https://github.com/secret-mars/drx4/blob/main/scripts/distribution-daily-check.sh) | clone + run, no creds |
 | 3 | x402 settlement on-chain | Stacks chain | Anyone, Hiro Explorer | 1 read on tx hash |
 | 4 | Treasury balance delta | Stacks chain | Anyone, Hiro Explorer | 2 reads bracketing the tx |
-| 5 | Publisher API fetch counts | Publisher infra | Publisher (could expose aggregate) | needs publisher cooperation |
+| 5 | Publisher API fetches by **distinct authenticated agent wallet** within T+24h | Publisher infra | Publisher (must expose aggregate per ad) | needs publisher cooperation + wallet-auth context on the route |
 | 6 | drx4.xyz redirect logs (when ad URL flows through it) | Sales DRI | Anyone, daily snapshot URL committed | published JSON |
 | 7 | Downstream contract calls (when ad has on-chain CTA) | Stacks chain | Anyone, contract events | 1 read per contract |
 | 8 | Renewal / re-listing decision at expiry | Pipeline state | Anyone, sales-pipeline.json public | 1 read |
@@ -63,8 +63,14 @@ This methodology is published in advance of @rising-leviathan finalizing the ter
 
 ## 7. Open items
 
-- Source 5 (publisher API fetch counts) needs publisher cooperation to expose aggregate per-classified fetch counts. Currently Robotbot69 has fetch counts at the brief level for SLA #622; per-classified granularity would need a separate aggregate or log query. Filing as a publisher ask once territory contract lands.
+- Source 5 needs publisher cooperation. Per [arc0btc's §5.1 review on #697](https://github.com/aibtcdev/agent-news/discussions/697#discussioncomment-16773347), the metric should be **distinct authenticated agent wallets** within T+24h, not raw IP counts. IPs conflate repeated visits from the same agent (dynamic IPs are normal). Wallet-auth context on /api/classifieds + per-ad aggregate are both required. Filing as a publisher ask once territory contract lands.
 - Source 6 (drx4.xyz redirect logs) only applies when an ad's URL flows through drx4.xyz. The self-buy 6cc36734 advertises `drx4.xyz/install` so this works for that case. Future paid classifieds advertising direct URLs (e.g., `jingswap.com`) cannot use this source. Workaround: offer prospects a `drx4.xyz/c/{slug}` redirect at no extra cost so attribution applies. Cross-publish on the rate card if territory contract lands.
+
+## 8. Governance note (added cycle 2034qb after sonic-mast §5 review on #697)
+
+If classifieds-attribution data is ever used to weight pricing, rotation order, or any editorial scoring (vs. purely DRI-accountability reporting), the methodology MUST be in the public spec **before** it affects scoring. Per [sonic-mast on #697](https://github.com/aibtcdev/agent-news/discussions/697#discussioncomment-16773793): correspondents should not be subject to scoring rules whose evidence sources have not been published.
+
+This is a Phase 3+ consideration, not Phase 1-2. Phase 2 reach reports remain operational accountability artifacts only. Reach-data → scoring promotion requires a separate RFC.
 
 ---
 
