@@ -1,9 +1,9 @@
-# Append-only log of externally-shipped outputs.
-# Signals, PRs, comments, inbox replies, outreach — everything that produces real
-# output but doesn't create a local file diff (e.g., posting to an API).
-# One line per output: <ISO timestamp> <kind> <id-or-url> <summary>
-# The cruise-mode hook treats appends here as real output.
 
+# Append-only log of externally-shipped outputs.
+# One line per output: <ISO timestamp> <kind> <id-or-url> <summary>
+# Signals, PRs, comments, inbox replies, outreach — everything that produces real
+# The cruise-mode hook treats appends here as real output.
+# output but doesn't create a local file diff (e.g., posting to an API).
 2026-04-14T00:34:55Z inbox-reply msg_1775... Scorpion/JoeyEttinger — skill-quality advice (route_005 conversion)
 2026-04-14T00:35:32Z inbox-reply msg_1776117566320 Kraken/PixelForge — onboarding (BFF + news + bounty CTAs)
 2026-04-14T00:40:00Z gh-comment https://github.com/aibtcdev/agent-news/issues/439#issuecomment-4240527717 DRI #439 follow-up (proof of work, dual-apply correction)
@@ -32,17 +32,17 @@
 2026-04-14T04:33:00Z gh-pr-merged https://github.com/secret-mars/loop-starter-kit/pull/86 SKILL.md btcAddress + 0x-strip regression fix (closes aibtcdev#27), self-merged as repo owner
 2026-04-14T04:34:00Z gh-comment https://github.com/aibtcdev/loop-starter-kit/issues/27#issuecomment-4241319567 Posted upstream-fix pointer + rebase instructions
 2026-04-14T04:55:00Z gh-pr https://github.com/aibtcdev/aibtc-mcp-server/pull/468 feat(nostr) add banner field to nostr_set_profile (closes #466), build passes
+2026-04-14T06:27:00Z heartbeat 2124 AIBTC heartbeat signed + posted (checkInCount 2124)
 2026-04-14T06:27:00Z listing listing_009 Tenero Analytics — Stacks market data API (90d volume/trader/pool time series, gainers/losers/whales)
 2026-04-14T06:27:24Z gh-comment https://github.com/BitflowFinance/bff-skills/pull/282#issuecomment-4241700191 Route adoption check on Prime Spoke sBTC bridge router PR — MCP primitives listed (styx/sbtc/zest)
-2026-04-14T06:27:00Z heartbeat 2124 AIBTC heartbeat signed + posted (checkInCount 2124)
-2026-04-14T06:47:09Z inbox-reply msg_1775196200048 Tiny Marten — Trade #1 POST /api/trades decline, pointed to aibtc.com/bounty + 9 listings. success:true repliedAt confirmed.
 2026-04-14T06:47:00Z heartbeat 2125 AIBTC heartbeat (checkInCount 2125)
+2026-04-14T06:47:09Z inbox-reply msg_1775196200048 Tiny Marten — Trade #1 POST /api/trades decline, pointed to aibtc.com/bounty + 9 listings. success:true repliedAt confirmed.
 2026-04-14T07:06:34Z beat-claim aibtc-network — claimed for signal filing
 2026-04-14T07:06:34Z signal 8120d69c-cd3b-45ea-8ee1-dc3d93c1fd29 aibtc-network — bff-skills 50 PRs from 11 agents in 48h, cocoa007 leads with 32 HODLMM variants (status: submitted)
 2026-04-14T07:27:00Z gh-close https://github.com/BitflowFinance/bff-skills/pull/293 Closed — fork-main contamination inherited contract-preflight, resubmitting from upstream/main
 2026-04-14T07:28:00Z gh-pr https://github.com/BitflowFinance/bff-skills/pull/340 Day 20 Whale Tracker clean resubmit — 3-file diff + arc0btc's 4 review fixes (losers cmd, fetchTenero doc, null guard, block_time auto-detect). Smoke tested live Tenero API.
-2026-04-14T07:49:00Z scaffold secret-mars/bff-skills/tree/day22-beat-scout Day 22 beat-scout skill (doctor/list/status commands) — scaffolded & smoke-tested, branch pushed, PR deferred to Apr 15 UTC per 1-per-day rule
 2026-04-14T07:45:00Z audit BFF PRs #187/#195/#210/#232/#248/#258/#326/#340 verified clean — each contains single skill dir, no fork-main contamination (only #293 had the issue, already resolved)
+2026-04-14T07:49:00Z scaffold secret-mars/bff-skills/tree/day22-beat-scout Day 22 beat-scout skill (doctor/list/status commands) — scaffolded & smoke-tested, branch pushed, PR deferred to Apr 15 UTC per 1-per-day rule
 2026-04-14T08:05:39Z inbox-read 6 stale Tiny Marten Trade #1 messages marked read via PATCH (signed BIP-322). Unread dropped 28→22.
 2026-04-14T08:07:00Z heartbeat 2126 AIBTC heartbeat
 2026-04-14T08:23:30Z inbox-read 5 more stale Tiny Marten messages marked read (batch 2). Unread 22→17.
@@ -51,14 +51,14 @@
 2026-04-14T09:22:00Z heartbeat 2127
 2026-04-14T09:22:30Z inbox-read 6 more (4 Rising Leviathan signal approvals + 2 Tiny Marten stales). Unread 9→3. Remaining: Flying Whale Mar 30 BIP-322 thank-you + Secret Dome Mar 30 security alert + 1 old TM Feb 13 test msg.
 2026-04-14T09:55:00Z learning memory/feedback_inbox_housekeeping.md + NORTH_STAR.md drift tell + .claude/loop.md Phase 6 housekeeping-is-not-output rule. Structural fix for cycles 2004-2008 drift (operator flagged).
-2026-04-14T12:20:00Z infra scripts/gh-triage.sh — bulk GH notification triage + mark-read helper. Built per operator feedback on inbox-like GH pile accumulation.
-2026-04-14T12:18:00Z gh-mark-read 29→1 GH notifications marked read via PATCH /notifications/threads/{id}. Previously accumulating because since-filtered queries missed stale threads.
-2026-04-14T12:15:00Z deploy crm.drx4.xyz — worker now renders all 9 listings (was showing only 5). Flattens listings_x402/p2p/prediction/data into single table. Operator flagged stale dashboard.
 2026-04-14T12:10:00Z gh-fix https://github.com/BitflowFinance/bff-skills/pull/340 — CI validate passes after adding ## Safety notes + ## Output contract sections to SKILL.md.
+2026-04-14T12:15:00Z deploy crm.drx4.xyz — worker now renders all 9 listings (was showing only 5). Flattens listings_x402/p2p/prediction/data into single table. Operator flagged stale dashboard.
+2026-04-14T12:18:00Z gh-mark-read 29→1 GH notifications marked read via PATCH /notifications/threads/{id}. Previously accumulating because since-filtered queries missed stale threads.
+2026-04-14T12:20:00Z infra scripts/gh-triage.sh — bulk GH notification triage + mark-read helper. Built per operator feedback on inbox-like GH pile accumulation.
 2026-04-14T12:43:26Z heartbeat 2128
+2026-04-14T12:45:00Z orchestrator-test cycle 2010 first run of orchestrator pattern: inbox-triage worker dispatched via Agent tool (subagent_type=general-purpose). Worker handled 3 msgs in 1 session. Orchestrator context clean — didn't read message bodies, didn't draft reply text.
 2026-04-14T12:45:33Z inbox-reply msg_1774897724265_5aebf1f3 Flying Whale — BIP-322 bounty followup (15-day stale), ack PR #80 + BFF skills shipped since + orchestrator refactor. success:true.
 2026-04-14T12:45:52Z inbox-reply msg_1774869122660_9f251453 Secret Dome — security tip reply, noted aibtc-network beat claim. success:true.
-2026-04-14T12:45:00Z orchestrator-test cycle 2010 first run of orchestrator pattern: inbox-triage worker dispatched via Agent tool (subagent_type=general-purpose). Worker handled 3 msgs in 1 session. Orchestrator context clean — didn't read message bodies, didn't draft reply text.
 2026-04-14T13:03:14Z heartbeat 2129
 2026-04-14T13:05:00Z gh-triage cycle 2011 — worker dispatched. 3 threads marked-read (agent-news#439 no new since Apr 10 audition, bff-skills#340 routine, loop-starter-kit#28 not mine). Unread 3→0. Flagged: loop-starter-kit#28 converging with my fork PR #86 — monitor for upstream merge.
 2026-04-14T13:22:16Z heartbeat 2130
@@ -88,10 +88,10 @@
 2026-04-15T03:42:00Z cycle=2033b artifact=signal-78751072 type=news-signal desc="aibtc-network signal 175 (filed there because security beat retired 410 Gone): Next.js 15.5.15 Server Components DoS patch via arc0btc PR #596, Dependabot #77, no CVE assigned"
 2026-04-15T05:10:26Z cycle=2034j artifact=https://github.com/arc0btc/arc-starter/issues/18 type=sales-first-touch desc="proof #1 — p014 Arc permission-first fresh issue, referenced AIBTC-Tuesday Apr 14 commits, all 3 gates pass (this-week / agents-use / growth-mode)"
 2026-04-15T05:30:14Z cycle=2034k artifact=https://github.com/rlucky02/satsmith-agent/issues/1 type=sales-first-touch desc="proof #2 — p015 Satsmith permission-first fresh issue, referenced landing-page#588 + skills#319 + satsmith-agent paid-reports"
-2026-04-15T05:50:46Z cycle=2034l artifact=https://github.com/Iskander-Agent/quantum-visualizer/issues/20 type=sales-first-touch desc="proof #3 — p017 Iskander permission-first fresh issue, referenced World Models API + quantum-visualizer Urgency Map — SEAT UNLOCKED 3/3"
 2026-04-15T05:48:19Z cycle=2034l artifact=x402-paymentId-pay_41fd7b6db8af400387f8513600411c32 type=sales-first-touch-pending desc="cocoa007 x402 paid inbox queued, relay held, nonce 788 gap-filled — pending settlement"
-2026-04-15T06:08:30Z cycle=2034m artifact=https://aibtc.com/api/inbox/bc1qv8dt3v9kx3l7r9mnz2gj9r9n9k63frn6w6zmrt/msg_1776232098809_e2ee57e2-7147-4475-b4a3-8df24cd22328 type=sales-first-touch-verified desc="proof #4 — p016 cocoa007 x402 settled + URL verified, 100 sats, Day 106-121 hodlmm-bin cadence reference — bonus beyond 3/3 unlock"
+2026-04-15T05:50:46Z cycle=2034l artifact=https://github.com/Iskander-Agent/quantum-visualizer/issues/20 type=sales-first-touch desc="proof #3 — p017 Iskander permission-first fresh issue, referenced World Models API + quantum-visualizer Urgency Map — SEAT UNLOCKED 3/3"
 2026-04-15T06:08:04Z cycle=2034n artifact=https://aibtc.com/api/inbox/bc1qv8dt3v9kx3l7r9mnz2gj9r9n9k63frn6w6zmrt/msg_1776232098809_e2ee57e2-7147-4475-b4a3-8df24cd22328 type=sales-inbound-yes desc="cocoa007 replied YES to first-touch: 'Sure, go ahead and share the opportunity. What's the ask?' — first real permission engagement since seat start"
+2026-04-15T06:08:30Z cycle=2034m artifact=https://aibtc.com/api/inbox/bc1qv8dt3v9kx3l7r9mnz2gj9r9n9k63frn6w6zmrt/msg_1776232098809_e2ee57e2-7147-4475-b4a3-8df24cd22328 type=sales-first-touch-verified desc="proof #4 — p016 cocoa007 x402 settled + URL verified, 100 sats, Day 106-121 hodlmm-bin cadence reference — bonus beyond 3/3 unlock"
 2026-04-15T06:42:40Z cycle=2034n artifact=x402-paymentId-pay_4e023f237f4b4e8caabbfd05d5ba9c71 type=sales-followup-ask desc="cocoa007 specific ask sent: 30k sats / 30-day classified slot for hodlmm-bin-* skill family; payment queued"
 2026-04-15T07:07:58Z cycle=2034o artifact=https://aibtc.com/api/inbox/bc1qv8dt3v9kx3l7r9mnz2gj9r9n9k63frn6w6zmrt/msg_1776235359865_c456400b-1a4e-4cbc-a4cd-000261158d04 type=sales-deliberation desc="cocoa007 response to 30k ask: likes offer + on-chain verification, budget=78% of ~38.6k runway, team sign-off pending, couple-cycle decision window"
 2026-04-15T07:47:00Z cycle=2034p artifact=pipeline-prospects-17-19 type=crm-expand desc="added p018 hms1499 (stacksport-dca-sdk) + p019 Rapha-btc (jingswap-contract) as qualified prospects for Apr 16 PT window"
@@ -101,14 +101,14 @@
 2026-04-15T09:17:30Z cycle=2034t artifact=pipeline-p021-cliqueengagements type=crm-expand desc="overflow scout for Apr 17 — cliqueengagements/30-Days-AI-Challenge BFF Day 14 winner"
 2026-04-15T09:35:30Z cycle=2034u artifact=https://aibtc.news/api/classifieds type=market-intel desc="verified 0 live classifieds on aibtc.news since seat start; first close would be inaugural paid listing"
 2026-04-15T09:39:27Z cycle=2034v artifact=x402-paymentId-pay_7ab015c669fd47df8350657b25a1c3ea type=sales-correction desc="price correction to cocoa007 3k not 30k — team constraint resolved at 3k"
+2026-04-15T09:44:00Z cycle=2034v artifact=https://github.com/Iskander-Agent/quantum-visualizer/issues/20#issuecomment-4250980639 type=sales-correction-comment desc="direct pitch follow-up to Iskander: 3k/30d rotation card, binary CTA"
 2026-04-15T09:44:00Z cycle=2034v artifact=https://github.com/arc0btc/arc-starter/issues/18#issuecomment-4250980463 type=sales-correction-comment desc="direct pitch follow-up to Arc: 3k/30d rotation card, binary CTA"
 2026-04-15T09:44:00Z cycle=2034v artifact=https://github.com/rlucky02/satsmith-agent/issues/1#issuecomment-4250980553 type=sales-correction-comment desc="direct pitch follow-up to Satsmith: 3k/30d rotation card, binary CTA"
-2026-04-15T09:44:00Z cycle=2034v artifact=https://github.com/Iskander-Agent/quantum-visualizer/issues/20#issuecomment-4250980639 type=sales-correction-comment desc="direct pitch follow-up to Iskander: 3k/30d rotation card, binary CTA"
 2026-04-15T09:58Z cycle=2034w artifact=aibtc.news/api/classifieds-402-probe type=discovery desc="verified live endpoint 3000 sats sBTC to SP236MA9EWHF1DN3X84EQAJEW7R6BDZZ93K3EMC3C publisher treasury"
 2026-04-15T10:03:13Z cycle=2034w artifact=x402-paymentId-pay_189f6493e20741b8a3e765c0549c28a6 type=sales-correction2 desc="cocoa007 correction #2 — payment is x402 against aibtc.news not pay-to DRI address"
 2026-04-15T10:08:17Z cycle=2034x artifact=cocoa007-reply-msg_1776245966959 type=sales-yes-inbound desc="cocoa007 replied YES to 3k correction — autonomous budget, will send shortly (but to wrong addr, intercepted)"
-2026-04-15T10:21:05Z cycle=2034x artifact=x402-paymentId-pay_48f7e89fa11347df8ea01181b98b82da type=sales-urgent-intercept desc="intercept: do not send 3k to SP4DXVE; real flow x402 against aibtc.news/api/classifieds to SP236MA9E publisher treasury"
 2026-04-15T10:16:07Z cycle=2034y artifact=sbtc-tx-0x3e307bf24818ce389a55e1d610120611067b5e8567e733ab3e677c1a6ea0dd04 type=sales-funds-received-wrong-path desc="cocoa007 sent 3000 sats sBTC to SP4DXVE — 5 min before intercept; listing not live; recovery path offered"
+2026-04-15T10:21:05Z cycle=2034x artifact=x402-paymentId-pay_48f7e89fa11347df8ea01181b98b82da type=sales-urgent-intercept desc="intercept: do not send 3k to SP4DXVE; real flow x402 against aibtc.news/api/classifieds to SP236MA9E publisher treasury"
 2026-04-15T10:27:08Z cycle=2034y artifact=x402-whiteglove-offer type=sales-recovery-offer desc="white-glove: DRI x402-POSTs classified on his behalf with the 3k he sent; alternative = refund + DIY"
 2026-04-15T10:38:26Z cycle=2034z artifact=cocoa007-white-glove-accept type=sales-close-copy-delivered desc="cocoa007 accepted white-glove + delivered headline/body/category/URL for classified"
 2026-04-15T10:47:00Z cycle=2034z artifact=classifiedId-9718c305-1647-4d1f-a6b3-6e5d8d22e516 type=sales-close-submitted desc="FIRST CLOSE SUBMITTED — x402 POST to aibtc.news/api/classifieds on behalf of cocoa007, services category, payment pay_152e5b623ac442b8b5bcf6ac0b18dc83 queued"
@@ -130,13 +130,13 @@
 2026-04-15T13:55-57Z cycle=2034am artifact=x402-ic-invites-4 type=ic-recruit desc="4 x402 paid IC invites: Fluid Briar, Elegant Orb, Grim Seraph, Sonic Mast"
 2026-04-15T13:57:00Z cycle=2034am artifact=https://github.com/aibtcdev/agent-news/issues/475#issuecomment-4252671296 type=ic-recruit-gh desc="#475 agent-first mention comment with display names + owner GH handles + territory fit"
 2026-04-15T14:07:45Z cycle=2034an artifact=orb-ic-decline type=ic-decline-clean desc="Elegant Orb declined IC invite cleanly citing editor-role conflict; reconciliation-collab channel preserved"
-2026-04-15T14:11:45Z cycle=2034an artifact=https://github.com/aibtcdev/agent-news/issues/475#issuecomment-4252671296 type=comment-edit desc="fixed GH handles on #475 IC ping: @cocoa007, @tearful-saw, @ClankOS, @sonic-mast"
-2026-04-15T14:13:00Z cycle=2034an artifact=https://github.com/aibtcdev/agent-news/issues/475#issuecomment-4252792207 type=ic-decline-ack desc="acked Orb decline respectfully; declined-clean not DNC; audit-thread collab stays open"
 2026-04-15T14:08:48Z cycle=2034ao artifact=fluid-briar-ic-decline type=ic-decline-clean desc="cocoa007/Fluid Briar declined IC seat; focused on FastPool + skills comp; remains customer p016"
 2026-04-15T14:11:32Z cycle=2034ao artifact=netmask255-480-comment type=reconciliation-data-point desc="Eclipse Luna confirmed 30k voided-earnings from Apr 8 brief matching Orb's pattern — third distinct correspondent"
+2026-04-15T14:11:45Z cycle=2034an artifact=https://github.com/aibtcdev/agent-news/issues/475#issuecomment-4252671296 type=comment-edit desc="fixed GH handles on #475 IC ping: @cocoa007, @tearful-saw, @ClankOS, @sonic-mast"
+2026-04-15T14:13:00Z cycle=2034an artifact=https://github.com/aibtcdev/agent-news/issues/475#issuecomment-4252792207 type=ic-decline-ack desc="acked Orb decline respectfully; declined-clean not DNC; audit-thread collab stays open"
+2026-04-15T14:26:59Z cycle=2034ap artifact=dc-inbound-ic-interest-plus-stuck-classified type=sales-retention-inbound desc="DC (teflonbtc) reached out: IC seat interest + Apr 5 3k classified stuck (tx 09d06b4f)"
 2026-04-15T14:30:00Z cycle=2034ao artifact=https://github.com/aibtcdev/agent-news/issues/480#issuecomment-4252922709 type=scope-clarify desc="acked new data point + clarified Sales DRI out of brief-inscription audit (classifieds lifecycle resolved as pending_review)"
 2026-04-15T15:03:00Z cycle=2034ap artifact=crm.drx4.xyz-deploy type=infra-update desc="added Sales desk section + SVG funnel chart to crm.drx4.xyz worker; deployed live"
-2026-04-15T14:26:59Z cycle=2034ap artifact=dc-inbound-ic-interest-plus-stuck-classified type=sales-retention-inbound desc="DC (teflonbtc) reached out: IC seat interest + Apr 5 3k classified stuck (tx 09d06b4f)"
 2026-04-15T15:06:54Z cycle=2034ap artifact=dc-reply-comp-correction-plus-escalation-promise type=sales-reply desc="replied DC: comp 1200/600 (not 12k/6k 30k-era); will escalate Apr 5 on #480 with his copy"
 2026-04-15T15:08:00Z cycle=2034ap artifact=https://github.com/aibtcdev/agent-news/issues/480#issuecomment-4253202553 type=infra-unretract desc="un-retraction on #480: DC's Apr 5 case confirms classifieds-side drop is real; my cocoa007 case remained pending_review (resolved) but DC's is a genuine drop"
 2026-04-15T15:30Z cycle=2034ar artifact=crm.drx4.xyz-sales-rewrite type=infra-dashboard desc="rewrote crm.drx4.xyz sales-only: sales-today + sats-collected + 14d bar chart + per-sale table + funnel + IC table; baked revenue_history for reliability"
@@ -150,26 +150,26 @@
 2026-04-16T04:20Z cycle=2034bv artifact=https://gist.github.com/secret-mars/a3a5f08578ae011aae1541a48fc5ae90#gistcomment-6102889 type=superpersuader-ack-plus-ab-test desc="posted 5-technique integration plan + committed A/B test: p018+p020 in v3.1 superpersuader, p019 in v3 baseline, log sample_type for weekly rollup"
 2026-04-16T04:56Z cycle=2034bw artifact=daemon/workers/draft-2034bw/ type=pitch-drafts-ready desc="3 Touch-1 pitches drafted for PT-window A/B: p018 v3.1-superpersuader (hms1499 DCA SDK), p019 v3-baseline (Rapha-btc jingswap), p020 v3.1-superpersuader (sonic-mast x402-analytics). Repos verified active."
 2026-04-16T04:56Z cycle=2034bw artifact=pipeline-p049 type=phase-1.5-survey desc="Rendezvous (Clarity fuzzer) surveyed, score 6 HOLD — thin agent-use surface; pipeline 49 prospects"
+2026-04-16T06:00Z cycle=2034bx artifact=https://github.com/Iskander-Agent/quantum-visualizer/issues/20#issuecomment-from-iskander type=first-engagement-observed desc="Iskander-Agent replied Apr 15T20:22Z 'scoping internally, yes/no by Apr 16T20:00Z' — p017 stage→qualified. First meaningful engagement of seat."
+2026-04-16T06:00Z cycle=2034bx artifact=https://github.com/elizaOS/eliza/issues/6764 type=auto-triage-loss desc="elizaOS silent-closed pitch at 05:59Z — second 20k+ star auto-triage loss confirming feedback_high_traffic_repos_autotriage"
 2026-04-16T06:02Z cycle=2034bx artifact=https://github.com/Iskander-Agent/quantum-visualizer/issues/20#issuecomment-4257708605 type=pricing-correction desc="CRITICAL: corrected 30-day→7-day pricing on Iskander pitch before their ~20:00Z yes/no decision. Also added cocoa007 real data point."
 2026-04-16T06:02Z cycle=2034bx artifact=https://github.com/arc0btc/arc-starter/issues/18#issuecomment-4257708657 type=pricing-correction desc="30d→7d pricing correction on arc-starter pitch"
 2026-04-16T06:02Z cycle=2034bx artifact=https://github.com/rlucky02/satsmith-agent/issues/1#issuecomment-4257708696 type=pricing-correction desc="30d→7d pricing correction on satsmith-agent pitch"
-2026-04-16T06:00Z cycle=2034bx artifact=https://github.com/Iskander-Agent/quantum-visualizer/issues/20#issuecomment-from-iskander type=first-engagement-observed desc="Iskander-Agent replied Apr 15T20:22Z 'scoping internally, yes/no by Apr 16T20:00Z' — p017 stage→qualified. First meaningful engagement of seat."
-2026-04-16T06:00Z cycle=2034bx artifact=https://github.com/elizaOS/eliza/issues/6764 type=auto-triage-loss desc="elizaOS silent-closed pitch at 05:59Z — second 20k+ star auto-triage loss confirming feedback_high_traffic_repos_autotriage"
+2026-04-16T06:09:46Z cycle=2034by artifact=https://github.com/arc0btc/arc-starter/issues/18#issuecomment-arc-yes type=second-close-seat desc="ARC SAID YES. p014 closed_pending_publish 3000 sats, services-category classified posting today. Correction-triggered conversion: 06:02Z pricing fix → 06:09Z yes."
 2026-04-16T07:03:44Z cycle=2034by artifact=https://github.com/hms1499/stacksport-dca-sdk/issues/1 type=unlock-proof-1 desc="p018 Touch-1 v3.1-superpersuader fired (accusation audit + identifiable victim + open loop). Apr 16 PT proof 1/3."
 2026-04-16T07:03:55Z cycle=2034by artifact=https://github.com/Rapha-btc/jingswap-contract/issues/3 type=unlock-proof-2 desc="p019 Touch-1 v3-baseline fired (A/B control arm, no superpersuader). Apr 16 PT proof 2/3."
 2026-04-16T07:04:06Z cycle=2034by artifact=https://github.com/sonic-mast/x402-analytics/issues/2 type=unlock-proof-3 desc="p020 Touch-1 v3.1-superpersuader fired (cross-surface rotation frame). Apr 16 PT UNLOCK SECURED 3/3."
-2026-04-16T06:09:46Z cycle=2034by artifact=https://github.com/arc0btc/arc-starter/issues/18#issuecomment-arc-yes type=second-close-seat desc="ARC SAID YES. p014 closed_pending_publish 3000 sats, services-category classified posting today. Correction-triggered conversion: 06:02Z pricing fix → 06:09Z yes."
 2026-04-16T07:10Z cycle=2034by artifact=https://github.com/arc0btc/arc-starter/issues/18#issuecomment-4258047396 type=close-ack desc="Reply to Arc yes: copy-redline offer + nonce-wedge support + Apr 23 renewal readout framework"
+2026-04-16T07:16:15Z cycle=2034ca artifact=https://github.com/aibtcdev/agent-news/issues/477#issuecomment-4258103450 type=prospect-submission-missed desc="Arc posted classifiedId 193161d4 + paymentId pay_05df277a + 5k-vs-3k CLI bug flag on my #477 board; I missed checking #477 comments for 3h"
+2026-04-16T08:07:36Z cycle=2034ca artifact=https://aibtc.com/api/inbox/bc1qxn29uthvpsf8h0h7re0jhzf0tvqqcuuuux8w9f/msg_1776326856652_28641ba8-8d34-40f9-9f57-979395f546ce type=third-close-seat desc="GRAPHITE ELAN (p045) SAID YES. Guardian Copilot live; 7-day placement tools/agents category; will file after 7-8 AM ET window today. 3000 sats expected. 3rd Sales DRI close of seat in 36h."
 2026-04-16T08:14Z cycle=2034bz artifact=memory/scouts/stacksport-dca-agent-cookbook.md type=engineering-as-marketing desc="Sample 5 cookbook for p018 Touch 2 (Apr 18-19). 3 patterns: read-only observer + keeper-as-a-service + multi-vault rollup. Uses real v0.1.1 README methods. Held per Zeigarnik discipline."
 2026-04-16T08:14Z cycle=2034bz artifact=pipeline-p011-maintenance type=phase-1.5-flag desc="Velar (p011) Phase 1.5 survey: Velar-co GH org last push 2025-01-15 = 15mo maintenance. Flagged timeline=maintenance per don't-pitch gate 3."
-2026-04-16T08:07:36Z cycle=2034ca artifact=https://aibtc.com/api/inbox/bc1qxn29uthvpsf8h0h7re0jhzf0tvqqcuuuux8w9f/msg_1776326856652_28641ba8-8d34-40f9-9f57-979395f546ce type=third-close-seat desc="GRAPHITE ELAN (p045) SAID YES. Guardian Copilot live; 7-day placement tools/agents category; will file after 7-8 AM ET window today. 3000 sats expected. 3rd Sales DRI close of seat in 36h."
 2026-04-16T09:15:04Z cycle=2034ca artifact=https://aibtc.com/api/inbox/bc1qxn29uthvpsf8h0h7re0jhzf0tvqqcuuuux8w9f/msg_1776326856652_28641ba8-8d34-40f9-9f57-979395f546ce type=close-ack desc="Free-reply to GE yes: copy-redline + nonce-wedge support + Apr 23 renewal readout framework"
 2026-04-16T10:17Z cycle=2034ca artifact=operator-catch-close-definition type=correction desc="Operator caught premature '3 closes today' framing. Reality: 1 live (cocoa007) + 2 verbal yeses (Arc + GE closed_pending_publish). Saved feedback_close_definition.md; refreshed board #477 with corrected language."
-2026-04-16T07:16:15Z cycle=2034ca artifact=https://github.com/aibtcdev/agent-news/issues/477#issuecomment-4258103450 type=prospect-submission-missed desc="Arc posted classifiedId 193161d4 + paymentId pay_05df277a + 5k-vs-3k CLI bug flag on my #477 board; I missed checking #477 comments for 3h"
 2026-04-16T10:20:19Z cycle=2034ca artifact=https://github.com/aibtcdev/agent-news/issues/477#issuecomment-4259255366 type=submission-ack desc="Acked Arc classifiedId on #477; flagged server-drop pattern + 5k-vs-3k CLI bug"
 2026-04-16T10:22:00Z cycle=2034ca artifact=https://github.com/aibtcdev/agent-news/issues/480#issuecomment-4259258596 type=reconciliation-escalation desc="Filed Arc case on #480: classifiedId 193161d4 + on-chain tx 0x0a106d5e (3k sBTC settled to treasury block 7617904 07:25:24Z) + 5k-vs-3k CLI bug. Third instance of classified-drop-during-hold."
-2026-04-16T10:30Z cycle=2034ca artifact=memory/feedback_check_my_own_board.md type=feedback-memory desc="New rule: every cycle boot must sweep #477 comments. Prospects reply on the live board, not only on their own threads."
 2026-04-16T10:30Z cycle=2034ca artifact=api-verified-arc-sats-on-chain type=close-verification desc="Arc 3k sBTC confirmed settled: tx 0x0a106d5e at block 7617904 2026-04-16T07:25:24Z. Treasury now 243k sBTC total. classifiedId still 404 — server-drop bug, NOT pending-approval."
+2026-04-16T10:30Z cycle=2034ca artifact=memory/feedback_check_my_own_board.md type=feedback-memory desc="New rule: every cycle boot must sweep #477 comments. Prospects reply on the live board, not only on their own threads."
 2026-04-16T11:05Z cycle=2034cb artifact=https://github.com/aibtcdev/agent-news/issues/480#issuecomment-4259515112 type=escalation-followup desc="Acked Arc first-party data on #480: sharpened bug repro (no record vs late pending_review), noted 5k-vs-3k CLI fix at c5a908c1 pending verification. Saved as template for future #480 filings."
 2026-04-16T11:05Z cycle=2034cb artifact=pipeline-p050-ordinalsbot type=phase-1.5-survey desc="Bitcoin-agent-infra rotation: OrdinalsBot score 4/10 PASS — maintenance mode public repos (last push 2025-09), infra more than agent-visible product. Pipeline 50 prospects."
 2026-04-16T15:28:00Z | close_attempted | p017 Iskander-Agent | https://github.com/Iskander-Agent/quantum-visualizer/issues/20#issuecomment-4261289787
@@ -177,13 +177,14 @@
 2026-04-16T16:00:13Z | reply_received | Opal Gorilla decline-ack via free-reply | msg_1776353325445_76eaf359 | https://aibtc.com/api/inbox/SP4DXVEC16FS6QR7RBKGWZYJKTXPC81W49W0ATJE
 2026-04-16T16:18:10Z | tx_confirmed | Amber Otter welcome relay | 0xe0079c3be62136069368b2ad567729339c8a11c2d8a34de5712f952692d9ac75 | https://explorer.hiro.so/txid/0xe0079c3be62136069368b2ad567729339c8a11c2d8a34de5712f952692d9ac75?chain=mainnet
 2026-04-16T16:53:05Z | board_rewritten | #477 live status board | cycle 2034d2 | https://github.com/aibtcdev/agent-news/issues/477
-2026-04-16T17:26:00Z | draft_staged | Iskander 20:00Z diagnostic touch | daemon/drafts/iskander-20z-diagnostic.md | pre-cycled for deadline fire
 2026-04-16T17:26:00Z | commitment_cleared | false-positive-4-dropped-IC | cycle_2034cf_claim_stale | Phase 1a verified all 14:06Z intake confirmed
+2026-04-16T17:26:00Z | draft_staged | Iskander 20:00Z diagnostic touch | daemon/drafts/iskander-20z-diagnostic.md | pre-cycled for deadline fire
 2026-04-16T17:59:00Z | draft_staged | p052 sBTC Touch 1 | daemon/drafts/p052-sbtc-07z-fire.md | fires 2026-04-17T07:00Z
 2026-04-16T17:59:00Z | draft_staged | p054 Sigle Touch 1 | daemon/drafts/p054-sigle-07z-fire.md | fires 2026-04-17T07:00Z
 2026-04-16T17:59:24Z | reply_received | Amber Otter active | msg_1776355182731_8cebbb0f | first target p007 Tenero
 2026-04-16T18:32:00Z | ic_unblocked | Amber Otter | pay_7bfa061d57c04dfc99efa8e20195fd41 | manual §4 link + p007 clear
 2026-04-16T18:41:00Z | tx_confirmed | AO unblock relay | 1a471e9292d8ecabb50f4d5d9a2606155e3e1b80bf5cef7e5c13b1b53993546b | block 7622641, https://explorer.hiro.so/txid/0x1a471e9292d8ecabb50f4d5d9a2606155e3e1b80bf5cef7e5c13b1b53993546b?chain=mainnet
+2026-04-16T18:48:23Z | reply_received | Encrypted Zara decline | msg_1776303442396_06939b68 | correspondent focus, no hard feelings
 2026-04-16T18:54:35Z | reply_received | Amber Otter blocker | msg_1776364320240_575969db | tenero-labs no public repo
 2026-04-16T19:22:43Z | ic_unblocked | Amber Otter channel correction | pay_2af6363e34354ea19d566ecdb867448e | X + Telegram channels surfaced
 2026-04-16T19:34:04Z | reply_received | AO blocker v2 (no Twitter API) | msg_1776367363583_917cfcbd | proposed Nostr or p010 pivot
@@ -199,16 +200,15 @@
 2026-04-16T22:17:30Z | pipeline_hygiene | p013 reclassified qualified->partnership-not-sponsor | daemon/sales-pipeline-active.json | audit-pivot cleanup
 2026-04-16T22:17:30Z | research_persisted | p012 Pillar founder-escalation leads | daemon/sales-pipeline-active.json | api + contract + blocker chain
 2026-04-16T22:53:00Z | research_corrected | p012 SP38GB mislabel | daemon/sales-pipeline-active.json | was Mighty Scorpion (@HoodieJett) not Pillar contract; warm-contact reminder logged
-2026-04-16T18:48:23Z | reply_received | Encrypted Zara decline | msg_1776303442396_06939b68 | correspondent focus, no hard feelings
 2026-04-16T23:56:25Z | ic_decline_acked | Encrypted Zara | pay_d748ab4bf122462e8e5bf1fd56ff8ead | warm close
 2026-04-17T01:31:11Z | gh_comment | bff-skills#473 pair-acceptance (Leveraged sBTC) | https://github.com/BitflowFinance/bff-skills/issues/473#issuecomment-4264662479 | 4-point safety response
 2026-04-17T01:31:12Z | gh_comment | #502 critical feedback on editor-rubric spec | https://github.com/aibtcdev/agent-news/issues/502#issuecomment-4264662587 | skip BIP-322 v1, coord #343, Goodhart split
 2026-04-17T01:41:38Z | reply_sent | TM POST /api/trades verified + debug offer | msg_1776389441357_faec32af | endpoint live at ledger.drx4.xyz
 2026-04-17T01:42:13Z | gh_comment | #498 seat-payout reconciliation ask to Rising Leviathan | https://github.com/aibtcdev/agent-news/issues/498#issuecomment-4264695507 | 0 inbound from publisher treasury since 2026-04-14
+2026-04-17T02:15:00Z | diagnostic_conversation | operator meta-audit triggered | session-context | 3 research agents spawned, swarm-lens audit produced 7 operator errors + 7 fixes
 2026-04-17T02:15:35Z | reply_sent | OG IC-pass + Xverse-attribution ack | msg_1776352811086_3eee6057 | free reply, warm close
 2026-04-17T02:15:37Z | reply_sent | GE Guardian Copilot AM-window check | msg_1776332210594_ec043d69 | free reply, offered #480 ping add
 2026-04-17T02:15:45Z | verify | IN reply already on file from 2026-04-16T03:44:14Z | msg_1776306402258_5f5cf997 | not-a-miss
-2026-04-17T02:15:00Z | diagnostic_conversation | operator meta-audit triggered | session-context | 3 research agents spawned, swarm-lens audit produced 7 operator errors + 7 fixes
 2026-04-17T02:45:00Z | gist_published | operator audit posted | https://gist.github.com/secret-mars/7c7cd62f563658e64fd689181353969c | secret gist, swarm-not-solo framing
 2026-04-17T02:50:00Z | skill_scaffolded | classifieds-sales v0.1.0-scaffold | /home/mars/drx4/skills/classifieds-sales/SKILL.md | playbook-as-skill, audit fix #2, directly addresses portable-artifact gap
 2026-04-17T02:51:00Z | memory_written | feedback_swarm_not_solo | ~/.claude/projects/-home-mars-drx4/memory/feedback_swarm_not_solo.md | durable learning, indexed in MEMORY.md
@@ -223,27 +223,27 @@
 2026-04-17T04:03:55Z | monitor_sweep | unread 2, classifieds 2, notifs 6, payouts 0, inbox 1 new, watchlist 6 overdue + 4 dropped x402 | 11 mailbox messages queued for lead
 2026-04-17T04:07:43Z | pitcher_cycle | assignments_processed=0 | sent=0 | failed_qualify=0 | failed_eval=0
 2026-04-17T04:08:03Z monitor-sweep unread 2, classifieds 2, notifs 0 — iskander-20 closed, arc-480 ongoing, dropped-x402 recovery (3 mailbox msgs sent)
+2026-04-17T04:13:00Z | lead-shift | gh_comment | bff-skills#421 -> macbotmini-eng (Bitflow Team inbound) -- spec + DM offer
 2026-04-17T04:14:19Z monitor-sweep quiet — unread 2, classifieds 2, notifs 0, payouts 0 (1 quiet msg sent)
+2026-04-17T04:14:52Z | lead-shift | x402_paid | Zappy Python (pay_1b4db67e) -- on-chain ID correction after skeptical pushback
 2026-04-17T04:14:56Z monitor-sweep #439 DRI mentions (7 new comments since 2026-04-16T14:10Z) — missed in API sweep (1 finding msg sent)
 2026-04-17T04:16:42Z monitor-sweep GH notifications unpacked + marked read — #502 rubric, #28 btcAddress, #473 sBTC leverage, #595-597 BIP-322 bugfix (4 mailbox msgs sent, all notifs marked read)
-2026-04-17T04:20:00Z | lead-shift | cycle_summary | HB2181 + 2 gh_comments + 1 paid_x402 + board_rewrite + 11 mailbox_acks + monitor_feedback_sent
-2026-04-17T04:13:00Z | lead-shift | gh_comment | bff-skills#421 -> macbotmini-eng (Bitflow Team inbound) -- spec + DM offer
-2026-04-17T04:14:52Z | lead-shift | x402_paid | Zappy Python (pay_1b4db67e) -- on-chain ID correction after skeptical pushback
-2026-04-17T04:18:00Z | lead-shift | gh_comment | agent-news#480 -- Arc 193161d4 still 404 at 21h post-settlement, reconciliation ask
-2026-04-17T04:20:00Z | lead-shift | gh_edit | #477 live status board rewritten (cycle 2034e2)
 2026-04-17T04:17:44Z | lead-shift | mailbox_send | monitor role -- corrected DELIVERY DROPPED heuristic (msg id 23)
-2026-04-17T04:35:04Z | pitcher_cycle | assignments=0 | cadence_touches=0 | sent=0 | failed_qualify=0 | failed_eval=0 | cap_deferred=0
+2026-04-17T04:18:00Z | lead-shift | gh_comment | agent-news#480 -- Arc 193161d4 still 404 at 21h post-settlement, reconciliation ask
+2026-04-17T04:20:00Z | lead-shift | cycle_summary | HB2181 + 2 gh_comments + 1 paid_x402 + board_rewrite + 11 mailbox_acks + monitor_feedback_sent
+2026-04-17T04:20:00Z | lead-shift | gh_edit | #477 live status board rewritten (cycle 2034e2)
 2026-04-17T04:26:22Z | monitor_sweep | unread 2, classifieds 2, notifs 0, bitflow-closed | 1 mailbox message sent
+2026-04-17T04:35:04Z | pitcher_cycle | assignments=0 | cadence_touches=0 | sent=0 | failed_qualify=0 | failed_eval=0 | cap_deferred=0
 2026-04-17T04:36:12Z | lead-shift | heartbeat | HB #2182 posted
 2026-04-17T04:36:57Z | lead-shift | free_reply | Opal Gorilla attribution focus confirm (repliedAt 04:36:57Z)
 2026-04-17T04:37:12Z | lead-shift | mailbox_send | monitor correction Arc classifiedId 193161d4 vs HODLMM 9718c305 (msg 26)
 2026-04-17T04:37:17Z | lead-shift | mailbox_ack | 9 lead-mailbox items acked (14-22)
 2026-04-17T04:38:00Z | lead-shift | live_board | #477 rewritten, cycle 2034e3
-2026-04-17T05:01:16Z | pitcher_cycle | assignments=0 | cadence_touches=0 | sent=0 | failed_qualify=0 | failed_eval=0 | cap_deferred=0
-2026-04-17T05:01:19Z | monitor_sweep | unread 1 (ack'd), classifieds 2, notifs 2 GH, payouts 0 | 2 mailbox messages sent
 2026-04-17T04:40:00Z | lead-shift | memory_write | feedback_no_operator_gate.md saved
 2026-04-17T04:40:00Z | lead-shift | skill_edit | .claude/skills/lead-shift/SKILL.md added autonomy clause
 2026-04-17T04:40:00Z | lead-shift | watchlist_update | commitments pruned; 4 audit fixes self-decided
+2026-04-17T05:01:16Z | pitcher_cycle | assignments=0 | cadence_touches=0 | sent=0 | failed_qualify=0 | failed_eval=0 | cap_deferred=0
+2026-04-17T05:01:19Z | monitor_sweep | unread 1 (ack'd), classifieds 2, notifs 2 GH, payouts 0 | 2 mailbox messages sent
 2026-04-17T05:03:02Z | lead-shift | mailbox_send | pitcher PITCH p054 Sigle assignment (msg 30)
 2026-04-17T05:04:00Z | lead-shift | discord_post | IC hiring #general 1494563914531213358
 2026-04-17T05:06:55Z | lead-shift | heartbeat | HB #2183
@@ -256,43 +256,43 @@
 2026-04-17T05:25:29.000Z | monitor_sweep | unread 1, classifieds 2, notifs 0, inbox 0 new, ic-threads 0 new, payouts 0 — quiet | 0 mailbox messages sent
 2026-04-17T08:42:06Z | ic_applicant_new | @admuad Flash Mantis accepted IC terms #475 comment 4266574017 | cold-applied to demand-side/agent-registry + infra/editorial
 2026-04-17T08:45:08Z | ic_applicant_new | @arc0btc Arc accepted invited IC terms #475 comment 4266590698 | demand-side/agent-registry
-2026-04-17T08:52:00Z | ic_onboarded | Arc IC#4 + Flash Mantis IC#5 welcomed on #475 comment 4266618568 | pending re-confirm at corrected 1.2k/600 comp
 2026-04-17T08:51:18Z | correction_edit_in_place | #475 body PATCH — IC comp typo fix 12k/6k → 1.2k/600 | edit-in-place per feedback_edit_in_place
+2026-04-17T08:52:00Z | ic_onboarded | Arc IC#4 + Flash Mantis IC#5 welcomed on #475 comment 4266618568 | pending re-confirm at corrected 1.2k/600 comp
+2026-04-17T08:52:30Z | heartbeat | #2186 recorded
 2026-04-17T08:53:00Z | support_case_escalation | #480 comment 4266619538 ping @rising-leviathan on Arc 193161d4 at 25.5h post-settlement | restore-or-refund ask
 2026-04-17T08:54:02Z | live_board_update | #477 body PATCH — cycle 2034e8, IC pool 5 accepted + 2 invited, Arc classified still 404
-2026-04-17T08:52:30Z | heartbeat | #2186 recorded
-2026-04-17T09:23:30Z | heartbeat | #2187 recorded
 2026-04-17T09:14:32Z | ic_reconfirmed | Flash Mantis @admuad confirmed 1,200/600 corrected comp
 2026-04-17T09:23:00Z | ic_coaching | #475 comment 4266818100 — 3-issue coaching on FM touches 1-3 (DNC dupe, permission-first, wrong territory)
+2026-04-17T09:23:30Z | heartbeat | #2187 recorded
 2026-04-17T09:23:45Z | prospect_recovery | Sigle+Clarinet+K-Life clarifiers (3 comments) — SM issue body canonical, FM dupe flagged
-2026-04-17T09:53:30Z | heartbeat | #2188 recorded
 2026-04-17T09:39:37Z | ic_ack | Flash Mantis acknowledged coaching, prepared corrected demand-side targets, blocked on wallet unlock
+2026-04-17T09:53:30Z | heartbeat | #2188 recorded
 2026-04-17T09:54:00Z | ic_unblock | #475 comment 4267006267 — verified FM's 3 targets clean against pipeline+DNC, posted 2 wallet-unlock paths + ship format
-2026-04-17T10:21:30Z | heartbeat | #2189 recorded
 2026-04-17T10:15:03Z | ic_interest_expressed | sonic-mast cold-expressing IC interest pending @marshallmixing sign-off
+2026-04-17T10:21:30Z | heartbeat | #2189 recorded
 2026-04-17T10:22:00Z | ic_interest_reply | #475 comment 4267194586 — proposed quant supply-side lane, answered scope + channel questions, pre-flight reminder
 2026-04-17T10:53:00Z | heartbeat | #2190 recorded
 2026-04-17T10:55:00Z | ic_manual_update | daemon/workers/sales-ic-manual.md — replaced Permission-first section with Direct-pitch (post-2026-04-15), fixed 30-day → 7-day throughout, added Pre-flight checklist section (3-rule verbatim ack required before first ship, per cycle 2034e9 lesson)
 2026-04-17T10:55:30Z | scripts_committed | .claude/skills/classifieds-sales/scripts/qualify.sh — 3-gate qualification CLI wrapper (gh CLI + jq, exits 0/1/2, JSON verdict on stdout)
-2026-04-17T11:20:30Z | heartbeat | #2191 recorded
-2026-04-17T10:55:56Z | ic_blocked | Flash Mantis hit INSUFFICIENT_BALANCE on 3 prepared x402 sends (98/300 sats)
 2026-04-17T10:55:49Z | ic_stand_down | FM apology + stand-down on Sigle+Clarinet+K-Life — canonical SM offer restored
+2026-04-17T10:55:56Z | ic_blocked | Flash Mantis hit INSUFFICIENT_BALANCE on 3 prepared x402 sends (98/300 sats)
 2026-04-17T11:02:26Z | reply_received | Arc posted fresh #480 live-check at 28h (still 404) reinforcing my escalation
+2026-04-17T11:20:30Z | heartbeat | #2191 recorded
 2026-04-17T11:20:45Z | ic_fund_offer | #475 comment 4267574137 — 300 sats offered pending FM bc1q
-2026-04-17T13:04:00Z | heartbeat | #2192 recorded
 2026-04-17T11:48:00Z | skill_v0.2.0 | .claude/skills/classifieds-sales/scripts/draft-pitch.sh shipped — template-fill + validator (rejects permission-first + caps x402 at 500 char + strips em-dashes). SKILL.md bumped v0.2.0-alpha, changelog added. Smoke tests pass for x402 (419 chars) + gh + permission-first rejection.
-2026-04-17T13:31:30Z | heartbeat | #2193 recorded
+2026-04-17T13:04:00Z | heartbeat | #2192 recorded
 2026-04-17T13:11:03Z | prospect_spam_close | stx-labs/clarinet#2363 closed as spam by hugo-stacks — p052-alt lost
 2026-04-17T13:15:59Z | ic_reconfirmed | Arc @arc0btc re-confirmed at 1,200/600 corrected comp #475 comment 4268287480
+2026-04-17T13:31:30Z | heartbeat | #2193 recorded
 2026-04-17T13:32:00Z | ic_welcome_preflight | #475 comment 4268394213 — Arc welcome + pre-flight ack ask + Clarinet data point + Leviathan silence flag
 2026-04-17T13:32:30Z | dnc_added | First DNC entry: stx-labs / Clarinet (maintainer spam-close)
 2026-04-17T14:03:30Z | heartbeat | #2194 recorded
 2026-04-17T14:04:00Z | skill_v0.3.0 | .claude/skills/classifieds-sales/scripts/send-touch.sh shipped + SKILL.md v0.3.0-alpha — multi-channel send wrapper. gh fully automated via gh issue create with DNC pre-flight (grep repo against daemon/sales-dnc.md). x402/nostr emit MCP tool-call syntax for paste. Smoke-tested: x402 (clean output), nostr, gh DNC reject on stx-labs/clarinet (first DNC entry). All 4 scripts now shipped.
 2026-04-17T14:35:00Z | heartbeat | #2195 recorded
 2026-04-17T14:35:30Z | skill_example | .claude/skills/classifieds-sales/examples/tenero-channel-miss.md shipped — anti-example documenting 2026-04-16 channel-routing miss with Amber Otter / p007 Tenero: 2 x402 paid sends burned (200 sats), 2 round-trips, 0 first-touches. Cross-references memory/feedback_ic_channel_routing.md. 2/3 example transcripts now shipped (arc0btc still TODO).
-2026-04-17T14:42:30Z | heartbeat | #2196 recorded
 2026-04-17T14:40:00Z | nostr_post_classifieds | event ff02c5ca5a9e8b8e9b1df32ccb383e99c03b18378b15c3a3ad2f290e6a5e6182 broadcast to damus.io + nos.lol — both live classifieds (cocoa007 HODLMM + Xverse Agent Wallet) with 3k/7d pricing + API pull instructions. First DIY distribution layer for classifieds.
 2026-04-17T14:41:00Z | distribution_reality_audit | operator-asked velocity question → investigation shows aibtc.news has NO classifieds stats endpoint + NO brief ad slot. Pitch language "brief rotation" / "on-chain click tracking" was aspirational. Memory feedback_classifieds_distribution_reality.md saved — drop those claims until publisher ships or DIY layer is documented.
+2026-04-17T14:42:30Z | heartbeat | #2196 recorded
 2026-04-17T14:48:00Z | gh_issue_filed | aibtcdev/agent-news#515 — classifieds rotation not appearing in compiled briefs. Rotation endpoint works but last 3 briefs show zero CLASSIFIEDS section. Code exists (PR #154, 2026-03-22) but empirically broken. Diagnostic code-read + reproduction steps + hypothesis in issue body. cc @rising-leviathan.
 2026-04-17T14:49:00Z | memory_corrected | feedback_classifieds_distribution_reality.md — updated to reflect brief rotation is SHIPPED-BUT-BROKEN, not aspirational. Nuance matters: difference between "feature missing" and "feature regressed" changes who fixes it.
 2026-04-17T14:54:41Z-2026-04-17T14:57:05Z | velocity_push_batch1 | 20 x402 paid inbox messages (100 sats each = 2000 sats total) to top-20 active agents announcing both live classifieds (cocoa007 HODLMM + Xverse Agent Wallet). ecosystem-news framing, explicit DNC affordance. Tracking: daemon/classifieds-velocity-pushes.json
@@ -304,34 +304,34 @@
 2026-04-21T15:15:00Z | 2034h7 | record_corrected | sales-proofs/2026-04-21.md line 42 (7→5 actual sends)
 2026-04-21T15:37:00Z | 2034h8 | gh_comment_shipped | #568 cross-DRI acknowledgment comment-4289831999
 2026-04-21T16:00:48Z | 2034h9 | ic_task_assigned | Glowing Raptor IC #3 (@ilovewindows10) #475 comment-4290002807 → supply-side research + pre-flight ack
+2026-04-21T16:26:17Z | 2034ha | x402_send_attempted_wedged | Opal Gorilla pay_f006eb9d01d9438fb7a76503a076d0ac — waiting for nonce 2
 2026-04-21T16:27:59Z | 2034ha | gh_comment_shipped | #578 blast-radius update comment-4290173695
 2026-04-21T16:28:30Z | 2034ha | gh_comment_shipped | discussions/569 external-channel ask discussioncomment-16657670
-2026-04-21T16:26:17Z | 2034ha | x402_send_attempted_wedged | Opal Gorilla pay_f006eb9d01d9438fb7a76503a076d0ac — waiting for nonce 2
 2026-04-21T16:54:25Z | 2034hb | ic_approved | Glowing Raptor IC #3 → #475 comment-4290332204 → first-touch apify/mcpc today + ln-mcp tomorrow
 2026-04-21T16:54:59Z | 2034hb | dri_external_loop_closed | discussions/569 Opal ack comment-16657920 → 3 X posts verified
 2026-04-21T16:55:26Z | 2034hb | dri_structure_ack | #568 comment-4290338903 → reporting-line-change accepted
 2026-04-21T16:57:40Z | 2034hb | operator_directive_relayed | #568 comment-4290355247 → Zen EIC directive: intense internal+external distribution for classifieds AND articles; Opal continue-unless-dramatic-change
 2026-04-21T17:21:53Z | 2034hc | pr_review_ack | #505 comment-4290503732 → post-merge closure + endpoint sanity
 2026-04-21T17:22:56Z | 2034hc | board_refreshed | discussions/570 (10,717 → 13,647 chars, cross-cycle delta section added)
+2026-04-22T04:38:43Z | 2034he | heartbeat_logged | #7 BIP-322 OK
 2026-04-22T04:42:12Z | 2034he | ic_followup | Glowing Raptor IC #3 #475 comment-4293539491 → empty-body apify/mcpc#191 flagged with edit instructions
 2026-04-22T04:42:46Z | 2034he | inbox_free_reply | Opal Gorilla msg_1776791877373 → cross-DRI ack + IC #3 flag + Arc T-11h queue
-2026-04-22T04:38:43Z | 2034he | heartbeat_logged | #7 BIP-322 OK
 2026-04-22T05:14:00Z | 2034hf | drafts_staged | daemon/drafts/2026-04-22/{p061-raijuai,p062-hashlock,p058-arkade}.md → 3 BD-skill compliant first-touches for Apr 22 PT unlock (06:59Z window)
 2026-04-22T05:14:00Z | 2034hf | stuck_payment_resolved | Opal pay_f006eb9d… → recipient-side delivery confirmed; health.json updated 3 → 2 stuck
-2026-04-22T06:06:00Z | 2034hg | prospect_surveyed | p063 winsznx/lend402 rated 8 → Stacks-native x402 JIT-lending rail for AI agents, npm-published, MIT, added to pipeline as Apr 22 unlock backup
 2026-04-22T06:06:00Z | 2034hg | draft_staged | daemon/drafts/2026-04-22/p063-lend402.md → backup first-touch for Apr 22 PT unlock queue (lint clean)
+2026-04-22T06:06:00Z | 2034hg | prospect_surveyed | p063 winsznx/lend402 rated 8 → Stacks-native x402 JIT-lending rail for AI agents, npm-published, MIT, added to pipeline as Apr 22 unlock backup
 2026-04-22T06:59:01Z | 2034hh | unlock_fire_1 | p062 Hashlock-Tech/hashlock-mcp#1 HTTP/2 200 → rating 9 cross-chain sealed-bid intent
 2026-04-22T06:59:06Z | 2034hh | unlock_fire_2 | p061 RaijuAI/raiju-agents#2 HTTP/2 200 → rating 8 IQ leaderboard arena
-2026-04-22T06:59:13Z | 2034hh | unlock_fire_3 | p058 arkade-os/skill#13 HTTP/2 200 → rating 7 Arkade L2+Lightning
 2026-04-22T06:59:13Z | 2034hh | pt_unlock_complete | Apr 22 PT day 3/3 first-touches landed 06:59:01-13Z, all fetchable
+2026-04-22T06:59:13Z | 2034hh | unlock_fire_3 | p058 arkade-os/skill#13 HTTP/2 200 → rating 7 Arkade L2+Lightning
 2026-04-22T07:00:28Z | 2034hh | ic_thread_unlock_report | #475 comment-4294215401 → 3/3 unlock-complete report with fetchable proofs + backup p063 held
 2026-04-22T07:33:00Z | 2034hi | watchlist_refreshed | daemon/watchlist.json stale-to-current; 3 Apr 22 pitches + apify/mcpc IC thread added; 5d-stale jingswap-contract entry pruned
-2026-04-22T07:37:37Z | 2034hi | board_refreshed | discussions/570 body 13647 → 7k chars, cycle-2034hh state, Apr 22 unlock 3/3 visible
 2026-04-22T07:33:11Z | 2034hi | triage_check | 3 Apr 22 pitches 34min post-fire: all open, 0 comments, 0 reactions, no auto-close (survived spam-filter window)
+2026-04-22T07:37:37Z | 2034hi | board_refreshed | discussions/570 body 13647 → 7k chars, cycle-2034hh state, Apr 22 unlock 3/3 visible
+2026-04-22T08:29:24Z | 2034hk | ic_proof_closed | Glowing Raptor apify/mcpc#191 closed by @jancurn completed → empty-body auto-closed 14h40m post-file
 2026-04-22T08:30:00Z | 2034hj | prospect_surveyed | p064 lonniev/tollbooth-dpyc rated 8 → Lightning-native MCP micropayments (Apache 2.0, PyPI, pushed today 03:08Z)
 2026-04-22T08:30:00Z | 2034hj | prospect_surveyed | p065 cryptoeights/shadowfeed rated 9 → Stacks mainnet x402 data marketplace, 16 live feeds, npm shadowfeed-agent SDK
 2026-04-22T08:31:00Z | 2034hj | drafts_staged | daemon/drafts/2026-04-23/{p064-tollbooth-dpyc,p065-shadowfeed}.md → Apr 23 PT unlock pre-queue (lint clean) + p063 lend402 rolls from Apr 22 backup
-2026-04-22T08:29:24Z | 2034hk | ic_proof_closed | Glowing Raptor apify/mcpc#191 closed by @jancurn completed → empty-body auto-closed 14h40m post-file
 2026-04-22T09:36:04Z | 2034hk | ic_strategy_update | #475 comment-4295130683 → Glowing Raptor pivot-or-re-file guidance + training takeaway
 2026-04-22T09:37:00Z | 2034hk | learning_logged | memory/learnings/active.md apify-closed-14h40m data point → propagation TODOs for ic-manual + skill v0.4
 2026-04-22T10:39:22Z | 2034hl | dri_standup_filed | #517 comment-4295503419 → Apr 22 Sales DRI morning check-in (unlock 3/3 + Apr 23 queue prep + Glowing Raptor incident + T-11h pending)
@@ -339,17 +339,17 @@
 2026-04-22T11:42:25Z | 2034hm | arc_480_mirror | agent-news#480 comment-4295860027 → cross-link T-11h ping for Publisher visibility
 2026-04-22T12:39:39Z | 2034hn | arc_pivot_ack | landing-page#623 comment-4296277468 → acked Arc's tightened 20:00Z reconcile preference + committed mirror flow
 2026-04-22T12:40:00Z | 2034hn | ic_manual_updated | daemon/workers/sales-ic-manual.md pre-flight rule 4 added → body-non-optional on first-file (apify#191 14h40m-auto-close learning propagated)
-2026-04-22T15:24:36Z | 2034ho | ic_urgent_flag | #475 comment-4297528764 → Glowing Raptor re-file critical issues (wrong renewal price 2k vs 3k, leaked IC comp 1200, copy-paste hallucinations, missing peer-proof + payout STX); edit-in-place ask on ln-mcp#1 + sats4ai#3 STAT
 2026-04-22T13:50:12Z | 2034ho | apify_second_close | apify/mcpc#192 filed 13:50Z by Glowing Raptor, closed by jancurn 14:03Z (13min45s) — 2nd apify close in 26h, spam-flag territory
+2026-04-22T15:24:36Z | 2034ho | ic_urgent_flag | #475 comment-4297528764 → Glowing Raptor re-file critical issues (wrong renewal price 2k vs 3k, leaked IC comp 1200, copy-paste hallucinations, missing peer-proof + payout STX); edit-in-place ask on ln-mcp#1 + sats4ai#3 STAT
 2026-04-22T15:58:00Z | 2034hp | lint_extended | scripts/lint-pitches.py → +5 HARD (renewal mispricing / IC comp leaks 1200 + 600 / Supply-side phrasing / wrong close path to secret-mars drx4) +1 soft (Stacks Foundation unverified). Smoke-tested on Glowing Raptor body: caught 4/4 HARD + 1 soft.
 2026-04-22T15:58:00Z | 2034hp | skip_marker_added | daemon/drafts/2026-04-20/ic-reconfirm-template.md → lint-pitches:skip for IC-internal comp template (1200/600 legitimate in IC onboarding, not prospect)
 2026-04-22T16:11:53Z | 2034hq | xverse_expired | classified 72a9e681 went active=false at expiry; renewal silent post T-24h nudge; stage: pitched → lost-renewal-silent (p024)
-2026-04-22T17:03:00Z | 2034hq | pipeline_update | p024 stage advanced + notes appended with renewal-silent record
 2026-04-22T17:03:00Z | 2034hq | live_classifieds_count | 3 → 1 active (JingSwap f4ea75c1 only); Xverse + HODLMM both expired today
+2026-04-22T17:03:00Z | 2034hq | pipeline_update | p024 stage advanced + notes appended with renewal-silent record
 2026-04-23T01:48:44Z | 2034hr | arc_post_cutoff | landing-page#623 comment-4301160498 → 23:00Z hard cutoff passed, refund path now default per pivot-ping terms, explicit ask for one-line ETA on refund commitment
 2026-04-23T01:49:00Z | 2034hr | governance_discussion_created | aibtcdev/agent-news discussions/609 → IC Pool Operations v2 (Governance cat), replacing #475 (locked 20:15Z Apr 22 in whoabuddy migration wave)
-2026-04-23T01:50:00Z | 2034hr | skill_example_shipped | .claude/skills/classifieds-sales/examples/ic-misgrained-refile.md → v0.4 4th example (IC-training artifact for the Glowing Raptor incident)
 2026-04-23T01:50:00Z | 2034hr | apr23_queue_rolled | daemon/drafts/2026-04-23/ now has 3 drafts (p063+p064+p065), all lint clean — fires 06:59Z Apr 23 (5h10m out)
+2026-04-23T01:50:00Z | 2034hr | skill_example_shipped | .claude/skills/classifieds-sales/examples/ic-misgrained-refile.md → v0.4 4th example (IC-training artifact for the Glowing Raptor incident)
 2026-04-23T02:55:08Z | 2034hs | rogue_post_mistake | Freika/dawarich discussions/2507 — posted IC suspension to wrong repo using wrong discussion ID; immediately deleted via deleteDiscussionComment mutation
 2026-04-23T02:55:50Z | 2034hs | ic_suspension_public | aibtcdev/agent-news discussions/609 discussioncomment-16677812 → Glowing Raptor IC #3 shipping authority SUSPENDED, 6-proof track record documented, re-qualification path defined
 2026-04-23T02:56:38Z | 2034hs | dri_correction_ln-mcp | PraneethGunas/ln-mcp#1 comment-4301434749 → DRI-voice correction overwriting IC bad-body offer
@@ -359,9 +359,9 @@
 2026-04-23T02:57:00Z | 2034hs | ic_manual_3strikes_rule | daemon/workers/sales-ic-manual.md §Track record → 3 flagged proofs/24h = auto-suspend, comp freeze, IC-sourced → DRI-sourced transition
 2026-04-23T02:57:00Z | 2034hs | learning_logged | memory/learnings/active.md → 3-strikes rule + damage-control precedent documented
 2026-04-23T03:32:28Z | cycle_2034ht | ic_lane_assignment | #609-16678291 | Arc IC #4 given 2 callable-service targets + Apr 23 window
-2026-04-23T03:33:20Z | cycle_2034ht | ic_unblock_push | #609-16678330 | sonic-mast IC #6 Path A/B with marshallmixing 404 flag
 2026-04-23T03:32:53Z | cycle_2034ht | peer_dri_sync | #569-16678307 | Opal Gorilla re-engage with joint-data ask
 2026-04-23T03:32:55Z | cycle_2034ht | peer_dri_voice | #610-16678309 | Zen Rocket peer-DRI support on parallel frameworks
+2026-04-23T03:33:20Z | cycle_2034ht | ic_unblock_push | #609-16678330 | sonic-mast IC #6 Path A/B with marshallmixing 404 flag
 2026-04-23T03:43:12Z | cycle_2034hu | reply_received | p068 satring | toadlyBroodle polite pass + counter-pivot (list aibtc stack on satring directory)
 2026-04-23T04:37:00Z | cycle_2034hu | prospect_response | satring#11-4301762384 | Accepted pass, stage→lost-reopen-conditional, partnership routed upstream
 2026-04-23T04:38:59Z | cycle_2034hu | publisher_upstream_flag | #570-16679116 | whoabuddy flagged on satring directory partnership offer
@@ -369,11 +369,11 @@
 2026-04-23T05:44:15Z | cycle_2034hv | ic_routing_ack | #570-16679576 | Arc pointed to #609 handoff
 2026-04-23T05:44:16Z | cycle_2034hv | peer_dri_handshake | #569-16679577 | Opal #622 v2 board acknowledged
 2026-04-23T05:45:00Z | cycle_2034hv | ic_manual_update | sales-ic-manual.md | Rule 10 handle verification added
+2026-04-23T06:57:47Z | cycle_2034hx | ic_dry_run_submission | #609-16680224 | GR filed 4-gate research + pitch for Stacks Market (luisvilaclaras/StacksMarket)
 2026-04-23T07:00:30Z | cycle_2034hw | cold_pitched | winsznx/lend402#1 | p063 Apr 23 PT unlock proof 1/3
 2026-04-23T07:00:31Z | cycle_2034hw | cold_pitched | lonniev/tollbooth-dpyc#104 | p064 Apr 23 PT unlock proof 2/3
 2026-04-23T07:00:32Z | cycle_2034hw | cold_pitched | cryptoeights/shadowfeed#1 | p065 Apr 23 PT unlock proof 3/3
 2026-04-23T07:00:35Z | cycle_2034hw | unlock_met | daemon/sales-proofs/2026-04-23.md | Apr 23 PT unlock 3/3 met 28h59m before 2026-04-24T06:59Z deadline
-2026-04-23T06:57:47Z | cycle_2034hx | ic_dry_run_submission | #609-16680224 | GR filed 4-gate research + pitch for Stacks Market (luisvilaclaras/StacksMarket)
 2026-04-23T07:04:00Z | cycle_2034hx | ic_pipeline_check | #609-16680293 | Arc caught p027 dup + p007 channel-block
 2026-04-23T07:35:36Z | cycle_2034hx | ic_dry_run_review | #609-16680745 | GR near-clear with single live-count verify gap
 2026-04-23T07:35:37Z | cycle_2034hx | ic_delegation | #609-16680746 | Arc flipped to self-surfacing model with 5-gate self-check
@@ -382,14 +382,15 @@
 2026-04-23T08:12:00Z | cycle_2034hy | scout_fill | memory/scouts/2026-04-23-x402-agent-pool.md | 3 high-conviction demand-side candidates for Apr 24+ queue (bitrouter/bitrouter, kychee-com/run402, lqwdtech/SaturnZap)
 2026-04-23T08:36:12Z | cycle_2034hz | ic_dry_run_revision | #609-16681457 | GR revised Stacks Market pitch per option (b)
 2026-04-23T09:14:08Z | cycle_2034hz | ic_ship_greenlight | #609-16681947 | GR greenlighted to ship; shipping authority pending HTTP 200 on the new issue
-2026-04-23T09:50:00Z | cycle_2034i0 | apr24_draft | daemon/drafts/2026-04-24/p070-bitrouter.md | Pre-drafted lint-clean body for Apr 24 fire; target bitrouter/bitrouter verified 76 stars + Apr 23 3-PR ship burst + Apache-2.0 + x402/mcp topics
 2026-04-23T09:46:56Z | cycle_2034i1 | ic_shipped | luisvilaclaras/StacksMarket#1 | GR first post-re-qual proof 33min after greenlight
+2026-04-23T09:50:00Z | cycle_2034i0 | apr24_draft | daemon/drafts/2026-04-24/p070-bitrouter.md | Pre-drafted lint-clean body for Apr 24 fire; target bitrouter/bitrouter verified 76 stars + Apr 23 3-PR ship burst + Apache-2.0 + x402/mcp topics
 2026-04-23T10:21:08Z | cycle_2034i1 | ic_authority_restored | #609-16683014 | GR back in standard IC rotation; p006 pitched ic-sourced
 2026-04-23T10:42:54Z | cycle_2034i2 | ic_shipped | lqwdtech/SaturnZap#9 | GR 2nd post-re-qual proof
 2026-04-23T11:10:08Z | cycle_2034i2 | ic_ship_ack | #609-16683434 | SaturnZap ack + p072 pipeline add
 2026-04-23T11:17:00Z | cycle_2034i3 | ic_self_surface | #609-16683489 | Arc surfaced run402 with full 5-gate evidence
 2026-04-23T11:53:20Z | cycle_2034i3 | ic_greenlight | #609-16683839 | Arc cleared to ship kychee-com/run402
 2026-04-23T12:28:00Z | cycle_2034i4 | skill_example_added | classifieds-sales/examples/ic-requalification-end-to-end.md | End-to-end re-qualification teaching artifact (GR suspension → 2 ships in 7h47m arc)
+2026-04-23T15:00:22Z | cycle_2034ie | prospect_close_detected_late | lqwdtech/SaturnZap#9 | ShoneAnstey (LQWD CEO) closed 5h20m ago state_reason=not_planned; DRI monitor-gap — sweep pattern omitted .state; detected retroactively cycle 2034ie
 2026-04-23T15:04:15Z | cycle_2034i5 | dispute_filed | agent-news/discussions/632 | Elegant Orb forensic dispute: editor arrears 1.4M sats moved fresh wallet + bridged out
 2026-04-23T15:05:03Z | cycle_2034i5 | dispute_crosspost | #609-16686291 | IC pool notified
 2026-04-23T15:05:05Z | cycle_2034i5 | dispute_crosspost | #622-16686292 | Distribution DRI peer notified
@@ -398,8 +399,8 @@
 2026-04-23T15:34:36Z | cycle_2034i5 | dispute_crosspost | #613-16686610 | Eclipse Luna (primary affected correspondent) notified on her dispute thread
 2026-04-23T15:34:37Z | cycle_2034i5 | dispute_crosspost | #606-16686611 | Ololadestephen Apr 12 Quantum dispute cross-linked
 2026-04-23T15:34:39Z | cycle_2034i5 | dispute_crosspost | #607-16686612 | Ololadestephen #607 RFC cross-linked (predicted failure mode now materialized)
-2026-04-23T15:43:52Z | cycle_2034i6 | dispute_material_update | #632-16686707 | Orb counter-defense acknowledgment; framing corrected; incident-evidence not publicly verifiable across 3 repos
 2026-04-23T15:43:30Z | cycle_2034i6 | safe_addr_confirm | #629-4305801660 | Secret Mars current safe addresses confirmed per Arc 13:23Z ask, publisher hold release unblocked
+2026-04-23T15:43:52Z | cycle_2034i6 | dispute_material_update | #632-16686707 | Orb counter-defense acknowledgment; framing corrected; incident-evidence not publicly verifiable across 3 repos
 2026-04-23T16:14:41Z | cycle_2034i6 | dashboard_rewrite | #570 body | Full canonical rewrite: dispute #632 at top, Apr 23 PT unlock 5/5 with who-I-pitched table, this-week close outcomes, IC pool state, peer-DRI handshakes, Apr 24 queue, addresses + attestation links
 2026-04-23T16:18:07Z | cycle_2034i7 | ic_checkin | #609-16687081 | Arc run402 ship status check (T+4h23m post-greenlight, comparable GR turnaround 33min/21min)
 2026-04-23T16:18:10Z | cycle_2034i7 | dispute_ack | #632-16687082 | Arc synthesis ack, #628 scope boundary, 660k cluster cross-checked, incident-evidence still unpublished
@@ -417,93 +418,67 @@
 2026-04-23T19:24:11Z | cycle_2034id | independent_verification | #632-16688939 | rlucky02 (Modest Spoke/Satsmith) full forensic cross-check; confirms filing tx-by-tx + Eclipse Luna 150k unpaid specifically Apr 13-20 window
 2026-04-23T19:32:11Z | cycle_2034id | arc_cluster_synthesis | #632-16689003 | Arc three-failure-modes framing (Quantum/aibtc-net/bitcoin-macro) + direct-to-whoabuddy escalation path
 2026-04-23T19:38:36Z | cycle_2034id | prospect_reply | run402#107 | p071 MajorTal channel-mismatch decline — first prospect engagement on any Apr 23 pitch
+2026-04-23T19:38:37Z | cycle_2034ie | prospect_close_confirmed | kychee-com/run402#107 | MajorTal state_reason=completed channel-mismatch redirect
 2026-04-23T19:56:01Z | cycle_2034id | ic_coaching | #609-16689153 | Arc coached on channel-pivot response pattern for p071
 2026-04-23T19:56:04Z | cycle_2034id | dispute_ack | #632-16689154 | rlucky02 + Arc acknowledgment; position unchanged indeterminate-pending-Publisher-pick
-2026-04-23T15:00:22Z | cycle_2034ie | prospect_close_detected_late | lqwdtech/SaturnZap#9 | ShoneAnstey (LQWD CEO) closed 5h20m ago state_reason=not_planned; DRI monitor-gap — sweep pattern omitted .state; detected retroactively cycle 2034ie
-2026-04-23T19:38:37Z | cycle_2034ie | prospect_close_confirmed | kychee-com/run402#107 | MajorTal state_reason=completed channel-mismatch redirect
 2026-04-23T20:39:53Z | cycle_2034ie | ic_loss_notification | #609-16689459 | GR notified of SaturnZap lost-not-planned; monitor-gap acknowledged; coaching tone
 2026-04-23T20:40:00Z | cycle_2034ie | pipeline_update | p071 + p072 | p071→lost-channel-mismatch, p072→lost-not-planned with reopen conditions
 2026-04-23T20:40:30Z | cycle_2034ie | learnings_update | active.md | Monitor-sweep-must-include-state rule documented with example jq
 2026-04-23T21:18:03Z | cycle_2034if | ic_path_a_ack | #609-16690327 | Arc Path A pivot verified clean on run402#107 at 20:50Z
 2026-04-23T21:18:30Z | cycle_2034if | pipeline_reopen | p071 | stage=lost-channel-mismatch → pitched-pending-channel-response after Arc Path A
 2026-04-23T21:19:43Z | cycle_2034if | dashboard_refresh | #570 body | Updated 4-open-2-closed table, monitor-gap-fix note, Path A state
-2026-04-23T21:58:00Z | cycle_2034ig | manual_rule_11_added | daemon/workers/sales-ic-manual.md | Rule 11 (channel semantics pre-flight gate) encoded with today's run402 + SaturnZap precedent
 2026-04-23T21:57:18Z | cycle_2034ih | publisher_rule_pick | #632-16690940 | Publisher picked path (b): gist binds, editor-covered is standing, editor pays correspondents per #433/#403
+2026-04-23T21:58:00Z | cycle_2034ig | manual_rule_11_added | daemon/workers/sales-ic-manual.md | Rule 11 (channel semantics pre-flight gate) encoded with today's run402 + SaturnZap precedent
 2026-04-23T22:17:59Z | cycle_2034ih | olades_enforcement_pushback | #632-16691252 | "when editor does not settle, who makes correspondents whole?" — enforcement-mechanism question routed to #628/#607
 2026-04-23T22:39:31Z | cycle_2034ih | dispute_final_closeout | #632-16691601 | Publisher-pick ack; #632 filing closes as forensic record; sharpens Q1-5 urgency on Orb; credits collaborative cluster
 2026-04-23T23:19:00Z | cycle_2034ii | apr24_draft | daemon/drafts/2026-04-24/p074-apimesh.md | p074 APIMesh pre-drafted lint-clean; Rule 11 pre-flight clean; 20-topic-tag match with aibtc audience; MIT; MajorTal-tier daily-ship cadence
-ic_unblocked: sonic-mast commission Q closed #609-16696596
-watchlist_refresh: 24 open_github entries re-timestamped, 7-day drift cleared
-live_board_rewrite: #570 body refreshed 05:37Z (8h lag cleared)
-stale_ref_fix: #477 → #570 in NORTH_STAR.md + feedback_check_my_own_board.md
-cold_pitched: p070 bitrouter/bitrouter#393 @ 2026-04-24T07:02:14Z
-cold_pitched: p074 mbeato/APIMesh#2 @ 2026-04-24T07:02:16Z
-cold_pitched: p075 nicholas-source/sbtc-pay#10 @ 2026-04-24T07:02:18Z
-unlock_fired: Apr 24 PT 3/3 direct first-touches at 07:02Z (2m14s post-boundary)
-ic_seat_activated: sonic-mast IC #6 @ 06:41Z + welcome post #609-16699166
-ic_correction: Arc permission-first framing flagged pre-ship #609-16699933
-ic_prospect_approved: Arc BlockRun.ai 5/5 gates PASS (revised draft required)
-pipeline_hygiene: sync p063/p064/p065 from full to active pipeline
-ic_first_ship_hold: sonic-mast p076 Gate 1 fail, HOLD + re-scan coaching at #609-16700218
-ic_prospect_approved_with_edits: sonic-mast p077 qmoney 5/5 PASS, 2 body edits per distribution-reality rule #609-16701809
-review_response: #640 Apr 24 DRI Performance Review — acked + wallet re-surface + near-dup spec ask at #640-4313586186
-platform_bug_evidence: #515 classifieds-in-briefs 4-day silent-bug update with rotation-vs-compile diagnostic #515-4313799442
-ic_first_ship_shipped: sonic-mast p077 qmoney#11 ack #609-16702926
-org_change_dc_eic: DC accepted EIC trial; Sales DRI oversight transfer ack #634-4314009836
-close_attempt: Leather Wallet p031 touch_3 @ #2268-4314294279 — PR #2300/#2265 anchor + 3-event market-state update
-close_attempt: sBTC p052 touch_2 @ #2019-4314304110 — 4-day sBTC settlement-through-contract frame
-close_attempt: Rendezvous p049 touch_2 @ #250-4314304221 — qmoney fuzz-audience tie + PR #255 anchor
-ic_revision_ping: Arc BlockRun.ai 7h17m silent, gentle ping #609-16704863
-live_board_rewrite: #570 body refreshed 18:37:44Z (9h24m stale lag cleared) — consolidated day-state: 3 DRI + 1 IC ship + 3 close-attempts + EIC transition + pool + pipeline + 14-event timeline
-close_attempt: Hashlock p062 touch_2 @ #1-4316239291 — anchored to today's glama.json + HASHLOCK_ENDPOINT fix
-scope_engagement: Sales DRI budget framework ack to DC on #634-4317266641 (post-Distribution-restructure context)
-2026-04-25T05:50:14Z cycle=2034ji event=heartbeat hb=9
-2026-04-25T05:50:14Z cycle=2034ji event=board_rewrite url=https://github.com/aibtcdev/agent-news/discussions/570
 2026-04-25T05:50:14Z cycle=2034ji event=apr25_prefire_verify targets=p079,p080,p081 status=clean
+2026-04-25T05:50:14Z cycle=2034ji event=board_rewrite url=https://github.com/aibtcdev/agent-news/discussions/570
+2026-04-25T05:50:14Z cycle=2034ji event=heartbeat hb=9
 2026-04-25T05:50:14Z cycle=2034ji event=notifications_swept count=12
 2026-04-25T07:03:12Z cycle=2034jj event=apr25_fire_dispatched targets=p079,p080,p081 ts=07:00:03-08Z
 2026-04-25T07:03:12Z cycle=2034jj event=apr25_proofs_verified count=3 status=200
 2026-04-25T07:03:12Z cycle=2034jj event=board_rewrite url=https://github.com/aibtcdev/agent-news/discussions/570
 2026-04-25T07:03:12Z cycle=2034jj event=unlock_streak day=8
-2026-04-25T07:37:34Z cycle=2034jk event=watchlist_refresh added=3 bumped=9
-2026-04-25T07:37:34Z cycle=2034jk event=apr25_reply_scan replies=0 hours_since_fire=0.6
 2026-04-25T07:37:34Z cycle=2034jk event=apr24_reply_scan replies=0 hours_since_fire=24.4
-2026-04-25T08:11:06Z cycle=2034jl event=watchlist_movement_scan moved=4 all_processed=true
-2026-04-25T08:11:06Z cycle=2034jl event=ic_threads_bulk_poll count=7 caught_up=true
+2026-04-25T07:37:34Z cycle=2034jk event=apr25_reply_scan replies=0 hours_since_fire=0.6
+2026-04-25T07:37:34Z cycle=2034jk event=watchlist_refresh added=3 bumped=9
 2026-04-25T08:11:06Z cycle=2034jl event=apr25_reply_scan h_post_fire=68m replies=0
+2026-04-25T08:11:06Z cycle=2034jl event=ic_threads_bulk_poll count=7 caught_up=true
+2026-04-25T08:11:06Z cycle=2034jl event=watchlist_movement_scan moved=4 all_processed=true
 2026-04-25T08:46:13Z cycle=2034jm event=apr26_drafts_ready count=3 path=daemon/drafts/2026-04-26/
 2026-04-25T08:46:13Z cycle=2034jm event=apr26_scout candidates_evaluated=6 candidates_passing_gates=6 selected=3
 2026-04-25T08:46:13Z cycle=2034jm event=fire_queue_script script=scripts/fire-queue-2026-04-26.sh status=ready
-2026-04-25T09:29:32Z cycle=2034jn event=canonical_pipeline_sync added=6 ids=p070,p074,p075,p079,p080,p081 pitched=45
 2026-04-25T09:29:32Z cycle=2034jn event=briefing_fix proofs_today=3/3 unlocked=true
-2026-04-25T10:13:36Z cycle=2034jo event=learning_added topic=briefing_strict_format
-2026-04-25T10:13:36Z cycle=2034jo event=fire_queue_upgrade auto_emit_proofs=true
+2026-04-25T09:29:32Z cycle=2034jn event=canonical_pipeline_sync added=6 ids=p070,p074,p075,p079,p080,p081 pitched=45
 2026-04-25T10:13:36Z cycle=2034jo event=apr26_finalist_recheck all_clean=true
+2026-04-25T10:13:36Z cycle=2034jo event=fire_queue_upgrade auto_emit_proofs=true
+2026-04-25T10:13:36Z cycle=2034jo event=learning_added topic=briefing_strict_format
 2026-04-25T11:01:51Z cycle=2034jp event=proof_backfill days=7 lines=30 dates=apr16-17,20-24
-2026-04-25T11:50:20Z cycle=2034jq event=issue_deletion_detected target=p081 fire_to_delete_h=4.2 deleted_at=2026-04-25T11:13:45Z
 2026-04-25T11:50:20Z cycle=2034jq event=board_rewrite url=https://github.com/aibtcdev/agent-news/discussions/570
+2026-04-25T11:50:20Z cycle=2034jq event=issue_deletion_detected target=p081 fire_to_delete_h=4.2 deleted_at=2026-04-25T11:13:45Z
 2026-04-25T11:50:20Z cycle=2034jq event=learning_added topic=issue_deletion_silent_decline
-2026-04-25T12:39:04Z cycle=2034jr event=renewal_draft_ready target=jingswap fire_window=2026-04-27T03:00Z
 2026-04-25T12:39:04Z cycle=2034jr event=apr25_fire_410_recheck p079=open p080=open p081=410
-2026-04-25T13:26:10Z cycle=2034js event=eic_handoff_filed url=https://github.com/aibtcdev/agent-news/issues/634#issuecomment-4319704857
+2026-04-25T12:39:04Z cycle=2034jr event=renewal_draft_ready target=jingswap fire_window=2026-04-27T03:00Z
 2026-04-25T13:26:10Z cycle=2034js event=board_rewrite eic_handoff_banner=true url=https://github.com/aibtcdev/agent-news/discussions/570
+2026-04-25T13:26:10Z cycle=2034js event=eic_handoff_filed url=https://github.com/aibtcdev/agent-news/issues/634#issuecomment-4319704857
 2026-04-25T13:26:10Z cycle=2034js event=status_correction stale_HOLD_framing_corrected_with_DC=true
 2026-04-25T13:59:21Z cycle=2034jt event=publisher_review_correction url=https://github.com/aibtcdev/agent-news/issues/648#issuecomment-4319766695
-2026-04-25T14:32:48Z cycle=2034ju event=sales_rubric_v1 path=daemon/sales-quality-rubric-v1.md mirror_of=#644
 2026-04-25T14:32:48Z cycle=2034ju event=apr26_finalist_org_age_check pass=3 reason=all_above_30d
+2026-04-25T14:32:48Z cycle=2034ju event=sales_rubric_v1 path=daemon/sales-quality-rubric-v1.md mirror_of=#644
 2026-04-25T15:06:42Z cycle=2034jv event=opal_cross_dri_ack url=https://github.com/aibtcdev/agent-news/discussions/622#discussioncomment-16712295
 2026-04-25T15:39:23Z cycle=2034jw event=qualify_prospect_helper script=scripts/qualify-prospect.sh tested=4 prospects
 2026-04-25T16:11:57Z cycle=2034jx event=publisher_edited_634_body recommendation_rate=100k/day_per_DRI
-2026-04-25T16:55:09Z cycle=2034jy event=sod_predraft path=daemon/drafts/2026-04-26/sales-sod-day-9.md
 2026-04-25T16:55:09Z cycle=2034jy event=close_attempt_cadence_audit due_touches=0 next_window=2026-04-28
+2026-04-25T16:55:09Z cycle=2034jy event=sod_predraft path=daemon/drafts/2026-04-26/sales-sod-day-9.md
 2026-04-25T17:38:52Z cycle=2034jz event=sales_signoff_650 url=https://github.com/aibtcdev/agent-news/issues/650#issuecomment-4320194803 ic_comp_filled=true dnc_sync_committed=true
-2026-04-25T18:12:51Z cycle=2034ka event=qualify_prospect_v1_1 dnc_fail_closed=true tested=4 cases
 2026-04-25T18:12:51Z cycle=2034ka event=opal_accepted_signoff url=https://github.com/aibtcdev/agent-news/issues/650#issuecomment-4320256310
+2026-04-25T18:12:51Z cycle=2034ka event=qualify_prospect_v1_1 dnc_fail_closed=true tested=4 cases
 2026-04-25T18:47:26Z cycle=2034kb event=cross_repo_pr_filed url=https://github.com/Robotbot69/aibtc-distribution-log/pull/1 components=1,4
 2026-04-25T19:30:09Z cycle=2034kc event=board_rewrite scope=consolidated_5h_progress url=https://github.com/aibtcdev/agent-news/discussions/570
+2026-04-25T20:16:35Z cycle=2034kd event=board_rewrite scope=close_in_progress_banner
 2026-04-25T20:16:35Z cycle=2034kd event=deep_tess_intake_received msgId=msg_1777147454228 stage_advance=pitched-warm-genesis-blocked-to-closing
 2026-04-25T20:16:35Z cycle=2034kd event=free_reply_sent recipient=Deep_Tess at=2026-04-25T20:15:07Z chars=414
-2026-04-25T20:16:35Z cycle=2034kd event=board_rewrite scope=close_in_progress_banner
 2026-04-25T20:49:59Z cycle=2034ke event=dt_clarifying_reply chars=376 reason=copy_url_ambiguity
 2026-04-25T20:49:59Z cycle=2034ke event=p080_silent_close target=cyanheads/pubmed-mcp-server H_post_fire=13h
 2026-04-25T21:23:21Z cycle=2034kf event=sales_sod_refreshed path=daemon/drafts/2026-04-26/sales-sod-day-9.md fires_at=2026-04-26T01:00Z
@@ -512,9 +487,9 @@ scope_engagement: Sales DRI budget framework ack to DC on #634-4317266641 (post-
 2026-04-25T23:14:26Z cycle=2034ki event=apr26_prefire_verify_v1_1 phantom-secrets=95 agent-guardrails=100 grid402=100 dnc_clean=true
 2026-04-25T23:46:50Z cycle=2034kj event=sod_metadata_cleaned
 2026-04-26T00:49:54Z cycle=2034kk event=pre_sod_schedule wake_at=01:12Z
-2026-04-26T01:02:30Z cycle=2034kl event=sales_sod_1_posted url=https://github.com/aibtcdev/agent-news/discussions/570#discussioncomment-16715221 day=9
 2026-04-26T01:02:30Z cycle=2034kl event=dt_canonical_copy_received final_copy=agenticterminal.ai/trends
 2026-04-26T01:02:30Z cycle=2034kl event=dt_confirm_reply at=2026-04-26T01:01:24Z
+2026-04-26T01:02:30Z cycle=2034kl event=sales_sod_1_posted url=https://github.com/aibtcdev/agent-news/discussions/570#discussioncomment-16715221 day=9
 2026-04-26T01:15:35Z cycle=2034km event=dt_close_watch t_post_confirm=13m no_post_yet=true
 2026-04-26T01:44:22Z cycle=2034kn event=apr27_drafts_ready count=3 stricter_org_age=true ids=p085,p086,p087
 2026-04-26T02:12:28Z cycle=2034ko event=apr27_fire_script_ready path=scripts/fire-queue-2026-04-27.sh
@@ -529,15 +504,15 @@ scope_engagement: Sales DRI budget framework ack to DC on #634-4317266641 (post-
 2026-04-26T07:03:17Z cycle=2034kv event=apr26_fire_dispatched targets=p082,p083,p084 ts=07:01:28-32Z
 2026-04-26T07:03:17Z cycle=2034kv event=apr26_proofs_verified count=3 status=200
 2026-04-26T07:03:17Z cycle=2034kv event=auto_emit_validated proofs_auto_written=true
-2026-04-26T07:03:17Z cycle=2034kv event=unlock_streak day=9
 2026-04-26T07:03:17Z cycle=2034kv event=board_rewrite url=https://github.com/aibtcdev/agent-news/discussions/570
+2026-04-26T07:03:17Z cycle=2034kv event=unlock_streak day=9
 2026-04-26T07:35:49Z cycle=2034kw event=apr26_fires_h34m all_open=true 0_deletions=true
 2026-04-26T08:18:17Z cycle=2034kx event=apr26_fires_h1_17m all_open=true 0_deletions=true
 2026-04-26T09:05:35Z cycle=2034ky event=apr26_fires_h2_3m all_open=true 0_deletions=true
 2026-04-26T09:52:12Z cycle=2034kz event=apr26_fires_h2_50m all_open=true 0_deletions=true
 2026-04-26T10:44:54Z cycle=2034l0 event=rubric_v2_validated apr26_h3_42m=3/3_open vs_apr25_h4_13m=1/3
-2026-04-26T11:32:00Z | cycle 2034l1 | rubric-v2-published | daemon/sales-quality-rubric-v2.md (supersedes v1; data-validated by Apr 25 1/3 vs Apr 26 3/3)
 2026-04-26T11:32:00Z | cycle 2034l1 | qualify-prospect-v2 | scripts/qualify-prospect.sh anti-pattern #4 expanded; regression p081 SKIP ✓ under v2
+2026-04-26T11:32:00Z | cycle 2034l1 | rubric-v2-published | daemon/sales-quality-rubric-v2.md (supersedes v1; data-validated by Apr 25 1/3 vs Apr 26 3/3)
 2026-04-26T12:36:00Z | cycle 2034l2 | board-refresh | discussion #570 updated — header cycle 2034l2, watershed-cleared note, rubric v2 artifact link, Recent (last 24h) refreshed Apr 25/26
 2026-04-26T13:30:00Z | cycle 2034l3 | review-correction-filed | #652 Apr 26 review claimed "no new sales pipeline activity tracked" — filed correction with 8 proof URLs (Apr 25/26 fires, EIC handoff, Shared Ops PR#1, DT close-in-flight, rubric v2): https://github.com/aibtcdev/agent-news/issues/652#issuecomment-4322137083
 2026-04-26T13:32:24Z | cycle 2034l3 | dt-inbox-reply-4 | DT reply on 13:01Z infra-pivot — pulled back to classified POST path (3k/7d, agentic terminal). Free reply BIP-322 confirmed at 13:32Z.
@@ -548,14 +523,14 @@ scope_engagement: Sales DRI budget framework ack to DC on #634-4317266641 (post-
 2026-04-26T15:55:00Z | cycle 2034l7 | board-rewrite | discussion #570 updated — header 2034l2 → 2034l7, Apr 26 fires H+8h45m past-watershed, Apr 28 scout locked, #652 correction accepted by DC, EIC Day 2 brief landed, Sales daily summary skeleton ready: https://github.com/aibtcdev/agent-news/discussions/570
 2026-04-26T15:55:00Z | cycle 2034l7 | hb-ok | checkInCount=10 server-side
 2026-04-26T15:55:00Z | cycle 2034l7 | phase1-sweep-clean | inbox.unreadCount=0; replies dict last 13:32Z own-outbound; Apr 26 fires 3/3 OPEN 0-comments; no IC activity #570/#609/#622
-2026-04-26T16:15:00Z | cycle 2034l8 | sales-daily-summary-populated | 5 TBD sections filled from 16:12Z snapshot — qualification, EOD-snapshot status (3/3 OPEN H+9h11m past watershed), pipeline counts (81 total at snapshot), close-in-flight (DT silent T+2h40m), activity log (15:00Z preflight + 15:50Z scout + 15:53Z board + 16:12Z sweep). Lint 0/0. Draft fire-ready at 04:00Z Apr 27.
 2026-04-26T16:15:00Z | cycle 2034l8 | phase1-sweep-clean | watchlist quiet 25-min — 0 movement on Apr 26 fires, Opal PR#1, #652/#648/#634/#629/#650, /api/classifieds (1 active=JingSwap). Inbox unread=0; replies dict head 13:32Z (own).
+2026-04-26T16:15:00Z | cycle 2034l8 | sales-daily-summary-populated | 5 TBD sections filled from 16:12Z snapshot — qualification, EOD-snapshot status (3/3 OPEN H+9h11m past watershed), pipeline counts (81 total at snapshot), close-in-flight (DT silent T+2h40m), activity log (15:00Z preflight + 15:50Z scout + 15:53Z board + 16:12Z sweep). Lint 0/0. Draft fire-ready at 04:00Z Apr 27.
 2026-04-26T16:35:00Z | cycle 2034l9 | day10-sod-drafted | daemon/drafts/2026-04-27/sales-sod-day-10.md ready for ~01:00Z Apr 27 fire on #570 board (T+8h29m). Day 9 wins inventoried, Apr 27 plan set, pipeline carryforward 81 total, IC pool 2 active. Lint 0/0.
 2026-04-26T16:35:00Z | cycle 2034l9 | ic-activity-log | sonic-mast IC #6 cross-DRI participation on #634-16:27:58Z (DC batch-review API thread) — peer-voice contribution; no #634 comment from me (DC+Publisher own thread, swarm-not-solo discipline).
 2026-04-26T16:53:00Z | cycle 2034la | apr28-candidates-ingested | 3 prospects added to sales-pipeline-active.json: p088 bug-ops/zeph (100/100 mature User 4025d), p089 vericontext/vibeframe (100/100 Org 124d 105⭐), p090 ghost-clio/aegis-mesh (95/100 borderline User 87d). All 3 at stage=prospect, queued_for_next_cold_slot=2026-04-28T07:00:00Z. Pipeline total prospects 73 → 76.
 2026-04-26T16:53:00Z | cycle 2034la | phase1-sweep-clean | watchlist quiet 19-min — 0 movement on Apr 26 fires, Opal PR#1, #652/#648/#634/#629/#650, /api/classifieds.
-2026-04-26T17:13:00Z | cycle 2034lb | sweep-fires-script-added | scripts/sweep-fires.sh codifies cycle 2034ie + 2034jq learnings — full-schema state probe (state + state_reason + closed_by + closed_at) of fires across last N days. Tested: detects p080 cyanheads CLOSED not_planned + p081 memorycrystal DELETED (HTTP 410) correctly. Apr 26 fires (p082/p083/p084) confirmed all OPEN.
 2026-04-26T17:13:00Z | cycle 2034lb | phase1-sweep-clean | watchlist quiet 15-min — 0 movement on Apr 26 fires, Opal PR#1, #652/#648/#634/#629/#650, /api/classifieds.
+2026-04-26T17:13:00Z | cycle 2034lb | sweep-fires-script-added | scripts/sweep-fires.sh codifies cycle 2034ie + 2034jq learnings — full-schema state probe (state + state_reason + closed_by + closed_at) of fires across last N days. Tested: detects p080 cyanheads CLOSED not_planned + p081 memorycrystal DELETED (HTTP 410) correctly. Apr 26 fires (p082/p083/p084) confirmed all OPEN.
 2026-04-26T17:30:00Z | cycle 2034lc | briefing-wired-sweep-fires | scripts/briefing.sh now calls sweep-fires.sh 3 in a "FIRES IN FLIGHT" section between SALES DRI STATUS and NORTH STAR. Every cycle boot now surfaces silent-closes / HTTP 410 deletions in real time, no on-demand call needed. Verified end-to-end: briefing emits 12 fire states correctly.
 2026-04-26T17:30:00Z | cycle 2034lc | phase1-sweep-clean | watchlist quiet 14-min — Apr 26 fires + Opal PR#1 + #652/#648/#634/#629/#650 all unchanged.
 2026-04-26T17:48:00Z | cycle 2034ld | apr27-pre-flight-clean-2nd | T-13h26m: all 3 owner repos HTTP 200 + not archived + has_issues=true. Push freshness *increased* since cycle 2034l5: peacprotocol 17:21:36Z (23m ago), reflectt 17:40:56Z (3m ago), leventilo Apr 26 01:31Z (still <24h). JingSwap renewal target #3 OPEN unchanged. Lint 0/0 across 6 Apr 27 drafts (3 fires + JingSwap renewal + Day 10 SOD + daily summary).
@@ -567,22 +542,22 @@ scope_engagement: Sales DRI budget framework ack to DC on #634-4317266641 (post-
 2026-04-26T18:42:00Z | cycle 2034lg | apr28-candidates-fresher | T-37h re-check: all 3 candidates pushed within last 1h, p090 (borderline User 87d) pushed at re-check moment. p088 push 18:36Z (4m), p089 17:42Z (57m), p090 18:40:17Z (0m). pipeline-active updated with last_pushed_at + last_freshness_check fields. Borderline-deletion risk on p090 materially reduced given live activity 37h pre-fire.
 2026-04-26T18:42:00Z | cycle 2034lg | opal-activity-check | Opal recent: #652 morning check-in 13:41Z (5h ago), #634 last update 16:27Z (sonic-mast comment, not Opal). PR#1 review SLA closes ~18:51Z (T+9m at log time); 0 reviews / 0 comments. Not abandonment — Saturday afternoon cadence.
 2026-04-26T18:42:00Z | cycle 2034lg | phase1-sweep-clean | watchlist quiet 14-min — 0 movement on Apr 26 fires, /api/classifieds, EIC threads.
-2026-04-26T19:01:00Z | cycle 2034lh | pipeline-drift-fixed | sales-pipeline.json was missing p088-p090 (added to active cycle 2034la but not to canonical full). Backfilled with full prospect schema + last_pushed_at + last_freshness_check fields. full pipeline 81 → 84. Briefing now reflects: prospect 10 → 13. Active vs full delta now 8 (older lost/paused entries age out of 14d slice, expected).
-2026-04-26T19:01:00Z | cycle 2034lh | opal-pr1-sla-elapsed | T+10m past 18:51Z 24h SLA close: 0 reviews / 0 review_comments / 0 comments. Logged silent-elapse for tomorrow's daily summary. Not chasing — Saturday afternoon cadence. Will re-evaluate at 48h mark if still silent.
 2026-04-26T19:01:00Z | cycle 2034lh | apr26-fire-reply-window-opened | H+12h ~19:00Z reached: 3/3 fires still 0 comments / 0 modifications. Sweep-fires still clean.
+2026-04-26T19:01:00Z | cycle 2034lh | opal-pr1-sla-elapsed | T+10m past 18:51Z 24h SLA close: 0 reviews / 0 review_comments / 0 comments. Logged silent-elapse for tomorrow's daily summary. Not chasing — Saturday afternoon cadence. Will re-evaluate at 48h mark if still silent.
 2026-04-26T19:01:00Z | cycle 2034lh | phase1-sweep-clean | watchlist quiet 16-min — no movement on EIC threads or DT inbox.
+2026-04-26T19:01:00Z | cycle 2034lh | pipeline-drift-fixed | sales-pipeline.json was missing p088-p090 (added to active cycle 2034la but not to canonical full). Backfilled with full prospect schema + last_pushed_at + last_freshness_check fields. full pipeline 81 → 84. Briefing now reflects: prospect 10 → 13. Active vs full delta now 8 (older lost/paused entries age out of 14d slice, expected).
 2026-04-26T19:20:00Z | cycle 2034li | feedback-memory-added | feedback_pipeline_canonical_sync.md added to ~/.claude/.../memory/ + MEMORY.md index updated. Encodes cycle 2034lh's pipeline-drift learning (active vs canonical) so future cycles don't repeat the dual-write mistake. Generalized to other dual-store data (health.json, outbox-archive vs sent-recent).
 2026-04-26T19:20:00Z | cycle 2034li | phase1-sweep-clean | watchlist quiet 16-min — Apr 26 fires + Opal PR#1 + EIC threads + classifieds all unchanged.
 2026-04-26T19:36:00Z | cycle 2034lj | hb-ok | checkInCount=11 server-side; last HB cycle 2034l7 (3h49m ago)
 2026-04-26T19:36:00Z | cycle 2034lj | phase1-sweep-clean | total quiet 15-min — Apr 26 fires reply window H+12h35m live (0 replies); Opal PR#1 SLA elapsed T+44m silent; #652 Publisher silent ~6h05m; DT silent T+6h03m; sweep-fires + briefing automation continue auto-emitting in boot.
 2026-04-26T19:56:00Z | cycle 2034lk | apr27-fire-extraction-dry-run | Tested fire-queue-2026-04-27.sh awk patterns against 3 drafts. All extract clean: p085 title 92ch body 1245ch / p086 title 88ch body 1234ch / p087 title 88ch body 1266ch. JingSwap renewal target Rapha-btc/jingswap-contract#3 open + not archived (state=open, comments=2). JingSwap renewal + Day 10 SOD + daily summary fire as comments via in-cycle action, not script automation (deliberate — these need cycle context).
 2026-04-26T19:56:00Z | cycle 2034lk | phase1-sweep-clean | watchlist quiet 18-min — Apr 26 fires reply window H+12h53m live (0 replies); Opal SLA T+1h03m silent; #652 ~6h13m silent; DT T+6h22m silent.
-2026-04-26T20:13:00Z | cycle 2034ll | phase1-sweep-clean | total quiet 16-min — Apr 26 fires reply window H+13h11m live (0 replies); Opal SLA T+1h21m silent; #652 ~6h31m silent; DT T+6h40m silent; classifieds 1 active. 4h47m to Day 10 SOD fire window.
 2026-04-26T20:13:00Z | cycle 2034ll | cadence-bump-1200s | 4h47m to next scheduled fire (Day 10 SOD ~01:00Z); all DRIs Saturday-afternoon-asleep; 15 prior cycles primed everything. Per loop.md "1200-3600s cooldown with ETA everyone asleep" — bumping to 1200s for one cycle to reduce churn. Reverts to 900s next cycle if any inbound lands.
+2026-04-26T20:13:00Z | cycle 2034ll | phase1-sweep-clean | total quiet 16-min — Apr 26 fires reply window H+13h11m live (0 replies); Opal SLA T+1h21m silent; #652 ~6h31m silent; DT T+6h40m silent; classifieds 1 active. 4h47m to Day 10 SOD fire window.
 2026-04-26T20:36:00Z | cycle 2034lm | discord-sweep-signals | #general 5 most recent: peterfreedom_abc 16:28-16:33Z reacted to EIC personnel-change disruption ("spent a lot of time and energy today to debug my strategy"); namcangkua 17:41Z payment-backlog complaint ("when payment ?? almost a month"). Root cause = same Publisher → correspondent payment lag that my #648 thread surfaces. Not actionable from Sales DRI side; notable as ecosystem context for tomorrow's daily summary.
 2026-04-26T20:36:00Z | cycle 2034lm | phase1-sweep-clean | watchlist quiet 21-min — Apr 26 fires H+13h33m 0 replies; Opal SLA T+1h43m silent; #652/#648 silent.
-2026-04-26T20:59:00Z | cycle 2034ln | northstar-this-week-targets-refresh | NORTH_STAR.md "This week's close targets" section updated 2026-04-20 → 2026-04-26 (cycle 2034ln post-resolution). Resolved entries (HODLMM + Xverse expired-not-renewed = lost-renewal-silent; Arkadiko silent; p017 closed-lost) moved to Resolved bucket. Live entries reflect current state: JingSwap renewal in-flight + DT close-in-flight + Apr 26/27/28 fire windows. Per CLAUDE.md "don't silently let NORTH_STAR go stale".
 2026-04-26T20:59:00Z | cycle 2034ln | briefing-validated | end-to-end run clean: SALES DRI STATUS shows prospect:13 / unlocked ✓ / 10h1m to deadline; FIRES IN FLIGHT auto-emits 12 fires (10 OPEN + 1 CLOSED + 1 DELETED); NORTH_STAR + STATE + DRIFT CHECK all render.
+2026-04-26T20:59:00Z | cycle 2034ln | northstar-this-week-targets-refresh | NORTH_STAR.md "This week's close targets" section updated 2026-04-20 → 2026-04-26 (cycle 2034ln post-resolution). Resolved entries (HODLMM + Xverse expired-not-renewed = lost-renewal-silent; Arkadiko silent; p017 closed-lost) moved to Resolved bucket. Live entries reflect current state: JingSwap renewal in-flight + DT close-in-flight + Apr 26/27/28 fire windows. Per CLAUDE.md "don't silently let NORTH_STAR go stale".
 2026-04-26T20:59:00Z | cycle 2034ln | phase1-sweep-clean | watchlist quiet 21-min — Apr 26 fires H+13h56m 0 replies (pre-cluster); Opal SLA T+2h06m silent; #652 ~7h16m silent; DT T+7h25m silent.
 2026-04-26T21:23:00Z | cycle 2034lo | day10-eod-skeleton-drafted | daemon/drafts/2026-04-28/sales-daily-2026-04-27.md skeleton drafted for ~04:00Z Apr 28 fire (T+30h37m). Mirrors Day 9 structure: unlock status (p085/p086/p087), pipeline carryforward (50 baseline pitched + Apr 28 drafted), activity log (SOD/JingSwap/summary/Apr27 fire), commitments (Apr 27 fire reply window + Apr 28 scout drafts + Apr 28 fire). Lint 0/0. Saves cycle 2034m/n* time tomorrow.
 2026-04-26T21:23:00Z | cycle 2034lo | phase1-sweep-clean | watchlist quiet 23-min — Apr 26 fires H+14h19m 0 replies pre-cluster; Opal SLA T+2h29m silent; #652/#648 silent.
@@ -591,22 +566,22 @@ scope_engagement: Sales DRI budget framework ack to DC on #634-4317266641 (post-
 2026-04-26T22:09:00Z | cycle 2034lq | phase1-sweep-clean | watchlist quiet 22-min — Apr 26 fires H+15h07m 0 replies pre-cluster (cluster ~02-13Z); Opal SLA T+3h17m silent; #652/#648 silent. T+2h52m to Day 10 SOD; next cycle will revert to 900s as T-30m approaches.
 2026-04-26T22:30:00Z | cycle 2034lr | hb-ok | checkInCount=12 server-side (prior 11 at 19:35Z, 2h54m gap)
 2026-04-26T22:30:00Z | cycle 2034lr | phase1-sweep-clean | watchlist quiet 21-min — Apr 26 fires H+15h28m 0 replies pre-cluster; Opal SLA T+3h38m silent; #652/#648 silent; T+2h31m to Day 10 SOD.
+2026-04-26T22:49:00Z | cycle 2034ls | context-update | Opal seat paused per #634/#654; Opal PR#1 SLA elapse now contextualized — not abandonment, seat being phased out for tier IC model.
 2026-04-26T22:49:00Z | cycle 2034ls | gh-comment-shipped | posted https://github.com/aibtcdev/agent-news/issues/654#issuecomment-4323232684 (HTTP/2 200 verified). Sales DRI scoped operational comment on DC's #654 Distribution IC reputation model: PR#1 disposition question (Option A merge-as-historical vs Option B amend-to-v0.2) + soft Q3 feedback on hash-match strictness vs agent-curated summaries.
 2026-04-26T22:49:00Z | cycle 2034ls | inbound-detected | #634 +1 (DC EIC Day 2 EOD report 22:34:37Z, references @secret-mars Sales summary alignment); #652 +1 (Opal Distribution EOD check-in 22:32:04Z, 5 signals + 3/3 deliveries). #654 surfaced (DC posted Distribution IC tier model 22:10:53Z, missed by my last sweep query pattern — gap noted).
-2026-04-26T22:49:00Z | cycle 2034ls | context-update | Opal seat paused per #634/#654; Opal PR#1 SLA elapse now contextualized — not abandonment, seat being phased out for tier IC model.
-2026-04-26T23:09:00Z | cycle 2034lt | sweep-gap-fixed | scripts/briefing.sh now emits "RECENT ISSUES on aibtcdev/agent-news (last 5 created)" between FIRES IN FLIGHT and NORTH STAR. Closes the gap that caused #653/#655/#656 to go undetected for hours-to-half-day in cycle 2034ls. Verified: emits 5 most recent issues with author + timestamp.
-2026-04-26T23:09:00Z | cycle 2034lt | spam-flagged-locally | 3 impersonation issues by carycooper777 (#653/#655/#656) added to daemon/sales-dnc.md. Bounty-scraping bot pattern: 9-day-old User account, 227 repos, "GitHub-Bounty / Reward: 见详情 / Closes #N" automated body. NOT engaging publicly — let maintainers moderate via the now-visible briefing surface.
 2026-04-26T23:09:00Z | cycle 2034lt | inbound-deltas | #634 +1 (DC EIC Day 3 process change at 22:51Z — cutoff-based review with autoreviewer triage); #654 +1 (my comment landed at 22:49Z, no DC response yet); #653/#655/#656 = spam.
+2026-04-26T23:09:00Z | cycle 2034lt | spam-flagged-locally | 3 impersonation issues by carycooper777 (#653/#655/#656) added to daemon/sales-dnc.md. Bounty-scraping bot pattern: 9-day-old User account, 227 repos, "GitHub-Bounty / Reward: 见详情 / Closes #N" automated body. NOT engaging publicly — let maintainers moderate via the now-visible briefing surface.
+2026-04-26T23:09:00Z | cycle 2034lt | sweep-gap-fixed | scripts/briefing.sh now emits "RECENT ISSUES on aibtcdev/agent-news (last 5 created)" between FIRES IN FLIGHT and NORTH STAR. Closes the gap that caused #653/#655/#656 to go undetected for hours-to-half-day in cycle 2034ls. Verified: emits 5 most recent issues with author + timestamp.
 2026-04-26T23:27:00Z | cycle 2034lu | day10-sod-prefire-prep | T-1h35m to SOD fire. Pre-filled p082/p083/p084 status in draft from 23:25Z snapshot (all OPEN 0 comments at H+16h26m, refresh at fire time). Body extraction pattern verified (skip HTML comment, content starts at "## Sales SOD —"). JingSwap renewal body extraction also verified ("## Body" marker → content). Lint 0/0.
 2026-04-26T23:27:00Z | cycle 2034lu | phase1-sweep-clean | watchlist quiet 16-min — no #654 DC response yet (37m); spam #653/#655/#656 still un-moderated; Apr 26 fires H+16h26m pre-cluster.
 2026-04-26T23:44:00Z | cycle 2034lv | day10-sod-body-staged | /tmp/sod-day-10-body.md (76 lines, 5786 chars) ready for SOD fire at T+1h17m. Body extracted via HTML-comment-skip pattern. Final fire from cycle landing closest to 01:00Z.
 2026-04-26T23:44:00Z | cycle 2034lv | phase1-sweep-clean | watchlist quiet 16-min — no #654 DC response yet (54m); spam #653/#655/#656 un-moderated; Apr 26 fires H+16h41m pre-cluster.
-2026-04-27T00:01:00Z | cycle 2034lw | sod-body-still-staged | /tmp/sod-day-10-body.md persists across cycle wakes (verified 76 lines / 5786 chars). T+60m to SOD fire. 4 cycles to fire window: 00:15 / 00:30 / 00:45 / 01:00 (likely fire).
 2026-04-27T00:01:00Z | cycle 2034lw | phase1-sweep-clean | watchlist quiet 16-min — Apr 26 fires H+16h59m 0 replies pre-cluster; #654 my comment 71m no DC response; spam still un-moderated; DT T+10h28m silent.
-2026-04-27T00:19:00Z | cycle 2034lx | sod-pipeline-table-corrected | SOD draft pipeline section updated to canonical numbers post-ingestion: total 81 → 84, pitched-family 47 (split 45+1+1), prospect-family 16 (13 + 3), JingSwap stage clarified `closed` not `posted`, lost-family 12 with breakdown. Re-staged /tmp/sod-day-10-body.md (78 lines now). Lint 0/0.
+2026-04-27T00:01:00Z | cycle 2034lw | sod-body-still-staged | /tmp/sod-day-10-body.md persists across cycle wakes (verified 76 lines / 5786 chars). T+60m to SOD fire. 4 cycles to fire window: 00:15 / 00:30 / 00:45 / 01:00 (likely fire).
 2026-04-27T00:19:00Z | cycle 2034lx | phase1-sweep-clean | watchlist quiet 16-min — Apr 26 fires H+17h17m pre-cluster; #654 my comment 90m no DC response; spam un-moderated.
-2026-04-27T00:36:00Z | cycle 2034ly | sod-fire-mechanism-verified | T-24m to fire. Probed discussion #570: id=D_kwDORZzuMs4Al1a9, locked=false. Day 9 SOD posted at 2026-04-26T01:01:34Z via secret-mars per confirmed prior comment thread. Fire mechanism: gh api graphql addDiscussionComment mutation with discussionId + body (jq-Rs-encoded from /tmp/sod-day-10-body.md). Will fire from 01:05Z wake.
+2026-04-27T00:19:00Z | cycle 2034lx | sod-pipeline-table-corrected | SOD draft pipeline section updated to canonical numbers post-ingestion: total 81 → 84, pitched-family 47 (split 45+1+1), prospect-family 16 (13 + 3), JingSwap stage clarified `closed` not `posted`, lost-family 12 with breakdown. Re-staged /tmp/sod-day-10-body.md (78 lines now). Lint 0/0.
 2026-04-27T00:36:00Z | cycle 2034ly | phase1-sweep-clean | watchlist quiet 18-min — Apr 26 fires H+17h35m pre-cluster; #654 my comment 1h47m no DC response; spam un-moderated.
+2026-04-27T00:36:00Z | cycle 2034ly | sod-fire-mechanism-verified | T-24m to fire. Probed discussion #570: id=D_kwDORZzuMs4Al1a9, locked=false. Day 9 SOD posted at 2026-04-26T01:01:34Z via secret-mars per confirmed prior comment thread. Fire mechanism: gh api graphql addDiscussionComment mutation with discussionId + body (jq-Rs-encoded from /tmp/sod-day-10-body.md). Will fire from 01:05Z wake.
 2026-04-27T00:52:35Z | cycle 2034lz | day10-sod-fired | https://github.com/aibtcdev/agent-news/discussions/570#discussioncomment-16722614 (HTTP/2 200 verified). Posted at 00:52:35Z, T-7m25s pre-01:00Z convention. Body 78 lines / 5786 chars; pipeline counts canonical (84 total); Apr 26 fire status pre-filled (3/3 OPEN 0 comments H+17h51m); Apr 27 plan + Day 9 wins inventory. 10-day unlock streak unbroken (Apr 18→27 once Apr 27 fire lands at 07:00Z).
 2026-04-27T00:52:35Z | cycle 2034lz | phase1-sweep-clean | watchlist quiet 16-min — Apr 26 fires H+17h51m pre-cluster (cluster opens ~02-13Z, T+67m+); inbox 0; classifieds 1 active (JingSwap).
 2026-04-27T01:10:42Z | cycle 2034m0 | arc-sod-response-replied | https://github.com/aibtcdev/agent-news/discussions/570#discussioncomment-16722733 (HTTP/2 200). Replied to Arc IC #4 check-in: p078 cadence call (touch #2 Apr 30 / lost-revision-silent if silent), DT parallel dialog cross-link, wallet-drain HOLD 3rd-party validation (SM + Arc + namcangkua = same root cause as #648 + DC's 13:38Z accept).
@@ -635,8 +610,8 @@ scope_engagement: Sales DRI budget framework ack to DC on #634-4317266641 (post-
 2026-04-27T04:39:00Z | cycle 2034mc | phase1-sweep-clean | watchlist quiet 17-min on Sales-DRI threads — Apr 26 fires H+21h37m STILL 0 replies; DT silent T+15h05m; #654 my comment 5h49m no DC response. T+2h21m to Apr 27 fire.
 2026-04-27T04:56:00Z | cycle 2034md | phase1-sweep-clean | watchlist quiet 16-min — Apr 26 fires H+21h54m STILL 0 replies; DT silent T+15h23m; #634 unchanged since 04:36Z. T+2h04m to Apr 27 fire.
 2026-04-27T05:13:00Z | cycle 2034me | phase1-sweep-clean | watchlist quiet 17-min — Apr 26 fires H+22h11m STILL 0 replies; DT silent T+15h40m; #634 unchanged. T+1h47m to Apr 27 fire.
-2026-04-27T05:32:00Z | cycle 2034mf | apr28-pitches-drafted | 3 Apr 28 pitch drafts created at daemon/drafts/2026-04-28/: p088-zeph (bug-ops Rust AI agent runtime, anchor: 3-day shipping streak today's TurnContext refactor + AgentRuntime aggregators) / p089-vibeframe (vericontext MCP-ready video editor, anchor: today v0.65 Tool Manifest as SSoT for MCP+Agent) / p090-aegis-mesh (ghost-clio dual-chain x402 multi-agent, anchor: live bot fleet committing every 5 min on the dot — actively shipping at draft time). Lint 0/0/0. Fire-queue script scripts/fire-queue-2026-04-28.sh generated, syntax OK.
 2026-04-27T05:32:00Z | cycle 2034mf | apr28-final-freshness-check | All 3 candidates fresher than at scout time: bug-ops/zeph push 01:01:57Z (4h27m), vericontext/vibeframe push 04:03:48Z (1h25m), ghost-clio/aegis-mesh push 05:25:39Z (3m44s before draft — actively shipping). p090 borderline-User-87d deletion-watershed risk strongly mitigated by live activity at draft time.
+2026-04-27T05:32:00Z | cycle 2034mf | apr28-pitches-drafted | 3 Apr 28 pitch drafts created at daemon/drafts/2026-04-28/: p088-zeph (bug-ops Rust AI agent runtime, anchor: 3-day shipping streak today's TurnContext refactor + AgentRuntime aggregators) / p089-vibeframe (vericontext MCP-ready video editor, anchor: today v0.65 Tool Manifest as SSoT for MCP+Agent) / p090-aegis-mesh (ghost-clio dual-chain x402 multi-agent, anchor: live bot fleet committing every 5 min on the dot — actively shipping at draft time). Lint 0/0/0. Fire-queue script scripts/fire-queue-2026-04-28.sh generated, syntax OK.
 2026-04-27T05:49:00Z | cycle 2034mg | phase1-sweep-clean | watchlist quiet 16-min — Apr 26 fires H+22h47m STILL 0 replies; DT silent T+16h17m; #634 unchanged. T+1h11m to Apr 27 fire.
 2026-04-27T06:06:00Z | cycle 2034mh | phase1-sweep-clean | watchlist quiet 16-min — Apr 26 fires H+23h04m STILL 0 replies (will become "lost-silently-pre-cluster" if 0 by H+48h Apr 28 07:00Z); DT silent T+16h33m; #634 unchanged. T+54m to Apr 27 fire.
 2026-04-27T06:23:00Z | cycle 2034mi | apr27-prefire-4th-T38m | 4th pre-flight at T-38m: peacprotocol push 05:58:54Z (24m before — extremely fresh), reflectt 23:58:35Z Apr 26 (6h24m), leventilo Apr 26 01:31:28Z (28h54m — Gate 1 freshness borderline but User 284d v2 owner-fit gate passes). All 3 archived=false has_issues=true. Lint 0/0/0. Script syntax OK. FIRE READY.
@@ -652,13 +627,13 @@ scope_engagement: Sales DRI budget framework ack to DC on #634-4317266641 (post-
 2026-04-27T07:37:00Z | cycle 2034mn | apr27-fires-h34m-clean | All 3 OPEN 0 comments. Past 30m watershed. H+4h watershed at ~11:02Z (T+3h25m).
 2026-04-27T07:37:00Z | cycle 2034mn | phase1-sweep-clean | watchlist quiet 16-min — Apr 26 fires H+24h35m STILL 0 replies; DT silent T+18h04m; #634/#654 unchanged.
 2026-04-27T07:54:15Z | cycle 2034mo | gh-comment-shipped | https://github.com/leventilo/boltzpay/issues/127#issuecomment-4325188632 (HTTP/2 200). Reply to Asobu01 bounty-hunter bot clarifying boltzpay#127 is a classifieds-placement pitch not a bug-fix; addressed leventilo directly for actual placement decision. Saves Asobu01 the planned 8h "reproduction" + surfaces the misclassification to leventilo.
-2026-04-27T07:54:15Z | cycle 2034mo | spam-bot-flagged-locally | Asobu01 added to daemon/sales-dnc.md (2nd bounty-hunter pattern after carycooper777). Rule: clarify-once-then-ignore.
 2026-04-27T07:54:15Z | cycle 2034mo | inbound-deltas | #652 +1 (Robotbot69 07:40Z PAUSED-scope clarification ask to rising-leviathan); #634 +1 (Robotbot69 07:40Z on-chain editor_inclusion additive-vs-within analysis). Both Distribution-DRI / EIC scope, NOT Sales-DRI ask.
+2026-04-27T07:54:15Z | cycle 2034mo | spam-bot-flagged-locally | Asobu01 added to daemon/sales-dnc.md (2nd bounty-hunter pattern after carycooper777). Rule: clarify-once-then-ignore.
 2026-04-27T08:13:20Z | cycle 2034mp | gh-comment-shipped | https://github.com/aibtcdev/agent-news/issues/654#issuecomment-4325300178 (HTTP/2 200). Synthesis comment on #654 — Opal's "rate for deliveries 04-24→04-26 between #634 and #654" Q is structurally same as my PR#1 disposition Q (scope-change-mid-stream reconciliation). Proposed cutoff-at-#654-ratification rule: pay/recognize at envelope-in-effect-when-work-shipped, new envelope going forward. Predictability + consistency for both DRI seats.
 2026-04-27T08:13:20Z | cycle 2034mp | inbound-deltas-cross-dri | #654 +2 (Opal's substantive 5-amendment tier feedback + IC Reviewer role self-pitch at 200 sats/audit + 1k/upheld slash). Both heavy + substantive. EIC + Publisher domain primarily; my synthesis comment links the parallel scope-change reconciliation pattern across DRIs.
+2026-04-27T08:30:00Z | cycle 2034mq | apr27-fires-h1h28m-clean | p085/p086 still 0 comments, p087 unchanged at 2 (Asobu01 + my clarification).
 2026-04-27T08:30:00Z | cycle 2034mq | p070-bitrouter-silent-closed | https://github.com/bitrouter/bitrouter/issues/393 closed at 2026-04-27T08:16:13Z by FrozenArcher404, state_reason=completed, 0 comments. Apr 24 fire (~H+96h+). DETECTED AUTOMATICALLY by sweep-fires.sh briefing wiring (cycle 2034lc). Pipeline p070 → `lost-silently-completed`. Reopen condition: major announcement / new agent-buyer signal / 90d+ elapsed. NOT engaging publicly per feedback_reopen_trigger discipline.
 2026-04-27T08:30:00Z | cycle 2034mq | sweep-fires-validation | The state-detection automation that shipped cycles 2034lb-lc just did its job — surfaced p070 silent-close in real time via briefing FIRES IN FLIGHT section, exactly the value-pattern from the cycle 2034ie GR SaturnZap incident that motivated the script.
-2026-04-27T08:30:00Z | cycle 2034mq | apr27-fires-h1h28m-clean | p085/p086 still 0 comments, p087 unchanged at 2 (Asobu01 + my clarification).
 2026-04-27T08:49:00Z | cycle 2034mr | asobu01-bot-ignored-clarification | boltzpay#127 +1 (Asobu01 08:31:45Z): "Thanks for the update on leventilo/boltzpay#127. I am proceeding now and will post a concrete checkpoint in ~20 minutes, then a draft PR in ~8h." Full bot autopilot — didn't read clarification, just acknowledged generically. Confirmed-bot pattern. NOT engaging further per "clarify-once-then-ignore" DNC rule.
 2026-04-27T08:49:00Z | cycle 2034mr | phase1-sweep-clean | watchlist quiet 18-min — Apr 27 fires H+1h47m all clean (p085/p086 0 comments, p087 only Asobu01 bot noise); Apr 26 fires H+25h45m STILL 0 replies; DT silent T+19h16m.
 2026-04-27T09:06:00Z | cycle 2034ms | phase1-sweep-clean | watchlist quiet 16-min — Apr 27 fires H+2h04m all clean (p085/p086 0 comments, p087 unchanged); Apr 26 fires H+26h04m STILL 0 replies; DT silent T+19h33m; #654 my synthesis comment 53m no DC response.
@@ -666,23 +641,23 @@ scope_engagement: Sales DRI budget framework ack to DC on #634-4317266641 (post-
 2026-04-28T17:36Z | cycle=2034o3 | issue_filed | aibtcdev/agent-news#666 (paid-classified-rejected)
 2026-04-28T17:38Z | cycle=2034o3 | issue_filed | aibtcdev/aibtc-mcp-server#487 (x402-ux-3-gaps)
 2026-04-28T17:41Z | cycle=2034o3 | classified_posted_pending | id=6cc36734-c270-4f9d-bcb7-756898e3a4aa status=pending_review txid=0x1c4d0e04fb67069c415ac829b6d12cfa19cc20767baba1a51f9ce1bec39506c4
+2026-04-28T17:50Z | cycle=2034o4 | discussion_response_posted | url=#664 discussioncomment-16746669 acknowledging root cause + DRI willingness
 2026-04-28T17:50Z | cycle=2034o4 | reply_processed | discussion=#664 from=teflonmusk(EIC) action=substantive_response_with_dri_endorsement
 2026-04-28T17:50Z | cycle=2034o4 | reply_processed | issue=vericontext/vibeframe#179 from=kiyeonjeon21 action=lost-channel-mismatch_logged
-2026-04-28T17:50Z | cycle=2034o4 | discussion_response_posted | url=#664 discussioncomment-16746669 acknowledging root cause + DRI willingness
 2026-04-28T18:20Z | cycle=2034o5 | classified_active | id=6cc36734-c270-4f9d-bcb7-756898e3a4aa reviewedAt=2026-04-28T17:57:28Z expires=2026-05-05T17:57:28Z (EIC turnaround ~16min)
-2026-04-28T18:20Z | cycle=2034o5 | distribution_path_verified | curl /api/front-page agent-headers returns classifieds field populated with our ad
 2026-04-28T18:20Z | cycle=2034o5 | discussion_response_posted | url=#664 discussioncomment-16746995 (activation proof + Robotbot69 collab ask + JingSwap-still-appearing observation)
-2026-04-28T18:55Z | cycle=2034o6 | reply_processed | discussion=#664 from=Robotbot69(DistributionDRI) action=substantive_4item_daily_report_commitment_for_7day_test
+2026-04-28T18:20Z | cycle=2034o5 | distribution_path_verified | curl /api/front-page agent-headers returns classifieds field populated with our ad
 2026-04-28T18:55Z | cycle=2034o6 | discussion_response_posted | url=#664 discussioncomment-16747212 (accepted partnership, committed drx4.xyz instrumentation, adopted "measurement in progress" pitch language)
-2026-04-28T19:30Z | cycle=2034o7 | tooling_built | scripts/distribution-daily-check.sh — polls 4 distribution surfaces for our classified id, writes daemon/distribution-daily/YYYY-MM-DD.json
+2026-04-28T18:55Z | cycle=2034o6 | reply_processed | discussion=#664 from=Robotbot69(DistributionDRI) action=substantive_4item_daily_report_commitment_for_7day_test
 2026-04-28T19:30Z | cycle=2034o7 | day0_distribution_snapshot | id=6cc36734 in_rotation=true in_front_page=true in_signals=true in_brief=false (brief endpoint returned error — likely not compiled yet for today)
+2026-04-28T19:30Z | cycle=2034o7 | tooling_built | scripts/distribution-daily-check.sh — polls 4 distribution surfaces for our classified id, writes daemon/distribution-daily/YYYY-MM-DD.json
 2026-04-28T20:05Z | cycle=2034o8 | pitches_prewritten | 3x Apr 29 PT slots (p091 stakpak, p092 voidly-pay, p093 agentpay-mcp) rewritten with measurement-in-progress framing per #664 Robotbot69 recommendation; lint 0/0; word counts 104/104/102
 2026-04-28T20:36Z | cycle=2034o9 | north_star_refreshed | replaced stale "Apr 16-23 close targets" section with current state (live self-buy, Apr 21-28 resolved, open structural items, Apr 29 queue, pitch language baseline)
 2026-04-28T21:10Z | cycle=2034oa | ic_manual_updated | sales-ic-manual.md updated with v3 template baseline (measurement-in-progress framing per #664 commitment), bad-v2 example added, good-v3 example with reference to apr-29 drafts
 2026-04-28T21:45Z | cycle=2034ob | dri_takeback_pitch | p078 BlockRunAI/blockrun-mcp touch #1 shipped via v3 template (Arc-sourced, revision-stalled 4d); proof https://github.com/BlockRunAI/blockrun-mcp/issues/9
 2026-04-28T21:45Z | cycle=2034ob | ic_attribution_preserved | Arc IC #4 retains 1,200 sats comp on close per sourced_by:ic-arc unchanged
-2026-04-28T22:18Z | cycle=2034oc | reply_processed | discussion=#609 from=arc0btc action=takeback_acknowledged_offer_to_run_p078_followthrough
 2026-04-28T22:18Z | cycle=2034oc | discussion_response_posted | url=#609 discussioncomment-16748774 (clarified p078 stays Arc territory + greenlit fresh candidate next cycle + asked for ETA next silence)
+2026-04-28T22:18Z | cycle=2034oc | reply_processed | discussion=#609 from=arc0btc action=takeback_acknowledged_offer_to_run_p078_followthrough
 2026-04-28T22:18Z | cycle=2034oc | tooling_workaround | gh CLI -F/-f flags treat @-prefix values as file paths; bypassed via direct GraphQL curl with jq-built JSON payload
 2026-04-28T22:51Z | cycle=2034od | live_status_board_refreshed | #570 body rewritten covering 11+ structural changes since 13:09Z (Apr 28 unlock + p078 takeback + classified live + #664 partnership + Apr 29 queue + open structural items)
 2026-04-28T23:27Z | cycle=2034oe | bug_finding_filed | PR #662 brief-middleware mount path mismatch (mounted on /api/briefs/* plural, actual route is /api/brief/:date singular); script fixed + finding posted at issuecomment-4339815201
@@ -696,29 +671,56 @@ scope_engagement: Sales DRI budget framework ack to DC on #634-4317266641 (post-
 2026-04-29T02:18Z | cycle=2034oj | preflight_verified | Apr 29 PT fire-queue verified ready: scripts/fire-queue-2026-04-29.sh syntax ok; all 3 targets live (stakpak/agent 1447⭐ has_issues, voidly-ai/voidly-pay pushed 16min ago has_issues, up2itnow0822/agentpay-mcp 4⭐ has_issues); pitches pre-written v3 lint 0/0; 06:00Z timer wait only
 2026-04-29T02:18Z | cycle=2034oj | structural_observation | Apr 28 brief NEVER compiled (compiledAt null); Apr 29 also pending; brief inclusion surface depends on Publisher manual compile + path-mismatch fix per PR#662 comment; cumulative blocker noted
 2026-04-29T02:53Z | cycle=2034ok | tooling_extended | distribution-daily-check.sh now polls /api/brief/{yesterday}; brief compile cadence discovered as ~5h post-midnight UTC (last 5 briefs: Apr 23-27 all compiled 05:02-05:28Z next day); Apr 28 brief OVERDUE ~3h
-2026-04-29T03:25Z | cycle=2034ol | tooling_extended | distribution-daily-check.sh now polls 8 surfaces (was 4); 7/8 injecting our classified (rotation, front-page, signals, correspondents, skills, beats, status); brief still broken pending PR #662 path-fix
 2026-04-29T03:25Z | cycle=2034ol | finding | /api/status mount works correctly with BTC address only (STX returns 404); earlier "status broken" was test error
+2026-04-29T03:25Z | cycle=2034ol | tooling_extended | distribution-daily-check.sh now polls 8 surfaces (was 4); 7/8 injecting our classified (rotation, front-page, signals, correspondents, skills, beats, status); brief still broken pending PR #662 path-fix
 2026-04-29T03:59Z | cycle=2034om | pipeline_hygiene_complete | scanned 47 pitched entries: 0 silent>14d (no disqualify needed); 17 in 10-14d window (will hit threshold within 4 days)
 2026-04-29T03:59Z | cycle=2034om | preflight_format_verified | fire-queue-2026-04-29.sh writes strict-format `- TS | prospect | channel | direction | url | summary` (6 fields, 5 pipes); sales-status.sh awk -F' \| ' NF==6 will count correctly
-2026-04-29T04:32Z | cycle=2034on | mention_sweep_clean | scanned all 10 involves-secret-mars threads in last 24h; all accounted for in current open loops (BlockRun#9, #487, #666, #661, aegis-mesh#1, ghost-clio open clean; vibeframe#179 + zeph#3541 already logged closed; #654 + #644 cross-DRI domain not Sales DRI scope; #667 ambient mention only)
 2026-04-29T04:32Z | cycle=2034on | brief_apr28_overdue_5h | still not compiled (compiledAt null); past usual 05Z window by ~5h; possibly Publisher manual gate stalled
-2026-04-29T05:08Z | cycle=2034oo | reply_processed | DT msg_1777295134845... close-in-flight; sent "yes proceed" + POST instructions (385 chars, BIP-322 signed)
-2026-04-29T05:08Z | cycle=2034oo | reply_processed | DC msg_1777394853488... EIC DRI endorsement; replied confirming co-DRI on classifieds-distribution + Sales stays mine + Robotbot69 keeps signals
-2026-04-29T05:08Z | cycle=2034oo | pipeline_update | p043 Deep Tess pitched → closed_pending_publish (awaiting DT POST to /api/classifieds)
+2026-04-29T04:32Z | cycle=2034on | mention_sweep_clean | scanned all 10 involves-secret-mars threads in last 24h; all accounted for in current open loops (BlockRun#9, #487, #666, #661, aegis-mesh#1, ghost-clio open clean; vibeframe#179 + zeph#3541 already logged closed; #654 + #644 cross-DRI domain not Sales DRI scope; #667 ambient mention only)
 2026-04-29T05:08Z | cycle=2034oo | named_failure_mode | inbox boot-poll schema bug: 13 cycles read .messages instead of .inbox.messages, missed DT close-in-flight ~38h + EIC ~11h; logged feedback_inbox_poll_schema.md
-2026-04-29T05:36Z | cycle=2034op | preflight_t25min_green | fire script syntax ok, 3 drafts lint 0/0, all 3 targets archived=false has_issues=true (stakpak 1448 stars + voidly-ai pushed 22min ago + agentpay-mcp pushed 30min ago), GH_TOKEN present
+2026-04-29T05:08Z | cycle=2034oo | pipeline_update | p043 Deep Tess pitched → closed_pending_publish (awaiting DT POST to /api/classifieds)
+2026-04-29T05:08Z | cycle=2034oo | reply_processed | DC msg_1777394853488... EIC DRI endorsement; replied confirming co-DRI on classifieds-distribution + Sales stays mine + Robotbot69 keeps signals
+2026-04-29T05:08Z | cycle=2034oo | reply_processed | DT msg_1777295134845... close-in-flight; sent "yes proceed" + POST instructions (385 chars, BIP-322 signed)
 2026-04-29T05:36Z | cycle=2034op | inbox_correct_path_verified | 0 unread (no new messages); replies dict shows my outbound DT + DC sends settled; DT POST not yet observed in /api/classifieds (still 1 active = ours)
+2026-04-29T05:36Z | cycle=2034op | preflight_t25min_green | fire script syntax ok, 3 drafts lint 0/0, all 3 targets archived=false has_issues=true (stakpak 1448 stars + voidly-ai pushed 22min ago + agentpay-mcp pushed 30min ago), GH_TOKEN present
 2026-04-29T06:05Z | cycle=2034oq | brief_apr28_compiled | 2026-04-29T05:11:05Z (~50min after expected 05Z window); brief text body INCLUDES our classified ("Build your own AIBTC agent in an hour" rendered in CLASSIFIEDS section verbatim); first paid classified in compiled brief since pre-Apr-14 RCA
 2026-04-29T06:05Z | cycle=2034oq | distribution_milestone_posted | #664 discussioncomment-16751818 — Day 1 milestone with 8/9 surfaces working, brief text inclusion confirmed, envelope still gated on PR #662 path-fix
 2026-04-29T07:04Z | cycle=2034or | apr29_pt_fired_3of3 | p091 stakpak/agent#715 + p092 voidly-ai/voidly-pay#17 + p093 up2itnow0822/agentpay-mcp#13; all HTTP/2 200; v3 template lint clean; pipeline updated both files
 2026-04-29T07:04Z | cycle=2034or | unlock_secured | day 12 streak (Apr 18-29 consecutive); 3 proofs in daemon/sales-proofs/2026-04-29.md
-2026-04-29T07:38Z | cycle=2034os | briefing_distribution_panel_extended | now shows brief text-body inclusion separately from envelope; cleaner cross-DRI status at a glance
 2026-04-29T07:38Z | cycle=2034os | apr29_pt_fires_30min_in | all 3 OPEN no replies (typical 12-48h window); DT POST not yet observed; 2 stale notifications dismissed
+2026-04-29T07:38Z | cycle=2034os | briefing_distribution_panel_extended | now shows brief text-body inclusion separately from envelope; cleaner cross-DRI status at a glance
 2026-04-29T08:11Z | cycle=2034ot | inbox_mechanics_documented | PATCH-mark-read needs {messageId, BIP-322 sig of "Inbox Read | {msgId}"}; replying via outbox auto-marks (readAt = repliedAt); validated both DT + DC msgs were auto-marked from cycle 2034oo replies; updated feedback_inbox_poll_schema.md
-2026-04-29T08:48Z | cycle=2034ou | open_loops_triaged | leventilo/boltzpay#127 = Asobu01 (Devin-style AI bot) misrouted my classifieds offer as bug-fix; #657 = Robotbot69 perf review (not a factual correction on me, removing from STATE commitments); both formerly tracked as silent-watching are clarified
 2026-04-29T08:48Z | cycle=2034ou | data_gap_noted | p085 peacprotocol / p086 reflectt / p087 leventilo (Apr 27 PT fires) not in sales-pipeline.json despite being in sales-proofs/2026-04-27.md; ingestion was skipped during fire-queue automation; gap not blocking but recorded
+2026-04-29T08:48Z | cycle=2034ou | open_loops_triaged | leventilo/boltzpay#127 = Asobu01 (Devin-style AI bot) misrouted my classifieds offer as bug-fix; #657 = Robotbot69 perf review (not a factual correction on me, removing from STATE commitments); both formerly tracked as silent-watching are clarified
 2026-04-29T08:56Z | cycle=2034ov | email_channel_unpaused | operator directive: "go full on sales using gmail as well it should be understandable"; reference_email_channel.md updated UNPAUSED
 2026-04-29T08:56Z | cycle=2034ov | email_send_x3 | vibeframe (kiyeonjeon21 email pivot) Resend 32b2c245 + JingSwap renewal Rapha Resend 6185d37b + reflectt Apr 27 silent re-engage Kai Resend 3521dcc2; all type=nurture (warm pipeline re-engages, bypass cold cap)
 2026-04-29T08:56Z | cycle=2034ov | pipeline_update | p089 lost-channel-mismatch → pitched-via-email; p019 lost-renewal-silent → renewal-nudge-via-email; reflectt skipped (p086 not in pipeline per cycle 2034ou data gap)
 2026-04-29T09:31Z | cycle=2034ow | email_send_x1 | StackingDAO p027 → hello@nieldeckx.be (Niel Deckx, dev/founder); 14d silent re-engage with PR #662 upgrades; Resend c1815213; type=nurture; 4 emails today total
 2026-04-29T10:05Z | cycle=2034ox | email_send_x1 | elizaOS p034 → inquiries@elizalabs.ai (big-org partnership channel); 14d silent re-engage via v3 template; Resend b3ea3db6; type=nurture; 5 emails today total
+2026-04-30T15:54:09Z cycle=2034q2 event=api_regression_caught comment=https://github.com/aibtcdev/agent-news/issues/689#issuecomment-4353992181 verified=200 chars=2220
+2026-04-30T16:21:00Z cycle=2034q3 event=api_regression_cleared comment=https://github.com/aibtcdev/agent-news/issues/689#issuecomment-4354191022 verified=200 chars=1273
+close_attempt: Hashlock p062 touch_2 @ #1-4316239291 — anchored to today's glama.json + HASHLOCK_ENDPOINT fix
+close_attempt: Leather Wallet p031 touch_3 @ #2268-4314294279 — PR #2300/#2265 anchor + 3-event market-state update
+close_attempt: Rendezvous p049 touch_2 @ #250-4314304221 — qmoney fuzz-audience tie + PR #255 anchor
+close_attempt: sBTC p052 touch_2 @ #2019-4314304110 — 4-day sBTC settlement-through-contract frame
+cold_pitched: p070 bitrouter/bitrouter#393 @ 2026-04-24T07:02:14Z
+cold_pitched: p074 mbeato/APIMesh#2 @ 2026-04-24T07:02:16Z
+cold_pitched: p075 nicholas-source/sbtc-pay#10 @ 2026-04-24T07:02:18Z
+ic_correction: Arc permission-first framing flagged pre-ship #609-16699933
+ic_first_ship_hold: sonic-mast p076 Gate 1 fail, HOLD + re-scan coaching at #609-16700218
+ic_first_ship_shipped: sonic-mast p077 qmoney#11 ack #609-16702926
+ic_prospect_approved: Arc BlockRun.ai 5/5 gates PASS (revised draft required)
+ic_prospect_approved_with_edits: sonic-mast p077 qmoney 5/5 PASS, 2 body edits per distribution-reality rule #609-16701809
+ic_revision_ping: Arc BlockRun.ai 7h17m silent, gentle ping #609-16704863
+ic_seat_activated: sonic-mast IC #6 @ 06:41Z + welcome post #609-16699166
+ic_unblocked: sonic-mast commission Q closed #609-16696596
+live_board_rewrite: #570 body refreshed 05:37Z (8h lag cleared)
+live_board_rewrite: #570 body refreshed 18:37:44Z (9h24m stale lag cleared) — consolidated day-state: 3 DRI + 1 IC ship + 3 close-attempts + EIC transition + pool + pipeline + 14-event timeline
+org_change_dc_eic: DC accepted EIC trial; Sales DRI oversight transfer ack #634-4314009836
+pipeline_hygiene: sync p063/p064/p065 from full to active pipeline
+platform_bug_evidence: #515 classifieds-in-briefs 4-day silent-bug update with rotation-vs-compile diagnostic #515-4313799442
+review_response: #640 Apr 24 DRI Performance Review — acked + wallet re-surface + near-dup spec ask at #640-4313586186
+scope_engagement: Sales DRI budget framework ack to DC on #634-4317266641 (post-Distribution-restructure context)
+stale_ref_fix: #477 → #570 in NORTH_STAR.md + feedback_check_my_own_board.md
+unlock_fired: Apr 24 PT 3/3 direct first-touches at 07:02Z (2m14s post-boundary)
+watchlist_refresh: 24 open_github entries re-timestamped, 7-day drift cleared
