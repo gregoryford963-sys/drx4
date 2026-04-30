@@ -4845,12 +4845,20 @@
       "contact": {
         "channel": "github-issue",
         "repo": "presidio-v/presidio-hardened-x402",
-        "issue_url": "TBD-2026-04-30T07Z"
+        "issue_url": "https://github.com/presidio-v/presidio-hardened-x402/issues/18"
       },
-      "stage": "qualified",
-      "first_touch_at": null,
-      "last_touch_at": "2026-04-29T11:48:27Z",
-      "touches": [],
+      "stage": "pitched",
+      "first_touch_at": "2026-04-30T07:00:08Z",
+      "last_touch_at": "2026-04-30T07:00:08Z",
+      "touches": [
+        {
+          "timestamp": "2026-04-30T07:00:08Z",
+          "channel": "github-issue",
+          "direction": "outbound",
+          "url": "https://github.com/presidio-v/presidio-hardened-x402/issues/18",
+          "summary": "Apr 30 PT v3 pitch fire (cycle 2034p0 pre-flight). 3k sats / 7d, measurement in progress."
+        }
+      ],
       "notes": "x402 security middleware (PII redaction, spending policy, replay detection). 3 stars. Open issue #17 (Bortlesboat — test fixture idea) is the cite hook. Last commit Apr 26 (dependabot). Real product. Pre-flight cycle 2034p0; fire 2026-04-30T07:00Z.",
       "do_not_contact": false,
       "qualified_at": "2026-04-29T11:48:27Z",
@@ -4862,12 +4870,20 @@
       "contact": {
         "channel": "github-issue",
         "repo": "Br0ski777/x402-agent-tools",
-        "issue_url": "TBD-2026-04-30T07Z"
+        "issue_url": "https://github.com/Br0ski777/x402-agent-tools/issues/1"
       },
-      "stage": "qualified",
-      "first_touch_at": null,
-      "last_touch_at": "2026-04-29T11:48:27Z",
-      "touches": [],
+      "stage": "pitched",
+      "first_touch_at": "2026-04-30T07:00:10Z",
+      "last_touch_at": "2026-04-30T07:00:10Z",
+      "touches": [
+        {
+          "timestamp": "2026-04-30T07:00:10Z",
+          "channel": "github-issue",
+          "direction": "outbound",
+          "url": "https://github.com/Br0ski777/x402-agent-tools/issues/1",
+          "summary": "Apr 30 PT v3 pitch fire (cycle 2034p0 pre-flight). 3k sats / 7d, measurement in progress."
+        }
+      ],
       "notes": "103 production-ready AI agent tools with x402 micropayments. 5 stars. v1.1.1 catalog-URL alignment Apr 22 is cite hook. Single-maintainer (Br0ski777). Pre-flight cycle 2034p0; fire 2026-04-30T07:00Z.",
       "do_not_contact": false,
       "qualified_at": "2026-04-29T11:48:27Z",
@@ -4879,12 +4895,20 @@
       "contact": {
         "channel": "github-issue",
         "repo": "PipeNetwork/lib-storage",
-        "issue_url": "TBD-2026-04-30T07Z"
+        "issue_url": "https://github.com/PipeNetwork/lib-storage/issues/1"
       },
-      "stage": "qualified",
-      "first_touch_at": null,
-      "last_touch_at": "2026-04-29T11:48:27Z",
-      "touches": [],
+      "stage": "pitched",
+      "first_touch_at": "2026-04-30T07:00:13Z",
+      "last_touch_at": "2026-04-30T07:00:13Z",
+      "touches": [
+        {
+          "timestamp": "2026-04-30T07:00:13Z",
+          "channel": "github-issue",
+          "direction": "outbound",
+          "url": "https://github.com/PipeNetwork/lib-storage/issues/1",
+          "summary": "Apr 30 PT v3 pitch fire (cycle 2034p0 pre-flight). 3k sats / 7d, measurement in progress."
+        }
+      ],
       "notes": "Storage SDKs (TypeScript/Python/Rust) with x402 agent payment support. PipeNetwork is known infra org. SIWS auth session field commit Apr 16 is cite hook. Pre-flight cycle 2034p0; fire 2026-04-30T07:00Z.",
       "do_not_contact": false,
       "qualified_at": "2026-04-29T11:48:27Z",

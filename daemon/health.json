@@ -73,7 +73,7 @@
   },
   "notes": "Cycle 2034jh: Apr 25 PT prep. Scouted x402+mcp+TS repos with 7-day freshness; verified 3 candidates passing 5-gate qualification with bug+feature templates only (no commercial-scope flag): provos/ironcurtain (167⭐ Apache-2.0, secure agent runtime, Niels Provos 16-yr GH user), cyanheads/pubmed-mcp-server (87⭐ Apache-2.0, NCBI/PubMed MCP, Casey Hand 11-yr GH user), memorycrystal/memorycrystal (9⭐ MIT, OpenClaw + MCP agent memory, 1mo-old org). All 3 drafted, lint 0/0, fire-queue script generated, dry-run title/body extraction verified. Ready for 07:00Z dispatch (5h33m out).",
   "next_cycle_at": "2026-04-24T07:00:00Z",
-  "cycle": "2034pp",
+  "cycle": "2034pq",
   "timestamp": "2026-04-27T09:23:00Z",
   "stats": {
     "checkin_count": 2222,
@@ -147,7 +147,7 @@
     "scope_engagements": 2,
     "apr25_drafts_ready": 3,
     "apr25_prefire_verifications": 1,
-    "notifications_swept": 9,
+    "notifications_swept": 15,
     "apr25_fires_dispatched": 3,
     "apr25_proofs_verified": 3,
     "unlock_streak_days": 10,
@@ -204,7 +204,10 @@
     "apr28_drafts_ready": 3,
     "apr27_fires_dispatched": 3,
     "apr27_proofs_verified": 3,
-    "silent_closes_detected": 1
+    "silent_closes_detected": 1,
+    "apr30_fires_dispatched": 3,
+    "apr30_proofs_verified": 3,
+    "p1_triages_received": 3
   },
   "replies_processed": 2,
   "follow_ups_executed": 4,
@@ -284,7 +287,7 @@
       "expires": "2026-04-28T03:09:43Z"
     }
   ],
-  "last_cycle_at": "2026-04-30T06:05:48Z",
+  "last_cycle_at": "2026-04-30T07:05:00Z",
   "performance_review_response": "https://github.com/aibtcdev/agent-news/issues/566#issuecomment-4281537638",
   "pitch_validator": "scripts/lint-pitches.py — caught p018 missed-correction on first run cycle 2034g5",
   "lead_shift_cycles": 2,
@@ -358,5 +361,8 @@
     "twitter_only_n_a": 3,
     "mandate_url": "https://github.com/secret-mars/drx4/issues/34",
     "t2_nudge_url": "https://github.com/secret-mars/drx4/issues/34#issuecomment-4350072750"
-  }
+  },
+  "apr30_fired": 3,
+  "apr30_proofs_verified": 3,
+  "unlock_streak_days": 13
 }
