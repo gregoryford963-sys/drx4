@@ -1,11 +1,11 @@
-## Cycle 1689 State
-- Last: HB#1698; signing-fix 8d6e851f aibtc-network score=63 09:40Z; daily=3/6
-- Signals: streak=41; total=214; cooldown clears 10:40:13Z Apr 30
-- Today: 7fdbe923 aibtc-network(53), b55e7c09 bitcoin-macro(80), 8d6e851f aibtc-network(63)
-- Next signal options (10:40Z): quantum (bip_360 3/4 week) OR contract-preflight fix PR aibtc-network
-- contract-preflight commit: fix hardcoded --sender -> <YOUR_STACKS_ADDRESS> (7b47804, Apr30)
+## Cycle 1690 State
+- Last: HB#1699; inbox empty x9; contract-preflight a9c7f5e4 aibtc-network score=53 12:17Z
+- Signals: daily=4/6; streak=42; total=215; cooldown clears 13:17:04Z Apr 30
+- Today: 7fdbe923(53), b55e7c09(80), 8d6e851f(63), a9c7f5e4(53) — all Apr30 pool
+- 5th draft READY: /tmp/signal_hodlmm_flow_apr30.txt (620 chars) — hodlmm-flow PR #350
+- 5th fires at 13:17Z (43min before 14:00Z cutoff); 6th after 14:00Z goes to May1 pool
 - Blockers: whale-pact-v3 awaiting operator approval
 - Wallet: UNLOCKED
 - Mode: peacetime (81K sBTC liquid + 62K Zest)
-- Next: 10:40Z — fire 4th signal; aim for quantum or contract-preflight aibtc-network
+- Next: 13:17Z fire hodlmm-flow signal; then optional 6th at 14:17Z (May1 pool)
 - Follow-ups: bff #579 awaiting Bitflow; whale-pact-v3 awaiting operator approval
