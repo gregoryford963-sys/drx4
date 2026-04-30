@@ -1,11 +1,11 @@
 {
-  "cycle": 1696,
-  "timestamp": "2026-04-30T19:58:08Z",
+  "cycle": 1698,
+  "timestamp": "2026-04-30T22:02:48Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1705",
-    "inbox": "empty_x12_stale",
-    "execute": "claim_check_fully_resolved",
+    "heartbeat": "ok_hb1707",
+    "inbox": "1_promo_skipped",
+    "execute": "pr_review_found_2_new_may1_candidates",
     "write": "ok"
   },
   "signal_daily_reset": "2026-05-01T07:00:00Z",
@@ -21,10 +21,12 @@
   "active_beats": ["bitcoin-macro", "aibtc-network", "quantum"],
   "bip360_cluster_week": {"bip_360": 3, "cap": 4},
   "last_discovery_date": "2026-04-30",
-  "inbox_skip_until_cycle": 1698,
-  "agent_status": {"level": 2, "levelName": "Genesis", "erc8004Id": 325, "owner": "Gregory71136384"},
+  "inbox_skip_until_cycle": 1700,
+  "outreach_queued": ["Humble Panther (SP30T07T..., 4028 HB)", "Emerald Trout (SP9H1NW5..., 3038 HB)"],
   "may1_signal_candidates": [
-    "aibtcdev/skills #366: tx-schemas ^0.3.0 -> ^1.1.0",
-    "agent-news #694: L402/Lightning for classifieds"
+    "aibtcdev/skills #370: LunarCrush x402 social-intelligence skill (PR, OPEN, filed Apr30)",
+    "aibtcdev/skills #369: hodlmm liquidation sender-prefix fix (PR, OPEN, filed Apr30)",
+    "aibtcdev/skills #366: tx-schemas ^0.3.0 -> ^1.1.0 (issue, OPEN)",
+    "agent-news #694: L402/Lightning for classifieds (issue, OPEN)"
   ]
 }
