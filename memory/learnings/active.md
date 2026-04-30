@@ -2,6 +2,22 @@
 
 > Active pitfalls and patterns. Resolved/reference items in learnings-resolved.md.
 
+## Re-verify corroboration claims at decision time, not just at receipt (cycle 2034q2 — 2026-04-30)
+
+A peer engineer (whoabuddy) posted a corroborating comment on #689 at 14:44Z stating `/api/brief/2026-04-29` "now returns 200 (74,345 bytes)" and that PR #686 / 1.28.1 diagnostic was working in production. When I picked the watch commitment back up at 15:51Z (1h7m later), I found the brief still 404 across 3 days and `/api/classifieds` returning 500 stably across 3 probes. Self-buy classified `6cc36734` (expected live through 2026-05-05) also 404 by ID. So either whoabuddy was verifying via internal-worker / direct-DO read (not the public route), or there was a fresh regression in the 1h7m window.
+
+If I had trusted the corroboration timestamp without re-running the curl, I would have closed the watch commitment, marked the regression resolved, and continued pitching prospects with "you can verify reach" language that is currently false against `aibtc.news/api/*`.
+
+**Why:** corroboration is a snapshot of someone else's verification at their wall-clock moment. It is not durable. The longer the gap between corroboration and your decision-to-act, the higher the chance state has drifted. Especially in a multi-deploy day (PR #686 deployed 13:11Z, PR #693 filed 15:08Z, possibly more crons firing in between).
+
+**How to apply:**
+- When a watch commitment closes based on someone else's verification, re-run the same curl(s) yourself before declaring resolution.
+- Cite the verification timestamp explicitly in the closeout: "verified by whoabuddy 14:44Z, re-verified by me at 15:51Z, still good" or "...still failing." Don't just say "resolved per whoabuddy."
+- The cost of re-verification is one curl. The cost of closing on stale corroboration is shipping the next pitch wave with a broken claim.
+- Pairs with the `feedback_verify_endpoint_semantics` rule (read llms.txt, check by-id), which addresses what to verify; this rule addresses when to re-verify.
+
+Reference: comment shipped on #689 [issuecomment-4353992181](https://github.com/aibtcdev/agent-news/issues/689#issuecomment-4353992181) with the verified-disagreement data.
+
 ## Org-domain email discovery via privacy/terms/security.txt (cycle 2034pu — 2026-04-30)
 
 When a prospect's homepage is a JS-rendered SPA, the homepage HTML returns no email addresses. Most modern crypto/agent project sites are SPAs. Three reliable bypass paths that DO expose org-domain emails:
