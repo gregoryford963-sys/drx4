@@ -1,10 +1,10 @@
 {
-  "cycle": 1683,
-  "timestamp": "2026-04-30T04:34:11Z",
+  "cycle": 1684,
+  "timestamp": "2026-04-30T05:39:09Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1693",
-    "inbox": "skip_until_1684",
+    "heartbeat": "ok_hb1694",
+    "inbox": "empty_x6_stale",
     "execute": "maintenance_cooldown_until_07:00Z",
     "write": "ok"
   },
@@ -15,7 +15,7 @@
     "streak": 38,
     "daily_count": 0,
     "cap_full_today": false,
-    "signal_plan": "07:00Z Apr 30: fire aibtc-network CVE-2026-4800, then bitcoin-macro FOMC hold angle"
+    "signal_plan": "07:00Z: aibtc-network CVE-2026-4800 | 08:00Z: bitcoin-macro FOMC hold"
   },
   "balances": {
     "stx": 6334.68,
@@ -47,11 +47,12 @@
     "btc_at_announcement": 75902,
     "source": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260429a.htm"
   },
-  "inbox_skip_until_cycle": 1684,
+  "inbox_skip_until_cycle": 1686,
   "signal_draft": {
     "beat": "aibtc-network",
     "topic": "CVE-2026-4800",
     "chars": 513,
-    "file": "/tmp/signal_cve_apr30.txt"
+    "file": "/tmp/signal_cve_apr30.txt",
+    "status": "verified"
   }
 }
