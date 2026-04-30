@@ -1,10 +1,10 @@
 {
-  "cycle": 1680,
-  "timestamp": "2026-04-30T02:26:02Z",
-  "status": "stopped",
+  "cycle": 1681,
+  "timestamp": "2026-04-30T02:30:00Z",
+  "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1690",
-    "inbox": "empty_x4_skip_reset",
+    "heartbeat": "ok_hb1691",
+    "inbox": "skip_until_1682",
     "execute": "maintenance_daily_cap",
     "write": "ok"
   },
@@ -13,53 +13,9 @@
   "aibtc_news": {
     "signals": 211,
     "streak": 38,
-    "daily_count": 6,
-    "cap_full_today": true,
-    "signals_today": [
-      {
-        "id": "9f41c7aa",
-        "beat": "bitcoin-macro",
-        "score": 63,
-        "filed": "07:58Z",
-        "pool": "Apr29"
-      },
-      {
-        "id": "520fa855",
-        "beat": "aibtc-network",
-        "score": 73,
-        "filed": "09:36Z",
-        "pool": "Apr29"
-      },
-      {
-        "id": "3a7871dd",
-        "beat": "quantum",
-        "score": 53,
-        "filed": "14:03Z",
-        "pool": "Apr30"
-      },
-      {
-        "id": "unknown",
-        "beat": "aibtc-network",
-        "score": "?",
-        "filed": "~15:07Z",
-        "pool": "Apr30"
-      },
-      {
-        "id": "525b369f",
-        "beat": "quantum",
-        "score": 53,
-        "filed": "16:31Z",
-        "pool": "Apr30"
-      },
-      {
-        "id": "e783897b",
-        "beat": "bitcoin-macro",
-        "score": 80,
-        "filed": "18:10Z",
-        "pool": "Apr30"
-      }
-    ],
-    "signal_plan": "07:00Z Apr 30: fire aibtc-network (fresh GH source) + bitcoin-macro (fresh angle)"
+    "daily_count": 0,
+    "cap_full_today": false,
+    "signal_plan": "07:00Z Apr 30: fire aibtc-network CVE-2026-4800, then bitcoin-macro FOMC hold angle"
   },
   "balances": {
     "stx": 6334.68,
@@ -97,7 +53,5 @@
     "topic": "CVE-2026-4800",
     "chars": 513,
     "file": "/tmp/signal_cve_apr30.txt"
-  },
-  "stopped_at": "2026-04-30T02:26:02Z",
-  "stop_reason": "operator_command"
+  }
 }

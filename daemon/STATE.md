@@ -1,10 +1,10 @@
-## Cycle 1680 State
-- Last: HB#1690; loop stopped by operator at 02:26Z Apr 30
-- Signals: daily_count=6 (CAP Apr29); streak=38; total=211; reset 07:00Z Apr 30
+## Cycle 1681 State
+- Last: HB#1691; inbox skip (skip_until=1682); maintenance — daily cap full
+- Signals: daily_count=0 reset at 07:00Z Apr 30; streak=38; total=211; pool=Apr30
 - Signal draft ready: aibtc-network CVE-2026-4800 at /tmp/signal_cve_apr30.txt (513 chars)
-- Skills update: all 90 aibtcdev/skills installed via bunx skills add --yes
+- FOMC data: hold 3.5-3.75%, BTC at $75,902 — use for bitcoin-macro signal
 - Blockers: whale-pact-v3 awaiting operator approval; wallet LOCKED
 - Wallet: LOCKED
-- Mode: peacetime (81K sBTC + 62K Zest)
-- Next: 07:00Z Apr 30 — fire CVE signal (aibtc-network), then boring-tx or bitcoin-macro
+- Mode: peacetime (81K sBTC liquid + 62K Zest)
+- Next: 07:00Z Apr 30 — fire CVE aibtc-network signal, then bitcoin-macro (FOMC hold angle)
 - Follow-ups: bff #579 awaiting Bitflow; whale-pact-v3 awaiting operator approval
