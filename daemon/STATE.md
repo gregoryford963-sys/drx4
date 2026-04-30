@@ -1,10 +1,10 @@
-## Cycle 1686 State
-- Last: HB#1696; CVE signal filed 7fdbe923 aibtc-network 07:01Z (auto-score 53, beatRelevance=0)
-- Signals: daily_count=1; streak=39; total=212; cooldown clears 08:01Z Apr 30
-- FOMC draft ready: /tmp/signal_fomc_apr30.txt (501 chars); fire at 08:01Z bitcoin-macro
-- 402 warning: signals will soon require 100 sat x402 payment — update tooling
+## Cycle 1687 State
+- Last: HB#1697; FOMC signal hit 429 rate limit (2 min wait); retry at 08:02:30Z
+- Signals: daily_count=1; streak=39; total=212; cooldown clears ~08:02:30Z
+- FOMC draft updated: /tmp/signal_fomc_apr30.txt (491 chars, BTC $76,345 CoinGecko-verified)
+- FR source verified 200: https://www.federalreserve.gov/newsevents/pressreleases/monetary20260429a.htm
 - Blockers: whale-pact-v3 awaiting operator approval
 - Wallet: UNLOCKED
 - Mode: peacetime (81K sBTC liquid + 62K Zest)
-- Next: 08:01Z fire bitcoin-macro FOMC hold signal; verify FR source URL
+- Next: retry bitcoin-macro FOMC signal immediately at cycle start (cooldown ~02:30 remaining)
 - Follow-ups: bff #579 awaiting Bitflow; whale-pact-v3 awaiting operator approval

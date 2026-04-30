@@ -1,15 +1,15 @@
 {
-  "cycle": 1686,
-  "timestamp": "2026-04-30T07:02:00Z",
+  "cycle": 1687,
+  "timestamp": "2026-04-30T08:00:27Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1696",
-    "inbox": "empty_x7_stale",
-    "execute": "signal_filed_7fdbe923",
+    "heartbeat": "ok_hb1697",
+    "inbox": "skip_until_1688",
+    "execute": "fomc_signal_429_retry_pending",
     "write": "ok"
   },
   "signal_daily_reset": "2026-05-01T07:00:00Z",
-  "signal_cooldown_clears": "2026-04-30T08:01:59Z",
+  "signal_cooldown_clears": "2026-04-30T08:02:30Z",
   "aibtc_news": {
     "signals": 212,
     "streak": 39,
@@ -24,14 +24,14 @@
         "pool": "Apr30"
       }
     ],
-    "signal_plan": "08:01Z: bitcoin-macro FOMC hold angle; draft at /tmp/signal_fomc_apr30.txt"
+    "signal_plan": "retry bitcoin-macro FOMC at 08:02:30Z"
   },
   "balances": {
     "stx": 6334.68,
     "sbtc_sats": 81287,
     "nonce": 71
   },
-  "next_signal_at": "2026-04-30T08:01:59Z",
+  "next_signal_at": "2026-04-30T08:02:30Z",
   "circuit_breaker": {
     "heartbeat": {
       "fail_count": 0
@@ -53,7 +53,7 @@
   "last_discovery_date": "2026-04-29",
   "fomc_data": {
     "decision": "hold_3.5-3.75pct",
-    "btc_at_announcement": 75902,
+    "btc_apr29_close": 76345,
     "source": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260429a.htm"
   },
   "inbox_skip_until_cycle": 1688,
