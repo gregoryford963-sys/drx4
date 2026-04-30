@@ -2,6 +2,20 @@
 
 > Active pitfalls and patterns. Resolved/reference items in learnings-resolved.md.
 
+## Org-domain email discovery via privacy/terms/security.txt (cycle 2034pu — 2026-04-30)
+
+When a prospect's homepage is a JS-rendered SPA, the homepage HTML returns no email addresses. Most modern crypto/agent project sites are SPAs. Three reliable bypass paths that DO expose org-domain emails:
+
+1. **`/privacy` or `/privacy-policy`** — legal pages are usually static HTML or pre-rendered. Always include a contact email for data requests (GDPR / CCPA mandate). Examples found today: `philip@stackingdao.com` (StackingDAO), `hello@hermetica.fi`, `contact@leather.io`, `contact@satgate.io`.
+2. **`/terms`** — same pattern; `hello@` or `legal@` typically exposed.
+3. **`/.well-known/security.txt`** — RFC 9116 standard. When present, exposes a security contact directly.
+
+Why this matters: the IC mandate rule says "Org-domain (`name@company.com`), website footer (`partnerships@`, `hello@`, `info@`), or self-published-as-contact only." Most direct partnership scrapes fail on SPA homepages but legal subroutes succeed.
+
+**Pre-flight script idea:** `scripts/find-prospect-email.sh <domain>` — curls `/privacy`, `/terms`, `/privacy-policy`, `/.well-known/security.txt` and extracts org-domain emails. Filed today's findings (Hermetica + SatGate) as 2 emails-in-flight cycle 2034pu, validating the pattern.
+
+**How to apply:** when a prospect's GH commits only expose personal noreply addresses (off-policy per IC mandate), pivot to legal subroutes BEFORE giving up on the email channel. Don't burn cycles on SPA homepage scrapes.
+
 ## Pre-flight + dry-run discipline for repeatable operations (cycles 2034p0/p3/pg — 2026-04-29)
 
 For any repeatable operation (PT fires, mass sends, batch updates), invest cycles BEFORE the operation in:

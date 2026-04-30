@@ -3400,11 +3400,12 @@
         "channel": "github",
         "handle": "hermetica-fi",
         "url": "https://github.com/hermetica-fi/hermetica-contracts",
-        "btc_address": null
+        "btc_address": null,
+        "email": "hello@hermetica.fi"
       },
-      "stage": "pitched",
+      "stage": "pitched-via-email",
       "first_touch_at": "2026-04-16T11:21:58Z",
-      "last_touch_at": "2026-04-20T11:49:00Z",
+      "last_touch_at": "2026-04-30T10:02:25Z",
       "touches": [
         {
           "timestamp": "2026-04-16T11:21:58Z",
@@ -3424,6 +3425,13 @@
           "url": "https://github.com/hermetica-fi/hermetica-contracts/issues/189#issuecomment-4280332360",
           "type": "correction",
           "timestamp": "2026-04-20T11:45:28Z"
+        },
+        {
+          "timestamp": "2026-04-30T10:02:25Z",
+          "channel": "email",
+          "direction": "outbound",
+          "url": "resend:012c925f-9d48-4651-903e-835629da7a5d",
+          "summary": "Email re-engage T+10d post-correction. Sent to hello@hermetica.fi (org-domain hello@ from privacy page). Cross-channel reach: GH issue #189 was channel-1; email is channel-2."
         }
       ],
       "bant_plus": {
@@ -3642,11 +3650,12 @@
       "contact": {
         "channel": "github",
         "handle": "SatGate-io/satgate",
-        "btc_address": null
+        "btc_address": null,
+        "email": "contact@satgate.io"
       },
-      "stage": "pitched",
+      "stage": "pitched-via-email",
       "first_touch_at": "2026-04-21T07:05:00Z",
-      "last_touch_at": "2026-04-21T07:05:00Z",
+      "last_touch_at": "2026-04-30T10:02:28Z",
       "touches": [
         {
           "timestamp": "2026-04-21T07:05:00Z",
@@ -3657,6 +3666,13 @@
           "sats_spent": 0,
           "proof_url": "https://github.com/SatGate-io/satgate/issues/41",
           "summary": "First-touch direct pitch on SatGate-io/satgate. 3k sats / 7-day offer, honest distribution disclaimer, JingSwap f4ea75c1 cited as fresh peer proof, calibrated question + clean-decline option. Fired via scripts/fire-draft.sh with lint gate."
+        },
+        {
+          "timestamp": "2026-04-30T10:02:28Z",
+          "channel": "email",
+          "direction": "outbound",
+          "url": "resend:a4bb19f3-1019-4513-9da1-c6c1af28cea4",
+          "summary": "Email re-engage T+9d silent. Sent to contact@satgate.io (org-domain contact@ from privacy + security.txt). Strategic AI-agents-firewall fit; cross-channel from SatGate-io/satgate#41."
         }
       ],
       "bant_plus": {
