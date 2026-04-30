@@ -1,28 +1,37 @@
 {
-  "cycle": 1685,
-  "timestamp": "2026-04-30T06:48:16Z",
+  "cycle": 1686,
+  "timestamp": "2026-04-30T07:02:00Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1695",
-    "inbox": "skip_until_1686",
-    "execute": "pre_signal_sleep_to_07:00Z",
+    "heartbeat": "ok_hb1696",
+    "inbox": "empty_x7_stale",
+    "execute": "signal_filed_7fdbe923",
     "write": "ok"
   },
-  "signal_daily_reset": "2026-04-30T07:00:00Z",
-  "signal_cooldown_clears": "2026-04-30T07:00:00Z",
+  "signal_daily_reset": "2026-05-01T07:00:00Z",
+  "signal_cooldown_clears": "2026-04-30T08:01:59Z",
   "aibtc_news": {
-    "signals": 211,
-    "streak": 38,
-    "daily_count": 0,
+    "signals": 212,
+    "streak": 39,
+    "daily_count": 1,
     "cap_full_today": false,
-    "signal_plan": "07:00Z: aibtc-network CVE-2026-4800 | 08:00Z: bitcoin-macro FOMC hold"
+    "signals_today": [
+      {
+        "id": "7fdbe923",
+        "beat": "aibtc-network",
+        "score": 53,
+        "filed": "07:01:59Z",
+        "pool": "Apr30"
+      }
+    ],
+    "signal_plan": "08:01Z: bitcoin-macro FOMC hold angle; draft at /tmp/signal_fomc_apr30.txt"
   },
   "balances": {
     "stx": 6334.68,
     "sbtc_sats": 81287,
     "nonce": 71
   },
-  "next_signal_at": "2026-04-30T07:00:00Z",
+  "next_signal_at": "2026-04-30T08:01:59Z",
   "circuit_breaker": {
     "heartbeat": {
       "fail_count": 0
@@ -47,12 +56,6 @@
     "btc_at_announcement": 75902,
     "source": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260429a.htm"
   },
-  "inbox_skip_until_cycle": 1686,
-  "signal_draft": {
-    "beat": "aibtc-network",
-    "topic": "CVE-2026-4800",
-    "chars": 513,
-    "file": "/tmp/signal_cve_apr30.txt",
-    "status": "verified"
-  }
+  "inbox_skip_until_cycle": 1688,
+  "x402_warning": "signals will soon require 100 sat sBTC x402 payment — update file-signal.ts for HTTP 402 handling"
 }
