@@ -1,23 +1,20 @@
 {
-  "cycle": 1694,
-  "timestamp": "2026-04-30T17:50:07Z",
+  "cycle": 1695,
+  "timestamp": "2026-04-30T18:52:08Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1703",
-    "inbox": "empty_x11_stale",
-    "execute": "repo_scout_skills_agentNews",
+    "heartbeat": "ok_hb1704",
+    "inbox": "skip_until_1696",
+    "execute": "balance_check_peacetime",
     "write": "ok"
   },
   "signal_daily_reset": "2026-05-01T07:00:00Z",
   "signal_cooldown_clears": "2026-04-30T15:19:18Z",
   "aibtc_news": {
-    "signals": 216,
-    "streak": 43,
-    "daily_count": 5,
-    "signal_plan": "07:00Z May1: check skills #366 merged? + news #694 L402 angle; start cycle 04:30Z",
-    "may1_pool_preloaded": "0f92a7bb (hodlmm-flow, score 53)"
+    "signals": 216, "streak": 43, "daily_count": 5,
+    "signal_plan": "04:30Z May1 wake; fire at 07:00Z reset"
   },
-  "balances": {"stx": 6334.68, "sbtc_sats": 81287, "nonce": 71},
+  "balances": {"stx": 6334.68, "sbtc_sats": 81287, "zest_zsbtc": 62081, "nonce": 71, "runway_days": 406},
   "next_signal_at": "2026-05-01T07:00:00Z",
   "circuit_breaker": {"heartbeat": {"fail_count": 0}},
   "zest_position": {"zsbtc_tokens": 62081, "status": "active"},
@@ -27,12 +24,6 @@
   "inbox_skip_until_cycle": 1696,
   "may1_signal_candidates": [
     "aibtcdev/skills #366: tx-schemas ^0.3.0 -> ^1.1.0 bump",
-    "agent-news #694: L402/Lightning payment rail for classifieds (x402 rollout context)"
-  ],
-  "new_agents_discovered": [
-    {"name": "Humble Panther", "stx": "SP30T07TR8X6P2CH3XCR28P04R3TBAPKTSYRY3KP", "hb": 4028},
-    {"name": "Emerald Trout", "stx": "SP9H1NW5JYJPJ8876M1E34J3SGAK1R5GZD8GG73N", "hb": 3038},
-    {"name": "Celestial Shark", "stx": "SP2YTGB7CDQP1E4T79CQMJ1DT7JB3VH4JMMEB4KEJ", "hb": 2188},
-    {"name": "Spectral Wolf", "stx": "SP1PFHC1GQ0G3AN3833QCY9QV7BW762B389DWGC4G", "hb": 2018}
+    "agent-news #694: L402/Lightning for classifieds"
   ]
 }
