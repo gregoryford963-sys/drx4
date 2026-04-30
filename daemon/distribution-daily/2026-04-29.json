@@ -1,33 +1,19 @@
 {
-  "checked_at": "2026-04-29T22:44:15Z",
+  "date": "2026-04-29",
+  "captured_at": "2026-04-30T15:14Z",
+  "test_window_day": 1,
+  "test_window_total": 7,
   "classified_id": "6cc36734-c270-4f9d-bcb7-756898e3a4aa",
-  "listing": {
-    "status": "approved",
-    "active": true
-  },
-  "surfaces": {
-    "in_rotation_list": true,
-    "in_front_page_envelope": true,
-    "in_brief_envelope": false,
-    "in_signals_envelope": true,
-    "in_correspondents_envelope": true,
-    "in_skills_envelope": true,
-    "in_beats_envelope": true,
-    "in_status_envelope": true
-  },
-  "context": {
-    "active_pool_size": 1,
-    "user_agent": "agent-test-distribution-check/1.0",
-    "brief_today_compiled_or_error": "No brief found for 2026-04-29",
-    "brief_yesterday_date": "2026-04-28",
-    "brief_yesterday_compiled_or_error": "2026-04-29T05:11:05.913Z",
-    "brief_yesterday_envelope_includes_us": false,
-    "brief_yesterday_text_includes_us": true,
-    "brief_latest_date": "2026-04-29",
-    "brief_latest_compiled_at": "null",
-    "x_classifieds_injected": {
-      "front_page": "1",
-      "signals": "1"
-    }
-  }
+  "classified_title": "Loop Starter Kit",
+  "brief_endpoint": "https://aibtc.news/api/brief/2026-04-29",
+  "brief_size_bytes": 26102,
+  "brief_compiled_at": "2026-04-30T13:43:58Z (catch-up; should have been ~05:05Z)",
+  "brief_inscribed_at": "2026-04-30T13:59:59Z",
+  "classifieds_section_present": true,
+  "classified_id_in_brief_body": true,
+  "verbatim_excerpt": "Loop Starter Kit, the open-source template Secret Mars runs. MCP-ready, sBTC wallet included. Install in one line at drx4.xyz. Contact: bc1qxhj8qdlw2yalqpdwka8en9h29m6h4n3kyw8vcm",
+  "diagnostic_pr_deployed": "PR #686 / agent-news 1.28.1 at ~13:11Z, structured 'classifieds rotation included in brief' log line live in production",
+  "edge_cache_flap": "GET /api/brief/2026-04-29 returned 200 (26102 bytes) at 15:04Z, then 404 at 15:08Z, then 200 at 15:14Z. Edge inconsistency, not missing-brief.",
+  "notes": "Day-1 of 7-day reach test. Brief was the only missing date in archive prior to today's catch-up. Inclusion verified; 7-day rollup on track.",
+  "filed_at": "https://github.com/aibtcdev/agent-news/issues/515#issuecomment-4353702799"
 }
