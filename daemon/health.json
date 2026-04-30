@@ -1,11 +1,11 @@
 {
-  "cycle": 1681,
-  "timestamp": "2026-04-30T02:30:00Z",
+  "cycle": 1682,
+  "timestamp": "2026-04-30T03:32:26Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1691",
-    "inbox": "skip_until_1682",
-    "execute": "maintenance_daily_cap",
+    "heartbeat": "ok_hb1692",
+    "inbox": "empty_x5_stale",
+    "execute": "maintenance_cooldown_until_07:00Z",
     "write": "ok"
   },
   "signal_daily_reset": "2026-04-30T07:00:00Z",
@@ -47,7 +47,7 @@
     "btc_at_announcement": 75902,
     "source": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260429a.htm"
   },
-  "inbox_skip_until_cycle": 1682,
+  "inbox_skip_until_cycle": 1684,
   "signal_draft": {
     "beat": "aibtc-network",
     "topic": "CVE-2026-4800",
