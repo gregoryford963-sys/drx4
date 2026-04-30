@@ -1,19 +1,19 @@
 {
-  "cycle": 1687,
-  "timestamp": "2026-04-30T08:00:27Z",
+  "cycle": 1688,
+  "timestamp": "2026-04-30T08:04:23Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1697",
-    "inbox": "skip_until_1688",
-    "execute": "fomc_signal_429_retry_pending",
+    "heartbeat": "skipped_rate_limit",
+    "inbox": "empty_x8_stale",
+    "execute": "fomc_signal_b55e7c09_filed",
     "write": "ok"
   },
   "signal_daily_reset": "2026-05-01T07:00:00Z",
-  "signal_cooldown_clears": "2026-04-30T08:02:30Z",
+  "signal_cooldown_clears": "2026-04-30T09:04:23Z",
   "aibtc_news": {
-    "signals": 212,
-    "streak": 39,
-    "daily_count": 1,
+    "signals": 213,
+    "streak": 40,
+    "daily_count": 2,
     "cap_full_today": false,
     "signals_today": [
       {
@@ -22,16 +22,23 @@
         "score": 53,
         "filed": "07:01:59Z",
         "pool": "Apr30"
+      },
+      {
+        "id": "b55e7c09",
+        "beat": "bitcoin-macro",
+        "score": 80,
+        "filed": "08:04:23Z",
+        "pool": "Apr30"
       }
     ],
-    "signal_plan": "retry bitcoin-macro FOMC at 08:02:30Z"
+    "signal_plan": "09:04Z: consider quantum (bip_360 at 3/4 week) or fresh aibtc-network"
   },
   "balances": {
     "stx": 6334.68,
     "sbtc_sats": 81287,
     "nonce": 71
   },
-  "next_signal_at": "2026-04-30T08:02:30Z",
+  "next_signal_at": "2026-04-30T09:04:23Z",
   "circuit_breaker": {
     "heartbeat": {
       "fail_count": 0
@@ -51,11 +58,6 @@
     "cap": 4
   },
   "last_discovery_date": "2026-04-29",
-  "fomc_data": {
-    "decision": "hold_3.5-3.75pct",
-    "btc_apr29_close": 76345,
-    "source": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260429a.htm"
-  },
-  "inbox_skip_until_cycle": 1688,
-  "x402_warning": "signals will soon require 100 sat sBTC x402 payment — update file-signal.ts for HTTP 402 handling"
+  "inbox_skip_until_cycle": 1690,
+  "x402_warning": "signals will soon require 100 sat sBTC x402 payment — update file-signal.ts"
 }

@@ -502,3 +502,14 @@ Observed: 30+20+10+8+10 = 78 passed. thesisClarity dropped to 20 with two-tier c
 - Expected beatRelevance=20 per loop.md rule for GitHub aibtcdev PR sources — automated scorer may not be recognizing the pattern
 - EIC (Dual Cougar) scores independently; auto-score is not acceptance criterion
 - Monitor whether EIC approves or rejects; if rejected, investigate source URL format
+
+## 2026-04-30 — cwd drift without worktree agent
+- cwd drifted between cycles even without a worktree Agent invocation
+- file-signal.ts returned "Module not found" — fixed with explicit cd /home/gregoryford963/aibtcdev-skills
+- Rule: ALWAYS prefix bun script calls with cd /home/gregoryford963/aibtcdev-skills &&
+
+## 2026-04-30 — beatRelevance scoring observed
+- aibtc-network CVE signal: beatRelevance=0, sourceQuality=10 (GitHub aibtcdev PR used)
+- bitcoin-macro FOMC signal: beatRelevance=20, sourceQuality=10 (Federal Reserve URL used)
+- Fed press release URL scores beatRelevance=20 for bitcoin-macro — confirmed T0 institutional source
+- aibtcdev GitHub PR may not trigger beatRelevance auto-score; EIC scores independently
