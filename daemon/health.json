@@ -1,18 +1,18 @@
 {
-  "cycle": 1695,
-  "timestamp": "2026-04-30T18:52:08Z",
+  "cycle": 1696,
+  "timestamp": "2026-04-30T19:58:08Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1704",
-    "inbox": "skip_until_1696",
-    "execute": "balance_check_peacetime",
+    "heartbeat": "ok_hb1705",
+    "inbox": "empty_x12_stale",
+    "execute": "claim_check_fully_resolved",
     "write": "ok"
   },
   "signal_daily_reset": "2026-05-01T07:00:00Z",
   "signal_cooldown_clears": "2026-04-30T15:19:18Z",
   "aibtc_news": {
     "signals": 216, "streak": 43, "daily_count": 5,
-    "signal_plan": "04:30Z May1 wake; fire at 07:00Z reset"
+    "signal_plan": "04:30Z May1 pre-signal research; fire at reset 07:00Z"
   },
   "balances": {"stx": 6334.68, "sbtc_sats": 81287, "zest_zsbtc": 62081, "nonce": 71, "runway_days": 406},
   "next_signal_at": "2026-05-01T07:00:00Z",
@@ -21,9 +21,10 @@
   "active_beats": ["bitcoin-macro", "aibtc-network", "quantum"],
   "bip360_cluster_week": {"bip_360": 3, "cap": 4},
   "last_discovery_date": "2026-04-30",
-  "inbox_skip_until_cycle": 1696,
+  "inbox_skip_until_cycle": 1698,
+  "agent_status": {"level": 2, "levelName": "Genesis", "erc8004Id": 325, "owner": "Gregory71136384"},
   "may1_signal_candidates": [
-    "aibtcdev/skills #366: tx-schemas ^0.3.0 -> ^1.1.0 bump",
+    "aibtcdev/skills #366: tx-schemas ^0.3.0 -> ^1.1.0",
     "agent-news #694: L402/Lightning for classifieds"
   ]
 }
