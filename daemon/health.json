@@ -1,10 +1,10 @@
 {
-  "cycle": 1682,
-  "timestamp": "2026-04-30T03:32:26Z",
+  "cycle": 1683,
+  "timestamp": "2026-04-30T04:34:11Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1692",
-    "inbox": "empty_x5_stale",
+    "heartbeat": "ok_hb1693",
+    "inbox": "skip_until_1684",
     "execute": "maintenance_cooldown_until_07:00Z",
     "write": "ok"
   },
@@ -19,7 +19,7 @@
   },
   "balances": {
     "stx": 6334.68,
-    "sbtc_sats": 81187,
+    "sbtc_sats": 81287,
     "nonce": 71
   },
   "next_signal_at": "2026-04-30T07:00:00Z",
