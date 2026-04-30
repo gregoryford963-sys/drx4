@@ -1,35 +1,37 @@
 # State -- Inter-Cycle Handoff
-## Cycle 2034q0 — Apr 29 brief catch-up compile + #686 diagnostic logging deployed (worker-side wins)
-cycle: 2034q0
-cycle_goal: Process #689 corrections from whoabuddy. Apr 29 brief catch-up inscribed at 13:59:59Z + classifieds rotation logged at 13:43:58Z + PR #686 1.28.1 ships structured "classifieds rotation included in brief" diagnostic. Verified API state; minor 404 discrepancy logged for next cycle.
+## Cycle 2034q1 — Lightning/L402 strategic move: filed #694 receive ask + re-engaged 2 LN-native prospects
+cycle: 2034q1
+cycle_goal: Operator directive "make proper use of Lightning on aibtc mcp". Lightning client tools shipped via aibtc-mcp-server PR #474 / v1.49.0 (Apr 27). Receive side on /api/classifieds is x402-only. Filed #694 asking publisher to add L402 receive (concrete TAM-expansion case). Re-engaged 2 Lightning-native prospects (p066 ln-mcp + p067 sats4ai-mcp) with the new aibtc-mcp Lightning angle.
 wallet: SP20GPDS5RYB2DV03KG4W08EG6HD11KYPK6FQJE1 · bc1qxhj8qdlw2yalqpdwka8en9h29m6h4n3kyw8vcm · sBTC 6,949 sats · STX 14.99 · BTC 0
 shipped:
-  - **#515 follow-up + correction shipped** at 15:11Z + 15:14Z. First comment reported 404 + 2 candidate reads. Background task that finished after revealed an EARLIER 15:04Z fetch had succeeded (200, 26,102 bytes) with classifiedId `6cc36734` (Loop Starter Kit) verbatim in brief text body. Filed correction at [issuecomment-4353702799](https://github.com/aibtcdev/agent-news/issues/515#issuecomment-4353702799). Day-1 of 7-day reach test = distribution CONFIRMED for Apr 29.
-  - **daemon/distribution-daily/2026-04-29.json captured** with verbatim excerpt + edge-cache-flap analysis (200→404→200). Day 1 data locked into the May 5 rollup.
+  - **agent-news#694 filed** at 15:21Z [issue link](https://github.com/aibtcdev/agent-news/issues/694), 200 verified. Concrete request to add L402 to POST /api/classifieds. Includes prospect-side TAM evidence (p066/p067/p069 all Lightning-native, all silent on x402-stacks pitches), proposed 402-with-both-rails JSON shape, design questions for engineering, commit list of what I'll do once L402 receive ships.
+  - **p066 PraneethGunas/ln-mcp re-engage** [issuecomment-4353855480](https://github.com/PraneethGunas/ln-mcp/issues/1#issuecomment-4353855480), 200 verified. Lightning-on-aibtc-mcp angle, references #474 + #694, offers first-Lightning-classified slot once L402 receive lands. Touch #3, T+7d post touch #2.
+  - **p067 cnghockey/sats4ai-mcp-server re-engage** [issuecomment-4353855643](https://github.com/cnghockey/sats4ai-mcp-server/issues/3#issuecomment-4353855643), 200 verified. Same Lightning angle. Touch #3 T+7d.
+  - **p069 marked duplicate of p057** in pipeline (both = SatGate-io/satgate). Dedup note set.
 observations:
-  - **whoabuddy correction on #689 at 14:44Z**: Apr 29 brief compiled successfully today as catch-up. Worker-logs show `brief inscribed` at 13:59:59Z + `classifieds rotation included in brief` at 13:43:58Z (PR #686 / 1.28.1 deployed ~13:11Z, structured logging now active in production). Apr 29 was the only missing date in archive; recovery path executed.
-  - **Distribution diagnostic infra LIVE**: PR #686 logs the classifieds rotation count per brief compile — direct visibility for #515 (empty-rotation symptom). Critical instrumentation for the May 5 reach data rollup.
-  - **API verification mismatch noted**: `GET /api/brief/2026-04-29` returns 404 "No brief found" at 15:08Z (T+24min after whoabuddy's 200 report). Either cache propagation lag or storage/retrieval split. NOT filing as a bug yet — let it stabilize through next cycle. If 404 persists tomorrow, file as #515-followup.
-  - **Apr 30 PT fires WATERSHED-CLEAR at H+8h04**: presidio#18, x402-agent-tools#1, lib-storage#1 — all open, 0 comments.
-  - **No replies on 10 emails** at T+8h-32h+. End-of-EU-day passed.
-  - **0 #34 acks** at T+9h post-T-2d nudge. No IC will ack today.
-  - **Operator update via TG-equivalent**: replied honestly on "any luck in sales" — 0 new closes this week, JingSwap (last close Apr 21) expired silent renewal, Deep Tess closed-pending-publish T+3d still no POST, 10 emails 0 replies (DMARC blocking), 1 inbound clean-decline today.
+  - **Lightning client landed via PR #474 / v1.49.0 (Apr 27)**: tools `lightning_create/import/unlock/lock/status/fund_from_btc/pay_invoice/create_invoice` + L402 axios auto-pay. Embedded Spark SDK, no API key, self-custodial. Caveat: Spark SDK ~142 MB unpacked.
+  - **Receive side on aibtc.news is x402-only** per llms.txt; #694 fills the gap.
+  - **p066 + p067 are silent T+7d** on x402-stacks pitches — exact TAM expansion case to test once L402 receive ships.
+  - **0 IC ack on #34** at T+9h post-T-2d nudge.
+  - **No replies on 10 emails** at T+8h-32h+.
+  - **Apr 30 PT fires watershed-clear** at H+8h21.
 commitments_outstanding:
-  - **Watch /api/brief/2026-04-29 stabilization** — re-verify next cycle; if still 404 file #515 follow-up
+  - **Watch #694** for publisher response on L402 receive ask
+  - **Watch p066 + p067** for Lightning-angle reply (next 24h)
+  - **Watch /api/brief/2026-04-29 retrieval** stabilization
   - **Watch Gmail/secretmarsagent** for replies on 10 emails in flight
   - **Watch #689** for Publisher response on payment-hold acknowledgment
   - **Watch Robotbot69 PR #1** for cold-pool.json/sync-cold-pool.sh standalone artifact
-  - **Watch #34** for ack from Flash Mantis / Glowing Raptor / Satsmith (T-2d → 2026-05-02T23:59Z)
+  - **Watch #34** for ack from Flash Mantis / Glowing Raptor / Satsmith
   - **Watch arc0btc** for Arc's email test send
-  - **Watch Apr 30 PT fires** at H+24h (Apr 31 07:00Z) for follow-up cadence
+  - **Watch Apr 30 PT fires** at H+24h (Apr 31 07:00Z)
   - **Watch May 1 PT fire window** 07:00Z — fire-queue + dryrun ready
-  - **Watch #664** for Robotbot69 day-2 reach + Publisher DRI appointment
-  - **#666 3k recovery** — Wave 2 P1 triage, operator-action-pending for refund
+  - **Update IC manual + pitch templates** when L402 receive lands on /api/classifieds
   - **Email pivot batch 4** — banked Raiju (p061); pause to age DKIM
   - **p078 BlockRun touch #2** — HOLD
   - **Apr 29 PT fires** silent T+32h
   - **Publish 7-day reach data on #664** when slot expires 2026-05-05T17:57:28Z
-next: ScheduleWakeup 2700s. H+45min, land ~15:55Z. Re-verify /api/brief/2026-04-29 (give cache 90 min to propagate). Watch for any newly arriving signals during US-AM-PT window opening.
+next: ScheduleWakeup 2700s. H+45min, land ~16:09Z. Watch for #694 publisher response (high-value), Lightning-angle reply on p066/p067, US-AM-PT window opens.
 
-this_week_close_target: JingSwap CLOSED · Apr 26-30 PT FIRED 15/15 (Day 13 streak) · #654 cutoff RATIFIED · 7+ learnings logged · EMAIL CHANNEL 10 sends in flight + 1 inbound clean decline · IC EMAIL TRACKER + T-2d mandate nudge SHIPPED · scripts/find-prospect-email.sh tooling SHIPPED · Wave 2 sprint TRIPLE P1 received · ZEST #438 MAINTAINER-FIXED · skills#343 MERGED · Robotbot69 PR #1 standalone path accepted · #477 board refreshed · MAY 1 PT PRE-FLIGHT COMPLETE T-17h45 (15/15 dryrun PASS) · #689 Publisher response shipped · #686 / 1.28.1 classifieds-rotation diagnostic LIVE in production
+this_week_close_target: JingSwap CLOSED · Apr 26-30 PT FIRED 15/15 (Day 13 streak) · #654 cutoff RATIFIED · 7+ learnings logged · EMAIL CHANNEL 10 sends in flight + 1 inbound clean decline · IC EMAIL TRACKER + T-2d mandate nudge SHIPPED · scripts/find-prospect-email.sh tooling SHIPPED · Wave 2 sprint TRIPLE P1 received · ZEST #438 MAINTAINER-FIXED · skills#343 MERGED · Robotbot69 PR #1 standalone path accepted · #477 board refreshed · MAY 1 PT PRE-FLIGHT COMPLETE T-17h45 (15/15 dryrun PASS) · #689 Publisher response shipped · #686 / 1.28.1 classifieds-rotation diagnostic LIVE · Day-1 (Apr 29) reach CONFIRMED · L402 STRATEGIC MOVE: #694 filed + 2 LN-native prospects re-engaged
 close_target_deadline: 2026-05-01T06:59:00Z

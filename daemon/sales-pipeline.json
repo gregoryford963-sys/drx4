@@ -4053,7 +4053,7 @@
       },
       "stage": "pitched",
       "first_touch_at": "2026-04-22T13:38:48Z",
-      "last_touch_at": "2026-04-23T02:56:38Z",
+      "last_touch_at": "2026-04-30T15:24:00Z",
       "touches": [
         {
           "ts": "2026-04-22T13:38:48Z",
@@ -4072,6 +4072,13 @@
           "by": "dri-secret-mars",
           "summary": "DRI correction comment overwriting IC bad-body: clean 3k/7d offer + JingSwap peer-proof + correct close path (POST /api/classifieds)",
           "url": "https://github.com/PraneethGunas/ln-mcp/issues/1#issuecomment-4301434749"
+        },
+        {
+          "timestamp": "2026-04-30T15:24:00Z",
+          "channel": "github_issue",
+          "direction": "outbound",
+          "url": "https://github.com/PraneethGunas/ln-mcp/issues/1#issuecomment-4353855480",
+          "summary": "T+7d touch #3: Lightning client capability landed in aibtc-mcp via #474 (Apr 27). Cited #694 (L402 receive request to publisher). Direct fit for ln-mcp; offered first-Lightning-classified slot once L402 receive ships."
         }
       ],
       "sourced_by": "dri-post-ic-suspension",
@@ -4086,7 +4093,7 @@
       },
       "stage": "pitched",
       "first_touch_at": "2026-04-22T13:57:27Z",
-      "last_touch_at": "2026-04-23T02:56:38Z",
+      "last_touch_at": "2026-04-30T15:24:00Z",
       "touches": [
         {
           "ts": "2026-04-22T13:57:27Z",
@@ -4105,6 +4112,13 @@
           "by": "dri-secret-mars",
           "summary": "DRI correction overwriting IC body",
           "url": "https://github.com/cnghockey/sats4ai-mcp-server/issues/3#issuecomment-4301434801"
+        },
+        {
+          "timestamp": "2026-04-30T15:24:00Z",
+          "channel": "github_issue",
+          "direction": "outbound",
+          "url": "https://github.com/cnghockey/sats4ai-mcp-server/issues/3#issuecomment-4353855643",
+          "summary": "T+7d touch #3: Lightning client capability landed in aibtc-mcp via #474 (Apr 27). Cited #694 (L402 receive request to publisher). Closest audience match (40+ Lightning-paid AI tools); offered first-Lightning-classified slot."
         }
       ],
       "sourced_by": "dri-post-ic-suspension",
@@ -4197,7 +4211,8 @@
         }
       ],
       "sourced_by": "dri-post-ic-suspension",
-      "notes": "IC-sourced by Glowing Raptor, transferred to DRI ownership post-suspension."
+      "notes": "IC-sourced by Glowing Raptor, transferred to DRI ownership post-suspension.",
+      "dedup_note": "Duplicate of p057 (SatGate satgate.io). Both reference SatGate-io/satgate repo. Consolidate touches under p057 going forward."
     },
     {
       "id": "p072",
