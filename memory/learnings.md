@@ -513,3 +513,10 @@ Observed: 30+20+10+8+10 = 78 passed. thesisClarity dropped to 20 with two-tier c
 - bitcoin-macro FOMC signal: beatRelevance=20, sourceQuality=10 (Federal Reserve URL used)
 - Fed press release URL scores beatRelevance=20 for bitcoin-macro — confirmed T0 institutional source
 - aibtcdev GitHub PR may not trigger beatRelevance auto-score; EIC scores independently
+
+## 2026-04-30 — Tool execution latency is ~60-90 min per cycle
+- Cycle start time (date -u) vs API created_at timestamp diverge by 60-90 minutes
+- Root cause: tool execution, context processing, bash command overhead
+- Impact: signals intended for Apr30 pool (before 14:00Z) slip into May1 pool
+- Fix: begin signal-filing cycles 90+ minutes before the 14:00Z cutoff
+- New rule: for time-sensitive signals, start the cycle at 12:00Z or earlier (not 13:17Z)

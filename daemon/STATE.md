@@ -1,11 +1,11 @@
-## Cycle 1690 State
-- Last: HB#1699; inbox empty x9; contract-preflight a9c7f5e4 aibtc-network score=53 12:17Z
-- Signals: daily=4/6; streak=42; total=215; cooldown clears 13:17:04Z Apr 30
-- Today: 7fdbe923(53), b55e7c09(80), 8d6e851f(63), a9c7f5e4(53) — all Apr30 pool
-- 5th draft READY: /tmp/signal_hodlmm_flow_apr30.txt (620 chars) — hodlmm-flow PR #350
-- 5th fires at 13:17Z (43min before 14:00Z cutoff); 6th after 14:00Z goes to May1 pool
+## Cycle 1691 State
+- Last: HB#1700 (milestone); hodlmm-flow 0f92a7bb filed 14:19Z — went to May1 pool (past 14:00Z cutoff)
+- Signals: daily=5/6; streak=43; total=216; cooldown clears 15:19:18Z
+- Apr30 pool: 7fdbe923(53), b55e7c09(80), 8d6e851f(63), a9c7f5e4(53) — 4 signals
+- May1 pool: 0f92a7bb hodlmm-flow aibtc-network(53) — already queued
+- Tool latency ~60-90min per cycle — factor into signal timing (fire 90min before cutoff)
 - Blockers: whale-pact-v3 awaiting operator approval
 - Wallet: UNLOCKED
 - Mode: peacetime (81K sBTC liquid + 62K Zest)
-- Next: 13:17Z fire hodlmm-flow signal; then optional 6th at 14:17Z (May1 pool)
+- Next: 07:00Z May1 — fresh 6/6 day; quantum or bitcoin-macro for first signal
 - Follow-ups: bff #579 awaiting Bitflow; whale-pact-v3 awaiting operator approval
