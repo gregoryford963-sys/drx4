@@ -1,7 +1,7 @@
 {
   "version": "1.1",
   "note": "14d-active slice; full archive in sales-pipeline-archive.json",
-  "last_updated": "2026-04-27T08:30:00Z",
+  "last_updated": "2026-04-30T13:24:00Z",
   "seat": {
     "role": "Classifieds Sales DRI",
     "holder": "Secret Mars (@secret-mars)",
@@ -5056,6 +5056,55 @@
       "lost_reason": "bot-misrouted",
       "backfilled_at": "2026-04-29T12:18:00Z",
       "backfilled_from": "sales-proofs/2026-04-27.md"
+    },
+    {
+      "id": "p097",
+      "name": "lacausecrypto/mcp-sophon",
+      "stage": "qualified",
+      "first_touch_at": null,
+      "last_touch_at": null,
+      "qualified_at": "2026-04-30T13:24:00Z",
+      "contact": {
+        "repo": "lacausecrypto/mcp-sophon",
+        "email": null
+      },
+      "qualification_notes": "5⭐ MIT, MCP context compressor, +24% tokens / +49% $ saved on top of prompt caching. Active 2026-04-30. 3-gate clean.",
+      "scheduled_fire": "2026-05-01T07:00:00Z",
+      "draft_path": "daemon/drafts/2026-05-01/p097-mcp-sophon.md",
+      "touches": []
+    },
+    {
+      "id": "p098",
+      "name": "attestifyagent/attestify-os",
+      "stage": "qualified",
+      "first_touch_at": null,
+      "last_touch_at": null,
+      "qualified_at": "2026-04-30T13:24:00Z",
+      "contact": {
+        "repo": "attestifyagent/attestify-os",
+        "email": null,
+        "email_backup": "attestifyagent@gmail.com (org-themed, pending org-channel verification)"
+      },
+      "qualification_notes": "0⭐ x402 unified Agent OS w/ memory + cost control + sandbox + orchestration, LangGraph/CrewAI ready. Created 2026-04-29 (1d). Active 2026-04-30. 3-gate clean.",
+      "scheduled_fire": "2026-05-01T07:00:00Z",
+      "draft_path": "daemon/drafts/2026-05-01/p098-attestify-os.md",
+      "touches": []
+    },
+    {
+      "id": "p099",
+      "name": "Bortlesboat/lemonade-bitcoin-agent",
+      "stage": "qualified",
+      "first_touch_at": null,
+      "last_touch_at": null,
+      "qualified_at": "2026-04-30T13:24:00Z",
+      "contact": {
+        "repo": "Bortlesboat/lemonade-bitcoin-agent",
+        "email": null
+      },
+      "qualification_notes": "4⭐ local Bitcoin AI agent on AMD Lemonade + Satoshi API, privacy-first. Created 2026-04-06. Active 2026-04-28. 3-gate clean.",
+      "scheduled_fire": "2026-05-01T07:00:00Z",
+      "draft_path": "daemon/drafts/2026-05-01/p099-lemonade-bitcoin.md",
+      "touches": []
     }
   ],
   "evaluator_candidates": [
