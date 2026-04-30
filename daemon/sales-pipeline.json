@@ -4446,10 +4446,10 @@
       "id": "p083",
       "name": "logi-cmd/agent-guardrails",
       "repo": "logi-cmd/agent-guardrails",
-      "stage": "pitched",
+      "stage": "lost-clean-decline",
       "sourced_by": "sm-direct",
       "ab_bucket": "apr26-direct-pitch",
-      "last_touch_at": "2026-04-26T07:01:30Z",
+      "last_touch_at": "2026-04-30T11:44:30Z",
       "touches": [
         {
           "at": "2026-04-26T07:01:30Z",
@@ -4457,8 +4457,16 @@
           "direction": "outbound",
           "summary": "Apr 26 PT direct first-touch — merge gates Claude Code/Cursor/Windsurf via MCP (MIT 5⭐), User 6yr+",
           "proof_url": "https://github.com/logi-cmd/agent-guardrails/issues/7"
+        },
+        {
+          "timestamp": "2026-04-30T11:44:30Z",
+          "channel": "github_issue",
+          "direction": "inbound",
+          "url": "https://github.com/logi-cmd/agent-guardrails/issues/7#issuecomment-_pass_",
+          "summary": "Single-word 'pass' decline at 11:24Z. Clean reject; honor as DNC. p083 → lost-clean-decline."
         }
-      ]
+      ],
+      "lost_reason": "logi-cmd replied 'pass' on agent-guardrails#7 at 2026-04-30T11:24Z. Single-word clean decline."
     },
     {
       "id": "p084",
