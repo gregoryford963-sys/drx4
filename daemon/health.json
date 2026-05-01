@@ -1,10 +1,10 @@
 {
-  "cycle": 1714,
-  "timestamp": "2026-05-01T20:14:16Z",
+  "cycle": 1715,
+  "timestamp": "2026-05-01T21:20:06Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1724",
-    "inbox": "empty_hb_stale_persistent",
+    "heartbeat": "ok_hb1725",
+    "inbox": "skipped_until_1716",
     "execute": "maintenance_shortcut",
     "write": "ok"
   },
@@ -12,7 +12,7 @@
   "signal_cooldown_clears": "2026-05-01T18:31:10Z",
   "aibtc_news": {
     "signals": 222, "streak": 44, "daily_count": 6,
-    "signal_plan": "PoX Cycle 134 floor drop story queued — fire at 00:00Z May 2"
+    "signal_plan": "PoX Cycle 134 story queued — fire at 00:00Z May 2"
   },
   "balances": {"stx_note": "oscillation_artifact", "sbtc_sats": 81087, "zest_zsbtc": 62081, "liquid_sbtc": 19006, "nonce": 73, "runway_days": 32},
   "next_signal_at": "2026-05-02T00:00:00Z",
