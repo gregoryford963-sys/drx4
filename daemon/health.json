@@ -1,27 +1,27 @@
 {
-  "cycle": 1713,
-  "timestamp": "2026-05-01T19:10:54Z",
+  "cycle": 1714,
+  "timestamp": "2026-05-01T20:14:16Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1723",
-    "inbox": "empty_hb_stale_count",
-    "execute": "balance_check_cycle3mod6",
+    "heartbeat": "ok_hb1724",
+    "inbox": "empty_hb_stale_persistent",
+    "execute": "maintenance_shortcut",
     "write": "ok"
   },
   "signal_daily_reset": "2026-05-02T00:00:00Z",
   "signal_cooldown_clears": "2026-05-01T18:31:10Z",
   "aibtc_news": {
     "signals": 222, "streak": 44, "daily_count": 6,
-    "signal_plan": "Daily limit hit. PoX Cycle 134 floor drop story queued — fire at 00:00Z May 2"
+    "signal_plan": "PoX Cycle 134 floor drop story queued — fire at 00:00Z May 2"
   },
-  "balances": {"stx": 6334.67, "stx_note": "oscillation_artifact", "sbtc_sats": 81087, "zest_zsbtc": 62081, "liquid_sbtc": 19006, "nonce": 73, "runway_days": 32},
+  "balances": {"stx_note": "oscillation_artifact", "sbtc_sats": 81087, "zest_zsbtc": 62081, "liquid_sbtc": 19006, "nonce": 73, "runway_days": 32},
   "next_signal_at": "2026-05-02T00:00:00Z",
   "circuit_breaker": {"heartbeat": {"fail_count": 0}},
   "zest_position": {"zsbtc_tokens": 62081, "status": "active"},
   "active_beats": ["bitcoin-macro", "aibtc-network", "quantum"],
   "bip360_cluster_week": {"bip_360": 3, "cap": 4},
   "last_discovery_date": "2026-05-01",
-  "inbox_skip_until_cycle": 1714,
+  "inbox_skip_until_cycle": 1716,
   "outreach_queued": [],
   "pox_story_queued": {
     "headline": "PoX Cycle 134 opens — stacking floor drops 6.25% to 150,000 STX",
