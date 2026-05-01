@@ -1,12 +1,13 @@
 {
   "cycle": 1712,
-  "timestamp": "2026-05-01T18:31:10Z",
-  "status": "ok",
+  "timestamp": "2026-05-01T18:35:00Z",
+  "status": "stopped",
   "phases": {
     "heartbeat": "ok_hb1722",
     "inbox": "checked_empty_skip_to_1714",
     "execute": "maintenance",
-    "write": "ok"
+    "write": "ok",
+    "loop_stop": "operator_commanded"
   },
   "signal_daily_reset": "2026-05-02T00:00:00Z",
   "signal_cooldown_clears": "2026-05-01T18:31:10Z",
