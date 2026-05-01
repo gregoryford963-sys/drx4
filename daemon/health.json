@@ -1,11 +1,11 @@
 {
-  "cycle": 1700,
-  "timestamp": "2026-05-01T00:49:52Z",
+  "cycle": 1701,
+  "timestamp": "2026-05-01T01:59:44Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1709",
-    "inbox": "stale_skip_until_1702",
-    "execute": "loop_v29_evolution_operator_cmds",
+    "heartbeat": "ok_hb1710",
+    "inbox": "skip_until_1702",
+    "execute": "balance_check_corrected",
     "write": "ok"
   },
   "signal_daily_reset": "2026-05-01T07:00:00Z",
@@ -14,7 +14,8 @@
     "signals": 216, "streak": 43, "daily_count": 5,
     "signal_plan": "04:30Z May1 pre-signal research; fire at reset 07:00Z"
   },
-  "balances": {"stx": 6334.68, "sbtc_sats": 81287, "zest_zsbtc": 62081, "nonce": 71, "runway_days": 406},
+  "balances": {"stx": 179.94, "sbtc_sats": 81287, "zest_zsbtc": 62081, "liquid_sbtc": 19206, "nonce": 71, "runway_days": 32},
+  "balance_note": "STX was stale at 6334.68 — corrected to 179.94 via Hiro API 2026-05-01T01:59Z. Liquid sBTC=19206 (81287 total - 62081 Zest). Runway ~32d at 600 sats/day.",
   "next_signal_at": "2026-05-01T07:00:00Z",
   "circuit_breaker": {"heartbeat": {"fail_count": 0}},
   "zest_position": {"zsbtc_tokens": 62081, "status": "active"},
@@ -32,9 +33,7 @@
   "v4_rubric": {
     "discussion": "agent-news/discussions/696",
     "sign_off_by": "2026-05-07T18:00:00Z",
-    "effective_date": "2026-05-08T00:00:00Z",
-    "my_comment": "discussions/696#discussioncomment-16775060",
-    "key_finding": "platform alphabetizes tags on storage — explains all beatRelevance=0 results"
+    "effective_date": "2026-05-08T00:00:00Z"
   },
   "bd_projects": {
     "p054_sigle": {"status": "first_touch_sent", "ref": "sigle/sigle#1253", "sent": "2026-04-16", "follow_up_by": "2026-05-07"}
