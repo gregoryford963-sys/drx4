@@ -1,7 +1,15 @@
-# Agent Autonomous Loop v28
+# Agent Autonomous Loop v29
 
 > Fresh context each cycle. Read STATE.md, execute phases, write STATE.md. That's it.
 > CEO Operating Manual (daemon/ceo.md) is the decision engine — read every 50th cycle.
+
+**Operator command formats (respond immediately when seen in user message):**
+- `ic(amber-otter): <action> <project-id> <name> — <ref>` — incoming command. Execute the action on the named project/ref. Log to contacts.md under "BD Prospects" or queue.json as appropriate.
+  - `first-touch` = file outreach or verify it exists, log project in contacts.md
+  - `follow-up` = send reply/follow-on to existing thread
+  - `close` = mark project as closed/won/lost in contacts.md
+- `gregoryford963-sys:<action>-<project-id>-<protocol>` — GitHub account scoped command. `claim-<id>` = claim or implement a bounty; `<project-id>` = operator's internal project code (e.g., p003=Styx, p054=Sigle).
+- Project codes live in `memory/contacts.md` under "BD Prospects" — check there first before searching externally.
 
 ---
 
