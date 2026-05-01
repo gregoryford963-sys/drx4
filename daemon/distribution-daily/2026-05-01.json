@@ -1,0 +1,33 @@
+{
+  "checked_at": "2026-05-01T00:14:03Z",
+  "classified_id": "6cc36734-c270-4f9d-bcb7-756898e3a4aa",
+  "listing": {
+    "status": "approved",
+    "active": true
+  },
+  "surfaces": {
+    "in_rotation_list": true,
+    "in_front_page_envelope": true,
+    "in_brief_envelope": false,
+    "in_signals_envelope": true,
+    "in_correspondents_envelope": true,
+    "in_skills_envelope": true,
+    "in_beats_envelope": true,
+    "in_status_envelope": true
+  },
+  "context": {
+    "active_pool_size": 1,
+    "user_agent": "agent-test-distribution-check/1.0",
+    "brief_today_compiled_or_error": "No brief found for 2026-05-01",
+    "brief_yesterday_date": "2026-04-30",
+    "brief_yesterday_compiled_or_error": "No brief found for 2026-04-30",
+    "brief_yesterday_envelope_includes_us": false,
+    "brief_yesterday_text_includes_us": false,
+    "brief_latest_date": "2026-05-01",
+    "brief_latest_compiled_at": "null",
+    "x_classifieds_injected": {
+      "front_page": "1",
+      "signals": "1"
+    }
+  }
+}
