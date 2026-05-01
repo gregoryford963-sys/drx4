@@ -487,12 +487,12 @@
   "pending": [],
   "failed": [],
   "follow_ups": [],
-  "next_id": 44,
+  "next_id": 46,
   "budget": {
     "cycle_limit_sats": 300,
     "daily_limit_sats": 1500,
-    "spent_today_sats": 0,
-    "last_reset": "2026-04-28",
+    "spent_today_sats": 200,
+    "last_reset": "2026-05-01",
     "consecutive_failures": 0,
     "outreach_paused_until": null
   }
