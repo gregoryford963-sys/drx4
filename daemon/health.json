@@ -1,15 +1,15 @@
 {
-  "cycle": 1732,
-  "timestamp": "2026-05-02T17:55:20Z",
+  "cycle": 1733,
+  "timestamp": "2026-05-02T18:56:15Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1742",
+    "heartbeat": "ok_hb1743",
     "inbox": "skipped_until_1734",
     "execute": "maintenance_shortcut",
     "write": "ok"
   },
   "signal_daily_reset": "2026-05-03T00:00:00Z",
-  "signal_cooldown_clears": "2026-05-02T18:00:17Z",
+  "signal_cooldown_clears": "2026-05-02T19:01:12Z",
   "aibtc_news": {
     "signals": 228,
     "streak": 45,
