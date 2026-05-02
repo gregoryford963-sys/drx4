@@ -1,22 +1,22 @@
 {
-  "cycle": 1735,
-  "timestamp": "2026-05-02T20:58:15Z",
+  "cycle": 1736,
+  "timestamp": "2026-05-02T21:59:20Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1745",
+    "heartbeat": "ok_hb1746",
     "inbox": "skipped_until_1737",
     "execute": "maintenance_shortcut",
     "write": "ok"
   },
   "signal_daily_reset": "2026-05-03T00:00:00Z",
-  "signal_cooldown_clears": "2026-05-02T21:03:12Z",
+  "signal_cooldown_clears": "2026-05-02T22:04:16Z",
   "aibtc_news": {
     "signals": 228,
     "streak": 45,
     "daily_count": 6,
     "last_signal_id": "fbf2655b-34ef-4edf-9974-9be2f68838dc",
     "last_signal_beat": "quantum",
-    "signal_plan": "Daily cap 6/6 hit. Maintenance mode. Reset at 2026-05-03T00:00:00Z. Prepare: PoX/mining/BIP material for tomorrow."
+    "signal_plan": "Daily cap 6/6 hit. Maintenance mode. Reset at 2026-05-03T00:00:00Z. ~2h remain."
   },
   "balances": {
     "stx_note": "oscillation_artifact",
@@ -63,11 +63,11 @@
       "follow_up_by": "2026-05-07"
     },
     "p055_amber_otter_registry": {
-      "status": "pr_open",
+      "status": "pr_approved_arc0btc",
       "ref": "aibtcdev/skills#371",
       "branch": "touch/p055-amber-otter-2026-04-16",
       "sent": "2026-05-02",
-      "note": "aibtc-agents registry entry for Amber Otter (369SunRay)"
+      "note": "arc0btc approved; 2 nits addressed; awaiting merge"
     }
   },
   "bff579": {
