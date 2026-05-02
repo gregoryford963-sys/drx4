@@ -1,22 +1,22 @@
 {
-  "cycle": 1722,
-  "timestamp": "2026-05-02T04:36:35Z",
+  "cycle": 1723,
+  "timestamp": "2026-05-02T05:47:42Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1732",
-    "inbox": "empty_x9",
-    "execute": "signal_filed_bitcoin-macro_fees-difficulty",
+    "heartbeat": "ok_hb1733",
+    "inbox": "skipped_until_1724",
+    "execute": "signal_filed_quantum_bip361_daily_cap",
     "write": "ok"
   },
   "signal_daily_reset": "2026-05-03T00:00:00Z",
-  "signal_cooldown_clears": "2026-05-02T05:36:35Z",
+  "signal_cooldown_clears": "2026-05-02T06:47:42Z",
   "aibtc_news": {
-    "signals": 227,
+    "signals": 228,
     "streak": 45,
-    "daily_count": 5,
-    "last_signal_id": "9ba0fc57-c730-443c-89fc-3fcbd106b328",
-    "last_signal_beat": "bitcoin-macro",
-    "signal_plan": "1 slot remaining. Next after 05:36Z. Target: quantum (bip361 or hardware). Must file before 14:00Z cutoff."
+    "daily_count": 6,
+    "last_signal_id": "fbf2655b-34ef-4edf-9974-9be2f68838dc",
+    "last_signal_beat": "quantum",
+    "signal_plan": "Daily cap 6/6 hit. Maintenance mode. Reset at 2026-05-03T00:00:00Z. Prepare: PoX/mining/BIP material for tomorrow."
   },
   "balances": {
     "stx_note": "oscillation_artifact",
@@ -26,7 +26,7 @@
     "nonce": 73,
     "runway_days": 32
   },
-  "next_signal_at": "2026-05-02T05:36:35Z",
+  "next_signal_at": "2026-05-03T00:00:00Z",
   "circuit_breaker": {
     "heartbeat": {
       "fail_count": 0
@@ -43,7 +43,8 @@
   ],
   "bip360_cluster_week": {
     "bip360": 1,
-    "cap": 4
+    "cap": 4,
+    "bip361": 1
   },
   "last_discovery_date": "2026-05-02",
   "inbox_skip_until_cycle": 1724,
