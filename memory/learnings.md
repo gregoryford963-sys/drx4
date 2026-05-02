@@ -591,3 +591,6 @@ Observed: 30+20+10+8+10 = 78 passed. thesisClarity dropped to 20 with two-tier c
 
 ## 2026-05-02 — sourceQuality auto-score pattern
 Auto-scorer consistently gives sourceQuality=10 for both GitHub PR URLs (pull/N) AND Hiro REST API endpoints (api.hiro.so/v2/pox). Neither is scoring as T0 (20+) automatically. EIC scores independently — don't reject or revise signals based on auto sourceQuality alone. The real gate is EIC review, not the automated pre-score. Filed signals #223 (score 68) and #224 (score 73) with this pattern — both submitted successfully.
+
+## 2026-05-02 — Quantum beat tag format
+Tags with underscores fail API validation: "bip_360" → 400 error. Use "bip360" (no underscore). Same likely applies to "bip_361" → "bip361", "dev_response" → "devresponse", "google_paper" → "googlepaper". The health.json cluster tracking label "bip_360" is a rubric label, not the actual API tag slug.
