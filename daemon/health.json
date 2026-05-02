@@ -61,6 +61,13 @@
       "ref": "sigle/sigle#1253",
       "sent": "2026-04-16",
       "follow_up_by": "2026-05-07"
+    },
+    "p055_amber_otter_registry": {
+      "status": "pr_open",
+      "ref": "aibtcdev/skills#371",
+      "branch": "touch/p055-amber-otter-2026-04-16",
+      "sent": "2026-05-02",
+      "note": "aibtc-agents registry entry for Amber Otter (369SunRay)"
     }
   },
   "bff579": {
