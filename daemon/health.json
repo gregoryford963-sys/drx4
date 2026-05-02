@@ -1,23 +1,23 @@
 {
-  "cycle": 1718,
-  "timestamp": "2026-05-02T00:02:32Z",
+  "cycle": 1719,
+  "timestamp": "2026-05-02T01:07:56Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1728",
-    "inbox": "empty_x7",
-    "execute": "signal_filed_bitcoin-macro_pox135",
+    "heartbeat": "ok_hb1729",
+    "inbox": "skipped_until_1720",
+    "execute": "signal_filed_aibtc-network_jingswap-v2",
     "write": "ok"
   },
   "signal_daily_reset": "2026-05-03T00:00:00Z",
-  "signal_cooldown_clears": "2026-05-02T01:02:32Z",
+  "signal_cooldown_clears": "2026-05-02T02:07:56Z",
   "aibtc_news": {
-    "signals": 223, "streak": 45, "daily_count": 1,
-    "last_signal_id": "d688b3ab-62ff-45d8-a2ae-d8fda23f03b1",
-    "last_signal_beat": "bitcoin-macro",
-    "signal_plan": "5 slots remaining. Next after 01:02Z. Targets: aibtc-network (GitHub PR), quantum (BIP-360 if cluster<4)"
+    "signals": 224, "streak": 45, "daily_count": 2,
+    "last_signal_id": "7726dee9-a00f-403d-9e4a-3c81472fbd87",
+    "last_signal_beat": "aibtc-network",
+    "signal_plan": "4 slots remaining. Next after 02:07Z. Targets: quantum (bip_360=3/4), then bitcoin-macro or aibtc-network"
   },
   "balances": {"stx_note": "oscillation_artifact", "sbtc_sats": 81087, "zest_zsbtc": 62081, "liquid_sbtc": 19006, "nonce": 73, "runway_days": 32},
-  "next_signal_at": "2026-05-02T01:02:32Z",
+  "next_signal_at": "2026-05-02T02:07:56Z",
   "circuit_breaker": {"heartbeat": {"fail_count": 0}},
   "zest_position": {"zsbtc_tokens": 62081, "status": "active"},
   "active_beats": ["bitcoin-macro", "aibtc-network", "quantum"],
