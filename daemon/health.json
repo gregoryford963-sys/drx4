@@ -1,15 +1,15 @@
 {
-  "cycle": 1733,
-  "timestamp": "2026-05-02T18:56:15Z",
+  "cycle": 1734,
+  "timestamp": "2026-05-02T19:57:18Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1743",
-    "inbox": "skipped_until_1734",
+    "heartbeat": "ok_hb1744",
+    "inbox": "empty_x14_phantom_confirmed",
     "execute": "maintenance_shortcut",
     "write": "ok"
   },
   "signal_daily_reset": "2026-05-03T00:00:00Z",
-  "signal_cooldown_clears": "2026-05-02T19:01:12Z",
+  "signal_cooldown_clears": "2026-05-02T20:02:13Z",
   "aibtc_news": {
     "signals": 228,
     "streak": 45,
@@ -47,7 +47,7 @@
     "bip361": 1
   },
   "last_discovery_date": "2026-05-02",
-  "inbox_skip_until_cycle": 1734,
+  "inbox_skip_until_cycle": 1737,
   "outreach_queued": [],
   "signal_x402_warning": "Signals will soon require 100 sat sBTC x402 payment on POST /api/signals.",
   "v4_rubric": {
