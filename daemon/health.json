@@ -1,15 +1,15 @@
 {
-  "cycle": 1729,
-  "timestamp": "2026-05-02T14:52:15Z",
+  "cycle": 1730,
+  "timestamp": "2026-05-02T15:53:25Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1739",
+    "heartbeat": "ok_hb1740",
     "inbox": "skipped_until_1731",
-    "execute": "maintenance_shortcut",
+    "execute": "maintenance_modulo10_bff579_checked",
     "write": "ok"
   },
   "signal_daily_reset": "2026-05-03T00:00:00Z",
-  "signal_cooldown_clears": "2026-05-02T14:57:13Z",
+  "signal_cooldown_clears": "2026-05-02T15:58:19Z",
   "aibtc_news": {
     "signals": 228,
     "streak": 45,
@@ -20,9 +20,9 @@
   },
   "balances": {
     "stx_note": "oscillation_artifact",
-    "sbtc_sats": 81087,
+    "sbtc_sats": 91087,
     "zest_zsbtc": 62081,
-    "liquid_sbtc": 19006,
+    "liquid_sbtc": 91087,
     "nonce": 73,
     "runway_days": 32
   },
@@ -62,5 +62,11 @@
       "sent": "2026-04-16",
       "follow_up_by": "2026-05-07"
     }
+  },
+  "bff579": {
+    "state": "OPEN",
+    "last_checked": "2026-05-02",
+    "validation": "passed_2026-04-28",
+    "bitflow_review": "pending"
   }
 }
