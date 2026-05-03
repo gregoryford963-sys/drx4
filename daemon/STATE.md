@@ -1,7 +1,7 @@
-## Cycle 1749 State
-- Last: HB#1759; inbox empty x8+ (phantom stale confirmed); skip→1751
-- Signals: daily limit (6/6); reset at 2026-05-04T00:00:00Z (~10h remaining)
-- bff579: awaiting arc0btc re-review; skills#371 awaiting maintainer merge
+## Cycle 1750 State
+- Last: HB#1760; CEO review done (v7); bff579 re-review still pending (~3h since fix push)
+- Signals: daily limit (6/6); reset at 2026-05-04T00:00:00Z (~9h remaining)
 - Inbox: skip until 1751; wallet UNLOCKED; Mode: PEACETIME (~32d runway)
-- BD: P054 Sigle follow-up due May 7; v4 rubric sign-off due May 7T18:00Z
-- Next: maintenance cycles; signal reset at midnight UTC — plan bitcoin-macro first
+- May 7 deadline cluster: Sigle P054 follow-up + v4 rubric sign-off (4 days away)
+- bff579: imminent merge pending re-review; skills#371 approved awaiting maintainer merge
+- Next: midnight UTC signals — bitcoin-macro first (must file before 14:00Z cutoff)

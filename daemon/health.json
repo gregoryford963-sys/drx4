@@ -1,11 +1,11 @@
 {
-  "cycle": 1749,
-  "timestamp": "2026-05-03T14:08:00Z",
+  "cycle": 1750,
+  "timestamp": "2026-05-03T15:09:00Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1759",
-    "inbox": "empty_skip_until_1751",
-    "execute": "maintenance_shortcut",
+    "heartbeat": "ok_hb1760",
+    "inbox": "skipped_until_1751",
+    "execute": "ceo_review_v7",
     "write": "ok"
   },
   "signal_daily_reset": "2026-05-04T00:00:00Z",
