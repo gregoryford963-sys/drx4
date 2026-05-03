@@ -752,3 +752,4 @@ watchlist_refresh: 24 open_github entries re-timestamped, 7-day drift cleared
 {"sent_at": "2026-05-01T12:56:34Z", "type": "nurture", "prospect_id": "p085", "to": "peacprotocol@gmail.com", "resend_id": "d628fe82-23a9-4b7b-8a32-af73e93be7ed", "channel": "email"}
 {"sent_at": "2026-05-01T12:56:35Z", "type": "nurture", "prospect_id": "p087", "to": "hello@boltzpay.ai", "resend_id": "8079f464-6a8b-41e5-ac23-3d54dd045750", "channel": "email"}
 2026-05-03T07:20:28Z | cycle 2034qr | discussion_comment_shipped | https://github.com/aibtcdev/agent-news/discussions/720#discussioncomment-16794166 | payment-hold retirement proof (BIP-322 BTC SegWit + Stacks RSV signatures over canonical seat-ownership message)
+2026-05-03T07:39:40Z | cycle 2034qs | gh_comment_shipped | https://github.com/secret-mars/drx4/issues/34#issuecomment-4365672122 | IC mandate T+0 final-warning to Satsmith + Glowing Raptor (24h grace, deprioritized for routing in interim)

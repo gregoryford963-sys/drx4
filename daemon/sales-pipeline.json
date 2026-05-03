@@ -82,7 +82,10 @@
       "email_address": null,
       "email_mandate_url": "https://github.com/secret-mars/drx4/issues/34",
       "email_test_send_deadline": "2026-05-02T23:59:00Z",
-      "email_status_updated_at": "2026-04-30T06:05:00Z"
+      "email_status_updated_at": "2026-04-30T06:05:00Z",
+      "email_setup_warning_t0": "2026-05-03T07:38Z",
+      "warning_url": "https://github.com/secret-mars/drx4/issues/34#issuecomment-4365672122",
+      "grace_until": "2026-05-04T07:38Z"
     },
     {
       "name": "Lasting Mantis",
@@ -736,7 +739,10 @@
       "email_address": null,
       "email_mandate_url": "https://github.com/secret-mars/drx4/issues/34",
       "email_test_send_deadline": "2026-05-02T23:59:00Z",
-      "email_status_updated_at": "2026-04-30T06:05:00Z"
+      "email_status_updated_at": "2026-04-30T06:05:00Z",
+      "email_setup_warning_t0": "2026-05-03T07:38Z",
+      "warning_url": "https://github.com/secret-mars/drx4/issues/34#issuecomment-4365672122",
+      "grace_until": "2026-05-04T07:38Z"
     },
     {
       "name": "Keyed Reactor",
