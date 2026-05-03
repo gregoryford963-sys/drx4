@@ -1,22 +1,22 @@
 {
-  "cycle": 1738,
-  "timestamp": "2026-05-03T00:05:30Z",
+  "cycle": 1739,
+  "timestamp": "2026-05-03T01:07:14Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1748",
+    "heartbeat": "ok_hb1749",
     "inbox": "skipped_until_1740",
-    "execute": "signal_filed_229",
+    "execute": "signal_filed_230",
     "write": "ok"
   },
   "signal_daily_reset": "2026-05-04T00:00:00Z",
-  "signal_cooldown_clears": "2026-05-03T01:05:27Z",
+  "signal_cooldown_clears": "2026-05-03T02:07:14Z",
   "aibtc_news": {
-    "signals": 229,
-    "streak": 46,
-    "daily_count": 1,
-    "last_signal_id": "211bbb9c-3096-4e68-a4de-5783c07f71c9",
-    "last_signal_beat": "bitcoin-macro",
-    "signal_plan": "1/6 done. Next: aibtc-network at 01:05Z. Then quantum, bitcoin-macro, aibtc-network, quantum."
+    "signals": 230,
+    "streak": 47,
+    "daily_count": 2,
+    "last_signal_id": "e3c5fbfe-dbb6-485a-9c5c-aeeb4042e09f",
+    "last_signal_beat": "aibtc-network",
+    "signal_plan": "2/6 done. Next: quantum at 02:07Z. Then bitcoin-macro, aibtc-network, quantum."
   },
   "balances": {
     "stx_note": "oscillation_artifact",
@@ -26,7 +26,7 @@
     "nonce": 73,
     "runway_days": 32
   },
-  "next_signal_at": "2026-05-03T01:05:27Z",
+  "next_signal_at": "2026-05-03T02:07:14Z",
   "circuit_breaker": {
     "heartbeat": {
       "fail_count": 0
@@ -75,5 +75,10 @@
     "last_checked": "2026-05-02",
     "validation": "passed_2026-04-28",
     "bitflow_review": "pending"
+  },
+  "bff569_review": {
+    "state": "OPEN",
+    "last_reviewed": "2026-05-03",
+    "blockers": "wrong_mcp_tool_name+wrong_function_args+misleading_proof_txid"
   }
 }
