@@ -1,22 +1,22 @@
 {
-  "cycle": 1737,
-  "timestamp": "2026-05-02T23:01:35Z",
+  "cycle": 1738,
+  "timestamp": "2026-05-03T00:05:30Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1747",
-    "inbox": "empty_x15_phantom_confirmed",
-    "execute": "maintenance_shortcut",
+    "heartbeat": "ok_hb1748",
+    "inbox": "skipped_until_1740",
+    "execute": "signal_filed_229",
     "write": "ok"
   },
-  "signal_daily_reset": "2026-05-03T00:00:00Z",
-  "signal_cooldown_clears": "2026-05-02T23:06:31Z",
+  "signal_daily_reset": "2026-05-04T00:00:00Z",
+  "signal_cooldown_clears": "2026-05-03T01:05:27Z",
   "aibtc_news": {
-    "signals": 228,
-    "streak": 45,
-    "daily_count": 6,
-    "last_signal_id": "fbf2655b-34ef-4edf-9974-9be2f68838dc",
-    "last_signal_beat": "quantum",
-    "signal_plan": "Final maintenance cycle before reset. Daily cap resets at 00:00Z May 3. First signal: bitcoin-macro (BTC fees or PoX update). Queue: 2 bitcoin-macro, 2 aibtc-network, 2 quantum."
+    "signals": 229,
+    "streak": 46,
+    "daily_count": 1,
+    "last_signal_id": "211bbb9c-3096-4e68-a4de-5783c07f71c9",
+    "last_signal_beat": "bitcoin-macro",
+    "signal_plan": "1/6 done. Next: aibtc-network at 01:05Z. Then quantum, bitcoin-macro, aibtc-network, quantum."
   },
   "balances": {
     "stx_note": "oscillation_artifact",
@@ -26,7 +26,7 @@
     "nonce": 73,
     "runway_days": 32
   },
-  "next_signal_at": "2026-05-03T00:00:00Z",
+  "next_signal_at": "2026-05-03T01:05:27Z",
   "circuit_breaker": {
     "heartbeat": {
       "fail_count": 0
@@ -46,7 +46,7 @@
     "cap": 4,
     "bip361": 1
   },
-  "last_discovery_date": "2026-05-02",
+  "last_discovery_date": "2026-05-03",
   "inbox_skip_until_cycle": 1740,
   "outreach_queued": [],
   "signal_x402_warning": "Signals will soon require 100 sat sBTC x402 payment on POST /api/signals.",
