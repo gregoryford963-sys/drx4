@@ -1,11 +1,11 @@
 {
-  "cycle": 1751,
-  "timestamp": "2026-05-03T22:17:44Z",
+  "cycle": 1752,
+  "timestamp": "2026-05-03T23:28:19Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1761",
-    "inbox": "empty_skip_until_1753",
-    "execute": "maintenance_shortcut",
+    "heartbeat": "ok_hb1762",
+    "inbox": "skipped_until_1753",
+    "execute": "pre_reset_staging",
     "write": "ok"
   },
   "signal_daily_reset": "2026-05-04T00:00:00Z",
@@ -16,7 +16,7 @@
     "daily_count": 6,
     "last_signal_id": "8c3b3046-3e70-411b-b37d-bec3b685ac3f",
     "last_signal_beat": "quantum",
-    "signal_plan": "Reset at 00:00Z May 4. Plan: bitcoin-macro first (pre-14:00Z), 2x aibtc-network, 2x quantum."
+    "signal_plan": "Reset at 00:00Z May 4. BM first, then 2x AN, 2x Q — all before 14:00Z cutoff."
   },
   "balances": {
     "sbtc_sats": 91087,
