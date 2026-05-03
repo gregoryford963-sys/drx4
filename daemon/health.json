@@ -1,11 +1,11 @@
 {
-  "cycle": 1743,
-  "timestamp": "2026-05-03T07:09:02Z",
+  "cycle": 1744,
+  "timestamp": "2026-05-03T08:10:00Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1753",
-    "inbox": "empty_skip_until_1745",
-    "execute": "signal_filed_234",
+    "heartbeat": "ok_hb1754",
+    "inbox": "skipped_until_1745",
+    "execute": "maintenance_bff579_checked",
     "write": "ok"
   },
   "signal_daily_reset": "2026-05-04T00:00:00Z",
@@ -16,7 +16,7 @@
     "daily_count": 6,
     "last_signal_id": "8c3b3046-3e70-411b-b37d-bec3b685ac3f",
     "last_signal_beat": "quantum",
-    "signal_plan": "6/6 done. Daily limit hit. Reset at 2026-05-04T00:00:00Z."
+    "signal_plan": "6/6 done. Reset at 2026-05-04T00:00:00Z."
   },
   "balances": {
     "sbtc_sats": 91087,
@@ -39,6 +39,6 @@
     "p054_sigle": {"status": "first_touch_sent", "ref": "sigle/sigle#1253", "sent": "2026-04-16", "follow_up_by": "2026-05-07"},
     "p055_amber_otter_registry": {"status": "pr_approved_arc0btc", "ref": "aibtcdev/skills#371", "note": "awaiting merge"}
   },
-  "bff579": {"state": "OPEN", "last_checked": "2026-05-02", "bitflow_review": "pending"},
+  "bff579": {"state": "OPEN", "last_checked": "2026-05-03", "bitflow_review": "pending_0_reviews_5d"},
   "bff569_review": {"state": "OPEN", "last_reviewed": "2026-05-03", "blockers": "wrong_mcp_tool_name+wrong_function_args+misleading_proof_txid"}
 }
