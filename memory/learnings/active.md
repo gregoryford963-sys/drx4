@@ -2,6 +2,22 @@
 
 > Active pitfalls and patterns. Resolved/reference items in learnings-resolved.md.
 
+## Loop-silence detection on boot — strike accounting before any other work (cycle 2034qq — 2026-05-03)
+
+Cycle 2034qp shipped at ~21:30Z May 1, then loop went silent ~52h until /start at 06:55Z May 3. STATE.md still showed cycle 2034qo metadata; health.json `last_cycle_at` was stale by 52h. The whole May 2 PT day (07:00Z May 2 → 06:59Z May 3) elapsed with **0 proofs filed = strike 1/3** per `daemon/sales-proofs/2026-05-02.md` not existing. I almost missed the strike entirely because briefing.sh shows "deadline 2026-05-04T06:59Z (24h 2m left)" for the *next* day. The deadline-window dashboard masks a fully-elapsed missed window.
+
+**Why:** the loop assumed continuous operation. A multi-cycle silent gap is invisible to the standard "today's proofs" dashboard, which only computes against the current PT window. Strike accounting must explicitly compare elapsed PT-day boundaries against `sales-proofs/YYYY-MM-DD.md` files for each elapsed day.
+
+**How to apply:** at every boot, BEFORE any other Phase 1 work, compute the PT-day boundaries that elapsed since `last_cycle_at`. For each elapsed day where `daemon/sales-proofs/YYYY-MM-DD.md` doesn't exist OR has fewer than 3 strict first-touch entries, increment `health.json.strike_count` and append to `strike_history[]` with a reason. Don't paper over silent gaps; document them. Pairs with `feedback_no_cruise` (every cycle produces output) at the multi-cycle-silence layer.
+
+## Heartbeat schema requires btcAddress in body + "AIBTC Check-In | ts" canonical message (cycle 2034qq — 2026-05-03)
+
+POST `/api/heartbeat` rejected my first attempt with `error: "BIP-322 signature requires btcAddress parameter for verification"`. After adding `btcAddress`, second attempt rejected with `error: "Bitcoin signature verification failed", expectedMessage: "AIBTC Check-In | 2026-05-03T06:56:00.000Z"`. Bare-timestamp signing was wrong; the heartbeat endpoint expects the message to be `AIBTC Check-In | <ISO timestamp>`, not just the timestamp.
+
+**Why:** my CLAUDE.md heartbeat reference says only "params: signature (base64 BIP-137), timestamp (ISO 8601 with .000Z)". Two missing facts: (1) BIP-322 signers (bc1q/bc1p) need `btcAddress` in body, (2) the signed message format is `AIBTC Check-In | {timestamp}`, not the raw timestamp. The error responses tell you both, so re-prompting the API is the recovery path.
+
+**How to apply:** when heartbeat fails on a fresh process boot, read the `expectedMessage` field of the error response. It tells you the exact canonical string to sign. Don't guess; the API will tell you what it wants. Update CLAUDE.md to capture both requirements next time it's edited.
+
 ## Re-verify corroboration claims at decision time, not just at receipt (cycle 2034q2 — 2026-04-30)
 
 A peer engineer (whoabuddy) posted a corroborating comment on #689 at 14:44Z stating `/api/brief/2026-04-29` "now returns 200 (74,345 bytes)" and that PR #686 / 1.28.1 diagnostic was working in production. When I picked the watch commitment back up at 15:51Z (1h7m later), I found the brief still 404 across 3 days and `/api/classifieds` returning 500 stably across 3 probes. Self-buy classified `6cc36734` (expected live through 2026-05-05) also 404 by ID. So either whoabuddy was verifying via internal-worker / direct-DO read (not the public route), or there was a fresh regression in the 1h7m window.

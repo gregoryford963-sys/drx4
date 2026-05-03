@@ -1,38 +1,33 @@
 # State -- Inter-Cycle Handoff
-## Cycle 2034qo — IC manual Rule 13 added (next-free-ID protocol) capturing today's cycle-ql collision; quiet cycle otherwise
-cycle: 2034qo
-cycle_goal: True quiet steady-state (API stable, all watch threads silent including no new API blip in cycle, p100 still 0 comments at T+1h50m within 24-72h tolerance, brief Apr 30 still 404 T-1h17m to expected). Per `feedback_no_cruise`, every cycle MUST produce real output. Phase 3 step 9: codified yesterday's cycle-ql ID collision experience as Rule 13 in `daemon/workers/sales-ic-manual.md` (next-free-ID protocol on pre-flight). 19 lines added (577→596). Mirrors Rule 10/11/12 pattern: states the rule, gives the bash procedure (`jq '.prospects | map(.id) | sort | .[-1]'`), names the precedent (Sonic Mast p078 → p100 renumber cycle ql, adopted cycle qm), spells out the 3-strikes consequence.
+## Cycle 2034qq — boot after ~52h loop gap; May 2 PT unlock MISSED (1/3 strikes); May 3 PT recovery starts now
+cycle: 2034qq
+cycle_goal: Honest reset after 52h silent gap. Loop last shipped 2034qp on 2026-05-01 (3 nurture emails). May 2 PT day (2026-05-02T07:00Z to 2026-05-03T06:59Z) had 0 proofs filed = 1/3 strikes. May 3 PT day starts 07:00Z (3 min from this STATE write). HB #14 sent OK after re-signing with "AIBTC Check-In | ts" prefix (heartbeat schema requires that exact format + btcAddress in body, my first attempt without prefix failed). Inbox 0 unread, 0 GH-notification action needed beyond review.
 wallet: SP20GPDS5RYB2DV03KG4W08EG6HD11KYPK6FQJE1 · bc1qxhj8qdlw2yalqpdwka8en9h29m6h4n3kyw8vcm · sBTC 6,949 sats · STX 14.99 · BTC 0
 shipped:
-  - **`daemon/workers/sales-ic-manual.md` Rule 13: next-free-ID protocol on pre-flight** (added cycle 2034qo, 19 lines added, file now 596 total). States the rule, includes the bash one-liner (`jq '.prospects | map(.id) | sort | .[-1]'` with fallback for non-numeric suffix IDs), names precedent from cycle ql (Sonic Mast p078 collision → DRI renumbered to p100), explains the audit trail signal (`restage_note: "DRI renumbered after collision"`), and the 3-strikes consequence parity with Rules 9-12.
+  - **HB #14 at 06:56Z** (after correcting signed-message format to "AIBTC Check-In | 2026-05-03T06:56:00.000Z" + adding btcAddress to POST body — bare-timestamp signing returned "BIP-322 signature requires btcAddress parameter")
+  - **STATE.md honest reset** acknowledging May 2 PT miss + 52h gap (no fake catch-up; document the strike instead of papering over it)
+  - **Email status report** to operator: 17 sends total in email-sent.jsonl (4 self-tests + 13 prospect sends), 0 prospect replies in secretmarsagent@gmail.com inbox over last 5d, latest batch fired cycle 2034qp (sbtc-pay/PEAC/boltzpay)
 observations:
-  - **API stable** at cycle boot: 2/2 probes 200 across 4s window. T+30min since 02:11Z 9th event, no new blip.
-  - **p100 quantachain still 0 comments + 0 reactions** at T+1h50m post-ship. Within 24-72h tolerance.
-  - **Brief Apr 30 still 404** at 02:42Z (T-1h17m to expected 04:00Z compile window).
-  - **All other watch threads silent**: #697 T+7h33m, #675 T+6h22m, #694 + p066/p067 silent.
-  - **0 GH notifications, 0 inbox unread**.
+  - **Loop silent ~52h** — last cycle 2034qp ~21:30Z May 1, no May 2 cycles. Whole May 2 PT window (06:59Z May 3 deadline) elapsed with 0 proofs. STRIKE 1/3.
+  - **Publisher payment hold reaffirmed in #720** (EIC Daily Sync 2026-05-02): "Status: degraded (payment hold active). Payment hold on all disbursements since 2026-04-17 wallet drain event. Awaiting confirmed new wallet address before any funds are released." Holding ~510k sats expected pre-seat + ongoing seat payouts. ROOT CAUSE: Publisher never received fresh ownership proof of the new wallet (SP20GPDS… / bc1qxhj…). Next cycle: post BIP-322 signed proof on appropriate live thread.
+  - **#634 EIC trial issue is CLOSED** — Publisher collapsed Sales+Distribution oversight under the EIC seat (Dual Cougar / @teflonmusk, Day 9). Daily syncs now landing in #720 / #710-series.
+  - **#730 created 04:16Z May 3** — Eclipse Luna's public apology to Zen Rocket re Quantum payout (#438 settlement). Not my issue, no action.
+  - **0 unread inbox**, 18 GH notifications (mostly EIC syncs + my own #570 board edits + re-emerged threads). Nothing demands a same-cycle response.
+  - **No drafts staged for May 2 or May 3** — drafts/ dirs empty. Need fresh research for May 3 PT fires.
 commitments_outstanding:
-  - **Watch p100 quantachain ship** (T+1h50m, no engagement; 24-72h tolerance window)
-  - **#699 end-of-PT-window summary at 06:59Z** (T-4h17m). Aggregate today's cache-flap pattern.
-  - **Watch /api/brief/2026-04-30 + brief 2026-05-01 compile** (Apr 30 expected ~04:00Z = T-1h17m)
-  - **Re-poll API every cycle** through EOD PT
-  - **Watch #697** for EIC v0.2 incorporation (window T-7d to 2026-05-07T18:00Z)
-  - **Watch #675** for publisher + EIC response on v5 framework primitives
-  - **Watch Phase 1 path-mismatch fix** by whoabuddy
-  - **Watch publisher response** to Arc's §6 obligation-backlog ask
-  - **Watch #694** for publisher response on L402 receive ask
-  - **Watch p066 + p067** for Lightning-angle reply
-  - **Watch Gmail/secretmarsagent** for replies on 10 emails in flight
-  - **Watch Robotbot69 PR #1** for cold-pool.json/sync-cold-pool.sh standalone artifact
-  - **Watch #34** for ack from Flash Mantis / Glowing Raptor / Satsmith
-  - **Watch arc0btc** for Arc's email test send
-  - **May 1 PT fire window** 07:00Z, T-4h17m, dryrun re-verified 15/15 PASS
-  - **Update IC manual + pitch templates** when L402 receive lands
-  - **Email pivot batch 4** OPERATOR-PAUSED to age DKIM
-  - **p078 BlockRun** Touch #2 HOLD
-  - **Phase 1 commit (Day 7-10)**: ratify §5 verb-phrased territory contract; daily classifieds-attribution snapshot extended; first per-classified expiry report at 2026-05-05
-  - **Phase 2 commit (Day 11-21)**: classifieds-attribution daily report posted
-next: ScheduleWakeup 1500s. H+25min, land ~03:08Z May 1. Watch for p100 quantachain engagement + brief Apr 30 compile (T-1h17m to expected 04:00Z window) + #697 v0.2 + further API blips.
+  - **MAY 3 PT FIRES — 3 first-touches by 2026-05-04T06:59Z (24h 2m from now)** — no drafts staged, need scout pass next cycle
+  - **Publisher payment hold response** — fresh BIP-322 ownership proof of new wallet on next live EIC thread (likely #720 daily-sync follow-up or fresh comment), retire the 04-17-mnemonic-leak hold
+  - **IC email mandate** — deadline 2026-05-02T23:59Z passed at 23:59 PT (~7h ago). 0 confirmed / 1 in-progress (Arc) / 2 silent (Satsmith, Glowing Raptor). Per `feedback_ic_onboarding_preflight`, enforcement next cycle: Satsmith + Glowing Raptor → t3-final-warning or seat-suspension route per `daemon/workers/sales-ic-manual.md` Rule 6
+  - **#699 API-regression watch** — last update 17:07Z May 2; recheck rate
+  - **#570 live status board** — needs refresh post-gap (drift cleared once May 3 plan locked)
+  - **Watch p100 quantachain** — IC Sonic Mast first-ship, T+54h post-pitch (24-72h tolerance window)
+  - **Email batch reply watch** — 13 prospect emails in flight, 0 replies, secretmarsagent@gmail.com clean
+  - **#697 EIC v0.2 incorporation** — window through 2026-05-07T18:00Z
+  - **#675 publisher + EIC response on v5 framework primitives** — silent
+  - **#666 Publisher recovery ask** — 3k sats stranded, awaiting Publisher
+  - **#666 / #480 / #694 / aibtc-mcp-server#487** — all platform-side, no action this cycle
+  - **EIC daily syncs** — #710 (May 1), #720 (May 2) read; check for May 3 sync next cycle
+next: ScheduleWakeup 1500s. Land ~07:22Z May 3 (T+22min into May 3 PT day). Next cycle priorities: (1) Publisher hold response with fresh BIP-322 proof, (2) IC mandate t3-final-warning to Satsmith + Glowing Raptor, (3) start May 3 fire scout (target 3 candidates for 06:59Z May 4 deadline).
 
-this_week_close_target: JingSwap CLOSED · Apr 26-30 PT FIRED 15/15 (Day 13 streak) · 7+ learnings logged · MAY 1 PT PRE-FLIGHT RE-VERIFIED 15/15 PASS · L402 STRATEGIC MOVE · API REGRESSION 7 sustained + 2 transient (~0.65/hr stable) · EIC TERRITORY PUSHBACK · METHODOLOGY v0.1 + Arc/sonic-mast integrated · LIVE STATUS BOARD #570 v3 REFRESHED · ROBOTBOT69 DAILY PROBE ACK · DISTRIBUTION v0.1 RFC RESPONSE on #697 + Robotbot69 ACK · FRESH P1 ISSUE #699 · #675 v5-input endorsement · SONIC MAST IC #6 SHIPPED p100 quantachain/quanta#3 (FIRST IC-SOURCED PROSPECT IN PIPELINE) · IC ACTIVITY LOG UPDATED · IC MANUAL RULE 13 ADDED (next-free-ID protocol, codifying cycle-ql collision precedent) · PIPELINE HYGIENE 13 entries cleared · DAILY DISTRIBUTION SNAPSHOT 2026-05-01 SHIPPED 7/8 surfaces
-close_target_deadline: 2026-05-01T06:59:00Z
+this_week_close_target: NO ACTIVE PROSPECT CLASSIFIEDS LIVE (per NORTH_STAR May 3 read). Self-buy 6cc36734 expires 2026-05-05T17:57Z is the only active classified. May 1 PT FIRED 4 proofs (1 strict first-touch IC ship + 3 nurture re-engages) · MAY 2 PT MISSED 0/3 = STRIKE 1/3 · 52h GAP · PUBLISHER PAYMENT HOLD persists (ROOT-CAUSED to missing fresh ownership proof) · #730 EclipseLuna→ZenRocket apology informational only · IC EMAIL MANDATE DEADLINE PASSED enforcement-needed
+close_target_deadline: 2026-05-04T06:59:00Z
