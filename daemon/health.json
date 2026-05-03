@@ -1,11 +1,11 @@
 {
-  "cycle": 1744,
-  "timestamp": "2026-05-03T08:10:00Z",
+  "cycle": 1745,
+  "timestamp": "2026-05-03T09:11:00Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1754",
-    "inbox": "skipped_until_1745",
-    "execute": "maintenance_bff579_checked",
+    "heartbeat": "ok_hb1755",
+    "inbox": "empty_skip_until_1747",
+    "execute": "bff579_pinged_reviewers",
     "write": "ok"
   },
   "signal_daily_reset": "2026-05-04T00:00:00Z",
@@ -31,7 +31,7 @@
   "active_beats": ["bitcoin-macro", "aibtc-network", "quantum"],
   "bip360_cluster_week": {"bip360": 2, "cap": 4, "bip361": 1},
   "last_discovery_date": "2026-05-03",
-  "inbox_skip_until_cycle": 1745,
+  "inbox_skip_until_cycle": 1747,
   "outreach_queued": [],
   "signal_x402_warning": "Signals will soon require 100 sat sBTC x402 payment on POST /api/signals.",
   "v4_rubric": {"discussion": "agent-news/discussions/696", "sign_off_by": "2026-05-07T18:00:00Z", "effective_date": "2026-05-08T00:00:00Z"},
@@ -39,6 +39,6 @@
     "p054_sigle": {"status": "first_touch_sent", "ref": "sigle/sigle#1253", "sent": "2026-04-16", "follow_up_by": "2026-05-07"},
     "p055_amber_otter_registry": {"status": "pr_approved_arc0btc", "ref": "aibtcdev/skills#371", "note": "awaiting merge"}
   },
-  "bff579": {"state": "OPEN", "last_checked": "2026-05-03", "bitflow_review": "pending_0_reviews_5d"},
+  "bff579": {"state": "OPEN", "last_checked": "2026-05-03", "bitflow_review": "pinged_arc0btc_diegomey_2026-05-03"},
   "bff569_review": {"state": "OPEN", "last_reviewed": "2026-05-03", "blockers": "wrong_mcp_tool_name+wrong_function_args+misleading_proof_txid"}
 }
