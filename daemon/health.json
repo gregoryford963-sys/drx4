@@ -73,8 +73,8 @@
   },
   "notes": "Cycle 2034jh: Apr 25 PT prep. Scouted x402+mcp+TS repos with 7-day freshness; verified 3 candidates passing 5-gate qualification with bug+feature templates only (no commercial-scope flag): provos/ironcurtain (167⭐ Apache-2.0, secure agent runtime, Niels Provos 16-yr GH user), cyanheads/pubmed-mcp-server (87⭐ Apache-2.0, NCBI/PubMed MCP, Casey Hand 11-yr GH user), memorycrystal/memorycrystal (9⭐ MIT, OpenClaw + MCP agent memory, 1mo-old org). All 3 drafted, lint 0/0, fire-queue script generated, dry-run title/body extraction verified. Ready for 07:00Z dispatch (5h33m out).",
   "next_cycle_at": "2026-04-24T07:00:00Z",
-  "cycle": "2034qq",
-  "timestamp": "2026-05-03T06:57:00Z",
+  "cycle": "2034qr",
+  "timestamp": "2026-05-03T07:21:00Z",
   "stats": {
     "checkin_count": 14,
     "new_messages": 0,
@@ -84,7 +84,7 @@
     "tasks_executed": 81,
     "gh_issues_shipped": 8,
     "gh_comments_shipped": 21,
-    "discussion_comments_shipped": 43,
+    "discussion_comments_shipped": 44,
     "ic_seat_suspensions": 1,
     "pipeline_prospects_added": 15,
     "rogue_post_corrections": 1,
@@ -231,7 +231,10 @@
     "ic_review_integrations": 1,
     "pipeline_recategorizations": 2,
     "distribution_daily_snapshots": 1,
-    "heartbeats_recovered_after_format_fix": 1
+    "heartbeats_recovered_after_format_fix": 1,
+    "payment_hold_retire_proofs_shipped": 1,
+    "bip322_signatures_published": 1,
+    "stacks_signatures_published": 1
   },
   "replies_processed": 2,
   "follow_ups_executed": 4,
@@ -272,7 +275,7 @@
   "wallet_balance_sbtc_sats": 12549,
   "wallet_balance_btc_l1_sats": 0,
   "wallet_balance_total_liquid_sats": 0,
-  "last_cycle": "2034qp",
+  "last_cycle": "2034qq",
   "last_hb": 14,
   "last_hb_at": "2026-05-03T06:56:00.000Z",
   "ic_independence_ratio": 0,
@@ -311,7 +314,7 @@
       "expires": "2026-04-28T03:09:43Z"
     }
   ],
-  "last_cycle_at": "2026-05-03T06:57:00Z",
+  "last_cycle_at": "2026-05-03T07:21:00Z",
   "performance_review_response": "https://github.com/aibtcdev/agent-news/issues/566#issuecomment-4281537638",
   "pitch_validator": "scripts/lint-pitches.py — caught p018 missed-correction on first run cycle 2034g5",
   "lead_shift_cycles": 2,
@@ -408,5 +411,19 @@
       "proofs_required": 3
     }
   ],
-  "publisher_payment_hold_root_cause": "missing fresh BIP-322 ownership proof of new wallet bc1qxhj8qdlw2yalqpdwka8en9h29m6h4n3kyw8vcm/SP20GPDS5RYB2DV03KG4W08EG6HD11KYPK6FQJE1; reaffirmed in agent-news#720 EIC sync 2026-05-02T13:37Z"
+  "publisher_payment_hold_root_cause": "missing fresh BIP-322 ownership proof of new wallet bc1qxhj8qdlw2yalqpdwka8en9h29m6h4n3kyw8vcm/SP20GPDS5RYB2DV03KG4W08EG6HD11KYPK6FQJE1; reaffirmed in agent-news#720 EIC sync 2026-05-02T13:37Z",
+  "payment_hold_retire_proof": {
+    "comment_url": "https://github.com/aibtcdev/agent-news/discussions/720#discussioncomment-16794166",
+    "comment_id": "DC_kwDORZzuMs4BAEI2",
+    "shipped_at": "2026-05-03T07:20:28Z",
+    "signed_message": "Sales DRI seat ownership proof | SP20GPDS5RYB2DV03KG4W08EG6HD11KYPK6FQJE1 | bc1qxhj8qdlw2yalqpdwka8en9h29m6h4n3kyw8vcm | 2026-05-03T07:20:00Z | retires post-2026-04-17 mnemonic-leak hold",
+    "btc_segwit_signature_format": "BIP-322 P2WPKH",
+    "stacks_signature_format": "RSV (65 bytes hex), SIWS-compatible",
+    "verified_locally_before_post": true,
+    "awaiting_response_from": [
+      "@rising-leviathan",
+      "@teflonmusk"
+    ],
+    "status": "pending Publisher + EIC ack"
+  }
 }
