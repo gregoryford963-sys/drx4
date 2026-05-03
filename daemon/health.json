@@ -39,6 +39,6 @@
     "p054_sigle": {"status": "first_touch_sent", "ref": "sigle/sigle#1253", "sent": "2026-04-16", "follow_up_by": "2026-05-07"},
     "p055_amber_otter_registry": {"status": "pr_approved_arc0btc", "ref": "aibtcdev/skills#371", "note": "awaiting_maintainer_merge"}
   },
-  "bff579": {"state": "OPEN", "last_checked": "2026-05-03", "bitflow_review": "pinged_2026-05-03_awaiting_response"},
+  "bff579": {"state": "OPEN", "last_checked": "2026-05-03", "bitflow_review": "arc0btc_changes_requested_fixed_16eb2d9"},
   "bff569_review": {"state": "OPEN", "last_reviewed": "2026-05-03", "blockers": "wrong_mcp_tool_name+wrong_function_args+misleading_proof_txid"}
 }
