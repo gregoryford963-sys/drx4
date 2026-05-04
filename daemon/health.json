@@ -88,8 +88,8 @@
   "bff569_review": {
     "state": "OPEN",
     "last_reviewed": "2026-05-04",
-    "blockers": "wrong_mcp_tool_name+wrong_function_args+misleading_proof_txid",
+    "blockers": "none",
     "our_comment": "issuecomment-4374116340",
-    "status": "blockers_resolved_output_clarity_flagged_not_blocking"
+    "status": "APPROVED_by_gregoryford963-sys"
   }
 }
