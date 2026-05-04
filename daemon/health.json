@@ -53,7 +53,9 @@
     "discussion": "agent-news/discussions/696",
     "sign_off_by": "2026-05-07T18:00:00Z",
     "effective_date": "2026-05-08T00:00:00Z",
-    "our_comment": "16798545"
+    "our_comment": "16798545",
+    "our_comment_2": "16809062",
+    "timeliness_age_hint": "supported_with_6slot_evidence_may4"
   },
   "bd_projects": {
     "p054_sigle": {
