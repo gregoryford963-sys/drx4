@@ -3500,9 +3500,9 @@
         "url": "https://github.com/stacks-sbtc/sbtc",
         "btc_address": null
       },
-      "stage": "pitched",
+      "stage": "lost",
       "first_touch_at": "2026-04-21T07:00:00Z",
-      "last_touch_at": "2026-04-21T07:00:00Z",
+      "last_touch_at": "2026-05-04T19:57:46Z",
       "touches": [
         {
           "timestamp": "2026-04-21T07:00:00Z",
@@ -3513,6 +3513,13 @@
           "sats_spent": 0,
           "proof_url": "https://github.com/stacks-sbtc/sbtc/issues/2019",
           "summary": "First-touch direct pitch on stacks-sbtc/sbtc. 3k sats / 7-day offer, honest distribution disclaimer, JingSwap f4ea75c1 cited as fresh peer proof, calibrated question + clean-decline option. Fired via scripts/fire-draft.sh with lint gate."
+        },
+        {
+          "ts": "2026-05-04T19:57:46Z",
+          "channel": "github_issue",
+          "direction": "inbound",
+          "url": "https://github.com/stacks-sbtc/sbtc/issues/2019#issuecomment-4374037414",
+          "summary": "Polite decline: issue tracker is for dev tasks, not classifieds."
         }
       ],
       "bant_plus": {
@@ -3531,7 +3538,10 @@
       "do_not_contact": false,
       "surveyed_at": "2026-04-16T11:58:06Z",
       "survey_source": "Phase 1.5 Stacks infra/wallets rotation",
-      "queued_for_next_cold_slot": true
+      "queued_for_next_cold_slot": true,
+      "lost_at": "2026-05-04T19:57:46Z",
+      "lost_reason": "declined-channel-mismatch",
+      "lost_notes": "djordon-stacks: issue tracker is for sBTC dev tasks, not classifieds. Polite redirect."
     },
     {
       "id": "p053",
