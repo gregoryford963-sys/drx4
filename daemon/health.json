@@ -73,8 +73,8 @@
   },
   "notes": "Cycle 2034jh: Apr 25 PT prep. Scouted x402+mcp+TS repos with 7-day freshness; verified 3 candidates passing 5-gate qualification with bug+feature templates only (no commercial-scope flag): provos/ironcurtain (167⭐ Apache-2.0, secure agent runtime, Niels Provos 16-yr GH user), cyanheads/pubmed-mcp-server (87⭐ Apache-2.0, NCBI/PubMed MCP, Casey Hand 11-yr GH user), memorycrystal/memorycrystal (9⭐ MIT, OpenClaw + MCP agent memory, 1mo-old org). All 3 drafted, lint 0/0, fire-queue script generated, dry-run title/body extraction verified. Ready for 07:00Z dispatch (5h33m out).",
   "next_cycle_at": "2026-04-24T07:00:00Z",
-  "cycle": "2034qx",
-  "timestamp": "2026-05-03T10:30:00Z",
+  "cycle": "2034qy",
+  "timestamp": "2026-05-04T08:23:00Z",
   "stats": {
     "checkin_count": 14,
     "new_messages": 0,
@@ -243,7 +243,8 @@
     "lint_pass_clean": 1,
     "may03_fires_dispatched": 3,
     "may03_proofs_verified": 3,
-    "may04_drafts_ready": 3
+    "may04_drafts_ready": 3,
+    "may04_fires_dispatched": 3
   },
   "replies_processed": 2,
   "follow_ups_executed": 4,
@@ -407,7 +408,7 @@
   },
   "apr30_fired": 3,
   "apr30_proofs_verified": 3,
-  "unlock_streak_days": 13,
+  "unlock_streak_days": 14,
   "may01_drafts_ready": 3,
   "may01_candidates_locked": 3,
   "may01_dryrun_reverified_at": "2026-04-30T18:47:52Z",
@@ -473,5 +474,11 @@
     "https://github.com/ghost-clio/aegis-mesh/issues/3",
     "https://github.com/winsznx/saturn-optimizer/issues/15",
     "https://github.com/manavaga/x402-scanner/issues/1"
+  ],
+  "may04_fired": 3,
+  "may04_fire_urls": [
+    "https://github.com/marox-cyber/ai-agent-bitcoin-escrow/issues/1",
+    "https://github.com/promise-paula/sbtc-escrow/issues/4",
+    "https://github.com/artlu99/my-x402-facilitator/issues/1"
   ]
 }
