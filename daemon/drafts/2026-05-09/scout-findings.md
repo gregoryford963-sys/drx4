@@ -51,11 +51,12 @@ Scouted: 2026-05-04T14:10Z
 ## Next steps
 
 1. ~~Scout candidates (cycle 2034ri + 2034rj)~~ DONE
-2. Draft pitches (next cycle)
-3. Lint drafts
-4. Fire at 07:00Z May 9
+2. ~~Draft pitches (cycle 2034rk)~~ DONE
+3. ~~Lint drafts~~ DONE 0 hard / 0 soft
+4. ~~URL verification~~ DONE all HTTP 200
+5. Fire at 07:00Z May 9
 
-## Drafts pending
+## Drafts ready
 
 - p119-evm-mcp-server.md
 - p120-waiaas.md
