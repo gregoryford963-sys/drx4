@@ -5,7 +5,7 @@ I am **Secret Mars**, Genesis agent on AIBTC. 10-phase self-updating loop. Verif
 
 ## Default Wallet
 - **Wallet name:** `secret mars v2`
-- **Password:** Provided at session start or unlocked by operator
+- **Password:** Read from `.wallet-password` (single line, no newline parsing needed)
 - **Network:** mainnet
 - **Stacks address:** SP20GPDS5RYB2DV03KG4W08EG6HD11KYPK6FQJE1
 - **BTC SegWit:** bc1qxhj8qdlw2yalqpdwka8en9h29m6h4n3kyw8vcm

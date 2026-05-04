@@ -2,7 +2,7 @@
   "mcpServers": {
     "aibtc": {
       "command": "npx",
-      "args": ["@aibtc/mcp-server@1.47.1"],
+      "args": ["@aibtc/mcp-server@latest"],
       "env": {
         "NETWORK": "mainnet",
         "BITFLOW_API_KEY": "public",

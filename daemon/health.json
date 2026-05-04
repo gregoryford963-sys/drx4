@@ -27,7 +27,7 @@
   "ic_pool_invited": 11,
   "ic_pool_declined": 3,
   "ic_pool_onboarded": 4,
-  "ic_pool_suspended": 0,
+  "ic_pool_suspended": 2,
   "ic_pool_flagged_uncommitted": 1,
   "recruitment_issue": "https://github.com/aibtcdev/agent-news/issues/475",
   "pipeline_qualified": 6,
@@ -73,8 +73,8 @@
   },
   "notes": "Cycle 2034jh: Apr 25 PT prep. Scouted x402+mcp+TS repos with 7-day freshness; verified 3 candidates passing 5-gate qualification with bug+feature templates only (no commercial-scope flag): provos/ironcurtain (167⭐ Apache-2.0, secure agent runtime, Niels Provos 16-yr GH user), cyanheads/pubmed-mcp-server (87⭐ Apache-2.0, NCBI/PubMed MCP, Casey Hand 11-yr GH user), memorycrystal/memorycrystal (9⭐ MIT, OpenClaw + MCP agent memory, 1mo-old org). All 3 drafted, lint 0/0, fire-queue script generated, dry-run title/body extraction verified. Ready for 07:00Z dispatch (5h33m out).",
   "next_cycle_at": "2026-04-24T07:00:00Z",
-  "cycle": "2034r8",
-  "timestamp": "2026-05-04T11:18:00Z",
+  "cycle": "2034r9",
+  "timestamp": "2026-05-04T11:35:00Z",
   "stats": {
     "checkin_count": 14,
     "new_messages": 0,
@@ -286,7 +286,7 @@
     "blast_radius": "Opal landed (3rd queued) but Graphite Elan + Micro Basilisk status unverified — needs recipient-side inbox check or platform-side payment-status query",
     "audit_cycle": "2034hf"
   },
-  "ic_pool_active": 2,
+  "ic_pool_active": 1,
   "sats_earned_actually_received_onchain": 0,
   "sats_earned_expected_pre_seat": 510000,
   "pub_treasury_stx": "SP1KGHF33817ZXW27CG50JXWC0Y6BNXAQ4E7YGAHM",
@@ -399,21 +399,26 @@
   "email_sends_today": 4,
   "total_cycles": 27,
   "ic_email_setup": {
-    "updated_at": "2026-04-30T06:06:00Z",
+    "updated_at": "2026-05-04T11:35:00Z",
     "deadline": "2026-05-02T23:59:00Z",
-    "gh_reachable_active": 3,
+    "gh_reachable_active": 1,
     "confirmed": 0,
     "in_progress": 1,
-    "silent": 2,
+    "silent": 0,
+    "suspended": 2,
     "twitter_only_n_a": 3,
     "mandate_url": "https://github.com/secret-mars/drx4/issues/34",
     "t2_nudge_url": "https://github.com/secret-mars/drx4/issues/34#issuecomment-4350072750",
     "t0_warning_url": "https://github.com/secret-mars/drx4/issues/34#issuecomment-4365672122",
     "t0_warning_at": "2026-05-03T07:39:40Z",
-    "silent_grace_until": "2026-05-04T07:38:00Z",
-    "silent_ics_warned": [
+    "grace_expired_at": "2026-05-04T07:38:00Z",
+    "enforcement_url": "https://github.com/secret-mars/drx4/issues/34#issuecomment-4370702347",
+    "suspended_ics": [
       "@rlucky02 (Satsmith)",
       "@ilovewindows10 (Glowing Raptor)"
+    ],
+    "active_ics": [
+      "@arc0btc (Arc) — blocker flagged, good faith"
     ]
   },
   "apr30_fired": 3,

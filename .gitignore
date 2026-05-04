@@ -2,6 +2,7 @@
 .ssh/
 .secrets/
 *.env
+.wallet-password
 
 # OS files
 .DS_Store
