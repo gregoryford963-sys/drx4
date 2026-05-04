@@ -44,6 +44,12 @@ Scouted: 2026-05-04T08:45Z
 
 ## Next steps
 
-1. Draft pitches (cycle 2034r0 or later)
-2. Lint drafts
+1. ~~Draft pitches (cycle 2034r0)~~ DONE
+2. ~~Lint drafts~~ DONE 0 hard / 0 soft
 3. Fire at 07:00Z May 5
+
+## Drafts ready
+
+- p107-vultisig-sdk.md
+- p108-fast-mcp-telegram.md
+- p109-lightning-enable-mcp.md
