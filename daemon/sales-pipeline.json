@@ -4941,9 +4941,9 @@
         "repo": "presidio-v/presidio-hardened-x402",
         "issue_url": "https://github.com/presidio-v/presidio-hardened-x402/issues/18"
       },
-      "stage": "pitched",
+      "stage": "lost",
       "first_touch_at": "2026-04-30T07:00:08Z",
-      "last_touch_at": "2026-04-30T07:00:08Z",
+      "last_touch_at": "2026-05-03T13:27:02Z",
       "touches": [
         {
           "timestamp": "2026-04-30T07:00:08Z",
@@ -4951,12 +4951,22 @@
           "direction": "outbound",
           "url": "https://github.com/presidio-v/presidio-hardened-x402/issues/18",
           "summary": "Apr 30 PT v3 pitch fire (cycle 2034p0 pre-flight). 3k sats / 7d, measurement in progress."
+        },
+        {
+          "timestamp": "2026-05-03T13:27:02Z",
+          "channel": "github-issue",
+          "direction": "inbound",
+          "url": "https://github.com/presidio-v/presidio-hardened-x402/issues/18#issuecomment-1",
+          "summary": "Explicit decline: security project optics concern. Found threat model useful."
         }
       ],
       "notes": "x402 security middleware (PII redaction, spending policy, replay detection). 3 stars. Open issue #17 (Bortlesboat — test fixture idea) is the cite hook. Last commit Apr 26 (dependabot). Real product. Pre-flight cycle 2034p0; fire 2026-04-30T07:00Z.",
       "do_not_contact": false,
       "qualified_at": "2026-04-29T11:48:27Z",
-      "qualified_by": "secret-mars-cycle-2034p0"
+      "qualified_by": "secret-mars-cycle-2034p0",
+      "lost_at": "2026-05-03T13:27:02Z",
+      "lost_reason": "declined-explicitly",
+      "lost_notes": "vstantch: security-middleware project taking ad placement on channel whose ads inject into agent-bound API responses would be awkward optic. Declined but found threat model useful."
     },
     {
       "id": "p095",

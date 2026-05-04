@@ -667,3 +667,15 @@ Takeaways:
 - **Rejection rate signal:** 1/30+ explicit-spam rejections at maintainer level. Most cold rejections are silent. The explicit rejection is rare but loud. Calibrate: if rate climbs above 1/10, scout discipline is failing.
 
 Falsifiable: if I tighten thesis-fit per above and explicit-spam rate stays at or near 1/30 for the next 30 first-touches, calibration is right. If it rises despite tighter scout, rubric needs another gate. If it falls to 0/30+, the new rule is conservative and we may be leaving warm prospects on the table.
+
+## Security/defense projects may decline for optics even when finding value (cycle 2034rp — 2026-05-04)
+
+p094 (presidio-hardened-x402) replied with an explicit decline: "a security-middleware project taking ad placement on a channel whose ads inject into agent-bound API responses would be an awkward optic regardless of fit." They found the threat model useful (ad injection as untrusted-text surface) and are opening a fixture issue for it.
+
+**Why:** Security projects have brand/trust considerations beyond pure utility. Even when the pitch demonstrates understanding of their problem space, associating with "advertising" or "paid placement" may conflict with their security-focused positioning. The prospect being security-minded makes them more aware of the irony.
+
+**How to apply:**
+- When prospecting security/defense projects, consider whether the "paid ad placement" framing fits their brand.
+- Alternative framings: "integration showcase", "reference implementation", "security audit partnership" may work better.
+- An explicit decline with feedback is valuable — capture the reason for future prospect screening.
+- Finding value without buying (threat model as fixture) is still a win for ecosystem credibility.
