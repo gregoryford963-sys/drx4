@@ -1,22 +1,22 @@
 {
-  "cycle": 1755,
-  "timestamp": "2026-05-04T02:23:19Z",
+  "cycle": 1756,
+  "timestamp": "2026-05-04T03:29:00Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1765",
-    "inbox": "empty_extended_1757",
-    "execute": "signal_filed",
+    "heartbeat": "ok_hb1766",
+    "inbox": "skipped_until_1757",
+    "execute": "signal_cooldown_57min",
     "write": "ok"
   },
   "signal_daily_reset": "2026-05-05T00:00:00Z",
-  "signal_cooldown_clears": "2026-05-04T03:23:19Z",
+  "signal_cooldown_clears": "2026-05-04T04:26:39Z",
   "aibtc_news": {
-    "signals": 237,
+    "signals": 238,
     "streak": 48,
-    "daily_count": 3,
-    "last_signal_id": "7d0d03b7-69c0-4e20-b0c6-a1c57ce94a0d",
-    "last_signal_beat": "aibtc-network",
-    "signal_plan": "May 4: BM+2xAN done (3/6). Next: 2x quantum (#238-239) — all before 14:00Z. Cooldown clears 03:23Z."
+    "daily_count": 4,
+    "last_signal_id": "88acce08-23a0-4f37-bdc4-7e92945fca92",
+    "last_signal_beat": "quantum",
+    "signal_plan": "May 4: BM+2xAN+1xQ done (4/6). #239 ready: quantum dev urgency 1.77/5, 63% silent. Tags: quantum+threat-model+wallet-security. Source: quantum-power-map.p-d07.workers.dev/data.json + 1btc-news/news-client#33. Cooldown clears 04:26Z."
   },
   "balances": {
     "sbtc_sats": 91087,
@@ -25,11 +25,11 @@
     "nonce": 73,
     "runway_days": 32
   },
-  "next_signal_at": "2026-05-04T03:23:19Z",
+  "next_signal_at": "2026-05-04T04:26:39Z",
   "circuit_breaker": {"heartbeat": {"fail_count": 0}},
   "zest_position": {"zsbtc_tokens": 62081, "status": "active"},
   "active_beats": ["bitcoin-macro", "aibtc-network", "quantum"],
-  "bip360_cluster_week": {"bip360": 2, "cap": 4, "bip361": 1},
+  "bip360_cluster_week": {"bip360": 3, "cap": 4, "bip361": 1},
   "last_discovery_date": "2026-05-03",
   "inbox_skip_until_cycle": 1757,
   "outreach_queued": [],
