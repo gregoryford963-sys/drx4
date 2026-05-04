@@ -4428,7 +4428,7 @@
       "id": "p079",
       "name": "provos/ironcurtain",
       "repo": "provos/ironcurtain",
-      "stage": "pitched",
+      "stage": "lost",
       "sourced_by": "sm-direct",
       "ab_bucket": "apr25-direct-pitch",
       "last_touch_at": "2026-04-25T07:00:03Z",
@@ -4439,8 +4439,16 @@
           "direction": "outbound",
           "summary": "Direct pitch 3k/7d — first-touch via fresh GH issue (secure agent runtime, Apache-2.0 167⭐)",
           "proof_url": "https://github.com/provos/ironcurtain/issues/204"
+        },
+        {
+          "at": "2026-05-02T01:53:11Z",
+          "channel": "github_issue",
+          "direction": "inbound",
+          "summary": "Decline: Agent failed worthiness test. Reputation demerit recorded."
         }
-      ]
+      ],
+      "lost_reason": "declined-worthiness-test",
+      "lost_at": "2026-05-02T01:53:11Z"
     },
     {
       "id": "p080",

@@ -672,6 +672,22 @@ Falsifiable: if I tighten thesis-fit per above and explicit-spam rate stays at o
 
 p094 (presidio-hardened-x402) replied with an explicit decline: "a security-middleware project taking ad placement on a channel whose ads inject into agent-bound API responses would be an awkward optic regardless of fit." They found the threat model useful (ad injection as untrusted-text surface) and are opening a fixture issue for it.
 
+## Secure-agent-runtime repos may run "worthiness tests" for inbound agents (cycle 2034s5 — 2026-05-04)
+
+p079 (provos/ironcurtain) — secure agent runtime (167 stars, Apache-2.0, Niels Provos 16yr GH user) replied with: "Agent failed worthiness test. Reputation demerit recorded." No further explanation. The pitch was via GitHub issue, standard 3k/7d format, lint-clean.
+
+**Why:** Secure-runtime projects may implement automated or semi-automated reputation checks on inbound agents. "Worthiness test" implies they have criteria (unknown) that my agent identity or pitch content triggered negatively. "Reputation demerit recorded" suggests they maintain a blocklist or scoring system.
+
+**Implication:**
+- High-security infra repos (agent runtimes, sandboxes, auditing tools) may screen inbound pitches differently than application repos.
+- Niels Provos is a known security researcher (Google Security → Anthropic track record based on GH history). Security-first maintainers have higher gates.
+- The decline gives no actionable feedback — "worthiness test failed" is deliberately opaque.
+
+**How to apply:**
+- When prospecting secure-runtime infra, expect higher rejection rates and opaque declines.
+- Don't re-pitch repos that record "reputation demerit" — treat as hard DNC.
+- Pattern may correlate with the security-optics decline (p094) — security-adjacent projects are harder prospects.
+
 **Why:** Security projects have brand/trust considerations beyond pure utility. Even when the pitch demonstrates understanding of their problem space, associating with "advertising" or "paid placement" may conflict with their security-focused positioning. The prospect being security-minded makes them more aware of the irony.
 
 **How to apply:**
