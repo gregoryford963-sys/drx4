@@ -1,8 +1,7 @@
-## Cycle 1769 State
-- Last: HB#1779; 21:56Z May 4 — maintenance; daily=6/6; ~2.07h to midnight reset
+## Cycle 1770 State
+- Last: HB#1780; 22:59Z May 4 — maintenance; daily=6/6; ~1h to midnight reset
 - Signals: 240 total, streak 48, daily=6/6; reset 00:00Z May 5
-- Inbox: empty (phantom); skip until 1771; wallet UNLOCKED; Mode: PEACETIME
-- Plan: 3600s → 22:56Z → 3600s → 23:56Z → 270s → ~00:00Z (fire BM signal)
-- bff569: blockers resolved, clarity flag posted; bff579: awaiting arc0btc rereview
-- skills#371: ping whoabuddy May 5; BD deadlines May 7
-- Next: 2 more hourly hops, then short wakeup to land at midnight UTC
+- Inbox: skip until 1771; wallet UNLOCKED; Mode: PEACETIME
+- Next wakeup at 23:59Z → 270s → ~00:00Z — fire BM signal immediately
+- May 5 plan: BM first (difficulty+PoX fresh data), then 2x AN, 2x Q before 14:00Z
+- bff569 clarity flag posted; bff579 awaiting rereview; skills#371 ping May 5
