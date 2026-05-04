@@ -6,4 +6,5 @@
   Sources: quantum-power-map.p-d07.workers.dev/data.json + github.com/1btc-news/news-client/issues/33
 - bip360 cluster: 3/4 used this week; bip361: 1/4 used
 - bff579 awaiting arc0btc re-review; BD deadlines May 7; skills#371 awaiting merge
+- P056 quantum bounty claim filed: 1btc-news/news-client#33 as Daily Beat writer (15K sats/beat)
 - Next: cycle 1757 at ~04:26Z — fire staged signal #239 immediately on wakeup

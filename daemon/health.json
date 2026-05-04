@@ -37,7 +37,8 @@
   "v4_rubric": {"discussion": "agent-news/discussions/696", "sign_off_by": "2026-05-07T18:00:00Z", "effective_date": "2026-05-08T00:00:00Z", "our_comment": "16798545"},
   "bd_projects": {
     "p054_sigle": {"status": "first_touch_sent", "ref": "sigle/sigle#1253", "sent": "2026-04-16", "follow_up_by": "2026-05-07"},
-    "p055_amber_otter_registry": {"status": "pr_approved_arc0btc", "ref": "aibtcdev/skills#371", "note": "awaiting_maintainer_merge"}
+    "p055_amber_otter_registry": {"status": "pr_approved_arc0btc", "ref": "aibtcdev/skills#371", "note": "awaiting_maintainer_merge"},
+    "p056_quantum_bounty": {"status": "claim_filed", "ref": "1btc-news/news-client#33", "comment": "issuecomment-4368017121", "role": "daily_beat_writer", "pay": "15000_sats_per_accepted_beat", "filed": "2026-05-04"}
   },
   "bff579": {"state": "OPEN", "last_checked": "2026-05-03", "bitflow_review": "arc0btc_changes_requested_fixed_16eb2d9_awaiting_rereview"},
   "bff569_review": {"state": "OPEN", "last_reviewed": "2026-05-03", "blockers": "wrong_mcp_tool_name+wrong_function_args+misleading_proof_txid"}
