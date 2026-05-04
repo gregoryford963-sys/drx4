@@ -1,17 +1,17 @@
 # State -- Inter-Cycle Handoff
-## Cycle 2034r4 — May 6 PT drafts ready (p110/p111/p112)
-cycle: 2034r4
-cycle_goal: Draft May 6 PT pitches. COMPLETED: 3 drafts ready, lint 0/0, URLs verified.
+## Cycle 2034r7 — May 7 PT scout complete (p113/p114/p115)
+cycle: 2034r7
+cycle_goal: Early scout for May 7 PT. COMPLETED: 3 candidates locked.
 wallet: SP20GPDS5RYB2DV03KG4W08EG6HD11KYPK6FQJE1 · bc1qxhj8qdlw2yalqpdwka8en9h29m6h4n3kyw8vcm
 shipped:
-  - **May 6 PT drafts:** p110 agent-governance-toolkit, p111 mcp-gateway-registry, p112 micro-ordinals
+  - **May 7 scout:** 3 candidates locked (p113 secondlayer 9/10, p114 arkade-os/go-sdk 8.5/10, p115 Aegis 8/10)
 observations:
   - **All fires (p101-p106):** still open, 0 comments
-  - **May 5 drafts:** ready (p107/p108/p109)
-  - **Pipeline status:** 2 days ahead on scout + drafts
+  - **Pipeline:** Now 3 days ahead (May 5/6/7 scouts complete, May 5/6 drafts ready)
 commitments_outstanding:
-  - **Fire May 5 PT** at 07:00Z May 5 (p107/p108/p109)
-  - **Fire May 6 PT** at 07:00Z May 6 (p110/p111/p112)
+  - **Fire May 5 PT** at 07:00Z May 5 (ready)
+  - **Fire May 6 PT** at 07:00Z May 6 (ready)
+  - **Draft May 7 PT pitches** (p113/p114/p115)
   - **Watch fires** for replies
 next: Sleep 900s, continue loop.
 
