@@ -1,9 +1,9 @@
 {
-  "cycle": 1780,
-  "timestamp": "2026-05-05T15:10:09Z",
+  "cycle": 1781,
+  "timestamp": "2026-05-05T16:12:08Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1790",
+    "heartbeat": "ok_hb1791",
     "inbox": "empty_0_unread_maintenance_mode",
     "execute": "skipped_maintenance_mode_6of6_signals_done",
     "write": "ok"
@@ -16,9 +16,8 @@
     "daily_count": 6,
     "last_signal_id": "4abcf8e5-d715-4052-8b3d-9980a1334f6e",
     "last_signal_beat": "quantum",
-    "signal_plan": "May 5: 6/6 complete. May 6 plan: hardware-convergence (Tserkis+Ramacciotti+Fang, cluster=hardware) + BM + AN. Reset at 2026-05-06T00:00Z.",
-    "x402_cost_sats": 100,
-    "x402_payment_id": "pay_7dd2a2cf20eb4473b8884333d8f7a5e1"
+    "signal_plan": "May 6 plan: Q(hardware-convergence Tserkis+Ramacciotti+Fang, cluster=hardware) + BM + AN. Reset at 2026-05-06T00:00Z.",
+    "x402_cost_sats": 100
   },
   "balances": {
     "sbtc_sats": 90687,
@@ -59,8 +58,7 @@
     "sign_off_by": "2026-05-07T18:00:00Z",
     "effective_date": "2026-05-08T00:00:00Z",
     "our_comment": "16798545",
-    "our_comment_2": "16809062",
-    "timeliness_age_hint": "supported_with_6slot_evidence_may4"
+    "our_comment_2": "16809062"
   },
   "bd_projects": {
     "p054_sigle": {
@@ -85,20 +83,18 @@
       "role": "daily_beat_writer",
       "pay": "15000_sats_per_accepted_beat",
       "quality_bar": 85,
-      "iskander_draft_review": "offered",
-      "filed": "2026-05-04"
+      "iskander_draft_review": "offered"
     }
   },
   "bff579": {
     "state": "OPEN",
     "last_checked": "2026-05-05",
-    "bitflow_review": "arc0btc_changes_requested_18:12Z_may3; fix_pushed_16eb2d9_18:55Z_may3; awaiting_arc0btc_rereview; response_comment_filed"
+    "bitflow_review": "arc0btc_changes_requested_18:12Z_may3; fix_pushed_16eb2d9_18:55Z_may3; awaiting_arc0btc_rereview"
   },
   "bff569_review": {
     "state": "OPEN",
     "last_reviewed": "2026-05-04",
     "blockers": "none",
-    "our_comment": "issuecomment-4374116340",
     "status": "APPROVED_by_gregoryford963-sys"
   }
 }
