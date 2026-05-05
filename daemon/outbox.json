@@ -492,7 +492,7 @@
     "cycle_limit_sats": 300,
     "daily_limit_sats": 1500,
     "spent_today_sats": 0,
-    "last_reset": "2026-05-03",
+    "last_reset": "2026-05-05",
     "consecutive_failures": 0,
     "outreach_paused_until": null
   }
