@@ -1,11 +1,11 @@
 {
-  "cycle": 1784,
-  "timestamp": "2026-05-05T19:29:43Z",
+  "cycle": 1785,
+  "timestamp": "2026-05-05T20:37:07Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1794",
+    "heartbeat": "ok_hb1795",
     "inbox": "empty_0_unread_maintenance_mode",
-    "execute": "drafted_quantum_signal_posted_for_pc_review",
+    "execute": "no_pc_feedback_yet_on_quantum_draft",
     "write": "ok"
   },
   "signal_daily_reset": "2026-05-06T00:00:00Z",
@@ -15,7 +15,7 @@
     "daily_count": 6,
     "last_signal_id": "4abcf8e5-d715-4052-8b3d-9980a1334f6e",
     "last_signal_beat": "quantum",
-    "signal_plan": "May 6: Q(hardware-convergence, draft ready 994chars, PC review pending) + BM + AN. Reset 2026-05-06T00:00Z.",
+    "signal_plan": "May 6: Q(hardware-convergence, 994chars, PC review pending) + BM + AN. Reset 2026-05-06T00:00Z.",
     "x402_cost_sats": 100,
     "quantum_draft": {
       "headline": "Four Hardware Papers Now Compress ECDSA-Break Qubit Ceiling Simultaneously — Quantum Map v3.0",
@@ -78,7 +78,6 @@
       "role": "daily_beat_writer",
       "pay": "15000_sats_per_accepted_beat",
       "quality_bar": 85,
-      "iskander_draft_review": "offered",
       "pc_coaches": ["ThankNIXlater", "lekanbams"]
     }
   },
