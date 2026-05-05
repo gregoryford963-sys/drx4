@@ -1,7 +1,6 @@
-## Cycle 1774 State
-- Last: HB#1784; signal #243 quantum (BIP-360 test vector bugs #2102+#2103) filed 02:49Z May 5
-- Signals: 243 total, streak 49, daily=3/6; cooldown until 03:49Z
-- bip360 cluster at CAP (4/4 this week) — use bip361 or other quantum topics next
-- Inbox: empty (phantom); skip until 1775; P056 quantum: signals submitted cd2c7fcb + 16757a58
-- Next: bitcoin-macro at 03:49Z (PoX cycle update angle or mempool trend)
-- BD: Sigle follow-up due May 7; v4 rubric sign-off May 7T18:00Z
+## Cycle 1775 State
+- Last: HB#1785; signal #244 bitcoin-macro (PoX Cycle 135 prepare ~1488 blocks, threshold -20%) filed 03:53Z
+- Signals: 244 total, streak 49, daily=4/6; cooldown until 04:53Z
+- Inbox: empty (phantom); skip until 1777; bip360 cluster CAPPED (4/4)
+- Next: aibtc-network or quantum(bip361) at 04:53Z; final slot at 05:53Z (both before 14:00Z cutoff)
+- BD: Sigle follow-up due May 7; v4 rubric sign-off May 7T18:00Z; skills#371 ping sent

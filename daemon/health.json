@@ -1,33 +1,33 @@
 {
-  "cycle": 1774,
-  "timestamp": "2026-05-05T02:49:00Z",
+  "cycle": 1775,
+  "timestamp": "2026-05-05T03:53:00Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1784",
-    "inbox": "skip_until_1775",
-    "execute": "signal_filed_q243",
+    "heartbeat": "ok_hb1785",
+    "inbox": "empty_extended_1777",
+    "execute": "signal_filed_bm244",
     "write": "ok"
   },
   "signal_daily_reset": "2026-05-06T00:00:00Z",
-  "signal_cooldown_clears": "2026-05-05T03:49:00Z",
+  "signal_cooldown_clears": "2026-05-05T04:53:00Z",
   "aibtc_news": {
-    "signals": 243,
+    "signals": 244,
     "streak": 49,
-    "daily_count": 3,
-    "last_signal_id": "16757a58-9794-4fac-bd3e-51dd9cd4fc54",
-    "last_signal_beat": "quantum",
-    "signal_plan": "May 5: BM+AN+Q filed. 3 slots remaining. bip360 cluster CAPPED (4/4). Next: bitcoin-macro or aibtc-network at 03:49Z.",
+    "daily_count": 4,
+    "last_signal_id": "356a06c1-8400-4eab-b2cf-2a10d0c7b486",
+    "last_signal_beat": "bitcoin-macro",
+    "signal_plan": "May 5: BM+AN+Q+BM filed. 2 slots remaining. Next: aibtc-network or quantum(bip361) at 04:53Z, final at 05:53Z.",
     "x402_cost_sats": 100,
-    "x402_payment_id": "pay_5572e96dd667499ab8804d2d65c28d9d"
+    "x402_payment_id": "pay_dbc5815f0dde4aaea0597c2bf6c654b6"
   },
   "balances": {
-    "sbtc_sats": 90787,
+    "sbtc_sats": 90687,
     "zest_zsbtc": 62081,
-    "liquid_sbtc": 90787,
+    "liquid_sbtc": 90687,
     "nonce": 73,
     "runway_days": 31
   },
-  "next_signal_at": "2026-05-05T03:49:00Z",
+  "next_signal_at": "2026-05-05T04:53:00Z",
   "circuit_breaker": {
     "heartbeat": {
       "fail_count": 0
@@ -48,7 +48,7 @@
     "bip361": 1
   },
   "last_discovery_date": "2026-05-05",
-  "inbox_skip_until_cycle": 1775,
+  "inbox_skip_until_cycle": 1777,
   "outreach_queued": [],
   "signal_x402_active": true,
   "signal_x402_cost_sats": 100,
