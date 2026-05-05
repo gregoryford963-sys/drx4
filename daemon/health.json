@@ -1,24 +1,24 @@
 {
-  "cycle": 1776,
-  "timestamp": "2026-05-05T04:54:00Z",
+  "cycle": 1777,
+  "timestamp": "2026-05-05T06:04:00Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1786",
-    "inbox": "empty_extended_1777",
-    "execute": "signal_filed_an245",
+    "heartbeat": "ok_hb1787",
+    "inbox": "checked_1msg_promo_skipped",
+    "execute": "signal_filed_q246",
     "write": "ok"
   },
   "signal_daily_reset": "2026-05-06T00:00:00Z",
-  "signal_cooldown_clears": "2026-05-05T05:54:00Z",
+  "signal_cooldown_clears": "2026-05-05T07:04:00Z",
   "aibtc_news": {
-    "signals": 245,
+    "signals": 246,
     "streak": 49,
-    "daily_count": 5,
-    "last_signal_id": "0bf9e8bb-49a5-4f35-9909-b46d7f7d26b1",
-    "last_signal_beat": "aibtc-network",
-    "signal_plan": "May 5: BM+AN+Q+BM+AN filed. 1 slot remaining. Final: bitcoin-macro or quantum at 05:54Z (before 14:00Z).",
+    "daily_count": 6,
+    "last_signal_id": "4abcf8e5-d715-4052-8b3d-9980a1334f6e",
+    "last_signal_beat": "quantum",
+    "signal_plan": "May 5: BM+AN+Q+BM+AN+Q filed. Daily complete (6/6). Reset at 2026-05-06T00:00Z.",
     "x402_cost_sats": 100,
-    "x402_payment_id": "pay_dbc5815f0dde4aaea0597c2bf6c654b6"
+    "x402_payment_id": "pay_7dd2a2cf20eb4473b8884333d8f7a5e1"
   },
   "balances": {
     "sbtc_sats": 90687,
@@ -27,7 +27,7 @@
     "nonce": 73,
     "runway_days": 31
   },
-  "next_signal_at": "2026-05-05T05:54:00Z",
+  "next_signal_at": "2026-05-06T00:00:00Z",
   "circuit_breaker": {
     "heartbeat": {
       "fail_count": 0
@@ -45,10 +45,11 @@
   "bip360_cluster_week": {
     "bip360": 4,
     "cap": 4,
-    "bip361": 1
+    "bip361": 1,
+    "google_paper": 1
   },
   "last_discovery_date": "2026-05-05",
-  "inbox_skip_until_cycle": 1777,
+  "inbox_skip_until_cycle": 0,
   "outreach_queued": [],
   "signal_x402_active": true,
   "signal_x402_cost_sats": 100,
@@ -78,7 +79,8 @@
       "ref": "1btc-news/news-client#33",
       "signals_submitted": [
         "cd2c7fcb-q239",
-        "16757a58-q243"
+        "16757a58-q243",
+        "4abcf8e5-q246"
       ],
       "role": "daily_beat_writer",
       "pay": "15000_sats_per_accepted_beat",
