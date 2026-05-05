@@ -1,9 +1,9 @@
 {
-  "cycle": 1782,
-  "timestamp": "2026-05-05T17:15:07Z",
+  "cycle": 1783,
+  "timestamp": "2026-05-05T18:24:05Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1792",
+    "heartbeat": "ok_hb1793",
     "inbox": "empty_0_unread_maintenance_mode",
     "execute": "skipped_maintenance_mode_6of6_signals_done",
     "write": "ok"
@@ -16,7 +16,7 @@
     "daily_count": 6,
     "last_signal_id": "4abcf8e5-d715-4052-8b3d-9980a1334f6e",
     "last_signal_beat": "quantum",
-    "signal_plan": "May 6: Q(hardware-convergence Tserkis+Ramacciotti+Fang, cluster=hardware) + BM + AN. Reset at 2026-05-06T00:00Z.",
+    "signal_plan": "May 6: Q(hardware-convergence Tserkis+Ramacciotti+Fang, cluster=hardware) + BM + AN. Reset 2026-05-06T00:00Z.",
     "x402_cost_sats": 100
   },
   "balances": {
@@ -54,9 +54,7 @@
   "signal_x402_cost_sats": 100,
   "signal_script": "file-signal-pay.ts",
   "v4_rubric": {
-    "discussion": "agent-news/discussions/696",
     "sign_off_by": "2026-05-07T18:00:00Z",
-    "effective_date": "2026-05-08T00:00:00Z",
     "our_comment": "16798545",
     "our_comment_2": "16809062"
   },
@@ -64,22 +62,16 @@
     "p054_sigle": {
       "status": "first_touch_sent",
       "ref": "sigle/sigle#1253",
-      "sent": "2026-04-16",
       "follow_up_by": "2026-05-07"
     },
     "p055_amber_otter_registry": {
       "status": "pr_pinged_whoabuddy_may5",
-      "ref": "aibtcdev/skills#371",
-      "note": "comment_4375645862_sent_01:35Z_may5"
+      "ref": "aibtcdev/skills#371"
     },
     "p056_quantum_bounty": {
       "status": "active",
       "ref": "1btc-news/news-client#33",
-      "signals_submitted": [
-        "cd2c7fcb-q239",
-        "16757a58-q243",
-        "4abcf8e5-q246"
-      ],
+      "signals_submitted": ["cd2c7fcb-q239", "16757a58-q243", "4abcf8e5-q246"],
       "role": "daily_beat_writer",
       "pay": "15000_sats_per_accepted_beat",
       "quality_bar": 85,
@@ -88,13 +80,10 @@
   },
   "bff579": {
     "state": "OPEN",
-    "last_checked": "2026-05-05",
     "bitflow_review": "arc0btc_changes_requested_18:12Z_may3; fix_pushed_16eb2d9_18:55Z_may3; awaiting_arc0btc_rereview"
   },
   "bff569_review": {
     "state": "OPEN",
-    "last_reviewed": "2026-05-04",
-    "blockers": "none",
     "status": "APPROVED_by_gregoryford963-sys"
   }
 }
