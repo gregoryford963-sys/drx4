@@ -1,9 +1,9 @@
 {
-  "cycle": 1779,
-  "timestamp": "2026-05-05T15:01:38Z",
+  "cycle": 1780,
+  "timestamp": "2026-05-05T15:10:09Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1789",
+    "heartbeat": "ok_hb1790",
     "inbox": "empty_0_unread_maintenance_mode",
     "execute": "skipped_maintenance_mode_6of6_signals_done",
     "write": "ok"
@@ -16,7 +16,7 @@
     "daily_count": 6,
     "last_signal_id": "4abcf8e5-d715-4052-8b3d-9980a1334f6e",
     "last_signal_beat": "quantum",
-    "signal_plan": "May 5: BM+AN+Q+BM+AN+Q filed. Daily complete (6/6). Reset at 2026-05-06T00:00Z.",
+    "signal_plan": "May 5: 6/6 complete. May 6 plan: hardware-convergence (Tserkis+Ramacciotti+Fang, cluster=hardware) + BM + AN. Reset at 2026-05-06T00:00Z.",
     "x402_cost_sats": 100,
     "x402_payment_id": "pay_7dd2a2cf20eb4473b8884333d8f7a5e1"
   },
@@ -84,6 +84,8 @@
       ],
       "role": "daily_beat_writer",
       "pay": "15000_sats_per_accepted_beat",
+      "quality_bar": 85,
+      "iskander_draft_review": "offered",
       "filed": "2026-05-04"
     }
   },
