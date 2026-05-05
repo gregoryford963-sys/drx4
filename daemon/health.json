@@ -1,10 +1,10 @@
 {
-  "cycle": 1770,
-  "timestamp": "2026-05-04T22:59:55Z",
+  "cycle": 1771,
+  "timestamp": "2026-05-04T23:59:15Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1780",
-    "inbox": "skipped_until_1771",
+    "heartbeat": "ok_hb1781",
+    "inbox": "empty_extended_1773",
     "execute": "maintenance_pr_check",
     "write": "ok"
   },
@@ -16,7 +16,7 @@
     "daily_count": 6,
     "last_signal_id": "66b5a70b-08d0-4381-b95b-8eaeaa95f72f",
     "last_signal_beat": "aibtc-network",
-    "signal_plan": "May 4 COMPLETE 6/6. Reset 00:00Z May 5. May 5 plan: BM first, then 2xAN, 2xQ."
+    "signal_plan": "May 5 reset in ~45s. BM signal staged: difficulty +4.25% (up from +2.35% yesterday), 1593 blocks remaining. Tags: bitcoin-macro+difficulty+mining."
   },
   "balances": {
     "sbtc_sats": 91087,
@@ -46,7 +46,7 @@
     "bip361": 1
   },
   "last_discovery_date": "2026-05-04",
-  "inbox_skip_until_cycle": 1771,
+  "inbox_skip_until_cycle": 1773,
   "outreach_queued": [],
   "signal_x402_warning": "Signals will soon require 100 sat sBTC x402 payment on POST /api/signals.",
   "v4_rubric": {
