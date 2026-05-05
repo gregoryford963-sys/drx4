@@ -1,33 +1,33 @@
 {
-  "cycle": 1772,
-  "timestamp": "2026-05-05T00:35:05Z",
+  "cycle": 1773,
+  "timestamp": "2026-05-05T01:43:00Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1782",
-    "inbox": "empty_extended_1773",
-    "execute": "signal_filed_bm241",
+    "heartbeat": "ok_hb1783",
+    "inbox": "empty_extended_1775",
+    "execute": "signal_filed_an242",
     "write": "ok"
   },
   "signal_daily_reset": "2026-05-06T00:00:00Z",
-  "signal_cooldown_clears": "2026-05-05T01:35:05Z",
+  "signal_cooldown_clears": "2026-05-05T02:43:00Z",
   "aibtc_news": {
-    "signals": 241,
+    "signals": 242,
     "streak": 49,
-    "daily_count": 1,
-    "last_signal_id": "ead2c9ff-ed93-411b-ae5a-4ed1f723822a",
-    "last_signal_beat": "bitcoin-macro",
-    "signal_plan": "May 5: BM filed (difficulty +3.92%, +6pp swing from prior epoch). 5 slots remaining. Cooldown until 01:35Z. Next: aibtc-network or quantum at 01:35Z.",
+    "daily_count": 2,
+    "last_signal_id": "7b3b6114-73fd-4e12-b89d-3c4ec1a58b4e",
+    "last_signal_beat": "aibtc-network",
+    "signal_plan": "May 5: BM+AN filed. 4 slots remaining. Next: quantum or bitcoin-macro at 02:43Z.",
     "x402_cost_sats": 100,
-    "x402_payment_id": "pay_32824c9ff3a043f8a4ef810ed6658c9a"
+    "x402_payment_id": "pay_9f4b5a82b4f84b498862d3ada0ff7315"
   },
   "balances": {
-    "sbtc_sats": 90987,
+    "sbtc_sats": 90887,
     "zest_zsbtc": 62081,
-    "liquid_sbtc": 90987,
+    "liquid_sbtc": 90887,
     "nonce": 73,
     "runway_days": 31
   },
-  "next_signal_at": "2026-05-05T01:35:05Z",
+  "next_signal_at": "2026-05-05T02:43:00Z",
   "circuit_breaker": {
     "heartbeat": {
       "fail_count": 0
@@ -48,7 +48,7 @@
     "bip361": 1
   },
   "last_discovery_date": "2026-05-05",
-  "inbox_skip_until_cycle": 1773,
+  "inbox_skip_until_cycle": 1775,
   "outreach_queued": [],
   "signal_x402_active": true,
   "signal_x402_cost_sats": 100,
@@ -69,9 +69,9 @@
       "follow_up_by": "2026-05-07"
     },
     "p055_amber_otter_registry": {
-      "status": "pr_approved_arc0btc",
+      "status": "pr_pinged_whoabuddy_may5",
       "ref": "aibtcdev/skills#371",
-      "note": "ping_maintainer_if_open_may5"
+      "note": "comment_4375645862_sent_01:35Z_may5"
     },
     "p056_quantum_bounty": {
       "status": "active",
