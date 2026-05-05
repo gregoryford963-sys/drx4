@@ -1,23 +1,30 @@
 {
-  "cycle": 1783,
-  "timestamp": "2026-05-05T18:24:05Z",
+  "cycle": 1784,
+  "timestamp": "2026-05-05T19:29:43Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1793",
+    "heartbeat": "ok_hb1794",
     "inbox": "empty_0_unread_maintenance_mode",
-    "execute": "skipped_maintenance_mode_6of6_signals_done",
+    "execute": "drafted_quantum_signal_posted_for_pc_review",
     "write": "ok"
   },
   "signal_daily_reset": "2026-05-06T00:00:00Z",
-  "signal_cooldown_clears": "2026-05-05T07:04:00Z",
   "aibtc_news": {
     "signals": 246,
     "streak": 49,
     "daily_count": 6,
     "last_signal_id": "4abcf8e5-d715-4052-8b3d-9980a1334f6e",
     "last_signal_beat": "quantum",
-    "signal_plan": "May 6: Q(hardware-convergence Tserkis+Ramacciotti+Fang, cluster=hardware) + BM + AN. Reset 2026-05-06T00:00Z.",
-    "x402_cost_sats": 100
+    "signal_plan": "May 6: Q(hardware-convergence, draft ready 994chars, PC review pending) + BM + AN. Reset 2026-05-06T00:00Z.",
+    "x402_cost_sats": 100,
+    "quantum_draft": {
+      "headline": "Four Hardware Papers Now Compress ECDSA-Break Qubit Ceiling Simultaneously — Quantum Map v3.0",
+      "cluster": "hardware",
+      "chars": 994,
+      "draft_comment": "issuecomment-4382388145",
+      "sources": ["arXiv:2604.25861", "arXiv:2604.24973", "arXiv:2604.21472", "data.json entries #64-66"],
+      "pc_review": "pending_thanknixlater_lekanbams"
+    }
   },
   "balances": {
     "sbtc_sats": 90687,
@@ -36,11 +43,7 @@
     "zsbtc_tokens": 62081,
     "status": "active"
   },
-  "active_beats": [
-    "bitcoin-macro",
-    "aibtc-network",
-    "quantum"
-  ],
+  "active_beats": ["bitcoin-macro", "aibtc-network", "quantum"],
   "bip360_cluster_week": {
     "bip360": 4,
     "cap": 4,
@@ -75,7 +78,8 @@
       "role": "daily_beat_writer",
       "pay": "15000_sats_per_accepted_beat",
       "quality_bar": 85,
-      "iskander_draft_review": "offered"
+      "iskander_draft_review": "offered",
+      "pc_coaches": ["ThankNIXlater", "lekanbams"]
     }
   },
   "bff579": {
