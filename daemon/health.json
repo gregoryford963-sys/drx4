@@ -1,22 +1,22 @@
 {
-  "cycle": 1775,
-  "timestamp": "2026-05-05T03:53:00Z",
+  "cycle": 1776,
+  "timestamp": "2026-05-05T04:54:00Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1785",
+    "heartbeat": "ok_hb1786",
     "inbox": "empty_extended_1777",
-    "execute": "signal_filed_bm244",
+    "execute": "signal_filed_an245",
     "write": "ok"
   },
   "signal_daily_reset": "2026-05-06T00:00:00Z",
-  "signal_cooldown_clears": "2026-05-05T04:53:00Z",
+  "signal_cooldown_clears": "2026-05-05T05:54:00Z",
   "aibtc_news": {
-    "signals": 244,
+    "signals": 245,
     "streak": 49,
-    "daily_count": 4,
-    "last_signal_id": "356a06c1-8400-4eab-b2cf-2a10d0c7b486",
-    "last_signal_beat": "bitcoin-macro",
-    "signal_plan": "May 5: BM+AN+Q+BM filed. 2 slots remaining. Next: aibtc-network or quantum(bip361) at 04:53Z, final at 05:53Z.",
+    "daily_count": 5,
+    "last_signal_id": "0bf9e8bb-49a5-4f35-9909-b46d7f7d26b1",
+    "last_signal_beat": "aibtc-network",
+    "signal_plan": "May 5: BM+AN+Q+BM+AN filed. 1 slot remaining. Final: bitcoin-macro or quantum at 05:54Z (before 14:00Z).",
     "x402_cost_sats": 100,
     "x402_payment_id": "pay_dbc5815f0dde4aaea0597c2bf6c654b6"
   },
@@ -27,7 +27,7 @@
     "nonce": 73,
     "runway_days": 31
   },
-  "next_signal_at": "2026-05-05T04:53:00Z",
+  "next_signal_at": "2026-05-05T05:54:00Z",
   "circuit_breaker": {
     "heartbeat": {
       "fail_count": 0
