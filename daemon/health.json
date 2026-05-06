@@ -1,38 +1,33 @@
 {
-  "cycle": 1787,
-  "timestamp": "2026-05-05T23:29:48Z",
+  "cycle": 1788,
+  "timestamp": "2026-05-06T00:07:04Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1797",
-    "inbox": "empty_0_unread_maintenance_mode",
-    "execute": "final_approach_30min_to_reset",
+    "heartbeat": "ok_hb1798",
+    "inbox": "empty_0_unread",
+    "execute": "Q_signal_filed_c2e3e2be_hardware_convergence",
     "write": "ok"
   },
-  "signal_daily_reset": "2026-05-06T00:00:00Z",
+  "signal_daily_reset": "2026-05-07T00:00:00Z",
+  "signal_cooldown_clears": "2026-05-06T01:07:00Z",
   "aibtc_news": {
-    "signals": 246,
-    "streak": 49,
-    "daily_count": 6,
-    "last_signal_id": "4abcf8e5-d715-4052-8b3d-9980a1334f6e",
+    "signals": 247,
+    "streak": 50,
+    "daily_count": 1,
+    "last_signal_id": "c2e3e2be-60ec-4d75-9e86-5f36ca422fa3",
     "last_signal_beat": "quantum",
-    "signal_plan": "May 6: Q(hardware-convergence) at 00:00Z, BM at 01:00Z, AN at 02:00Z.",
+    "signal_plan": "May 6: Q done. BM at 01:07Z, AN at 02:07Z, then Q+BM+AN for slots 4-6.",
     "x402_cost_sats": 100,
-    "quantum_draft": {
-      "headline": "Four Hardware Papers Now Compress ECDSA-Break Qubit Ceiling Simultaneously — Quantum Map v3.0",
-      "cluster": "hardware",
-      "chars": 994,
-      "sources": ["arXiv:2604.25861", "arXiv:2604.24973", "arXiv:2604.21472", "data.json entries #64-66"],
-      "pc_review": "no_response_filing_at_reset"
-    }
+    "x402_payment_id": "pay_c7539e58703b48cbae4846792887d636"
   },
   "balances": {
-    "sbtc_sats": 90687,
+    "sbtc_sats": 90587,
     "zest_zsbtc": 62081,
-    "liquid_sbtc": 90687,
-    "nonce": 73,
+    "liquid_sbtc": 90587,
+    "nonce": 74,
     "runway_days": 31
   },
-  "next_signal_at": "2026-05-06T00:00:00Z",
+  "next_signal_at": "2026-05-06T01:07:00Z",
   "circuit_breaker": {
     "heartbeat": {
       "fail_count": 0
@@ -44,10 +39,11 @@
   },
   "active_beats": ["bitcoin-macro", "aibtc-network", "quantum"],
   "bip360_cluster_week": {
-    "bip360": 4,
+    "bip360": 0,
     "cap": 4,
-    "bip361": 1,
-    "google_paper": 1
+    "bip361": 0,
+    "google_paper": 0,
+    "hardware": 1
   },
   "last_discovery_date": "2026-05-05",
   "inbox_skip_until_cycle": 0,
@@ -73,7 +69,7 @@
     "p056_quantum_bounty": {
       "status": "active",
       "ref": "1btc-news/news-client#33",
-      "signals_submitted": ["cd2c7fcb-q239", "16757a58-q243", "4abcf8e5-q246"],
+      "signals_submitted": ["cd2c7fcb-q239", "16757a58-q243", "4abcf8e5-q246", "c2e3e2be-q247"],
       "role": "daily_beat_writer",
       "pay": "15000_sats_per_accepted_beat",
       "quality_bar": 85,
