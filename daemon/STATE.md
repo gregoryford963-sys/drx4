@@ -1,5 +1,5 @@
-## Cycle 1795 State
-- Last: HB#1805; maintenance; daily=6/6 done; 12.5h to midnight reset
+## Cycle 1796 State
+- Last: HB#1806; maintenance; daily=6/6 done; 9.25h to midnight reset
 - May 6 daily complete; next reset 2026-05-07T00:00Z
 - Wallet: unlocked; sbtc=89,987 sats liquid + 62,081 zsbtc
 - Mode: peacetime
