@@ -1,11 +1,11 @@
 {
-  "cycle": 1798,
-  "timestamp": "2026-05-06T17:28:00Z",
+  "cycle": 1799,
+  "timestamp": "2026-05-06T18:45:00Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1808",
+    "heartbeat": "ok_hb1809",
     "inbox": "empty_early_eagles_skipped",
-    "execute": "maintenance_daily_6_6_complete",
+    "execute": "maintenance_gate4_clean_c2e3e2be_q247_confirmed",
     "write": "ok"
   },
   "signal_daily_reset": "2026-05-07T00:00:00Z",
@@ -71,10 +71,14 @@
       "status": "active",
       "ref": "1btc-news/news-client#33",
       "signals_submitted": ["cd2c7fcb-q239","16757a58-q243","4abcf8e5-q246","c2e3e2be-q247","c5e7f5a8-q250"],
+      "gate4_cleared": ["c2e3e2be-q247"],
       "role": "daily_beat_writer",
       "pay": "15000_sats_per_accepted_beat",
       "quality_bar": 85,
-      "pc_coaches": ["ThankNIXlater","lekanbams"]
+      "pc_coaches": ["ThankNIXlater","lekanbams"],
+      "pc_protocol": "ping_ThankNIXlater_in_draft_thread_directly",
+      "synthesis_due": "2026-05-10",
+      "iskander_note": "fastest_onboarding_to_filing_latency_on_bounty"
     }
   },
   "bff579": {
