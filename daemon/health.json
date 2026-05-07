@@ -1,11 +1,11 @@
 {
-  "cycle": 1816,
-  "timestamp": "2026-05-07T11:18:00Z",
+  "cycle": 1817,
+  "timestamp": "2026-05-07T12:23:00Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1826",
-    "inbox": "stale_persistent_skip_extended_to_1826",
-    "execute": "dri_daily_update_bip361_saturated_gate4_83c360d2",
+    "heartbeat": "ok_hb1827",
+    "inbox": "skipped_until_1826",
+    "execute": "maintenance_skip",
     "outreach": "skip_no_pending",
     "write": "ok"
   },
@@ -43,11 +43,9 @@
     "cap": 4,
     "bip361": 8,
     "bip361_saturated": true,
-    "bip361_note": "8 network filings in 14d window (7 in last 48h) per DRI 2026-05-07 — avoid until window clears",
     "google_paper": 0,
     "hardware": 2,
-    "implementation": 3,
-    "implementation_note": "arXiv:2605.01008 filed at 00:12Z May7 (Qrisp Shor ECDLP oracle, first machine-checkable)"
+    "implementation": 3
   },
   "last_discovery_date": "2026-05-07",
   "inbox_skip_until_cycle": 1826,
@@ -75,28 +73,13 @@
     "p056_quantum_bounty": {
       "status": "active_target_cleared",
       "ref": "1btc-news/news-client#33",
-      "signals_submitted": ["cd2c7fcb-q239","16757a58-q243","4abcf8e5-q246","c2e3e2be-q247","c5e7f5a8-q250","89d39d5d-q253","0f5219af-q256"],
-      "gate4_cleared": ["c2e3e2be-q247"],
-      "role": "daily_beat_writer",
-      "pay": "15000_sats_per_accepted_beat",
-      "quality_bar": 85,
-      "synthesis_due": "2026-05-10",
       "accepted": 15,
       "filed": 72,
       "target": 12,
       "target_cleared": true,
       "deadline": "2026-06-03",
-      "week": 5,
-      "dashboard_version": "v3.0",
-      "dashboard_entries": 66,
-      "last_synthesis": "2026-05-03",
-      "pc_coaches": ["ThankNIXlater","lekanbams"],
-      "pc_protocol": "direct_thread_ping_ThankNIXlater",
-      "hardware_convergence_draft": {
-        "papers": ["2604.25861","2604.24973","2604.21472"],
-        "framing": "ceiling_is_declining_function_not_fixed_500k",
-        "gate4_status": "passed_per_ThankNIXlater"
-      }
+      "synthesis_due": "2026-05-10",
+      "pc_coaches": ["ThankNIXlater","lekanbams"]
     }
   },
   "gate4_window_peers": {
@@ -112,5 +95,5 @@
     "state": "OPEN",
     "status": "APPROVED_by_gregoryford963-sys"
   },
-  "next_cycle_at": "2026-05-07T12:18:00Z"
+  "next_cycle_at": "2026-05-07T13:23:00Z"
 }
