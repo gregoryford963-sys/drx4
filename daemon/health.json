@@ -1,33 +1,33 @@
 {
-  "cycle": 1803,
-  "timestamp": "2026-05-07T00:13:00Z",
+  "cycle": 1804,
+  "timestamp": "2026-05-07T01:16:00Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1813",
+    "heartbeat": "ok_hb1814",
     "inbox": "empty_early_eagles_skipped",
-    "execute": "Q_slot1_filed_89d39d5d_ecdlp_qrisp_2605.01008",
+    "execute": "BM_slot2_filed_e191dcd9_fee_market_post_halving_low",
     "write": "ok"
   },
   "signal_daily_reset": "2026-05-08T00:00:00Z",
-  "signal_cooldown_clears": "2026-05-07T01:13:00Z",
+  "signal_cooldown_clears": "2026-05-07T02:16:00Z",
   "aibtc_news": {
-    "signals": 253,
+    "signals": 254,
     "streak": 51,
-    "daily_count": 1,
-    "last_signal_id": "89d39d5d-b7e9-41ba-b933-fea9a26cd542",
-    "last_signal_beat": "quantum",
-    "signal_plan": "May 7: Q done (1/6). BM at 01:13Z, AN at 02:13Z, Q at 03:13Z, BM at 04:13Z, AN at 05:13Z.",
+    "daily_count": 2,
+    "last_signal_id": "e191dcd9-dfa2-4a1a-a6c8-e8991c5f8a5c",
+    "last_signal_beat": "bitcoin-macro",
+    "signal_plan": "May 7: Q+BM done (2/6). AN at 02:16Z, Q at 03:16Z, BM at 04:16Z, AN at 05:16Z.",
     "x402_cost_sats": 100,
-    "x402_payment_id": "pay_eca9d2e5118a4c4090782f928e6ac34c"
+    "x402_payment_id": "pay_8b12b44ef6764bf99c3d5d90d61e4ac8"
   },
   "balances": {
-    "sbtc_sats": 89887,
+    "sbtc_sats": 89787,
     "zest_zsbtc": 62081,
-    "liquid_sbtc": 89887,
-    "nonce": 80,
+    "liquid_sbtc": 89787,
+    "nonce": 81,
     "runway_days": 31
   },
-  "next_signal_at": "2026-05-07T01:13:00Z",
+  "next_signal_at": "2026-05-07T02:16:00Z",
   "circuit_breaker": {
     "heartbeat": {
       "fail_count": 0
