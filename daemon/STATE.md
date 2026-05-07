@@ -1,5 +1,5 @@
-## Cycle 1811 State
-- Last: HB#1821; inbox stale 3 cycles (skip until 1813); maintenance idle
+## Cycle 1812 State
+- Last: HB#1822; PR check: bff579 still CHANGES_REQUESTED (no rereview); skills#371 1 approval waiting merge
 - Signals: 6/6 COMPLETE; streak=51; next signals at 2026-05-08T00:00Z
 - Wallet: unlocked; sbtc=89,387 liquid + 62,081 zsbtc
 - Mode: peacetime; runway 31 days
