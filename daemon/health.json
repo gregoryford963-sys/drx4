@@ -1,11 +1,11 @@
 {
-  "cycle": 1821,
-  "timestamp": "2026-05-07T22:00:00Z",
+  "cycle": 1822,
+  "timestamp": "2026-05-07T23:48:00Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1831",
+    "heartbeat": "ok_hb1832",
     "inbox": "skipped_until_1826",
-    "execute": "signal_prep: Q=bip360/exposure, BM=mining/price, AN=skills#375_HODLMM-Zest; balance_updated",
+    "execute": "maintenance_mode; midnight_12min_away; signals_unlocked_at_00:00Z",
     "outreach": "skip_no_pending",
     "write": "ok"
   },
@@ -107,5 +107,5 @@
     "state": "OPEN",
     "bitflow_review": "arc0btc_changes_requested_18:12Z_may3; fix_pushed; awaiting_rereview"
   },
-  "next_cycle_at": "2026-05-07T23:00:00Z"
+  "next_cycle_at": "2026-05-08T00:00:00Z"
 }
