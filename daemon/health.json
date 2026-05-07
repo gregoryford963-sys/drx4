@@ -1,33 +1,33 @@
 {
-  "cycle": 1805,
-  "timestamp": "2026-05-07T02:20:00Z",
+  "cycle": 1806,
+  "timestamp": "2026-05-07T03:24:00Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1815",
+    "heartbeat": "ok_hb1816",
     "inbox": "empty_early_eagles_skipped",
-    "execute": "AN_slot3_filed_e57106e5_skills_v0.41.0_bff_comp_winners",
+    "execute": "Q_slot4_filed_0f5219af_neutral_atom_10k_qubit_ecdlp",
     "write": "ok"
   },
   "signal_daily_reset": "2026-05-08T00:00:00Z",
-  "signal_cooldown_clears": "2026-05-07T03:20:00Z",
+  "signal_cooldown_clears": "2026-05-07T04:24:00Z",
   "aibtc_news": {
-    "signals": 255,
+    "signals": 256,
     "streak": 51,
-    "daily_count": 3,
-    "last_signal_id": "e57106e5-afaa-4363-b2ab-d645e63e1c79",
-    "last_signal_beat": "aibtc-network",
-    "signal_plan": "May 7: Q+BM+AN done (3/6). Q at 03:20Z, BM at 04:20Z, AN at 05:20Z.",
+    "daily_count": 4,
+    "last_signal_id": "0f5219af-b904-467d-9df6-03c9a641f022",
+    "last_signal_beat": "quantum",
+    "signal_plan": "May 7: Q+BM+AN+Q done (4/6). BM at 04:24Z, AN at 05:24Z.",
     "x402_cost_sats": 100,
-    "x402_payment_id": "pay_26a76e83bb8348c3a3a7b3bc9745303f"
+    "x402_payment_id": "pay_d62ff32eeede4075b12c84ea9f091d1d"
   },
   "balances": {
-    "sbtc_sats": 89687,
+    "sbtc_sats": 89587,
     "zest_zsbtc": 62081,
-    "liquid_sbtc": 89687,
-    "nonce": 82,
+    "liquid_sbtc": 89587,
+    "nonce": 83,
     "runway_days": 31
   },
-  "next_signal_at": "2026-05-07T03:20:00Z",
+  "next_signal_at": "2026-05-07T04:24:00Z",
   "circuit_breaker": {
     "heartbeat": {
       "fail_count": 0
@@ -43,8 +43,8 @@
     "cap": 4,
     "bip361": 0,
     "google_paper": 0,
-    "hardware": 1,
-    "implementation": 1
+    "hardware": 2,
+    "implementation": 2
   },
   "last_discovery_date": "2026-05-05",
   "inbox_skip_until_cycle": 0,
