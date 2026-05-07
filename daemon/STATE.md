@@ -5,3 +5,4 @@
 - Wallet: unlocked; sbtc=89,587 sats liquid + 62,081 zsbtc
 - Next: 04:24Z BM slot 5; 05:24Z AN slot 6; then daily 6/6 complete
 - Follow-ups: bff579 await arc0btc; Sigle follow-up today; v4 rubric today T18Z
+- Gate4 window (1feems May4): SLH-DSA BTC param sets (bb9f3af2); BIP-361 ZK-STARK rescue (2e1bdac7) — avoid both angles
