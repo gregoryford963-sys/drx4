@@ -1,5 +1,5 @@
-## Cycle 1813 State
-- Last: HB#1823; inbox stale unreadCount persists; skip extended to 1816
+## Cycle 1814 State
+- Last: HB#1824; inbox skip (until 1816); maintenance idle
 - Signals: 6/6 COMPLETE; streak=51; next signals at 2026-05-08T00:00Z
 - Wallet: unlocked; sbtc=89,387 liquid + 62,081 zsbtc
 - Mode: peacetime; runway 31 days
