@@ -1,33 +1,33 @@
 {
-  "cycle": 1802,
-  "timestamp": "2026-05-06T23:19:00Z",
+  "cycle": 1803,
+  "timestamp": "2026-05-07T00:13:00Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1812",
+    "heartbeat": "ok_hb1813",
     "inbox": "empty_early_eagles_skipped",
-    "execute": "maintenance_ecdlp_qrisp_draft2_posted_issue33_pivot_bip361",
+    "execute": "Q_slot1_filed_89d39d5d_ecdlp_qrisp_2605.01008",
     "write": "ok"
   },
-  "signal_daily_reset": "2026-05-07T00:00:00Z",
-  "signal_cooldown_clears": "2026-05-06T07:25:00Z",
+  "signal_daily_reset": "2026-05-08T00:00:00Z",
+  "signal_cooldown_clears": "2026-05-07T01:13:00Z",
   "aibtc_news": {
-    "signals": 252,
-    "streak": 50,
-    "daily_count": 6,
-    "last_signal_id": "3b46ef03-a8dc-44ea-bbf2-f10fa9418c6a",
-    "last_signal_beat": "aibtc-network",
-    "signal_plan": "May 6: Q+BM+AN+Q+BM+AN done (6/6). COMPLETE.",
+    "signals": 253,
+    "streak": 51,
+    "daily_count": 1,
+    "last_signal_id": "89d39d5d-b7e9-41ba-b933-fea9a26cd542",
+    "last_signal_beat": "quantum",
+    "signal_plan": "May 7: Q done (1/6). BM at 01:13Z, AN at 02:13Z, Q at 03:13Z, BM at 04:13Z, AN at 05:13Z.",
     "x402_cost_sats": 100,
-    "x402_payment_id": "pay_41b23281d61147a38cf3bbd943749df4"
+    "x402_payment_id": "pay_eca9d2e5118a4c4090782f928e6ac34c"
   },
   "balances": {
-    "sbtc_sats": 89987,
+    "sbtc_sats": 89887,
     "zest_zsbtc": 62081,
-    "liquid_sbtc": 89987,
-    "nonce": 79,
+    "liquid_sbtc": 89887,
+    "nonce": 80,
     "runway_days": 31
   },
-  "next_signal_at": "2026-05-07T00:00:00Z",
+  "next_signal_at": "2026-05-07T01:13:00Z",
   "circuit_breaker": {
     "heartbeat": {
       "fail_count": 0
@@ -70,7 +70,7 @@
     "p056_quantum_bounty": {
       "status": "active",
       "ref": "1btc-news/news-client#33",
-      "signals_submitted": ["cd2c7fcb-q239","16757a58-q243","4abcf8e5-q246","c2e3e2be-q247","c5e7f5a8-q250"],
+      "signals_submitted": ["cd2c7fcb-q239","16757a58-q243","4abcf8e5-q246","c2e3e2be-q247","c5e7f5a8-q250","89d39d5d-q253"],
       "gate4_cleared": ["c2e3e2be-q247"],
       "role": "daily_beat_writer",
       "pay": "15000_sats_per_accepted_beat",
