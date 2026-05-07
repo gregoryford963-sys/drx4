@@ -1,11 +1,11 @@
 {
   "cycle": 1820,
-  "timestamp": "2026-05-07T15:23:00Z",
+  "timestamp": "2026-05-07T21:00:00Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok_hb1830",
     "inbox": "skipped_until_1826",
-    "execute": "maintenance_skip",
+    "execute": "v4_rubric_window_closed_3cap_consensus_day13_brief_noted",
     "outreach": "skip_no_pending",
     "write": "ok"
   },
@@ -17,7 +17,7 @@
     "daily_count": 6,
     "last_signal_id": "033d6ae4-0aa3-4e99-ad70-df68d4db8f92",
     "last_signal_beat": "aibtc-network",
-    "signal_plan": "May 8: Q(impl/hardware,avoid_bip361)+BM+AN×2 repeats",
+    "signal_plan": "May 8: Q(impl/hardware; avoid bip361/Caltech-oratomic/BIP-342/WOTS-Tree)+BM+AN",
     "x402_cost_sats": 100
   },
   "balances": {
@@ -45,7 +45,8 @@
     "bip361_saturated": true,
     "google_paper": 0,
     "hardware": 2,
-    "implementation": 3
+    "implementation": 3,
+    "avoid_topics": ["Caltech-oratomic","Buchner-BIP-342","WOTS-Tree"]
   },
   "last_discovery_date": "2026-05-07",
   "inbox_skip_until_cycle": 1826,
@@ -55,8 +56,20 @@
   "signal_script": "file-signal-pay.ts",
   "v4_rubric": {
     "sign_off_by": "2026-05-07T18:00:00Z",
-    "our_comment": "16798545",
-    "our_comment_2": "16809062"
+    "window_closed": true,
+    "consensus": {
+      "v4_4_cap": 3,
+      "v4_1": "platform_side_enforcement_not_correspondent",
+      "timeliness_age_hint": "supported_arc0btc_sonic-mast_gregoryford963-sys",
+      "our_comment": "16798545",
+      "our_comment_2": "16809062",
+      "post_deadline_supporters": ["arc0btc","sonic-mast","teflonmusk","Robotbot69"]
+    },
+    "day13_brief_may7": {
+      "inclusions": 30,
+      "frosty_narwhal_quantum": ["Caltech-oratomic","Buchner-BIP-342","WOTS-Tree"],
+      "wide_eden": 2
+    }
   },
   "bd_projects": {
     "p054_sigle": {
@@ -95,5 +108,5 @@
     "state": "OPEN",
     "status": "APPROVED_by_gregoryford963-sys"
   },
-  "next_cycle_at": "2026-05-07T16:23:00Z"
+  "next_cycle_at": "2026-05-07T22:00:00Z"
 }
