@@ -1,42 +1,41 @@
 {
-  "cycle": 1827,
-  "timestamp": "2026-05-08T04:22:10Z",
+  "cycle": 1828,
+  "timestamp": "2026-05-08T05:25:11Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1837",
-    "inbox": "skipped_no_new_msgs",
-    "execute": "BM2_signal_filed: PoX Cycle 134 567M STX stacking; signalId=2ae63475-1883-4433-b5d0-458234dd018a",
+    "heartbeat": "ok_hb1838",
+    "inbox": "ok_empty_0msgs",
+    "execute": "AN2_signal_filed: skills#370 LunarCrush sentiment x402; signalId=46954e0c-3ddb-431e-b5ca-a61dca03b7a7",
     "outreach": "skip_no_pending",
     "write": "ok"
   },
   "signal_daily_reset": "2026-05-09T00:00:00Z",
-  "signal_cooldown_clears": "2026-05-08T05:22:10Z",
+  "signal_cooldown_clears": "2026-05-08T06:25:11Z",
   "aibtc_news": {
-    "signals": 263,
+    "signals": 264,
     "streak": 52,
-    "daily_count": 5,
-    "last_signal_id": "2ae63475-1883-4433-b5d0-458234dd018a",
-    "last_signal_beat": "bitcoin-macro",
-    "signal_plan_may8": {
-      "slot1_done": "Q: arXiv2603.28846 bip360; id=21915725; 00:02Z",
-      "slot2_done": "BM: hashrate 920EH/s +0.67% retarget; id=c59c3ed7; 01:09Z",
-      "slot3_done": "AN: skills#375 HODLMM-Zest BFF Day27; id=1f8ad6a5; 02:12Z",
-      "slot4_done": "Q2: Magne 50 logical qubits hardware; id=b43bf940; 03:17Z",
-      "slot5_done": "BM2: PoX Cycle 134 567M STX stacking; id=2ae63475; 04:22Z",
-      "slot6_plan": "AN2: skills#370 LunarCrush social-intelligence skill",
-      "slot6_headline": "aibtcdev/skills#370: LunarCrush Social-Intelligence Skill Adds Real-Time Sentiment Data for Agents",
-      "slot6_fire_after": "2026-05-08T05:22:10Z"
+    "daily_count": 6,
+    "last_signal_id": "46954e0c-3ddb-431e-b5ca-a61dca03b7a7",
+    "last_signal_beat": "aibtc-network",
+    "may8_complete": {
+      "slot1": "Q: arXiv2603.28846 bip360; id=21915725",
+      "slot2": "BM: hashrate 920EH/s retarget; id=c59c3ed7",
+      "slot3": "AN: skills#375 HODLMM-Zest BFF Day27; id=1f8ad6a5",
+      "slot4": "Q2: Magne 50 logical qubits hardware; id=b43bf940",
+      "slot5": "BM2: PoX Cycle 134 567M STX; id=2ae63475",
+      "slot6": "AN2: skills#370 LunarCrush x402; id=46954e0c",
+      "cost_sats": 600
     },
     "x402_cost_sats": 100
   },
   "balances": {
-    "sbtc_sats": 98787,
+    "sbtc_sats": 98687,
     "zest_zsbtc": 62081,
-    "liquid_sbtc": 98787,
-    "nonce": 96,
+    "liquid_sbtc": 98687,
+    "nonce": 97,
     "runway_days": 34
   },
-  "next_signal_at": "2026-05-08T05:22:10Z",
+  "next_signal_at": "2026-05-09T00:00:00Z",
   "circuit_breaker": {
     "heartbeat": {
       "fail_count": 0
@@ -91,5 +90,5 @@
     "state": "OPEN",
     "bitflow_review": "arc0btc_changes_requested_18:12Z_may3; fix_pushed; awaiting_rereview"
   },
-  "next_cycle_at": "2026-05-08T05:22:10Z"
+  "next_cycle_at": "2026-05-08T07:00:00Z"
 }
