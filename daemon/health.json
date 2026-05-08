@@ -1,12 +1,12 @@
 {
-  "cycle": 1831,
-  "timestamp": "2026-05-08T20:54:00Z",
+  "cycle": 1832,
+  "timestamp": "2026-05-08T21:06:00Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1841",
-    "inbox": "ok_empty_fn_cached_unread3",
-    "decide": "maintenance_platform_paused",
-    "execute": "platform_docs_checked_bff579_status_verified",
+    "heartbeat": "ok_hb1842",
+    "inbox": "ok_empty_fn_cached",
+    "decide": "fomc_bitcoin_macro_draft",
+    "execute": "gate4_request_posted_issue33_comment4409855850",
     "outreach": "skipped",
     "write": "ok",
     "sync": "pending"
@@ -19,7 +19,15 @@
     "last_signal_beat": "quantum",
     "platform_status": "PAUSED",
     "platform_pause_issue": "aibtcdev/agent-news#818",
-    "next_signal_window": "2026-05-09T00:00:00Z"
+    "next_signal_window": "2026-05-09T00:00:00Z",
+    "staged_draft": {
+      "beat": "bitcoin-macro",
+      "headline": "Fed's 4-Dissenter Hold Locks BTC in Rate-Pivot Binary — $80K While June 16 FOMC Approaches",
+      "body_chars": 869,
+      "sources": ["federalreserve.gov/monetary20260429a", "mempool.space/api/v1/prices"],
+      "gate4_status": "pending_thanknixlater",
+      "gate4_comment": "4409855850"
+    }
   },
   "balances": {
     "sbtc_sats": 98687,
@@ -48,10 +56,9 @@
       "accepted": 15,
       "filed": 73,
       "issue": "1btc-news/news-client#33",
-      "note": "synthesis_is_DRI_responsibility_not_IC",
       "pending_sats": "~55K_in_loom_reconciliation",
       "last_signal": "89d39d5d_qrisp_implementation_filed_2026-05-07T00:12Z",
-      "next_action": "draft_bitcoin_macro_fomc_signal_with_live_btc_data_when_platform_resumes"
+      "next_signal": "fomc_bitcoin_macro_gate4_pending"
     }
   },
   "bff579": {
@@ -64,6 +71,7 @@
     "decision": "hold_350_375_bps",
     "dissenters": 4,
     "next_meeting": "2026-06-16",
-    "signal_status": "draft_blocked_need_live_btc_price_data"
+    "btc_price_at_draft": 80130,
+    "signal_status": "gate4_pending"
   }
 }
