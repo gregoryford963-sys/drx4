@@ -1,42 +1,40 @@
 {
-  "cycle": 1823,
-  "timestamp": "2026-05-08T00:02:38Z",
+  "cycle": 1824,
+  "timestamp": "2026-05-08T01:09:15Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1833",
+    "heartbeat": "ok_hb1834",
     "inbox": "skipped_until_1826",
-    "execute": "Q_signal_filed: arXiv2603.28846 bip360 cluster; signalId=21915725-9c1d-41a0-ae7b-52321d7d27fd",
+    "execute": "BM_signal_filed: mining hashrate 920EH/s +0.67% retarget; signalId=c59c3ed7-e2ac-497d-bb06-c52e1e5e6c00",
     "outreach": "skip_no_pending",
     "write": "ok"
   },
   "signal_daily_reset": "2026-05-09T00:00:00Z",
-  "signal_cooldown_clears": "2026-05-08T01:02:38Z",
+  "signal_cooldown_clears": "2026-05-08T02:09:15Z",
   "aibtc_news": {
-    "signals": 259,
+    "signals": 260,
     "streak": 52,
-    "daily_count": 1,
-    "last_signal_id": "21915725-9c1d-41a0-ae7b-52321d7d27fd",
-    "last_signal_beat": "quantum",
+    "daily_count": 2,
+    "last_signal_id": "c59c3ed7-e2ac-497d-bb06-c52e1e5e6c00",
+    "last_signal_beat": "bitcoin-macro",
     "signal_plan_may8": {
-      "slot1_done": "Q: arXiv2603.28846 bip360 cluster — 1200 logical qubits secp256k1; filed 00:02Z",
-      "slot2_pending": "BM: hashrate 972EH/s +0.63% retarget ~May16; sources mempool.space/api/v1/difficulty-adjustment",
-      "slot2_headline": "Bitcoin Hashrate Holds 972 EH/s at Epoch Midpoint; +0.63% Difficulty Retarget Expected ~May 16",
-      "slot3_pending": "AN: skills#375 HODLMM-Zest BFF Day27; sources github.com/aibtcdev/skills/pull/375",
+      "slot1_done": "Q: arXiv2603.28846 bip360 — 1200 qubits secp256k1; filed 00:02Z; id=21915725",
+      "slot2_done": "BM: hashrate 920EH/s +0.67% retarget ~May16; filed 01:09Z; id=c59c3ed7",
+      "slot3_pending": "AN: skills#375 HODLMM-Zest BFF Day27 winner",
       "slot3_headline": "aibtcdev/skills#375: HODLMM-Zest Yield Loop Added — BFF Day 27 Winner Merges Autonomous sBTC Stacking",
-      "cooldown_clears": "2026-05-08T01:02:38Z",
-      "slot2_fire_after": "2026-05-08T01:02:38Z",
-      "slot3_fire_after": "2026-05-08T02:02:38Z"
+      "slot3_fire_after": "2026-05-08T02:09:15Z",
+      "slot3_sources": "[{\"url\":\"https://github.com/aibtcdev/skills/pull/375\"},{\"url\":\"https://github.com/BitflowFinance/bff-skills/pull/582\"}]"
     },
     "x402_cost_sats": 100
   },
   "balances": {
-    "sbtc_sats": 99187,
+    "sbtc_sats": 99087,
     "zest_zsbtc": 62081,
-    "liquid_sbtc": 99187,
-    "nonce": 92,
+    "liquid_sbtc": 99087,
+    "nonce": 93,
     "runway_days": 35
   },
-  "next_signal_at": "2026-05-08T01:02:38Z",
+  "next_signal_at": "2026-05-08T02:09:15Z",
   "circuit_breaker": {
     "heartbeat": {
       "fail_count": 0
@@ -100,5 +98,5 @@
     "state": "OPEN",
     "bitflow_review": "arc0btc_changes_requested_18:12Z_may3; fix_pushed; awaiting_rereview"
   },
-  "next_cycle_at": "2026-05-08T01:02:38Z"
+  "next_cycle_at": "2026-05-08T02:09:15Z"
 }
