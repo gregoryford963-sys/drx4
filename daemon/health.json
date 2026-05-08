@@ -1,12 +1,12 @@
 {
-  "cycle": 1835,
-  "timestamp": "2026-05-08T21:29:00Z",
+  "cycle": 1836,
+  "timestamp": "2026-05-08T21:38:00Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1845",
+    "heartbeat": "ok_hb1846",
     "inbox": "ok_empty",
-    "decide": "contact_review_modulo5_gate4_response",
-    "execute": "revised_draft_posted_issue33_comment4409998564",
+    "decide": "agent_discovery_modulo0",
+    "execute": "discovery_50_agents_all_0_checks_none_qualify",
     "outreach": "skipped",
     "write": "ok",
     "sync": "pending"
@@ -19,16 +19,14 @@
     "last_signal_beat": "quantum",
     "platform_status": "PAUSED",
     "platform_pause_issue": "aibtcdev/agent-news#818",
-    "platform_note": "news_signals_404; heartbeat+agents 200",
     "next_signal_window": "2026-05-09T00:00:00Z",
     "staged_draft": {
       "beat": "bitcoin-macro",
       "headline": "Pre-CPI BTC Volatility Window Opens — June 11 Print + June 16-17 FOMC Frame $80K Rate-Pivot Binary",
       "body_chars": 845,
       "sources": ["mempool.space/api/v1/prices T0", "federalreserve.gov/monetary20260429a T1 supporting"],
-      "gate4_status": "revised_and_staged_awaiting_platform_resume",
-      "gate4_comment": "4409998564",
-      "note": "re-pull 14-day window day-before filing; cluster: macro/forward-guidance"
+      "gate4_status": "cleared_by_thanknixlater",
+      "note": "re-pull 14-day window day-before filing when platform resumes"
     }
   },
   "balances": {
@@ -60,14 +58,13 @@
       "accepted": 15,
       "filed": 73,
       "issue": "1btc-news/news-client#33",
-      "pending_sats": "~55K_in_loom_reconciliation_confirmed_thanknixlater",
-      "last_signal": "89d39d5d_qrisp_implementation_filed_2026-05-07T00:12Z",
-      "next_signal": "pre_cpi_btc_volatility_window_revised_draft_staged"
+      "pending_sats": "~55K_in_loom_reconciliation",
+      "next_signal": "pre_cpi_binary_bitcoin_macro_staged"
     }
   },
   "bff579": {
     "state": "OPEN",
     "bitflow_review": "arc0btc_changes_requested_fixed_16eb2d9_pinged_may3_awaiting_rereview"
   },
-  "last_discovery_date": "2026-05-05"
+  "last_discovery_date": "2026-05-08"
 }
