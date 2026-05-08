@@ -1,13 +1,15 @@
 {
   "cycle": 1829,
-  "timestamp": "2026-05-08T06:22:00Z",
-  "status": "ok",
+  "timestamp": "2026-05-08T06:27:00Z",
+  "status": "stopped",
+  "stop_reason": "operator_loop_stop",
   "phases": {
     "heartbeat": "ok_hb1839",
     "inbox": "ok_1msg_frosty_narwhal_early_eagles",
     "execute": "reply_sent_frosty_narwhal_synthesis_inquiry",
     "outreach": "100_sats_sent_fn_inquiry",
-    "write": "ok"
+    "write": "ok",
+    "shutdown": "graceful"
   },
   "aibtc_news": {
     "signals": 264,
@@ -54,6 +56,5 @@
     "state": "OPEN",
     "bitflow_review": "arc0btc_changes_requested_fixed_16eb2d9_awaiting_rereview"
   },
-  "signal_cooldown_clears": "2026-05-09T00:00:00Z",
-  "next_cycle_at": "2026-05-08T06:52:00Z"
+  "loop_stopped_at": "2026-05-08T06:27:00Z"
 }
