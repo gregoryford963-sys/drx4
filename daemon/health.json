@@ -1,32 +1,22 @@
 {
   "cycle": 1828,
-  "timestamp": "2026-05-08T05:25:11Z",
-  "status": "ok",
+  "timestamp": "2026-05-08T05:30:00Z",
+  "status": "stopped",
+  "stop_reason": "operator_loop_stop",
   "phases": {
     "heartbeat": "ok_hb1838",
     "inbox": "ok_empty_0msgs",
-    "execute": "AN2_signal_filed: skills#370 LunarCrush sentiment x402; signalId=46954e0c-3ddb-431e-b5ca-a61dca03b7a7",
+    "execute": "6/6_may8_signals_complete",
     "outreach": "skip_no_pending",
-    "write": "ok"
+    "write": "ok",
+    "shutdown": "graceful"
   },
-  "signal_daily_reset": "2026-05-09T00:00:00Z",
-  "signal_cooldown_clears": "2026-05-08T06:25:11Z",
   "aibtc_news": {
     "signals": 264,
     "streak": 52,
     "daily_count": 6,
     "last_signal_id": "46954e0c-3ddb-431e-b5ca-a61dca03b7a7",
-    "last_signal_beat": "aibtc-network",
-    "may8_complete": {
-      "slot1": "Q: arXiv2603.28846 bip360; id=21915725",
-      "slot2": "BM: hashrate 920EH/s retarget; id=c59c3ed7",
-      "slot3": "AN: skills#375 HODLMM-Zest BFF Day27; id=1f8ad6a5",
-      "slot4": "Q2: Magne 50 logical qubits hardware; id=b43bf940",
-      "slot5": "BM2: PoX Cycle 134 567M STX; id=2ae63475",
-      "slot6": "AN2: skills#370 LunarCrush x402; id=46954e0c",
-      "cost_sats": 600
-    },
-    "x402_cost_sats": 100
+    "last_signal_beat": "aibtc-network"
   },
   "balances": {
     "sbtc_sats": 98687,
@@ -35,37 +25,15 @@
     "nonce": 97,
     "runway_days": 34
   },
-  "next_signal_at": "2026-05-09T00:00:00Z",
+  "wallet": "locked",
   "circuit_breaker": {
     "heartbeat": {
       "fail_count": 0
     }
   },
-  "zest_position": {
-    "zsbtc_tokens": 62081,
-    "status": "active"
-  },
-  "active_beats": ["bitcoin-macro", "aibtc-network", "quantum"],
-  "bip360_cluster_week": {
-    "bip360": 1,
-    "cap": 4,
-    "bip361": 8,
-    "bip361_saturated": true,
-    "google_paper": 0,
-    "hardware": 3,
-    "implementation": 3,
-    "avoid_topics": ["Caltech-oratomic","Buchner-BIP-342","WOTS-Tree"]
-  },
-  "inbox_skip_until_cycle": 0,
-  "last_discovery_date": "2026-05-07",
-  "outreach_queued": [],
-  "signal_x402_active": true,
-  "signal_x402_cost_sats": 100,
-  "signal_script": "file-signal-pay.ts",
   "bd_projects": {
     "p054_sigle": {
       "status": "follow_up_sent",
-      "ref": "sigle/sigle#1253",
       "follow_up_by": "2026-05-14"
     },
     "p055_amber_otter_registry": {
@@ -74,21 +42,15 @@
     },
     "p056_quantum_bounty": {
       "status": "active_target_cleared",
-      "ref": "1btc-news/news-client#33",
       "accepted": 15,
       "filed": 72,
-      "deadline": "2026-06-03",
       "synthesis_due": "2026-05-10"
     }
   },
-  "gate4_window_peers": {
-    "1feems_may4_slhdsa": "bb9f3af2",
-    "1feems_may4_bip361_zkstark": "2e1bdac7",
-    "1feems_may7_iacr2023_420_first_spend": "83c360d2"
-  },
   "bff579": {
     "state": "OPEN",
-    "bitflow_review": "arc0btc_changes_requested_18:12Z_may3; fix_pushed; awaiting_rereview"
+    "bitflow_review": "arc0btc_changes_requested; fix_pushed; awaiting_rereview"
   },
-  "next_cycle_at": "2026-05-08T07:00:00Z"
+  "next_signal_at": "2026-05-09T00:00:00Z",
+  "loop_stopped_at": "2026-05-08T05:30:00Z"
 }
