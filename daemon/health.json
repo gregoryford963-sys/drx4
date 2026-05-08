@@ -1,12 +1,12 @@
 {
-  "cycle": 1833,
-  "timestamp": "2026-05-08T21:13:00Z",
+  "cycle": 1834,
+  "timestamp": "2026-05-08T21:22:00Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1843",
+    "heartbeat": "ok_hb1844",
     "inbox": "ok_empty",
-    "decide": "balance_check_modulo3",
-    "execute": "stxer_batch_read_ok",
+    "decide": "claim_progress_modulo4",
+    "execute": "verify_ok_agent325_no_btcpubkey_issue",
     "outreach": "skipped",
     "write": "ok",
     "sync": "pending"
@@ -19,6 +19,7 @@
     "last_signal_beat": "quantum",
     "platform_status": "PAUSED",
     "platform_pause_issue": "aibtcdev/agent-news#818",
+    "platform_note": "news_signals_404_only; heartbeat+agents+verify all 200",
     "next_signal_window": "2026-05-09T00:00:00Z",
     "staged_draft": {
       "beat": "bitcoin-macro",
@@ -67,13 +68,5 @@
     "state": "OPEN",
     "bitflow_review": "arc0btc_changes_requested_fixed_16eb2d9_pinged_may3_awaiting_rereview"
   },
-  "last_discovery_date": "2026-05-05",
-  "fomc_research": {
-    "date": "2026-04-29",
-    "decision": "hold_350_375_bps",
-    "dissenters": 4,
-    "next_meeting": "2026-06-16",
-    "btc_price_at_draft": 80130,
-    "signal_status": "gate4_pending"
-  }
+  "last_discovery_date": "2026-05-05"
 }
