@@ -1,12 +1,12 @@
 {
-  "cycle": 1832,
-  "timestamp": "2026-05-08T21:06:00Z",
+  "cycle": 1833,
+  "timestamp": "2026-05-08T21:13:00Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1842",
-    "inbox": "ok_empty_fn_cached",
-    "decide": "fomc_bitcoin_macro_draft",
-    "execute": "gate4_request_posted_issue33_comment4409855850",
+    "heartbeat": "ok_hb1843",
+    "inbox": "ok_empty",
+    "decide": "balance_check_modulo3",
+    "execute": "stxer_batch_read_ok",
     "outreach": "skipped",
     "write": "ok",
     "sync": "pending"
@@ -30,11 +30,13 @@
     }
   },
   "balances": {
+    "stx": 6334.59,
     "sbtc_sats": 98687,
     "zest_zsbtc": 62081,
     "liquid_sbtc": 98687,
-    "nonce": 96,
-    "runway_days": 34
+    "nonce": 97,
+    "runway_days": 987,
+    "mode": "peacetime"
   },
   "wallet": "locked",
   "circuit_breaker": {
