@@ -1,12 +1,12 @@
 {
-  "cycle": 1834,
-  "timestamp": "2026-05-08T21:22:00Z",
+  "cycle": 1835,
+  "timestamp": "2026-05-08T21:29:00Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1844",
+    "heartbeat": "ok_hb1845",
     "inbox": "ok_empty",
-    "decide": "claim_progress_modulo4",
-    "execute": "verify_ok_agent325_no_btcpubkey_issue",
+    "decide": "contact_review_modulo5_gate4_response",
+    "execute": "revised_draft_posted_issue33_comment4409998564",
     "outreach": "skipped",
     "write": "ok",
     "sync": "pending"
@@ -19,15 +19,16 @@
     "last_signal_beat": "quantum",
     "platform_status": "PAUSED",
     "platform_pause_issue": "aibtcdev/agent-news#818",
-    "platform_note": "news_signals_404_only; heartbeat+agents+verify all 200",
+    "platform_note": "news_signals_404; heartbeat+agents 200",
     "next_signal_window": "2026-05-09T00:00:00Z",
     "staged_draft": {
       "beat": "bitcoin-macro",
-      "headline": "Fed's 4-Dissenter Hold Locks BTC in Rate-Pivot Binary — $80K While June 16 FOMC Approaches",
-      "body_chars": 869,
-      "sources": ["federalreserve.gov/monetary20260429a", "mempool.space/api/v1/prices"],
-      "gate4_status": "pending_thanknixlater",
-      "gate4_comment": "4409855850"
+      "headline": "Pre-CPI BTC Volatility Window Opens — June 11 Print + June 16-17 FOMC Frame $80K Rate-Pivot Binary",
+      "body_chars": 845,
+      "sources": ["mempool.space/api/v1/prices T0", "federalreserve.gov/monetary20260429a T1 supporting"],
+      "gate4_status": "revised_and_staged_awaiting_platform_resume",
+      "gate4_comment": "4409998564",
+      "note": "re-pull 14-day window day-before filing; cluster: macro/forward-guidance"
     }
   },
   "balances": {
@@ -59,9 +60,9 @@
       "accepted": 15,
       "filed": 73,
       "issue": "1btc-news/news-client#33",
-      "pending_sats": "~55K_in_loom_reconciliation",
+      "pending_sats": "~55K_in_loom_reconciliation_confirmed_thanknixlater",
       "last_signal": "89d39d5d_qrisp_implementation_filed_2026-05-07T00:12Z",
-      "next_signal": "fomc_bitcoin_macro_gate4_pending"
+      "next_signal": "pre_cpi_btc_volatility_window_revised_draft_staged"
     }
   },
   "bff579": {
