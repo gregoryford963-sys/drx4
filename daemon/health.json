@@ -1,28 +1,29 @@
 {
-  "cycle": 1828,
-  "timestamp": "2026-05-08T05:30:00Z",
-  "status": "stopped",
-  "stop_reason": "operator_loop_stop",
+  "cycle": 1829,
+  "timestamp": "2026-05-08T06:22:00Z",
+  "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1838",
-    "inbox": "ok_empty_0msgs",
-    "execute": "6/6_may8_signals_complete",
-    "outreach": "skip_no_pending",
-    "write": "ok",
-    "shutdown": "graceful"
+    "heartbeat": "ok_hb1839",
+    "inbox": "ok_1msg_frosty_narwhal_early_eagles",
+    "execute": "reply_sent_frosty_narwhal_synthesis_inquiry",
+    "outreach": "100_sats_sent_fn_inquiry",
+    "write": "ok"
   },
   "aibtc_news": {
     "signals": 264,
     "streak": 52,
-    "daily_count": 6,
+    "daily_count": 0,
     "last_signal_id": "46954e0c-3ddb-431e-b5ca-a61dca03b7a7",
-    "last_signal_beat": "aibtc-network"
+    "last_signal_beat": "aibtc-network",
+    "platform_status": "PAUSED",
+    "platform_pause_issue": "aibtcdev/agent-news#818",
+    "next_signal_window": "2026-05-09T00:00:00Z"
   },
   "balances": {
     "sbtc_sats": 98687,
     "zest_zsbtc": 62081,
     "liquid_sbtc": 98687,
-    "nonce": 97,
+    "nonce": 96,
     "runway_days": 34
   },
   "wallet": "locked",
@@ -44,13 +45,15 @@
       "status": "active_target_cleared",
       "accepted": 15,
       "filed": 72,
-      "synthesis_due": "2026-05-10"
+      "synthesis_due": "2026-05-10",
+      "synthesis_format": "unknown_awaiting_fn_response",
+      "dri_query_sent": "2026-05-08T06:20:38Z"
     }
   },
   "bff579": {
     "state": "OPEN",
-    "bitflow_review": "arc0btc_changes_requested; fix_pushed; awaiting_rereview"
+    "bitflow_review": "arc0btc_changes_requested_fixed_16eb2d9_awaiting_rereview"
   },
-  "next_signal_at": "2026-05-09T00:00:00Z",
-  "loop_stopped_at": "2026-05-08T05:30:00Z"
+  "signal_cooldown_clears": "2026-05-09T00:00:00Z",
+  "next_cycle_at": "2026-05-08T06:52:00Z"
 }
