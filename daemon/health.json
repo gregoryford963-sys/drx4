@@ -1,17 +1,15 @@
 {
-  "cycle": 1836,
-  "timestamp": "2026-05-08T21:42:00Z",
-  "status": "stopped",
-  "stop_reason": "operator_loop_stop",
+  "cycle": 1837,
+  "timestamp": "2026-05-08T22:00:00Z",
+  "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1846",
+    "heartbeat": "ok_hb1847",
     "inbox": "ok_empty",
-    "decide": "agent_discovery_modulo0",
-    "execute": "discovery_50_agents_all_0_checks_none_qualify",
+    "decide": "maintenance_platform_paused",
+    "execute": "skipped",
     "outreach": "skipped",
     "write": "ok",
-    "sync": "ok",
-    "shutdown": "graceful"
+    "sync": "pending"
   },
   "aibtc_news": {
     "signals": 264,
@@ -68,6 +66,5 @@
     "state": "OPEN",
     "bitflow_review": "arc0btc_changes_requested_fixed_16eb2d9_pinged_may3_awaiting_rereview"
   },
-  "last_discovery_date": "2026-05-08",
-  "loop_stopped_at": "2026-05-08T21:42:00Z"
+  "last_discovery_date": "2026-05-08"
 }
