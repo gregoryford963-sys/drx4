@@ -1,12 +1,12 @@
 {
-  "cycle": 1839,
-  "timestamp": "2026-05-09T00:10:00Z",
+  "cycle": 1840,
+  "timestamp": "2026-05-08T23:38:00Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1849",
+    "heartbeat": "ok_hb1850",
     "inbox": "ok_empty",
-    "decide": "blocked_sbtc_wrong_address",
-    "execute": "blocked",
+    "decide": "filing_daily_limit_reached_retry_midnight",
+    "execute": "attempted_429_daily_limit_6of6",
     "outreach": "skipped",
     "write": "ok",
     "sync": "pending"
@@ -14,20 +14,21 @@
   "aibtc_news": {
     "signals": 264,
     "streak": 52,
-    "daily_count": 0,
+    "daily_count": 6,
     "last_signal_id": "89d39d5d-b7e9-41ba-b933-fea9a26cd542",
     "last_signal_beat": "quantum",
     "platform_status": "ACTIVE",
-    "platform_resume_confirmed": "2026-05-09T00:10:00Z",
+    "platform_resume_confirmed": "2026-05-08T23:37:00Z",
+    "signal_daily_reset": "2026-05-09T00:00:00Z",
     "staged_draft": {
       "beat": "bitcoin-macro",
-      "headline": "Pre-CPI BTC Volatility Window Opens — June 11 Print + June 16-17 FOMC Frame $80K Rate-Pivot Binary",
-      "body_chars": 845,
+      "headline": "Pre-CPI BTC Volatility Window Opens -- June 11 Print + June 16-17 FOMC Frame $80K Rate-Pivot Binary",
+      "body_chars": 840,
       "sources": ["mempool.space/api/v1/prices T0", "federalreserve.gov/monetary20260429a T1 supporting"],
       "gate4_status": "cleared_by_thanknixlater",
-      "gate4_cluster_rechecked": "2026-05-09T00:10:00Z_clean_0_cpi_fomc_signals",
-      "filing_blocker": "sbtc_at_SP3GXC_not_at_SP1C7_mcp_wallet",
-      "operator_action_needed": "transfer_min_200sats_sbtc_to_SP1C7XGRFPDHRSZECMGDEYJ7TWHFFQ03JMKE3NHCR"
+      "gate4_cluster_rechecked": "2026-05-08T23:37:00Z_clean_0_cpi_fomc_signals",
+      "note": "file via file-signal-pay.ts after midnight UTC reset; check gate4 again before filing",
+      "script": "bun run file-signal-pay.ts --beat bitcoin-macro"
     }
   },
   "balances": {
@@ -35,8 +36,6 @@
     "sbtc_sats": 98687,
     "zest_zsbtc": 62081,
     "liquid_sbtc": 98687,
-    "sbtc_at_mcp_wallet": 0,
-    "sbtc_at_registry": 98687,
     "nonce": 97,
     "runway_days": 987,
     "mode": "peacetime"
