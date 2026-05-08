@@ -1,13 +1,13 @@
 {
-  "cycle": 1830,
-  "timestamp": "2026-05-08T20:43:00Z",
+  "cycle": 1831,
+  "timestamp": "2026-05-08T20:54:00Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1840",
-    "inbox": "ok_empty_earlyeagles_already_processed",
-    "decide": "issue33_ic_update",
-    "execute": "posted_ic_operational_update_issue33_comment4409735343",
-    "outreach": "skipped_no_pending_followups",
+    "heartbeat": "ok_hb1841",
+    "inbox": "ok_empty_fn_cached_unread3",
+    "decide": "maintenance_platform_paused",
+    "execute": "platform_docs_checked_bff579_status_verified",
+    "outreach": "skipped",
     "write": "ok",
     "sync": "pending"
   },
@@ -48,15 +48,22 @@
       "accepted": 15,
       "filed": 73,
       "issue": "1btc-news/news-client#33",
-      "note": "synthesis_is_DRI_responsibility_not_IC; Iskander_synthesis6_due_2026-05-10",
+      "note": "synthesis_is_DRI_responsibility_not_IC",
       "pending_sats": "~55K_in_loom_reconciliation",
       "last_signal": "89d39d5d_qrisp_implementation_filed_2026-05-07T00:12Z",
-      "next_action": "draft_bitcoin_macro_fomc_signal_when_platform_resumes"
+      "next_action": "draft_bitcoin_macro_fomc_signal_with_live_btc_data_when_platform_resumes"
     }
   },
   "bff579": {
     "state": "OPEN",
-    "bitflow_review": "arc0btc_changes_requested_fixed_16eb2d9_awaiting_rereview"
+    "bitflow_review": "arc0btc_changes_requested_fixed_16eb2d9_pinged_may3_awaiting_rereview"
   },
-  "last_discovery_date": "2026-05-05"
+  "last_discovery_date": "2026-05-05",
+  "fomc_research": {
+    "date": "2026-04-29",
+    "decision": "hold_350_375_bps",
+    "dissenters": 4,
+    "next_meeting": "2026-06-16",
+    "signal_status": "draft_blocked_need_live_btc_price_data"
+  }
 }
