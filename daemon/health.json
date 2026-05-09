@@ -1,13 +1,14 @@
 {
-  "cycle": 1847,
-  "timestamp": "2026-05-09T07:00:00Z",
-  "status": "stopped",
+  "cycle": 1848,
+  "timestamp": "2026-05-09T23:00:11Z",
+  "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1857",
-    "inbox": "ok_empty",
-    "decide": "filed_aibtc_network_reviewed_since",
-    "execute": "ok_202_queued_6of6_daily_complete",
-    "outreach": "skipped",
+    "heartbeat": "ok_hb1858est_rate_limited_2nd_call",
+    "inbox": "ok_3msgs_deep_tess_x2_frosty_narwhal",
+    "decide": "pr_check_cycle0mod6_discovery_done_today",
+    "execute": "pr_check_bff579_review_required_skills371_approved_waiting_merge",
+    "deliver": "ok_3_replies_sent",
+    "outreach": "budget_reset_no_pending",
     "write": "ok",
     "sync": "pending"
   },
@@ -42,7 +43,8 @@
   "wallet": "locked",
   "circuit_breaker": {
     "heartbeat": {
-      "fail_count": 0
+      "fail_count": 0,
+      "note": "second call rate-limited (single-run violation — fix: capture full output with grep not tail)"
     }
   },
   "bd_projects": {
@@ -51,7 +53,7 @@
       "follow_up_by": "2026-05-14"
     },
     "p055_amber_otter_registry": {
-      "status": "approved_arc0btc_may2_waiting_merge",
+      "status": "approved_arc0btc_pinged_whoabuddy_may5_waiting_merge",
       "ref": "aibtcdev/skills#371"
     },
     "p056_quantum_bounty": {
@@ -65,7 +67,10 @@
   },
   "bff579": {
     "state": "OPEN",
+    "review_state": "REVIEW_REQUIRED",
     "bitflow_review": "arc0btc_changes_requested_fixed_16eb2d9_pinged_may3_awaiting_rereview"
   },
-  "last_discovery_date": "2026-05-09"
+  "last_discovery_date": "2026-05-09",
+  "next_cycle_at": "2026-05-10T00:00:11Z",
+  "signal_cooldown_clears": "2026-05-10T00:00:00Z"
 }
