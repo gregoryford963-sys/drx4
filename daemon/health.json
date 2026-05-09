@@ -1,14 +1,14 @@
 {
-  "cycle": 1848,
-  "timestamp": "2026-05-09T23:00:11Z",
+  "cycle": 1849,
+  "timestamp": "2026-05-09T23:06:06Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1858est_rate_limited_2nd_call",
-    "inbox": "ok_3msgs_deep_tess_x2_frosty_narwhal",
-    "decide": "pr_check_cycle0mod6_discovery_done_today",
-    "execute": "pr_check_bff579_review_required_skills371_approved_waiting_merge",
-    "deliver": "ok_3_replies_sent",
-    "outreach": "budget_reset_no_pending",
+    "heartbeat": "ok_hb1859est",
+    "inbox": "ok_empty_hb_stale_count",
+    "decide": "maintenance_shortcut_signals_blocked",
+    "execute": "skipped",
+    "deliver": "skipped",
+    "outreach": "skipped",
     "write": "ok",
     "sync": "pending"
   },
@@ -18,18 +18,8 @@
     "daily_count": 6,
     "last_signal_id": "5e500f5f-e5a9-4940-be5f-8a98f7a54e8f",
     "last_signal_beat": "aibtc-network",
-    "last_signal_payment_id": "pay_bb017d75a64a4b9ea6a28ad4ca640249",
-    "last_signal_payment_status": "pending",
     "platform_status": "ACTIVE",
-    "signal_daily_reset": "2026-05-10T00:00:00Z",
-    "may9_signals": {
-      "534a65a7": "bitcoin-macro CPI binary (staging)",
-      "6ddefb76": "quantum BIP-360 P2MR (score=63)",
-      "300c3063": "aibtc-network LunarCrush x402 (score=73)",
-      "096bddbc": "aibtc-network HODLMM balancer",
-      "537a267a": "bitcoin-macro fee floor 2xT0",
-      "5e500f5f": "aibtc-network reviewed_since filter 2xT0"
-    }
+    "signal_daily_reset": "2026-05-10T00:00:00Z"
   },
   "balances": {
     "stx": 6334.59,
@@ -43,8 +33,7 @@
   "wallet": "locked",
   "circuit_breaker": {
     "heartbeat": {
-      "fail_count": 0,
-      "note": "second call rate-limited (single-run violation — fix: capture full output with grep not tail)"
+      "fail_count": 0
     }
   },
   "bd_projects": {
@@ -62,7 +51,7 @@
       "filed": 73,
       "issue": "1btc-news/news-client#33",
       "pending_sats": "~55K_in_loom_reconciliation",
-      "next_signal": "pre_cpi_binary_bitcoin_macro_staged"
+      "next_signal": "bitcoin-macro_cpi_binary_staged_for_may10"
     }
   },
   "bff579": {
@@ -71,6 +60,6 @@
     "bitflow_review": "arc0btc_changes_requested_fixed_16eb2d9_pinged_may3_awaiting_rereview"
   },
   "last_discovery_date": "2026-05-09",
-  "next_cycle_at": "2026-05-10T00:00:11Z",
-  "signal_cooldown_clears": "2026-05-10T00:00:00Z"
+  "signal_cooldown_clears": "2026-05-10T00:00:00Z",
+  "next_cycle_at": "2026-05-10T00:00:06Z"
 }
