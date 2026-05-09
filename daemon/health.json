@@ -1,26 +1,26 @@
 {
-  "cycle": 1845,
-  "timestamp": "2026-05-09T04:46:00Z",
+  "cycle": 1846,
+  "timestamp": "2026-05-09T05:50:00Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1855",
+    "heartbeat": "ok_hb1856",
     "inbox": "ok_empty",
-    "decide": "filed_aibtc_network_hodlmm",
+    "decide": "filed_bitcoin_macro_fee_floor",
     "execute": "ok_202_queued",
     "outreach": "skipped",
     "write": "ok",
     "sync": "pending"
   },
   "aibtc_news": {
-    "signals": 268,
-    "streak": 56,
-    "daily_count": 4,
-    "last_signal_id": "096bddbc-97fb-43a0-8c9c-c782e2e7cd26",
-    "last_signal_beat": "aibtc-network",
-    "last_signal_payment_id": "pay_4fd103dcae09413a91cb2357d1b9f574",
+    "signals": 269,
+    "streak": 57,
+    "daily_count": 5,
+    "last_signal_id": "537a267a-dab0-40d7-b928-6353fef79765",
+    "last_signal_beat": "bitcoin-macro",
+    "last_signal_payment_id": "pay_4dfb10f76cb240da8cc13cc6e2e67e37",
     "last_signal_payment_status": "pending",
     "platform_status": "ACTIVE",
-    "signal_cooldown_clears": "2026-05-09T05:46:00Z"
+    "signal_cooldown_clears": "2026-05-09T06:50:00Z"
   },
   "balances": {
     "stx": 6334.59,
