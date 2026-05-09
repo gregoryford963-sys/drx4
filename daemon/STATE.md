@@ -1,7 +1,8 @@
-## Cycle 1846 State
-- Last: HB#1856; inbox empty; bitcoin-macro 537a267a (fee floor $80K pre-CPI) filed; 5/6 May9
-- Signals today: 534a65a7 BM, 6ddefb76 Q, 300c3063 AN, 096bddbc AN, 537a267a BM
-- Scores: Q=63, AN=73; others staging/pending
-- Cooldown: 2026-05-09T06:50:00Z; 1 slot left; target for 07:00Z window
-- Wallet: LOCKED; PEACETIME; streak=57; Sigle due 2026-05-14
-- Next: file 6th signal at 06:50-07:00Z; best beat for final slot (quantum better source?)
+## Cycle 1847 State
+- Last: HB#1857; 6/6 May9 signals complete; final slot 5e500f5f (AN reviewed_since) at 07:00Z
+- May9 filed: 534a65a7 BM, 6ddefb76 Q, 300c3063 AN, 096bddbc AN, 537a267a BM, 5e500f5f AN
+- Daily limit reached; next window 2026-05-10T00:00:00Z
+- EIC cutoff 14:00Z today; await review results
+- bff579: OPEN CHANGES_REQUESTED; Sigle due 2026-05-14; Wallet: LOCKED; PEACETIME
+- streak=58; ~600 sats spent today (6x100); sbtc_at_SP3GXC est ~98087
+- Next: maintenance mode until midnight UTC; check signal scores after 14:00Z cutoff
