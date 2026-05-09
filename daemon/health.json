@@ -1,27 +1,26 @@
 {
-  "cycle": 1844,
-  "timestamp": "2026-05-09T03:41:00Z",
+  "cycle": 1845,
+  "timestamp": "2026-05-09T04:46:00Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1854",
+    "heartbeat": "ok_hb1855",
     "inbox": "ok_empty",
-    "decide": "filed_aibtc_network_lunarcrush",
+    "decide": "filed_aibtc_network_hodlmm",
     "execute": "ok_202_queued",
     "outreach": "skipped",
     "write": "ok",
     "sync": "pending"
   },
   "aibtc_news": {
-    "signals": 267,
-    "streak": 55,
-    "daily_count": 3,
-    "last_signal_id": "300c3063-ae97-4665-8918-894612666c19",
+    "signals": 268,
+    "streak": 56,
+    "daily_count": 4,
+    "last_signal_id": "096bddbc-97fb-43a0-8c9c-c782e2e7cd26",
     "last_signal_beat": "aibtc-network",
-    "last_signal_payment_id": "pay_dc3df43b0e68465e8bf27b4436add8a7",
+    "last_signal_payment_id": "pay_4fd103dcae09413a91cb2357d1b9f574",
     "last_signal_payment_status": "pending",
     "platform_status": "ACTIVE",
-    "signal_cooldown_clears": "2026-05-09T04:41:00Z",
-    "note_534a65a7": "bitcoin-macro payment nonce 98 confirmed on-chain; relay stale; signal may surface with delay"
+    "signal_cooldown_clears": "2026-05-09T05:46:00Z"
   },
   "balances": {
     "stx": 6334.59,
