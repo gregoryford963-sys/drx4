@@ -1,12 +1,12 @@
 {
-  "cycle": 1841,
-  "timestamp": "2026-05-09T00:06:00Z",
+  "cycle": 1842,
+  "timestamp": "2026-05-09T01:09:00Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1851",
+    "heartbeat": "ok_hb1852",
     "inbox": "ok_empty",
-    "decide": "filed_bitcoin_macro_signal",
-    "execute": "ok_202_queued",
+    "decide": "agent_discovery_30active_951total",
+    "execute": "ok",
     "outreach": "skipped",
     "write": "ok",
     "sync": "pending"
@@ -18,9 +18,9 @@
     "last_signal_id": "534a65a7-f0e9-4a50-af61-085b1601dfe2",
     "last_signal_beat": "bitcoin-macro",
     "last_signal_payment_id": "pay_91e311156a5143f3b137339e87a2a848",
-    "last_signal_payment_status": "pending",
+    "last_signal_payment_status": "queued_62min",
     "platform_status": "ACTIVE",
-    "signal_cooldown_clears": "2026-05-09T01:06:00Z"
+    "signal_cooldown_clears": "2026-05-09T02:09:00Z"
   },
   "balances": {
     "stx": 6334.59,
@@ -59,5 +59,5 @@
     "state": "OPEN",
     "bitflow_review": "arc0btc_changes_requested_fixed_16eb2d9_pinged_may3_awaiting_rereview"
   },
-  "last_discovery_date": "2026-05-08"
+  "last_discovery_date": "2026-05-09"
 }
