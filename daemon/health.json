@@ -1,30 +1,27 @@
 {
-  "cycle": 1843,
-  "timestamp": "2026-05-09T02:36:00Z",
+  "cycle": 1844,
+  "timestamp": "2026-05-09T03:41:00Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1853",
+    "heartbeat": "ok_hb1854",
     "inbox": "ok_empty",
-    "decide": "filed_quantum_bip360_p2mr",
+    "decide": "filed_aibtc_network_lunarcrush",
     "execute": "ok_202_queued",
     "outreach": "skipped",
     "write": "ok",
     "sync": "pending"
   },
   "aibtc_news": {
-    "signals": 266,
-    "streak": 54,
-    "daily_count": 2,
-    "last_signal_id": "6ddefb76-cad7-429c-b756-c71bf95e0455",
-    "last_signal_beat": "quantum",
-    "last_signal_payment_id": "pay_c18248a8e48e4e44ae1394c342057ad4",
+    "signals": 267,
+    "streak": 55,
+    "daily_count": 3,
+    "last_signal_id": "300c3063-ae97-4665-8918-894612666c19",
+    "last_signal_beat": "aibtc-network",
+    "last_signal_payment_id": "pay_dc3df43b0e68465e8bf27b4436add8a7",
     "last_signal_payment_status": "pending",
     "platform_status": "ACTIVE",
-    "signal_cooldown_clears": "2026-05-09T03:36:00Z",
-    "pending_payments": {
-      "pay_91e311156a5143f3b137339e87a2a848": "534a65a7_bitcoin-macro_queued_150min",
-      "pay_c18248a8e48e4e44ae1394c342057ad4": "6ddefb76_quantum_pending"
-    }
+    "signal_cooldown_clears": "2026-05-09T04:41:00Z",
+    "note_534a65a7": "bitcoin-macro payment nonce 98 confirmed on-chain; relay stale; signal may surface with delay"
   },
   "balances": {
     "stx": 6334.59,
