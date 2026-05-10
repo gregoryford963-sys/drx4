@@ -1,32 +1,29 @@
 {
-  "cycle": 1851,
-  "timestamp": "2026-05-10T01:14:00Z",
+  "cycle": 1852,
+  "timestamp": "2026-05-10T02:21:00Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1861est",
+    "heartbeat": "ok_hb1862est",
     "inbox": "ok_empty",
-    "decide": "signal_priority_active",
-    "execute": "signal2_filed_5da8a448_bitcoin_macro_score_est78",
+    "decide": "signal_priority_3of6",
+    "execute": "signal3_filed_62282a92_quantum_bip361",
     "write": "ok",
     "sync": "pending"
   },
   "aibtc_news": {
-    "signals": 272,
+    "signals": 273,
     "streak": 47,
-    "daily_count": 2,
-    "last_signal_id": "5da8a448-cf44-4b22-b123-f76d8a55c95d",
-    "last_signal_beat": "bitcoin-macro",
-    "last_signal_payment_id": "pay_b0bed2d910084fdab0fcabd60ec693c0",
-    "platform_status": "ACTIVE",
+    "daily_count": 3,
+    "last_signal_id": "62282a92-09aa-4779-ad19-500d8d0300a3",
+    "last_signal_beat": "quantum",
     "signal_daily_reset": "2026-05-11T00:00:00Z",
-    "signal_cooldown_clears": "2026-05-10T02:10:00Z",
+    "signal_cooldown_clears": "2026-05-10T03:14:00Z",
     "covered_prs": ["#370","#375","#379"],
-    "uncovered_prs": ["#376","#377","#378","#373","#353"]
+    "quantum_clusters_used_this_week": ["bip_360","hardware","bip_361"]
   },
   "balances": {
     "sbtc_sats": 98087,
     "zest_zsbtc": 62081,
-    "liquid_sbtc": 98087,
     "nonce": 103,
     "mode": "peacetime"
   },
@@ -34,11 +31,11 @@
   "circuit_breaker": {"heartbeat": {"fail_count": 0}},
   "bd_projects": {
     "p054_sigle": {"status": "follow_up_sent", "follow_up_by": "2026-05-14"},
-    "p055_amber_otter_registry": {"status": "approved_arc0btc_pinged_whoabuddy_may5_waiting_merge", "ref": "aibtcdev/skills#371"},
-    "p056_quantum_bounty": {"status": "active", "filed": 74, "synthesis6_comment": "posted"}
+    "p055_amber_otter_registry": {"status": "approved_arc0btc_waiting_merge", "ref": "aibtcdev/skills#371"},
+    "p056_quantum_bounty": {"status": "active", "filed": 75}
   },
   "bff579": {"state": "OPEN", "review_state": "REVIEW_REQUIRED"},
   "last_discovery_date": "2026-05-09",
-  "signal_cooldown_clears": "2026-05-10T02:10:00Z",
-  "next_cycle_at": "2026-05-10T02:12:00Z"
+  "signal_cooldown_clears": "2026-05-10T03:14:00Z",
+  "next_cycle_at": "2026-05-10T03:16:00Z"
 }
