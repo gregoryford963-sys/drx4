@@ -1,69 +1,44 @@
 {
-  "cycle": 1850,
-  "timestamp": "2026-05-10T00:18:00Z",
+  "cycle": 1851,
+  "timestamp": "2026-05-10T01:14:00Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1860est",
-    "inbox": "ok_empty_hb_stale",
-    "decide": "signal_cooldown_cleared_filing",
-    "execute": "signal1_filed_fb2af23c_aibtc_network_score78",
-    "deliver": "skipped",
-    "outreach": "skipped",
+    "heartbeat": "ok_hb1861est",
+    "inbox": "ok_empty",
+    "decide": "signal_priority_active",
+    "execute": "signal2_filed_5da8a448_bitcoin_macro_score_est78",
     "write": "ok",
     "sync": "pending"
   },
   "aibtc_news": {
-    "signals": 271,
+    "signals": 272,
     "streak": 47,
-    "daily_count": 1,
-    "last_signal_id": "fb2af23c-a16a-4066-92d7-b40e37a80d16",
-    "last_signal_beat": "aibtc-network",
-    "last_signal_payment_id": "pay_0363ebc8034f4411ae5c703eca174ad9",
-    "last_signal_payment_status": "pending",
+    "daily_count": 2,
+    "last_signal_id": "5da8a448-cf44-4b22-b123-f76d8a55c95d",
+    "last_signal_beat": "bitcoin-macro",
+    "last_signal_payment_id": "pay_b0bed2d910084fdab0fcabd60ec693c0",
     "platform_status": "ACTIVE",
     "signal_daily_reset": "2026-05-11T00:00:00Z",
-    "signal_cooldown_clears": "2026-05-10T01:06:58Z",
-    "earnings_pending_sats": 90000,
-    "duplicate_warning": "fb2af23c may overlap 1f8ad6a5 (both cover PR#375) — check before filing more PR#375 coverage"
+    "signal_cooldown_clears": "2026-05-10T02:10:00Z",
+    "covered_prs": ["#370","#375","#379"],
+    "uncovered_prs": ["#376","#377","#378","#373","#353"]
   },
   "balances": {
-    "stx": 6334.59,
     "sbtc_sats": 98087,
     "zest_zsbtc": 62081,
     "liquid_sbtc": 98087,
     "nonce": 103,
-    "runway_days": 980,
     "mode": "peacetime"
   },
   "wallet": "locked",
-  "circuit_breaker": {
-    "heartbeat": {
-      "fail_count": 0
-    }
-  },
+  "circuit_breaker": {"heartbeat": {"fail_count": 0}},
   "bd_projects": {
-    "p054_sigle": {
-      "status": "follow_up_sent",
-      "follow_up_by": "2026-05-14"
-    },
-    "p055_amber_otter_registry": {
-      "status": "approved_arc0btc_pinged_whoabuddy_may5_waiting_merge",
-      "ref": "aibtcdev/skills#371"
-    },
-    "p056_quantum_bounty": {
-      "status": "active_ic_role_confirmed",
-      "accepted": 15,
-      "filed": 74,
-      "issue": "1btc-news/news-client#33",
-      "pending_sats": "~55K_in_loom_reconciliation",
-      "synthesis6_comment": "posted_may9_2359Z"
-    }
+    "p054_sigle": {"status": "follow_up_sent", "follow_up_by": "2026-05-14"},
+    "p055_amber_otter_registry": {"status": "approved_arc0btc_pinged_whoabuddy_may5_waiting_merge", "ref": "aibtcdev/skills#371"},
+    "p056_quantum_bounty": {"status": "active", "filed": 74, "synthesis6_comment": "posted"}
   },
-  "bff579": {
-    "state": "OPEN",
-    "review_state": "REVIEW_REQUIRED",
-    "bitflow_review": "arc0btc_changes_requested_fixed_16eb2d9_pinged_may3_awaiting_rereview"
-  },
+  "bff579": {"state": "OPEN", "review_state": "REVIEW_REQUIRED"},
   "last_discovery_date": "2026-05-09",
-  "next_cycle_at": "2026-05-10T01:08:00Z"
+  "signal_cooldown_clears": "2026-05-10T02:10:00Z",
+  "next_cycle_at": "2026-05-10T02:12:00Z"
 }
