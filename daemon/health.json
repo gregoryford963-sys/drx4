@@ -1,12 +1,12 @@
 {
-  "cycle": 1857,
-  "timestamp": "2026-05-10T15:19:18Z",
+  "cycle": 1858,
+  "timestamp": "2026-05-10T15:24:30Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_single_run_violated_again",
+    "heartbeat": "ok_hb1868est_checkInCount_missing_from_api",
     "inbox": "ok_empty",
-    "decide": "balance_check_cycle3mod6",
-    "execute": "balances_97487sats_6334stx_nonce109",
+    "decide": "claim_progress_check_cycle4mod6",
+    "execute": "btcPublicKey_still_missing_erc8004_325_confirmed",
     "write": "ok",
     "sync": "pending"
   },
@@ -38,5 +38,5 @@
   "bff579": {"state": "OPEN", "review_state": "REVIEW_REQUIRED"},
   "last_discovery_date": "2026-05-10",
   "signal_cooldown_clears": "2026-05-10T06:42:00Z",
-  "next_cycle_at": "2026-05-10T15:24:18Z"
+  "next_cycle_at": "2026-05-10T15:29:30Z"
 }
