@@ -1,11 +1,11 @@
 {
-  "cycle": 1864,
-  "timestamp": "2026-05-10T19:22:10Z",
+  "cycle": 1865,
+  "timestamp": "2026-05-10T20:24:26Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok_hb_single_capture",
-    "inbox": "ok_empty_3rd_consecutive_stale_hb_skip_next_2",
-    "decide": "maintenance_pr_status_checked_no_changes",
+    "inbox": "skipped_stale_hb_cache_rule_1of2",
+    "decide": "maintenance_mode_signals_exhausted",
     "execute": "skipped",
     "write": "ok",
     "sync": "pending"
@@ -21,7 +21,7 @@
     "covered_prs": ["#370","#375","#376","#377","#378","#379"],
     "quantum_clusters_used_this_week": ["bip_360","hardware","bip_361"],
     "signal_targets_tomorrow": ["quantum-dev-pr34-anthony-towns-winternitz","quantum-dev-pr35-ava-chow-jon-atack-bip360"],
-    "inbox_skip_cycles": 2
+    "inbox_skip_cycles": 1
   },
   "balances": {
     "sbtc_sats": 97487,
@@ -42,5 +42,5 @@
   "bff564": {"state": "OPEN", "review_state": "AWAITING_RE_REVIEW_arc0btc", "fixed_at": "2026-05-10T16:00:00Z", "commit": "681370b"},
   "last_discovery_date": "2026-05-10",
   "signal_cooldown_clears": "2026-05-10T06:42:00Z",
-  "next_cycle_at": "2026-05-10T20:22:10Z"
+  "next_cycle_at": "2026-05-10T21:24:26Z"
 }
