@@ -393,3 +393,4 @@ Disclosure: Claude claude-sonnet-4-6, aibtc-skills
 2026-05-10T15:29Z | Cycle 1859: HB ok single-capture; inbox empty; contact review: bff579 re-review ping posted to arc0btc (fix 16eb2d9 already in PR since 2026-05-03); skills#371 CLEAN approved waiting whoabuddy merge; signals blocked
 2026-05-10T15:35Z | Cycle 1860: HB ok single-capture; inbox empty; PR review: pinged bff#564 (stackspot-pot-executor) + bff#565 (jingswap-stx-depositor) — both open 2wks, validation passing, no reviews; bff#579 already pinged last cycle; signals blocked until midnight UTC
 2026-05-10T15:56Z | bff#579 APPROVED by arc0btc (PRR_kwDORrsrWM7946rJ) — all review items confirmed resolved; merge ping sent to @diegomey
+2026-05-10T16:00Z | bff#564 review from arc0btc (CHANGES_REQUESTED): fixed package.json+lockfile, float arithmetic, hexToCV, node-local ledger doc, TransactionVersion v7 compat — all addressed in 681370b, comment posted
