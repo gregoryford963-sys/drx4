@@ -1,24 +1,24 @@
 {
-  "cycle": 1853,
-  "timestamp": "2026-05-10T03:25:00Z",
+  "cycle": 1854,
+  "timestamp": "2026-05-10T04:28:00Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1863est",
+    "heartbeat": "ok_hb1864est",
     "inbox": "ok_empty",
-    "decide": "signal_priority_4of6",
-    "execute": "signal4_filed_49be25bc_aibtc_network_dog_intelligence",
+    "decide": "signal_priority_5of6",
+    "execute": "signal5_filed_59d05270_aibtc_network_hodlmm_write_skills_audit",
     "write": "ok",
     "sync": "pending"
   },
   "aibtc_news": {
-    "signals": 274,
+    "signals": 275,
     "streak": 47,
-    "daily_count": 4,
-    "last_signal_id": "49be25bc-ce60-4e4a-8223-e7d6044b7632",
+    "daily_count": 5,
+    "last_signal_id": "59d05270-9692-4ace-ba70-1b7ada8f52b1",
     "last_signal_beat": "aibtc-network",
     "signal_daily_reset": "2026-05-11T00:00:00Z",
-    "signal_cooldown_clears": "2026-05-10T04:18:00Z",
-    "covered_prs": ["#370","#375","#378","#379"],
+    "signal_cooldown_clears": "2026-05-10T05:25:00Z",
+    "covered_prs": ["#370","#375","#376","#377","#378","#379"],
     "quantum_clusters_used_this_week": ["bip_360","hardware","bip_361"]
   },
   "balances": {
@@ -36,6 +36,6 @@
   },
   "bff579": {"state": "OPEN", "review_state": "REVIEW_REQUIRED"},
   "last_discovery_date": "2026-05-09",
-  "signal_cooldown_clears": "2026-05-10T04:18:00Z",
-  "next_cycle_at": "2026-05-10T04:20:00Z"
+  "signal_cooldown_clears": "2026-05-10T05:25:00Z",
+  "next_cycle_at": "2026-05-10T05:25:00Z"
 }
