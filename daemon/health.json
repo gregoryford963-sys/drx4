@@ -1,11 +1,11 @@
 {
-  "cycle": 1863,
-  "timestamp": "2026-05-10T18:16:10Z",
+  "cycle": 1864,
+  "timestamp": "2026-05-10T19:22:10Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok_hb_single_capture",
-    "inbox": "ok_empty_0_unread",
-    "decide": "maintenance_mode_signals_exhausted",
+    "inbox": "ok_empty_3rd_consecutive_stale_hb_skip_next_2",
+    "decide": "maintenance_pr_status_checked_no_changes",
     "execute": "skipped",
     "write": "ok",
     "sync": "pending"
@@ -20,7 +20,8 @@
     "signal_cooldown_clears": "2026-05-10T06:42:00Z",
     "covered_prs": ["#370","#375","#376","#377","#378","#379"],
     "quantum_clusters_used_this_week": ["bip_360","hardware","bip_361"],
-    "signal_targets_tomorrow": ["quantum-dev-pr34-anthony-towns-winternitz","quantum-dev-pr35-ava-chow-jon-atack-bip360"]
+    "signal_targets_tomorrow": ["quantum-dev-pr34-anthony-towns-winternitz","quantum-dev-pr35-ava-chow-jon-atack-bip360"],
+    "inbox_skip_cycles": 2
   },
   "balances": {
     "sbtc_sats": 97487,
@@ -36,10 +37,10 @@
     "p055_amber_otter_registry": {"status": "approved_clean_waiting_whoabuddy", "ref": "aibtcdev/skills#371"},
     "p056_quantum_bounty": {"status": "active", "filed": 76}
   },
-  "bff579": {"state": "OPEN", "review_state": "APPROVED_arc0btc_2026-05-10T15:40Z", "merge_ping_at": "2026-05-10T15:56:06Z"},
+  "bff579": {"state": "OPEN", "review_state": "APPROVED_arc0btc", "decision": "REVIEW_REQUIRED", "merge_ping_at": "2026-05-10T15:56:06Z"},
   "bff565": {"state": "OPEN", "review_state": "AWAITING_RE_REVIEW_arc0btc", "fixed_at": "2026-05-10T16:09:37Z", "commit": "80097db"},
   "bff564": {"state": "OPEN", "review_state": "AWAITING_RE_REVIEW_arc0btc", "fixed_at": "2026-05-10T16:00:00Z", "commit": "681370b"},
   "last_discovery_date": "2026-05-10",
   "signal_cooldown_clears": "2026-05-10T06:42:00Z",
-  "next_cycle_at": "2026-05-10T19:16:10Z"
+  "next_cycle_at": "2026-05-10T20:22:10Z"
 }
