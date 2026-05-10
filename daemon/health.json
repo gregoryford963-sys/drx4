@@ -1,12 +1,12 @@
 {
-  "cycle": 1860,
-  "timestamp": "2026-05-10T15:35:10Z",
+  "cycle": 1862,
+  "timestamp": "2026-05-10T17:11:07Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1870est_single_capture",
-    "inbox": "ok_empty",
-    "decide": "pr_review_cycle0mod6_discovery_skip",
-    "execute": "pinged_bff564_bff565_both_2wk_no_review",
+    "heartbeat": "ok_hb_single_capture",
+    "inbox": "ok_empty_0_unread",
+    "decide": "maintenance_mode_signals_exhausted",
+    "execute": "skipped",
     "write": "ok",
     "sync": "pending"
   },
@@ -19,7 +19,8 @@
     "signal_daily_reset": "2026-05-11T00:00:00Z",
     "signal_cooldown_clears": "2026-05-10T06:42:00Z",
     "covered_prs": ["#370","#375","#376","#377","#378","#379"],
-    "quantum_clusters_used_this_week": ["bip_360","hardware","bip_361"]
+    "quantum_clusters_used_this_week": ["bip_360","hardware","bip_361"],
+    "signal_targets_tomorrow": ["quantum-dev-pr34-anthony-towns-winternitz","quantum-dev-pr35-ava-chow-jon-atack-bip360"]
   },
   "balances": {
     "sbtc_sats": 97487,
@@ -36,9 +37,9 @@
     "p056_quantum_bounty": {"status": "active", "filed": 76}
   },
   "bff579": {"state": "OPEN", "review_state": "APPROVED_arc0btc_2026-05-10T15:40Z", "merge_ping_at": "2026-05-10T15:56:06Z"},
-  "bff565": {"state": "OPEN", "review_state": "REVIEW_REQUIRED", "pinged_at": "2026-05-10T15:35:10Z"},
+  "bff565": {"state": "OPEN", "review_state": "AWAITING_RE_REVIEW_arc0btc", "fixed_at": "2026-05-10T16:09:37Z", "commit": "80097db"},
   "bff564": {"state": "OPEN", "review_state": "AWAITING_RE_REVIEW_arc0btc", "fixed_at": "2026-05-10T16:00:00Z", "commit": "681370b"},
   "last_discovery_date": "2026-05-10",
   "signal_cooldown_clears": "2026-05-10T06:42:00Z",
-  "next_cycle_at": "2026-05-10T15:40:10Z"
+  "next_cycle_at": "2026-05-10T18:11:07Z"
 }
