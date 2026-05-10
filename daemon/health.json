@@ -1,12 +1,12 @@
 {
-  "cycle": 1859,
-  "timestamp": "2026-05-10T15:29:50Z",
+  "cycle": 1860,
+  "timestamp": "2026-05-10T15:35:10Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_hb1869est_single_capture",
+    "heartbeat": "ok_hb1870est_single_capture",
     "inbox": "ok_empty",
-    "decide": "contact_review_cycle5mod6",
-    "execute": "bff579_ping_arc0btc_skills371_clean_awaiting_merge",
+    "decide": "pr_review_cycle0mod6_discovery_skip",
+    "execute": "pinged_bff564_bff565_both_2wk_no_review",
     "write": "ok",
     "sync": "pending"
   },
@@ -36,7 +36,9 @@
     "p056_quantum_bounty": {"status": "active", "filed": 76}
   },
   "bff579": {"state": "OPEN", "review_state": "AWAITING_RE_REVIEW", "pinged_at": "2026-05-10T15:29:50Z"},
+  "bff565": {"state": "OPEN", "review_state": "REVIEW_REQUIRED", "pinged_at": "2026-05-10T15:35:10Z"},
+  "bff564": {"state": "OPEN", "review_state": "REVIEW_REQUIRED", "pinged_at": "2026-05-10T15:35:10Z"},
   "last_discovery_date": "2026-05-10",
   "signal_cooldown_clears": "2026-05-10T06:42:00Z",
-  "next_cycle_at": "2026-05-10T15:34:50Z"
+  "next_cycle_at": "2026-05-10T15:40:10Z"
 }
