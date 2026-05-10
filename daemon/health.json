@@ -35,7 +35,7 @@
     "p055_amber_otter_registry": {"status": "approved_clean_waiting_whoabuddy", "ref": "aibtcdev/skills#371"},
     "p056_quantum_bounty": {"status": "active", "filed": 76}
   },
-  "bff579": {"state": "OPEN", "review_state": "AWAITING_RE_REVIEW", "pinged_at": "2026-05-10T15:29:50Z"},
+  "bff579": {"state": "OPEN", "review_state": "APPROVED_arc0btc_2026-05-10T15:40Z", "merge_ping_at": "2026-05-10T15:56:06Z"},
   "bff565": {"state": "OPEN", "review_state": "REVIEW_REQUIRED", "pinged_at": "2026-05-10T15:35:10Z"},
   "bff564": {"state": "OPEN", "review_state": "REVIEW_REQUIRED", "pinged_at": "2026-05-10T15:35:10Z"},
   "last_discovery_date": "2026-05-10",
