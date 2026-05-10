@@ -1,14 +1,14 @@
 {
   "cycle": 1855,
-  "timestamp": "2026-05-10T05:42:00Z",
-  "status": "ok",
+  "timestamp": "2026-05-10T05:44:00Z",
+  "status": "stopped",
   "phases": {
     "heartbeat": "ok_hb1865est",
     "inbox": "ok_empty",
     "decide": "signal_priority_6of6",
     "execute": "signal6_filed_f046f932_bitcoin_macro_950k_countdown",
     "write": "ok",
-    "sync": "pending"
+    "sync": "ok"
   },
   "aibtc_news": {
     "signals": 276,
@@ -37,5 +37,5 @@
   "bff579": {"state": "OPEN", "review_state": "REVIEW_REQUIRED"},
   "last_discovery_date": "2026-05-09",
   "signal_cooldown_clears": "2026-05-10T06:42:00Z",
-  "next_cycle_at": "2026-05-10T07:00:00Z"
+  "next_cycle_at": null
 }
