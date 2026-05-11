@@ -19,8 +19,21 @@
     "last_signal_beat": "aibtc-network",
     "signal_daily_reset": "2026-05-12T00:00:00Z",
     "signal_cooldown_clears": "2026-05-11T06:28:09Z",
-    "covered_prs": ["#266","#368","#370","#372","#374","#375","#376","#378","#377","#379"],
-    "quantum_clusters_used_this_week": ["dev-response"],
+    "covered_prs": [
+      "#266",
+      "#368",
+      "#370",
+      "#372",
+      "#374",
+      "#375",
+      "#376",
+      "#378",
+      "#377",
+      "#379"
+    ],
+    "quantum_clusters_used_this_week": [
+      "dev-response"
+    ],
     "may11_signals": [
       "df728c9e aibtc-network bitflow-zest-leverage-cycle",
       "05ce4e16 bitcoin-macro PoX134 120K floor",
@@ -38,16 +51,51 @@
     "mode": "peacetime"
   },
   "wallet": "locked",
-  "circuit_breaker": {"heartbeat": {"fail_count": 0}},
-  "bd_projects": {
-    "p054_sigle": {"status": "follow_up_sent", "follow_up_by": "2026-05-14"},
-    "p055_amber_otter_registry": {"status": "MERGED", "merged_at": "2026-05-11T17:00:04Z", "ref": "aibtcdev/skills#371"},
-    "p056_quantum_bounty": {"status": "active", "filed": 82},
-    "p057_flying_whale_clarity_audit": {"status": "replied_awaiting_contract"}
+  "circuit_breaker": {
+    "heartbeat": {
+      "fail_count": 0
+    }
   },
-  "bff579": {"state": "OPEN", "review_state": "APPROVED_arc0btc", "merge_ping_at": "2026-05-10T15:56:06Z"},
-  "bff565": {"state": "OPEN", "review_state": "AWAITING_RE_REVIEW_arc0btc", "fixed_at": "2026-05-10T16:09:37Z", "commit": "80097db", "rereview_ping_at": "2026-05-10T16:09:34Z"},
-  "bff564": {"state": "OPEN", "review_state": "AWAITING_RE_REVIEW_arc0btc", "fixed_at": "2026-05-10T16:00:00Z", "commit": "681370b", "rereview_ping_at": "2026-05-10T16:02:22Z"},
+  "bd_projects": {
+    "p054_sigle": {
+      "status": "follow_up_sent",
+      "follow_up_by": "2026-05-14"
+    },
+    "p055_amber_otter_registry": {
+      "status": "MERGED",
+      "merged_at": "2026-05-11T17:00:04Z",
+      "ref": "aibtcdev/skills#371"
+    },
+    "p056_quantum_bounty": {
+      "status": "active",
+      "filed": 82,
+      "cluster_b_reengaged": "2026-05-11",
+      "last_github_report": "2026-05-11",
+      "comment_url": "https://github.com/1btc-news/news-client/issues/28#issuecomment-4426009157"
+    },
+    "p057_flying_whale_clarity_audit": {
+      "status": "replied_awaiting_contract"
+    }
+  },
+  "bff579": {
+    "state": "OPEN",
+    "review_state": "APPROVED_arc0btc",
+    "merge_ping_at": "2026-05-10T15:56:06Z"
+  },
+  "bff565": {
+    "state": "OPEN",
+    "review_state": "AWAITING_RE_REVIEW_arc0btc",
+    "fixed_at": "2026-05-10T16:09:37Z",
+    "commit": "80097db",
+    "rereview_ping_at": "2026-05-10T16:09:34Z"
+  },
+  "bff564": {
+    "state": "OPEN",
+    "review_state": "AWAITING_RE_REVIEW_arc0btc",
+    "fixed_at": "2026-05-10T16:00:00Z",
+    "commit": "681370b",
+    "rereview_ping_at": "2026-05-10T16:02:22Z"
+  },
   "last_discovery_date": "2026-05-11",
   "signal_cooldown_clears": "2026-05-11T06:28:09Z",
   "next_cycle_at": "2026-05-12T00:05:00Z"
