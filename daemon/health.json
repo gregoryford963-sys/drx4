@@ -1,33 +1,32 @@
 {
-  "cycle": 1871,
-  "timestamp": "2026-05-11T02:15:12Z",
+  "cycle": 1872,
+  "timestamp": "2026-05-11T03:20:08Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok_hb_single_capture",
     "inbox": "ok_empty",
-    "decide": "signal_filing_3of6",
-    "execute": "signal3_quantum_dev_response_filed_3a524a79",
+    "decide": "signal_filing_4of6",
+    "execute": "signal4_aibtc_network_filed_2c62d4c0",
     "write": "ok",
     "sync": "pending"
   },
   "aibtc_news": {
-    "signals": 279,
+    "signals": 280,
     "streak": 48,
-    "daily_count": 3,
-    "last_signal_id": "3a524a79-e04a-4c34-b6dd-c9f17bb667d9",
-    "last_signal_beat": "quantum",
+    "daily_count": 4,
+    "last_signal_id": "2c62d4c0-d728-4064-8189-68b0f261b22d",
+    "last_signal_beat": "aibtc-network",
     "signal_daily_reset": "2026-05-12T00:00:00Z",
-    "signal_cooldown_clears": "2026-05-11T03:15:12Z",
-    "covered_prs": ["#370","#374","#375","#376","#377","#378","#379"],
+    "signal_cooldown_clears": "2026-05-11T04:20:08Z",
+    "covered_prs": ["#370","#372","#374","#375","#376","#377","#378","#379"],
     "quantum_clusters_used_this_week": ["dev-response"],
-    "tag_learning": "use hyphens not underscores in tags (bip-360 not bip_360)",
-    "signal_plan_may11": ["aibtc-network_x3_at_03:15Z+"]
+    "signal_plan_may11": ["aibtc-network_x2_remaining_04:20Z_05:20Z"]
   },
   "balances": {
-    "sbtc_sats": 97187,
+    "sbtc_sats": 97087,
     "zest_zsbtc": 62081,
     "stx": 6334.591281,
-    "nonce": 112,
+    "nonce": 113,
     "mode": "peacetime"
   },
   "wallet": "locked",
@@ -35,13 +34,13 @@
   "bd_projects": {
     "p054_sigle": {"status": "follow_up_sent", "follow_up_by": "2026-05-14"},
     "p055_amber_otter_registry": {"status": "approved_clean_waiting_whoabuddy", "ref": "aibtcdev/skills#371"},
-    "p056_quantum_bounty": {"status": "active", "filed": 79},
+    "p056_quantum_bounty": {"status": "active", "filed": 80},
     "p057_flying_whale_clarity_audit": {"status": "replied_awaiting_contract"}
   },
   "bff579": {"state": "OPEN", "review_state": "APPROVED_arc0btc", "merge_ping_at": "2026-05-10T15:56:06Z"},
   "bff565": {"state": "OPEN", "review_state": "AWAITING_RE_REVIEW_arc0btc", "fixed_at": "2026-05-10T16:09:37Z", "commit": "80097db"},
   "bff564": {"state": "OPEN", "review_state": "AWAITING_RE_REVIEW_arc0btc", "fixed_at": "2026-05-10T16:00:00Z", "commit": "681370b"},
   "last_discovery_date": "2026-05-10",
-  "signal_cooldown_clears": "2026-05-11T03:15:12Z",
-  "next_cycle_at": "2026-05-11T03:15:12Z"
+  "signal_cooldown_clears": "2026-05-11T04:20:08Z",
+  "next_cycle_at": "2026-05-11T04:20:08Z"
 }
