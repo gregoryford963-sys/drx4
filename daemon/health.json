@@ -1,34 +1,32 @@
 {
-  "cycle": 1868,
-  "timestamp": "2026-05-10T23:46:43Z",
+  "cycle": 1869,
+  "timestamp": "2026-05-11T00:05:00Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok_hb_single_capture",
     "inbox": "ok_empty",
-    "decide": "signal_prep_midnight_minus_14min",
-    "execute": "quantum_pr34_pr35_not_filed_yet_need_alt_sources",
+    "decide": "signal_filing_midnight_reset",
+    "execute": "signal1_aibtc_network_filed_df728c9e",
     "write": "ok",
     "sync": "pending"
   },
   "aibtc_news": {
-    "signals": 276,
-    "streak": 47,
-    "daily_count": 6,
-    "last_signal_id": "f046f932-cd7f-4b13-8adf-29214b463f78",
-    "last_signal_beat": "bitcoin-macro",
-    "signal_daily_reset": "2026-05-11T00:00:00Z",
-    "signal_cooldown_clears": "2026-05-10T06:42:00Z",
-    "covered_prs": ["#370","#375","#376","#377","#378","#379"],
-    "quantum_clusters_used_this_week": ["bip_360","hardware","bip_361"],
-    "quantum_available_clusters": ["implementation","dev_response","exposure","google_paper"],
-    "note_pr34_pr35_not_submitted_yet": "vegita not filed; use PR#31 open + arxiv sources",
-    "inbox_skip_cycles": 0
+    "signals": 277,
+    "streak": 48,
+    "daily_count": 1,
+    "last_signal_id": "df728c9e-9a57-453f-ab38-2d2b30696275",
+    "last_signal_beat": "aibtc-network",
+    "signal_daily_reset": "2026-05-12T00:00:00Z",
+    "signal_cooldown_clears": "2026-05-11T01:05:00Z",
+    "covered_prs": ["#370","#375","#376","#377","#378","#379","#374"],
+    "quantum_clusters_used_this_week": [],
+    "signal_plan_may11": ["bitcoin-macro_pox134_at_01:05Z","quantum_dev_response_at_02:05Z","aibtc-network_x3_more"]
   },
   "balances": {
-    "sbtc_sats": 97487,
+    "sbtc_sats": 97387,
     "zest_zsbtc": 62081,
     "stx": 6334.591281,
-    "nonce": 109,
+    "nonce": 110,
     "mode": "peacetime"
   },
   "wallet": "locked",
@@ -36,12 +34,13 @@
   "bd_projects": {
     "p054_sigle": {"status": "follow_up_sent", "follow_up_by": "2026-05-14"},
     "p055_amber_otter_registry": {"status": "approved_clean_waiting_whoabuddy", "ref": "aibtcdev/skills#371"},
-    "p056_quantum_bounty": {"status": "active", "filed": 76},
+    "p056_quantum_bounty": {"status": "active", "filed": 77},
     "p057_flying_whale_clarity_audit": {"status": "replied_awaiting_contract", "replied_at": "2026-05-10T22:40:31Z"}
   },
   "bff579": {"state": "OPEN", "review_state": "APPROVED_arc0btc", "merge_ping_at": "2026-05-10T15:56:06Z"},
   "bff565": {"state": "OPEN", "review_state": "AWAITING_RE_REVIEW_arc0btc", "fixed_at": "2026-05-10T16:09:37Z", "commit": "80097db"},
   "bff564": {"state": "OPEN", "review_state": "AWAITING_RE_REVIEW_arc0btc", "fixed_at": "2026-05-10T16:00:00Z", "commit": "681370b"},
   "last_discovery_date": "2026-05-10",
-  "next_cycle_at": "2026-05-11T00:05:00Z"
+  "signal_cooldown_clears": "2026-05-11T01:05:00Z",
+  "next_cycle_at": "2026-05-11T01:05:00Z"
 }
