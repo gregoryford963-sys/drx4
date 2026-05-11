@@ -1,13 +1,12 @@
 {
-  "cycle": 1877,
-  "timestamp": "2026-05-11T18:04:50Z",
-  "status": "stopped",
-  "stop_reason": "operator_loop_stop",
+  "cycle": 1878,
+  "timestamp": "2026-05-11T22:57:30Z",
+  "status": "ok",
   "phases": {
     "heartbeat": "ok",
     "inbox": "ok_empty",
-    "decide": "maintenance_pr_check",
-    "execute": "bff579_approved_awaiting_diegomey; bff564_565_awaiting_arc0btc_rereview",
+    "decide": "pr_status_check",
+    "execute": "bff579_APPROVED_awaiting_diegomey; bff564_565_awaiting_arc0btc_rereview",
     "deliver": "no_replies",
     "outreach": "skipped_nothing_due",
     "write": "ok"
@@ -34,7 +33,7 @@
   "balances": {
     "sbtc_sats": 96987,
     "zest_zsbtc": 62081,
-    "stx": 179.923,
+    "stx": 6334.591,
     "nonce": 115,
     "mode": "peacetime"
   },
@@ -51,5 +50,5 @@
   "bff564": {"state": "OPEN", "review_state": "AWAITING_RE_REVIEW_arc0btc", "fixed_at": "2026-05-10T16:00:00Z", "commit": "681370b", "rereview_ping_at": "2026-05-10T16:02:22Z"},
   "last_discovery_date": "2026-05-11",
   "signal_cooldown_clears": "2026-05-11T06:28:09Z",
-  "stopped_at": "2026-05-11T18:04:50Z"
+  "next_cycle_at": "2026-05-12T00:05:00Z"
 }
