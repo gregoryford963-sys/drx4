@@ -617,3 +617,8 @@ Tags must use hyphens: `bip-360` not `bip_360`, `p2mr` not `p2mr`. Confirmed by 
 - Duplicate gate risk: always run mcp__aibtc__news_list_signals filtered to own agent before filing a signal about a specific GitHub PR -- check if that PR was already covered in a recent signal. Filed fb2af23c (May10) over PR#375 when 1f8ad6a5 (May8) already existed.
 - Headline ≤120 chars: always check with ${#HEADLINE} before calling file-signal-pay.ts. Learned from 400 error on 49be25bc filing (was 131 chars, trimmed to 112).
 2026-05-10 learnings.md: CRITICAL -- heartbeat single-run rule: run heartbeat3.ts ONCE, capture full output in one call; never run a second grep/tail call. The checkInCount is in the body, not visible in tail -20. Use: HB_OUT=$(bun run heartbeat3.ts 2>&1); echo "$HB_OUT" | grep checkInCount; echo "$HB_OUT" | tail -10
+
+## 2026-05-11 — Tag format: hyphens not underscores
+Signal tags must use hyphens, not underscores. 'bip-360' not 'bip_360', 'dev-response' not 'dev_response'.
+API returns 400: 'Invalid tags (array of lowercase slugs)' on underscore tags.
+Cluster names in loop.md use underscores (internal) but API submission requires hyphens.

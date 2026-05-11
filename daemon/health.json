@@ -1,14 +1,15 @@
 {
   "cycle": 1874,
-  "timestamp": "2026-05-11T05:28:09Z",
-  "status": "ok",
+  "timestamp": "2026-05-11T05:42:07Z",
+  "status": "stopped",
+  "stop_reason": "operator_loop_stop",
   "phases": {
     "heartbeat": "ok_hb_single_capture",
     "inbox": "ok_empty",
     "decide": "signal6_retry_success",
     "execute": "signal6_b16c4cb5_ok_6of6_complete",
     "write": "ok",
-    "sync": "pending"
+    "sync": "ok"
   },
   "aibtc_news": {
     "signals": 282,
@@ -18,7 +19,7 @@
     "last_signal_beat": "aibtc-network",
     "signal_daily_reset": "2026-05-12T00:00:00Z",
     "signal_cooldown_clears": "2026-05-11T06:28:09Z",
-    "covered_prs": ["#266","#368","#370","#372","#374","#375","#376","#377","#378","#379"],
+    "covered_prs": ["#266","#368","#370","#372","#374","#375","#376","#378","#377","#379"],
     "quantum_clusters_used_this_week": ["dev-response"],
     "may11_signals": [
       "df728c9e aibtc-network bitflow-zest-leverage-cycle",
@@ -47,7 +48,7 @@
   "bff579": {"state": "OPEN", "review_state": "APPROVED_arc0btc", "merge_ping_at": "2026-05-10T15:56:06Z"},
   "bff565": {"state": "OPEN", "review_state": "AWAITING_RE_REVIEW_arc0btc", "fixed_at": "2026-05-10T16:09:37Z", "commit": "80097db"},
   "bff564": {"state": "OPEN", "review_state": "AWAITING_RE_REVIEW_arc0btc", "fixed_at": "2026-05-10T16:00:00Z", "commit": "681370b"},
-  "last_discovery_date": "2026-05-10",
+  "last_discovery_date": "2026-05-11",
   "signal_cooldown_clears": "2026-05-11T06:28:09Z",
-  "next_cycle_at": "2026-05-11T07:00:00Z"
+  "stopped_at": "2026-05-11T05:42:07Z"
 }
