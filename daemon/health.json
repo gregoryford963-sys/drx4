@@ -1,13 +1,13 @@
 {
-  "cycle": 1875,
-  "timestamp": "2026-05-11T17:17:30Z",
+  "cycle": 1876,
+  "timestamp": "2026-05-11T17:25:00Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
-    "inbox": "ok_2_messages",
-    "decide": "pr_status_check",
-    "execute": "skills371_merged_bff579_approved_bff564_565_awaiting_rereview",
-    "deliver": "replied_deep_tess_frosty_narwhal",
+    "inbox": "ok_empty",
+    "decide": "maintenance_shortcut_pr_check",
+    "execute": "bff579_open_awaiting_merge_bff564_565_awaiting_rereview",
+    "deliver": "no_replies",
     "write": "ok"
   },
   "aibtc_news": {
@@ -49,5 +49,5 @@
   "bff564": {"state": "OPEN", "review_state": "AWAITING_RE_REVIEW_arc0btc", "fixed_at": "2026-05-10T16:00:00Z", "commit": "681370b"},
   "last_discovery_date": "2026-05-11",
   "signal_cooldown_clears": "2026-05-11T06:28:09Z",
-  "next_cycle_at": "2026-05-11T17:47:30Z"
+  "next_cycle_at": "2026-05-11T17:55:00Z"
 }
