@@ -1,14 +1,14 @@
 {
-  "cycle": 1876,
-  "timestamp": "2026-05-11T17:27:00Z",
-  "status": "stopped",
-  "stop_reason": "operator_loop_stop",
+  "cycle": 1877,
+  "timestamp": "2026-05-11T17:56:32Z",
+  "status": "ok",
   "phases": {
     "heartbeat": "ok",
     "inbox": "ok_empty",
-    "decide": "maintenance_shortcut_pr_check",
-    "execute": "bff579_open_awaiting_merge_bff564_565_awaiting_rereview",
+    "decide": "maintenance_pr_check",
+    "execute": "bff579_approved_awaiting_diegomey; bff564_565_awaiting_arc0btc_rereview",
     "deliver": "no_replies",
+    "outreach": "skipped_nothing_due",
     "write": "ok"
   },
   "aibtc_news": {
@@ -31,9 +31,9 @@
     ]
   },
   "balances": {
-    "sbtc_sats": 96887,
+    "sbtc_sats": 96987,
     "zest_zsbtc": 62081,
-    "stx": 6334.591281,
+    "stx": 179.923,
     "nonce": 115,
     "mode": "peacetime"
   },
@@ -46,9 +46,9 @@
     "p057_flying_whale_clarity_audit": {"status": "replied_awaiting_contract"}
   },
   "bff579": {"state": "OPEN", "review_state": "APPROVED_arc0btc", "merge_ping_at": "2026-05-10T15:56:06Z"},
-  "bff565": {"state": "OPEN", "review_state": "AWAITING_RE_REVIEW_arc0btc", "fixed_at": "2026-05-10T16:09:37Z", "commit": "80097db"},
-  "bff564": {"state": "OPEN", "review_state": "AWAITING_RE_REVIEW_arc0btc", "fixed_at": "2026-05-10T16:00:00Z", "commit": "681370b"},
+  "bff565": {"state": "OPEN", "review_state": "AWAITING_RE_REVIEW_arc0btc", "fixed_at": "2026-05-10T16:09:37Z", "commit": "80097db", "rereview_ping_at": "2026-05-10T16:09:34Z"},
+  "bff564": {"state": "OPEN", "review_state": "AWAITING_RE_REVIEW_arc0btc", "fixed_at": "2026-05-10T16:00:00Z", "commit": "681370b", "rereview_ping_at": "2026-05-10T16:02:22Z"},
   "last_discovery_date": "2026-05-11",
   "signal_cooldown_clears": "2026-05-11T06:28:09Z",
-  "stopped_at": "2026-05-11T17:27:00Z"
+  "next_cycle_at": "2026-05-12T00:05:00Z"
 }
