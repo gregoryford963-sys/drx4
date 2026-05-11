@@ -1,7 +1,8 @@
 {
   "cycle": 1876,
-  "timestamp": "2026-05-11T17:25:00Z",
-  "status": "ok",
+  "timestamp": "2026-05-11T17:27:00Z",
+  "status": "stopped",
+  "stop_reason": "operator_loop_stop",
   "phases": {
     "heartbeat": "ok",
     "inbox": "ok_empty",
@@ -49,5 +50,5 @@
   "bff564": {"state": "OPEN", "review_state": "AWAITING_RE_REVIEW_arc0btc", "fixed_at": "2026-05-10T16:00:00Z", "commit": "681370b"},
   "last_discovery_date": "2026-05-11",
   "signal_cooldown_clears": "2026-05-11T06:28:09Z",
-  "next_cycle_at": "2026-05-11T17:55:00Z"
+  "stopped_at": "2026-05-11T17:27:00Z"
 }
