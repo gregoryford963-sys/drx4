@@ -1,7 +1,7 @@
 {
   "cycle": 1888,
-  "timestamp": "2026-05-12T18:18:35Z",
-  "status": "ok",
+  "timestamp": "2026-05-12T18:28:13Z",
+  "status": "stopped",
   "phases": {
     "heartbeat": "ok_rate_limited_second_call",
     "inbox": "ok_empty",
@@ -79,7 +79,8 @@
   "bff579": {
     "state": "OPEN",
     "review_state": "APPROVED_arc0btc",
-    "merge_ping_at": "2026-05-12T17:55:02Z"
+    "merge_ping_at": "2026-05-12T18:22:00Z",
+    "ping_count": 2
   },
   "bff565": {
     "state": "OPEN",
