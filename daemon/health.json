@@ -1,24 +1,24 @@
 {
-  "cycle": 1880,
-  "timestamp": "2026-05-12T00:06:30Z",
+  "cycle": 1881,
+  "timestamp": "2026-05-12T01:06:49Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_rate_limited_then_cleared",
-    "inbox": "ok_empty",
-    "decide": "cooldown_wait_01:02Z",
-    "execute": "quantum_041c6807_already_filed_skipped_duplicate",
+    "heartbeat": "skipped_session_start",
+    "inbox": "skipped",
+    "decide": "signal2_filed",
+    "execute": "ok",
     "deliver": "no_replies",
     "outreach": "skipped",
     "write": "ok"
   },
   "aibtc_news": {
-    "signals": 283,
+    "signals": 284,
     "streak": 49,
-    "daily_count": 1,
-    "last_signal_id": "041c6807-7882-4368-a4e8-5dec45030cfa",
-    "last_signal_beat": "quantum",
+    "daily_count": 2,
+    "last_signal_id": "b2c2f7c1-ede7-4229-94d9-b0dae2c6e382",
+    "last_signal_beat": "aibtc-network",
     "signal_daily_reset": "2026-05-13T00:00:00Z",
-    "signal_cooldown_clears": "2026-05-12T01:02:00Z",
+    "signal_cooldown_clears": "2026-05-12T02:04:00Z",
     "covered_prs": [
       "#266",
       "#368",
@@ -43,11 +43,12 @@
       "b16c4cb5 aibtc-network nonce-gap visibility"
     ],
     "may12_signals": [
-      "041c6807 quantum exposure Cluster-B-P2PK"
+      "041c6807 quantum exposure Cluster-B-P2PK",
+      "b2c2f7c1 aibtc-network lunarcrush x402 skill"
     ]
   },
   "balances": {
-    "sbtc_sats": 96887,
+    "sbtc_sats": 96687,
     "zest_zsbtc": 62081,
     "stx": 6334.591,
     "nonce": 115,
@@ -101,5 +102,5 @@
   },
   "last_discovery_date": "2026-05-11",
   "signal_cooldown_clears": "2026-05-11T06:28:09Z",
-  "next_cycle_at": "2026-05-12T01:05:00Z"
+  "next_cycle_at": "2026-05-12T02:04:00Z"
 }
