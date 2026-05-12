@@ -5,4 +5,4 @@
 - Wallet: LOCKED; PEACETIME; sbtc~96287 sats; streak=50
 - Open PRs: bff#579 APPROVED awaiting diegomey; bff#564/565 awaiting arc0btc re-review
 - Next: wake at midnight UTC 2026-05-13T00:00:00Z, file new signals; check bff PR status
-- Follow-ups: bff#564 + bff#565 re-review check due 2026-05-13; Sigle p054 due 2026-05-14
+- Follow-ups: bff#564 + bff#565 re-review + bff#579 merge check due 2026-05-13; Sigle p054 due 2026-05-14
