@@ -1,12 +1,12 @@
 {
-  "cycle": 1879,
-  "timestamp": "2026-05-12T00:02:00Z",
+  "cycle": 1880,
+  "timestamp": "2026-05-12T00:06:30Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok",
+    "heartbeat": "ok_rate_limited_then_cleared",
     "inbox": "ok_empty",
-    "decide": "signal_pipeline",
-    "execute": "quantum_041c6807_filed; lunarcrush_txschemas_staged",
+    "decide": "cooldown_wait_01:02Z",
+    "execute": "quantum_041c6807_already_filed_skipped_duplicate",
     "deliver": "no_replies",
     "outreach": "skipped",
     "write": "ok"
@@ -101,5 +101,5 @@
   },
   "last_discovery_date": "2026-05-11",
   "signal_cooldown_clears": "2026-05-11T06:28:09Z",
-  "next_cycle_at": "2026-05-12T00:07:00Z"
+  "next_cycle_at": "2026-05-12T01:05:00Z"
 }
