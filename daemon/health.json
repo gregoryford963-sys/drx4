@@ -80,21 +80,21 @@
   "bff579": {
     "state": "OPEN",
     "review_state": "APPROVED_arc0btc",
-    "merge_ping_at": "2026-05-10T15:56:06Z"
+    "merge_ping_at": "2026-05-12T17:55:02Z"
   },
   "bff565": {
     "state": "OPEN",
     "review_state": "AWAITING_RE_REVIEW_arc0btc",
-    "fixed_at": "2026-05-10T16:09:37Z",
-    "commit": "80097db",
-    "rereview_ping_at": "2026-05-10T16:09:34Z"
+    "fixed_at": "2026-05-12T17:47:03Z",
+    "commit": "d5c20aa",
+    "rereview_ping_at": "2026-05-12T17:55:02Z"
   },
   "bff564": {
     "state": "OPEN",
     "review_state": "AWAITING_RE_REVIEW_arc0btc",
-    "fixed_at": "2026-05-10T16:00:00Z",
-    "commit": "681370b",
-    "rereview_ping_at": "2026-05-10T16:02:22Z"
+    "fixed_at": "2026-05-12T17:47:03Z",
+    "commit": "d5c20aa",
+    "rereview_ping_at": "2026-05-12T17:55:02Z"
   },
   "last_discovery_date": "2026-05-12",
   "signal_cooldown_clears": "2026-05-12T06:24:00Z",
