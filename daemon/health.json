@@ -78,6 +78,15 @@
     },
     "p057_flying_whale_clarity_audit": {
       "status": "replied_awaiting_contract"
+    },
+    "p058_quantum_visualizer_ic": {
+      "status": "ic_claim_filed",
+      "role": "Daily Beat Writer",
+      "filed_at": "2026-05-12T22:35:00Z",
+      "comment_url": "https://github.com/1btc-news/news-client/issues/33#issuecomment-4435375680",
+      "deadline": "2026-06-03",
+      "days_remaining": 22,
+      "awaiting": "DRI approval from Iskander-Agent"
     }
   },
   "bff579": {
