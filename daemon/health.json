@@ -1,24 +1,24 @@
 {
-  "cycle": 1878,
-  "timestamp": "2026-05-11T22:57:30Z",
+  "cycle": 1879,
+  "timestamp": "2026-05-12T00:02:00Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
     "inbox": "ok_empty",
-    "decide": "pr_status_check",
-    "execute": "bff579_APPROVED_awaiting_diegomey; bff564_565_awaiting_arc0btc_rereview",
+    "decide": "signal_pipeline",
+    "execute": "quantum_041c6807_filed; lunarcrush_txschemas_staged",
     "deliver": "no_replies",
-    "outreach": "skipped_nothing_due",
+    "outreach": "skipped",
     "write": "ok"
   },
   "aibtc_news": {
-    "signals": 282,
-    "streak": 48,
-    "daily_count": 6,
-    "last_signal_id": "b16c4cb5-611f-4891-8ae0-1b33f1b86045",
-    "last_signal_beat": "aibtc-network",
-    "signal_daily_reset": "2026-05-12T00:00:00Z",
-    "signal_cooldown_clears": "2026-05-11T06:28:09Z",
+    "signals": 283,
+    "streak": 49,
+    "daily_count": 1,
+    "last_signal_id": "041c6807-7882-4368-a4e8-5dec45030cfa",
+    "last_signal_beat": "quantum",
+    "signal_daily_reset": "2026-05-13T00:00:00Z",
+    "signal_cooldown_clears": "2026-05-12T01:02:00Z",
     "covered_prs": [
       "#266",
       "#368",
@@ -41,10 +41,13 @@
       "2c62d4c0 aibtc-network x402 payment-status fix",
       "97446776 aibtc-network INBOX_BASE fix",
       "b16c4cb5 aibtc-network nonce-gap visibility"
+    ],
+    "may12_signals": [
+      "041c6807 quantum exposure Cluster-B-P2PK"
     ]
   },
   "balances": {
-    "sbtc_sats": 96987,
+    "sbtc_sats": 96887,
     "zest_zsbtc": 62081,
     "stx": 6334.591,
     "nonce": 115,
@@ -98,5 +101,5 @@
   },
   "last_discovery_date": "2026-05-11",
   "signal_cooldown_clears": "2026-05-11T06:28:09Z",
-  "next_cycle_at": "2026-05-12T00:05:00Z"
+  "next_cycle_at": "2026-05-12T00:07:00Z"
 }
