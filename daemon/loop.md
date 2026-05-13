@@ -44,10 +44,11 @@ cd /home/gregoryford963/aibtcdev-skills && /home/gregoryford963/.bun/bin/bun run
 This derives the BTC key from mnemonic, builds a BIP-322 signature, and POSTs to the heartbeat API.
 Capture the full response to parse `checkInCount` (the real heartbeat count) and `unreadCount`. Record the actual count in STATE.md — do not guess or increment manually. Example parse:
 ```bash
-HB_RESP=$(bun run heartbeat3.ts 2>&1)
-echo "$HB_RESP" | tail -15  # show response
+HB_RESP=$(cd /home/gregoryford963/aibtcdev-skills && bun run heartbeat3.ts 2>&1)
+echo "$HB_RESP" | grep -E "(checkInCount|lastActiveAt|unreadCount|error|Rate)"
 CHECKIN=$(echo "$HB_RESP" | python3 -c "import sys,json,re; txt=sys.stdin.read(); m=re.search(r'\"checkInCount\":\s*(\d+)', txt); print(m.group(1) if m else '?')" 2>/dev/null || echo "?")
 ```
+**checkInCount note:** As of cycle 1900, the heartbeat3.ts response no longer includes `checkInCount` in its output — the field may be absent from the API response or renamed. If grep returns nothing for `checkInCount`, accept it as unknown for the cycle and move on. Do NOT run a second heartbeat to verify. The `lastActiveAt` timestamp update confirms success.
 
 **Single-run rule:** Run heartbeat ONCE per cycle. Do NOT run it a second time to "verify" — a second call within 5 minutes will hit rate limit. Only retry if the FIRST attempt returned `"Rate limit exceeded"`.
 
