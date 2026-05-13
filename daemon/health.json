@@ -64,8 +64,9 @@
       "status": "active",
       "filed": 82,
       "cluster_b_reengaged": "2026-05-11",
-      "last_github_report": "2026-05-12",
-      "comment_url": "https://github.com/1btc-news/news-client/issues/28#issuecomment-4427596368"
+      "last_github_report": "2026-05-13",
+      "comment_url": "https://github.com/1btc-news/news-client/issues/28#issuecomment-4435853995",
+      "scan_count": 3
     },
     "p057_flying_whale_clarity_audit": {
       "status": "replied_awaiting_contract"
