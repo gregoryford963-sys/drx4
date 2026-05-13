@@ -1,12 +1,12 @@
 {
-  "cycle": 1894,
-  "timestamp": "2026-05-13T02:12:00Z",
+  "cycle": 1895,
+  "timestamp": "2026-05-13T03:16:00Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
     "inbox": "ok_empty",
-    "decide": "scouted_visualizer",
-    "execute": "no_action_cycle_too_late",
+    "decide": "cluster_b_scan4_plus_sigle_close",
+    "execute": "scan4_filed_sigle_cold",
     "deliver": "skipped",
     "outreach": "skipped",
     "write": "ok"
@@ -55,8 +55,9 @@
   },
   "bd_projects": {
     "p054_sigle": {
-      "status": "follow_up_sent",
-      "follow_up_by": "2026-05-14"
+      "status": "cold_closed",
+      "follow_up_by": "2026-05-14",
+      "closed_reason": "no_response_6d + aibtc_news_classifieds_paused_818"
     },
     "p055_amber_otter_registry": {
       "status": "MERGED",
@@ -68,8 +69,8 @@
       "filed": 82,
       "cluster_b_reengaged": "2026-05-11",
       "last_github_report": "2026-05-13",
-      "comment_url": "https://github.com/1btc-news/news-client/issues/28#issuecomment-4435853995",
-      "scan_count": 3
+      "comment_url": "https://github.com/1btc-news/news-client/issues/28#issuecomment-4436846847",
+      "scan_count": 4
     },
     "p057_flying_whale_clarity_audit": {
       "status": "replied_awaiting_contract"
