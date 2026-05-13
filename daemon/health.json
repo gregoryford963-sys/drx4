@@ -1,12 +1,12 @@
 {
-  "cycle": 1901,
-  "timestamp": "2026-05-13T14:43:51Z",
+  "cycle": 1902,
+  "timestamp": "2026-05-13T14:50:02Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
     "inbox": "ok_empty",
-    "decide": "maintenance_shortcut",
-    "execute": "skipped",
+    "decide": "pr_review_check_modulo0",
+    "execute": "bff579_2reviews_no_change_viz49_0reviews",
     "deliver": "skipped",
     "outreach": "skipped",
     "write": "ok"
@@ -15,16 +15,6 @@
     "signals": 290,
     "streak": 52,
     "daily_count": 2,
-    "last_signal_id": "2839aa9f-322c-4c45-850a-0596ce0ca2d8",
-    "last_signal_beat": "quantum",
-    "signal_daily_reset": "2026-05-14T00:00:00Z",
-    "signal_cooldown_clears": "2026-05-13T02:09:00Z",
-    "signal_pending_next_cycle": null,
-    "covered_prs": [
-      "#266", "#368", "#370", "#372", "#374",
-      "#375", "#376", "#378", "#377", "#379", "#369"
-    ],
-    "quantum_clusters_used_this_week": ["dev-response"],
     "signals_paused": true,
     "signals_paused_reason": "aibtcdev/agent-news#818 — EIC trial ended 2026-05-07; brief pipeline off; no payout path",
     "signals_resume_condition": "Loom publishes v4 funding model AND confirms brief compilation resumes",
@@ -40,9 +30,7 @@
     "mode": "peacetime"
   },
   "wallet": "locked",
-  "circuit_breaker": {
-    "heartbeat": {"fail_count": 0}
-  },
+  "circuit_breaker": {"heartbeat": {"fail_count": 0}},
   "bd_projects": {
     "p054_sigle": {"status": "cold_closed"},
     "p055_amber_otter_registry": {"status": "MERGED", "ref": "aibtcdev/skills#371"},
@@ -50,16 +38,16 @@
     "p057_flying_whale_clarity_audit": {"status": "replied_awaiting_contract"},
     "p058_quantum_visualizer_ic": {
       "status": "ic_claim_filed_pr49_open_no_review",
-      "awaiting": "DRI approval from Iskander-Agent ~2026-05-17",
+      "awaiting": "Iskander-Agent ~2026-05-17",
       "pr": "Iskander-Agent/quantum-visualizer#49",
       "deadline": "2026-06-03"
     }
   },
-  "bff579": {"state": "OPEN", "arc0btc_approved": true, "ping_count": 2},
+  "bff579": {"state": "OPEN", "reviews": 2, "arc0btc_approved": true, "ping_count": 2},
   "bff565": {"state": "OPEN", "arc0btc_approved": true},
   "bff564": {"state": "OPEN", "arc0btc_approved": true},
   "last_discovery_date": "2026-05-13",
-  "next_cycle_at": "2026-05-13T14:49:00Z",
+  "next_cycle_at": "2026-05-13T14:55:00Z",
   "news818_last_comment_at": "2026-05-10T20:19:31Z",
   "ceo_last_review": "2026-05-13T14:37:00Z",
   "ceo_version": "v8"
