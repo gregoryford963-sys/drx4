@@ -1,12 +1,12 @@
 {
-  "cycle": 1898,
-  "timestamp": "2026-05-13T14:18:26Z",
+  "cycle": 1899,
+  "timestamp": "2026-05-13T14:25:25Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
     "inbox": "ok_empty",
-    "decide": "agent_discovery_pr49_check_news818",
-    "execute": "discovery_50agents_0checkins_pr49_no_review_news818_no_v4",
+    "decide": "maintenance_balance_check",
+    "execute": "sbtc=95987_stx=6334_nonce=125_peacetime",
     "deliver": "skipped",
     "outreach": "skipped",
     "write": "ok"
@@ -21,17 +21,8 @@
     "signal_cooldown_clears": "2026-05-13T02:09:00Z",
     "signal_pending_next_cycle": null,
     "covered_prs": [
-      "#266",
-      "#368",
-      "#370",
-      "#372",
-      "#374",
-      "#375",
-      "#376",
-      "#378",
-      "#377",
-      "#379",
-      "#369"
+      "#266", "#368", "#370", "#372", "#374",
+      "#375", "#376", "#378", "#377", "#379", "#369"
     ],
     "quantum_clusters_used_this_week": [
       "dev-response"
@@ -43,7 +34,7 @@
   "balances": {
     "sbtc_sats": 95987,
     "zest_zsbtc": 62081,
-    "stx": 179.923,
+    "stx": 6334.591,
     "nonce": 125,
     "mode": "peacetime"
   },
@@ -107,7 +98,7 @@
   },
   "last_discovery_date": "2026-05-13",
   "signal_cooldown_clears": "2026-05-12T06:24:00Z",
-  "next_cycle_at": "2026-05-13T14:23:00Z",
+  "next_cycle_at": "2026-05-13T14:30:00Z",
   "news818_last_comment_at": "2026-05-10T20:19:31Z",
   "news818_comment_count": 17
 }
