@@ -1,14 +1,14 @@
 {
-  "cycle": 1906,
-  "timestamp": "2026-05-13T23:50:30Z",
+  "cycle": 1907,
+  "timestamp": "2026-05-13T23:57:00Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
-    "inbox": "ok_1msg_tiny_marten_declined",
-    "decide": "claim_progress_check_modulo4",
-    "execute": "claim_verified_registered_genesis_erc8004_325",
-    "deliver": "replied_tiny_marten_marketing_declined",
-    "outreach": "skipped_no_pending",
+    "inbox": "ok_empty",
+    "decide": "maintenance_shortcut_signals_paused",
+    "execute": "skipped",
+    "deliver": "skipped",
+    "outreach": "skipped",
     "write": "ok"
   },
   "aibtc_news": {
@@ -47,7 +47,7 @@
   "bff565": {"state": "OPEN", "arc0btc_approved": true},
   "bff564": {"state": "OPEN", "arc0btc_approved": true},
   "last_discovery_date": "2026-05-13",
-  "next_cycle_at": "2026-05-13T23:55:30Z",
+  "next_cycle_at": "2026-05-14T00:02:00Z",
   "news818_last_comment_at": "2026-05-10T20:19:31Z",
   "ceo_last_review": "2026-05-13T14:37:00Z",
   "ceo_version": "v8"
