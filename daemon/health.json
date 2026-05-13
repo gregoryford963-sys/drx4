@@ -35,7 +35,10 @@
     ],
     "quantum_clusters_used_this_week": [
       "dev-response"
-    ]
+    ],
+    "signals_paused": true,
+    "signals_paused_reason": "aibtcdev/agent-news#818 \u2014 EIC trial ended 2026-05-07; brief pipeline off; no payout path",
+    "signals_resume_condition": "Loom publishes v4 funding model AND confirms brief compilation resumes"
   },
   "balances": {
     "sbtc_sats": 95987,
