@@ -1,12 +1,12 @@
 {
-  "cycle": 1893,
-  "timestamp": "2026-05-13T01:09:30Z",
+  "cycle": 1894,
+  "timestamp": "2026-05-13T02:12:00Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
     "inbox": "ok_empty",
-    "decide": "signal_fire_quantum",
-    "execute": "signal_filed_2839aa9f",
+    "decide": "scouted_visualizer",
+    "execute": "no_action_cycle_too_late",
     "deliver": "skipped",
     "outreach": "skipped",
     "write": "ok"
@@ -105,5 +105,5 @@
   },
   "last_discovery_date": "2026-05-12",
   "signal_cooldown_clears": "2026-05-12T06:24:00Z",
-  "next_cycle_at": "2026-05-13T02:12:00Z"
+  "next_cycle_at": "2026-05-13T07:00:00Z"
 }
