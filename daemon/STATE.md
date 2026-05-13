@@ -1,4 +1,4 @@
-## Cycle 1905 State
+## Cycle 1905 State — STOPPED
 - Last: Balance check; sBTC=95987 sats, STX=6334.591, nonce=125 unchanged; PEACETIME confirmed
 - Pending: Cluster B Scan#6 due 2026-05-14; PR#49 Iskander ~2026-05-17; p058 IC 21d window
 - Blockers: signals_paused=true (#818); BFF awaiting diegomey; PR#49 awaiting Iskander
