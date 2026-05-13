@@ -1,12 +1,12 @@
 {
-  "cycle": 1896,
-  "timestamp": "2026-05-13T04:20:00Z",
+  "cycle": 1897,
+  "timestamp": "2026-05-13T05:28:00Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
     "inbox": "ok_empty",
-    "decide": "visualizer_data_pr",
-    "execute": "pr49_filed",
+    "decide": "cluster_b_scan5_bff_check",
+    "execute": "scan5_filed_bff_still_open",
     "deliver": "skipped",
     "outreach": "skipped",
     "write": "ok"
@@ -69,8 +69,8 @@
       "filed": 82,
       "cluster_b_reengaged": "2026-05-11",
       "last_github_report": "2026-05-13",
-      "comment_url": "https://github.com/1btc-news/news-client/issues/28#issuecomment-4436846847",
-      "scan_count": 4
+      "comment_url": "https://github.com/1btc-news/news-client/issues/28#issuecomment-4437681317",
+      "scan_count": 5
     },
     "p057_flying_whale_clarity_audit": {
       "status": "replied_awaiting_contract"
@@ -107,6 +107,6 @@
   },
   "last_discovery_date": "2026-05-12",
   "signal_cooldown_clears": "2026-05-12T06:24:00Z",
-  "next_cycle_at": "2026-05-13T07:00:00Z",
+  "next_cycle_at": "2026-05-13T09:00:00Z",
   "stopped_at": "2026-05-13T03:22:00Z"
 }
