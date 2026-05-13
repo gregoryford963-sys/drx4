@@ -19,7 +19,19 @@
     "last_signal_beat": "aibtc-network",
     "signal_daily_reset": "2026-05-14T00:00:00Z",
     "signal_cooldown_clears": "2026-05-13T01:07:00Z",
-    "signal_pending_next_cycle": null,
+    "signal_pending_next_cycle": {
+      "beat": "quantum",
+      "headline": "Cluster B Day 3: 9 Early P2PK Coinbase Outputs (~450 BTC, Blocks 2001-6999) Remain UNSPENT",
+      "body_file": "/tmp/sig-clusterb3.txt",
+      "tags": [
+        "quantum",
+        "exposure",
+        "satoshi"
+      ],
+      "source": "https://mempool.space/api/tx/{coinbase_txid}/outspends",
+      "cluster": "exposure",
+      "fires_after": "2026-05-13T01:07:00Z"
+    },
     "covered_prs": [
       "#266",
       "#368",
