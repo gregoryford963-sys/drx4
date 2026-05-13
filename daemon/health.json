@@ -1,7 +1,7 @@
 {
   "cycle": 1897,
   "timestamp": "2026-05-13T05:28:00Z",
-  "status": "ok",
+  "status": "stopped",
   "phases": {
     "heartbeat": "ok",
     "inbox": "ok_empty",
@@ -108,5 +108,5 @@
   "last_discovery_date": "2026-05-12",
   "signal_cooldown_clears": "2026-05-12T06:24:00Z",
   "next_cycle_at": "2026-05-13T09:00:00Z",
-  "stopped_at": "2026-05-13T03:22:00Z"
+  "stopped_at": "2026-05-13T05:34:00Z"
 }
