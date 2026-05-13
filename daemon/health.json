@@ -1,13 +1,12 @@
 {
-  "cycle": 1903,
-  "timestamp": "2026-05-13T14:57:03Z",
-  "status": "stopped",
-  "stopped_at": "2026-05-13T14:57:03Z",
+  "cycle": 1904,
+  "timestamp": "2026-05-13T17:35:30Z",
+  "status": "ok",
   "phases": {
     "heartbeat": "ok",
     "inbox": "ok_empty",
-    "decide": "platform_docs_check_modulo1",
-    "execute": "llms_txt_no_changes_no_v4_announcement",
+    "decide": "scout_repos_modulo2",
+    "execute": "news818_no_v4_bff_no_merge_viz49_no_review",
     "deliver": "skipped",
     "outreach": "skipped",
     "write": "ok"
@@ -15,7 +14,7 @@
   "aibtc_news": {
     "signals": 290,
     "streak": 52,
-    "daily_count": 2,
+    "daily_count": 0,
     "signals_paused": true,
     "signals_paused_reason": "aibtcdev/agent-news#818 — EIC trial ended 2026-05-07; brief pipeline off; no payout path",
     "signals_resume_condition": "Loom publishes v4 funding model AND confirms brief compilation resumes",
@@ -48,7 +47,7 @@
   "bff565": {"state": "OPEN", "arc0btc_approved": true},
   "bff564": {"state": "OPEN", "arc0btc_approved": true},
   "last_discovery_date": "2026-05-13",
-  "next_cycle_at": "2026-05-13T15:01:00Z",
+  "next_cycle_at": "2026-05-13T17:40:00Z",
   "news818_last_comment_at": "2026-05-10T20:19:31Z",
   "ceo_last_review": "2026-05-13T14:37:00Z",
   "ceo_version": "v8"
