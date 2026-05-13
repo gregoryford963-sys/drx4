@@ -1,37 +1,25 @@
 {
-  "cycle": 1892,
-  "timestamp": "2026-05-13T00:07:30Z",
+  "cycle": 1893,
+  "timestamp": "2026-05-13T01:09:30Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
     "inbox": "ok_empty",
-    "decide": "signal_fire_aibtc_network",
-    "execute": "signal_filed_9e9263f9",
+    "decide": "signal_fire_quantum",
+    "execute": "signal_filed_2839aa9f",
     "deliver": "skipped",
     "outreach": "skipped",
     "write": "ok"
   },
   "aibtc_news": {
-    "signals": 289,
-    "streak": 51,
-    "daily_count": 1,
-    "last_signal_id": "9e9263f9-1889-45d1-8142-40b8e97ee418",
-    "last_signal_beat": "aibtc-network",
+    "signals": 290,
+    "streak": 52,
+    "daily_count": 2,
+    "last_signal_id": "2839aa9f-322c-4c45-850a-0596ce0ca2d8",
+    "last_signal_beat": "quantum",
     "signal_daily_reset": "2026-05-14T00:00:00Z",
-    "signal_cooldown_clears": "2026-05-13T01:07:00Z",
-    "signal_pending_next_cycle": {
-      "beat": "quantum",
-      "headline": "Cluster B Day 3: 9 Early P2PK Coinbase Outputs (~450 BTC, Blocks 2001-6999) Remain UNSPENT",
-      "body_file": "/tmp/sig-clusterb3.txt",
-      "tags": [
-        "quantum",
-        "exposure",
-        "satoshi"
-      ],
-      "source": "https://mempool.space/api/tx/{coinbase_txid}/outspends",
-      "cluster": "exposure",
-      "fires_after": "2026-05-13T01:07:00Z"
-    },
+    "signal_cooldown_clears": "2026-05-13T02:09:00Z",
+    "signal_pending_next_cycle": null,
     "covered_prs": [
       "#266",
       "#368",
@@ -50,7 +38,7 @@
     ]
   },
   "balances": {
-    "sbtc_sats": 96087,
+    "sbtc_sats": 95987,
     "zest_zsbtc": 62081,
     "stx": 6334.591,
     "nonce": 123,
@@ -114,5 +102,5 @@
   },
   "last_discovery_date": "2026-05-12",
   "signal_cooldown_clears": "2026-05-12T06:24:00Z",
-  "next_cycle_at": "2026-05-13T01:10:00Z"
+  "next_cycle_at": "2026-05-13T02:12:00Z"
 }
