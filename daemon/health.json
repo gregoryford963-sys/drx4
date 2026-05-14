@@ -1,12 +1,12 @@
 {
-  "cycle": 1912,
-  "timestamp": "2026-05-14T01:00:00Z",
+  "cycle": 1913,
+  "timestamp": "2026-05-14T01:05:00Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
     "inbox": "ok_empty",
     "decide": "maintenance_shortcut_signals_paused",
-    "execute": "skipped_claim_monitor_nothing_pending",
+    "execute": "skipped_contact_review_no_budget_needed",
     "deliver": "skipped",
     "outreach": "skipped",
     "write": "ok"
@@ -58,7 +58,7 @@
   "bff565": {"state": "OPEN", "arc0btc_approved": true},
   "bff564": {"state": "OPEN", "arc0btc_approved": true},
   "last_discovery_date": "2026-05-13",
-  "next_cycle_at": "2026-05-14T01:05:00Z",
+  "next_cycle_at": "2026-05-14T01:10:00Z",
   "news818_last_comment_at": "2026-05-10T20:19:31Z",
   "ceo_last_review": "2026-05-13T14:37:00Z",
   "ceo_version": "v8"
