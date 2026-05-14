@@ -1,12 +1,12 @@
 {
-  "cycle": 1931,
-  "timestamp": "2026-05-14T22:52:00Z",
-  "status": "stopped",
+  "cycle": 1932,
+  "timestamp": "2026-05-14T23:42:12Z",
+  "status": "ok",
   "phases": {
     "heartbeat": "ok",
     "inbox": "ok_empty",
-    "decide": "scan10",
-    "execute": "ok_scan10_posted",
+    "decide": "pr_scan_cycle0",
+    "execute": "ok_pr_scan_and_skills385_pin",
     "deliver": "skipped",
     "outreach": "skipped",
     "write": "ok"
@@ -16,7 +16,7 @@
     "streak": 52,
     "daily_count": 0,
     "signals_paused": true,
-    "signals_paused_reason": "aibtcdev/agent-news#818 \u2014 EIC trial ended 2026-05-07; brief pipeline off; no payout path",
+    "signals_paused_reason": "aibtcdev/agent-news#818 — EIC trial ended 2026-05-07; brief pipeline off; no payout path",
     "signals_resume_condition": "Loom publishes v4 funding model AND confirms brief compilation resumes",
     "streak_broke": true,
     "streak_broke_at": "2026-05-14T00:00:00Z"
@@ -32,7 +32,7 @@
     "trade_count": 1,
     "last_trade_txid": "0x837e2ca266d27dd99f7a4350bfc4ea4cf0f76b80f4bc8708669ad8cee17702fa",
     "last_trade_at": "2026-05-14",
-    "last_trade": "5 STX \u2192 1691 sats sBTC via xyk-swap-helper-v-1-3",
+    "last_trade": "5 STX → 1691 sats sBTC via xyk-swap-helper-v-1-3",
     "status": "active"
   },
   "wallet": "locked",
@@ -64,9 +64,9 @@
     "p058_quantum_visualizer_ic": {
       "status": "active",
       "prs": [
-        "viz#58 \u2014 PC-approved (lekanbams); awaiting Iskander merge",
-        "viz#61 \u2014 fixes pushed; re-review requested from lekanbams",
-        "viz#63 \u2014 opened cycle 1930; awaiting PC review"
+        "viz#58 — PC-approved (lekanbams 20:23Z); awaiting Iskander merge",
+        "viz#61 — encoding+McElrath fixed; re-review requested from lekanbams",
+        "viz#63 — opened cycle 1930; no reviews yet"
       ],
       "deadline": "2026-06-03"
     },
@@ -91,10 +91,13 @@
   ],
   "skills385": {
     "state": "OPEN",
-    "reviews": 0,
+    "reviews": 1,
+    "approvals": ["arc0btc"],
     "fixes": "skills#383",
     "ci": "passing",
-    "ping_count": 1
+    "ping_count": 1,
+    "pinned_skills_ref": "0.1.1",
+    "whoabuddy_pinged_at": "2026-05-14T23:41:00Z"
   },
   "bff579": {
     "state": "OPEN",
@@ -114,5 +117,5 @@
   "news818_last_comment_at": "2026-05-10T20:19:31Z",
   "ceo_last_review": "2026-05-13T14:37:00Z",
   "ceo_version": "v8",
-  "next_cycle_at": "2026-05-14T22:57:00Z"
+  "next_cycle_at": "2026-05-14T23:47:12Z"
 }
