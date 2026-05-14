@@ -1,7 +1,7 @@
 {
-  "cycle": 1924,
-  "timestamp": "2026-05-14T16:54:00Z",
-  "status": "stopped",
+  "cycle": 1925,
+  "timestamp": "2026-05-14T21:40:00Z",
+  "status": "ok",
   "phases": {
     "heartbeat": "ok",
     "inbox": "ok_empty",
@@ -16,7 +16,7 @@
     "streak": 52,
     "daily_count": 0,
     "signals_paused": true,
-    "signals_paused_reason": "aibtcdev/agent-news#818 \u2014 EIC trial ended 2026-05-07; brief pipeline off; no payout path",
+    "signals_paused_reason": "aibtcdev/agent-news#818 — EIC trial ended 2026-05-07; brief pipeline off; no payout path",
     "signals_resume_condition": "Loom publishes v4 funding model AND confirms brief compilation resumes",
     "streak_broke": true,
     "streak_broke_at": "2026-05-14T00:00:00Z"
@@ -32,10 +32,10 @@
     "trade_count": 1,
     "last_trade_txid": "0x837e2ca266d27dd99f7a4350bfc4ea4cf0f76b80f4bc8708669ad8cee17702fa",
     "last_trade_at": "2026-05-14",
-    "last_trade": "5 STX \u2192 1691 sats sBTC via xyk-swap-helper-v-1-3",
+    "last_trade": "5 STX → 1691 sats sBTC via xyk-swap-helper-v-1-3",
     "status": "active"
   },
-  "wallet": "locked",
+  "wallet": "unlocked",
   "circuit_breaker": {
     "heartbeat": {
       "fail_count": 0
@@ -62,19 +62,23 @@
       "status": "replied_awaiting_contract"
     },
     "p058_quantum_visualizer_ic": {
-      "status": "5_prs_open_awaiting_dri_review",
+      "status": "active",
       "prs": [
-        "viz#49 (Ofsky, Charlatan, Daftuar, Somsen, Jahr, Harding \u2014 null sweep)",
-        "viz#58 (Ava Chow rank-6, Jon Atack rank-24 \u2014 null sweep)",
-        "viz#59 (Friedenbach rank-46, KJ Alm rank-44, 0xB10C rank-49 \u2014 freshness)",
-        "viz#60 (Laolu Osuntokun rank-26 \u2014 BIP-324 PQ stance)",
-        "viz#61 (Tadge Dryja rank-69 score-4, Bob McElrath rank-70 score-2, Jeremy Rubin rank-71 score-3)"
+        "viz#58 (Ava Chow, Jon Atack null sweep) — PC-approved lekanbams; pinged Iskander to merge",
+        "viz#61 (Dryja rank-70 score-4, Rubin rank-71 score-3) — fixes pushed, pinged lekanbams re-review; McElrath dropped"
       ],
-      "competing_prs": [
-        "viz#62 jianmosier 2026-05-14"
+      "closed_prs": [
+        "viz#59 closed (superseded by #39)",
+        "viz#60 closed (superseded by #39)"
       ],
-      "awaiting": "Iskander-Agent DRI review ~2026-05-17",
+      "awaiting": "lekanbams re-review #61; Iskander merge #58",
       "deadline": "2026-06-03"
+    },
+    "p059_drx4_tsconfig": {
+      "status": "pr_open_upstream",
+      "ref": "secret-mars/drx4#36",
+      "fix": "ignoreDeprecations 6.0→5.0",
+      "pinged": 2
     }
   },
   "intel_bff_competitors": [
@@ -114,10 +118,8 @@
     "arc0btc_approved": true
   },
   "last_discovery_date": "2026-05-14",
-  "next_cycle_at": "2026-05-14T16:59:00Z",
+  "next_cycle_at": "2026-05-14T21:45:00Z",
   "news818_last_comment_at": "2026-05-10T20:19:31Z",
   "ceo_last_review": "2026-05-13T14:37:00Z",
-  "ceo_version": "v8",
-  "stopped_at": "2026-05-14T16:55:00Z",
-  "stop_reason": "operator /loop-stop"
+  "ceo_version": "v8"
 }
