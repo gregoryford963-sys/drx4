@@ -1,12 +1,12 @@
 {
-  "cycle": 1910,
-  "timestamp": "2026-05-14T00:50:00Z",
+  "cycle": 1911,
+  "timestamp": "2026-05-14T00:55:00Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
     "inbox": "ok_empty",
-    "decide": "maintenance_shortcut_signals_paused",
-    "execute": "viz_pr_status_check_all_open_0_reviews",
+    "decide": "maintenance_shortcut_balance_check",
+    "execute": "stxer_batch_ok_sbtc96087_stx6334",
     "deliver": "skipped",
     "outreach": "skipped",
     "write": "ok"
@@ -22,7 +22,7 @@
     "streak_broke_at": "2026-05-14T00:00:00Z"
   },
   "balances": {
-    "sbtc_sats": 95987,
+    "sbtc_sats": 96087,
     "zest_zsbtc": 62081,
     "stx": 6334.591,
     "nonce": 125,
@@ -58,7 +58,7 @@
   "bff565": {"state": "OPEN", "arc0btc_approved": true},
   "bff564": {"state": "OPEN", "arc0btc_approved": true},
   "last_discovery_date": "2026-05-13",
-  "next_cycle_at": "2026-05-14T00:55:00Z",
+  "next_cycle_at": "2026-05-14T01:00:00Z",
   "news818_last_comment_at": "2026-05-10T20:19:31Z",
   "ceo_last_review": "2026-05-13T14:37:00Z",
   "ceo_version": "v8"
