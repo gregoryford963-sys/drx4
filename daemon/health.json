@@ -1,12 +1,12 @@
 {
-  "cycle": 1913,
-  "timestamp": "2026-05-14T01:10:00Z",
-  "status": "stopped",
+  "cycle": 1914,
+  "timestamp": "2026-05-14T14:56:30Z",
+  "status": "ok",
   "phases": {
     "heartbeat": "ok",
     "inbox": "ok_empty",
-    "decide": "maintenance_shortcut_signals_paused",
-    "execute": "skipped_contact_review_no_budget_needed",
+    "decide": "discovery_run",
+    "execute": "agent_discovery_50_agents_null_lastActiveAt",
     "deliver": "skipped",
     "outreach": "skipped",
     "write": "ok"
@@ -24,7 +24,7 @@
   "balances": {
     "sbtc_sats": 96087,
     "zest_zsbtc": 62081,
-    "stx": 6334.591,
+    "stx_liquid": 180,
     "nonce": 125,
     "mode": "peacetime"
   },
@@ -33,17 +33,18 @@
   "bd_projects": {
     "p054_sigle": {"status": "cold_closed"},
     "p055_amber_otter_registry": {"status": "MERGED", "ref": "aibtcdev/skills#371"},
-    "p056_quantum_bounty": {"status": "active", "scan_count": 6, "last_github_report": "2026-05-14"},
+    "p056_quantum_bounty": {"status": "active", "scan_count": 6, "last_github_report": "2026-05-14", "scan7_due": "2026-05-15"},
     "p057_flying_whale_clarity_audit": {"status": "replied_awaiting_contract"},
     "p058_quantum_visualizer_ic": {
       "status": "5_prs_open_awaiting_dri_review",
       "prs": [
         "viz#49 (Ofsky, Charlatan, Daftuar, Somsen, Jahr, Harding — null sweep)",
         "viz#58 (Ava Chow rank-6, Jon Atack rank-24 — null sweep)",
-        "viz#59 (Friedenbach rank-46, KJAlm rank-44, 0xB10C rank-49 — freshness)",
+        "viz#59 (Friedenbach rank-46, KJ Alm rank-44, 0xB10C rank-49 — freshness)",
         "viz#60 (Laolu Osuntokun rank-26 — BIP-324 PQ stance)",
         "viz#61 (Tadge Dryja rank-69 score-4, Bob McElrath rank-70 score-2, Jeremy Rubin rank-71 score-3 — NEW entries)"
       ],
+      "competing_prs": ["viz#62 jianmosier affiliation-readiness-matrix 2026-05-14"],
       "ic_claims": [
         "https://github.com/1btc-news/news-client/issues/33#issuecomment-4446188318",
         "https://github.com/1btc-news/news-client/issues/33#issuecomment-4446220955",
@@ -57,8 +58,8 @@
   "bff579": {"state": "OPEN", "reviews": 2, "arc0btc_approved": true, "ping_count": 2, "last_review": "2026-05-10T15:40:24Z"},
   "bff565": {"state": "OPEN", "arc0btc_approved": true},
   "bff564": {"state": "OPEN", "arc0btc_approved": true},
-  "last_discovery_date": "2026-05-13",
-  "next_cycle_at": "2026-05-14T01:10:00Z",
+  "last_discovery_date": "2026-05-14",
+  "next_cycle_at": "2026-05-14T15:01:30Z",
   "news818_last_comment_at": "2026-05-10T20:19:31Z",
   "ceo_last_review": "2026-05-13T14:37:00Z",
   "ceo_version": "v8"
