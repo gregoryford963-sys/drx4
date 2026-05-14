@@ -1,6 +1,6 @@
 {
-  "cycle": 1922,
-  "timestamp": "2026-05-14T16:42:00Z",
+  "cycle": 1923,
+  "timestamp": "2026-05-14T16:49:00Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
@@ -95,7 +95,8 @@
   "skills385": {
     "state": "OPEN",
     "reviews": 0,
-    "fixes": "skills#383"
+    "fixes": "skills#383",
+    "ci": "passing"
   },
   "bff579": {
     "state": "OPEN",
@@ -112,7 +113,7 @@
     "arc0btc_approved": true
   },
   "last_discovery_date": "2026-05-14",
-  "next_cycle_at": "2026-05-14T16:47:00Z",
+  "next_cycle_at": "2026-05-14T16:54:00Z",
   "news818_last_comment_at": "2026-05-10T20:19:31Z",
   "ceo_last_review": "2026-05-13T14:37:00Z",
   "ceo_version": "v8"
