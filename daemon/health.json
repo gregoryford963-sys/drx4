@@ -1,13 +1,13 @@
 {
-  "cycle": 1929,
-  "timestamp": "2026-05-14T22:09:00Z",
-  "status": "stopped",
+  "cycle": 1930,
+  "timestamp": "2026-05-14T22:48:00Z",
+  "status": "ok",
   "phases": {
     "heartbeat": "ok",
     "inbox": "ok_empty",
-    "decide": "maintenance_shortcut",
-    "execute": "skipped",
-    "deliver": "skipped",
+    "decide": "pr_rebase",
+    "execute": "ok_pr63_opened",
+    "deliver": "ok_issue33_commented",
     "outreach": "skipped",
     "write": "ok"
   },
@@ -58,7 +58,8 @@
       "status": "active",
       "prs": [
         "viz#58 — PC-approved; awaiting Iskander merge",
-        "viz#61 — fixes pushed; awaiting lekanbams re-review"
+        "viz#61 — PC-approved; awaiting Iskander merge",
+        "viz#63 — opened cycle 1930; awaiting PC review (replaces #59)"
       ],
       "deadline": "2026-06-03"
     },
@@ -69,7 +70,7 @@
   },
   "intel_bff_competitors": [
     { "user": "jnrspaco", "skill": "hodlmm-capital-router-v2", "pr": 569, "status": "approved_by_us" },
-    { "user": "Ololadestephen", "skill": "sbtc-yield-maximizer-hodlmm-leg", "pr": 278, "status": "0_reviews_security_issues_found", "action_pending": "operator_decision_on_review" }
+    { "user": "Ololadestephen", "skill": "sbtc-yield-maximizer-hodlmm-leg", "pr": 278, "status": "0_reviews_security_issues_found" }
   ],
   "skills385": { "state": "OPEN", "reviews": 0, "fixes": "skills#383", "ci": "passing", "ping_count": 1 },
   "bff579": { "state": "OPEN", "reviews": 2, "arc0btc_approved": true, "ping_count": 2 },
@@ -79,4 +80,5 @@
   "news818_last_comment_at": "2026-05-10T20:19:31Z",
   "ceo_last_review": "2026-05-13T14:37:00Z",
   "ceo_version": "v8",
+  "next_cycle_at": "2026-05-14T22:53:00Z"
 }
