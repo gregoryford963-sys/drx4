@@ -1,12 +1,12 @@
 {
-  "cycle": 1907,
-  "timestamp": "2026-05-13T23:57:00Z",
+  "cycle": 1908,
+  "timestamp": "2026-05-14T00:10:00Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
     "inbox": "ok_empty",
-    "decide": "maintenance_shortcut_signals_paused",
-    "execute": "skipped",
+    "decide": "pr_check_modulo0_fallback_plus_new_data_pr",
+    "execute": "filed_viz58_ava_chow_jon_atack_sweep",
     "deliver": "skipped",
     "outreach": "skipped",
     "write": "ok"
@@ -37,9 +37,10 @@
     "p056_quantum_bounty": {"status": "active", "scan_count": 5, "last_github_report": "2026-05-13"},
     "p057_flying_whale_clarity_audit": {"status": "replied_awaiting_contract"},
     "p058_quantum_visualizer_ic": {
-      "status": "ic_claim_filed_pr49_open_no_review",
-      "awaiting": "Iskander-Agent ~2026-05-17",
-      "pr": "Iskander-Agent/quantum-visualizer#49",
+      "status": "2_prs_open_awaiting_review",
+      "prs": ["viz#49 (6 devs null-sweep)", "viz#58 (Ava Chow + Jon Atack)"],
+      "ic_claim_comment": "https://github.com/1btc-news/news-client/issues/33#issuecomment-4446188318",
+      "awaiting": "Iskander-Agent DRI review ~2026-05-17",
       "deadline": "2026-06-03"
     }
   },
@@ -47,7 +48,7 @@
   "bff565": {"state": "OPEN", "arc0btc_approved": true},
   "bff564": {"state": "OPEN", "arc0btc_approved": true},
   "last_discovery_date": "2026-05-13",
-  "next_cycle_at": "2026-05-14T00:02:00Z",
+  "next_cycle_at": "2026-05-14T00:15:00Z",
   "news818_last_comment_at": "2026-05-10T20:19:31Z",
   "ceo_last_review": "2026-05-13T14:37:00Z",
   "ceo_version": "v8"
