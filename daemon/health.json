@@ -1,12 +1,12 @@
 {
-  "cycle": 1915,
-  "timestamp": "2026-05-14T15:05:30Z",
+  "cycle": 1916,
+  "timestamp": "2026-05-14T15:15:00Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
     "inbox": "ok_empty",
-    "decide": "maintenance_shortcut_signals_paused",
-    "execute": "platform_docs_checked_no_change_818_still_open",
+    "decide": "scouted_skills_repo_found_issue_383",
+    "execute": "pr_opened_skills_385_ci_install_skills_ref",
     "deliver": "skipped",
     "outreach": "skipped",
     "write": "ok"
@@ -38,7 +38,6 @@
       "scan_count": 8,
       "last_github_report": "2026-05-14",
       "scan9_due": "2026-05-15",
-      "scan8_url": "https://github.com/1btc-news/news-client/issues/28#issuecomment-4451956543",
       "bounty_id": "ea072174-1e19-484f-9ec5-9cc2d9102985",
       "cluster": "B (blocks 2001-7000)",
       "issue": "1btc-news/news-client#28"
@@ -58,11 +57,12 @@
       "deadline": "2026-06-03"
     }
   },
+  "skills385": {"state": "OPEN", "title": "ci: install skills-ref so tier-1 spec validation actually runs", "fixes": "#383"},
   "bff579": {"state": "OPEN", "reviews": 2, "arc0btc_approved": true, "ping_count": 2, "last_review": "2026-05-10T15:40:24Z"},
   "bff565": {"state": "OPEN", "arc0btc_approved": true},
   "bff564": {"state": "OPEN", "arc0btc_approved": true},
   "last_discovery_date": "2026-05-14",
-  "next_cycle_at": "2026-05-14T15:10:30Z",
+  "next_cycle_at": "2026-05-14T15:20:00Z",
   "news818_last_comment_at": "2026-05-10T20:19:31Z",
   "ceo_last_review": "2026-05-13T14:37:00Z",
   "ceo_version": "v8"
