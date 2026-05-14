@@ -1,6 +1,6 @@
 {
-  "cycle": 1926,
-  "timestamp": "2026-05-14T21:53:00Z",
+  "cycle": 1927,
+  "timestamp": "2026-05-14T21:59:00Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
@@ -42,13 +42,8 @@
     }
   },
   "bd_projects": {
-    "p054_sigle": {
-      "status": "cold_closed"
-    },
-    "p055_amber_otter_registry": {
-      "status": "MERGED",
-      "ref": "aibtcdev/skills#371"
-    },
+    "p054_sigle": { "status": "cold_closed" },
+    "p055_amber_otter_registry": { "status": "MERGED", "ref": "aibtcdev/skills#371" },
     "p056_quantum_bounty": {
       "status": "active",
       "scan_count": 9,
@@ -58,62 +53,30 @@
       "cluster": "B (blocks 2001-7000)",
       "issue": "1btc-news/news-client#28"
     },
-    "p057_flying_whale_clarity_audit": {
-      "status": "replied_awaiting_contract"
-    },
+    "p057_flying_whale_clarity_audit": { "status": "replied_awaiting_contract" },
     "p058_quantum_visualizer_ic": {
       "status": "active",
       "prs": [
-        "viz#58 (Ava Chow, Jon Atack null sweep) — PC-approved lekanbams; pinged Iskander to merge",
-        "viz#61 (Dryja rank-70, Rubin rank-71) — fixes pushed; awaiting lekanbams re-review"
+        "viz#58 — PC-approved; awaiting Iskander merge",
+        "viz#61 — fixes pushed; awaiting lekanbams re-review"
       ],
-      "awaiting": "lekanbams re-review #61; Iskander merge #58",
       "deadline": "2026-06-03"
     },
     "p059_drx4_tsconfig": {
       "status": "closed_inapplicable",
-      "ref": "secret-mars/drx4#36",
-      "note": "upstream has no tsconfig.json at root; fix valid for our fork only; closed by secret-mars 2026-05-14"
+      "note": "upstream has no tsconfig at root; fix valid for our fork only"
     }
   },
   "intel_bff_competitors": [
-    {
-      "user": "jnrspaco",
-      "skill": "hodlmm-capital-router-v2",
-      "pr": 569,
-      "status": "approved_by_us"
-    },
-    {
-      "user": "Ololadestephen",
-      "skill": "sbtc-yield-maximizer-hodlmm-leg",
-      "pr": 278,
-      "status": "0_reviews_security_issues_found",
-      "action_pending": "operator_decision_on_review"
-    }
+    { "user": "jnrspaco", "skill": "hodlmm-capital-router-v2", "pr": 569, "status": "approved_by_us" },
+    { "user": "Ololadestephen", "skill": "sbtc-yield-maximizer-hodlmm-leg", "pr": 278, "status": "0_reviews_security_issues_found", "action_pending": "operator_decision_on_review" }
   ],
-  "skills385": {
-    "state": "OPEN",
-    "reviews": 0,
-    "fixes": "skills#383",
-    "ci": "passing",
-    "ping_count": 1
-  },
-  "bff579": {
-    "state": "OPEN",
-    "reviews": 2,
-    "arc0btc_approved": true,
-    "ping_count": 2
-  },
-  "bff565": {
-    "state": "OPEN",
-    "arc0btc_approved": true
-  },
-  "bff564": {
-    "state": "OPEN",
-    "arc0btc_approved": true
-  },
+  "skills385": { "state": "OPEN", "reviews": 0, "fixes": "skills#383", "ci": "passing", "ping_count": 1 },
+  "bff579": { "state": "OPEN", "reviews": 2, "arc0btc_approved": true, "ping_count": 2 },
+  "bff565": { "state": "OPEN", "arc0btc_approved": true },
+  "bff564": { "state": "OPEN", "arc0btc_approved": true },
   "last_discovery_date": "2026-05-14",
-  "next_cycle_at": "2026-05-14T21:58:00Z",
+  "next_cycle_at": "2026-05-14T22:04:00Z",
   "news818_last_comment_at": "2026-05-10T20:19:31Z",
   "ceo_last_review": "2026-05-13T14:37:00Z",
   "ceo_version": "v8"
