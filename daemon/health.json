@@ -35,9 +35,10 @@
     "p055_amber_otter_registry": {"status": "MERGED", "ref": "aibtcdev/skills#371"},
     "p056_quantum_bounty": {
       "status": "active",
-      "scan_count": 6,
+      "scan_count": 7,
       "last_github_report": "2026-05-14",
-      "scan7_due": "2026-05-15",
+      "scan8_due": "2026-05-15",
+      "scan7_url": "https://github.com/1btc-news/news-client/issues/28#issuecomment-4451938103",
       "bounty_id": "ea072174-1e19-484f-9ec5-9cc2d9102985",
       "cluster": "B (blocks 2001-7000)",
       "issue": "1btc-news/news-client#28"
