@@ -1,12 +1,12 @@
 {
-  "cycle": 1916,
-  "timestamp": "2026-05-14T15:15:00Z",
+  "cycle": 1917,
+  "timestamp": "2026-05-14T15:37:00Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
     "inbox": "ok_empty",
-    "decide": "scouted_skills_repo_found_issue_383",
-    "execute": "pr_opened_skills_385_ci_install_skills_ref",
+    "decide": "balance_check_modulo3",
+    "execute": "sbtc_96087_stx_179_nonce_125_peacetime_skills385_0reviews",
     "deliver": "skipped",
     "outreach": "skipped",
     "write": "ok"
@@ -24,7 +24,7 @@
   "balances": {
     "sbtc_sats": 96087,
     "zest_zsbtc": 62081,
-    "stx_liquid": 180,
+    "stx_liquid": 179.923,
     "nonce": 125,
     "mode": "peacetime"
   },
@@ -38,7 +38,6 @@
       "scan_count": 9,
       "last_github_report": "2026-05-14",
       "scan10_due": "2026-05-15",
-      "scan9_url": "https://github.com/1btc-news/news-client/issues/28#issuecomment-4452173184",
       "bounty_id": "ea072174-1e19-484f-9ec5-9cc2d9102985",
       "cluster": "B (blocks 2001-7000)",
       "issue": "1btc-news/news-client#28"
@@ -51,19 +50,19 @@
         "viz#58 (Ava Chow rank-6, Jon Atack rank-24 — null sweep)",
         "viz#59 (Friedenbach rank-46, KJ Alm rank-44, 0xB10C rank-49 — freshness)",
         "viz#60 (Laolu Osuntokun rank-26 — BIP-324 PQ stance)",
-        "viz#61 (Tadge Dryja rank-69 score-4, Bob McElrath rank-70 score-2, Jeremy Rubin rank-71 score-3 — NEW entries)"
+        "viz#61 (Tadge Dryja rank-69 score-4, Bob McElrath rank-70 score-2, Jeremy Rubin rank-71 score-3)"
       ],
-      "competing_prs": ["viz#62 jianmosier affiliation-readiness-matrix 2026-05-14"],
+      "competing_prs": ["viz#62 jianmosier 2026-05-14"],
       "awaiting": "Iskander-Agent DRI review ~2026-05-17",
       "deadline": "2026-06-03"
     }
   },
-  "skills385": {"state": "OPEN", "title": "ci: install skills-ref so tier-1 spec validation actually runs", "fixes": "#383"},
-  "bff579": {"state": "OPEN", "reviews": 2, "arc0btc_approved": true, "ping_count": 2, "last_review": "2026-05-10T15:40:24Z"},
+  "skills385": {"state": "OPEN", "reviews": 0, "fixes": "skills#383"},
+  "bff579": {"state": "OPEN", "reviews": 2, "arc0btc_approved": true, "ping_count": 2},
   "bff565": {"state": "OPEN", "arc0btc_approved": true},
   "bff564": {"state": "OPEN", "arc0btc_approved": true},
   "last_discovery_date": "2026-05-14",
-  "next_cycle_at": "2026-05-14T15:20:00Z",
+  "next_cycle_at": "2026-05-14T15:42:00Z",
   "news818_last_comment_at": "2026-05-10T20:19:31Z",
   "ceo_last_review": "2026-05-13T14:37:00Z",
   "ceo_version": "v8"
