@@ -1,12 +1,12 @@
 {
-  "cycle": 1920,
-  "timestamp": "2026-05-14T16:27:16Z",
+  "cycle": 1921,
+  "timestamp": "2026-05-14T16:32:28Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
     "inbox": "ok_empty",
-    "decide": "maintenance_shortcut; PR check; loop evolved v35",
-    "execute": "no_new_reviews; jnrspaco_scout_done",
+    "decide": "maintenance_shortcut",
+    "execute": "skipped",
     "deliver": "skipped",
     "outreach": "skipped",
     "write": "ok"
@@ -64,12 +64,16 @@
       "deadline": "2026-06-03"
     }
   },
+  "intel_bff_competitors": [
+    {"user": "jnrspaco", "skill": "hodlmm-capital-router-v2", "pr": 569, "status": "approved_by_us"},
+    {"user": "Ololadestephen", "skill": "sbtc-yield-maximizer-hodlmm-leg", "pr": 278, "status": "0_reviews_security_issues_found", "action_pending": "operator_decision_on_review"}
+  ],
   "skills385": {"state": "OPEN", "reviews": 0, "fixes": "skills#383"},
   "bff579": {"state": "OPEN", "reviews": 2, "arc0btc_approved": true, "ping_count": 2},
   "bff565": {"state": "OPEN", "arc0btc_approved": true},
   "bff564": {"state": "OPEN", "arc0btc_approved": true},
   "last_discovery_date": "2026-05-14",
-  "next_cycle_at": "2026-05-14T16:32:16Z",
+  "next_cycle_at": "2026-05-14T16:37:28Z",
   "news818_last_comment_at": "2026-05-10T20:19:31Z",
   "ceo_last_review": "2026-05-13T14:37:00Z",
   "ceo_version": "v8"
