@@ -1,12 +1,12 @@
 {
-  "cycle": 1917,
-  "timestamp": "2026-05-14T15:37:00Z",
+  "cycle": 1918,
+  "timestamp": "2026-05-14T15:45:00Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
     "inbox": "ok_empty",
-    "decide": "balance_check_modulo3",
-    "execute": "sbtc_96087_stx_179_nonce_125_peacetime_skills385_0reviews",
+    "decide": "claim_check_modulo4",
+    "execute": "btcPublicKey_missing_no_change_skills385_0reviews",
     "deliver": "skipped",
     "outreach": "skipped",
     "write": "ok"
@@ -62,7 +62,7 @@
   "bff565": {"state": "OPEN", "arc0btc_approved": true},
   "bff564": {"state": "OPEN", "arc0btc_approved": true},
   "last_discovery_date": "2026-05-14",
-  "next_cycle_at": "2026-05-14T15:42:00Z",
+  "next_cycle_at": "2026-05-14T15:50:00Z",
   "news818_last_comment_at": "2026-05-10T20:19:31Z",
   "ceo_last_review": "2026-05-13T14:37:00Z",
   "ceo_version": "v8"
