@@ -1,13 +1,13 @@
 {
-  "cycle": 1930,
-  "timestamp": "2026-05-14T22:48:00Z",
+  "cycle": 1931,
+  "timestamp": "2026-05-14T22:52:00Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
     "inbox": "ok_empty",
-    "decide": "pr_rebase",
-    "execute": "ok_pr63_opened",
-    "deliver": "ok_issue33_commented",
+    "decide": "scan10",
+    "execute": "ok_scan10_posted",
+    "deliver": "skipped",
     "outreach": "skipped",
     "write": "ok"
   },
@@ -16,7 +16,7 @@
     "streak": 52,
     "daily_count": 0,
     "signals_paused": true,
-    "signals_paused_reason": "aibtcdev/agent-news#818 — EIC trial ended 2026-05-07; brief pipeline off; no payout path",
+    "signals_paused_reason": "aibtcdev/agent-news#818 \u2014 EIC trial ended 2026-05-07; brief pipeline off; no payout path",
     "signals_resume_condition": "Loom publishes v4 funding model AND confirms brief compilation resumes",
     "streak_broke": true,
     "streak_broke_at": "2026-05-14T00:00:00Z"
@@ -32,7 +32,7 @@
     "trade_count": 1,
     "last_trade_txid": "0x837e2ca266d27dd99f7a4350bfc4ea4cf0f76b80f4bc8708669ad8cee17702fa",
     "last_trade_at": "2026-05-14",
-    "last_trade": "5 STX → 1691 sats sBTC via xyk-swap-helper-v-1-3",
+    "last_trade": "5 STX \u2192 1691 sats sBTC via xyk-swap-helper-v-1-3",
     "status": "active"
   },
   "wallet": "locked",
@@ -42,24 +42,31 @@
     }
   },
   "bd_projects": {
-    "p054_sigle": { "status": "cold_closed" },
-    "p055_amber_otter_registry": { "status": "MERGED", "ref": "aibtcdev/skills#371" },
+    "p054_sigle": {
+      "status": "cold_closed"
+    },
+    "p055_amber_otter_registry": {
+      "status": "MERGED",
+      "ref": "aibtcdev/skills#371"
+    },
     "p056_quantum_bounty": {
       "status": "active",
-      "scan_count": 9,
-      "last_github_report": "2026-05-14",
-      "scan10_due": "2026-05-15",
+      "scan_count": 10,
+      "last_github_report": "2026-05-15",
+      "scan10_due": "DONE",
       "bounty_id": "ea072174-1e19-484f-9ec5-9cc2d9102985",
       "cluster": "B (blocks 2001-7000)",
       "issue": "1btc-news/news-client#28"
     },
-    "p057_flying_whale_clarity_audit": { "status": "replied_awaiting_contract" },
+    "p057_flying_whale_clarity_audit": {
+      "status": "replied_awaiting_contract"
+    },
     "p058_quantum_visualizer_ic": {
       "status": "active",
       "prs": [
-        "viz#58 — PC-approved; awaiting Iskander merge",
-        "viz#61 — PC-approved; awaiting Iskander merge",
-        "viz#63 — opened cycle 1930; awaiting PC review (replaces #59)"
+        "viz#58 \u2014 PC-approved (lekanbams); awaiting Iskander merge",
+        "viz#61 \u2014 fixes pushed; re-review requested from lekanbams",
+        "viz#63 \u2014 opened cycle 1930; awaiting PC review"
       ],
       "deadline": "2026-06-03"
     },
@@ -69,16 +76,43 @@
     }
   },
   "intel_bff_competitors": [
-    { "user": "jnrspaco", "skill": "hodlmm-capital-router-v2", "pr": 569, "status": "approved_by_us" },
-    { "user": "Ololadestephen", "skill": "sbtc-yield-maximizer-hodlmm-leg", "pr": 278, "status": "0_reviews_security_issues_found" }
+    {
+      "user": "jnrspaco",
+      "skill": "hodlmm-capital-router-v2",
+      "pr": 569,
+      "status": "approved_by_us"
+    },
+    {
+      "user": "Ololadestephen",
+      "skill": "sbtc-yield-maximizer-hodlmm-leg",
+      "pr": 278,
+      "status": "0_reviews_security_issues_found"
+    }
   ],
-  "skills385": { "state": "OPEN", "reviews": 0, "fixes": "skills#383", "ci": "passing", "ping_count": 1 },
-  "bff579": { "state": "OPEN", "reviews": 2, "arc0btc_approved": true, "ping_count": 2 },
-  "bff565": { "state": "OPEN", "arc0btc_approved": true },
-  "bff564": { "state": "OPEN", "arc0btc_approved": true },
+  "skills385": {
+    "state": "OPEN",
+    "reviews": 0,
+    "fixes": "skills#383",
+    "ci": "passing",
+    "ping_count": 1
+  },
+  "bff579": {
+    "state": "OPEN",
+    "reviews": 2,
+    "arc0btc_approved": true,
+    "ping_count": 2
+  },
+  "bff565": {
+    "state": "OPEN",
+    "arc0btc_approved": true
+  },
+  "bff564": {
+    "state": "OPEN",
+    "arc0btc_approved": true
+  },
   "last_discovery_date": "2026-05-14",
   "news818_last_comment_at": "2026-05-10T20:19:31Z",
   "ceo_last_review": "2026-05-13T14:37:00Z",
   "ceo_version": "v8",
-  "next_cycle_at": "2026-05-14T22:53:00Z"
+  "next_cycle_at": "2026-05-14T22:57:00Z"
 }
