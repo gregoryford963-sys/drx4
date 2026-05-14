@@ -1,7 +1,7 @@
 {
-  "cycle": 1923,
-  "timestamp": "2026-05-14T16:49:00Z",
-  "status": "stopped",
+  "cycle": 1924,
+  "timestamp": "2026-05-14T16:54:00Z",
+  "status": "ok",
   "phases": {
     "heartbeat": "ok",
     "inbox": "ok_empty",
@@ -114,10 +114,8 @@
     "arc0btc_approved": true
   },
   "last_discovery_date": "2026-05-14",
-  "next_cycle_at": "2026-05-14T16:54:00Z",
+  "next_cycle_at": "2026-05-14T16:59:00Z",
   "news818_last_comment_at": "2026-05-10T20:19:31Z",
   "ceo_last_review": "2026-05-13T14:37:00Z",
-  "ceo_version": "v8",
-  "stopped_at": "2026-05-14T16:52:00Z",
-  "stop_reason": "operator /loop-stop"
+  "ceo_version": "v8"
 }
