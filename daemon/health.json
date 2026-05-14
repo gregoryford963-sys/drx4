@@ -1,12 +1,12 @@
 {
   "cycle": 1908,
-  "timestamp": "2026-05-14T00:10:00Z",
+  "timestamp": "2026-05-14T00:30:00Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
     "inbox": "ok_empty",
-    "decide": "pr_check_modulo0_fallback_plus_new_data_pr",
-    "execute": "filed_viz58_ava_chow_jon_atack_sweep",
+    "decide": "operator_command_file_more_data_prs",
+    "execute": "filed_pr58_59_60_61_ic_claims_posted",
     "deliver": "skipped",
     "outreach": "skipped",
     "write": "ok"
@@ -18,7 +18,6 @@
     "signals_paused": true,
     "signals_paused_reason": "aibtcdev/agent-news#818 — EIC trial ended 2026-05-07; brief pipeline off; no payout path",
     "signals_resume_condition": "Loom publishes v4 funding model AND confirms brief compilation resumes",
-    "streak_at_risk": false,
     "streak_broke": true,
     "streak_broke_at": "2026-05-14T00:00:00Z"
   },
@@ -37,9 +36,20 @@
     "p056_quantum_bounty": {"status": "active", "scan_count": 5, "last_github_report": "2026-05-13"},
     "p057_flying_whale_clarity_audit": {"status": "replied_awaiting_contract"},
     "p058_quantum_visualizer_ic": {
-      "status": "2_prs_open_awaiting_review",
-      "prs": ["viz#49 (6 devs null-sweep)", "viz#58 (Ava Chow + Jon Atack)"],
-      "ic_claim_comment": "https://github.com/1btc-news/news-client/issues/33#issuecomment-4446188318",
+      "status": "5_prs_open_awaiting_dri_review",
+      "prs": [
+        "viz#49 (Ofsky, Charlatan, Daftuar, Somsen, Jahr, Harding — null sweep)",
+        "viz#58 (Ava Chow rank-6, Jon Atack rank-24 — null sweep)",
+        "viz#59 (Friedenbach rank-46, KJAlm rank-44, 0xB10C rank-49 — freshness)",
+        "viz#60 (Laolu Osuntokun rank-26 — BIP-324 PQ stance)",
+        "viz#61 (Tadge Dryja rank-69 score-4, Bob McElrath rank-70 score-2, Jeremy Rubin rank-71 score-3 — NEW entries)"
+      ],
+      "ic_claims": [
+        "https://github.com/1btc-news/news-client/issues/33#issuecomment-4446188318",
+        "https://github.com/1btc-news/news-client/issues/33#issuecomment-4446220955",
+        "https://github.com/1btc-news/news-client/issues/33#issuecomment-4446221286",
+        "https://github.com/1btc-news/news-client/issues/33#issuecomment-4446260925"
+      ],
       "awaiting": "Iskander-Agent DRI review ~2026-05-17",
       "deadline": "2026-06-03"
     }
@@ -48,7 +58,7 @@
   "bff565": {"state": "OPEN", "arc0btc_approved": true},
   "bff564": {"state": "OPEN", "arc0btc_approved": true},
   "last_discovery_date": "2026-05-13",
-  "next_cycle_at": "2026-05-14T00:15:00Z",
+  "next_cycle_at": "2026-05-14T00:35:00Z",
   "news818_last_comment_at": "2026-05-10T20:19:31Z",
   "ceo_last_review": "2026-05-13T14:37:00Z",
   "ceo_version": "v8"
