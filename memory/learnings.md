@@ -631,3 +631,6 @@ Cluster names in loop.md use underscores (internal) but API submission requires 
 - sBTC token: SM3VDXK3WZZSA84XXFKAFAF15NNZX32CTSG82JFQ4.sbtc-token
 - Pool: SM1793C4R5PZ4NS4VQ4WMP7SKKYVH8JZEWSZ9HCCR.xyk-pool-sbtc-stx-v-1-1
 - Script: aibtcdev-skills/competition-swap.ts
+
+## 2026-05-14 — Upstream PR requires upstream file to exist
+Opening a PR to an upstream repo to add a file that doesn't exist there requires confirming the upstream actually has (or needs) that file. secret-mars/drx4 has no tsconfig.json at root — our fix was valid for our own fork but inapplicable upstream. Lesson: before opening a PR to add/modify a file, verify the file exists in the target repo with `git show upstream/main:<path>` or `gh api`.

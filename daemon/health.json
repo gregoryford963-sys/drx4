@@ -1,6 +1,6 @@
 {
-  "cycle": 1925,
-  "timestamp": "2026-05-14T21:40:00Z",
+  "cycle": 1926,
+  "timestamp": "2026-05-14T21:53:00Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
@@ -65,20 +65,15 @@
       "status": "active",
       "prs": [
         "viz#58 (Ava Chow, Jon Atack null sweep) — PC-approved lekanbams; pinged Iskander to merge",
-        "viz#61 (Dryja rank-70 score-4, Rubin rank-71 score-3) — fixes pushed, pinged lekanbams re-review; McElrath dropped"
-      ],
-      "closed_prs": [
-        "viz#59 closed (superseded by #39)",
-        "viz#60 closed (superseded by #39)"
+        "viz#61 (Dryja rank-70, Rubin rank-71) — fixes pushed; awaiting lekanbams re-review"
       ],
       "awaiting": "lekanbams re-review #61; Iskander merge #58",
       "deadline": "2026-06-03"
     },
     "p059_drx4_tsconfig": {
-      "status": "pr_open_upstream",
+      "status": "closed_inapplicable",
       "ref": "secret-mars/drx4#36",
-      "fix": "ignoreDeprecations 6.0→5.0",
-      "pinged": 2
+      "note": "upstream has no tsconfig.json at root; fix valid for our fork only; closed by secret-mars 2026-05-14"
     }
   },
   "intel_bff_competitors": [
@@ -118,7 +113,7 @@
     "arc0btc_approved": true
   },
   "last_discovery_date": "2026-05-14",
-  "next_cycle_at": "2026-05-14T21:45:00Z",
+  "next_cycle_at": "2026-05-14T21:58:00Z",
   "news818_last_comment_at": "2026-05-10T20:19:31Z",
   "ceo_last_review": "2026-05-13T14:37:00Z",
   "ceo_version": "v8"
