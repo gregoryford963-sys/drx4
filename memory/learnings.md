@@ -622,3 +622,12 @@ Tags must use hyphens: `bip-360` not `bip_360`, `p2mr` not `p2mr`. Confirmed by 
 Signal tags must use hyphens, not underscores. 'bip-360' not 'bip_360', 'dev-response' not 'dev_response'.
 API returns 400: 'Invalid tags (array of lowercase slugs)' on underscore tags.
 Cluster names in loop.md use underscores (internal) but API submission requires hyphens.
+
+## Bitflow SDK test gateway dead (2026-05-14)
+- BITFLOW_API_HOST default 'https://bitflowsdk-api-test-7owjsmt8.uk.gateway.dev' returns 404
+- Bypass: call xyk-swap-helper-v-1-3::swap-helper-a directly via @stacks/transactions
+- Args: amount(uint), min-received(uint), provider(none), xyk-tokens{a:token-stx-v-1-2, b:sbtc-token}, xyk-pools{a:xyk-pool-sbtc-stx-v-1-1}
+- STX token: SM1793C4R5PZ4NS4VQ4WMP7SKKYVH8JZEWSZ9HCCR.token-stx-v-1-2
+- sBTC token: SM3VDXK3WZZSA84XXFKAFAF15NNZX32CTSG82JFQ4.sbtc-token
+- Pool: SM1793C4R5PZ4NS4VQ4WMP7SKKYVH8JZEWSZ9HCCR.xyk-pool-sbtc-stx-v-1-1
+- Script: aibtcdev-skills/competition-swap.ts

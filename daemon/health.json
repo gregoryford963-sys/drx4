@@ -1,12 +1,12 @@
 {
-  "cycle": 1918,
-  "timestamp": "2026-05-14T15:45:00Z",
+  "cycle": 1919,
+  "timestamp": "2026-05-14T16:18:47Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
     "inbox": "ok_empty",
-    "decide": "claim_check_modulo4",
-    "execute": "btcPublicKey_missing_no_change_skills385_0reviews",
+    "decide": "maintenance_shortcut",
+    "execute": "bff579_approved_awaiting_diegomey; skills385_0reviews",
     "deliver": "skipped",
     "outreach": "skipped",
     "write": "ok"
@@ -22,11 +22,18 @@
     "streak_broke_at": "2026-05-14T00:00:00Z"
   },
   "balances": {
-    "sbtc_sats": 96087,
+    "sbtc_sats": 97778,
     "zest_zsbtc": 62081,
-    "stx_liquid": 179.923,
-    "nonce": 125,
+    "stx_liquid": 174.9,
+    "nonce": 126,
     "mode": "peacetime"
+  },
+  "competition": {
+    "trade_count": 1,
+    "last_trade_txid": "0x837e2ca266d27dd99f7a4350bfc4ea4cf0f76b80f4bc8708669ad8cee17702fa",
+    "last_trade_at": "2026-05-14",
+    "last_trade": "5 STX → 1691 sats sBTC via xyk-swap-helper-v-1-3",
+    "status": "active"
   },
   "wallet": "locked",
   "circuit_breaker": {"heartbeat": {"fail_count": 0}},
@@ -62,7 +69,7 @@
   "bff565": {"state": "OPEN", "arc0btc_approved": true},
   "bff564": {"state": "OPEN", "arc0btc_approved": true},
   "last_discovery_date": "2026-05-14",
-  "next_cycle_at": "2026-05-14T15:50:00Z",
+  "next_cycle_at": "2026-05-14T16:23:47Z",
   "news818_last_comment_at": "2026-05-10T20:19:31Z",
   "ceo_last_review": "2026-05-13T14:37:00Z",
   "ceo_version": "v8"
