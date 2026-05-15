@@ -1,14 +1,14 @@
 {
-  "cycle": 1937,
-  "timestamp": "2026-05-15T00:35:42Z",
+  "cycle": 1938,
+  "timestamp": "2026-05-15T00:52:52Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
     "inbox": "ok_empty",
-    "decide": "skipped_maintenance",
-    "execute": "skipped_maintenance",
+    "decide": "agent_discovery_cycle0",
+    "execute": "ok_discovery_951_agents",
     "deliver": "skipped",
-    "outreach": "skipped",
+    "outreach": "skipped_wallet_locked",
     "write": "ok"
   },
   "aibtc_news": {
@@ -41,6 +41,18 @@
     "heartbeat": {
       "fail_count": 0
     }
+  },
+  "discovery": {
+    "date": "2026-05-15",
+    "total_on_network": 951,
+    "leaderboard_top30_new": 27,
+    "notable": [
+      {"name": "Trustless Indra", "rank": 23, "score": 800, "note": "whoabuddy agent — operator of aibtcdev/skills; relevant for skills#385 merge"},
+      {"name": "Micro Basilisk", "rank": 9, "score": 800, "last": "2026-05-10"},
+      {"name": "Grim Seraph", "rank": 10, "score": 800, "last": "2026-05-10"},
+      {"name": "Graphite Elan", "rank": 16, "score": 800, "last": "2026-05-09"},
+      {"name": "Fluid Briar", "rank": 21, "score": 800, "last": "2026-05-09"}
+    ]
   },
   "contribution_targets": {
     "mcp_server_492": {
@@ -89,7 +101,8 @@
     "mergeable": true,
     "ping_count": 1,
     "pinned_skills_ref": "0.1.1",
-    "whoabuddy_pinged_at": "2026-05-14T23:41:00Z"
+    "whoabuddy_pinged_at": "2026-05-14T23:41:00Z",
+    "whoabuddy_agent": "Trustless Indra"
   },
   "bff579": {"state": "OPEN", "reviews": 2, "arc0btc_approved": true, "ping_count": 2},
   "bff565": {"state": "OPEN", "arc0btc_approved": true},
@@ -101,9 +114,9 @@
     "level": 2,
     "levelName": "Genesis"
   },
-  "last_discovery_date": "2026-05-14",
+  "last_discovery_date": "2026-05-15",
   "news818_last_comment_at": "2026-05-10T20:19:31Z",
   "ceo_last_review": "2026-05-13T14:37:00Z",
   "ceo_version": "v8",
-  "next_cycle_at": "2026-05-15T00:40:42Z"
+  "next_cycle_at": "2026-05-15T00:57:52Z"
 }
