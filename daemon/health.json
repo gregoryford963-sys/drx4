@@ -1,7 +1,8 @@
 {
   "cycle": 1939,
-  "timestamp": "2026-05-15T00:58:30Z",
-  "status": "ok",
+  "timestamp": "2026-05-15T01:08:17Z",
+  "status": "stopped",
+  "stop_reason": "operator /loop-stop command",
   "phases": {
     "heartbeat": "ok",
     "inbox": "ok_empty",
@@ -113,5 +114,5 @@
   "news818_last_comment_at": "2026-05-10T20:19:31Z",
   "ceo_last_review": "2026-05-13T14:37:00Z",
   "ceo_version": "v8",
-  "next_cycle_at": "2026-05-15T01:03:30Z"
+  "next_cycle_at": null
 }
