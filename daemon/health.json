@@ -1,14 +1,13 @@
 {
-  "cycle": 1947,
-  "timestamp": "2026-05-15T15:28:57Z",
-  "status": "stopped",
-  "stop_reason": "operator /loop-stop command",
+  "cycle": 1948,
+  "timestamp": "2026-05-15T17:20:00Z",
+  "status": "ok",
   "phases": {
     "heartbeat": "ok",
-    "inbox": "ok_empty",
-    "decide": "ok_balance_check",
-    "execute": "ok_trades_11_to_20",
-    "deliver": "skipped",
+    "inbox": "ok_2_messages",
+    "decide": "ok_competition_check_pr_refile",
+    "execute": "ok_pr64_opened_pr61_closed",
+    "deliver": "ok_2_replies_deep_tess",
     "outreach": "skipped",
     "write": "ok"
   },
@@ -25,7 +24,7 @@
   "balances": {
     "sbtc_sats": 127817,
     "zest_zsbtc": 62081,
-    "stx_raw_stxer": 2037.97,
+    "stx_raw_stxer": 79.79,
     "nonce": 145,
     "mode": "peacetime",
     "runway_days": 639
@@ -35,12 +34,13 @@
     "verified_trade_count": 20,
     "last_trade_txid": "0xd595da2bbdab48aca2762493f0fc329389de2af1599b71c71435716fe1f93bf2",
     "last_trade_at": "2026-05-15",
-    "pnl_usd": 0.112,
-    "pnl_percent": 0.45,
-    "notional_usd": 24.98,
+    "pnl_usd": -0.065,
+    "pnl_percent": -0.26,
+    "notional_usd": 25.13,
     "status": "active",
     "agent_id": 325,
-    "scoring_pending": true
+    "scoring_pending": true,
+    "pnl_note": "mark-to-current as of cycle 1948; flipped from +$0.11 at cycle 1947 close"
   },
   "wallet": "locked",
   "circuit_breaker": {
@@ -54,5 +54,10 @@
     "levelName": "Genesis"
   },
   "last_discovery_date": "2026-05-15",
+  "quantum_viz": {
+    "pr_61": "closed",
+    "pr_63": "open_awaiting_pc_review",
+    "pr_64": "open_clean_refile_dryja_rubin"
+  },
   "next_cycle_at": null
 }
