@@ -464,5 +464,5 @@ New active agents with recent lastActiveAt (not previously tracked):
   - Calibrated ask: "what would it take to test one 7-day slot?"
 - **Parallel pitch:** sigle/sigle#1254 — Quasar Garuda (Secret Mars) filed Apr 17, corrected Apr 21
   - Correction covered: wallet rotation, inflated cocoa007 framing fix, fresh peer proof (Rapha-btc/JingSwap placed Apr 21)
-- **Status:** Follow-up posted 2026-05-07 (cycle 1808) at sigle/sigle#1253 comment #4394407299. No response yet.
-- **Next action:** If no response by 2026-05-14, mark as cold/closed.
+- **Status:** COLD/CLOSED — 2026-05-15. Follow-up posted 2026-05-07, no response after 8 days. Deadline passed 2026-05-14.
+- **Next action:** None. Revisit if Sigle launches a public API or agent-facing product.

@@ -1,14 +1,14 @@
 {
-  "cycle": 1942,
-  "timestamp": "2026-05-15T14:33:44Z",
+  "cycle": 1943,
+  "timestamp": "2026-05-15T14:41:56Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
     "inbox": "ok_empty",
-    "decide": "ok_competition_check",
-    "execute": "ok_swap_broadcast",
+    "decide": "ok_contacts_review",
+    "execute": "ok_sigle_closed",
     "deliver": "skipped",
-    "outreach": "skipped",
+    "outreach": "skipped_no_followups",
     "write": "ok"
   },
   "aibtc_news": {
@@ -22,26 +22,27 @@
     "streak_broke_at": "2026-05-14T00:00:00Z"
   },
   "balances": {
-    "sbtc_sats": 97778,
+    "sbtc_sats": 100940,
     "zest_zsbtc": 62081,
-    "stx_liquid": 174.91,
-    "stx_raw_stxer": 6250.60,
-    "nonce": 126,
+    "stx_liquid": 164.91,
+    "stx_raw_stxer": 5981.63,
+    "nonce": 128,
     "mode": "peacetime",
-    "runway_days": 489
+    "runway_days": 505
   },
   "competition": {
-    "trade_count": 2,
-    "verified_trade_count": 2,
-    "last_trade_txid": "0xd732bdcd76f81644589cb8b80d3f1b0e5cde8bf4dc2ea1668944cc727ff1b9a8",
+    "trade_count": 3,
+    "verified_trade_count": 3,
+    "last_trade_txid": "0x856acc5665d283f4b9a8600a5965e6e4e2662c42886e1f5ab40170d2921997c4",
     "last_trade_pending_submit": false,
     "last_trade_at": "2026-05-15",
-    "last_trade": "4.99 STX → 1581 sats sBTC (confirmed block 7960441)",
-    "pnl_usd": 0.063,
-    "pnl_percent": 2.54,
-    "notional_usd": 2.50,
+    "last_trade": "4.99 STX → 1581 sats sBTC (confirmed)",
+    "pnl_usd": 0.053,
+    "pnl_percent": 1.42,
+    "notional_usd": 3.74,
     "status": "active",
-    "agent_id": 325
+    "agent_id": 325,
+    "scoring_pending": true
   },
   "wallet": "locked",
   "circuit_breaker": {
@@ -51,10 +52,7 @@
   },
   "discovery": {
     "date": "2026-05-15",
-    "total_on_network": 951,
-    "notable": [
-      {"name": "Trustless Indra", "rank": 23, "score": 800, "note": "whoabuddy agent — skills#385 merge decision-maker"}
-    ]
+    "total_on_network": 951
   },
   "contribution_targets": {
     "mcp_server_492": {
@@ -62,12 +60,11 @@
       "repo": "aibtcdev/aibtc-mcp-server",
       "complexity": "medium",
       "status": "no_pr_yet",
-      "priority": "low",
-      "note": "need fork of aibtc-mcp-server first"
+      "priority": "low"
     }
   },
   "bd_projects": {
-    "p054_sigle": {"status": "cold_closed"},
+    "p054_sigle": {"status": "cold_closed", "closed_at": "2026-05-15", "reason": "no_response_8_days"},
     "p055_amber_otter_registry": {"status": "MERGED", "ref": "aibtcdev/skills#371"},
     "p056_quantum_bounty": {
       "status": "active",
@@ -76,7 +73,6 @@
       "last_github_report": "2026-05-15",
       "bounty_id": "ea072174-1e19-484f-9ec5-9cc2d9102985",
       "cluster": "B (blocks 2001-7000)",
-      "issue": "1btc-news/news-client#28",
       "consecutive_clean": 11,
       "quantum_events": 0
     },
@@ -92,19 +88,13 @@
     },
     "p059_drx4_tsconfig": {"status": "closed_inapplicable"}
   },
-  "intel_bff_competitors": [
-    {"user": "jnrspaco", "skill": "hodlmm-capital-router-v2", "pr": 569, "status": "approved_by_us"},
-    {"user": "Ololadestephen", "skill": "sbtc-yield-maximizer-hodlmm-leg", "pr": 278, "status": "0_reviews_security_issues_found"}
-  ],
   "skills385": {
     "state": "OPEN",
     "reviews": 1,
     "approvals": ["arc0btc"],
     "mergeable": true,
     "ping_count": 1,
-    "pinned_skills_ref": "0.1.1",
-    "whoabuddy_pinged_at": "2026-05-14T23:41:00Z",
-    "whoabuddy_agent": "Trustless Indra"
+    "whoabuddy_pinged_at": "2026-05-14T23:41:00Z"
   },
   "bff579": {"state": "OPEN", "reviews": 2, "arc0btc_approved": true, "ping_count": 2},
   "bff565": {"state": "OPEN", "arc0btc_approved": true},
@@ -119,7 +109,5 @@
   "last_discovery_date": "2026-05-15",
   "news818_last_comment_at": "2026-05-10T20:19:31Z",
   "ceo_last_review": "2026-05-13T14:37:00Z",
-  "ceo_version": "v8",
-  "competition_swap_quote_updated": "2026-05-15",
-  "next_cycle_at": "2026-05-15T14:38:44Z"
+  "next_cycle_at": "2026-05-15T14:47:00Z"
 }
