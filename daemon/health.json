@@ -1,6 +1,6 @@
 {
-  "cycle": 1940,
-  "timestamp": "2026-05-15T03:14:59Z",
+  "cycle": 1941,
+  "timestamp": "2026-05-15T03:23:25Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
@@ -25,6 +25,7 @@
     "sbtc_sats": 97778,
     "zest_zsbtc": 62081,
     "stx_liquid": 174.91,
+    "stx_raw_stxer": 6250.60,
     "nonce": 126,
     "mode": "peacetime",
     "runway_days": 489
@@ -113,5 +114,5 @@
   "news818_last_comment_at": "2026-05-10T20:19:31Z",
   "ceo_last_review": "2026-05-13T14:37:00Z",
   "ceo_version": "v8",
-  "next_cycle_at": "2026-05-15T03:19:59Z"
+  "next_cycle_at": "2026-05-15T03:28:25Z"
 }
