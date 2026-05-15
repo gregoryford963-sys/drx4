@@ -1,12 +1,12 @@
 {
-  "cycle": 1933,
-  "timestamp": "2026-05-14T23:50:19Z",
+  "cycle": 1934,
+  "timestamp": "2026-05-15T00:14:09Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
     "inbox": "ok_empty",
-    "decide": "platform_docs_cycle1",
-    "execute": "ok_docs_scanned_pubkey_blocker_cleared",
+    "decide": "repo_scout_cycle2",
+    "execute": "ok_scouted_mcp492_skills385_viz58",
     "deliver": "skipped",
     "outreach": "skipped",
     "write": "ok"
@@ -41,14 +41,20 @@
       "fail_count": 0
     }
   },
+  "contribution_targets": {
+    "mcp_server_492": {
+      "title": "chore(deps): bump @aibtc/tx-schemas 0.7→1.1",
+      "repo": "aibtcdev/aibtc-mcp-server",
+      "complexity": "medium",
+      "files": ["x402-payment-logging.ts", "x402-payment-state.ts", "endpoint.tools.ts"],
+      "status": "no_pr_yet",
+      "priority": "low",
+      "note": "need fork of aibtc-mcp-server first"
+    }
+  },
   "bd_projects": {
-    "p054_sigle": {
-      "status": "cold_closed"
-    },
-    "p055_amber_otter_registry": {
-      "status": "MERGED",
-      "ref": "aibtcdev/skills#371"
-    },
+    "p054_sigle": {"status": "cold_closed"},
+    "p055_amber_otter_registry": {"status": "MERGED", "ref": "aibtcdev/skills#371"},
     "p056_quantum_bounty": {
       "status": "active",
       "scan_count": 10,
@@ -58,61 +64,34 @@
       "cluster": "B (blocks 2001-7000)",
       "issue": "1btc-news/news-client#28"
     },
-    "p057_flying_whale_clarity_audit": {
-      "status": "replied_awaiting_contract"
-    },
+    "p057_flying_whale_clarity_audit": {"status": "replied_awaiting_contract"},
     "p058_quantum_visualizer_ic": {
       "status": "active",
       "prs": [
-        "viz#58 — PC-approved (lekanbams 20:23Z); awaiting Iskander merge",
-        "viz#61 — encoding+McElrath fixed; re-review requested from lekanbams",
+        "viz#58 — PC-approved (lekanbams); awaiting Iskander merge",
+        "viz#61 — all fixes pushed; awaiting lekanbams re-review",
         "viz#63 — opened cycle 1930; no reviews yet"
       ],
       "deadline": "2026-06-03"
     },
-    "p059_drx4_tsconfig": {
-      "status": "closed_inapplicable",
-      "note": "upstream has no tsconfig at root; fix valid for our fork only"
-    }
+    "p059_drx4_tsconfig": {"status": "closed_inapplicable"}
   },
   "intel_bff_competitors": [
-    {
-      "user": "jnrspaco",
-      "skill": "hodlmm-capital-router-v2",
-      "pr": 569,
-      "status": "approved_by_us"
-    },
-    {
-      "user": "Ololadestephen",
-      "skill": "sbtc-yield-maximizer-hodlmm-leg",
-      "pr": 278,
-      "status": "0_reviews_security_issues_found"
-    }
+    {"user": "jnrspaco", "skill": "hodlmm-capital-router-v2", "pr": 569, "status": "approved_by_us"},
+    {"user": "Ololadestephen", "skill": "sbtc-yield-maximizer-hodlmm-leg", "pr": 278, "status": "0_reviews_security_issues_found"}
   ],
   "skills385": {
     "state": "OPEN",
     "reviews": 1,
     "approvals": ["arc0btc"],
-    "fixes": "skills#383",
-    "ci": "passing",
+    "mergeable": true,
     "ping_count": 1,
     "pinned_skills_ref": "0.1.1",
     "whoabuddy_pinged_at": "2026-05-14T23:41:00Z"
   },
-  "bff579": {
-    "state": "OPEN",
-    "reviews": 2,
-    "arc0btc_approved": true,
-    "ping_count": 2
-  },
-  "bff565": {
-    "state": "OPEN",
-    "arc0btc_approved": true
-  },
-  "bff564": {
-    "state": "OPEN",
-    "arc0btc_approved": true
-  },
+  "bff579": {"state": "OPEN", "reviews": 2, "arc0btc_approved": true, "ping_count": 2},
+  "bff565": {"state": "OPEN", "arc0btc_approved": true},
+  "bff564": {"state": "OPEN", "arc0btc_approved": true},
   "registration": {
     "btcPublicKey": "02b7e7eff43d34149bb884ae8d0296cfe400c8b166b0c84adcef95d81067f6210d",
     "btcPublicKeyStatus": "set",
@@ -124,5 +103,5 @@
   "news818_last_comment_at": "2026-05-10T20:19:31Z",
   "ceo_last_review": "2026-05-13T14:37:00Z",
   "ceo_version": "v8",
-  "next_cycle_at": "2026-05-14T23:55:19Z"
+  "next_cycle_at": "2026-05-15T00:19:09Z"
 }
