@@ -1,14 +1,14 @@
 {
-  "cycle": 1948,
-  "timestamp": "2026-05-15T17:20:00Z",
+  "cycle": 1949,
+  "timestamp": "2026-05-15T17:28:00Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
-    "inbox": "ok_2_messages",
-    "decide": "ok_competition_check_pr_refile",
-    "execute": "ok_pr64_opened_pr61_closed",
-    "deliver": "ok_2_replies_deep_tess",
-    "outreach": "skipped",
+    "inbox": "ok_empty",
+    "decide": "ok_contacts_review",
+    "execute": "ok_deep_tess_updated_stale_followups_cleared",
+    "deliver": "skipped",
+    "outreach": "skipped_no_pending",
     "write": "ok"
   },
   "aibtc_news": {
@@ -39,8 +39,7 @@
     "notional_usd": 25.13,
     "status": "active",
     "agent_id": 325,
-    "scoring_pending": true,
-    "pnl_note": "mark-to-current as of cycle 1948; flipped from +$0.11 at cycle 1947 close"
+    "scoring_pending": true
   },
   "wallet": "locked",
   "circuit_breaker": {
