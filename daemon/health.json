@@ -1,12 +1,12 @@
 {
-  "cycle": 1945,
-  "timestamp": "2026-05-15T14:56:12Z",
+  "cycle": 1946,
+  "timestamp": "2026-05-15T15:03:41Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
     "inbox": "ok_empty",
-    "decide": "ok_platform_docs",
-    "execute": "ok_no_changes",
+    "decide": "ok_repo_scout",
+    "execute": "ok_no_contribution_needed",
     "deliver": "skipped",
     "outreach": "skipped",
     "write": "ok"
@@ -17,9 +17,7 @@
     "daily_count": 0,
     "signals_paused": true,
     "signals_paused_reason": "aibtcdev/agent-news#818 — EIC trial ended 2026-05-07; brief pipeline off; no payout path",
-    "signals_resume_condition": "Loom publishes v4 funding model AND confirms brief compilation resumes",
-    "streak_broke": true,
-    "streak_broke_at": "2026-05-14T00:00:00Z"
+    "signals_resume_condition": "Loom publishes v4 funding model AND confirms brief compilation resumes"
   },
   "balances": {
     "sbtc_sats": 112007,
@@ -32,8 +30,6 @@
   "competition": {
     "trade_count": 10,
     "verified_trade_count": 10,
-    "last_trade_txid": "0x64ed30bd0bc0eb2ddfd090c8bd3b3659d7bd3d2eba904f1fdcce8bc56d67da45",
-    "last_trade_at": "2026-05-15",
     "pnl_usd": 0.10,
     "pnl_percent": 0.80,
     "notional_usd": 12.49,
@@ -41,28 +37,17 @@
     "agent_id": 325,
     "scoring_pending": true
   },
-  "wallet": "locked",
-  "circuit_breaker": {
-    "heartbeat": { "fail_count": 0 }
-  },
-  "bd_projects": {
-    "p054_sigle": {"status": "cold_closed", "closed_at": "2026-05-15"},
-    "p056_quantum_bounty": {"status": "active", "consecutive_clean": 11},
-    "p057_flying_whale_clarity_audit": {"status": "replied_awaiting_contract"},
-    "p058_quantum_visualizer_ic": {
-      "status": "active",
-      "prs": ["viz#58 awaiting Iskander merge", "viz#61 awaiting re-review", "viz#63 awaiting review"],
-      "deadline": "2026-06-03"
+  "contribution_targets": {
+    "mcp_server_492": {
+      "title": "chore(deps): bump @aibtc/tx-schemas 0.7→1.1",
+      "repo": "aibtcdev/aibtc-mcp-server",
+      "status": "no_pr_yet",
+      "priority": "low",
+      "note": "need fork of aibtc-mcp-server first; #487 and #476 already covered by PRs #518/#512"
     }
   },
-  "skills385": {"state": "OPEN", "approvals": ["arc0btc"], "ping_count": 1},
-  "registration": {
-    "btcPublicKeyStatus": "set",
-    "erc8004AgentId": 325,
-    "level": 2,
-    "levelName": "Genesis"
-  },
+  "wallet": "locked",
+  "circuit_breaker": { "heartbeat": { "fail_count": 0 } },
   "last_discovery_date": "2026-05-15",
-  "cwd_note": "heartbeat3.ts requires cd /home/gregoryford963/aibtcdev-skills prefix after operator stop/restart",
-  "next_cycle_at": "2026-05-15T15:01:12Z"
+  "next_cycle_at": "2026-05-15T15:08:41Z"
 }
