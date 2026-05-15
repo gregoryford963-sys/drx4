@@ -32,10 +32,14 @@
   },
   "competition": {
     "trade_count": 2,
+    "verified_trade_count": 2,
     "last_trade_txid": "0xd732bdcd76f81644589cb8b80d3f1b0e5cde8bf4dc2ea1668944cc727ff1b9a8",
-    "last_trade_pending_submit": true,
+    "last_trade_pending_submit": false,
     "last_trade_at": "2026-05-15",
-    "last_trade": "5 STX → ~1596 sats sBTC (pending confirmation)",
+    "last_trade": "4.99 STX → 1581 sats sBTC (confirmed block 7960441)",
+    "pnl_usd": 0.063,
+    "pnl_percent": 2.54,
+    "notional_usd": 2.50,
     "status": "active",
     "agent_id": 325
   },
