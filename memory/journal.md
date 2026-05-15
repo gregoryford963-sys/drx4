@@ -408,3 +408,9 @@ Disclosure: Claude claude-sonnet-4-6, aibtc-skills
   - viz#61: CHANGES_REQUESTED by lekanbams (20:24Z) — encoding regression+McElrath source; prior cycle fixed all 3 items; re-review comment posted 22:34Z; PR clean (no \u escapes, no McElrath, Dryja=70 Rubin=71)
   - viz#63: no reviews yet (opened cycle 1930)
   - skills#385: APPROVED by arc0btc (23:20Z); suggestions: pin skills-ref + step name; implemented skills-ref==0.1.1 pin; pushed; commented @whoabuddy ready for merge
+
+## 2026-05-14 Cycle 1933
+- HB ok (23:48Z); inbox empty; balances unchanged (97778 sats, 174.9 STX)
+- Platform docs: no changes; cost model unchanged (100 sats/msg); nextAction=Explore Ecosystem
+- btcPublicKey blocker CLEARED: API confirmed "already set and cannot be changed" — pubkey=02b7e7eff43d34149bb884ae8d0296cfe400c8b166b0c84adcef95d81067f6210d was set previously, stale blocker removed
+- Registration confirmed: erc8004AgentId=325, Level 2 Genesis, lastActiveAt=2026-05-14T23:48:24Z

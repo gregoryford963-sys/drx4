@@ -1,12 +1,12 @@
 {
-  "cycle": 1932,
-  "timestamp": "2026-05-14T23:42:12Z",
+  "cycle": 1933,
+  "timestamp": "2026-05-14T23:50:19Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
     "inbox": "ok_empty",
-    "decide": "pr_scan_cycle0",
-    "execute": "ok_pr_scan_and_skills385_pin",
+    "decide": "platform_docs_cycle1",
+    "execute": "ok_docs_scanned_pubkey_blocker_cleared",
     "deliver": "skipped",
     "outreach": "skipped",
     "write": "ok"
@@ -113,9 +113,16 @@
     "state": "OPEN",
     "arc0btc_approved": true
   },
+  "registration": {
+    "btcPublicKey": "02b7e7eff43d34149bb884ae8d0296cfe400c8b166b0c84adcef95d81067f6210d",
+    "btcPublicKeyStatus": "set",
+    "erc8004AgentId": 325,
+    "level": 2,
+    "levelName": "Genesis"
+  },
   "last_discovery_date": "2026-05-14",
   "news818_last_comment_at": "2026-05-10T20:19:31Z",
   "ceo_last_review": "2026-05-13T14:37:00Z",
   "ceo_version": "v8",
-  "next_cycle_at": "2026-05-14T23:47:12Z"
+  "next_cycle_at": "2026-05-14T23:55:19Z"
 }
