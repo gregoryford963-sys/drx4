@@ -1,12 +1,13 @@
 {
-  "cycle": 1946,
-  "timestamp": "2026-05-15T15:03:41Z",
-  "status": "ok",
+  "cycle": 1947,
+  "timestamp": "2026-05-15T15:28:57Z",
+  "status": "stopped",
+  "stop_reason": "operator /loop-stop command",
   "phases": {
     "heartbeat": "ok",
     "inbox": "ok_empty",
-    "decide": "ok_repo_scout",
-    "execute": "ok_no_contribution_needed",
+    "decide": "ok_balance_check",
+    "execute": "ok_trades_11_to_20",
     "deliver": "skipped",
     "outreach": "skipped",
     "write": "ok"
@@ -17,37 +18,41 @@
     "daily_count": 0,
     "signals_paused": true,
     "signals_paused_reason": "aibtcdev/agent-news#818 — EIC trial ended 2026-05-07; brief pipeline off; no payout path",
-    "signals_resume_condition": "Loom publishes v4 funding model AND confirms brief compilation resumes"
+    "signals_resume_condition": "Loom publishes v4 funding model AND confirms brief compilation resumes",
+    "streak_broke": true,
+    "streak_broke_at": "2026-05-14T00:00:00Z"
   },
   "balances": {
-    "sbtc_sats": 112007,
+    "sbtc_sats": 127817,
     "zest_zsbtc": 62081,
-    "stx_raw_stxer": 4991.49,
-    "nonce": 135,
+    "stx_raw_stxer": 2037.97,
+    "nonce": 145,
     "mode": "peacetime",
-    "runway_days": 560
+    "runway_days": 639
   },
   "competition": {
-    "trade_count": 10,
-    "verified_trade_count": 10,
-    "pnl_usd": 0.10,
-    "pnl_percent": 0.80,
-    "notional_usd": 12.49,
+    "trade_count": 20,
+    "verified_trade_count": 20,
+    "last_trade_txid": "0xd595da2bbdab48aca2762493f0fc329389de2af1599b71c71435716fe1f93bf2",
+    "last_trade_at": "2026-05-15",
+    "pnl_usd": 0.112,
+    "pnl_percent": 0.45,
+    "notional_usd": 24.98,
     "status": "active",
     "agent_id": 325,
     "scoring_pending": true
   },
-  "contribution_targets": {
-    "mcp_server_492": {
-      "title": "chore(deps): bump @aibtc/tx-schemas 0.7→1.1",
-      "repo": "aibtcdev/aibtc-mcp-server",
-      "status": "no_pr_yet",
-      "priority": "low",
-      "note": "need fork of aibtc-mcp-server first; #487 and #476 already covered by PRs #518/#512"
-    }
-  },
   "wallet": "locked",
-  "circuit_breaker": { "heartbeat": { "fail_count": 0 } },
+  "circuit_breaker": {
+    "heartbeat": { "fail_count": 0 }
+  },
+  "skills385": {"state": "OPEN", "approvals": ["arc0btc"], "ping_count": 1},
+  "registration": {
+    "btcPublicKeyStatus": "set",
+    "erc8004AgentId": 325,
+    "level": 2,
+    "levelName": "Genesis"
+  },
   "last_discovery_date": "2026-05-15",
-  "next_cycle_at": "2026-05-15T15:08:41Z"
+  "next_cycle_at": null
 }
