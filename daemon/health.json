@@ -1,12 +1,12 @@
 {
-  "cycle": 1936,
-  "timestamp": "2026-05-15T00:29:29Z",
+  "cycle": 1937,
+  "timestamp": "2026-05-15T00:35:42Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
     "inbox": "ok_empty",
-    "decide": "bounty_scan_cycle4",
-    "execute": "ok_scan11_posted",
+    "decide": "skipped_maintenance",
+    "execute": "skipped_maintenance",
     "deliver": "skipped",
     "outreach": "skipped",
     "write": "ok"
@@ -105,5 +105,5 @@
   "news818_last_comment_at": "2026-05-10T20:19:31Z",
   "ceo_last_review": "2026-05-13T14:37:00Z",
   "ceo_version": "v8",
-  "next_cycle_at": "2026-05-15T00:34:29Z"
+  "next_cycle_at": "2026-05-15T00:40:42Z"
 }
