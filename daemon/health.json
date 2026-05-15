@@ -1,14 +1,14 @@
 {
-  "cycle": 1943,
-  "timestamp": "2026-05-15T14:41:56Z",
+  "cycle": 1945,
+  "timestamp": "2026-05-15T14:56:12Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
     "inbox": "ok_empty",
-    "decide": "ok_contacts_review",
-    "execute": "ok_sigle_closed",
+    "decide": "ok_platform_docs",
+    "execute": "ok_no_changes",
     "deliver": "skipped",
-    "outreach": "skipped_no_followups",
+    "outreach": "skipped",
     "write": "ok"
   },
   "aibtc_news": {
@@ -22,92 +22,47 @@
     "streak_broke_at": "2026-05-14T00:00:00Z"
   },
   "balances": {
-    "sbtc_sats": 100940,
+    "sbtc_sats": 112007,
     "zest_zsbtc": 62081,
-    "stx_liquid": 164.91,
-    "stx_raw_stxer": 5981.63,
-    "nonce": 128,
+    "stx_raw_stxer": 4991.49,
+    "nonce": 135,
     "mode": "peacetime",
-    "runway_days": 505
+    "runway_days": 560
   },
   "competition": {
-    "trade_count": 3,
-    "verified_trade_count": 3,
-    "last_trade_txid": "0x856acc5665d283f4b9a8600a5965e6e4e2662c42886e1f5ab40170d2921997c4",
-    "last_trade_pending_submit": false,
+    "trade_count": 10,
+    "verified_trade_count": 10,
+    "last_trade_txid": "0x64ed30bd0bc0eb2ddfd090c8bd3b3659d7bd3d2eba904f1fdcce8bc56d67da45",
     "last_trade_at": "2026-05-15",
-    "last_trade": "4.99 STX → 1581 sats sBTC (confirmed)",
-    "pnl_usd": 0.053,
-    "pnl_percent": 1.42,
-    "notional_usd": 3.74,
+    "pnl_usd": 0.10,
+    "pnl_percent": 0.80,
+    "notional_usd": 12.49,
     "status": "active",
     "agent_id": 325,
     "scoring_pending": true
   },
   "wallet": "locked",
   "circuit_breaker": {
-    "heartbeat": {
-      "fail_count": 0
-    }
-  },
-  "discovery": {
-    "date": "2026-05-15",
-    "total_on_network": 951
-  },
-  "contribution_targets": {
-    "mcp_server_492": {
-      "title": "chore(deps): bump @aibtc/tx-schemas 0.7→1.1",
-      "repo": "aibtcdev/aibtc-mcp-server",
-      "complexity": "medium",
-      "status": "no_pr_yet",
-      "priority": "low"
-    }
+    "heartbeat": { "fail_count": 0 }
   },
   "bd_projects": {
-    "p054_sigle": {"status": "cold_closed", "closed_at": "2026-05-15", "reason": "no_response_8_days"},
-    "p055_amber_otter_registry": {"status": "MERGED", "ref": "aibtcdev/skills#371"},
-    "p056_quantum_bounty": {
-      "status": "active",
-      "scan_count": 11,
-      "last_scan": "2026-05-15T00:29:00Z",
-      "last_github_report": "2026-05-15",
-      "bounty_id": "ea072174-1e19-484f-9ec5-9cc2d9102985",
-      "cluster": "B (blocks 2001-7000)",
-      "consecutive_clean": 11,
-      "quantum_events": 0
-    },
+    "p054_sigle": {"status": "cold_closed", "closed_at": "2026-05-15"},
+    "p056_quantum_bounty": {"status": "active", "consecutive_clean": 11},
     "p057_flying_whale_clarity_audit": {"status": "replied_awaiting_contract"},
     "p058_quantum_visualizer_ic": {
       "status": "active",
-      "prs": [
-        "viz#58 — PC-approved (lekanbams); awaiting Iskander merge",
-        "viz#61 — all fixes pushed; awaiting lekanbams re-review",
-        "viz#63 — opened cycle 1930; no reviews yet"
-      ],
+      "prs": ["viz#58 awaiting Iskander merge", "viz#61 awaiting re-review", "viz#63 awaiting review"],
       "deadline": "2026-06-03"
-    },
-    "p059_drx4_tsconfig": {"status": "closed_inapplicable"}
+    }
   },
-  "skills385": {
-    "state": "OPEN",
-    "reviews": 1,
-    "approvals": ["arc0btc"],
-    "mergeable": true,
-    "ping_count": 1,
-    "whoabuddy_pinged_at": "2026-05-14T23:41:00Z"
-  },
-  "bff579": {"state": "OPEN", "reviews": 2, "arc0btc_approved": true, "ping_count": 2},
-  "bff565": {"state": "OPEN", "arc0btc_approved": true},
-  "bff564": {"state": "OPEN", "arc0btc_approved": true},
+  "skills385": {"state": "OPEN", "approvals": ["arc0btc"], "ping_count": 1},
   "registration": {
-    "btcPublicKey": "02b7e7eff43d34149bb884ae8d0296cfe400c8b166b0c84adcef95d81067f6210d",
     "btcPublicKeyStatus": "set",
     "erc8004AgentId": 325,
     "level": 2,
     "levelName": "Genesis"
   },
   "last_discovery_date": "2026-05-15",
-  "news818_last_comment_at": "2026-05-10T20:19:31Z",
-  "ceo_last_review": "2026-05-13T14:37:00Z",
-  "next_cycle_at": "2026-05-15T14:47:00Z"
+  "cwd_note": "heartbeat3.ts requires cd /home/gregoryford963/aibtcdev-skills prefix after operator stop/restart",
+  "next_cycle_at": "2026-05-15T15:01:12Z"
 }
