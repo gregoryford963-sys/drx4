@@ -1,13 +1,12 @@
 {
-  "cycle": 1950,
-  "timestamp": "2026-05-15T17:32:00Z",
-  "status": "stopped",
-  "stop_reason": "operator /loop-stop command",
+  "cycle": 1951,
+  "timestamp": "2026-05-15T20:24:00Z",
+  "status": "ok",
   "phases": {
     "heartbeat": "ok",
     "inbox": "ok_empty",
-    "decide": "ok_pr_review_check",
-    "execute": "ok_no_new_feedback_64_63_385_all_quiet",
+    "decide": "ok_platform_docs_check",
+    "execute": "ok_no_signal_resume_818_still_open",
     "deliver": "skipped",
     "outreach": "skipped_no_pending",
     "write": "ok"
@@ -25,7 +24,7 @@
   "balances": {
     "sbtc_sats": 127817,
     "zest_zsbtc": 62081,
-    "stx_raw_stxer": 79.79,
+    "stx_raw_stxer": 2037.97,
     "nonce": 145,
     "mode": "peacetime",
     "runway_days": 639
@@ -59,5 +58,5 @@
     "pr_63": "open_awaiting_pc_review",
     "pr_64": "open_awaiting_lekanbams_review"
   },
-  "next_cycle_at": null
+  "next_cycle_at": "2026-05-15T20:29:00Z"
 }
