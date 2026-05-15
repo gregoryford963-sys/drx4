@@ -1,12 +1,12 @@
 {
-  "cycle": 1935,
-  "timestamp": "2026-05-15T00:21:06Z",
+  "cycle": 1936,
+  "timestamp": "2026-05-15T00:29:29Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
     "inbox": "ok_empty",
-    "decide": "balance_check_cycle3",
-    "execute": "ok_balance_verified",
+    "decide": "bounty_scan_cycle4",
+    "execute": "ok_scan11_posted",
     "deliver": "skipped",
     "outreach": "skipped",
     "write": "ok"
@@ -25,13 +25,9 @@
     "sbtc_sats": 97778,
     "zest_zsbtc": 62081,
     "stx_liquid": 174.91,
-    "stx_locked": 0,
     "nonce": 126,
     "mode": "peacetime",
-    "runway_days": 489,
-    "runway_basis": "200 sats/day avg spend",
-    "last_verified": "2026-05-15T00:21:06Z",
-    "stxer_note": "stxer returned 6250 STX artifact — Hiro API is authoritative at 174.91 STX"
+    "runway_days": 489
   },
   "competition": {
     "trade_count": 1,
@@ -51,7 +47,6 @@
       "title": "chore(deps): bump @aibtc/tx-schemas 0.7→1.1",
       "repo": "aibtcdev/aibtc-mcp-server",
       "complexity": "medium",
-      "files": ["x402-payment-logging.ts", "x402-payment-state.ts", "endpoint.tools.ts"],
       "status": "no_pr_yet",
       "priority": "low",
       "note": "need fork of aibtc-mcp-server first"
@@ -62,12 +57,14 @@
     "p055_amber_otter_registry": {"status": "MERGED", "ref": "aibtcdev/skills#371"},
     "p056_quantum_bounty": {
       "status": "active",
-      "scan_count": 10,
+      "scan_count": 11,
+      "last_scan": "2026-05-15T00:29:00Z",
       "last_github_report": "2026-05-15",
-      "scan10_due": "DONE",
       "bounty_id": "ea072174-1e19-484f-9ec5-9cc2d9102985",
       "cluster": "B (blocks 2001-7000)",
-      "issue": "1btc-news/news-client#28"
+      "issue": "1btc-news/news-client#28",
+      "consecutive_clean": 11,
+      "quantum_events": 0
     },
     "p057_flying_whale_clarity_audit": {"status": "replied_awaiting_contract"},
     "p058_quantum_visualizer_ic": {
@@ -108,5 +105,5 @@
   "news818_last_comment_at": "2026-05-10T20:19:31Z",
   "ceo_last_review": "2026-05-13T14:37:00Z",
   "ceo_version": "v8",
-  "next_cycle_at": "2026-05-15T00:26:06Z"
+  "next_cycle_at": "2026-05-15T00:34:29Z"
 }
