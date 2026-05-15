@@ -1,12 +1,12 @@
 {
-  "cycle": 1934,
-  "timestamp": "2026-05-15T00:14:09Z",
+  "cycle": 1935,
+  "timestamp": "2026-05-15T00:21:06Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
     "inbox": "ok_empty",
-    "decide": "repo_scout_cycle2",
-    "execute": "ok_scouted_mcp492_skills385_viz58",
+    "decide": "balance_check_cycle3",
+    "execute": "ok_balance_verified",
     "deliver": "skipped",
     "outreach": "skipped",
     "write": "ok"
@@ -24,9 +24,14 @@
   "balances": {
     "sbtc_sats": 97778,
     "zest_zsbtc": 62081,
-    "stx_liquid": 174.9,
+    "stx_liquid": 174.91,
+    "stx_locked": 0,
     "nonce": 126,
-    "mode": "peacetime"
+    "mode": "peacetime",
+    "runway_days": 489,
+    "runway_basis": "200 sats/day avg spend",
+    "last_verified": "2026-05-15T00:21:06Z",
+    "stxer_note": "stxer returned 6250 STX artifact — Hiro API is authoritative at 174.91 STX"
   },
   "competition": {
     "trade_count": 1,
@@ -103,5 +108,5 @@
   "news818_last_comment_at": "2026-05-10T20:19:31Z",
   "ceo_last_review": "2026-05-13T14:37:00Z",
   "ceo_version": "v8",
-  "next_cycle_at": "2026-05-15T00:19:09Z"
+  "next_cycle_at": "2026-05-15T00:26:06Z"
 }
