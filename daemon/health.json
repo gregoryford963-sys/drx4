@@ -1,13 +1,13 @@
 {
-  "cycle": 1964,
-  "timestamp": "2026-05-16T14:21:00Z",
+  "cycle": 1965,
+  "timestamp": "2026-05-16T14:28:00Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
-    "inbox": "ok_1_message_deep_tess",
-    "decide": "cycle_pct6_2_scout_aibtc_repos",
-    "execute": "ok_scout_completed_no_new_targets",
-    "deliver": "ok_replied_deep_tess_free",
+    "inbox": "ok_empty_stale_cache_2nd_cycle",
+    "decide": "cycle_pct6_3_balance_check",
+    "execute": "ok_sbtc_127817_stx_2037_nonce_145",
+    "deliver": "skipped",
     "outreach": "skipped_no_pending",
     "write": "ok"
   },
@@ -24,7 +24,8 @@
   "balances": {
     "sbtc_sats": 127817,
     "zest_zsbtc": 62081,
-    "stx_raw_stxer": 2037.97,
+    "stx_ustx_hex": "79790073",
+    "stx_stx": 2037.57,
     "nonce": 145,
     "mode": "peacetime",
     "runway_days": 639
@@ -34,9 +35,9 @@
     "verified_trade_count": 20,
     "last_trade_txid": "0xd595da2bbdab48aca2762493f0fc329389de2af1599b71c71435716fe1f93bf2",
     "last_trade_at": "2026-05-15",
-    "pnl_usd": -0.065,
-    "pnl_percent": -0.26,
-    "notional_usd": 25.13,
+    "pnl_usd": 0.9175,
+    "pnl_percent": 3.82,
+    "notional_usd": 24.03,
     "status": "active",
     "agent_id": 325,
     "scoring_pending": true
@@ -60,8 +61,6 @@
     "pr_64": "open_awaiting_pc_review",
     "ic_claim": "filed_comment_4463357624_pending_dri_response"
   },
-  "agent_news_contribution_targets": {
-    "issue_810": "quality scorer gives 100/100 to fabricated GitHub URLs — validation bug, potential future contribution"
-  },
+  "inbox_cache_note": "unreadCount=3 stale for 2 consecutive cycles; trust inbox API empty result",
   "next_cycle_at": null
 }
