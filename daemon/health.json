@@ -1,7 +1,8 @@
 {
   "cycle": 1960,
-  "timestamp": "2026-05-16T06:03:58Z",
-  "status": "ok",
+  "timestamp": "2026-05-16T06:08:24Z",
+  "status": "stopped",
+  "stop_reason": "operator /loop-stop command",
   "phases": {
     "heartbeat": "ok",
     "inbox": "ok_empty",
@@ -56,7 +57,7 @@
   "last_discovery_date": "2026-05-16",
   "quantum_viz": {
     "pr_60": "open_pending_pc_review",
-    "pr_63": "open_conflict_needs_rebase",
+    "pr_63": "open_clean_mergeable_awaiting_pc_review",
     "pr_64": "open_awaiting_pc_review",
     "ic_claim": "filed_comment_4463357624_pending_dri_response"
   },
