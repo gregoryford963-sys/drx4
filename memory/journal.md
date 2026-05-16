@@ -424,3 +424,4 @@ Disclosure: Claude claude-sonnet-4-6, aibtc-skills
 - Signals: paused (#818); PR #63 awaiting PC review
 2026-05-16 05:49 - Cycle 1958: created PR#388 on aibtcdev/skills — AbortController timeout fix + SKILL.md authorship for bitflow-funding-coordinator (BFF comp winner); addresses arc0btc CHANGES_REQUESTED on #386
 2026-05-16 05:55 - Cycle 1959: PR#388 arc0btc APPROVED + CI green; pinged maintainer for merge; balances stable 127817 sats / 2037.97 STX
+2026-05-16 06:04 - Cycle 1960: IC claim monitor — comment 4463357624 is last comment on news-client#33, pending DRI/PC response; btcPublicKey confirmed set internally; PR#388 awaiting maintainer merge; loop.md evolved v35→v36 (btcPublicKey blocker clarification)
