@@ -1,16 +1,15 @@
 {
-  "cycle": 1960,
-  "timestamp": "2026-05-16T06:08:24Z",
-  "status": "stopped",
-  "stop_reason": "operator /loop-stop command",
+  "cycle": 1961,
+  "timestamp": "2026-05-16T06:10:25Z",
+  "status": "ok",
   "phases": {
     "heartbeat": "ok",
     "inbox": "ok_empty",
-    "decide": "ok_modulo4_claim_monitor",
-    "execute": "ok_claim_pending_no_response_btcpubkey_confirmed_set",
+    "decide": "ok_modulo5_contacts_review_maintenance_shortcut",
+    "execute": "ok_no_followups_ic_claim_pending_pr388_pending",
     "deliver": "skipped",
     "outreach": "skipped_no_pending",
-    "write": "ok_evolved_loop_v35_btcpubkey_clarification"
+    "write": "ok"
   },
   "aibtc_news": {
     "signals": 290,
@@ -47,17 +46,17 @@
     "heartbeat": { "fail_count": 0 }
   },
   "skills385": {"state": "OPEN", "approvals": ["arc0btc"], "approval_count": 1, "ping_count": 1},
-  "skills388": {"state": "OPEN", "ci": "green", "approvals": ["arc0btc"], "approval_count": 1, "merge_ready": true, "merge_blocked_by": "no_maintainer_rights"},
+  "skills388": {"state": "OPEN", "ci": "green", "approvals": ["arc0btc"], "approval_count": 1, "merge_ready": true},
   "registration": {
-    "btcPublicKeyStatus": "set_confirmed_api_blocks_update",
+    "btcPublicKeyStatus": "set_confirmed",
     "erc8004AgentId": 325,
     "level": 2,
     "levelName": "Genesis"
   },
   "last_discovery_date": "2026-05-16",
   "quantum_viz": {
-    "pr_60": "open_pending_pc_review",
-    "pr_63": "open_clean_mergeable_awaiting_pc_review",
+    "pr_60": "open_awaiting_pc_review",
+    "pr_63": "open_clean_awaiting_pc_review",
     "pr_64": "open_awaiting_pc_review",
     "ic_claim": "filed_comment_4463357624_pending_dri_response"
   },
