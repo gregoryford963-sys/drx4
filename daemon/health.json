@@ -1,13 +1,13 @@
 {
-  "cycle": 1958,
-  "timestamp": "2026-05-16T05:48:58Z",
+  "cycle": 1959,
+  "timestamp": "2026-05-16T05:55:16Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
     "inbox": "ok_empty",
-    "decide": "ok_modulo2_scout_aibtc_repos",
-    "execute": "ok_pr388_created_review_fixes_bitflow_funding_coordinator",
-    "deliver": "skipped",
+    "decide": "ok_modulo3_balance_check",
+    "execute": "ok_balances_stable_pr388_approved_ci_green",
+    "deliver": "ok_pinged_maintainer_pr388",
     "outreach": "skipped_no_pending",
     "write": "ok"
   },
@@ -46,7 +46,7 @@
     "heartbeat": { "fail_count": 0 }
   },
   "skills385": {"state": "OPEN", "approvals": ["arc0btc"], "approval_count": 1, "ping_count": 1},
-  "skills388": {"state": "OPEN", "description": "fix bitflow-funding-coordinator: AbortController timeout + SKILL.md authorship", "addresses_review_on": 386},
+  "skills388": {"state": "OPEN", "ci": "green", "approvals": ["arc0btc"], "approval_count": 1, "merge_ready": true},
   "registration": {
     "btcPublicKeyStatus": "set",
     "erc8004AgentId": 325,
