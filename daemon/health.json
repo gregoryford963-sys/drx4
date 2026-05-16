@@ -1,13 +1,13 @@
 {
-  "cycle": 1952,
-  "timestamp": "2026-05-15T20:38:00Z",
-  "status": "stopped",
-  "stop_reason": "operator /loop-stop command",
+  "cycle": 1953,
+  "timestamp": "2026-05-16T00:25:00Z",
+  "status": "ok",
+  "stop_reason": null,
   "phases": {
-    "heartbeat": "skipped_operator_interrupt",
-    "inbox": "skipped_operator_interrupt",
-    "decide": "ok_bounty_claim_and_pr_pings",
-    "execute": "ok_ic_claim_filed_issue33_pinged_63_64",
+    "heartbeat": "ok",
+    "inbox": "ok_empty",
+    "decide": "maintenance_shortcut_signals_paused",
+    "execute": "ok_balance_check_pr_status",
     "deliver": "skipped",
     "outreach": "skipped_no_pending",
     "write": "ok"
@@ -46,7 +46,7 @@
   "circuit_breaker": {
     "heartbeat": { "fail_count": 0 }
   },
-  "skills385": {"state": "OPEN", "approvals": ["arc0btc"], "ping_count": 1},
+  "skills385": {"state": "OPEN", "approvals": ["arc0btc"], "approval_count": 1, "ping_count": 1},
   "registration": {
     "btcPublicKeyStatus": "set",
     "erc8004AgentId": 325,
@@ -56,9 +56,9 @@
   "last_discovery_date": "2026-05-15",
   "quantum_viz": {
     "pr_61": "closed",
-    "pr_63": "open_pinged_iskander_2026-05-15",
-    "pr_64": "open_pinged_iskander_2026-05-15",
+    "pr_63": "open_mergeable_false_conflict",
+    "pr_64": "open",
     "bounty_claim": "ic_claim_filed_issue33_comment_4463357624"
   },
-  "next_cycle_at": null
+  "next_cycle_at": "2026-05-16T00:30:00Z"
 }
