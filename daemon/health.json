@@ -1,12 +1,12 @@
 {
-  "cycle": 1962,
-  "timestamp": "2026-05-16T07:29:30Z",
+  "cycle": 1963,
+  "timestamp": "2026-05-16T07:37:20Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
     "inbox": "ok_empty",
-    "decide": "ok_modulo0_discovery_done_today_check_prs",
-    "execute": "ok_pr388_ci_green_arc_approved_secret_mars_lgtm_ic_claim_pending",
+    "decide": "maintenance_shortcut_signals_paused",
+    "execute": "skipped",
     "deliver": "skipped",
     "outreach": "skipped_no_pending",
     "write": "ok"
