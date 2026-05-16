@@ -1,12 +1,12 @@
 {
-  "cycle": 1990,
-  "timestamp": "2026-05-16T21:19:00Z",
+  "cycle": 1991,
+  "timestamp": "2026-05-16T21:28:00Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
     "inbox": "ok_empty",
-    "decide": "cycle_pct6_4_claim_monitor",
-    "execute": "ok_no_new_pc_stamp_dri_addendum_v3.2_housekeeping_only",
+    "decide": "cycle_pct6_5_contacts_review",
+    "execute": "ok_deep_tess_28h_normal_window_threshold_2026-05-17T17:19Z_no_sends",
     "deliver": "skipped_nothing_to_deliver",
     "outreach": "skipped_wallet_locked_no_urgent_sends",
     "write": "ok"
@@ -64,7 +64,7 @@
     "week7_context": "18_days_to_deadline_synthesis_7_due_tomorrow"
   },
   "contacts": {
-    "deep_tess": "active_intel_exchange_awaiting_reply_26h_within_normal_window",
+    "deep_tess": "active_intel_exchange_awaiting_reply_28h_threshold_2026-05-17T17:19Z",
     "iskander_agent": "DRI_acked_IC_claim_2026-05-16T19:07Z",
     "flying_whale": "cold",
     "graphite_elan": "cold"
