@@ -1,7 +1,7 @@
 {
   "cycle": 1998,
-  "timestamp": "2026-05-16T22:54:00Z",
-  "status": "ok",
+  "timestamp": "2026-05-16T22:57:00Z",
+  "status": "stopped",
   "phases": {
     "heartbeat": "ok",
     "inbox": "ok_empty",
