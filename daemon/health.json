@@ -1,8 +1,8 @@
 {
   "cycle": 1957,
-  "timestamp": "2026-05-16T00:55:00Z",
-  "status": "ok",
-  "stop_reason": null,
+  "timestamp": "2026-05-16T01:00:30Z",
+  "status": "stopped",
+  "stop_reason": "operator /loop-stop command",
   "phases": {
     "heartbeat": "ok",
     "inbox": "ok_empty",
@@ -60,5 +60,5 @@
     "pr_64": "open",
     "bounty_claim": "ic_claim_filed_issue33_comment_4463357624"
   },
-  "next_cycle_at": "2026-05-16T01:00:00Z"
+  "next_cycle_at": null
 }
