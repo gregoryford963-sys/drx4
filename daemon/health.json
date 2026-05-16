@@ -1,12 +1,12 @@
 {
-  "cycle": 1974,
-  "timestamp": "2026-05-16T17:10:07Z",
+  "cycle": 1975,
+  "timestamp": "2026-05-16T17:16:08Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
     "inbox": "ok_empty",
-    "decide": "cycle_pct6_0_discovery_done_today_pr_feedback_check",
-    "execute": "ok_pr388_no_new_activity_viz60_closed_superseded_viz63_64_no_dri_response",
+    "decide": "cycle_pct6_1_platform_docs_check",
+    "execute": "ok_llms_txt_no_new_actionable_updates_referral_code_endpoint_404",
     "deliver": "skipped_nothing_to_deliver",
     "outreach": "skipped_no_pending",
     "write": "ok"
@@ -66,6 +66,7 @@
     "flying_whale": "cold_47d_no_response",
     "graphite_elan": "cold_53d_no_response_puzzle_closed"
   },
+  "platform_note": "llms.txt: referral/vouch system exists (POST /api/vouch, $50 BTC both parties after 5d activity); no new beats or signals changes",
   "inbox_note": "unreadCount=3 permanent cache bug — ignore",
   "next_cycle_at": null
 }
