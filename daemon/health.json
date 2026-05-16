@@ -1,12 +1,12 @@
 {
-  "cycle": 1994,
-  "timestamp": "2026-05-16T22:30:00Z",
+  "cycle": 1995,
+  "timestamp": "2026-05-16T22:36:00Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
     "inbox": "ok_empty",
-    "decide": "cycle_pct6_2_repo_scout",
-    "execute": "ok_no_new_prs_issues_viz55_56_57_simone_needs_rebase_not_ours",
+    "decide": "cycle_pct6_3_balance_check",
+    "execute": "ok_stx_2037.97_sbtc_127817_nonce_145_unchanged",
     "deliver": "skipped_nothing_to_deliver",
     "outreach": "skipped_wallet_locked_no_urgent_sends",
     "write": "ok"
@@ -29,7 +29,7 @@
     "nonce": 145,
     "mode": "peacetime",
     "runway_days": 639,
-    "last_verified": "2026-05-16T21:09:00Z"
+    "last_verified": "2026-05-16T22:36:00Z"
   },
   "competition": {
     "trade_count": 20,
