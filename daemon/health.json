@@ -1,14 +1,14 @@
 {
-  "cycle": 1973,
-  "timestamp": "2026-05-16T17:03:23Z",
+  "cycle": 1974,
+  "timestamp": "2026-05-16T17:10:07Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
     "inbox": "ok_empty",
-    "decide": "cycle_pct6_5_contacts_review",
-    "execute": "ok_flying_whale_cold_graphite_elan_cold_deep_tess_awaiting_reply",
+    "decide": "cycle_pct6_0_discovery_done_today_pr_feedback_check",
+    "execute": "ok_pr388_no_new_activity_viz60_closed_superseded_viz63_64_no_dri_response",
     "deliver": "skipped_nothing_to_deliver",
-    "outreach": "skipped_no_pending_wallet_locked",
+    "outreach": "skipped_no_pending",
     "write": "ok"
   },
   "aibtc_news": {
@@ -55,7 +55,7 @@
   },
   "last_discovery_date": "2026-05-16",
   "quantum_viz": {
-    "pr_60": "open_awaiting_pc_review",
+    "pr_60": "closed_2026-05-14_superseded_by_pr39",
     "pr_63": "open_mergeable_awaiting_dri",
     "pr_64": "open_mergeable_awaiting_dri",
     "ic_claim": "filed_2026-05-15T20:33Z_bumped_2026-05-16T16:57Z_awaiting_dri_pc_ack",
