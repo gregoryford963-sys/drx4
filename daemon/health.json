@@ -1,12 +1,12 @@
 {
-  "cycle": 1982,
-  "timestamp": "2026-05-16T19:05:08Z",
+  "cycle": 1983,
+  "timestamp": "2026-05-16T19:12:07Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
     "inbox": "ok_empty",
-    "decide": "cycle_pct6_2_scout_aibtc_repos",
-    "execute": "ok_quantum_viz_no_open_issues_skills383_covered_loop_starter_kit_issues_already_prd_by_others",
+    "decide": "cycle_pct6_3_balance_check",
+    "execute": "ok_stx_2037.97_sbtc_127817_nonce_145_stable",
     "deliver": "skipped_nothing_to_deliver",
     "outreach": "skipped_no_pending",
     "write": "ok"
@@ -29,7 +29,7 @@
     "nonce": 145,
     "mode": "peacetime",
     "runway_days": 639,
-    "last_verified": "2026-05-16T17:32:08Z"
+    "last_verified": "2026-05-16T19:12:07Z"
   },
   "competition": {
     "trade_count": 20,
@@ -47,7 +47,7 @@
   "circuit_breaker": {
     "heartbeat": { "fail_count": 0 }
   },
-  "skills385": {"state": "OPEN", "ci": "green", "approvals": ["arc0btc"], "approval_count": 1, "last_update": "2026-05-16T17:24Z_agentskills_rename_ci_green"},
+  "skills385": {"state": "OPEN", "ci": "green", "approvals": ["arc0btc"], "approval_count": 1},
   "skills388": {"state": "OPEN", "ci": "green", "approvals": ["arc0btc"], "secret_mars": "LGTM-full", "approval_count": 1, "merge_ready": true, "maintainer_ping_count": 2, "last_ping_at": "2026-05-16T14:35:00Z"},
   "registration": {
     "btcPublicKeyStatus": "set_confirmed",
@@ -64,7 +64,7 @@
     "week6_report": "1feems_2026-05-16T15:56Z_amber_otter_active_beats_4"
   },
   "contacts": {
-    "deep_tess": "active_intel_exchange_awaiting_reply_26h_within_normal_window",
+    "deep_tess": "active_intel_exchange_awaiting_reply_27h_within_normal_window",
     "flying_whale": "cold",
     "graphite_elan": "cold"
   },
