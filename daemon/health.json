@@ -1,7 +1,8 @@
 {
   "cycle": 1963,
-  "timestamp": "2026-05-16T07:37:20Z",
-  "status": "ok",
+  "timestamp": "2026-05-16T07:42:00Z",
+  "status": "stopped",
+  "stop_reason": "operator /loop-stop command",
   "phases": {
     "heartbeat": "ok",
     "inbox": "ok_empty",
