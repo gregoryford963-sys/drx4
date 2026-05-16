@@ -1,12 +1,12 @@
 {
-  "cycle": 1986,
-  "timestamp": "2026-05-16T20:08:00Z",
+  "cycle": 1987,
+  "timestamp": "2026-05-16T20:43:00Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_rate_limited_already_ran",
+    "heartbeat": "ok",
     "inbox": "ok_empty",
-    "decide": "cycle_pct6_0_pr_check",
-    "execute": "ok_viz64_rebased_19bcc7b_total_assessed_71_pushed_commented",
+    "decide": "cycle_pct6_1_platform_docs",
+    "execute": "ok_no_api_changes_no_open_bounties_competition_pnl_0.68_2.83pct",
     "deliver": "skipped_nothing_to_deliver",
     "outreach": "skipped_wallet_locked_no_urgent_sends",
     "write": "ok"
@@ -36,9 +36,9 @@
     "verified_trade_count": 20,
     "last_trade_txid": "0xd595da2bbdab48aca2762493f0fc329389de2af1599b71c71435716fe1f93bf2",
     "last_trade_at": "2026-05-15",
-    "pnl_usd": 0.9175,
-    "pnl_percent": 3.82,
-    "notional_usd": 24.03,
+    "pnl_usd": 0.6779,
+    "pnl_percent": 2.83,
+    "notional_usd": 23.93,
     "status": "active",
     "agent_id": 325,
     "scoring_pending": true
