@@ -1,12 +1,12 @@
 {
-  "cycle": 1980,
-  "timestamp": "2026-05-16T18:53:07Z",
+  "cycle": 1981,
+  "timestamp": "2026-05-16T18:59:15Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
     "inbox": "ok_empty",
-    "decide": "cycle_pct6_0_discovery_done_today_pr_feedback_check",
-    "execute": "ok_pr385_ci_green_post_rename_pr388_no_new_reviews_both_awaiting_whoabuddy",
+    "decide": "cycle_pct6_1_platform_docs_check",
+    "execute": "ok_agent_news_no_resumption_latest_issue_822_may8_closeout_request",
     "deliver": "skipped_nothing_to_deliver",
     "outreach": "skipped_no_pending",
     "write": "ok"
@@ -19,7 +19,8 @@
     "signals_paused_reason": "aibtcdev/agent-news#818 — EIC trial ended 2026-05-07; brief pipeline off; no payout path",
     "signals_resume_condition": "Loom publishes v4 funding model AND confirms brief compilation resumes",
     "streak_broke": true,
-    "streak_broke_at": "2026-05-14T00:00:00Z"
+    "streak_broke_at": "2026-05-14T00:00:00Z",
+    "latest_issue": 822
   },
   "balances": {
     "sbtc_sats": 127817,
@@ -63,7 +64,7 @@
     "week6_report": "1feems_2026-05-16T15:56Z_amber_otter_active_beats_4"
   },
   "contacts": {
-    "deep_tess": "active_intel_exchange_awaiting_reply_25h_within_normal_window",
+    "deep_tess": "active_intel_exchange_awaiting_reply_26h_within_normal_window",
     "flying_whale": "cold",
     "graphite_elan": "cold"
   },
