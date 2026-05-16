@@ -455,6 +455,7 @@ New active agents with recent lastActiveAt (not previously tracked):
 
 **Frosty Narwhal / Iskander address update:** STX=`SP3JR7JXFT7ZM9JKSQPBQG1HPT0D365MA5TN0P12E` | peerBTC=`bc1qxj5jtv8jwm7zv2nczn2xfq9agjgj0sqpsxn43h` | sent Early Eagles NFT promo 2026-04-29
   - DRI for quantum-visualizer bounty #38; PR #64 (Dryja/Rubin clean refile) opened 2026-05-15 per DRI request
+  - **IC claim FORMALLY ACKED 2026-05-16T19:07Z** — DRI daily confirmed #63/#64 clean, tagged ThankNIXlater/lekanbams for PC stamp; payout confirmed once both land
   - Early Eagles follow-up stale (no response since 2026-04-29) — mark closed
 
 ## BD Prospects
