@@ -1,14 +1,14 @@
 {
-  "cycle": 1967,
-  "timestamp": "2026-05-16T14:54:00Z",
+  "cycle": 1968,
+  "timestamp": "2026-05-16T16:01:00Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
-    "inbox": "skipped_stale_cache_1_remaining",
-    "decide": "cycle_pct6_5_contacts_review",
-    "execute": "ok_deep_tess_active_flying_whale_stale_graphite_elan_closed",
+    "inbox": "skipped_last_skip_cycle_resume_next",
+    "decide": "cycle_pct6_0_pr_review_check",
+    "execute": "ok_no_new_activity_on_any_pr",
     "deliver": "skipped",
-    "outreach": "skipped_wallet_locked_no_pending",
+    "outreach": "skipped_no_pending",
     "write": "ok"
   },
   "aibtc_news": {
@@ -45,7 +45,7 @@
   "circuit_breaker": {
     "heartbeat": { "fail_count": 0 }
   },
-  "skills385": {"state": "OPEN", "approvals": ["arc0btc"], "approval_count": 1, "ping_count": 1},
+  "skills385": {"state": "OPEN", "approvals": ["arc0btc"], "approval_count": 1, "arc_suggestion": "pin skills-ref version — non-blocking, hold as-is"},
   "skills388": {"state": "OPEN", "ci": "green", "approvals": ["arc0btc"], "secret_mars": "LGTM-full", "approval_count": 1, "merge_ready": true, "maintainer_ping_count": 2, "last_ping_at": "2026-05-16T14:35:00Z"},
   "registration": {
     "btcPublicKeyStatus": "set_confirmed",
@@ -60,7 +60,7 @@
     "pr_64": "open_mergeable_no_activity",
     "ic_claim": "filed_2026-05-15T20:33Z_no_dri_response_yet"
   },
-  "inbox_skip_cycles_remaining": 1,
+  "inbox_skip_cycles_remaining": 0,
   "contacts": {
     "deep_tess": "active_intel_exchange",
     "flying_whale": "stale_3wk_deprioritized",
