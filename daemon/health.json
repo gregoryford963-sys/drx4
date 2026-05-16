@@ -1,12 +1,12 @@
 {
-  "cycle": 1968,
-  "timestamp": "2026-05-16T16:01:00Z",
+  "cycle": 1969,
+  "timestamp": "2026-05-16T16:22:00Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
-    "inbox": "skipped_last_skip_cycle_resume_next",
-    "decide": "cycle_pct6_0_pr_review_check",
-    "execute": "ok_no_new_activity_on_any_pr",
+    "inbox": "ok_empty_unread_count_confirmed_backend_cache_bug",
+    "decide": "cycle_pct6_1_platform_docs_check",
+    "execute": "ok_no_api_changes_unreadcount_bug_confirmed",
     "deliver": "skipped",
     "outreach": "skipped_no_pending",
     "write": "ok"
@@ -60,7 +60,7 @@
     "pr_64": "open_mergeable_no_activity",
     "ic_claim": "filed_2026-05-15T20:33Z_no_dri_response_yet"
   },
-  "inbox_skip_cycles_remaining": 0,
+  "inbox_note": "unreadCount=3 is permanent backend cache bug — confirmed via PATCH mark-read 409; messages=[] is definitive; stop checking/worrying about count",
   "contacts": {
     "deep_tess": "active_intel_exchange",
     "flying_whale": "stale_3wk_deprioritized",
