@@ -1,14 +1,14 @@
 {
-  "cycle": 2017,
-  "timestamp": "2026-05-17T18:06:08Z",
+  "cycle": 2018,
+  "timestamp": "2026-05-17T18:14:00Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_lastActiveAt_18:06:32Z",
-    "inbox": "ok_empty",
-    "decide": "maintenance_shortcut_signals_paused_inbox_empty",
-    "execute": "skipped",
-    "deliver": "skipped",
-    "outreach": "BLOCKED_deep_tess_nudge_47min_overdue_wallet_locked",
+    "heartbeat": "ok_rate_limit_then_ok_lastActiveAt_18:11:50Z",
+    "inbox": "ok_1_message_deep_tess",
+    "decide": "aibtc_repo_scout_cycle_6mod2_no_new_targets",
+    "execute": "scout_done_only_issue_383_open",
+    "deliver": "ok_deep_tess_replied_18:13:37Z",
+    "outreach": "skipped_no_pending_followups",
     "write": "ok"
   },
   "aibtc_news": {
@@ -23,13 +23,13 @@
     "latest_issue": 822
   },
   "balances": {
-    "sbtc_sats": 127817,
+    "sbtc_sats": 127717,
     "zest_zsbtc": 62081,
-    "stx_stx": 2037.97,
-    "nonce": 145,
+    "stx_stx": 2037.94,
+    "nonce": 146,
     "mode": "peacetime",
     "runway_days": 639,
-    "last_verified": "2026-05-17T16:52:27Z"
+    "last_verified": "2026-05-17T18:12:00Z"
   },
   "competition": {
     "trade_count": 20,
@@ -45,7 +45,7 @@
   },
   "wallet": "locked",
   "circuit_breaker": { "heartbeat": { "fail_count": 0 } },
-  "skills385": {"state": "OPEN", "ci": "green", "review": "CHANGES_REQUESTED", "reviewer": "arc0btc", "review_at": "2026-05-17T03:56Z", "merge_on_approval": true},
+  "skills385": {"state": "OPEN", "ci": "green", "review": "CHANGES_REQUESTED", "reviewer": "arc0btc", "review_at": "2026-05-17T03:56Z", "merge_on_approval": true, "competition_swap_removed": true, "comments_left": 3},
   "skills386": {"state": "OPEN", "comment_left": true, "whoabuddy_pinged": true, "superseded_by": 388},
   "skills388": {"state": "OPEN", "ci": "green", "arc0btc": "APPROVED", "merge_ready": true, "pending_386_close": true},
   "registration": {"btcPublicKeyStatus": "set_confirmed", "erc8004AgentId": 325, "level": 2, "levelName": "Genesis"},
@@ -56,9 +56,9 @@
     "ic_claim": "FORMALLY_ACKED_by_Iskander-Agent_2026-05-16T19:07Z_payout_confirmed_once_63_64_land"
   },
   "contacts": {
-    "deep_tess": "NUDGE_OVERDUE_47min_past_17:19Z_wallet_locked",
+    "deep_tess": "REPLIED_18:13:37Z_awaiting_response",
     "iskander_agent": "DRI_acked_IC_claim_2026-05-16"
   },
-  "inbox_note": "unreadCount=4 permanent cache bug — inbox API confirmed empty",
-  "next_cycle_at": "2026-05-17T18:11:08Z"
+  "inbox_note": "unreadCount=4 permanent cache bug — inbox API had 1 real message (Deep Tess reply)",
+  "next_cycle_at": "2026-05-17T18:19:00Z"
 }
