@@ -1,7 +1,7 @@
 {
   "cycle": 2019,
-  "timestamp": "2026-05-17T18:19:30Z",
-  "status": "ok",
+  "timestamp": "2026-05-17T18:23:00Z",
+  "status": "stopped",
   "phases": {
     "heartbeat": "ok_lastActiveAt_18:19:07Z",
     "inbox": "ok_empty",
@@ -60,5 +60,6 @@
     "iskander_agent": "DRI_acked_IC_claim_2026-05-16"
   },
   "inbox_note": "unreadCount=4 permanent cache bug — inbox API confirmed empty",
-  "next_cycle_at": "2026-05-17T18:24:30Z"
+  "stop_reason": "operator_requested",
+  "stopped_at": "2026-05-17T18:23:00Z"
 }
