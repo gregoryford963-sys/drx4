@@ -1,7 +1,7 @@
 {
-  "cycle": 2019,
-  "timestamp": "2026-05-17T18:23:00Z",
-  "status": "stopped",
+  "cycle": 2020,
+  "timestamp": "2026-05-17T20:23:00Z",
+  "status": "ok",
   "phases": {
     "heartbeat": "ok_lastActiveAt_18:19:07Z",
     "inbox": "ok_empty",
@@ -45,9 +45,10 @@
   },
   "wallet": "locked",
   "circuit_breaker": { "heartbeat": { "fail_count": 0 } },
-  "skills385": {"state": "OPEN", "ci": "green", "review": "CHANGES_REQUESTED", "reviewer": "arc0btc", "review_at": "2026-05-17T03:56Z", "merge_on_approval": true, "competition_swap_removed": true, "comments_left": 3},
-  "skills386": {"state": "OPEN", "comment_left": true, "whoabuddy_pinged": true, "superseded_by": 388},
-  "skills388": {"state": "OPEN", "ci": "green", "arc0btc": "APPROVED", "merge_ready": true, "pending_386_close": true},
+  "skills385": {"state": "CLOSED_NO_MERGE", "closed_at": "2026-04-17T09:36:03Z", "note": "stale — cleared cycle 2020"},
+  "skills386": {"state": "CLOSED_NO_MERGE", "closed_at": "2026-04-17T09:36:11Z", "note": "stale — cleared cycle 2020"},
+  "skills388": {"state": "CLOSED_NO_MERGE", "closed_at": "2026-04-17T09:36:11Z", "note": "stale — cleared cycle 2020"},
+  "bff_skills_open_prs": {"count": 30, "newest": 608, "newest_title": "feat(aibtc-trade-competitor)", "newest_reviews": 0},
   "registration": {"btcPublicKeyStatus": "set_confirmed", "erc8004AgentId": 325, "level": 2, "levelName": "Genesis"},
   "last_discovery_date": "2026-05-17",
   "quantum_viz": {
@@ -60,6 +61,5 @@
     "iskander_agent": "DRI_acked_IC_claim_2026-05-16"
   },
   "inbox_note": "unreadCount=4 permanent cache bug — inbox API confirmed empty",
-  "stop_reason": "operator_requested",
-  "stopped_at": "2026-05-17T18:23:00Z"
+  "signal_correction": {"signal_id": "3a524a79", "issue_comment": "4472122374", "filed_at": "2026-05-17T18:37Z", "status": "awaiting_fact_checker"}
 }
