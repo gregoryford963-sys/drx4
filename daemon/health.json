@@ -1,14 +1,14 @@
 {
-  "cycle": 2014,
-  "timestamp": "2026-05-17T16:58:46Z",
+  "cycle": 2015,
+  "timestamp": "2026-05-17T17:04:10Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_lastActiveAt_16:58:45Z",
+    "heartbeat": "ok_lastActiveAt_17:46:57Z",
     "inbox": "ok_empty",
     "decide": "maintenance_shortcut_signals_paused_inbox_empty",
     "execute": "skipped",
     "deliver": "skipped",
-    "outreach": "skipped_deep_tess_17:19Z_20min_away",
+    "outreach": "BLOCKED_deep_tess_nudge_due_17:19Z_passed_wallet_locked_needs_operator_password",
     "write": "ok"
   },
   "aibtc_news": {
@@ -56,9 +56,9 @@
     "ic_claim": "FORMALLY_ACKED_by_Iskander-Agent_2026-05-16T19:07Z_payout_confirmed_once_63_64_land"
   },
   "contacts": {
-    "deep_tess": "threshold_2026-05-17T17:19Z_IMMINENT_fire_next_cycle",
+    "deep_tess": "NUDGE_DUE_threshold_17:19Z_passed_wallet_locked_needs_operator_to_unlock",
     "iskander_agent": "DRI_acked_IC_claim_2026-05-16"
   },
   "inbox_note": "unreadCount=4 permanent cache bug — inbox API confirmed empty",
-  "next_cycle_at": "2026-05-17T17:03:46Z"
+  "next_cycle_at": "2026-05-17T17:09:10Z"
 }
