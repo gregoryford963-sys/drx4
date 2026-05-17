@@ -1,7 +1,7 @@
 {
   "cycle": 2023,
   "timestamp": "2026-05-17T20:58:00Z",
-  "status": "ok",
+  "status": "stopped",
   "phases": {
     "heartbeat": "ok_lastActiveAt_18:19:07Z",
     "inbox": "ok_empty",
@@ -62,5 +62,7 @@
     "flying_whale": "COLD_confirmed_cycle2021_47d_no_reply"
   },
   "inbox_note": "unreadCount=4 permanent cache bug — inbox API confirmed empty",
-  "signal_correction": {"signal_id": "3a524a79", "issue_comment": "4472122374", "filed_at": "2026-05-17T18:37Z", "status": "awaiting_fact_checker"}
+  "signal_correction": {"signal_id": "3a524a79", "issue_comment": "4472122374", "filed_at": "2026-05-17T18:37Z", "status": "awaiting_fact_checker"},
+  "stop_reason": "operator_requested",
+  "stopped_at": "2026-05-17T21:04:00Z"
 }
