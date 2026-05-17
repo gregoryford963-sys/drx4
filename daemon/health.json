@@ -1,6 +1,6 @@
 {
-  "cycle": 2022,
-  "timestamp": "2026-05-17T20:40:00Z",
+  "cycle": 2023,
+  "timestamp": "2026-05-17T20:58:00Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok_lastActiveAt_18:19:07Z",
@@ -20,7 +20,7 @@
     "signals_resume_condition": "Loom publishes v4 funding model AND confirms brief compilation resumes",
     "streak_broke": true,
     "streak_broke_at": "2026-05-14T00:00:00Z",
-    "latest_issue": 822
+    "latest_issue": 825
   },
   "balances": {
     "sbtc_sats": 127717,
