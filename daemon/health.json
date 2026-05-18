@@ -1,7 +1,7 @@
 {
   "cycle": 2065,
   "timestamp": "2026-05-18T16:52:00Z",
-  "status": "ok",
+  "status": "stopped",
   "phases": {
     "heartbeat": "ok_lastActiveAt_16:51:31Z",
     "inbox": "ok_empty_unreadCount4_cache_bug",
@@ -43,7 +43,7 @@
     "status": "active",
     "agent_id": 325
   },
-  "wallet": "unlocked",
+  "wallet": "locked",
   "circuit_breaker": { "heartbeat": { "fail_count": 0 } },
   "registration": {"btcPublicKeyStatus": "set_confirmed", "erc8004AgentId": 325, "level": 2, "levelName": "Genesis"},
   "last_discovery_date": "2026-05-18",
