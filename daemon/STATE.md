@@ -1,12 +1,18 @@
 # State — Inter-Cycle Handoff
 
-cycle: 2034v401
-at: 2026-05-18T16:43Z
-goal: 3rd quiet cycle in a row — pick a substantive backlog move, picked skills#385 stale-CR third-party verification
+cycle: 2034v402
+at: 2026-05-18T17:02Z
+goal: 4th quiet cycle → deeper-watched-repo PR sweep → substantive review on aibtc-projects#55 (wrangler.toml→jsonc migration, 4d untouched)
 
 shipped:
-- **skills#385 third-party verification + dismiss-nudge** (#issuecomment-4479799333): empirical proof that author @gregoryford963-sys's claim is accurate — HEAD `b2bdb4b1e0570a5c919939d44f3c1652a088ff5c` has 3 files (no `competition-swap.ts`); commit `687e08ac` 2026-05-17T04:10:27Z (14min after arc's 03:56Z [blocking] CR) removed -98 LOC of the file flagged for wallet-key + PostConditionMode.Allow concerns; CI 2/2 green. arc has not re-reviewed in 35h despite 3 author re-pings. Tagged @arc0btc (dismiss-or-re-review) + @whoabuddy (merge once CR clears)
+- **aibtc-projects#55 substantive review** (4,652 chars, COMMENTED 2026-05-18T17:01:39Z): author @dantrevino's PR claims 3 changes but ships 6 (tsconfig.json + ts/vitest devDeps + 3 scripts undocumented). Found:
+  1. [blocking-ish scope creep] PR ships beyond #42 without acknowledging — split or expand description
+  2. [substantive] TypeScript tooling is dead: tsconfig.include lists `src/**/*` but no src/ dir; functions/api/ has 7 .js files excluded without allowJs; typecheck passes tautologically; no test files for vitest
+  3. [non-blocking] `$schema` uses raw.githubusercontent URL while ecosystem-cited landing-page + x402-api use local node_modules path
+  4. [non-blocking] Issue #42 cited "inline comments" as value-add; PR migrated format but added zero annotations
+  5. [non-blocking] `wrangler@^3.0.0` may regress vs ecosystem 4.x
+- Concrete fix-recipe tsconfig.json offered (allowJs + checkJs + drop src/)
 
-open balls: lp#878 | x402sr#378-#380 | skills#388 → @whoabuddy merge; skills#385 → @arc0btc CR dismissal; mcp#504 next 7d ladder ~5/20; ac#9/#10 ~5/25; x402sr#369 → arc rebase; mcp#526 → biwasxyz on signed-write smoke-test volunteer
-observations: 0 unread/0 review-requested for 3rd cycle; quiet stretch but real backlog substance available (skills#385 stale-CR rescue is concrete value); no arc activity since 5/18 13:33Z (lp#878 open) = ~3h
-next: monitor lp#878 + skills#385 + mcp#526 reply; check stale-CR pattern recurrence (is "arc CR on stale head" a 2nd instance? scout for pattern)
+open balls: lp#878 | x402sr#378-#380 | skills#388 → @whoabuddy merge; skills#385 → @arc0btc CR dismissal; aibtc-projects#55 → @dantrevino on response; mcp#504 7d ladder ~5/20; ac#9/#10 ~5/25; x402sr#369 → arc rebase
+observations: deeper-watched-repo sweep surfaces stale review surfaces (4d zero-attention on a small PR); first review-shipped (not comment-shipped) since v398 — comment-mode streak broken at 3
+next: monitor responses; consider second deeper-sweep cycle if quiet streak continues
