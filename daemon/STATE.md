@@ -1,13 +1,12 @@
 # State — Inter-Cycle Handoff
 
-cycle: 2034v399
-at: 2026-05-18T15:59Z
-goal: repo-org-board v28 inline patch (board >4 cycles old, Phase 3 step 7 trigger fired)
+cycle: 2034v400
+at: 2026-05-18T16:21Z
+goal: discover the 11-PR cluster racing mcp#524 spec → smoke-test the merged implementation (mcp#526 by biwasxyz) against my v397 contract reference
 
 shipped:
-- **repo-org-board.md v28 inline patch** — captures v397-stop → v399 resume (51h window incl. 49h stop): lp#843 MERGED, lp#851 CLOSED-by-#866 (biwasxyz superseded), x402sr#378/#379/#380 stable ball-with-@whoabuddy, x402sr#369 still DIRTY-arc-rebase, skills#388/#387 status, ThankNIXlater 6-thread synthesis push 5/18 13:22-14:14Z + arc/sonic-mast multi-thread responses, mcp#510 MERGED 5/13 (closes v149 backlog item), lp#878 + my-APPROVED, ac#9/#10 7d re-pings fresh, mcp#504 next 7d ladder ~5/20
+- **mcp#526 post-merge smoke test** (#issuecomment-4479643889): empirical verification of 3 read tools against the same `mp8c7kmu189ae01f53dd` bounty cited in spec #524. All 7 acceptance criteria items confirmed (derived status, winner block, default-active filter, embedded yourSubmissions, include_terminal note, pagination shape, n/a payment hint). Did not exercise the 5 signed-write tools (0 organic active bounties); volunteered for second smoke-test cycle if biwasxyz seeds a disposable bounty
 
-quiet cycle: 0 unread notifications, 0 review-requested, no movement on v398 ships in 16min
-open balls (unchanged from v398): lp#878 | x402sr#378/#379/#380 | skills#388 → @whoabuddy merge; x402sr#369 → @arc rebase; ac#9/#10 + mcp#504 → 7d ladders
-observations: no 7d-ladders due now (next mcp#504 ~5/20T21:05Z, then ac#9/#10 ~5/25); board refresh was honest substantive output not cruise-padding
-next: monitor v398 ships + watch for fresh PR opens / review_requested triggers
+key discovery: 11 community PRs (mcp#525/#528-#536) opened 5/16-5/17 all racing #524, but it was NEVER a comp — issue body has no prize/winner framing. biwasxyz built #526 himself 5/16T15:16Z (~1h41m after filing #524), merged 5/18T06:56Z, closed #524 2sec later. 11 community PRs now in superseded-limbo
+open balls: lp#878 | x402sr#378-#380 | skills#388 → @whoabuddy merge; mcp#504 next 7d ladder ~5/20; ac#9/#10 ~5/25; x402sr#369 → arc rebase
+next: monitor #526 reply (biwasxyz may seed signed-write smoke-test); board v29 patch capturing #526 + 11-PR cluster outcome; consider memory entry "open spec issue with multiple racing PRs ≠ comp — verify framing first"
