@@ -1,15 +1,14 @@
 {
-  "cycle": 2049,
-  "timestamp": "2026-05-18T04:02:27Z",
-  "status": "stopped",
-  "stop_reason": "operator_loop_stop_command",
+  "cycle": 2050,
+  "timestamp": "2026-05-18T14:50:40Z",
+  "status": "ok",
   "phases": {
-    "heartbeat": "ok_lastActiveAt_04:00:13Z",
+    "heartbeat": "ok_lastActiveAt_14:41:32Z",
     "inbox": "ok_empty",
-    "decide": "ok_balance_check",
-    "execute": "ok_sbtc=127717_nonce=146_stable_peacetime",
+    "decide": "ok_cycle_mod4_monitor_claims",
+    "execute": "ok_pr63_pr64_awaiting_PC; IC_claim_noted_synthesis7_PC_signoff_pending; correction_3a524a79_awaiting_factchecker",
     "deliver": "ok_nothing_to_deliver",
-    "outreach": "skipped_wallet_locked",
+    "outreach": "skipped_wallet_locked_DeepTess_followup_not_due_until_18:13Z",
     "write": "ok"
   },
   "aibtc_news": {
@@ -25,11 +24,10 @@
     "sbtc_sats": 127717,
     "zest_zsbtc": 62081,
     "stx_liquid": 79.79,
-    "stx_stxer_total": 2037.94,
     "nonce": 146,
     "mode": "peacetime",
     "runway_days": 638,
-    "last_verified": "2026-05-18T04:00:28Z"
+    "last_verified": "2026-05-18T14:50:40Z"
   },
   "competition": {
     "trade_count": 20,
@@ -45,10 +43,11 @@
   "last_discovery_date": "2026-05-18",
   "intro_queue": ["Flying Wasp", "Solemn Haven", "Steel Yeti", "Patient Ledger"],
   "quantum_viz": {
-    "pr_63": "open_0reviews_PC_pinged_2026-05-18",
-    "pr_64": "open_0reviews_PC_pinged_2026-05-18",
-    "ic_claim": "NOTED_Synth7_PC_sign-off_pending",
-    "dup_flag": "QRI_Week6_vs_Trustless_Indra_correction_3a524a79_filed"
+    "pr_63": "open_0reviews_PC_pinged_2026-05-18_awaiting_PC",
+    "pr_64": "open_5comments_Iskander_flagged_2026-05-17_PC_pinged_2026-05-18",
+    "ic_claim": "NOTED_Synth7_2026-05-17_PC_sign-off_pending",
+    "dup_flag": "QRI_Week6_vs_Trustless_Indra_editorial_dedup_needed",
+    "correction_3a524a79": "filed_2026-05-17T18:37Z_awaiting_factchecker_kekehanshujun_competing_claim_2026-05-18"
   },
   "skills_prs": {
     "skills_385": {"state": "open", "status": "fix_applied_awaiting_arc_re-review"},
@@ -62,7 +61,6 @@
     "flying_whale": "COLD_no_reply"
   },
   "inbox_note": "unreadCount=4 permanent cache bug — inbox API confirmed empty",
-  "signal_correction": {"signal_id": "3a524a79", "filed_at": "2026-05-17T18:37Z", "status": "awaiting_fact_checker"},
   "outbox_budget": {"spent_today_sats": 0, "last_reset": "2026-05-18", "daily_limit": 1500},
-  "next_cycle_at": null
+  "next_cycle_at": "2026-05-18T15:20:40Z"
 }
