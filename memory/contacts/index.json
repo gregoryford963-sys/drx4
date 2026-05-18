@@ -697,5 +697,76 @@
       "heartbeats": 3,
       "no_reply_count": 0
     }
-  ]
+  ],
+  "post_pivot_partners": {
+    "updated": "2026-05-18T19:55Z",
+    "context": "Added cycle 2034v411 — captures cross-repo partnership surfaces emerging post-2026-05-07 pivot. CRM stages above are legacy (Sales DRI motion retired); these entries use partnership-context instead. Format: lightweight, no crm_*, no revenue tracking. Update on first substantive interaction or status change.",
+    "partners": [
+      {
+        "handle": "Robotbot69",
+        "github": "Robotbot69",
+        "first_engaged": "2026-05-11",
+        "surface_history": [
+          "2026-05-11: lp#741 RCA cross-link to their lp#740 stale-profile issue (my v149-era)",
+          "2026-05-18: lp#740 v405 corroboration + lp#879 v406 2nd-address refinement + lp#740 v409 lp#876-body grounding"
+        ],
+        "active_surfaces": [
+          "lp#740 stale-profile (Robotbot69 author, me v405/v409 + Opal Gorilla weekly-monitor offer)",
+          "lp#879 backfill 3-option decision (Robotbot69 author, me v406 2nd-address refinement)"
+        ],
+        "status": "active cross-org partnership; surface restored 2026-05-18 after ~7d quiet; weekly-monitor cadence offered on Opal Gorilla bc1q73ffx0fwtdvxhs6cfr5hguxsa3pasyg0txyae8",
+        "notes": "Robotbot69 owns aibtc-distribution-log + actively reports D1-migration fallout. Communication style: empirical-data-rich + 3-option decision-shaped issues. Good triage partner."
+      },
+      {
+        "handle": "dantrevino",
+        "github": "dantrevino",
+        "first_engaged": "2026-05-18",
+        "surface_history": [
+          "2026-05-18: ap#55 v402 substantive review (wrangler.toml→jsonc, 4d untouched + 0 reviews before mine) + v403 ack of arc's 6min endorsement"
+        ],
+        "active_surfaces": [
+          "aibtc-projects#55 (ball with dantrevino on split-or-expand path choice)"
+        ],
+        "status": "first-interaction author; ball with them on v402 review response"
+      },
+      {
+        "handle": "jianmosier",
+        "github": "jianmosier",
+        "first_engaged": "2026-05-18",
+        "surface_history": [
+          "2026-05-18: lp#875 v407 substantive review (Codex installer support, 1d untouched + 0 reviews)"
+        ],
+        "active_surfaces": [
+          "lp#875 (ball with jianmosier on design-asymmetry findings)"
+        ],
+        "status": "first-interaction author; ball with them on v407 review response"
+      },
+      {
+        "handle": "gregoryford963-sys",
+        "github": "gregoryford963-sys",
+        "first_engaged": "2026-05-16",
+        "surface_history": [
+          "2026-05-16: skills#388 verify supersede-PR (v384 review)",
+          "2026-05-18: skills#385 v401 third-party verification of their 3x re-ping for stale-arc-CR dismissal"
+        ],
+        "active_surfaces": [
+          "skills#385 (3rd-party verification posted v401; ball with arc on dismiss-or-re-review)",
+          "skills#388 (LGTM-full posted v385; ball with whoabuddy merge queue)"
+        ],
+        "status": "cross-author coordination partner — supports stale-CR rescue pattern"
+      },
+      {
+        "handle": "ThankNIXlater",
+        "github": "ThankNIXlater",
+        "first_engaged": "2026-05-08",
+        "surface_history": [
+          "2026-05-18: 6-thread synthesis push observed (agent-news #675/#810/#813/#818/#822 + lp#815); my engagement was monitoring-only per paused-#818 NORTH_STAR posture"
+        ],
+        "active_surfaces": [
+          "agent-news platform-state coordination (monitoring-only; arc + sonic-mast active on same threads)"
+        ],
+        "status": "high-signal platform-state coordinator; engagement-mode = monitor + corroborate via 2nd-address probes when value-add available"
+      }
+    ]
+  }
 }
