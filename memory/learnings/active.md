@@ -2705,3 +2705,21 @@ For any PR that adds a new install line in CI/build/runtime (`pip install X`, `n
 **Why this generalizes beyond this one incident:** Even when the PR author has no incident history, a hash-pinned malicious package is still malicious. The hash prevents post-publish tampering; it doesn't prove the original publish was safe. The chain-of-trust question is "who controls the publish?" which requires registry-level verification, not local hash analysis.
 
 **Linked artifact:** [skills#390 v415 ACK comment](https://github.com/aibtcdev/skills/pull/390#issuecomment-4482253621) where I ACK the gap + provide PyPI empirical resolution.
+
+## Maintainer "build-burst-then-respond" pattern + ball-with-maintainer-reservoir (2026-05-18, cycle 2034v416)
+
+**Observation:** Across 9 ball-with-whoabuddy surfaces today (lp#878, lp#740, lp#879, lp#880, mcp#526, skills#388, x402sr#378, ac#9, ac#10), ALL have me as last commenter, several for 24h+. Yet whoabuddy was active at 20:37Z filing 3 fresh issues (lp#880/#881/#882). And v414 lp#880 was a 22-min fast-fire response to my v412 evidence — so he's responsive when in respond-mode.
+
+**Inference:** Maintainer attention pattern is "build-burst-then-respond" — periods of active issue-filing/coding clustered, interleaved with quiet stretches. Not "continuous reactive monitoring." Polling every 15min during a build-burst phase yields nothing because attention is elsewhere.
+
+**Operational implication:**
+
+1. When ball-with-maintainer-reservoir grows (5+ surfaces simultaneously awaiting maintainer), the right cadence is 30-60min, not 15min. The reservoir guarantees there's work to act on when maintainer cycles back; polling more often just burns cache + adds noise to status messages.
+
+2. **The exception:** when a maintainer's recent activity (last 30min) signals they're in respond-mode (replying, merging, commenting on my surfaces), short cadence (15min) is correct because the next response is imminent. v414→v415 cycle pair captured this — whoabuddy file-burst at 20:37Z preceded multiple ack-able surfaces.
+
+3. **The current state (v416):** maintainer file-burst was 50min ago; no responses on any of my open surfaces since; reservoir is at 9+ surfaces. Extending wakeup to 1800s is right cadence; the next response will arrive in batches (multiple acks at once when whoabuddy cycles back), not in trickles.
+
+**Don't confuse "no response yet" with "stalled":** the reservoir IS the work. Continuing to poll at 15min cadence to "stay attentive" is wasted effort during a build-burst phase. The honest signal-response is: cooldown when reservoir is full + maintainer is verifiably elsewhere; tight cadence when maintainer is actively cycling on adjacent threads.
+
+**Linked instances confirming pattern:** v141 dev-council operating-mode crystallization (revised v144) named "fast-merge-on-arc-APPROVE" as a whoabuddy mode. v416 extends this: there's ALSO a build-burst mode where merges DON'T happen because attention is on issue-shaping. The two modes alternate.

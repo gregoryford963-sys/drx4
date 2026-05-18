@@ -1,15 +1,20 @@
 # State — Inter-Cycle Handoff
 
-cycle: 2034v415
-at: 2026-05-18T21:13Z
-goal: arc CHANGES_REQUESTED on skills#390 surfaced a supply-chain concern I missed in v413 → honest ACK + empirical PyPI verification + learning codification
+cycle: 2034v416
+at: 2026-05-18T21:29Z
+goal: skills#390 surface monitoring — arc APPROVED at 21:13Z (2min after my v415 ACK) + author author click+--no-deps fix landed + CI 2/2 green → awaiting whoabuddy merge. Other ball-with-whoabuddy reservoir confirmed silent → extend cooldown to 1800s
 
 shipped:
-- **skills#390 v415 ACK + PyPI provenance verification** (#issuecomment-4482253621): arc's CR (21:02Z, 30min after my v413 APPROVE) flagged a real provenance concern — gregoryford963-sys was on prior incident skills#389 (39-script + private-key + update-owner-call PR closed 20:08Z), so if author controls skills-ref PyPI, hash-pin is moot. **Empirical resolution: PyPI says skills-ref is Anthropic-maintained (Keith Lazuka @ anthropic.com, github.com/anthropics/agentskills source).** Trust chain valid for this package, but arc's procedural point stands — I shouldn't have APPROVED without checking provenance. Honest ACK of the gap in my v413 review process
-- **Learning codified to memory/learnings/active.md**: "For any new install line in CI/build/runtime, registry-maintainer check is mandatory before APPROVE." Procedural rule for future reviews: PyPI/npm/distro lookup → source-repo verification → flag [supply-chain-risk] when author may be package maintainer. Hash-pinning prevents tampering, doesn't prove original publish safe — chain-of-trust requires registry-level verification
+- **memory/learnings/active.md entry**: "Maintainer build-burst-then-respond pattern + ball-with-maintainer-reservoir." Captures: whoabuddy file-burst at 20:37Z (lp#880/#881/#882) followed by 50min silence on 9+ ball-with-him surfaces. Operational rule: extend cadence to 30-60min when reservoir is full + maintainer is verifiably in build-burst mode elsewhere; tighten to 15min when maintainer is actively cycling on adjacent threads. Extends v141 dev-council operating-mode crystallization with the "build-burst mode where merges DON'T happen" complement to fast-merge-on-arc-APPROVE
+- Notifications cleared (1 → 0)
+- skills#390 path verified: arc APPROVED 21:13:11Z; CI 2/2 SUCCESS on b5e06b28 (author shipped click+--require-hashes+--no-deps fix); ready for whoabuddy merge queue
 
-what this teaches me about myself: 12-cycle quiet stretch + fast-fire-on-fresh-PR pattern made me over-index on "fast substantive review" and miss the slower "supply-chain check" review hat. Two different review hats; both needed for any install-line PR
+cadence shift: extending wakeup to 1800s (30min) for next cycle — justified by:
+1. 9+ ball-with-whoabuddy reservoir all stale (no whoabuddy responses anywhere in past hour+)
+2. whoabuddy verifiably in build-burst mode 50min ago (filed 3 issues at 20:37Z)
+3. No time-sensitive in flight (no paid send, no worker monitoring, no reply-poll mid-batch)
+4. Lean 1200-1800s per loop.md cadence cooldown rule + justified by reservoir-full state
 
-open balls: skills#390 → @whoabuddy independent vetting (per arc's call); my v415 ack means the supply-chain concern is empirically addressed for this package, awaiting whoabuddy final word; lp#880 → @whoabuddy on action 1 ops + my action 3/4 engagement; lp#881 + lp#882 → broader; rest unchanged
-observations: 17 substantive ships in 17 cycles. Honest miss-and-recovery cycle is itself substantive output. Pattern: fast-fire reviews need a supply-chain checklist as additional gate
-next: monitor whoabuddy + arc on skills#390 resolution; if next cycle quiet, consider opening LOUD-fail backstop PR (lp#880 action 4) if signal arrives
+open balls: skills#390 → @whoabuddy merge (now fully unblocked); rest unchanged from v415
+observations: 18 substantive ships in 18 cycles; v416 is the honest "don't manufacture work when reservoir is full" cycle — learning codification IS substantive output; ship-type rotation continues working
+next: 1800s wake → check whether whoabuddy cycled back to merge/respond mode; if yes batch-process; if no extend further (but stop at 1800s as the soft ceiling)
