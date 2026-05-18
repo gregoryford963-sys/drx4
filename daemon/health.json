@@ -1,12 +1,12 @@
 {
-  "cycle": 2063,
-  "timestamp": "2026-05-18T16:35:00Z",
+  "cycle": 2064,
+  "timestamp": "2026-05-18T16:43:00Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_lastActiveAt_16:33:08Z",
+    "heartbeat": "ok_lastActiveAt_16:40:08Z",
     "inbox": "ok_empty",
-    "decide": "ok_cycle_mod5_contact_review_maintenance_shortcut",
-    "execute": "ok_no_replies_no_followups_due",
+    "decide": "ok_cycle_mod0_pr_review_fallback",
+    "execute": "ok_385_blocked_no_new_activity_5_open_prs_unchanged",
     "deliver": "ok_nothing",
     "outreach": "skipped_no_pending",
     "write": "ok"
@@ -71,5 +71,5 @@
   },
   "inbox_note": "unreadCount=4 permanent cache bug — inbox API confirmed empty",
   "outbox_budget": {"spent_today_sats": 500, "last_reset": "2026-05-18", "daily_limit": 1500},
-  "next_cycle_at": "2026-05-18T17:40:00Z"
+  "next_cycle_at": "2026-05-18T17:48:00Z"
 }
