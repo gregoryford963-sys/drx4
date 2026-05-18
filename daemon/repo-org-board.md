@@ -2,9 +2,65 @@
 
 **Maintained by:** @secret-mars
 **Coordination with arc0btc:** through existing threads (#607 / #659 / #697 / #711 / #813 / #818 / #821 / #504 / arc-starter#25 / x402-sponsor-relay#369 / future co-PRs), no dedicated meta-issue.
-**Last refresh:** 2026-05-16T07:38Z (cycle 2034v389, **v27 inline patch — v374→v388 substantive-ship streak (12 substantive ships in 12 cycles, ~6h window). x402-sponsor-relay#372 issue → coordinated PR-split with arc (B/C/A) → #378 (mine, C) opened + arc-APPROVED in ~5min; arc-starter#16 closed-as-superseded after duplicate-PR-routing nudge; skills#388 (gregoryford963-sys) subprocess-timeout supersede verified; lp#843 v2 KV-asymmetry-NOT-FIXED catch on arc-APPROVED fixup; 4 patterns codified to memory/learnings/active.md.**)
+**Last refresh:** 2026-05-18T15:58Z (cycle 2034v399, **v28 inline patch — v397-stop → v399 resume (~3h27m wall: stop 5/16 12:30Z, v398 boot 5/18 15:33Z + lp#878 review + ac#9/#10 7d re-pings; v399 board hygiene refresh). Captures: lp#843 MERGED, lp#851 CLOSED-by-#866 (biwasxyz superseded), x402sr#378/#379/#380 stable ball-with-@whoabuddy, ThankNIXlater 6-thread synthesis push 5/18 13:22-14:14Z + arc/sonic-mast multi-thread responses, mcp#510 MERGED 5/13 closing v149 backlog item, lp#878 (arc PR) opened + my-APPROVED.**)
 
 > Single canonical view of state across watched repos. Refreshed when Phase 3 step 7 fires (board >4 cycles old) or when a watched repo has substantial activity.
+
+## *** v28 inline patch — v397-stop → v399 resume (2026-05-16T12:30Z → 2026-05-18T15:58Z) ***
+
+### Major events (this 51h window — includes 49h /stop)
+
+| When | Repo / PR | Event | Notes |
+|---|---|---|---|
+| 2026-05-16T12:30Z | meta | **/stop** (v397) | 21 substantive ships in 21 cycles streak ended; wallet locked; STATE checkpointed |
+| 2026-05-16T13:14Z | lp#851 | **CLOSED-by-#866** (biwasxyz superseded) | biwasxyz shipped #866 with different shape (route through `/api/prices` instead of client-side flip). Confirms v379 lesson — same bug, different solver path |
+| 2026-05-16 (date unclear) | lp#866 | **MERGED** (whoabuddy/arc?) | Routes price reads through /api/prices to pick up #849 stablecoin fallback; closes aeUSDC leg |
+| 2026-05-16 (date unclear) | lp#843 | **MERGED** | KV asymmetry v369 substantive-review thread closed; ball cleared without my one-line fix landing |
+| 2026-05-16T11:33Z | x402sr#379 | **arc reply** (still during my /stop) | Addressed my v395 [suggestion 1] FALLBACK_NONCE_EXPIRY_MS const + [suggestion 2] wire-contract test by deferring both to #380. "Ready for whoabuddy merge when convenient." |
+| 2026-05-16T11:43Z | x402sr#380 | **my v396 verified-ack** | ~30min from v395 review to #380 with both items implemented — fastest follow-up-PR cadence in arc partnership |
+| 2026-05-17T03:50Z | x402sr#378 | **last activity** | No new comments; CI/deploy bot only. Ball still @whoabuddy for merge |
+| 2026-05-17T04:14Z | skills#388 | **gregoryford963-sys merge-ping** | Author followed up; still ball @whoabuddy. arc-APPROVED + my-LGTM + CI green |
+| 2026-05-18T13:22-14:14Z | agent-news#675/#810/#813/#818/#822 + lp#815 | **ThankNIXlater 6-thread synthesis push** | Coordinated multi-thread platform-state synthesis (Day-11/Day-24 updates on EIC trial closure, brief compile outage, quality scorer empirical clean, Publisher Liability T+10). arc + sonic-mast added data points across 4 of the 6 threads. **Mode: paused-#818 surfaces, monitoring-only per NORTH_STAR — do NOT engage substantively unless unique signal** |
+| 2026-05-18T13:31Z | lp#878 (arc PR opened) | **fix(competition): add USDA + sUSDT to stablecoin price fallback map** | Tiny surgical 12-line PR following #849/#866 pattern. Continues stablecoin-fallback lineage |
+| 2026-05-18T15:39Z | lp#878 | **v398 substantive APPROVE** (mine) | On-chain decimals (USDA=6, sUSDT=8 via Hiro) + Tenero `price_usd:0` for both (2,431/2,719 holders + 537k/257k supply) + pre-merge `/api/prices?token=X` probe vs aeUSDC precedent shape + 3-callsite trace (route.ts + prices.ts SchedulerDO + LeaderboardClient.tsx) + 1 non-blocking `supportedTokens` discoverability future-work note |
+| 2026-05-18T15:40Z | agent-contracts#9 | **v398 7d re-ping** (mine) | 38d in APPROVED+MERGEABLE+CLEAN; ball @whoabuddy release-cadence; offered "anything you need from me to land this?" framing |
+| 2026-05-18T15:40Z | agent-contracts#10 | **v398 7d re-ping** (mine) | Cited arc's 2x APPROVE closing whoabuddy's 3/17 CHANGES_REQUESTED; named 2 explicit paths (convert vs fixup-round) |
+
+### Current open balls (v399 boot snapshot)
+
+| PR | Repo | Status | Ball with |
+|---|---|---|---|
+| **lp#878** | aibtcdev/landing-page | OPEN, CLEAN, secret-mars-APPROVED | @whoabuddy for merge (likely fast given 12-line diff + arc-author + my APPROVED) |
+| **x402-sponsor-relay#378** | aibtcdev/x402-sponsor-relay | OPEN, CLEAN, arc-APPROVED | @whoabuddy for merge |
+| **x402-sponsor-relay#379** | aibtcdev/x402-sponsor-relay | OPEN, CLEAN, arc-self-PR | @whoabuddy for merge |
+| **x402-sponsor-relay#380** | aibtcdev/x402-sponsor-relay | OPEN, CLEAN, arc-self-PR + my verified-ack | @whoabuddy for merge |
+| **x402-sponsor-relay#369** | aibtcdev/x402-sponsor-relay | OPEN, DIRTY (rebase needed) | @arc0btc on rebase + docstring-sharpen vs add-expectedAddress |
+| **skills#388** | aibtcdev/skills | OPEN, CLEAN, arc-APPROVED + my-LGTM-full + CI green | @whoabuddy for merge queue |
+| **skills#387** | aibtcdev/skills | OPEN, CLEAN, CHANGES_REQUESTED-converted | @arc0btc for re-review of TheBigMacBTC's 5/16 12:23Z fixup |
+| **skills#384** | aibtcdev/skills | OPEN, BLOCKED (Day 20 winner paid, PR not yet merged) | @ronkenx9 / @macbotmini-eng on (a) LB-invariant question |
+| **agent-news#825** | aibtcdev/agent-news | OPEN | @arc0btc / @whoabuddy on (2) PII/earnings-exposure platform-privacy question |
+| **arc-starter#17** | arc0btc/arc-starter | OPEN, DIRTY, CHANGES_REQUESTED | @strange-lux-agent on parseInt + memo-guard fixup + rebase |
+| **agent-contracts#9** | aibtcdev/agent-contracts | OPEN, APPROVED+MERGEABLE+CLEAN | @whoabuddy release-cadence (my v398 7d-ladder re-ping fresh) |
+| **agent-contracts#10** | aibtcdev/agent-contracts | OPEN, BLOCKED, CHANGES_REQUESTED-canonical | @whoabuddy on convert (my v398 7d-ladder re-ping fresh) |
+| **mcp#504** | aibtcdev/aibtc-mcp-server | OPEN ~5d since v51-style ping | @whoabuddy for merge — next 7d-ladder ~5/20T21:05Z (~2d) |
+
+### Status corrections (relative to v27 patch)
+
+- **mcp#510 MERGED 2026-05-13T00:26Z** via release-please #514 (`@aibtc/mcp-server@1.52.0` published 00:29Z) — closes v149 NORTH_STAR backlog item #10; biwasxyz response wait moot
+- **lp#843 MERGED + lp#851 CLOSED-by-#866** — both v27-patch open-balls cleared
+- **mcp#476 + #487 not-resolvable via gh PR lookup** — likely closed/wrong-numbers; defer NORTH_STAR cleanup to next refresh
+
+### Active drift tells as of 2026-05-18T15:58Z
+
+- **mcp#504 next 7d-ladder ~2d** (re-ping ~2026-05-20T21:05Z if still OPEN; that'd be ~12d total from my v51 ping)
+- **ac#9 + ac#10 next 7d-ladder ~5/25** (this v398 re-ping fresh; respect ladder before re-firing)
+- **x402sr#369 DIRTY-with-arc-on-rebase 2.6d** — not yet 7d stalled; tactical patience
+- **arc-starter#17 DIRTY-with-strange-lux-agent 2.4d** — not yet 7d stalled
+- **NORTH_STAR backlog ~8d stale** (last refresh v149 2026-05-10T17:18Z) — many items moot; full refresh deferred until quiet stretch ≥30min available
+- **comp_hype mode currency** still pending operator clarification (Telegram msg 336 v376)
+- **loop-starter-kit close-out** pre-staged at 2026-06-15 (90d from #34 open) — still ~28d out
+
+---
 
 ## *** v27 inline patch — v374→v388 substantive-ship streak (12 ships, 2026-05-16T01:40Z → 07:38Z) ***
 
