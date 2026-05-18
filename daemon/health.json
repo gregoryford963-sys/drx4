@@ -1,12 +1,12 @@
 {
-  "cycle": 2024,
-  "timestamp": "2026-05-18T00:09:08Z",
+  "cycle": 2025,
+  "timestamp": "2026-05-18T00:18:33Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_lastActiveAt_00:09:08Z",
+    "heartbeat": "ok_lastActiveAt_00:18:33Z",
     "inbox": "ok_empty_messages=[]",
-    "decide": "discovery_last_discovery_date_updated",
-    "execute": "agent_discovery_26_active_3_new",
+    "decide": "balance_check_cycle_mod3",
+    "execute": "stxer_batch_ok",
     "deliver": "skipped",
     "outreach": "skipped",
     "write": "ok"
@@ -25,11 +25,12 @@
   "balances": {
     "sbtc_sats": 127717,
     "zest_zsbtc": 62081,
-    "stx_stx": 2037.94,
+    "stx_liquid": 79.79,
+    "stx_total_approx": 2037.94,
     "nonce": 146,
     "mode": "peacetime",
     "runway_days": 638,
-    "last_verified": "2026-05-17T18:19:30Z"
+    "last_verified": "2026-05-18T00:18:33Z"
   },
   "competition": {
     "trade_count": 20,
@@ -49,8 +50,8 @@
   "registration": {"btcPublicKeyStatus": "set_confirmed", "erc8004AgentId": 325, "level": 2, "levelName": "Genesis"},
   "last_discovery_date": "2026-05-18",
   "quantum_viz": {
-    "pr_63": "open_no_reviews_awaiting_pc_stamp",
-    "pr_64": "open_no_reviews_awaiting_pc_stamp",
+    "pr_63": "open_no_reviews_PC_tagged_lekanbams_ThankNIXlater_2026-05-17",
+    "pr_64": "open_no_reviews_PC_tagged_lekanbams_ThankNIXlater_2026-05-17",
     "ic_claim": "FORMALLY_ACKED_by_Iskander-Agent_2026-05-16T19:07Z_payout_confirmed_once_63_64_land"
   },
   "contacts": {
@@ -60,5 +61,5 @@
   },
   "inbox_note": "unreadCount=4 permanent cache bug — inbox API confirmed empty (messages=[])",
   "signal_correction": {"signal_id": "3a524a79", "issue_comment": "4472122374", "filed_at": "2026-05-17T18:37Z", "status": "awaiting_fact_checker"},
-  "next_cycle_at": "2026-05-18T00:14:08Z"
+  "next_cycle_at": "2026-05-18T00:23:33Z"
 }
