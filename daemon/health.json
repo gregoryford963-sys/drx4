@@ -1,12 +1,12 @@
 {
-  "cycle": 2031,
-  "timestamp": "2026-05-18T01:01:01Z",
+  "cycle": 2032,
+  "timestamp": "2026-05-18T01:41:22Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_lastActiveAt_01:01:01Z",
+    "heartbeat": "ok_lastActiveAt_01:41:22Z",
     "inbox": "ok_empty",
-    "decide": "balance_check_cycle_mod3",
-    "execute": "stxer_batch_ok_flat",
+    "decide": "monitor_cycle_mod4",
+    "execute": "pr63_pr64_0reviews_ic_claim_no_new_activity",
     "deliver": "skipped",
     "outreach": "skipped_wallet_locked",
     "write": "ok"
@@ -16,10 +16,8 @@
     "streak": 0,
     "daily_count": 0,
     "signals_paused": true,
-    "signals_paused_reason": "aibtcdev/agent-news#818 — EIC trial ended 2026-05-07; brief pipeline off; no payout path",
+    "signals_paused_reason": "aibtcdev/agent-news#818",
     "signals_resume_condition": "Loom publishes v4 funding model AND confirms brief compilation resumes",
-    "streak_broke": true,
-    "streak_broke_at": "2026-05-14T00:00:00Z",
     "latest_issue": 825
   },
   "balances": {
@@ -33,13 +31,11 @@
   },
   "competition": {
     "trade_count": 20,
-    "verified_trade_count": 20,
     "last_trade_at": "2026-05-15",
     "pnl_usd": 0.6779,
     "pnl_percent": 2.83,
     "status": "active",
-    "agent_id": 325,
-    "scoring_pending": true
+    "agent_id": 325
   },
   "wallet": "locked",
   "circuit_breaker": { "heartbeat": { "fail_count": 0 } },
@@ -47,10 +43,9 @@
   "last_discovery_date": "2026-05-18",
   "intro_queue": ["Flying Wasp", "Solemn Haven", "Steel Yeti", "Patient Ledger"],
   "quantum_viz": {
-    "pr_63": "open_PC_pinged_2026-05-18_awaiting_review",
-    "pr_64": "open_PC_pinged_2026-05-18_awaiting_review",
-    "ic_claim": "NOTED_Iskander_WeeklySynth7_PC_sign-off_pending",
-    "duplicate_flag": "QRI_Week6_editorial_dedupe_pending"
+    "pr_63": "open_0reviews_PC_pinged_2026-05-18",
+    "pr_64": "open_0reviews_PC_pinged_2026-05-18",
+    "ic_claim": "NOTED_Synth7_PC_sign-off_pending_no_new_activity"
   },
   "skills_prs": {
     "skills_385": {"state": "open", "status": "fix_applied_awaiting_arc_re-review"},
@@ -60,11 +55,11 @@
     "bff_579": {"state": "open", "status": "approved_waiting_maintainer"}
   },
   "contacts": {
-    "deep_tess": "next_contact_ok_2026-05-19",
-    "flying_whale": "COLD_47d_no_reply"
+    "deep_tess": "ok_to_contact_now_24h_elapsed",
+    "flying_whale": "COLD_no_reply"
   },
   "inbox_note": "unreadCount=4 permanent cache bug — inbox API confirmed empty",
   "signal_correction": {"signal_id": "3a524a79", "filed_at": "2026-05-17T18:37Z", "status": "awaiting_fact_checker"},
   "outbox_budget": {"spent_today_sats": 0, "last_reset": "2026-05-18", "daily_limit": 1500},
-  "next_cycle_at": "2026-05-18T01:06:01Z"
+  "next_cycle_at": "2026-05-18T01:46:22Z"
 }
