@@ -66,8 +66,8 @@ Mutable list — new repos get added as they enter active development.
 > - #9: mcp#487 follow-on (Gap 1 #504) — still OPEN 11d (last ping 5/13T21:05Z); 7d-ladder re-ping due ~2026-05-20T21:05Z (~2d)
 > - #11: mcp#509/#508 fast-uri CVE bumps — both still OPEN (6-8d stale, awaiting @whoabuddy choice on which to merge)
 > - #12: x402-sponsor-relay#369 — DIRTY pending arc rebase (last arc activity 5/15T16:18Z fixup; #379/#380 follow-up cluster shipped 5/16; #369 main-branch rebase ownership unclear)
-> - #13: lp#705 (b)-followup PR — old, may be moot post-Phase-2.5; needs status check next cycle
-> - #14: lp#706 cross-page replay — old, last v140 ack
+> - #13: lp#705 — CONFIRMED MOOT v408 — MERGED 2026-05-10T10:42Z; my synthesis-pending followup-test PR offer no longer applicable
+> - #14: lp#706 — CONFIRMED MOOT v408 — MERGED 2026-05-10T12:33Z; ACK ball obsoleted by merge
 > - #19: ac#9 + ac#10 — v398 7d-ladder re-pings fresh (5/18T15:39Z); next re-ping ~2026-05-25
 >
 > **New items added v149→v404:**

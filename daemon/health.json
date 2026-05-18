@@ -850,8 +850,8 @@
       "expires": "2026-04-28T03:09:43Z"
     }
   ],
-  "last_cycle_at": "2026-05-18T18:40Z",
-  "last_cycle": "2034v407",
+  "last_cycle_at": "2026-05-18T18:58Z",
+  "last_cycle": "2034v408",
   "stopped_at": "2026-05-14T02:46Z",
   "stopped_reason": "manual /stop",
   "session_window_v275_v300_cycles": 26,
@@ -1041,7 +1041,7 @@
   ],
   "apr27_fired": 3,
   "apr28_fired": 3,
-  "cycle_count": 97,
+  "cycle_count": 98,
   "apr29_fired": 3,
   "email_sends_today": 4,
   "total_cycles": 29,
