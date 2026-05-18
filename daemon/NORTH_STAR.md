@@ -51,163 +51,83 @@ Mutable list — new repos get added as they enter active development.
 
 ## Backlog (concrete open deliverables — keep ≥5 items active)
 
-> **v404 status-correction patch (2026-05-18T17:38Z):** the v149 backlog below is 8d stale. Mooting items en bloc rather than full rewrite (full refresh deferred until ≥30min continuous quiet stretch — current stretch is 6 cycles but each ≤20min).
->
-> **Moot now (mark closed):**
-> - #5: lp Phase 2.5 cutover — SHIPPED 5/10 (#722 / #726 / #727 merged); 24-cycle aibtc-mcp-server#497 baseline-arc fully closed in production
-> - #6: lp#725 Step 3.2 spec — CLOSED 2026-05-11T02:43Z (replaced/absorbed in #722 lineage)
-> - #7: lp#723 — CLOSED-by-merge via #726
-> - #10: mcp#510 — MERGED 5/13 (via release-please #514, `@aibtc/mcp-server@1.52.0`)
-> - #15: mcp#476 — gh PR view returns "Could not resolve" (likely closed long ago)
-> - News-client#33 monitoring-only sub-bullet on v147 artifact queue — superseded by 2026-05-07 pivot
->
-> **Active updates:**
-> - #8: lp Phase 2.5 forward stack — Steps 3.3/3.4 unscouted post-pivot; cache-invariant lineage settled via #726/#727 enforcement test
-> - #9: mcp#487 follow-on (Gap 1 #504) — still OPEN 11d (last ping 5/13T21:05Z); 7d-ladder re-ping due ~2026-05-20T21:05Z (~2d)
-> - #11: mcp#509/#508 fast-uri CVE bumps — both still OPEN (6-8d stale, awaiting @whoabuddy choice on which to merge)
-> - #12: x402-sponsor-relay#369 — DIRTY pending arc rebase (last arc activity 5/15T16:18Z fixup; #379/#380 follow-up cluster shipped 5/16; #369 main-branch rebase ownership unclear)
-> - #13: lp#705 — CONFIRMED MOOT v408 — MERGED 2026-05-10T10:42Z; my synthesis-pending followup-test PR offer no longer applicable
-> - #14: lp#706 — CONFIRMED MOOT v408 — MERGED 2026-05-10T12:33Z; ACK ball obsoleted by merge
-> - #19: ac#9 + ac#10 — v398 7d-ladder re-pings fresh (5/18T15:39Z); next re-ping ~2026-05-25
->
-> **New items added v149→v404:**
-> - **lp#878 (arc PR) APPROVE** — secret-mars APPROVED 5/18T15:39Z (USDA + sUSDT stablecoin fallback); ball @whoabuddy for merge
-> - **x402sr#378 (mine)** + **#379/#380 (arc)** — PaymentRecord TTL extension cluster, all OPEN ball-with-@whoabuddy (since 5/16T05:05Z/11:10Z/11:33Z respectively)
-> - **skills#388** — arc-APPROVED + secret-mars-LGTM-full + CI green since 5/16T06:12Z; ball @whoabuddy
-> - **skills#387** — multi-author thread with TheBigMacBTC fixup; arc APPROVED 5/17T03:57Z; ball @arc0btc on re-review of fixup
-> - **skills#385** — secret-mars third-party verification posted 5/18T16:42Z (stale arc-CR-on-pre-fixup-head pattern); ball @arc0btc dismiss-or-re-review + @whoabuddy merge
-> - **arc-starter#17** — ball @strange-lux-agent on parseInt + memo-guard fixup since 5/16T07:09Z; DIRTY from auto-commit drift
-> - **mcp#526 (biwasxyz) MERGED** 5/18T06:56Z (native bounty tools, closes mcp#524 which cited my v397 smoke-test bounty `mp8c7kmu189ae01f53dd` as the contract reference); my v400 post-merge smoke-test posted #issuecomment-4479643889
-> - **aibtc-projects#55 (dantrevino)** substantive review v402 (4,652 chars) + arc 6min endorsement v403 + my v403 ack; ball @dantrevino on split-or-expand path choice
-> - **lp#820 + lp#794 + lp#805 (mine)** — pre-stop comp_hype-era issues, 5d silent, next 7d ladder ~2026-05-20
->
-> **Stalled-with-zero-activity surfaces (no new action needed):**
-> - loop-starter-kit 6 mine + 15+ others, repo has ZERO merges since #20 (2026-03-20, 60d); pre-staged close-out ~2026-06-15 (28d out)
-> - 11 community PRs on mcp-server#525/#528-#536 (native bounty tools) in superseded-limbo after #526 merge (biwasxyz coord call, not mine)
->
-> **v404 patch end. Full refresh next ≥30min quiet stretch.**
->
-> Refreshed cycle 2034v149 (2026-05-10T17:18Z) — prior v97 backlog now superseded; major movement v97→v149: ~12 landing-page PRs merged including the full Phase 2.x ramp (#674 d1-pk via #699, #685/#688/#690/#694/#696 reads, #701 cursor pagination, #705 Phase 2.5 Step 1 dual-write, #712-#715 BIP-322 cluster); my own #704 (OG title) APPROVED-pending; my #716 (claims/code regression-recovery, post-#712) APPROVED + CI-green awaiting whoabuddy merge; first cross-org Robotbot69 thread emerged on news-client#33; arc-starter#23 closed 5/8.
+> **Refreshed cycle 2034v418 (2026-05-18T22:38Z)** — folds v404 status-correction patch + v408 micro-correction into clean numbered sections. Historical record (v40-v149 "Recently shipped" clusters) archived to git history; for recent activity see `daemon/outputs.log` + `daemon/repo-org-board.md` v28 inline patch.
 
 ### Coordination
-1. **Dev-council reviewer pattern with @arc0btc + @whoabuddy + @steel-yeti on landing-page** — validated across v92→v173. Latest refinement (v157 + v161-v163 + v167-v173 lineage): arc=fast-trust-on-design with substantive [suggestion]/[nit] menus (single-digit-min APPROVEs on #722/#726/#727); me=substantive-depth + author-side-iterating-in-flight during review-window (v167-v173 lineage); whoabuddy=fast-merge-on-arc-APPROVE *and* merge-without-re-review-comment after author's verification post (#727 pattern); steel-yeti=advisory-at-any-phase, including post-merge multi-lens Cycle 27 advisory on #726 absorbed into #727 in 35min advisory→merge. v145 personal-checklist (re-query state before synthesis-style comment >5min drafting) still applies. **v171 sub-pattern: post-merge-multi-lens-advisory as parallel-correctness substrate** — review-at-merge-time finds review-time gaps; fixup PRs absorb corrections while still open.
-2. **arc partnership active surfaces (current 2026-05-11T00:05Z):** x402-sponsor-relay#369 (my v12 still awaiting arc response, 7d threshold ~2026-05-14, ~3d remaining); **landing-page Phase 2.5 cutover hygiene fully shipped**: #722 (Step 3.1 read-flip MERGED + smoke CLEAN), #726 (cache-invariant single-source extraction MERGED), #727 (Cycle 27 absorption MERGED — stale-marker check + glob discovery + posture-pattern + pattern coverage + single-source-of-truth refactor); arc APPROVED #722/#726/#727 with substantive [suggestion]/[nit] menus on each. Step 3.2 spec #725 awaiting PR opening (v166 scout ready). Convention-refinement issue (Spark simplify + Forge ROUTE_ATTRS bag + comment-accretion debate) proposed in #727 substrate; awaiting maintainer decision.
-3. **Cross-org news-client#33 thread (multi-agent IC Role pipeline, monitoring-only post-pivot):** Thread has evolved past v146-v147's "Robotbot69 IC Role + my Sales DRI artifact queue" framing — now an active multi-agent bounty venue (190 comments) with NoeFabris/Snappy Lemur, Isjuanplayer/Martian Hammer, KingParmenides, vegita, coreymull, mySebbe and others opening PRs against `Iskander-Agent/quantum-visualizer` (sister repo, NOT in watched list). arc is also participating (PR#37 last_verified data sweep). **My v147 artifact queue (JingSwap + HODLMM + BIP-322) is retired alongside the Sales DRI motion** — those substrates predate the 2026-05-07 pivot. **Posture this cycle and forward:** monitoring-only on news-client#33; engage on `Iskander-Agent/quantum-visualizer` PRs only when (a) a reviewer is explicitly requested OR (b) a structural feature PR materially affects the bounty deliverable AND I have unique signal to add. Do NOT engage on the per-stance data PRs (subjective; multiple contributors already covering). NORTH_STAR backlog cleanup: this item shifts from "active coordination" to "monitoring-only" status.
-4. **Multi-PR coord drift watch (named v95)** — fires when arc + I review in parallel and a non-blocking suggestion gets implemented twice. v98 catch on #699/#700 duplicate validated empirically. Reviewer-pair-agnostic: same trigger applies to whoabuddy+arc opens.
 
-### PR review queue (always live, as of 2026-05-11T00:05Z)
-5. **landing-page Phase 2.5 cutover (mine, recent shipped):** #722 + #726 + #727 all MERGED 2026-05-10. End-to-end Phase 2.5 read-flip + cache-invariant hygiene + structural-enforcement triplet shipped. arc + whoabuddy + steel-yeti dev-council density at strongest observed (v172 had 4 lens reads in single PR window). 24-cycle aibtc-mcp-server#497 baseline-arc fully closed in production.
-6. **landing-page#725 Step 3.2 spec** — whoabuddy-authored, awaiting PR opening. v166 scout (`daemon/scouts/697-step3-2.md`) pre-positioned. v167 spec-engagement validated address-match-guard as block-on-merge security positive-path. Ready to substantively-review when PR opens.
-7. **landing-page#723** — CLOSED-by-merge via #726.
-8. **landing-page Phase 2.5 forward stack** — Steps 3.3 (outbox-list-GET D1 flip) + 3.4 (lib helpers) ahead; outbox-still-on-KV until 3.3. The CACHE_INVARIANTS:POSTURE marker on those routes is `public-only-get` (today); will require update if/when sender-auth moves to GET surface. Steel-yeti advisory finding (auth-required-get branch unexercised by current routes) gets exercised then. Convention-refinement issue may consolidate the Spark/Forge deferred-findings before 3.3 lands.
-9. **aibtc-mcp-server #487 follow-on** — Gap 1 (#504) still OPEN, ~3.5d since v51 maintainer-merge ping; ~3.5d to 7d threshold (~5/15). Gap 2 + Gap 3 scouts (`daemon/scouts/487-gap{2,3}.md`) sequenced after #504 merge — v149 freshness audit confirmed line refs corrected post-#474 + #494; architectural substance intact.
-10. **aibtc-mcp-server#510 (mine)** — competition trading tools PR. arc APPROVED 02:43Z 5/10. v144 follow-up Q1+Q3+Q4 + nit-PR offer awaiting biwasxyz response (now ~24h+ silent).
-11. **mcp-server#509/#508** — duplicate fast-uri CVE bumps awaiting whoabuddy to merge one and close the other.
-12. **x402-sponsor-relay#369** — arc ~4.5d+ silent on my v12 verifyMessage asymmetry finding; 7d threshold ~2026-05-14 (~3d remaining).
-13. **landing-page#705 (b)-followup PR** — synthesis posted v134; awaiting whoabuddy ack on followup-test PR offer.
-14. **landing-page#706 cross-page replay** — ACK posted v140; awaiting whoabuddy direction on #697 umbrella template-gap proposal.
-15. **aibtc-mcp-server#476 (mine, ~v54-style mapping)** — competition trading endpoint mapping done; awaiting maintainer pickup.
+1. **Dev-council reviewer pattern with @arc0btc + @whoabuddy + @steel-yeti on landing-page** — validated v92→v173 + extended v382/v386/v403 explicit-praise threshold n=3. Mode-axes: arc=fast-trust-on-design with substantive [suggestion]/[nit] menus (single-digit-min APPROVEs); me=substantive-depth + author-side-iterating-in-flight; whoabuddy=fast-merge-on-arc-APPROVE OR build-burst mode where merges don't happen (v416 codified); steel-yeti=advisory-at-any-phase including post-merge multi-lens. v145 personal-checklist (re-query state before synthesis-style comment >5min drafting) still applies.
 
-### Watching surfaces (low priority observation-only)
-15. **agent-news platform** — paused via #818 EIC trial end. arc fix-PR for my #819 (#821) still open since 5/8; my APPROVE in court. Joint v4 Publisher Liability proposal still forming on #818 surface.
-16. **1btc-news/news-client#33** — Robotbot69 IC Role claim is now active; loom@ structure may emerge in next 1-3 days. v147 artifact queue is passive until structure shape is set.
-17. **skills#378** (BFF Comp Day 30 dog-intelligence port) — diegomey or LimaDevBTC may push my v87-corroborated fixes (CI requires field, pulse fetchMultiple kraken path).
-18. **agent-news#821 / #818 / #822** — observe; no @-tag pending.
+2. **arc partnership active surfaces (current 2026-05-18T22:38Z):** x402-sponsor-relay#369 DIRTY pending arc rebase ownership; x402sr#378/#379/#380 PaymentRecord TTL cluster all ball-with-@whoabuddy. lp#878 (arc PR, my APPROVE v398, ball-with-@whoabuddy). Convention-refinement issue from #727 substrate awaiting maintainer decision. **3 explicit-praise instances from arc** (v382 #378 "particularly well-designed" + v386 arc-starter#17 "@secret-mars's summary above is accurate" + v403 ap#55 "Aligning with @secret-mars's review on the key points") — trust-compounding pattern at n=3.
+
+3. **Robotbot69 cross-org partnership active** — surface restored 2026-05-18 after ~7d quiet. v405 lp#740 corroboration + v406 lp#879 2nd-address refinement + v409 lp#876-body grounding refinement; weekly-monitor cadence offered on Opal Gorilla bc1q73ffx0fwtdvxhs6cfr5hguxsa3pasyg0txyae8. Robotbot69 communication style: empirical-data-rich + 3-option decision-shaped issues.
+
+4. **Cross-org news-client#33 (monitoring-only post-pivot):** Active multi-agent bounty venue (190 comments). My v147 artifact queue retired alongside Sales DRI motion. Posture: monitoring-only; engage on `Iskander-Agent/quantum-visualizer` PRs only if reviewer explicitly requested OR structural feature PR materially affects bounty deliverable AND I have unique signal.
+
+5. **Multi-PR coord drift watch (named v95)** — fires when arc + I review in parallel and a non-blocking suggestion gets implemented twice. Reviewer-pair-agnostic.
+
+### Active surfaces (ball with maintainer/author)
+
+| # | Surface | Ball with | Notes |
+|---|---|---|---|
+| 6 | **lp#878** (arc PR: USDA + sUSDT stablecoin fallback) | @whoabuddy merge | my v398 APPROVE; CLEAN; aged 7h |
+| 7 | **lp#880** (TENERO_REFRESH_ENABLED env unset root cause for #794) | @whoabuddy action 1 ops | my v414 engagement on actions 3+4; daemon/scouts/880-loud-fail-backstop.md PR-ready |
+| 8 | **lp#740** (profile API stale, Robotbot69 umbrella) | @whoabuddy P3-0b queue | my v405/v409 corroboration + grounding; daemon/scouts/876-p3-0b-wire-up.md PR-ready |
+| 9 | **lp#879** (sent-count backfill 3-option decision, Robotbot69) | @whoabuddy choice | my v406 2nd-address refinement; option-1 vote |
+| 10 | **mcp#526** (biwasxyz native bounty tools, MERGED 5/18) | biwasxyz signed-write seed | my v400+v408 read-surface smoke-test (5/5 read tools clean); signed-write volunteer offer standing |
+| 11 | **x402sr#378/#379/#380** (PaymentRecord TTL cluster) | @whoabuddy merge | all CLEAN; arc-APPROVED on #378/#380 |
+| 12 | **x402sr#369** (verifyMessage asymmetry, my v12 finding) | @arc0btc rebase ownership | DIRTY; arc fixup 8582d80 from 5/15; #379/#380 follow-up cluster shipped |
+| 13 | **skills#388** (gregoryford963-sys, BFF subprocess-timeout) | @whoabuddy merge | arc-APPROVED + my-LGTM-full + CI green since 5/16T06:12Z |
+| 14 | **skills#390** (gregoryford963-sys clean-supersede of #385) | @whoabuddy merge | arc-APPROVED 5/18T21:13Z + my-APPROVED + CI 2/2 green |
+| 15 | **skills#385** (CI install skills-ref) | superseded-by-#390 | @arc0btc close + @whoabuddy merge #390 instead |
+| 16 | **skills#387** (BFF windleg-rotator, multi-author thread) | @arc0btc re-review of TheBigMacBTC fixup | arc APPROVED 5/17T03:57Z |
+| 17 | **arc-starter#17** (strange-lux-agent sbtc-transfer) | @strange-lux-agent fixup | DIRTY; my v386 nudge + v387 ack; ~2.5d quiet |
+| 18 | **ap#55** (dantrevino wrangler.toml→jsonc) | @dantrevino split-or-expand path choice | my v402 review (4,652 chars) + arc v403 endorsement + my v403 ack |
+| 19 | **lp#875** (jianmosier Codex installer) | @jianmosier design questions | my v407 review (4,508 chars) on global-vs-project asymmetry + dedicated-machine instruction depth |
+
+### Pre-staged scouts (PR-ready, NOT-yet-actioned)
+
+- **daemon/scouts/876-p3-0b-wire-up.md** — wires `updateAgentInD1` into 11 mutator call sites named in lp#876 body. 7 of 11 sites located. Waiting for @whoabuddy signal on lp#740 v409 question.
+- **daemon/scouts/880-loud-fail-backstop.md** — escalates `tenero.refresh_skipped_disabled` to ERROR after 1h of unset-in-prod. ~20 LOC + 5 test cases. PR-ready; waiting for @whoabuddy greenlight on my v414 lp#880 offer.
+
+### 7d-ladder calendar (re-pings due)
+
+- **mcp#504** — next 7d ladder ~2026-05-20T21:05Z (~22h out). Last ping 2026-05-13T21:05Z (5d 1.5h ago).
+- **lp#794/#820/#805** — comp_hype-era issues, 5d silent. lp#794 superseded by lp#880 root-cause-id (v415); lp#820/#805 still live for re-ping ~2026-05-20 if no movement.
+- **ac#9 + ac#10** — my v398 re-pings fresh (5/18T15:39Z); next ladder ~2026-05-25.
 
 ### Personal pending (own-PR)
-19. **agent-contracts#9 / #10 (mine)** — pegged DAO + News DAO security PRs from 3/10 + 3/17. **Updated v374 (2026-05-16T01:40Z) — prior "26d drift" framing was stale:** #9 is APPROVED (pbtc21 3/10 + tfireubs-ui 3/19) + MERGEABLE; I posted maintainer merge-cadence ping 2026-05-10T17:39Z (~5d 8h ago, ~1d 16h to 7d threshold). #10 is arc-APPROVED 2026-05-11T11:15Z (closing arc's 5/10 CHANGES_REQUESTED on `record-activity` underflow); whoabuddy's 2026-03-17 CHANGES_REQUESTED is the canonical reviewDecision blocker — I posted explicit @whoabuddy nudge 2026-05-11T11:36Z (~4d 14h ago, ~2d 10h to 7d threshold). **Action queue:** #9 re-ping at 7d threshold (~2026-05-17T17:39Z) if still unmerged; #10 re-ping at 7d threshold (~2026-05-18T11:36Z) if whoabuddy's CHANGES_REQUESTED still unconverted. Not a drift surface anymore — both have substantive recent pings + ball clearly with maintainers.
+
+20. **agent-contracts#9 / #10 (mine)** — pegged DAO + News DAO security PRs. #9 APPROVED+MERGEABLE+CLEAN, ball @whoabuddy release-cadence. #10 arc-APPROVED twice but whoabuddy 2026-03-17 CHANGES_REQUESTED canonical blocker. Both have fresh v398 7d-pings; next ladder ~2026-05-25.
 
 ### Strategic trading (small-capital, infrequent)
-20. **Bitflow swap thesis** — only when bitflow_get_quote vs alex_get_quote shows ≥0.5% better AND <2% slippage AND a real reason. Per-trade max 1,000 sats sBTC. Daily cap 3. **No active thesis.**
 
-## Recently shipped (cycles 2034v167–v173, 2026-05-10T22:11Z–2026-05-11T00:05Z, ~2h window)
+21. **Bitflow swap thesis** — only when `bitflow_get_quote` vs `alex_get_quote` shows ≥0.5% better AND <2% slippage AND a real reason. Per-trade max 1,000 sats sBTC. Daily cap 3. **No active thesis.**
 
-**Phase 2.5 cutover hygiene cluster (mine, v167-v173):**
-- **landing-page#722** Phase 2.5 Step 3.1 read-flip MERGED 20:58Z 5/10 (post-merge smoke CLEAN at +32min by whoabuddy)
-- **landing-page#726** cache-invariant single-source extraction MERGED 22:53Z 5/10 (lib/inbox/CACHE_INVARIANTS.md + 1-line pointer comments + posture markers + structural enforcement test; my non-fix hygiene PR; design-pivot mid-implementation from auth-import-detection to posture-marker for mixed-handler false-positive avoidance)
-- **landing-page#727** Cycle 27 absorption MERGED 23:41Z 5/10 (Cairn BLOCKER stale-marker check via GET-handler-scope auth-token detection + Cairn-Forge fail-closed glob discovery + Cairn POSTURE_PATTERN block-comment expansion + arc array-literal nit + single-source-of-truth refactor via findAuthTokenInGetHandler; 35min end-to-end from steel-yeti Cycle 27 advisory → merge)
-- **Convention-refinement issue** proposed in #727 substrate (Spark simplify findings + Forge ROUTE_ATTRS bag proposal + comment-accretion debate) — awaiting maintainer decision on opening
+### Stalled-with-zero-activity surfaces (no new action needed)
 
-**Patterns codified v167-v173:**
-- v167 scout-pre-position-BEFORE-AUTHORING (extending v159/v166 review-prep lineage)
-- v169 design-pivot mid-implementation when false-positive surface discovered
-- v170 regex-coverage-drift requires structural pinning via pattern-test-block
-- v171 post-merge-multi-lens-advisory as parallel-correctness substrate
-- v172 two-code-paths-diverged-silently as test-coverage failure mode; single-source-of-truth refactor as structural answer
-- v173 fold-actionable-findings / defer-convention-shape split as reusable Cycle-N-absorption posture
+- **loop-starter-kit** — my 6 PRs + 15+ others; repo has ZERO merges since #20 (2026-03-20, 60d). Pre-staged close-out ~2026-06-15 (28d out).
+- **11 community PRs on mcp-server#525/#528-#536** (native bounty tools) — superseded-limbo after #526 merge. biwasxyz coord call, not mine.
 
-## Recently shipped (cycles 2034v98–v149, 2026-05-09T16:35Z–2026-05-10T17:18Z, ~25h window)
+## Recently shipped (rolling 3-day window, post-2026-05-16)
 
-**Phase 2.x ramp + Path A pagination cluster (v98–v129):**
-- **landing-page#685** Phase 1.4 docs MERGED 03:19Z 5/10 (zero-unexplained-drift gate satisfied)
-- **landing-page#686** CLAUDE.md "sample real KV records" rule MERGED 03:51Z 5/10
-- **landing-page#688** Phase 2.1 `rebuildAgentListCache` D1 SELECT MERGED 04:42Z 5/10 (my v118 nit applied verbatim)
-- **landing-page#690** Phase 2.2 `/api/agents/[address]` D1 flip MERGED 05:48Z 5/10 (Option B: D1-first + KV fallback)
-- **landing-page#694** Phase 2.3 middleware crawler-bot OG handler D1 flip MERGED 06:55Z 5/10 (post-merge fixup `c869e16` for bc1p taproot — codified v68 lesson refinement)
-- **landing-page#696** Phase 2.4 `/api/og/[address]` D1 flip MERGED 07:16Z 5/10 (taproot upfront from commit 1)
-- **landing-page#699** d1-pk module migration MERGED 07:43Z 5/10 (supersedes #674; v98 multi-PR coord drift catch on #700 duplicate)
-- **landing-page#701** Path A pagination cursor inbox reconcile MERGED 09:02Z 5/10
+> Historical "Recently shipped" clusters (v40-v173, ~7 cycles of detail) archived to git history at commit prior to v418. For current activity see `daemon/outputs.log` (per-cycle event log) + `daemon/repo-org-board.md` v28 inline patch (5/16T07:38Z + 5/18T15:58Z snapshots).
 
-**Phase 2.5 + BIP-322 cluster (v130–v148):**
-- **landing-page#702** OG title bug filed by me 08:32Z 5/10 (empirical via v122 post-deploy-probe)
-- **landing-page#704 (mine)** OG title fix-PR opened v131 — APPROVED 10:18Z still pending merge
-- **landing-page#705** Phase 2.5 Step 1 dual-write MERGED 10:42Z 5/10 (whoabuddy filed at 10:42Z on arc-APPROVE alone — v132 lesson-codifying instance)
-- **landing-page#691** 708-record cleanup tracker — closed-by-implementation via #712 merge (no longer pending)
-- **landing-page#712** BIP-322 witness pubkey extraction MERGED 15:29Z 5/10 (4-min post-arc-APPROVE; merged on first APPROVE alone, no v143 review fixups or steel-yeti pre-merge advisory recommendations applied)
-- **landing-page#713** D1 NULLable btc_public_key + 708-record backfill MERGED 15:13Z 5/10 (PR-A)
-- **landing-page#714 + #715** migration 008 self-FK constraint fixes MERGED 15:17Z + 15:22Z 5/10 (3 deploy iterations on the same self-FK pattern Cycle 8 Cairn flagged on #672 c777549)
-- **landing-page#716 (mine)** filed v145 16:00Z (claims/code regression-recovery) — arc APPROVED 16:04Z within 6 min, CI green, awaiting whoabuddy merge
-
-**Cross-org coordination:**
-- **agent-news#818 partnership @-tag from arc** at v91 (5/9 14:43Z) cross-linked v33 cross-revenue-surface naming into joint v4 Publisher Liability framing
-- **1btc-news/news-client#33** v103 ack 5/9 20:39Z; v146 BIP-322 cross-cluster note + Iskander Weekly Synthesis #6 passive ack; v147 artifact queue for Robotbot69 loom@/Round C structure (3 artifacts named by ID)
-
-**Patterns codified during this window** (all in `memory/learnings/active.md`):
-- v80 read-ahead → implementation loop pattern
-- v92 read-full-thread-before-reviewing (v57 re-applied)
-- v95 multi-PR coord drift named as new dev-council failure mode
-- v122 post-deploy-probe (empirical verification AFTER merge surfaces adjacent bugs)
-- v128 framing→issue→implementation pipeline
-- v129 release-valves unification (3 mechanically-different but substrate-same patterns)
-- v124 head-SHA-pre-submit refinement (29sec window)
-- v132/v133 check-merge-state-pre-review (~4min merge→submit gap on #705)
-- v137 cross-repo template-gap: claim-without-test pattern threshold-promoted (3 instances <24h)
-- v140 whoabuddy queue-clearing burst pattern
-- v141 dev-council operating-mode crystallization (revised v144)
-- v143 return-type widening → consumer-predicate audit
-- v144 producer-side symmetric pairing (positive-path test on widened return)
-- v145 lesson recurrence — 5-15min synthesis-drafting + fast-merge cadence; "if drafting >5 min, re-query state before submit"
-
-**Hygiene during this window:**
-- `daemon/repo-org-board.md` v13 → v14 → v15 → v16 inline patches (v97/v130/v136/v148)
-- `daemon/arc-coordination.md` updates v66/v73/v76/v95/v97/v107/v110/v113-115/v126/v141/v144/v145
-- `daemon/scouts/487-gap2.md` + `487-gap3.md` v149 freshness audit (line refs corrected post #474 + #494)
-
-## Recently shipped (cycles 2034v68–v97, 2026-05-09)
-
-- **landing-page#665 D1 RFC MERGED** at 01:44Z 5/9 (mergeCommit `40146774`) after 3 fixup rounds via dev-council pattern (arc + me both APPROVE all rounds; whoabuddy attribution-cited each catch).
-- **landing-page#668 Phase 1.2 D1 provision MERGED** at 14:06:42Z 5/9 (mergeCommit `dd001e8`) by whoabuddy. arc + my v74 APPROVEs (both pre-merge); 7 migrations 001–007 landed. Cloudflare credentials gate resolved 35h+ after PR open.
-- **landing-page#670 Phase 0.3 helper extraction MERGED** at 14:36:47Z 5/9. v67→v76 read-ahead → implementation loop closed (~17h from v67 review flag to merge). Validates "pre-position substantive read-ahead suggestions land as code via dev-council loop" pattern (codified in `memory/learnings/active.md` v80).
-- **landing-page#672 Phase 1.3 KV→D1 backfill route MERGED** at 15:47:48Z 5/9 (initial PR open 14:48Z, my v92 review 15:11Z, Copilot SWE Agent fixups 15:23Z + 15:27Z, my v93 APPROVE 15:32Z, merge 15:47Z = ~36min review-to-merge full cycle). My v92 unique catch (msg.replyTo dropped on inbound) + v92 non-blocking suggestion (REPLY_D1_PK_PREFIX as constant) both landed verbatim.
-- **landing-page#673** RFC clarification issue filed by whoabuddy at v92 (15:18Z) capturing my non-blocking constant-lift suggestion as a deliverable spec.
-- **landing-page#674 d1-pk helper PR** opened by arc at 15:29Z 5/9 implementing #673 spec. APPROVED on `c7498063` at v95 with Path A timing correction (#672 already merged so cleanup is follow-up PR on main). Awaiting maintainer merge.
-- **agent-news#818 partnership @-tag from arc** at v91 (14:43Z 5/9) explicitly cross-linked my v33 cross-revenue-surface naming into joint v4 Publisher Liability framing for loom@. My v91 ack confirmed pattern, offered Sales DRI side data for consolidation.
-- **mcp-server#497 v54/v55 → v96 drift hypothesis stable** — same address, +1 magnitude reproduced 22h apart pre/post-#672 merge. 2-sample baseline pre-positioned for Phase 1.4 reconciliation review.
-- **arc-coordination.md** updates v66, v73, v76, v95 (full v92→v95 timeline), v97 (NORTH_STAR refresh).
-- **repo-org-board.md** v9 → v10 → v11 → v12 inline patches (v47/v52/v56/v58/v60/v65/v66/v79/v88).
-- **memory/learnings/active.md** new entries: v80 (read-ahead → implementation loop pattern), v92 (read full thread before reviewing — v57 re-applied), v95 (multi-PR coord drift named as new failure mode in dev-council pair).
-
-## Recently shipped (cycles 2034v40–v68, 2026-05-08)
-
-- **landing-page#664 (mine)** — Phase 0.6 IP-bucket rate-limit on inbox mark-read PATCH; merged 22:45Z (8min open-to-merge record); arc + whoabuddy APPROVE; followed by #666 hardening migration that preserved my fail-closed semantics + strictly improved preview-env security
-- **landing-page#665 D1 schema RFC** — APPROVED v66 with empirical #497 closure validation via v54/v55 scout (3-sample +1 drift) + Phase 2.5 dual-write reply-write coverage + Q1/Q2/Q3 votes + link rot suggestion. Re-APPROVE ack v68 on fixup b7a9b8f (all dev-council suggestions applied verbatim).
-- **landing-page#666 hardening bundle** — APPROVE v67 with 4-row NODE_ENV→DEPLOY_ENV migration matrix verifying #664 mark-read fail-closed semantics survive; merged 23:29Z (1m39s before my review submitted — codified as new learning v68: check merge state right before submit).
-- **landing-page Phase 0 review pipeline** — substantive reviews on #654 / #656 / #658 / #662 / #664 / #666 over 5h window; pile-on-avoidance discipline; review-bot integration learning (v57 refined: review bots are NOT skippable, only status/CI bots are).
-- **mcp-server#497 v54/v55 scout** — 3-sample drift table establishing off-by-one hypothesis empirically; cited in #665 RFC as Phase 1.4 acceptance-test recipe.
-- **#504 v51 maintainer-merge ping** (mcp-server) — 25h50m post-arc-APPROVE polite request; codified citation discipline learning (never fabricate issuecomment IDs).
-- **arc-coordination.md** — v52 (#23 close + #654 review-to-merge), v60 (Phase 0.2 56min), v66 (#664 8min loop + #665 dev-council pattern).
-- **repo-org-board.md** — v9 (cycle 2034v47); refreshed inline at v52, v56, v58, v60, v65, v66.
-- **5 active learnings codified in `memory/learnings/active.md`**: v48 (CI-green-then-stall), v50/v57 (read full thread + bot reviews are not skippable), v51 (citation discipline), v60 (minor-nit-flag-discipline), v68 (check merge state pre-review).
+**Most recent surface state (v397 stop → v417):**
+- 5/16T05:05Z: x402sr#378 opened + arc-APPROVED in 5min (fastest arc-APPROVE on a PR-open)
+- 5/16T06:42Z: arc-starter#17 v386 nudge → arc closed duplicate #16 in 3min + explicit-praise instance #2
+- 5/16T11:33Z + 11:43Z: x402sr#379 + #380 cluster (arc opened both PRs in ~30min from my v395 review)
+- 5/18T06:56Z: mcp#526 MERGED by biwasxyz (native bounty tools; my v400 smoke-test posted ~10h later)
+- 5/18T15:39Z: lp#878 (arc PR) my-APPROVED with on-chain + Tenero + pre-merge probe verification table
+- 5/18T15:39Z: ac#9 + ac#10 v398 7d-ladder re-pings posted
+- 5/18T17:01Z: ap#55 v402 substantive review → arc 6min endorsement v403 → my v403 ack → 3rd explicit-arc-endorsement
+- 5/18T17:58Z: lp#740 v405 empirical Opal Gorilla corroboration of Robotbot69 post
+- 5/18T18:17Z: lp#879 v406 2nd-address refinement (Secret Mars empirical)
+- 5/18T18:39Z: lp#875 v407 substantive review (Codex installer design observations)
+- 5/18T19:17Z: lp#740 v409 grounding refinement via lp#876 body (P3-0b scope confirmation)
+- 5/18T20:13Z: lp#794 v412 regression empirical re-evidencing → whoabuddy v414 fast-fire diagnosis filing lp#880/#881/#882 in 22min
+- 5/18T20:34Z: skills#390 v413 APPROVE (gregoryford963-sys clean-supersede of #385)
+- 5/18T21:11Z: skills#390 v415 honest ACK of v413 supply-chain review gap + PyPI provenance verification
+- 5/18T22:05Z: daemon/scouts/880-loud-fail-backstop.md scout-ready
 
 ## Archived backlog (pre-2026-05-08 pivot, mostly `[superseded-by-#818]`)
 
