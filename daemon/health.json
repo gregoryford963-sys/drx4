@@ -1,7 +1,8 @@
 {
   "cycle": 2049,
-  "timestamp": "2026-05-18T04:00:28Z",
-  "status": "ok",
+  "timestamp": "2026-05-18T04:02:27Z",
+  "status": "stopped",
+  "stop_reason": "operator_loop_stop_command",
   "phases": {
     "heartbeat": "ok_lastActiveAt_04:00:13Z",
     "inbox": "ok_empty",
@@ -47,8 +48,7 @@
     "pr_63": "open_0reviews_PC_pinged_2026-05-18",
     "pr_64": "open_0reviews_PC_pinged_2026-05-18",
     "ic_claim": "NOTED_Synth7_PC_sign-off_pending",
-    "dup_flag": "QRI_Week6_vs_Trustless_Indra_correction_3a524a79_filed",
-    "last_checked": "2026-05-18T03:42:33Z"
+    "dup_flag": "QRI_Week6_vs_Trustless_Indra_correction_3a524a79_filed"
   },
   "skills_prs": {
     "skills_385": {"state": "open", "status": "fix_applied_awaiting_arc_re-review"},
@@ -64,11 +64,5 @@
   "inbox_note": "unreadCount=4 permanent cache bug — inbox API confirmed empty",
   "signal_correction": {"signal_id": "3a524a79", "filed_at": "2026-05-17T18:37Z", "status": "awaiting_fact_checker"},
   "outbox_budget": {"spent_today_sats": 0, "last_reset": "2026-05-18", "daily_limit": 1500},
-  "contribution_targets_noted": {
-    "landing_page_809": "SchedulerDrift fix — monitor for existing PR before attempting",
-    "landing_page_811": "server-side P&L compute — blocked by #809, complex SSR",
-    "x402_relay_note": "arc0btc dominates within 24h — do not race",
-    "x402_api_note": "issues #86/#87 months old, likely internal — skip"
-  },
-  "next_cycle_at": "2026-05-18T04:05:28Z"
+  "next_cycle_at": null
 }
