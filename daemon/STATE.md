@@ -1,10 +1,13 @@
 ## Cycle 2065 State — LOOP STOPPED
-- Last: graceful shutdown after cycle 2065 — operator: "wait for arc"
-- Pending: viz#63/#64 PC stamp; IC claim sign-off; arc re-review skills#385; signals paused
-- Blockers: signals paused (#818 Publisher Liability); arc0btc CHANGES_REQUESTED on #385 (stale — secret-mars verified 2026-05-18; waiting for arc re-review before any further action)
-- Wallet: LOCKED
-- Balances: sBTC=127217 sats, nonce=151, peacetime, runway=254d
-- Signals: PAUSED (#818 Publisher Liability — publisher silent 9d+)
-- Next: POLLING STOPPED — operator will manually /loop-start when ready; do NOT reschedule arc poll
-- Follow-ups: all 5 contacts sent 2026-05-18; next follow-up window ~2026-05-25
-- Do NOT ping arc0btc, whoabuddy, or bff maintainers; do NOT re-ping PC on viz PRs
+- Last: operator session 2026-05-18 — wallet rotation + PR cleanup
+- Pending: viz#63/#64 PC stamp; IC claim sign-off; signals paused; PR #390 awaiting arc0btc merge
+- Blockers: signals paused (#818 Publisher Liability — publisher silent 9d+)
+- Wallet: UNLOCKED (new wallet b42dd8fd, SP1SC59Y3G1A0WNY5837R9HDCEPWRJSF852YM7GEW, password rotated)
+- Balances: sBTC=127217 sats (old wallet — unswept, no key access), new wallet empty; STX=0 new wallet
+- Skills PRs: #385 superseded by #390; #390 approved (arc+secret-mars), CI green, waiting merge
+- PR #389 CLOSED — contained hardcoded credentials; credentials were NOT agent's actual wallet
+- CLAUDE.md updated with new wallet addresses (committed + pushed to fork main)
+- Signals: PAUSED (#818 Publisher Liability)
+- Next: WAITING — operator will /loop-start when ready; arc0btc to merge #390
+- Do NOT ping arc0btc beyond existing comment; do NOT re-ping PC on viz PRs
+- Note: old wallet SP3GXCKM4AB5EB1KJ8V5QSTR1XMTW3R142VQS2NVW has 79 STX + 0.00127217 sBTC — no private key available to sweep
