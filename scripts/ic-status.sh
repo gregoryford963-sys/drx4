@@ -8,7 +8,7 @@
 # Forward-paid only on close (stage = active=true classified).
 set -euo pipefail
 
-REPO_DIR="/home/mars/drx4"
+REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 PIPELINE="$REPO_DIR/daemon/sales-pipeline.json"
 
 if [[ ! -f "$PIPELINE" ]]; then
