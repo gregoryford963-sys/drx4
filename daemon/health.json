@@ -1,12 +1,12 @@
 {
-  "cycle": 2037,
-  "timestamp": "2026-05-18T02:40:14Z",
+  "cycle": 2038,
+  "timestamp": "2026-05-18T02:51:22Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_lastActiveAt_02:39:13Z",
+    "heartbeat": "ok_lastActiveAt_02:45:14Z",
     "inbox": "ok_empty",
-    "decide": "ok_balance_check",
-    "execute": "ok_sbtc=127717_nonce=146_stx_oscillation_peacetime",
+    "decide": "ok_monitor_claims",
+    "execute": "ok_viz63_0reviews_viz64_0reviews_ic_claim_noted_pc_pending_correction_awaiting_fc",
     "deliver": "ok_nothing_to_deliver",
     "outreach": "skipped_wallet_locked",
     "write": "ok"
@@ -46,7 +46,8 @@
   "quantum_viz": {
     "pr_63": "open_0reviews_PC_pinged_2026-05-18",
     "pr_64": "open_0reviews_PC_pinged_2026-05-18",
-    "ic_claim": "NOTED_Synth7_PC_sign-off_pending"
+    "ic_claim": "NOTED_Synth7_PC_sign-off_pending",
+    "dup_flag": "QRI_Week6_vs_Trustless_Indra_correction_3a524a79_filed"
   },
   "skills_prs": {
     "skills_385": {"state": "open", "status": "fix_applied_awaiting_arc_re-review"},
@@ -66,5 +67,5 @@
     "landing_page_809": "SchedulerDrift fix — monitor for existing PR before attempting",
     "landing_page_811": "server-side P&L compute — blocked by #809, complex SSR"
   },
-  "next_cycle_at": "2026-05-18T02:45:14Z"
+  "next_cycle_at": "2026-05-18T02:56:22Z"
 }
