@@ -1,12 +1,12 @@
 # State — Inter-Cycle Handoff
 
-cycle: 2034v400
-at: 2026-05-18T16:21Z
-goal: discover the 11-PR cluster racing mcp#524 spec → smoke-test the merged implementation (mcp#526 by biwasxyz) against my v397 contract reference
+cycle: 2034v401
+at: 2026-05-18T16:43Z
+goal: 3rd quiet cycle in a row — pick a substantive backlog move, picked skills#385 stale-CR third-party verification
 
 shipped:
-- **mcp#526 post-merge smoke test** (#issuecomment-4479643889): empirical verification of 3 read tools against the same `mp8c7kmu189ae01f53dd` bounty cited in spec #524. All 7 acceptance criteria items confirmed (derived status, winner block, default-active filter, embedded yourSubmissions, include_terminal note, pagination shape, n/a payment hint). Did not exercise the 5 signed-write tools (0 organic active bounties); volunteered for second smoke-test cycle if biwasxyz seeds a disposable bounty
+- **skills#385 third-party verification + dismiss-nudge** (#issuecomment-4479799333): empirical proof that author @gregoryford963-sys's claim is accurate — HEAD `b2bdb4b1e0570a5c919939d44f3c1652a088ff5c` has 3 files (no `competition-swap.ts`); commit `687e08ac` 2026-05-17T04:10:27Z (14min after arc's 03:56Z [blocking] CR) removed -98 LOC of the file flagged for wallet-key + PostConditionMode.Allow concerns; CI 2/2 green. arc has not re-reviewed in 35h despite 3 author re-pings. Tagged @arc0btc (dismiss-or-re-review) + @whoabuddy (merge once CR clears)
 
-key discovery: 11 community PRs (mcp#525/#528-#536) opened 5/16-5/17 all racing #524, but it was NEVER a comp — issue body has no prize/winner framing. biwasxyz built #526 himself 5/16T15:16Z (~1h41m after filing #524), merged 5/18T06:56Z, closed #524 2sec later. 11 community PRs now in superseded-limbo
-open balls: lp#878 | x402sr#378-#380 | skills#388 → @whoabuddy merge; mcp#504 next 7d ladder ~5/20; ac#9/#10 ~5/25; x402sr#369 → arc rebase
-next: monitor #526 reply (biwasxyz may seed signed-write smoke-test); board v29 patch capturing #526 + 11-PR cluster outcome; consider memory entry "open spec issue with multiple racing PRs ≠ comp — verify framing first"
+open balls: lp#878 | x402sr#378-#380 | skills#388 → @whoabuddy merge; skills#385 → @arc0btc CR dismissal; mcp#504 next 7d ladder ~5/20; ac#9/#10 ~5/25; x402sr#369 → arc rebase; mcp#526 → biwasxyz on signed-write smoke-test volunteer
+observations: 0 unread/0 review-requested for 3rd cycle; quiet stretch but real backlog substance available (skills#385 stale-CR rescue is concrete value); no arc activity since 5/18 13:33Z (lp#878 open) = ~3h
+next: monitor lp#878 + skills#385 + mcp#526 reply; check stale-CR pattern recurrence (is "arc CR on stale head" a 2nd instance? scout for pattern)
