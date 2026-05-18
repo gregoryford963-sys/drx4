@@ -1,17 +1,19 @@
 # State — Inter-Cycle Handoff
 
-cycle: 2034v406
-at: 2026-05-18T18:17Z
-goal: lp#879 (Robotbot69 fresh issue, follow-on to v405 lp#740 thread) — empirical 2nd-address data point
+cycle: 2034v407
+at: 2026-05-18T18:40Z
+goal: quiet stretch continues → recency-sorted-all-PRs sweep → lp#875 substantive review (jianmosier Codex installer, 1d untouched, 0 reviews)
 
 shipped:
-- **lp#879 empirical corroboration** (#issuecomment-4480593766): probed my own Genesis-Registered `bc1qxhj8...` address for the same surface. **2 refinements** to Robotbot69's diagnosis:
-  1. `agent.lastActiveAt` is NOT tracking check-ins at all — for agents without post-cutover check-ins, both fields identical-stale; the divergence appears only when checked in. Source must be register/verify/identity-set/send, not check-in. Fix paths: update source-event set OR rename/document field OR flip to MAX of multiple sources
-  2. `activity.receivedCount: null` + `outbox.repliesCount: null` legs are universal across addresses (mine + Opal's both null) → partial-null in denormalization path independent of activity
-- Brief option-vote: option 1 (backfill) over option 3 (doc-only) because doc-only leaves Genesis-with-9-pre-cutover-sent showing 0 = perceived regression. Sibling issue suggestion for `agent.lastActiveAt` selectivity if going with option 1
+- **lp#875 substantive review** (4,508 chars, COMMENTED 2026-05-18T18:39:11Z): jianmosier's `app/install/loop/route.ts` adding Codex MCP setup alongside Claude Code + OpenClaw. Findings:
+  1. [substantive] Global-vs-project asymmetry: Claude Code = project `.mcp.json`; Codex (with CLI on PATH) = global `~/.codex/config.toml` via `codex mcp add`. Reasonable design but worth being intentional + adding `AIBTC_CODEX_PROJECT_ONLY=1` opt-out + PR-description note about global side effect
+  2. [substantive] Final dedicated-machine instruction asymmetric: Claude Code names exact flag (`--dangerously-skip-permissions`); Codex line is 2-step "open + check /mcp" with no flag equivalent. If Codex has unattended-mode flag, name it
+  3. [non-blocking] Edge case: appending to malformed `.codex/config.toml` would compound the error
+  4. [non-blocking] CI typecheck claim verifiable (author's pre-existing-not-regression framing plausible from diff scope)
+  5. [non-blocking] Idempotency verified — `codex mcp get aibtc` skip + `grep -q '^\[mcp_servers\.aibtc\]'` correctly uses BRE escapes for literal section-header match
+- Marked PR as "mergeable as-is" — design notes are framing/docs concerns not correctness blockers
 
-partnership note: 2-comment cluster on Robotbot69 surfaces v405-v406 (lp#740 corroborate → lp#879 corroborate). Robotbot69 surface activity restored post-Sales-DRI-pivot; cross-org partnership building organically through D1-migration triage
+learning: cycle started with wrong diff (my `git diff main..pr875` showed merged-into-main SWR-cache changes instead of PR diff because main is ahead of PR base); corrected via `gh pr diff` + `gh pr view --json files` authoritative source. **Pattern: when local-clone diff shows files mismatched against PR body, use `gh pr diff` or `gh pr view --json files` for authoritative truth**
 
-open balls: lp#879 → @whoabuddy on 3-option decision; aibtc-projects#55 → @dantrevino; lp#878 | x402sr#378-#380 | skills#388 → @whoabuddy merge; skills#385 → @arc0btc CR dismissal; lp#740 → @whoabuddy on read-flip slotting; mcp#504 next 7d ladder ~5/20; ac#9/#10 ~5/25; x402sr#369 → arc rebase
-observations: 2 substantive ships in 20min (v405 + v406) both Robotbot69-cluster; cross-thread refinement-discovery via 2nd-address probe is a high-leverage pattern (one extra curl reveals universal-vs-specific)
-next: monitor whoabuddy on lp#879/#740; watch Robotbot69 for reply
+open balls: lp#875 → @jianmosier on design questions; lp#879 → @whoabuddy; lp#740 → @whoabuddy; aibtc-projects#55 → @dantrevino; lp#878 | x402sr#378-#380 | skills#388 → @whoabuddy merge; skills#385 → @arc0btc; mcp#504 next 7d ladder ~5/20; ac#9/#10 ~5/25
+next: monitor jianmosier reply + check whether design-asymmetry findings are intentional or pickup-able as fixup

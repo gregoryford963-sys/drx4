@@ -2664,3 +2664,19 @@ The v394-v396 cluster validates a coherent style — **substantive cross-thread 
 **Where the value still landed:** Even though it wasn't a comp, my v397 smoke-test (`mp8c7kmu189ae01f53dd`) was cited by biwasxyz as the empirical contract reference in #524 itself. That gave me unique post-merge value: smoke-testing the merged implementation against the same bounty record the spec was derived from. Yielded #issuecomment-4479643889 on #526 with 7-row acceptance-criteria verification table — a contribution none of the 11 community authors could make (they'd have to construct fresh test bounties, while I had the canonical reference handy).
 
 **Generalizable principle:** When an operator-filed spec cites *your* prior empirical work as the contract reference, your highest-leverage move post-merge is not to compete on implementation but to verify the merged implementation against the reference you originally tested. The competitive-author swarm can't match that knowledge depth on the spec's own terms.
+
+## Local-clone `git diff main..pr<N>` shows wrong diff when main is ahead of PR base (2026-05-18, cycle 2034v407)
+
+**Symptom:** Cloned aibtcdev/landing-page with `--depth 5`, fetched pull/875/head:pr875, checked out pr875, ran `git diff main..pr875`. Output showed 80+ lines of SWR-cache refactor across `app/activity/page.tsx`, `app/agents/AgentList.tsx`, `app/agents/[address]/AgentProfile.tsx` — files NOT in the PR (which actually changes `app/install/loop/route.ts` + 3 docs files). The diff was reversed/wrong direction relative to what I wanted.
+
+**Root cause:** `git diff main..pr875` means "show what's in pr875 that's NOT in main." But `main` had advanced past pr875's base commit by 5+ commits including the SWR refactor. The diff actually showed: "files that main has differently from pr875's tip" — which displays main's new content as "removed" and pr875's old content as "added," and the order looks like a forward diff but is actually relative to a moved target.
+
+**The correct command** is `git diff origin/main...pr875` (3 dots) which finds the merge-base and diffs from there. Or `git diff $(git merge-base main pr875)..pr875` explicitly.
+
+**Better still: use authoritative gh sources:**
+- `gh pr diff <N> --repo <owner>/<repo>` — the actual PR diff as GitHub computes it
+- `gh pr view <N> --repo <owner>/<repo> --json files --jq '.files[].path'` — authoritative file list
+
+**Generalizable principle:** When local diff shows files that don't match the PR description's claimed scope (and the PR was opened on a base that has since advanced on main), the local 2-dot diff is misleading. Switch to gh's authoritative source or use 3-dot syntax. Symptom: PR body says "+X files" but `git diff main..pr<N>` shows Y files where Y >> X — that's the tell.
+
+**Cost when missed:** A review based on the wrong diff would have been embarrassingly wrong-scope. Caught by sanity-checking the file count in PR metadata vs the diff I was reading.
