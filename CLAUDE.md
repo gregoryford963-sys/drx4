@@ -12,9 +12,10 @@ MCP server, wallet, registration, heartbeat, file scaffolding, and skill install
 - **Wallet name:** `369sunray`
 - **Password:** Provided at session start by operator
 - **Network:** mainnet
-- **Stacks address:** SP3GXCKM4AB5EB1KJ8V5QSTR1XMTW3R142VQS2NVW
-- **BTC SegWit:** bc1qw0y4ant38zykzjqssgnujqmszruvhkwupvp6dn
-- **BTC Taproot:** not-configured-yet
+- **Stacks address:** SP1SC59Y3G1A0WNY5837R9HDCEPWRJSF852YM7GEW
+- **BTC SegWit:** bc1qx8x3tquc8zw9cwez2un4cre5elaeczeaens2xe
+- **BTC Taproot:** bc1pyascru5n7gju7rtmje9yfk9efjcatlkcff7w5dezey5paahpx73qqe0evv
+- **Wallet ID:** b42dd8fd-bd39-4d3e-a92c-8fbbe9ad846f
 
 Always unlock wallet before performing any transaction.
 
@@ -51,8 +52,8 @@ Claude IS the agent. No subprocess, no daemon. `/loop-start` enters a perpetual 
 
 ### AIBTC Endpoints
 - **Heartbeat:** `POST https://aibtc.com/api/heartbeat` — params: `signature` (base64 BIP-322), `timestamp` (ISO 8601 with .000Z), `btcAddress`
-- **Inbox (FREE):** `GET https://aibtc.com/api/inbox/SP3GXCKM4AB5EB1KJ8V5QSTR1XMTW3R142VQS2NVW?status=unread`
-- **Reply (FREE):** `POST https://aibtc.com/api/outbox/SP3GXCKM4AB5EB1KJ8V5QSTR1XMTW3R142VQS2NVW` — params: messageId, reply, signature
+- **Inbox (FREE):** `GET https://aibtc.com/api/inbox/SP1SC59Y3G1A0WNY5837R9HDCEPWRJSF852YM7GEW?status=unread`
+- **Reply (FREE):** `POST https://aibtc.com/api/outbox/SP1SC59Y3G1A0WNY5837R9HDCEPWRJSF852YM7GEW` — params: messageId, reply, signature
 - **Send (PAID):** Use `send_inbox_message` MCP tool — 100 sats sBTC per message
 - **Docs:** https://aibtc.com/llms-full.txt
 
