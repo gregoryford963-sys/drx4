@@ -41,7 +41,7 @@
   "circuit_breaker": { "heartbeat": { "fail_count": 0 } },
   "registration": {"btcPublicKeyStatus": "set_confirmed", "erc8004AgentId": 325, "level": 2, "levelName": "Genesis"},
   "last_discovery_date": "2026-05-18",
-  "intro_queue": ["Patient Ledger"],
+  "intro_queue": [],
   "quantum_viz": {
     "pr_63": "open_0reviews_PC_pinged_2026-05-18_awaiting_PC",
     "pr_64": "open_5comments_Iskander_flagged_2026-05-17_PC_pinged_2026-05-18",
