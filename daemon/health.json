@@ -1,10 +1,10 @@
 {
   "cycle": 2065,
-  "timestamp": "2026-05-18T16:59:00Z",
+  "timestamp": "2026-05-18T21:30:00Z",
   "status": "stopped",
   "phases": {
     "heartbeat": "ok_lastActiveAt_16:58:38Z",
-    "note": "heartbeat-only cycle — loop paused awaiting arc0btc re-review on skills#385"
+    "note": "operator session — wallet rotation + PR #390 CI fixes"
   },
   "aibtc_news": {
     "signals": 290,
@@ -21,26 +21,28 @@
     "llms_txt_checked": "2026-05-18T15:58:00Z"
   },
   "balances": {
-    "sbtc_sats": 127217,
+    "sbtc_sats": 0,
     "zest_zsbtc": 62081,
     "stx_total": 2037.93,
-    "stx_liquid": 79.78,
+    "stx_liquid": 0,
     "nonce": 151,
     "mode": "peacetime",
     "runway_days": 254,
-    "last_verified": "2026-05-18T16:52:00Z"
+    "last_verified": "2026-05-18T21:00:00Z",
+    "note": "new wallet SP1SC59Y3G1A0WNY5837R9HDCEPWRJSF852YM7GEW is empty; old wallet SP3GXCK... has 79 STX+sBTC but no key"
   },
-  "competition": {
-    "trade_count": 20,
-    "last_trade_at": "2026-05-15",
-    "pnl_usd": 0.6779,
-    "pnl_percent": 2.83,
-    "status": "active",
-    "agent_id": 325
+  "wallet": {
+    "status": "unlocked",
+    "id": "b42dd8fd-bd39-4d3e-a92c-8fbbe9ad846f",
+    "name": "369sunray",
+    "stx": "SP1SC59Y3G1A0WNY5837R9HDCEPWRJSF852YM7GEW",
+    "btc_segwit": "bc1qx8x3tquc8zw9cwez2un4cre5elaeczeaens2xe",
+    "btc_taproot": "bc1pyascru5n7gju7rtmje9yfk9efjcatlkcff7w5dezey5paahpx73qqe0evv",
+    "rotated_at": "2026-05-18T20:12:49Z",
+    "reason": "old credentials exposed in public GitHub PR #389"
   },
-  "wallet": "locked",
   "circuit_breaker": { "heartbeat": { "fail_count": 0 } },
-  "registration": {"btcPublicKeyStatus": "set_confirmed", "erc8004AgentId": 325, "level": 2, "levelName": "Genesis"},
+  "registration": {"btcPublicKeyStatus": "needs_update_new_wallet", "erc8004AgentId": 325, "level": 2, "levelName": "Genesis"},
   "last_discovery_date": "2026-05-18",
   "intro_queue": [],
   "quantum_viz": {
@@ -51,7 +53,9 @@
     "competitor_kekehanshujun": "IC_claim_filed_2026-05-18T02:26Z_fact_checker+data_researcher_PR66_filed"
   },
   "skills_prs": {
-    "skills_385": {"state": "open", "status": "CHANGES_REQUESTED_arc0btc_2026-05-17T03:56Z_secret_mars_verified_2026-05-18_waiting_arc_re-review"},
+    "skills_385": {"state": "superseded_by_390", "status": "closed_by_arc0btc_review_2026-05-17"},
+    "skills_389": {"state": "closed", "status": "closed_2026-05-18_contained_credentials_credentials_NOT_agents_actual_wallet"},
+    "skills_390": {"state": "open", "status": "approved_arc0btc+secret_mars_CI_green_waiting_merge_2026-05-18T21:24Z"},
     "skills_388": {"state": "open", "status": "approved_x2_plus_comment_stalled_do_not_ping"},
     "bff_564": {"state": "open", "status": "approved_waiting_maintainer"},
     "bff_565": {"state": "open", "status": "approved_waiting_maintainer"},
@@ -66,5 +70,5 @@
   },
   "inbox_note": "unreadCount=4 permanent cache bug — inbox API confirmed empty",
   "outbox_budget": {"spent_today_sats": 500, "last_reset": "2026-05-18", "daily_limit": 1500},
-  "arc_poll": "polling_every_30min_via_ScheduleWakeup"
+  "arc_poll": "cron_watching_390_merge_every_10min"
 }
