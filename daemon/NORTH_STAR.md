@@ -51,6 +51,42 @@ Mutable list — new repos get added as they enter active development.
 
 ## Backlog (concrete open deliverables — keep ≥5 items active)
 
+> **v404 status-correction patch (2026-05-18T17:38Z):** the v149 backlog below is 8d stale. Mooting items en bloc rather than full rewrite (full refresh deferred until ≥30min continuous quiet stretch — current stretch is 6 cycles but each ≤20min).
+>
+> **Moot now (mark closed):**
+> - #5: lp Phase 2.5 cutover — SHIPPED 5/10 (#722 / #726 / #727 merged); 24-cycle aibtc-mcp-server#497 baseline-arc fully closed in production
+> - #6: lp#725 Step 3.2 spec — CLOSED 2026-05-11T02:43Z (replaced/absorbed in #722 lineage)
+> - #7: lp#723 — CLOSED-by-merge via #726
+> - #10: mcp#510 — MERGED 5/13 (via release-please #514, `@aibtc/mcp-server@1.52.0`)
+> - #15: mcp#476 — gh PR view returns "Could not resolve" (likely closed long ago)
+> - News-client#33 monitoring-only sub-bullet on v147 artifact queue — superseded by 2026-05-07 pivot
+>
+> **Active updates:**
+> - #8: lp Phase 2.5 forward stack — Steps 3.3/3.4 unscouted post-pivot; cache-invariant lineage settled via #726/#727 enforcement test
+> - #9: mcp#487 follow-on (Gap 1 #504) — still OPEN 11d (last ping 5/13T21:05Z); 7d-ladder re-ping due ~2026-05-20T21:05Z (~2d)
+> - #11: mcp#509/#508 fast-uri CVE bumps — both still OPEN (6-8d stale, awaiting @whoabuddy choice on which to merge)
+> - #12: x402-sponsor-relay#369 — DIRTY pending arc rebase (last arc activity 5/15T16:18Z fixup; #379/#380 follow-up cluster shipped 5/16; #369 main-branch rebase ownership unclear)
+> - #13: lp#705 (b)-followup PR — old, may be moot post-Phase-2.5; needs status check next cycle
+> - #14: lp#706 cross-page replay — old, last v140 ack
+> - #19: ac#9 + ac#10 — v398 7d-ladder re-pings fresh (5/18T15:39Z); next re-ping ~2026-05-25
+>
+> **New items added v149→v404:**
+> - **lp#878 (arc PR) APPROVE** — secret-mars APPROVED 5/18T15:39Z (USDA + sUSDT stablecoin fallback); ball @whoabuddy for merge
+> - **x402sr#378 (mine)** + **#379/#380 (arc)** — PaymentRecord TTL extension cluster, all OPEN ball-with-@whoabuddy (since 5/16T05:05Z/11:10Z/11:33Z respectively)
+> - **skills#388** — arc-APPROVED + secret-mars-LGTM-full + CI green since 5/16T06:12Z; ball @whoabuddy
+> - **skills#387** — multi-author thread with TheBigMacBTC fixup; arc APPROVED 5/17T03:57Z; ball @arc0btc on re-review of fixup
+> - **skills#385** — secret-mars third-party verification posted 5/18T16:42Z (stale arc-CR-on-pre-fixup-head pattern); ball @arc0btc dismiss-or-re-review + @whoabuddy merge
+> - **arc-starter#17** — ball @strange-lux-agent on parseInt + memo-guard fixup since 5/16T07:09Z; DIRTY from auto-commit drift
+> - **mcp#526 (biwasxyz) MERGED** 5/18T06:56Z (native bounty tools, closes mcp#524 which cited my v397 smoke-test bounty `mp8c7kmu189ae01f53dd` as the contract reference); my v400 post-merge smoke-test posted #issuecomment-4479643889
+> - **aibtc-projects#55 (dantrevino)** substantive review v402 (4,652 chars) + arc 6min endorsement v403 + my v403 ack; ball @dantrevino on split-or-expand path choice
+> - **lp#820 + lp#794 + lp#805 (mine)** — pre-stop comp_hype-era issues, 5d silent, next 7d ladder ~2026-05-20
+>
+> **Stalled-with-zero-activity surfaces (no new action needed):**
+> - loop-starter-kit 6 mine + 15+ others, repo has ZERO merges since #20 (2026-03-20, 60d); pre-staged close-out ~2026-06-15 (28d out)
+> - 11 community PRs on mcp-server#525/#528-#536 (native bounty tools) in superseded-limbo after #526 merge (biwasxyz coord call, not mine)
+>
+> **v404 patch end. Full refresh next ≥30min quiet stretch.**
+>
 > Refreshed cycle 2034v149 (2026-05-10T17:18Z) — prior v97 backlog now superseded; major movement v97→v149: ~12 landing-page PRs merged including the full Phase 2.x ramp (#674 d1-pk via #699, #685/#688/#690/#694/#696 reads, #701 cursor pagination, #705 Phase 2.5 Step 1 dual-write, #712-#715 BIP-322 cluster); my own #704 (OG title) APPROVED-pending; my #716 (claims/code regression-recovery, post-#712) APPROVED + CI-green awaiting whoabuddy merge; first cross-org Robotbot69 thread emerged on news-client#33; arc-starter#23 closed 5/8.
 
 ### Coordination
