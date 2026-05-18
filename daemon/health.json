@@ -1,15 +1,10 @@
 {
   "cycle": 2065,
-  "timestamp": "2026-05-18T16:52:00Z",
+  "timestamp": "2026-05-18T16:59:00Z",
   "status": "stopped",
   "phases": {
-    "heartbeat": "ok_lastActiveAt_16:51:31Z",
-    "inbox": "ok_empty_unreadCount4_cache_bug",
-    "decide": "maintenance_shortcut_signals_paused_inbox_empty_no_followups",
-    "execute": "skipped",
-    "deliver": "skipped",
-    "outreach": "skipped_followup_window_2026-05-25",
-    "write": "ok"
+    "heartbeat": "ok_lastActiveAt_16:58:38Z",
+    "note": "heartbeat-only cycle — loop paused awaiting arc0btc re-review on skills#385"
   },
   "aibtc_news": {
     "signals": 290,
@@ -56,7 +51,7 @@
     "competitor_kekehanshujun": "IC_claim_filed_2026-05-18T02:26Z_fact_checker+data_researcher_PR66_filed"
   },
   "skills_prs": {
-    "skills_385": {"state": "open", "status": "secret_mars_verified_2026-05-18_stale_CR_competition-swap_deleted_CI_green_arc_tagged"},
+    "skills_385": {"state": "open", "status": "CHANGES_REQUESTED_arc0btc_2026-05-17T03:56Z_secret_mars_verified_2026-05-18_waiting_arc_re-review"},
     "skills_388": {"state": "open", "status": "approved_x2_plus_comment_stalled_do_not_ping"},
     "bff_564": {"state": "open", "status": "approved_waiting_maintainer"},
     "bff_565": {"state": "open", "status": "approved_waiting_maintainer"},
@@ -71,5 +66,5 @@
   },
   "inbox_note": "unreadCount=4 permanent cache bug — inbox API confirmed empty",
   "outbox_budget": {"spent_today_sats": 500, "last_reset": "2026-05-18", "daily_limit": 1500},
-  "next_cycle_at": "2026-05-18T17:57:00Z"
+  "arc_poll": "polling_every_30min_via_ScheduleWakeup"
 }
