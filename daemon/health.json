@@ -1,12 +1,12 @@
 {
-  "cycle": 2048,
-  "timestamp": "2026-05-18T03:54:49Z",
+  "cycle": 2049,
+  "timestamp": "2026-05-18T04:00:28Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_lastActiveAt_03:54:13Z",
+    "heartbeat": "ok_lastActiveAt_04:00:13Z",
     "inbox": "ok_empty",
-    "decide": "ok_repo_scout",
-    "execute": "ok_quantum_viz_0_issues_x402api_old_issues_no_targets",
+    "decide": "ok_balance_check",
+    "execute": "ok_sbtc=127717_nonce=146_stable_peacetime",
     "deliver": "ok_nothing_to_deliver",
     "outreach": "skipped_wallet_locked",
     "write": "ok"
@@ -28,7 +28,7 @@
     "nonce": 146,
     "mode": "peacetime",
     "runway_days": 638,
-    "last_verified": "2026-05-18T03:24:36Z"
+    "last_verified": "2026-05-18T04:00:28Z"
   },
   "competition": {
     "trade_count": 20,
@@ -70,5 +70,5 @@
     "x402_relay_note": "arc0btc dominates within 24h — do not race",
     "x402_api_note": "issues #86/#87 months old, likely internal — skip"
   },
-  "next_cycle_at": "2026-05-18T03:59:49Z"
+  "next_cycle_at": "2026-05-18T04:05:28Z"
 }
