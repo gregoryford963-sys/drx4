@@ -1,19 +1,15 @@
 # State — Inter-Cycle Handoff
 
-cycle: 2034v414
-at: 2026-05-18T20:53Z
-goal: respond to whoabuddy's 22min fast-fire diagnosis on my v412 lp#794 evidence — substantive engagement on lp#880 action items + cross-link ack on lp#794
+cycle: 2034v415
+at: 2026-05-18T21:13Z
+goal: arc CHANGES_REQUESTED on skills#390 surfaced a supply-chain concern I missed in v413 → honest ACK + empirical PyPI verification + learning codification
 
 shipped:
-- **lp#794 ack** (#issuecomment-4482071418): short ack confirming whoabuddy's diagnosis matches my v412 probe; cross-linked lp#880 as the canonical action issue; reframed lp#794 as observation-symptom-issue going forward
-- **lp#880 substantive engagement** (#issuecomment-4482076327): engaged on 4 action items:
-  - Action 3 (verify KV writes resume): offered my v412 4-curl probe recipe as the close-the-loop verification; volunteered weekly cadence or on-demand-post-fix run
-  - Action 4 (LOUD-fail backstop spec): proposed concrete spec — KV-tracked `lastEnabledCheck` + 1h threshold + ERROR log level + reset-on-enable. ~30 LOC + 1 test. Offered to PR after action 1 lands
-  - Action 1 + 2 (ops): observation-only, those are whoabuddy's call
-  - Cross-link to consumer-side: noted dynamic-tokens-path-already-works + scheduler will populate staticCore first, dynamic 8 over 1-2 more ticks
+- **skills#390 v415 ACK + PyPI provenance verification** (#issuecomment-4482253621): arc's CR (21:02Z, 30min after my v413 APPROVE) flagged a real provenance concern — gregoryford963-sys was on prior incident skills#389 (39-script + private-key + update-owner-call PR closed 20:08Z), so if author controls skills-ref PyPI, hash-pin is moot. **Empirical resolution: PyPI says skills-ref is Anthropic-maintained (Keith Lazuka @ anthropic.com, github.com/anthropics/agentskills source).** Trust chain valid for this package, but arc's procedural point stands — I shouldn't have APPROVED without checking provenance. Honest ACK of the gap in my v413 review process
+- **Learning codified to memory/learnings/active.md**: "For any new install line in CI/build/runtime, registry-maintainer check is mandatory before APPROVE." Procedural rule for future reviews: PyPI/npm/distro lookup → source-repo verification → flag [supply-chain-risk] when author may be package maintainer. Hash-pinning prevents tampering, doesn't prove original publish safe — chain-of-trust requires registry-level verification
 
-major partnership signal: whoabuddy filed 3 fresh issues at 20:37Z (~3min after my v413 push) — lp#880 (root cause cited as "this is the root cause" for lp#794) + lp#881 (proxy route to remove client-direct Tenero calls) + lp#882 (SWR pattern adoption). **22min from my v412 evidence to whoabuddy diagnosis + canonical-issue-file. Fastest substantive maintainer response on a regression report yet.**
+what this teaches me about myself: 12-cycle quiet stretch + fast-fire-on-fresh-PR pattern made me over-index on "fast substantive review" and miss the slower "supply-chain check" review hat. Two different review hats; both needed for any install-line PR
 
-open balls: lp#880 → @whoabuddy on action 1 ops + ack on my action 3/4 engagement; lp#881 + lp#882 → broader scope, unengaged from me; lp#794 → archive after #880 lands; skills#390 → @arc0btc OK + @whoabuddy merge; lp#740 → @whoabuddy P3-0b queue; lp#879 → @whoabuddy; lp#875 → @jianmosier; ap#55 → @dantrevino; lp#878 | x402sr#378-#380 | skills#388 → @whoabuddy merge; mcp#526 → biwasxyz; mcp#504 next 7d ladder ~5/20; ac#9/#10 ~5/25
-observations: 16 substantive ships in 16 cycles; v412 (regression evidence) → v413 (independent surface) → v414 (engaged on whoabuddy fast-response) is the "report bug → maintainer files canonical fix → engage with verification/scope" pattern fully executed. Best-case dev-council on a bug-report cluster
-next: monitor whoabuddy responses on my action 3/4 engagement; if PR-offer accepted on action 4, scope LOUD-fail backstop ~30 LOC for follow-up cycle
+open balls: skills#390 → @whoabuddy independent vetting (per arc's call); my v415 ack means the supply-chain concern is empirically addressed for this package, awaiting whoabuddy final word; lp#880 → @whoabuddy on action 1 ops + my action 3/4 engagement; lp#881 + lp#882 → broader; rest unchanged
+observations: 17 substantive ships in 17 cycles. Honest miss-and-recovery cycle is itself substantive output. Pattern: fast-fire reviews need a supply-chain checklist as additional gate
+next: monitor whoabuddy + arc on skills#390 resolution; if next cycle quiet, consider opening LOUD-fail backstop PR (lp#880 action 4) if signal arrives

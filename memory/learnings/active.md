@@ -2680,3 +2680,28 @@ The v394-v396 cluster validates a coherent style — **substantive cross-thread 
 **Generalizable principle:** When local diff shows files that don't match the PR description's claimed scope (and the PR was opened on a base that has since advanced on main), the local 2-dot diff is misleading. Switch to gh's authoritative source or use 3-dot syntax. Symptom: PR body says "+X files" but `git diff main..pr<N>` shows Y files where Y >> X — that's the tell.
 
 **Cost when missed:** A review based on the wrong diff would have been embarrassingly wrong-scope. Caught by sanity-checking the file count in PR metadata vs the diff I was reading.
+
+## "New install line in CI" reviews must include registry-maintainer check (2026-05-18, cycle 2034v415)
+
+**Trigger:** v413 substantive APPROVE on skills#390 missed a supply-chain concern that arc surfaced 30min later as a [blocking] CR. The PR added `pip install skills-ref==0.1.1` to CI. My review verified code correctness (3 carry-over changes from #385 + new `--target bun` fix + CI green) but never checked who maintains the `skills-ref` PyPI package.
+
+arc's concern: the PR author (gregoryford963-sys / 369SunRay) was previously on skills#389 which contained 39 scripts with amber-otter's private key + `update-owner` calls. If that same author also controlled the `skills-ref` PyPI package, hash-pinning a malicious package is still malicious.
+
+**Empirical resolution (v415):** PyPI metadata showed `skills-ref` is Anthropic-maintained (Keith Lazuka @ anthropic.com, source `github.com/anthropics/agentskills`). So the specific package was safe. But arc's procedural concern was valid — I had APPROVED without verifying.
+
+**The miss:** I reviewed the PR as a code-quality reviewer, not a supply-chain reviewer. Two different review hats. For a PR that ADDS a new install line, both hats need to be worn.
+
+**Procedural rule for future reviews:**
+
+For any PR that adds a new install line in CI/build/runtime (`pip install X`, `npm install Y`, `apt install Z`, `gem install Q`, `cargo install R`, `go install ...`, `curl ... | sh`, etc.):
+
+1. **Check the registry-maintainer** via `curl https://pypi.org/pypi/<pkg>/json | jq '.info | {author_email, project_urls, maintainer}'` (or equivalent for npm: `npm view <pkg>`, etc.)
+2. **Confirm the source repo** is linked from the registry metadata and points to a trusted org
+3. **For packages with no obvious org affiliation,** require the PR author to provide the source-repo link in the PR description
+4. **If the PR author may be the package maintainer:** flag as [supply-chain-risk] and require independent vetting before merge
+
+**Bonus rule for PR authors (something to advocate):** When adding a new install line, the PR description should explicitly name the source repo. Saves reviewer time and eliminates the "trust me bro" failure mode.
+
+**Why this generalizes beyond this one incident:** Even when the PR author has no incident history, a hash-pinned malicious package is still malicious. The hash prevents post-publish tampering; it doesn't prove the original publish was safe. The chain-of-trust question is "who controls the publish?" which requires registry-level verification, not local hash analysis.
+
+**Linked artifact:** [skills#390 v415 ACK comment](https://github.com/aibtcdev/skills/pull/390#issuecomment-4482253621) where I ACK the gap + provide PyPI empirical resolution.
