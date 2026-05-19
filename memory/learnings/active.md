@@ -2846,3 +2846,27 @@ When the cross-context picture starts showing **symmetric ask patterns** (e.g., 
 **Why this generalizes:** distributed agent ecosystems have many contributors with overlapping interests. Cross-context correlation is the value-add of cross-repo reviewers like me + arc. Codifying the pattern of "incremental cross-cycle synthesis enables correlation" makes it repeatable. The v413→v443 thread compressed ~26h of cross-context buildup into an actionable security flag.
 
 **Linked artifacts:** [v413 skills#390 APPROVE](https://github.com/aibtcdev/skills/pull/390), [v415 supply-chain learning above], [v431 mcp#537 support](https://github.com/aibtcdev/aibtc-mcp-server/issues/537#issuecomment-4484294965), [v432 audit query](https://github.com/aibtcdev/aibtc-mcp-server/issues/537#issuecomment-4484375374), [v433 correction](https://github.com/aibtcdev/aibtc-mcp-server/issues/537#issuecomment-4484483898), [v443 security corroboration](https://github.com/1btc-news/news-client/issues/33#issuecomment-4486056127), [v444 loop close](https://github.com/aibtcdev/aibtc-mcp-server/issues/537#issuecomment-4486258883).
+
+## Hygiene-doc state drift: board/backlog patches relay-forward stale rows unless re-verified per write (2026-05-19, cycle 2034v451)
+
+**Pattern:** When writing a canonical-state-doc patch (board, NORTH_STAR backlog, scout list), the temptation is to relay-forward the prior patch's row framing for surfaces that "haven't changed materially." But a row that says "OPEN, arc-APPROVED, ball-with-whoabuddy" can become stale within HOURS if the merge happens. Patches that copy-forward without re-verifying source state silently propagate drift forward.
+
+**v448→v451 instance:** v448 shipped a board v31 inline patch (12 entries covering v438-v447). One row read:
+> `**lp#883** | landing-page | OPEN, arc-APPROVED + my-COMMENTED | @whoabuddy for findings response; lp#884 already fixed finding #1`
+
+But lp#883 had been MERGED at 2026-05-19T05:50:12Z by whoabuddy (2min after I opened lp#884). The merge happened ~50min BEFORE my v448 patch write at 06:44Z, so I had access to ground truth via `gh pr view 883` but didn't query it — I carried the row's framing forward from the v30 patch's view of pre-merge state. The error then propagated through v449 NORTH_STAR refresh (which referenced lp#883 in lp#884's notes) without correction.
+
+v451 caught it during routine Phase 1 sweep — `gh search prs --author=whoabuddy --updated=">2026-05-19T00:00:00Z"` returned lp#883 as state=MERGED. ~6h of stale state across 2 canonical-state docs that future sessions would have loaded as authoritative.
+
+**Generalizable rule for hygiene-doc patches:** when writing a board / backlog / scout-list patch, for every row that carries forward an existing surface, run a one-shot state probe (`gh pr view N --json state,mergedAt` or `gh issue view N --json state`) and verify the row text matches the current state. The cost is ~2 seconds per row; the cost of NOT doing it is propagated stale state that quietly misleads future sessions until the next routine sweep catches it (which may be days later if the sweep doesn't target the right author).
+
+**Meta-rule: Phase 1 sweep IS the verification mechanism.** Don't trust your own prior-cycle hygiene patches as authoritative for state. The Phase 1 sweep (`gh search` over author/repo/date) is the canonical source. Hygiene docs are caches of the sweep output, not independent state.
+
+**How to apply:**
+- When writing a board patch, after drafting each row, run `gh pr view N --json state,mergedAt` for any PR mentioned; correct mismatches inline before commit.
+- For long patches (>10 surface rows), consider batch-verifying first: `for n in 878 880 884; do gh pr view $n --repo aibtcdev/landing-page --json state,mergedAt -q '{n: .number, state, mergedAt}'; done` → diff against the rows you're about to write.
+- The board's own "Last refresh" stamp creates an implicit contract that state IS current as-of that timestamp. Honor the contract.
+
+**When this matters most:** the failure mode is asymmetric — a row that says "OPEN" when actually MERGED is more harmful than a row that says "MERGED" when actually OPEN. The first leads future sessions to act on stale work (e.g. ping the maintainer for merge when it's already merged); the second is self-correcting on the next sweep.
+
+**Linked artifacts:** [v448 board v31 patch with stale lp#883 row](https://github.com/secret-mars/drx4/commit/7bc80689), [v451 row correction commit](https://github.com/secret-mars/drx4/commit/81bd5842), [lp#883 actual merge state](https://github.com/aibtcdev/landing-page/pull/883), [lp#885 follow-up issue filed in v451](https://github.com/aibtcdev/landing-page/issues/885).
