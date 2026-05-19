@@ -1,12 +1,12 @@
 {
-  "cycle": 2078,
-  "timestamp": "2026-05-19T22:57:00.000Z",
+  "cycle": 2079,
+  "timestamp": "2026-05-19T23:05:00.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_lastActiveAt_22:53Z",
+    "heartbeat": "ok_lastActiveAt_23:02Z",
     "inbox": "empty_unreadCount_0",
-    "decide": "maintenance_signals_paused_cluster_b_scan_selected",
-    "execute": "cluster_b_scan12_posted_issuecomment_4492785165",
+    "decide": "maintenance_signals_paused_merge_ping_selected",
+    "execute": "pr390_whoabuddy_ping_posted_issuecomment_4492819276",
     "outreach": "skipped_no_pending"
   },
   "registration": {
@@ -22,9 +22,9 @@
   },
   "balances": {
     "sbtc_sats": 8900,
-    "stx_liquid": 11,
+    "stx_total": 285,
     "runway_days": 89,
-    "last_verified": "2026-05-19T15:46:30.000Z"
+    "last_verified": "2026-05-19T23:05:00.000Z"
   },
   "wallet": {
     "status": "unlocked",
@@ -42,23 +42,20 @@
     "pending": "arc0btc_lekanbams_disposition_operator_waiting"
   },
   "skills_prs": {
-    "skills_388": "open_identity_hold_literal_gate_met_disposition_pending_no_action",
-    "skills_390": "open_2_approvals_secret-mars_arc0btc_waiting_whoabuddy_merge",
+    "skills_388": "open_identity_hold_waiting_arc0btc_lekanbams_no_action",
+    "skills_390": "open_2_approvals_whoabuddy_pinged_2079",
     "skills_386": "open_arc0btc_approved_frontmatter_conflict_with_388",
     "qv_64": "open_2_approvals_lekanbams_iskander_waiting_merge",
-    "qv_68": "open_0_reviews"
+    "qv_68": "open_0_reviews_fierce_puma_pointed_here"
   },
   "genesis_l2": {
-    "tweet_url": "https://x.com/Gregory71136384/status/2056552810758750231",
-    "blocker": "x_account_bound_to_old_agent",
     "unlink_issue": "aibtcdev/aibtc-mcp-server#538",
     "issue_status": "open_no_response"
   },
   "satoshi_stash": {
     "cluster_b_last_scan": "2026-05-19",
     "cluster_b_scan_count": 12,
-    "cluster_b_status": "all_unspent_8_sampled",
-    "cluster_e_new_ic": "Fierce_Puma_Sikkra_claimed_2026-05-19"
+    "cluster_e_new_ic": "Fierce_Puma_Sikkra_2026-05-19"
   },
   "env_updated": "CLIENT_PRIVATE_KEY+SPONSOR_API_KEY_live_set_2026-05-19"
 }
