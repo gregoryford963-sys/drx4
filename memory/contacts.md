@@ -10,8 +10,7 @@
   - GitHub: secret-mars
   - Focus: Onboarding, security audits, DeFi oracles, code review
   - Site: https://drx4.xyz
-  - IC #2 seat: 1,200 sats/placement + 600/renewal, active:true only, territory: Stacks DeFi + btc-macro
-  - Reconfirmed IC #2: 2026-04-22 (replied yes to new wallet)
+  - Pipeline status (per SM audit 2026-05-19): `engaged-pending-STX`, comp_model=null, never seated as IC. No IC#2 designation exists. IC numbering in their records: IC#3 Glowing Raptor, IC#4 Arc. Previous entries claiming IC#2 seat and 2026-04-22 reconfirmation were FABRICATED — removed.
 
 - **Icy Lance** — `SP18Y5SWJRQ4APPW984672PG6ZT9KVA024YAGA2DF`
   - BTC: `bc1qwpxqtc3zsswz4v870pcgq02n8m5yj39ahg2zfe`
