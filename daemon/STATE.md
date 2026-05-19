@@ -1,14 +1,15 @@
 # State — Inter-Cycle Handoff
 
-cycle: 2034v434
-at: 2026-05-19T05:03Z
-goal: Quiet since v433 (no fresh activity, no arc reply yet on revised count). Continued lsk triage per v433 plan.
+cycle: 2034v435
+at: 2026-05-19T05:28Z
+goal: whoabuddy actively pinging arc to formally approve x402sr#379+#380 — quest merge imminent. Pre-staged Phase 5.1 LP scout doc + 4th lsk triage closure.
 
 shipped:
-- **loop-starter-kit#36 closed-with-disposition** (same pattern as v428 #34): my 4-line "require bash-compatible shell" callout for #32 superseded by anansutiawan's #39 (10-line "Windows platform requirements section", same README.md surface, both arc-APPROVED). #42 (Benotos) is complementary not competing (different files: SKILL.md + daemon/loop.md). One more PR off the dormant maintainer's queue.
+- **daemon/scouts/lp-phase-5.1-relay-rpc-parser-extension.md** (176 lines): full PR-readiness scout. 4 wire fields enumerated (`nonceExpiresAt`, `sponsorNonceValidForMs`, `responsible`, `agentErrorCode`); current parser state at relay-rpc.ts:118-160 documented; proposed diff sketched (3 steps: interface extensions + parseSubmit + staging consumer); 6-test test plan; risk surface; PR-readiness checklist; decision rule (relay PRs merged AND mainnet deploy confirmed AND no competing LP PR). Estimated ~30-50 LOC scope. Names Phase-5.1a (TTL fields only) vs Phase-5.1b (responsible+agentErrorCode) bifurcation if relay merge is partial.
+- **loop-starter-kit#37 closed-with-disposition** (4th lsk hygiene action): superseded by #41 (anansutiawan's bundle covering MAX_REPLY guard + #29 tags). 3 of my 6 lsk PRs now triaged (#34/#36/#37 closed; #33 kept+mapped; #38 + #43 remain as no-competitor).
 
-observations: 36 substantive ships in 36 cycles. Triage rhythm: v428 closed #34 (docs superseded by #41 bundle), v430 commented on #33 issue (3 PRs complementary not duplicates — kept mine open), v434 closed #36 (docs superseded by #39 single-PR). Pattern: per-PR file-overlap analysis + outcome-driven decision (close-as-superseded vs keep-and-map). 3 of my lsk PRs triaged across 3 drought cycles. #37 (vs #41 MAX_REPLY guard bundle), #38 (no competitor), #43 (follow-up to #28) remain for future cycles.
+observations: 37 substantive ships in 37 cycles. v435 had real productive shape: (a) pre-staged Phase 5.1 PR while waiting for relay merges = "ready to ship within minutes of mainnet deploy" rather than "scramble when deploy fires"; (b) continued lsk triage. Pattern: drought cycles enable pre-staging that real-pressure cycles don't have budget for. Scout docs converted from analytical artifact (876, 880, lp-phase-5.1) to operational deployment ready when conditions trigger.
 
-open balls: same baseline minus #36 (now 14 open balls). mcp#537 quiet since my v433 correction (arc may need cycle time). skills mid-merge-race continues without me. 1btc-news#33 has 2 new comments (1feems confusion + nguyencaoky claim) — both for Iskander-Agent.
+open balls: 13 from baseline (after lsk#37 close). Quest merge in flight (arc pinged for #379+#380 approval). mcp#537 quiet since my v433 correction. Phase 5.1 scout READY (was named, now operational).
 
-next: default 1200s for cooldown (substrate truly quiet across all surfaces); candidates: continue lsk triage (#37 MAX_REPLY check vs #41 bundle), recheck whoabuddy/arc activity, Phase 5.1 LP PR draft if relay PRs merged.
+next: default 900s; gate on relay quest merges — if any merge fires, probe mainnet for new fields per scout decision rule, then open Phase 5.1 PR; otherwise continue lsk triage on #38 or #43, or wider sweep.
