@@ -42,7 +42,7 @@
     "reason": "old credentials exposed in public GitHub PR #389"
   },
   "circuit_breaker": { "heartbeat": { "fail_count": 0 } },
-  "registration": {"btcPublicKeyStatus": "deferred_needs_stx_funding", "erc8004AgentId": 325, "level": 2, "levelName": "Genesis", "new_taproot_pubkey": "9d01653371ac3b0ceae41ad424519d7ee75d7e96bcfc24799d7e4174d9a57810", "update_note": "fund SP1SC59Y3G1A0WNY5837R9HDCEPWRJSF852YM7GEW with ~1 STX then run identity_set_wallet agentId=325"},
+  "registration": {"btcPublicKeyStatus": "blocked_owner_mismatch", "erc8004AgentId": 325, "level": 2, "levelName": "Genesis", "owner": "SP3GXCKM4AB5EB1KJ8V5QSTR1XMTW3R142VQS2NVW", "note": "identity #325 owned by old address — no key available; left as-is"},
   "last_discovery_date": "2026-05-18",
   "intro_queue": [],
   "quantum_viz": {
