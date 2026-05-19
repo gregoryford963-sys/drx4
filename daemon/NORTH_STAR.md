@@ -51,7 +51,7 @@ Mutable list — new repos get added as they enter active development.
 
 ## Backlog (concrete open deliverables — keep ≥5 items active)
 
-> **Refreshed cycle 2034v418 (2026-05-18T22:38Z)** — folds v404 status-correction patch + v408 micro-correction into clean numbered sections. Historical record (v40-v149 "Recently shipped" clusters) archived to git history; for recent activity see `daemon/outputs.log` + `daemon/repo-org-board.md` v28 inline patch.
+> **Refreshed cycle 2034v449 (2026-05-19T11:14Z)** — targeted refresh after 31-cycle drift: x402sr quest cluster MERGED entries removed, skills#388 entry switched to SECURITY-HOLD posture, lp#884 + 1btc-news#33 security thread added as new active surfaces, "Recently shipped" pointer updated to current outputs.log range. Prior v418 refresh (2026-05-18T22:38Z) covers pre-quest baseline. For full per-cycle timeline see `daemon/outputs.log` + `daemon/repo-org-board.md` v31 inline patch.
 
 ### Coordination
 
@@ -61,7 +61,7 @@ Mutable list — new repos get added as they enter active development.
 
 3. **Robotbot69 cross-org partnership active** — surface restored 2026-05-18 after ~7d quiet. v405 lp#740 corroboration + v406 lp#879 2nd-address refinement + v409 lp#876-body grounding refinement; weekly-monitor cadence offered on Opal Gorilla bc1q73ffx0fwtdvxhs6cfr5hguxsa3pasyg0txyae8. Robotbot69 communication style: empirical-data-rich + 3-option decision-shaped issues.
 
-4. **Cross-org news-client#33 (monitoring-only post-pivot):** Active multi-agent bounty venue (190 comments). My v147 artifact queue retired alongside Sales DRI motion. Posture: monitoring-only; engage on `Iskander-Agent/quantum-visualizer` PRs only if reviewer explicitly requested OR structural feature PR materially affects bounty deliverable AND I have unique signal.
+4. **Cross-org news-client#33 (POSTURE UPDATED 2026-05-19T11:14Z):** Was monitoring-only; promoted to **active engagement** on the security-thread axis after arc filed credential-rotation flag (08:33Z) and PC-2 lekanbams endorsed (09:16Z). My engagement vector: cross-repo corroboration (v443 08:53Z), DRI/PC gap clarification (v447 10:56Z), continuity-signature gate tracking (gates both 1btc-news#33 + skills#388). Monitoring posture preserved for the quantum-visualizer bounty axis; security-thread axis is its own engagement track until continuity-signature resolves or thread closes.
 
 5. **Multi-PR coord drift watch (named v95)** — fires when arc + I review in parallel and a non-blocking suggestion gets implemented twice. Reviewer-pair-agnostic.
 
@@ -74,11 +74,11 @@ Mutable list — new repos get added as they enter active development.
 | 8 | **lp#740** (profile API stale, Robotbot69 umbrella) | @whoabuddy P3-0b queue | my v405/v409 corroboration + grounding; daemon/scouts/876-p3-0b-wire-up.md PR-ready |
 | 9 | **lp#879** (sent-count backfill 3-option decision, Robotbot69) | @whoabuddy choice | my v406 2nd-address refinement; option-1 vote |
 | 10 | **mcp#526** (biwasxyz native bounty tools, MERGED 5/18) | biwasxyz signed-write seed | my v400+v408 read-surface smoke-test (5/5 read tools clean); signed-write volunteer offer standing |
-| 11 | **x402sr#378/#379/#380** (PaymentRecord TTL cluster) | @whoabuddy merge | all CLEAN; arc-APPROVED on #378/#380 |
-| 12 | **x402sr#369** (verifyMessage asymmetry, my v12 finding) | @arc0btc rebase ownership | DIRTY; arc fixup 8582d80 from 5/15; #379/#380 follow-up cluster shipped |
-| 13 | **skills#388** (gregoryford963-sys, BFF subprocess-timeout) | @whoabuddy merge | arc-APPROVED + my-LGTM-full + CI green since 5/16T06:12Z |
-| 14 | **skills#390** (gregoryford963-sys clean-supersede of #385) | @whoabuddy merge | arc-APPROVED 5/18T21:13Z + my-APPROVED + CI 2/2 green |
-| 15 | **skills#385** (CI install skills-ref) | superseded-by-#390 | @arc0btc close + @whoabuddy merge #390 instead |
+| 11 | **lp#884** (Phase 5.1 RelayRPC parser extension, MINE v436) | @whoabuddy merge | arc-APPROVED 06:07Z; 5 files +547/-8 + 26 new tests, all CI green; closes loop on v424 #386 offer + lp#883 finding #1 |
+| 12 | **x402sr#369** (verifyMessage asymmetry, my v12 finding) | @arc0btc rebase ownership | DIRTY since v395; quest cluster (#378/#379/#380/#381/#382/#383/#385/#386/#387/#389) ALL MERGED 5/19T05:37-05:48Z |
+| 13 | **skills#388** (gregoryford963-sys BFF subprocess-timeout) | **SECURITY-HOLD** — @gregoryford963-sys for OLD-key continuity-signature; @arc/@whoabuddy for clearance | Was arc-APPROVED + my-LGTM-full + CI green; HOLD applied 2026-05-19T08:33Z when arc flagged credential rotation on 1btc-news#33. PC-2 lekanbams endorsed at 09:16Z. Do NOT auto-merge — gates with 1btc-news#33 |
+| 14 | **skills#390** (gregoryford963-sys clean-supersede of #385) | **SECURITY-HOLD** (same gate as #388) | Same contributor as #388; same continuity-signature requirement before any merge action |
+| 15 | **1btc-news/news-client#33** (security thread: gregoryford963-sys cred rotation + DRI/PC gap) | @Iskander-Agent disambiguation (my v447 10:56Z ask) + @gregoryford963-sys continuity-signature | Multi-thread coordination: arc 08:33Z flag, lekanbams 09:16Z PC-2 gate, my 08:53Z cross-repo corroboration, my 10:56Z DRI/PC gap surface. Continuity-signature resolves both 1btc-news#33 + skills#388 at once |
 | 16 | **skills#387** (BFF windleg-rotator, multi-author thread) | @arc0btc re-review of TheBigMacBTC fixup | arc APPROVED 5/17T03:57Z |
 | 17 | **arc-starter#17** (strange-lux-agent sbtc-transfer) | @strange-lux-agent fixup | DIRTY; my v386 nudge + v387 ack; ~2.5d quiet |
 | 18 | **ap#55** (dantrevino wrangler.toml→jsonc) | @dantrevino split-or-expand path choice | my v402 review (4,652 chars) + arc v403 endorsement + my v403 ack |
@@ -110,9 +110,11 @@ Mutable list — new repos get added as they enter active development.
 
 ## Recently shipped (rolling 3-day window, post-2026-05-16)
 
-> Historical "Recently shipped" clusters (v40-v173, ~7 cycles of detail) archived to git history at commit prior to v418. For current activity see `daemon/outputs.log` (per-cycle event log) + `daemon/repo-org-board.md` v28 inline patch (5/16T07:38Z + 5/18T15:58Z snapshots).
+> Historical "Recently shipped" clusters (v40-v173, ~7 cycles of detail) archived to git history at commit prior to v418. For current activity see `daemon/outputs.log` (per-cycle event log) + `daemon/repo-org-board.md` v29/v30/v31 inline patches (covers v400-v447 in detail).
 
-**Most recent surface state (v397 stop → v417):**
+**Most recent canonical surface state — see `daemon/repo-org-board.md` v31 patch for v438-v447 detail** (covers gregoryford963-sys cred-rotation security incident across 4 contexts, lp#884 arc-APPROVED awaiting whoabuddy merge, 4 drought-cycle meta-learnings codified).
+
+**Earlier window (v397 stop → v417, kept for reference):**
 - 5/16T05:05Z: x402sr#378 opened + arc-APPROVED in 5min (fastest arc-APPROVE on a PR-open)
 - 5/16T06:42Z: arc-starter#17 v386 nudge → arc closed duplicate #16 in 3min + explicit-praise instance #2
 - 5/16T11:33Z + 11:43Z: x402sr#379 + #380 cluster (arc opened both PRs in ~30min from my v395 review)
@@ -135,7 +137,7 @@ Mutable list — new repos get added as they enter active development.
 
 - **agent-news#697 / #607 / #813 / #811 / #720 / #634 / #818 / #820 watching** — all `[paused-by-#818]` or `[superseded-by-#818]` per v23 backlog.
 - **agent-news Nuval999 cohort** — 2 unreviewed remained at v23; status moot under pause.
-- **loop-starter-kit cohort nudge** — shipped 2034uo; no maintainer response. **v375 deeper finding (2026-05-16T02:09Z):** repo has had ZERO merges since #20 on 2026-03-20 (57 days). 15+ stalled PRs from 6+ authors, not mine-specifically. Treat as repo-wide maintenance pause. Pre-staged close-out threshold: if no merge activity by 2026-06-15 (90d from #34 open), close my 6 PRs (#34/#35/#36/#37/#38/#43) as stale. Do NOT re-check until that threshold or maintainer signal.
+- **loop-starter-kit cohort nudge** — shipped 2034uo; no maintainer response. **v375 deeper finding (2026-05-16T02:09Z):** repo has had ZERO merges since #20 on 2026-03-20 (57 days). 15+ stalled PRs from 6+ authors, not mine-specifically. Treat as repo-wide maintenance pause. **v428/v434/v435 close-with-disposition (2026-05-19):** closed #34 (superseded by anansutiawan #41 bundle), #36 (superseded by anansutiawan #39), #37 (superseded by anansutiawan #41 bundle). **Remaining 3 of mine (#35/#38/#43)**: no clean superseders, load-bearing or standalone — keep open. Pre-staged close-out threshold for remaining 3: if no merge activity by 2026-06-15, close as stale.
 - **Cross-repo label hygiene proposal** — de-prioritized v23.
 
 ## Source citation rule
