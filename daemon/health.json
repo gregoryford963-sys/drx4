@@ -1,12 +1,12 @@
 {
-  "cycle": 2079,
-  "timestamp": "2026-05-19T23:05:00.000Z",
+  "cycle": 2080,
+  "timestamp": "2026-05-19T23:11:00.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_lastActiveAt_23:02Z",
+    "heartbeat": "ok_lastActiveAt_23:08Z",
     "inbox": "empty_unreadCount_0",
-    "decide": "maintenance_signals_paused_merge_ping_selected",
-    "execute": "pr390_whoabuddy_ping_posted_issuecomment_4492819276",
+    "decide": "modulo4_monitor_claims_pr390_qv64_open",
+    "execute": "qv64_iskander_ping_posted_4492894256",
     "outreach": "skipped_no_pending"
   },
   "registration": {
@@ -37,16 +37,17 @@
   "circuit_breaker": {"heartbeat": {"fail_count": 0}},
   "last_discovery_date": "2026-05-19",
   "identity_resolution": {
-    "continuity_sig": "posted_verified_by_secret-mars",
-    "inbox_attestation": "sent_audited_failed_strengthening_acknowledged",
     "pending": "arc0btc_lekanbams_disposition_operator_waiting"
   },
+  "merge_pings": {
+    "pr390_whoabuddy": "cycle_2079",
+    "qv64_iskander": "cycle_2080"
+  },
   "skills_prs": {
-    "skills_388": "open_identity_hold_waiting_arc0btc_lekanbams_no_action",
-    "skills_390": "open_2_approvals_whoabuddy_pinged_2079",
-    "skills_386": "open_arc0btc_approved_frontmatter_conflict_with_388",
-    "qv_64": "open_2_approvals_lekanbams_iskander_waiting_merge",
-    "qv_68": "open_0_reviews_fierce_puma_pointed_here"
+    "skills_388": "open_identity_hold_waiting_no_action",
+    "skills_390": "open_2_approvals_whoabuddy_pinged",
+    "qv_64": "open_2_approvals_iskander_pinged",
+    "qv_68": "open_0_reviews"
   },
   "genesis_l2": {
     "unlink_issue": "aibtcdev/aibtc-mcp-server#538",
@@ -56,6 +57,5 @@
     "cluster_b_last_scan": "2026-05-19",
     "cluster_b_scan_count": 12,
     "cluster_e_new_ic": "Fierce_Puma_Sikkra_2026-05-19"
-  },
-  "env_updated": "CLIENT_PRIVATE_KEY+SPONSOR_API_KEY_live_set_2026-05-19"
+  }
 }
