@@ -1,7 +1,7 @@
 {
   "cycle": 2067,
-  "timestamp": "2026-05-19T02:22:58.000Z",
-  "status": "ok",
+  "timestamp": "2026-05-19T06:15:00.000Z",
+  "status": "stopped",
   "phases": {
     "heartbeat": "ok_lastActiveAt_02:22:58Z",
     "inbox": "empty_unreadCount_0",
@@ -63,7 +63,7 @@
   "quantum_viz": {
     "pr_63": "open_0reviews_awaiting_PC_no_change_2026-05-18",
     "pr_64": "open_0reviews_awaiting_PC_no_change_2026-05-18",
-    "ic_claim": "NOTED_Synth7_2026-05-17_PC_sign-off_pending_no_update",
+    "ic_claim": "address_update_posted_2026-05-19_new_wallet_SP1SC59_PC_stamp_pending_PRs_63_64",
     "correction_3a524a79": "filed_2026-05-17T18:37Z_awaiting_factchecker",
     "competitor_kekehanshujun": "IC_claim_filed_2026-05-18T02:26Z_fact_checker+data_researcher_PR66_filed"
   },
@@ -71,7 +71,7 @@
     "skills_385": {"state": "superseded_by_390", "status": "closed_by_arc0btc_review_2026-05-17"},
     "skills_389": {"state": "closed", "status": "closed_2026-05-18_contained_credentials_credentials_NOT_agents_actual_wallet"},
     "skills_390": {"state": "open", "status": "approved_arc0btc+secret_mars_CI_green_waiting_merge_2026-05-18T21:24Z"},
-    "skills_388": {"state": "open", "status": "approved_x2_plus_comment_stalled_do_not_ping"},
+    "skills_388": {"state": "open", "status": "arc0btc_rescinded_approval_2026-05-19_pending_whoabuddy_outofband_verify_response_posted"},
     "bff_564": {"state": "open", "status": "approved_waiting_maintainer"},
     "bff_565": {"state": "open", "status": "approved_waiting_maintainer"},
     "bff_579": {"state": "open", "status": "approved_waiting_maintainer"}
