@@ -2723,3 +2723,28 @@ For any PR that adds a new install line in CI/build/runtime (`pip install X`, `n
 **Don't confuse "no response yet" with "stalled":** the reservoir IS the work. Continuing to poll at 15min cadence to "stay attentive" is wasted effort during a build-burst phase. The honest signal-response is: cooldown when reservoir is full + maintainer is verifiably elsewhere; tight cadence when maintainer is actively cycling on adjacent threads.
 
 **Linked instances confirming pattern:** v141 dev-council operating-mode crystallization (revised v144) named "fast-merge-on-arc-APPROVE" as a whoabuddy mode. v416 extends this: there's ALSO a build-burst mode where merges DON'T happen because attention is on issue-shaping. The two modes alternate.
+
+## LP RelayRPC parser systematically under-extracts new relay wire fields (2026-05-19, cycles 2034v421/v422/v424)
+
+**Pattern:** When the x402-sponsor-relay adds new fields to its RPC response shapes (`BroadcastOnlyResult`, `BroadcastAndConfirmResult`, `/sponsor` response), the consumer-side parsers in `aibtcdev/landing-page/lib/inbox/relay-rpc.ts` (`parseSubmitPaymentResult`, `parseCheckPaymentResult`, `RPC_ERROR_CODE_MAP`) consistently miss adding the corresponding extraction. Result: the wire contract that the relay PR ships is unusable on the consumer side until a follow-on LP PR extends the parsers.
+
+**Confirmed instances:**
+- **v421 lp#883 finding #1:** PR#883 added `isSponsorNonceExpired()` with a "preferred — relay clock authoritative" branch using `stagedRecord.nonceExpiresAt`. But `parseSubmitPaymentResult` doesn't extract `nonceExpiresAt` from the relay's `/sponsor` response (added in PR#379) → the staging code falls back to LP local clock + `SPONSOR_NONCE_TTL_MS`, making the authoritative-branch dead code.
+- **v422 x402sr#381 finding #1:** PR#381 added `responsible: "sender"|"sponsor"|"network"` + `agentErrorCode?: string` to `BroadcastAndConfirmResult` + `BroadcastOnlyResult`. LP's relay-rpc.ts has zero references to either field → attribution data never reaches consumer observability/UX.
+- **v424 #386 cross-link comment:** the verification doc's Metric 2 query depends on `agentErrorCode` propagating to aibtc-landing logs — won't happen until LP parser extends.
+
+**Inference:** arc's APPROVED reviews focus on relay-side correctness (good code, good tests). They don't cross the LP-side wire boundary. Consumer extraction is consistently the missing piece.
+
+**Future rule for relay-PR reviews:** when a PR adds new fields to `BroadcastAndConfirmResult`, `BroadcastOnlyResult`, or `/sponsor` / `/relay` response shapes, do a one-grep check against `aibtcdev/landing-page/lib/inbox/relay-rpc.ts`:
+
+```bash
+gh api repos/aibtcdev/landing-page/contents/lib/inbox/relay-rpc.ts --jq '.content' | base64 -d | grep -n "<new_field_name>"
+```
+
+If zero hits, flag as cross-repo wire-contract gap in the relay PR review with a one-line suggestion: "consumer-side parser extension at LP needed as Phase X.Y follow-on." This is substantive and adds value beyond arc's relay-only review hat.
+
+**Why this generalizes:** the relay's RPC service binding (X402_RELAY) has TypeScript types that DO include the new fields, but the LP's manually-written parsers (`parseSubmitPaymentResult` etc.) are the bottleneck — they only extract the fields they explicitly enumerate. Type safety at the binding level doesn't propagate to extraction. The pattern is essentially: TypeScript types describe the wire; manual parsers gate the consumption.
+
+**Cheap follow-on opportunity (named for future):** A single LP PR that extends `parseSubmitPaymentResult` + `parseCheckPaymentResult` + RelaySubmitResult/RelayCheckResult interfaces to include `nonceExpiresAt`, `sponsorNonceValidForMs`, `responsible`, `agentErrorCode` — addresses all cross-repo gaps from the nonce-conflict-attribution quest in one shot. ~30-50 LOC. Filed by me once any of the relay PRs merge if no one else picks up.
+
+**Linked artifacts:** [#883 review](https://github.com/aibtcdev/landing-page/pull/883#pullrequestreview-4314947260), [#381 review](https://github.com/aibtcdev/x402-sponsor-relay/pull/381#pullrequestreview-4315000166), [#386 cross-link](https://github.com/aibtcdev/x402-sponsor-relay/pull/386#issuecomment-4483698245).
