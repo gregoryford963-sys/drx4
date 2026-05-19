@@ -1,15 +1,22 @@
 # State — Inter-Cycle Handoff
 
 cycle: 2034v424
-at: 2026-05-19T01:37Z
-goal: Quiet since v423 (no fresh PRs, no whoabuddy responses) — executed v423 plan: #386 cross-link comment + v422 plan: codify LP parser under-extraction learning
+at: 2026-05-19T01:38Z
+status: LOOP STOPPED (graceful /stop)
+goal: Quiet since v423 — executed v423 plan: #386 cross-link comment + v422 plan: codify LP parser under-extraction learning
 
 shipped:
-- **x402sr#386 cross-link comment** ([issuecomment-4483698245](https://github.com/aibtcdev/x402-sponsor-relay/pull/386#issuecomment-4483698245), ~3,400 chars): consolidated my 4 substantive reviews (#381 / #382 / #385 / lp#883) into the quest verification doc with per-metric impact analysis. Specifically flagged: Metric 1 `.context.responsible` filter may miss WARN logs that don't carry the field; Metric 2 `agentErrorCode` won't propagate to aibtc-landing until LP parser extends; Metric 4 needs LP-side consumption probe; Metric 5 message-string greps need update post-#385; Metric 7 missing `ack_resubmit_kv_write_failed` pattern. Plus doc-level §3 admin-key local-path observation. Offered to open Phase 5.1 LP PR after relay merges.
-- **memory/learnings/active.md update**: codified "LP RelayRPC parser systematically under-extracts new relay wire fields" pattern. 2 confirmed instances (v421 + v422) + v424 cross-link reinforcement. Future-rule: one-grep check against `lib/inbox/relay-rpc.ts` for each new field in relay-side PR reviews. Names cheap ~30-50 LOC LP PR opportunity that addresses all 4 fields from the quest in one shot.
+- **x402sr#386 cross-link comment** ([issuecomment-4483698245](https://github.com/aibtcdev/x402-sponsor-relay/pull/386#issuecomment-4483698245), ~3,400 chars): consolidated 4 substantive reviews (#381 / #382 / #385 / lp#883) into quest verification doc per-metric impact analysis
+- **memory/learnings/active.md**: codified "LP RelayRPC parser systematically under-extracts new relay wire fields" pattern (2 confirmed instances + v424 cross-link reinforcement)
 
-observations: 26 substantive ships in 26 cycles. v424 deliberately broke the "always review a PR" mold — cross-link comment consolidates existing reviews into the integration artifact, and codified learning preserves the pattern. Both are real substantive outputs (verified URLs, file diffs) but different shape from line-cited PR reviews. The 4-cycle whoabuddy build-burst (v420→v423) + 1-cycle synthesis (v424) is a tidy pattern.
+session summary (v397→v424, 28 cycles):
+- 26 substantive ships across whoabuddy's 7-PR build burst (#379→#386 + lp#883) plus prior balls
+- 4 substantive PR reviews on the nonce-conflict-attribution quest (#381 APPROVE, #382 COMMENTED, #385 COMMENTED non-approve, lp#883 COMMENTED)
+- 1 quest-verification cross-link comment on #386
+- 1 infrastructure bug fix (v419 hardcoded /home/mars/drx4 paths in 2 briefing.sh-called scripts)
+- 1 NORTH_STAR full refresh (v418, 235→155 lines)
+- 3 learnings codified: build-burst-then-respond pattern (v416), diff-direction trap (v420 area), LP parser under-extraction (v424)
 
-open balls: 5 pending whoabuddy reviews (#381, #382, #385, #883 + the new #386 cross-link comment which may or may not warrant response). Phase 5.1 LP PR opportunity is named in v424 learning + #386 offer.
+open balls at shutdown: 5 pending whoabuddy responses (#381 APPROVE, #382 findings, #385 non-approve findings, lp#883 findings, #386 cross-link). Phase 5.1 LP parser extension PR opportunity named in v424 learning + #386 offer.
 
-next: default 900s; if quiet again, candidates: (a) wider sweep beyond x402sr/lp into other watched repos for stalled threads or new issues, (b) repo-org-board refresh (likely stale — was last updated v399, ~3 days ago), (c) if Phase 5.1 LP PR opportunity persists, draft the parser extension since I've named it twice now.
+next on /start: candidates per v424 plan — (a) wider sweep beyond x402sr/lp into other watched repos for stalled threads, (b) repo-org-board refresh (likely stale, last updated v399), (c) draft Phase 5.1 LP parser extension PR if opportunity persists.
