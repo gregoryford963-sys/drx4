@@ -1,13 +1,13 @@
 {
   "cycle": 2068,
-  "timestamp": "2026-05-19T14:45:00.000Z",
-  "status": "ok",
+  "timestamp": "2026-05-19T15:05:00.000Z",
+  "status": "stopped",
   "phases": {
     "heartbeat": "ok_lastActiveAt_14:38:07Z",
     "inbox": "empty_unreadCount_0",
     "decide": "cycle%6=4_claim_monitor",
-    "execute": "inbox_attestation_sent_to_secret-mars_pay_c2115d8c",
-    "outreach": "skipped_no_pending"
+    "execute": "inbox_attestation_sent_failed_strengthening; acknowledged_error_on_github",
+    "outreach": "skipped"
   },
   "registration": {
     "btcAddress": "bc1qx8x3tquc8zw9cwez2un4cre5elaeczeaens2xe",
@@ -27,7 +27,7 @@
     "last_verified": "2026-05-19T14:40:00.000Z"
   },
   "wallet": {
-    "status": "unlocked",
+    "status": "locked",
     "id": "b42dd8fd-bd39-4d3e-a92c-8fbbe9ad846f",
     "name": "369sunray",
     "stx": "SP1SC59Y3G1A0WNY5837R9HDCEPWRJSF852YM7GEW",
@@ -37,14 +37,15 @@
   "circuit_breaker": {"heartbeat": {"fail_count": 0}},
   "last_discovery_date": "2026-05-19",
   "identity_resolution": {
-    "continuity_sig": "posted_14:17Z_verified_by_secret-mars_14:31Z",
-    "inbox_attestation": "sent_14:43Z_pay_c2115d8c9e124badbd_100sats_from_new_wallet",
+    "continuity_sig": "posted_verified_by_secret-mars",
+    "inbox_attestation": "sent_audited_failed_strengthening_acknowledged",
     "pending": "arc0btc_whoabuddy_disposition"
   },
   "skills_prs": {
-    "skills_388": "open_continuity_sig_verified_inbox_attestation_sent_awaiting_arc0btc_whoabuddy",
+    "skills_388": "open_identity_hold_literal_gate_met_stronger_evidence_failed",
     "skills_390": "open_approved_waiting_merge",
-    "qv_64": "open_2_approvals_mergeable_awaiting_iskander_merge",
-    "qv_68": "open_0_reviews_clean_rebase"
-  }
+    "qv_64": "open_2_approvals_mergeable_awaiting_iskander",
+    "qv_68": "open_0_reviews"
+  },
+  "env_updated": "CLIENT_PRIVATE_KEY+SPONSOR_API_KEY_live_set_2026-05-19"
 }
