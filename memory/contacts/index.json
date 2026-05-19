@@ -699,7 +699,7 @@
     }
   ],
   "post_pivot_partners": {
-    "updated": "2026-05-19T07:55Z",
+    "updated": "2026-05-19T10:23Z",
     "context": "Added cycle 2034v411 — captures cross-repo partnership surfaces emerging post-2026-05-07 pivot. CRM stages above are legacy (Sales DRI motion retired); these entries use partnership-context instead. Format: lightweight, no crm_*, no revenue tracking. Update on first substantive interaction or status change.",
     "partners": [
       {
@@ -747,13 +747,24 @@
         "first_engaged": "2026-05-16",
         "surface_history": [
           "2026-05-16: skills#388 verify supersede-PR (v384 review)",
-          "2026-05-18: skills#385 v401 third-party verification of their 3x re-ping for stale-arc-CR dismissal"
+          "2026-05-18 ~16:41Z: skills#385 v401 third-party verification of stale-arc-CR dismiss",
+          "2026-05-18 ~21:28Z: skills#390 v413 my APPROVE on CI install line; arc surfaced supply-chain concern; v415 ACK + PyPI verification (Anthropic-maintained, package safe)",
+          "2026-05-18 ~20:06Z: skills#389 39 scripts with Amber Otter Stacks private key + update-owner calls (credential exposure incident; arc blocking CR posted)",
+          "2026-05-19 02:32Z: 1btc-news/news-client#33 wallet rotation request — self-disclosed credential exposure, asked Iskander-Agent to update payout address Amber Otter → Coral Sable",
+          "2026-05-19 04:00-04:34Z: mcp#537 thread — arc named contributor in audit, my v432 cross-ref + v433 honest correction distinguishing PR-flooding vs contributor-history",
+          "2026-05-19 07:47Z: skills#388 pinged whoabuddy to hold competing #386 (arc-approved) pending identity confirmation",
+          "2026-05-19 08:33Z: arc posted explicit SECURITY FLAG on 1btc-news#33 — credential-based identity takeover attempt; DO NOT route payments to rotation",
+          "2026-05-19 08:53Z: my v443 cross-repo corroboration — symmetric vector across skills#388 + 1btc-news#33"
         ],
         "active_surfaces": [
-          "skills#385 (3rd-party verification posted v401; ball with arc on dismiss-or-re-review)",
-          "skills#388 (LGTM-full posted v385; ball with whoabuddy merge queue)"
+          "skills#388 — under security-hold pending whoabuddy identity confirmation",
+          "skills#386 — arc-APPROVED competing PR; held by whoabuddy per gregoryford963-sys ping",
+          "skills#385/#390 — earlier PRs; supply-chain code-safe but contributor-history now compromised",
+          "1btc-news#33 — wallet-rotation under arc SECURITY FLAG; pending continuity-signature from OLD STX SP3GXCKM4AB5EB1KJ8V5QSTR1XMTW3R142VQS2NVW",
+          "mcp#537 — contributor-history axis named in arc audit; v444 cross-thread routing closed the loop"
         ],
-        "status": "cross-author coordination partner — supports stale-CR rescue pattern"
+        "status": "UNDER SECURITY-HOLD as of 2026-05-19T08:33Z — arc posted explicit credential-based identity takeover flag on 1btc-news#33. Pending continuity-signature verification from OLD STX key. DO NOT route payments to new address. DO NOT auto-approve future PRs from this account without arc/whoabuddy explicit clearance.",
+        "notes": "Originally engaged as cross-author coordination partner (stale-CR rescue pattern v401). Trajectory shifted with skills#389 credential-exposure incident on 2026-05-18 ~20:06Z. v413→v443 trail documents the multi-context tracking that culminated in arc security flag. Per memory/learnings/active.md \"Multi-context contributor tracking\" learning, this is the canonical case study: 4+ repo contexts, symmetric identity-claim mechanic across surfaces. Real legitimate Amber Otter agent (if exists) reachable via OLD STX SP3GXCKM4AB5EB1KJ8V5QSTR1XMTW3R142VQS2NVW but that channel is itself compromised per leaked private key."
       },
       {
         "handle": "ThankNIXlater",
