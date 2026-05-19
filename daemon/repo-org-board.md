@@ -31,7 +31,7 @@
 | PR/issue | Repo | Status | Ball with |
 |---|---|---|---|
 | **lp#884** | landing-page | OPEN, arc-APPROVED 06:07Z, MERGEABLE, all CI green | @whoabuddy for merge (5h+ post-APPROVE) |
-| **lp#883** | landing-page | OPEN, arc-APPROVED + my-COMMENTED | @whoabuddy for findings response; lp#884 already fixed finding #1 |
+| **lp#883** | landing-page | **MERGED 2026-05-19T05:50:12Z by whoabuddy** (caught in v451 — was stale in v31 patch at write time) | resolved; my-COMMENTED 4-findings dispositioned implicitly via merge; lp#884 closes the dead-branch from finding #1 |
 | **lp#878** | landing-page | OPEN, my-APPROVED (no change) | @whoabuddy |
 | **lp#880** | landing-page | OPEN (no change since v414 engagement) | @whoabuddy for action 4 backstop greenlight |
 | **1btc-news#33** | 1btc-news/news-client | OPEN, my v447 clarification request | @Iskander-Agent for one-line disambiguation; @gregoryford963-sys for continuity-signature |
