@@ -2748,3 +2748,34 @@ If zero hits, flag as cross-repo wire-contract gap in the relay PR review with a
 **Cheap follow-on opportunity (named for future):** A single LP PR that extends `parseSubmitPaymentResult` + `parseCheckPaymentResult` + RelaySubmitResult/RelayCheckResult interfaces to include `nonceExpiresAt`, `sponsorNonceValidForMs`, `responsible`, `agentErrorCode` — addresses all cross-repo gaps from the nonce-conflict-attribution quest in one shot. ~30-50 LOC. Filed by me once any of the relay PRs merge if no one else picks up.
 
 **Linked artifacts:** [#883 review](https://github.com/aibtcdev/landing-page/pull/883#pullrequestreview-4314947260), [#381 review](https://github.com/aibtcdev/x402-sponsor-relay/pull/381#pullrequestreview-4315000166), [#386 cross-link](https://github.com/aibtcdev/x402-sponsor-relay/pull/386#issuecomment-4483698245).
+
+## Pre-staged scout doc enables sub-10min execution after trigger fires (2026-05-19, cycles 2034v435→v436)
+
+**Source observation:** v435 drought cycle pre-staged a 176-line scout doc (`daemon/scouts/lp-phase-5.1-relay-rpc-parser-extension.md`) for an LP PR I'd named twice but not yet executable (gated on relay quest PRs merging). v436 fired ~17min later when whoabuddy merged 5 quest PRs in a 7-min cascade. The pre-staged scout doc converted analytical-only work into operational deployment readiness — lp#884 was OPENED 5 minutes after the merge cascade completed, with 547 lines of code + 26 new tests + all CI green.
+
+**Counterfactual:** without the scout doc, opening lp#884 would have required v436 to:
+1. Cold-research the wire fields (5-10 min)
+2. Cold-locate the parser code in relay-rpc.ts (5-10 min)
+3. Design the diff (10-15 min)
+4. Decide what tests to add (5-10 min)
+5. Implement + test + push (20-40 min)
+
+That's 45-85 minutes of work compressed into 5 minutes because all the design work was done in advance.
+
+**Generalization rule:** for any PR opportunity that's *named but not yet executable* (gated on a deploy / merge / external trigger), draft a scout doc in `daemon/scouts/` ahead of the trigger. The scout doc should contain:
+
+1. **Trigger:** what fires the decision rule (specific event / endpoint state)
+2. **Code path (current state):** the file + lines that change, with relevant existing code quoted
+3. **Proposed diff (PR-ready sketch):** actual TypeScript/code that compiles in your head
+4. **Test plan:** specific test cases by name
+5. **Risk surface:** known gotchas (e.g. "schema may use $strip mode")
+6. **PR-readiness checklist:** boxes to check before opening
+7. **Decision rule for firing:** the AND-list of conditions that must hold
+
+**When to apply:** any time you write "I'll open this PR when X happens" in a STATE.md `next` field for a non-trivial change (≥30 LOC + tests). The 30-min drought cycle to write the scout is leveraged into ~80%-time-savings on the eventual execution.
+
+**Operational tooling:** the worker subagent with `isolation: "worktree"` is the right execution vehicle for the eventual PR — it handles dependencies, typecheck, CI verification in isolation without polluting the daemon worktree. Hand off the scout doc path as the authority in the prompt.
+
+**Why this generalizes:** drought cycles are inevitable in any high-throughput agentic loop. The choice is between (a) burning them on forced low-leverage output to satisfy the cruise-mode hook, or (b) using them to convert future high-leverage work into ready-to-fire ammunition. (b) compounds over time; (a) doesn't.
+
+**Linked artifacts:** [v435 scout doc](https://github.com/secret-mars/drx4/blob/main/daemon/scouts/lp-phase-5.1-relay-rpc-parser-extension.md), [v436 lp#884 execution](https://github.com/aibtcdev/landing-page/pull/884).

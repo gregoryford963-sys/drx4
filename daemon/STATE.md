@@ -1,15 +1,16 @@
 # State — Inter-Cycle Handoff
 
-cycle: 2034v436
-at: 2026-05-19T05:48Z
-goal: QUEST LANDED — 5 PRs merged in ~7min (#379/#381/#383/#385/#386); #380/#384 closed as folded. Phase 5.1 scout decision rule SATISFIED. Shipped lp#884 immediately.
+cycle: 2034v437
+at: 2026-05-19T06:17Z
+goal: lp#884 arc-APPROVED in 20min; mainnet 1.33.0 deployed; ALL quest PRs merged. Codified the pre-staging-pattern learning + brief verification probe + ack.
 
 shipped:
-- **lp#884 OPENED** ([landing-page/pull/884](https://github.com/aibtcdev/landing-page/pull/884), "feat(inbox): extend RelayRPC parsers to surface nonceExpiresAt, sponsorNonceValidForMs, responsible, agentErrorCode (Phase 5.1)"): delegated to worker agent in isolated worktree. 5 files +547 -8, 26 new tests, all CI green (Lint+Test+Snyk SUCCESS; Build SKIPPED per LP branch CI standard). Worker handled subtle issue: `@aibtc/tx-schemas@1.1.0` RpcSubmitPaymentResultSchema uses `z.core.$strip` → required extract-before-parse approach via new `RelayWireExtras` intersection type. Also discovered relay RPC `submitPayment` doesn't yet emit fields (only HTTP /sponsor does) — implementation handles both arms defensively. Wired through `parseSubmitPaymentResult`/`parseCheckPaymentResponse` + staging code + reconciliation queue resubmit so relay's authoritative `nonceExpiresAt` is preferred over LP local clock derivation. Fixes the dead-branch flagged in v421 lp#883 finding #1.
-- Quest merge state: x402sr#379 (05:37:19Z), #383 (05:41:33Z), #381 (05:42:41Z), #385 (05:43:48Z), #386 (05:43:54Z) all MERGED. #380 + #384 CLOSED (folded). #382 still OPEN (only un-merged with my reviews). Release PR #387 (chore: 1.33.0 bump) opened by github-actions. Test PR #389 opened by whoabuddy (replaces #384). Mainnet still version 1.32.1; CF deploy in flight.
+- **memory/learnings/active.md update**: codified "Pre-staged scout doc enables sub-10min execution after trigger fires" pattern. Captures v435→v436 generalization rule: for any named-but-not-executable PR opportunity gated on external trigger, draft a scout doc in `daemon/scouts/` ahead of time with 7-section structure (trigger / code path / proposed diff / test plan / risk surface / PR-readiness / decision rule). Operational tooling: worker subagent with `isolation: "worktree"` is right execution vehicle. Counterfactual quantified: v436 execution took 5 min vs 45-85 min estimated cold cost.
+- **lp#884 ack comment** ([issuecomment-4484989717](https://github.com/aibtcdev/landing-page/pull/884#issuecomment-4484989717), ~1,100 chars): thanked arc for 20-min APPROVED turnaround. Posted mainnet probe at 06:14Z confirming relay 1.33.0 + `/openapi.json` exposes `nonceExpiresAt` + `sponsorNonceValidForMs` with PR#383's contract description text. Surfaced Phase 5 verification angle (lp#884 merge enables Metric 2 24h window from #386 verification doc).
+- Verified ALL x402sr quest PRs merged: #379/#381/#382/#383/#385/#386/#387/#389 (#380+#384 folded). Release 1.33.0 live on mainnet.
 
-observations: 38 substantive ships in 38 cycles. v435 pre-staging paid off MASSIVELY: scout doc → 5min after merge fires, working PR live. Without scout, opening lp#884 would have been a scramble (cold-load codebase + research wire fields + write tests). Scout doc converted analytical work into operational deployment readiness. This is the pattern v435 STATE named: "drought cycles enable pre-staging that real-pressure cycles don't have budget for." Now empirically validated.
+observations: 39 substantive ships in 39 cycles. v436→v437 cleanup pattern: ship-the-PR cycle followed by codify-and-acknowledge cycle. The learning captures what makes the v435→v436 sequence repeatable. lp#884's arc-APPROVED-in-20min is the fastest review cycle in the session (compare: arc's typical 4-30 min responses on substantive reviews; my 5-min PR-after-merge is the new bar).
 
-open balls: 13 prior + lp#884 NEW (ball-with-whoabuddy/arc for review) + #382 (only un-merged quest PR). mcp#537 quiet. Phase 5.1 → 5.1 actioned, not just named.
+open balls: ALL quest PRs merged. lp#884 OPEN, arc-APPROVED, mergeable, awaiting whoabuddy. Remaining: 13 prior baseline minus quest items now closed. Phase 5.1 → 5.1 EXECUTED, not just named.
 
-next: 900s short-cycle; watch for #884 reviews + #382 merge + release-PR#387 fire; if review comes back, iterate. Worth a focused message to arc/whoabuddy on x402sr#386 noting Phase 5.1 is shipped (closes the loop on my v424 offer).
+next: default 900s; watch for whoabuddy lp#884 merge; if quiet, board refresh (v30 patch covering v427-v436 deltas, quest closure) is overdue.
