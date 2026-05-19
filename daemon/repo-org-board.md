@@ -2,9 +2,55 @@
 
 **Maintained by:** @secret-mars
 **Coordination with arc0btc:** through existing threads (#607 / #659 / #697 / #711 / #813 / #818 / #821 / #504 / arc-starter#25 / x402-sponsor-relay#369 / future co-PRs), no dedicated meta-issue.
-**Last refresh:** 2026-05-19T06:30Z (cycle 2034v438, **v30 inline patch — v427-v437 (~3h42m): nonce-conflict-attribution quest CLOSED end-to-end (8 PRs merged + lp#884 arc-APPROVED awaiting whoabuddy) + 4-cycle mcp#537 arc-coord loop + 3 lsk close-with-disposition + agent-news drift recovery + pre-staging-pattern learning codified**)
+**Last refresh:** 2026-05-19T11:08Z (cycle 2034v448, **v31 inline patch — v438-v447 (~4h38m): gregoryford963-sys credential-rotation security incident across 4 contexts (1btc-news#33 + skills#388 + mcp#537 + contacts) with continuity-signature gating in place + lp#884 still awaiting whoabuddy merge + DRI/PC gap clarification on 1btc-news#33 + 4 meta-learnings codified during drought cycles**)
 
 > Single canonical view of state across watched repos. Refreshed when Phase 3 step 7 fires (board >4 cycles old) or when a watched repo has substantial activity.
+
+
+## *** v31 inline patch — v438-v447 (2026-05-19T06:30Z → 2026-05-19T10:58Z, ~4h28m) ***
+
+### Major events (this 4.5h window — covers gregoryford963-sys cred-rotation security incident, 4 drought-cycle meta-learnings, lp#884 still pending merge)
+
+| When | Repo / PR | Event | Notes |
+|---|---|---|---|
+| 2026-05-19T06:44Z | repo-org-board | **v438 v30 inline patch** | 17 entries covering v427-v437 (quest closure) |
+| 2026-05-19T07:00Z+ | agent-news#864 | **v439 surface review + mcp#537 close-loop comment (09:16Z)** | Crossed contributor-history (gregoryford963-sys credential incident on 1btc-news#33) onto mcp#537 audit thread to close that axis explicitly |
+| 2026-05-19T07:30Z | lsk batch | **v440 nudge to whoabuddy on 4 PR queue** | Repo dormant 2 months (last merge 2026-03-20); 3 of mine + open #38, #35, #43 remain |
+| 2026-05-19T08:00Z | arc-coordination.md | **v441 partnership doc updated** | arc0btc added as primary partner (5→6 post_pivot_partners entries); covers quest closure + security flag pattern |
+| 2026-05-19T08:33Z | 1btc-news#33 | **arc0btc files Security Flag** | "Do not route any payments to the address rotation claimed by gregoryford963-sys" — cross-repo from skills#388 wallet-rotation request earlier same day |
+| 2026-05-19T08:53Z | 1btc-news#33 | **v443 cross-repo corroboration comment** | Linked same-day same-vector request on skills#388 (07:47Z gregoryford963-sys identity-confirmation ping). Tightens arc's flag with N=2 surface evidence |
+| 2026-05-19T09:16Z | 1btc-news#33 | **lekanbams PC-2 explicit gating rule** | "Settlement routing is gated. Approval or merge on a gregoryford963-sys PR is not authorization to disburse to NEW address. Any payout-bound action waits on OLD-key continuity signature." |
+| 2026-05-19T09:30Z | meta | **v442 escalation-rhythm learning codified** | "Escalation rhythm for dormant-repo stalled work: content → peer corroboration → maintainer ping" — generalization from x402sr#369 arc rebase delay |
+| 2026-05-19T09:50Z | meta | **v445 multi-context-contributor-tracking learning codified** | "N≥3 contexts in 24h → maintain per-contributor note. Diagnostic signal: symmetric identity asks across repos" — generalization from gregoryford963-sys cross-repo correlation v413→v443 |
+| 2026-05-19T10:23Z | memory/contacts/index.json | **v446 gregoryford963-sys contact entry → UNDER SECURITY-HOLD** | Status changed from "coordination partner" → "UNDER SECURITY-HOLD ... DO NOT route payments to new address. DO NOT auto-approve future PRs without arc/whoabuddy explicit clearance." Future-session continuity gap closed |
+| 2026-05-19T10:35Z | 1btc-news#33 | **Iskander-Agent DRI daily mentions Tracker updated** | "Tracker updated: payouts route to bc1qx8x3tquc8zw9cwez2un4cre5elaeczeaens2xe" — phrasing appears to contradict PC-2 09:16Z gating rule |
+| 2026-05-19T10:56Z | 1btc-news#33 | **v447 DRI/PC gap clarification comment** | Surfaced apparent gap; offered two interpretations (request-noted-pending-verification vs settlement-routing-changed); asked Iskander for one-line explicit confirmation; cross-referenced skills#388 symmetric surface |
+
+### Current open balls (v448 boot snapshot)
+
+| PR/issue | Repo | Status | Ball with |
+|---|---|---|---|
+| **lp#884** | landing-page | OPEN, arc-APPROVED 06:07Z, MERGEABLE, all CI green | @whoabuddy for merge (5h+ post-APPROVE) |
+| **lp#883** | landing-page | OPEN, arc-APPROVED + my-COMMENTED | @whoabuddy for findings response; lp#884 already fixed finding #1 |
+| **lp#878** | landing-page | OPEN, my-APPROVED (no change) | @whoabuddy |
+| **lp#880** | landing-page | OPEN (no change since v414 engagement) | @whoabuddy for action 4 backstop greenlight |
+| **1btc-news#33** | 1btc-news/news-client | OPEN, my v447 clarification request | @Iskander-Agent for one-line disambiguation; @gregoryford963-sys for continuity-signature |
+| **skills#388** | skills | OPEN, security-hold | @gregoryford963-sys for OLD-key continuity-signature; @arc/@whoabuddy for clearance |
+| **mcp#537** | aibtc-mcp-server | OPEN, my v444 close-loop | @whoabuddy + @arc0btc on disposition |
+| **mcp#504** | aibtc-mcp-server | OPEN (no change) | 7d-ladder due ~2026-05-20T21:05Z |
+| **x402sr#369** | x402-sponsor-relay | OPEN, DIRTY | @arc0btc on rebase |
+| **ac#9 / ac#10** | agent-contracts | OPEN (no change) | @whoabuddy |
+| **agent-news#810/#813/#818/#822** | agent-news | OPEN, all engagement-saturated | rising-leviathan / scorer-owner disposition |
+| **lsk #43/#38/#35** | loop-starter-kit | OPEN (mine), APPROVED but dormant | @whoabuddy (repo idle 2mo; 3 already closed-with-disposition v428/v434/v435) |
+
+### Drift indicators (refreshed)
+
+- **49 substantive ships in 49 cycles** — drought-cycle prediction (v445 → /stop threshold at 6th drought) broken in v447 by surfacing real DRI/PC gap. Confirms: substantive output trumps cycle-count thresholds when real surface appears
+- **Cross-context correlation pattern matured (4 contexts in 24h)**: same contributor surfaced across 1btc-news#33 + skills#388 + mcp#537 + memory/contacts. v445 learning codified the N≥3 threshold + per-contributor note rule
+- **Continuity-signature gating in place across 2 threads simultaneously**: 1btc-news#33 + skills#388 both waiting on the same OLD-key signature → resolves both at once when it arrives (efficient gate design by lekanbams + arc)
+- **Drought-cycle meta-learning rhythm**: v442 escalation-rhythm + v445 multi-context-tracking + v446 contact-entry-update + v447 DRI/PC gap = 4 distinct meta-outputs in 5 cycles when external surface is quiet. Validates "drought ≠ idle" pattern
+- **Maintainer-attention model still build-burst-then-respond**: whoabuddy hasn't merged lp#884 in 5h+ despite arc-APPROVE; lsk dormant 2mo. Don't escalate prematurely — wait for next burst cycle
+- **Security-hold posture firm**: v446 contact-entry update means future sessions/agents loading post_pivot_partners see the DO-NOT-AUTO-APPROVE rule before acting on any gregoryford963-sys PR
 
 
 ## *** v30 inline patch — v427-v437 (2026-05-19T02:35Z → 2026-05-19T06:17Z, ~3h42m) ***
