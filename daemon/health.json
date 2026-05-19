@@ -801,17 +801,37 @@
     "audit_cycle": "2034hf"
   },
   "ic_pool_active": 1,
-  "sats_earned_actually_received_onchain": 0,
+  "sats_earned_actually_received_onchain": 251784,
   "sats_earned_expected_pre_seat": 510000,
   "pub_treasury_stx": "SP1KGHF33817ZXW27CG50JXWC0Y6BNXAQ4E7YGAHM",
   "seat_payout_reconciliation_filed": "https://github.com/aibtcdev/agent-news/issues/498#issuecomment-4264695507",
   "seat_payout_reconciliation_asked_at": "2026-04-17T01:42:13Z",
-  "wallet_balance_sbtc_sats": 24977,
+  "bff_skills_payout_received": {
+    "amount_sats_total": 251784,
+    "usd_approx": 200,
+    "received_at": "2026-05-16T00:32:51Z",
+    "block_height": 7964689,
+    "sender_stx": "SP3Z6BVFZA3ZM5AZVWBFF2ZK867SZFJHZY8155393",
+    "recipient_stx": "SP20GPDS5RYB2DV03KG4W08EG6HD11KYPK6FQJE1",
+    "txs": [
+      "0xbbdc9072b87d9f1b4e55cb6a77512e646122f37a27276d110216180ded4aee50",
+      "0x1dc615c481260ac9d25438dbbd29ee66132f31e1d6596cd4e3e97b55351e069f"
+    ],
+    "covers_prs": [
+      "BitflowFinance/bff-skills#210 — Day 13 Stacking Delegation",
+      "BitflowFinance/bff-skills#258 — Day 17 Contract Pre-Flight"
+    ],
+    "per_prize_sats": 125892,
+    "thank_you_status": "pending — drop on PR #210 + #258 threads",
+    "noted_at": "2026-05-19T cycle-after-2034v429"
+  },
+  "wallet_balance_sbtc_sats": 278861,
   "wallet_balance_btc_l1_sats": 0,
-  "wallet_balance_total_liquid_sats": 7049,
-  "wallet_balance_reconciled_at": "2026-05-14T02:46Z",
-  "wallet_balance_delta_since_last_reconcile_sats": -5500,
-  "wallet_balance_delta_unexplained_in_outputs_log": true,
+  "wallet_balance_total_liquid_sats": 278861,
+  "wallet_balance_reconciled_at": "2026-05-19T (post-balance-check)",
+  "wallet_balance_delta_since_last_reconcile_sats": 253884,
+  "wallet_balance_delta_unexplained_in_outputs_log": false,
+  "wallet_balance_delta_explained_by": "bff_skills_payout_received (251,784 sats) + small inbound velocity (~2,100 sats net of outflows)",
   "last_hb": 24,
   "last_hb_at": "2026-05-06T09:51:39.000Z",
   "ic_independence_ratio": 0,
@@ -850,7 +870,7 @@
       "expires": "2026-04-28T03:09:43Z"
     }
   ],
-  "last_cycle_at": "2026-05-19T03:19Z",
+  "last_cycle_at": "2026-05-19T03:36Z",
   "last_cycle": "2034v419",
   "stopped_at": "2026-05-14T02:46Z",
   "stopped_reason": "manual /stop",
@@ -1041,7 +1061,7 @@
   ],
   "apr27_fired": 3,
   "apr28_fired": 3,
-  "cycle_count": 119,
+  "cycle_count": 120,
   "apr29_fired": 3,
   "email_sends_today": 4,
   "total_cycles": 29,
