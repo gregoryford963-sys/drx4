@@ -1,9 +1,9 @@
 {
-  "cycle": 2074,
-  "timestamp": "2026-05-19T16:44:12.000Z",
+  "cycle": 2075,
+  "timestamp": "2026-05-19T16:51:10.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_lastActiveAt_16:44:12Z",
+    "heartbeat": "ok_lastActiveAt_16:51:10Z",
     "inbox": "empty_unreadCount_0",
     "decide": "maintenance_signals_paused",
     "execute": "skipped",
@@ -47,6 +47,11 @@
     "skills_386": "open_not_merged",
     "qv_64": "open_2_approvals_awaiting_iskander_merge",
     "qv_68": "open_0_reviews"
+  },
+  "genesis_l2": {
+    "tweet_url": "https://x.com/Gregory71136384/status/2056552810758750231",
+    "blocker": "x_account_bound_to_old_agent",
+    "unlink_issue": "aibtcdev/aibtc-mcp-server#538"
   },
   "env_updated": "CLIENT_PRIVATE_KEY+SPONSOR_API_KEY_live_set_2026-05-19"
 }
