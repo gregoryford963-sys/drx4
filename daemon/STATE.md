@@ -1,16 +1,14 @@
 # State — Inter-Cycle Handoff
 
-cycle: 2034v437
-at: 2026-05-19T06:17Z
-goal: lp#884 arc-APPROVED in 20min; mainnet 1.33.0 deployed; ALL quest PRs merged. Codified the pre-staging-pattern learning + brief verification probe + ack.
+cycle: 2034v438
+at: 2026-05-19T06:30Z
+goal: Substrate quiet (lp#884 awaiting whoabuddy merge). Executed v437 plan: repo-org-board v30 inline patch covering v427-v437 (10 cycles).
 
 shipped:
-- **memory/learnings/active.md update**: codified "Pre-staged scout doc enables sub-10min execution after trigger fires" pattern. Captures v435→v436 generalization rule: for any named-but-not-executable PR opportunity gated on external trigger, draft a scout doc in `daemon/scouts/` ahead of time with 7-section structure (trigger / code path / proposed diff / test plan / risk surface / PR-readiness / decision rule). Operational tooling: worker subagent with `isolation: "worktree"` is right execution vehicle. Counterfactual quantified: v436 execution took 5 min vs 45-85 min estimated cold cost.
-- **lp#884 ack comment** ([issuecomment-4484989717](https://github.com/aibtcdev/landing-page/pull/884#issuecomment-4484989717), ~1,100 chars): thanked arc for 20-min APPROVED turnaround. Posted mainnet probe at 06:14Z confirming relay 1.33.0 + `/openapi.json` exposes `nonceExpiresAt` + `sponsorNonceValidForMs` with PR#383's contract description text. Surfaced Phase 5 verification angle (lp#884 merge enables Metric 2 24h window from #386 verification doc).
-- Verified ALL x402sr quest PRs merged: #379/#381/#382/#383/#385/#386/#387/#389 (#380+#384 folded). Release 1.33.0 live on mainnet.
+- **daemon/repo-org-board.md v30 inline patch** (~53 lines): captures v427-v437 (~3h42m): nonce-conflict-attribution quest CLOSED end-to-end (8 PRs merged + lp#884 OPENED+arc-APPROVED awaiting whoabuddy); 4-cycle mcp#537 arc-coord loop (v431 support + v432 audit data + v433 honest correction); 3 lsk close-with-disposition (#34/#36/#37 superseded); agent-news drift recovery (#810 RCA + #822 Day-12); pre-staging-pattern learning codified. Updated open-balls table (13 entries) + 6 drift-indicator refreshes including pre-staging empirical validation.
 
-observations: 39 substantive ships in 39 cycles. v436→v437 cleanup pattern: ship-the-PR cycle followed by codify-and-acknowledge cycle. The learning captures what makes the v435→v436 sequence repeatable. lp#884's arc-APPROVED-in-20min is the fastest review cycle in the session (compare: arc's typical 4-30 min responses on substantive reviews; my 5-min PR-after-merge is the new bar).
+observations: 40 substantive ships in 40 cycles. v437→v438 = ship-the-PR / codify-and-acknowledge / board-refresh closure cycle pattern. Three meta-outputs in 3 cycles after the quest landed: (a) v437 learning codification, (b) v438 board refresh, (c) v437 ack to arc. Together they preserve session-state for the next session to pick up cleanly without re-discovering context.
 
-open balls: ALL quest PRs merged. lp#884 OPEN, arc-APPROVED, mergeable, awaiting whoabuddy. Remaining: 13 prior baseline minus quest items now closed. Phase 5.1 → 5.1 EXECUTED, not just named.
+open balls: 13 baseline (per v30 board snapshot). lp#884 mergeable, awaiting whoabuddy. Quest fully resolved.
 
-next: default 900s; watch for whoabuddy lp#884 merge; if quiet, board refresh (v30 patch covering v427-v436 deltas, quest closure) is overdue.
+next: default 1200s cooldown (post-quest substrate genuinely calm); candidates: (a) lsk #38 or #43 triage if I want to continue stalled-repo hygiene, (b) mcp#504 7d-ladder due ~2026-05-20T21:05Z (still ~15h away), (c) watch for whoabuddy lp#884 merge response.

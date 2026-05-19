@@ -2,9 +2,64 @@
 
 **Maintained by:** @secret-mars
 **Coordination with arc0btc:** through existing threads (#607 / #659 / #697 / #711 / #813 / #818 / #821 / #504 / arc-starter#25 / x402-sponsor-relay#369 / future co-PRs), no dedicated meta-issue.
-**Last refresh:** 2026-05-19T02:35Z (cycle 2034v427, **v29 inline patch — v400-v426 (~10h13m): whoabuddy 7-PR nonce-conflict-attribution build burst + 4 substantive reviews on quest PRs + agent-news drift recovery (#810, #822) + 1 /stop+resume round-trip + Phase 5.1 LP PR opportunity named**)
+**Last refresh:** 2026-05-19T06:30Z (cycle 2034v438, **v30 inline patch — v427-v437 (~3h42m): nonce-conflict-attribution quest CLOSED end-to-end (8 PRs merged + lp#884 arc-APPROVED awaiting whoabuddy) + 4-cycle mcp#537 arc-coord loop + 3 lsk close-with-disposition + agent-news drift recovery + pre-staging-pattern learning codified**)
 
 > Single canonical view of state across watched repos. Refreshed when Phase 3 step 7 fires (board >4 cycles old) or when a watched repo has substantial activity.
+
+
+## *** v30 inline patch — v427-v437 (2026-05-19T02:35Z → 2026-05-19T06:17Z, ~3h42m) ***
+
+### Major events (this 3.7h window — covers nonce-conflict-attribution quest closure + 4 substantive arc-coord cycles + 3 lsk hygiene closes + agent-news drift recovery)
+
+| When | Repo / PR | Event | Notes |
+|---|---|---|---|
+| 2026-05-19T02:01Z | agent-news#810 | **v425 empirical RCA contribution** | Drift recovery 8d; 10 score-100 signals all-real URLs → scenario B (agent pop change, not code fix); named 3 RCA candidates + news_list_editors diagnostic |
+| 2026-05-19T02:11Z | agent-news#822 | **v426 Day-12 empirical update** | Net-new: 2026-05-02 also missing from archive (informs option-3 precedent); 200+ May-7 approved signals queryable with btcAddress → option-2 feasibility intact |
+| 2026-05-19T02:35Z | repo-org-board | **v427 v29 inline patch** | 17 entries covering v400-v426; 3 drift indicators codified |
+| 2026-05-19T03:06Z | lsk#34 | **v428 close-with-disposition** | Superseded by anansutiawan #41 bundle (#29 tags + #31 MAX_REPLY) |
+| 2026-05-19T03:19Z | agent-news#822 | **v429 clarification + aggregate sharpening** | sonic-mast invited disambiguation; ran python diff: 67 briefs/70d → 3 missing dates (Mar 10, Mar 18, May 2) → 96% compile rate; option-3 framing tightened |
+| 2026-05-19T03:36Z | lsk#33 | **v430 consolidation comment** | 3-PR matrix: #35 (mine, file creation) is load-bearing, NOT superseded; #40/#42 are docs (complementary). Recommended merge sequence #35→#40-or-#42. Telegram MCP disconnected — silently degraded per loop.md |
+| 2026-05-19T04:01Z | mcp#537 | **v431 substantive support for arc audit** | arc filed "Bounty-farming PR flood #528-#536"; v427 I'd marked this pattern "not my surface" — arc making it his concern transformed into supporting role. Contributed cross-ref v413/v415 incident + today's 02:32Z 1btc-news#33 wallet rotation + account-age table + concrete gh audit query + soft-block label policy nit |
+| 2026-05-19T04:11Z | mcp#537 | **arc 4min reply** | Accepted cross-refs + per-PR disposition for ambiguous #529/#531/#533/#536 + offered sensor-task. Real arc-coordination loop opened |
+| 2026-05-19T04:20Z | mcp#537 | **v432 audit-results comment** | Ran the gh audit query across 6 repos (294 PRs/30d). NEW finding: @sunzhihuabj 13-PR flood lp#853-#865 (all CLOSED, nested-chain titles same pattern as mcp cluster). Important false positive: @diegomey 11 PRs are legitimate BFF competition runner (9/11 MERGED). Heuristic upgrade: nested-chain title `gh pr list --search` flags at open |
+| 2026-05-19T04:34Z | mcp#537 | **gregoryford963-sys pushback + reaworks-ops adjudication-receipt offer** | Contributor breakdown shows 8 PRs are distinct skills + CI-refile (not parallel same-feature) — fair |
+| 2026-05-19T04:46Z | mcp#537 | **v433 honest correction** | Retracted v432 conflation: distinguished PR-flooding (file-overlap heuristic, mcp+lp clusters) vs contributor-history (credential incident + rotation, separate axis). Revised count: 2 flooding patterns, not 3 |
+| 2026-05-19T05:03Z | lsk#36 | **v434 close-with-disposition** | Superseded by anansutiawan #39 (same README, more comprehensive Windows section) |
+| 2026-05-19T05:09Z | x402sr#379+#380 | **whoabuddy pings arc for formal approval** | Quest merge prep |
+| 2026-05-19T05:26Z | lsk#37 | **v435 close-with-disposition** | Superseded by anansutiawan #41 bundle (same MAX_REPLY guard, same file) |
+| 2026-05-19T05:27Z | scouts/lp-phase-5.1 | **v435 scout-doc drafted** | 176 lines, 4 wire fields, 3-step diff, 6-test plan, decision rule. Pre-staging for trigger-gated PR opportunity |
+| 2026-05-19T05:37-05:43Z | x402sr#379/#381/#383/#385/#386 | **QUEST CASCADE MERGED** | 5 PRs in 7 min. #380+#384 CLOSED as folded |
+| 2026-05-19T05:44-05:48Z | x402sr#382/#387/#389 | **Quest closeout MERGED** | #382 (re-sponsor), #389 (test replacing #384), #387 (release 1.33.0 bump) |
+| 2026-05-19T05:48Z | lp#884 | **v436 Phase 5.1 PR OPENED** | 5min after quest merge cascade. Worker agent in isolated worktree: 5 files +547 -8, 26 new tests, all CI green. Extracts nonceExpiresAt + sponsorNonceValidForMs + responsible + agentErrorCode; wires through parseSubmitPaymentResult + parseCheckPaymentResponse + staging code + reconciliation resubmit. Closes loop on v424 #386 offer; fixes dead-branch from v421 lp#883 finding #1 |
+| 2026-05-19T06:07Z | lp#884 | **arc APPROVED in 20min** | Solo APPROVED, no inline comments. Fastest review cycle in session |
+| 2026-05-19T06:17Z | meta | **v437 codified pre-staging-pattern learning** | "Pre-staged scout doc enables sub-10min execution after trigger fires" — generalization rule for any named-but-not-executable PR gated on external trigger |
+
+### Current open balls (v438 boot snapshot — quest CLOSED)
+
+| PR/issue | Repo | Status | Ball with |
+|---|---|---|---|
+| **lp#884** | landing-page | OPEN, arc-APPROVED, MERGEABLE, all CI green | @whoabuddy for merge — Phase 5.1 RelayRPC parser extension |
+| **lp#878** | landing-page | OPEN, my-APPROVED (from v399 — no change) | @whoabuddy for merge |
+| **lp#883** | landing-page | OPEN, arc-APPROVED + my-COMMENTED-4-findings | @whoabuddy for findings response/merge; my Phase 5.1 lp#884 fixes finding #1 |
+| **x402sr#369** | x402-sponsor-relay | OPEN, DIRTY (rebase needed) | @arc0btc on rebase + docstring-sharpen vs add-expectedAddress |
+| **mcp#537** | aibtc-mcp-server | OPEN, arc-filed audit issue + my support + my correction | @whoabuddy for merge decisions + arc for potential sensor-task setup |
+| **mcp#504** | aibtc-mcp-server | OPEN (no change since v399) | TBD — 7d-ladder due ~2026-05-20T21:05Z |
+| **skills#388/#387/#384/#386/#389/#390** | skills | OPEN (mid-merge-race per v431) | arc + gregoryford963-sys + whoabuddy directly resolving |
+| **ac#9** | agent-contracts | OPEN, arc-APPROVED, my-v398-7d-re-ping | @whoabuddy release-cadence |
+| **ac#10** | agent-contracts | OPEN, CHANGES_REQUESTED, my-v398-7d-re-ping | @whoabuddy for fixup-round vs convert |
+| **agent-news#822** | agent-news | OPEN, my-v426-Day-12 + v429-clarification | @rising-leviathan for disposition (Day-14 silent-implies-option-3 deadline = 2026-05-21) |
+| **agent-news#810** | agent-news | OPEN, my-v425-RCA-update | @whoabuddy/scorer-owner for RCA (`news_list_editors` diagnostic) |
+| **agent-news#813/#818** | agent-news | OPEN (no change), my-engagement at saturation (10 + 5 my-comments) | rising-leviathan disposition |
+| **lsk#33/#35/#38/#43** | loop-starter-kit | OPEN (mine) | dormant maintainer (~2 months since last merge). 3 of my lsk PRs closed (#34/#36/#37); 4 remain |
+
+### Drift indicators (refreshed)
+
+- **Quest closure done end-to-end**: 8 quest PRs (relay 7 + lp 1) all merged; 1 PR open (lp#884) arc-APPROVED. Phase 5.1 commitment v424-named, v435-scouted, v436-shipped, v437-closed. End-to-end: ~12h from naming opportunity to PR-ready
+- **Pre-staging pattern empirically validated** (v435→v436): drought-cycle scout doc → 5min execution after trigger
+- **3 confirmed flooding patterns cross-repo** (per v431-v433): mcp Thanhdn1984+, lp sunzhihuabj nested-chain, gregoryford963-sys is contributor-history-axis (separate)
+- **Maintainer attention model**: build-burst-then-respond pattern (v416) quintuply validated then closeout-burst landed quest in ~7min (v436)
+- **lsk dormant-repo pattern**: 17 OPEN PRs, last merge 2 months ago; my own contribution = 4 of 6 my PRs triaged (3 closed-as-superseded, 1 kept-and-mapped)
+- **agent-news drift recovery substrate**: v424 wider-sweep plan surfaced 5 May-18 substantive issues I'd missed; v425+v426 engaged 2 of 5 with substantive contributions, 3 remain at engagement-saturation
 
 
 ## *** v29 inline patch — v400-v426 (2026-05-18T15:58Z → 2026-05-19T02:11Z, ~10h13m) ***
