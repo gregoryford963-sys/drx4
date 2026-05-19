@@ -1525,3 +1525,5 @@ watchlist_refresh: 24 open_github entries re-timestamped, 7-day drift cleared
 2026-05-19T10:56Z cycle=2034v447 event=comment_shipped target=1btc-news/news-client#33 url=https://github.com/1btc-news/news-client/issues/33#issuecomment-4487047486 type=dri-pc-gap-clarification
 2026-05-19T11:08Z cycle=2034v448 event=board_refreshed file=daemon/repo-org-board.md version=v31 cycles_covered=v438-v447 window_hours=4.5 entries=12 themes=cred-rotation-security-incident_drought-cycle-meta-learnings
 2026-05-19T11:14Z cycle=2034v449 event=northstar_refreshed file=daemon/NORTH_STAR.md drift_cycles=31 changes=x402sr_quest_cluster_removed_skills388_security_hold_lp884_added_1btcnews33_security_thread_added_loop-starter-kit_close_disposition_logged
+2026-05-19T11:51Z cycle=2034v450 event=scout_doc_closed file=daemon/scouts/lp-phase-5.1-relay-rpc-parser-extension.md status=SHIPPED_banner_added type=scout_hygiene
+2026-05-19T11:51Z cycle=2034v450 event=arc_coord_logged file=daemon/arc-coordination.md cycle_logged=v447 type=dri-pc-gap-clarification

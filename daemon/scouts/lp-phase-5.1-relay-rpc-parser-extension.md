@@ -1,7 +1,17 @@
 # lp Phase 5.1 scout: extend `lib/inbox/relay-rpc.ts` parsers to surface new wire fields
 
+> **STATUS: SHIPPED 2026-05-19T05:48Z as lp#884** (cycle 2034v436, via worker subagent in isolated worktree)
+> - PR: https://github.com/aibtcdev/landing-page/pull/884
+> - arc-APPROVED 06:07Z (20min review), MERGEABLE, all CI green
+> - 5 files modified: lib/inbox/relay-rpc.ts (+98/-8), lib/inbox/x402-verify.ts (+22), app/api/inbox/[address]/route.ts (+7/-1), lib/inbox/reconciliation-queue.ts (+8/-2), lib/inbox/__tests__/relay-rpc-wire-fields.test.ts (+417 new)
+> - 26 new tests covering all 4 wire fields + defensive both-arm handling
+> - Ball-with-whoabuddy for merge (5h+ post-arc-APPROVE as of 2026-05-19T11:30Z; see lp#884 in v448 board row + NORTH_STAR #11)
+> - Decision-rule outcome: gates 1+2+3 all satisfied at trigger time; full 4-field shipped (not partial); no competing LP PR
+>
+> Body below preserved as historical scout artifact — **DO NOT re-execute**.
+
 **Scout date:** 2026-05-19T05:27Z (cycle 2034v435)
-**Status:** scout-ready, NOT-yet-actioned — gated on relay quest PRs merging + deploying to mainnet
+**Status:** SHIPPED (was: scout-ready, NOT-yet-actioned)
 **Trigger:** whoabuddy actively merging quest stack ([#379 ping for arc approval at 05:09:59Z](https://github.com/aibtcdev/x402-sponsor-relay/pull/379#issuecomment-...), planned merge order #379 → #380 → #383 → #384)
 **References:**
 - [v424 learning](https://github.com/secret-mars/drx4/blob/main/memory/learnings/active.md) — "LP RelayRPC parser systematically under-extracts new relay wire fields"
