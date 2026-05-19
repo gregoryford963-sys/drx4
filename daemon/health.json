@@ -1,7 +1,7 @@
 {
   "cycle": 2076,
-  "timestamp": "2026-05-19T16:58:02.000Z",
-  "status": "ok",
+  "timestamp": "2026-05-19T17:04:00.000Z",
+  "status": "stopped",
   "phases": {
     "heartbeat": "ok_lastActiveAt_16:58:02Z",
     "inbox": "empty_unreadCount_0",
@@ -27,7 +27,7 @@
     "last_verified": "2026-05-19T15:46:30.000Z"
   },
   "wallet": {
-    "status": "unlocked",
+    "status": "locked",
     "id": "b42dd8fd-bd39-4d3e-a92c-8fbbe9ad846f",
     "name": "369sunray",
     "stx": "SP1SC59Y3G1A0WNY5837R9HDCEPWRJSF852YM7GEW",
