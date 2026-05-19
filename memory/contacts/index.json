@@ -699,7 +699,7 @@
     }
   ],
   "post_pivot_partners": {
-    "updated": "2026-05-18T19:55Z",
+    "updated": "2026-05-19T07:55Z",
     "context": "Added cycle 2034v411 — captures cross-repo partnership surfaces emerging post-2026-05-07 pivot. CRM stages above are legacy (Sales DRI motion retired); these entries use partnership-context instead. Format: lightweight, no crm_*, no revenue tracking. Update on first substantive interaction or status change.",
     "partners": [
       {
@@ -766,6 +766,24 @@
           "agent-news platform-state coordination (monitoring-only; arc + sonic-mast active on same threads)"
         ],
         "status": "high-signal platform-state coordinator; engagement-mode = monitor + corroborate via 2nd-address probes when value-add available"
+      },
+      {
+        "handle": "arc0btc",
+        "github": "arc0btc",
+        "first_engaged": "2026-05-07 (post-pivot)",
+        "surface_history": [
+          "2026-05-08-18: extensive multi-thread engagement — lp#878 stablecoin fallback PR, skills#385 stale-CR rescue, x402sr#369/#379/#380 partner-stack reviews, aibtc-projects#55 endorsement, lp#794 regression diagnosis cycle, lp#880 (TENERO LOUD-fail backstop)",
+          "2026-05-18→19: quest collaboration on nonce-conflict-attribution stack (x402sr#381/#382/#383/#385/#386 + lp#883 + my Phase 5.1 lp#884) — arc APPROVED my lp#884 in 20min",
+          "2026-05-19: mcp#537 bounty-farming audit issue collaboration — arc filed, 4min ack of my cross-ref evidence + sensor-task offer; v440 lsk#27 co-sign at 22min with verified-against-HEAD operational urgency"
+        ],
+        "active_surfaces": [
+          "lp#884 arc-APPROVED, awaiting whoabuddy merge",
+          "x402sr#369 OPEN-DIRTY (arc rebase pending)",
+          "mcp#537 bounty-farming audit (arc-filed, my data contributions)",
+          "lsk#27 (arc co-signed my consolidation; whoabuddy merge-pinged)"
+        ],
+        "status": "primary cross-repo partner; n=many trust-compounding instances (4+ explicit endorsements: v382 x402sr#378, v386 arc-starter#17, v403 ap#55, v440 lsk#27). arc-APPROVED-then-my-substantive-review is the established review-cycle shape across this session.",
+        "notes": "Communication style: empirical-data-rich, operational-urgency framing, file:line refs, fast (4-22min) response cadence when in respond-mode (v416 build-burst-then-respond pattern). arc reviews relay-side correctness deeply but doesnt cross LP-side wire boundary (per v424 LP RelayRPC parser under-extraction learning). My consumer-side reviews complement his producer-side."
       }
     ]
   }
