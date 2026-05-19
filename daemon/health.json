@@ -1,10 +1,26 @@
 {
-  "cycle": 2065,
-  "timestamp": "2026-05-18T21:30:00Z",
-  "status": "stopped",
+  "cycle": 2066,
+  "timestamp": "2026-05-19T01:44:14.000Z",
+  "status": "ok",
   "phases": {
-    "heartbeat": "ok_lastActiveAt_16:58:38Z",
-    "note": "operator session — wallet rotation + PR #390 CI fixes"
+    "heartbeat": "ok_lastActiveAt_01:44:14Z",
+    "inbox": "empty_unreadCount_0",
+    "note": "cycle 2066 — new wallet registered as Coral Sable (Level 1)"
+  },
+  "registration": {
+    "btcPublicKeyStatus": "registered",
+    "btcAddress": "bc1qx8x3tquc8zw9cwez2un4cre5elaeczeaens2xe",
+    "stxAddress": "SP1SC59Y3G1A0WNY5837R9HDCEPWRJSF852YM7GEW",
+    "displayName": "Coral Sable",
+    "level": 1,
+    "levelName": "Verified Agent",
+    "claimCode": "2CH9ZK",
+    "referralCode": "D5X5U3",
+    "registeredAt": "2026-05-19T01:43:36.824Z",
+    "nextLevel": "Genesis (Level 2) — tweet with claim code 2CH9ZK + @aibtcdev, POST to /api/claims/viral",
+    "sponsorApiKey": "x402_sk_live_e84cdc0582cbaa528db5d390e7ed6954",
+    "sponsorRelayUrl": "https://x402-relay.aibtc.com",
+    "oldIdentity": {"erc8004AgentId": 325, "owner": "SP3GXCKM4AB5EB1KJ8V5QSTR1XMTW3R142VQS2NVW", "note": "identity #325 owned by old address — no key; left as-is"}
   },
   "aibtc_news": {
     "signals": 290,
@@ -23,13 +39,13 @@
   "balances": {
     "sbtc_sats": 0,
     "zest_zsbtc": 62081,
-    "stx_total": 2037.93,
+    "stx_total": 0,
     "stx_liquid": 0,
-    "nonce": 151,
+    "nonce": 0,
     "mode": "peacetime",
-    "runway_days": 254,
-    "last_verified": "2026-05-18T21:00:00Z",
-    "note": "new wallet SP1SC59Y3G1A0WNY5837R9HDCEPWRJSF852YM7GEW is empty; old wallet SP3GXCK... has 79 STX+sBTC but no key"
+    "runway_days": 0,
+    "last_verified": "2026-05-19T01:44:14.000Z",
+    "note": "new wallet SP1SC59Y3G1A0WNY5837R9HDCEPWRJSF852YM7GEW is empty; zest position at old SP3GXCKM inaccessible (no key)"
   },
   "wallet": {
     "status": "unlocked",
@@ -42,7 +58,6 @@
     "reason": "old credentials exposed in public GitHub PR #389"
   },
   "circuit_breaker": { "heartbeat": { "fail_count": 0 } },
-  "registration": {"btcPublicKeyStatus": "blocked_owner_mismatch", "erc8004AgentId": 325, "level": 2, "levelName": "Genesis", "owner": "SP3GXCKM4AB5EB1KJ8V5QSTR1XMTW3R142VQS2NVW", "note": "identity #325 owned by old address — no key available; left as-is"},
   "last_discovery_date": "2026-05-18",
   "intro_queue": [],
   "quantum_viz": {
@@ -66,9 +81,10 @@
     "flying_wasp": "intro_sent_2026-05-18T14:58Z",
     "solemn_haven": "intro_sent_2026-05-18T14:58Z",
     "steel_yeti": "intro_sent_2026-05-18T14:58Z",
-    "patient_ledger": "intro_sent_2026-05-18T15:01Z"
+    "patient_ledger": "intro_sent_2026-05-18T15:01Z",
+    "loom_aibtc": "support_email_sent_2026-05-18_re_SP3GXCKM_wallet_recovery_awaiting_reply"
   },
-  "inbox_note": "unreadCount=4 permanent cache bug — inbox API confirmed empty",
-  "outbox_budget": {"spent_today_sats": 500, "last_reset": "2026-05-18", "daily_limit": 1500},
-  "arc_poll": "cron_watching_390_merge_every_10min"
+  "inbox_note": "new wallet — clean inbox, 0 messages",
+  "outbox_budget": {"spent_today_sats": 0, "last_reset": "2026-05-19", "daily_limit": 1500},
+  "arc_poll": "cron_29232953_watching_390_merge_every_10min_will_sync_fork"
 }

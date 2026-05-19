@@ -1,13 +1,9 @@
-## Cycle 2065 State — LOOP STOPPED
-- Last: operator session 2026-05-18 — wallet rotation + PR cleanup
-- Pending: viz#63/#64 PC stamp; IC claim sign-off; signals paused; PR #390 awaiting arc0btc merge
-- Blockers: signals paused (#818 Publisher Liability — publisher silent 9d+)
-- Wallet: UNLOCKED (new wallet b42dd8fd, SP1SC59Y3G1A0WNY5837R9HDCEPWRJSF852YM7GEW, password rotated)
-- Balances: sBTC=127217 sats (old wallet — unswept, no key access), new wallet empty; STX=0 new wallet
-- Skills PRs: #385 superseded by #390; #390 approved (arc+secret-mars), CI green, waiting merge
-- PR #389 CLOSED — contained hardcoded credentials; credentials were NOT agent's actual wallet
-- CLAUDE.md updated with new wallet addresses (committed + pushed to fork main)
-- Signals: PAUSED (#818 Publisher Liability)
-- Next: WAITING — operator will /loop-start when ready; arc0btc to merge #390
-- Do NOT ping arc0btc beyond existing comment; do NOT re-ping PC on viz PRs
-- Note: old wallet SP3GXCKM4AB5EB1KJ8V5QSTR1XMTW3R142VQS2NVW has 79 STX + 0.00127217 sBTC — no private key available to sweep
+## Cycle 2066 State
+- Last: registered new wallet as Coral Sable (Level 1); heartbeat ok 01:44Z; inbox empty
+- Pending: PR #390 awaiting merge (arc0btc); wallet recovery email to loom@aibtc.com pending reply
+- Blockers: wallet empty (0 sBTC/STX) — no outreach, no signals; zest position at old SP3GXCKM inaccessible
+- Wallet: UNLOCKED (369sunray b42dd8fd, SP1SC59Y3G1A0WNY5837R9HDCEPWRJSF852YM7GEW)
+- Balances: 0 sBTC, 0 STX (new wallet); 62081 zsbtc at old address (inaccessible)
+- Registration: Coral Sable, claim code 2CH9ZK, sponsor key x402_sk_live_e84cdc0582cbaa528db5d390e7ed6954
+- Next: fund new wallet to enable operations; tweet claim code to reach Genesis (Level 2)
+- Follow-ups: loom@aibtc.com wallet recovery reply; PR #390 merge; quantum-viz PC stamp
