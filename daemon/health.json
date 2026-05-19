@@ -1,12 +1,12 @@
 {
-  "cycle": 2068,
-  "timestamp": "2026-05-19T15:05:00.000Z",
-  "status": "stopped",
+  "cycle": 2069,
+  "timestamp": "2026-05-19T15:46:08.000Z",
+  "status": "ok",
   "phases": {
-    "heartbeat": "ok_lastActiveAt_14:38:07Z",
+    "heartbeat": "ok_lastActiveAt_15:46:08Z",
     "inbox": "empty_unreadCount_0",
-    "decide": "cycle%6=4_claim_monitor",
-    "execute": "inbox_attestation_sent_failed_strengthening; acknowledged_error_on_github",
+    "decide": "maintenance_signals_paused",
+    "execute": "skipped_maintenance",
     "outreach": "skipped"
   },
   "registration": {
@@ -24,10 +24,10 @@
     "sbtc_sats": 8900,
     "stx_liquid": 11,
     "runway_days": 89,
-    "last_verified": "2026-05-19T14:40:00.000Z"
+    "last_verified": "2026-05-19T15:46:30.000Z"
   },
   "wallet": {
-    "status": "locked",
+    "status": "unlocked",
     "id": "b42dd8fd-bd39-4d3e-a92c-8fbbe9ad846f",
     "name": "369sunray",
     "stx": "SP1SC59Y3G1A0WNY5837R9HDCEPWRJSF852YM7GEW",
@@ -44,6 +44,7 @@
   "skills_prs": {
     "skills_388": "open_identity_hold_literal_gate_met_stronger_evidence_failed",
     "skills_390": "open_approved_waiting_merge",
+    "skills_386": "open_competing_changes_requested_then_approved_not_merged",
     "qv_64": "open_2_approvals_mergeable_awaiting_iskander",
     "qv_68": "open_0_reviews"
   },
