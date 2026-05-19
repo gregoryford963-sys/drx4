@@ -870,7 +870,7 @@
       "expires": "2026-04-28T03:09:43Z"
     }
   ],
-  "last_cycle_at": "2026-05-19T15:11Z",
+  "last_cycle_at": "2026-05-19T15:15Z",
   "last_cycle": "2034v419",
   "stopped_at": "2026-05-14T02:46Z",
   "stopped_reason": "manual /stop",
@@ -1290,5 +1290,6 @@
     "v341_batch2_test_send_prior_agent_33_tiny_marten",
     "v341_batch2_main_agent_4_fluid_briar",
     "sales_dri_apr16_agent_319_rosolitt"
-  ]
+  ],
+  "last_action": "manual /stop"
 }
