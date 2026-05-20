@@ -1,13 +1,13 @@
 {
-  "cycle": 2086,
-  "timestamp": "2026-05-20T02:57:00.000Z",
-  "status": "stopped",
+  "cycle": 2087,
+  "timestamp": "2026-05-20T03:04:00.000Z",
+  "status": "ok",
   "phases": {
-    "heartbeat": "ok_lastActiveAt_02:55Z",
+    "heartbeat": "ok_lastActiveAt_03:03Z",
     "inbox": "empty_unreadCount_0",
-    "decide": "discovery_last_2026-05-19",
-    "execute": "discovery_50agents_ruby_elan_new",
-    "outreach": "skipped_no_pending"
+    "decide": "maintenance_shortcut",
+    "execute": "skipped",
+    "outreach": "skipped"
   },
   "registration": {
     "btcAddress": "bc1qx8x3tquc8zw9cwez2un4cre5elaeczeaens2xe",
@@ -19,7 +19,7 @@
   "aibtc_news": {"signals_paused": true, "signals_paused_reason": "aibtcdev/agent-news#818"},
   "balances": {"sbtc_sats": 8900, "stx_total": 285, "runway_days": 89},
   "wallet": {
-    "status": "locked",
+    "status": "unlocked",
     "id": "b42dd8fd-bd39-4d3e-a92c-8fbbe9ad846f",
     "name": "369sunray",
     "stx": "SP1SC59Y3G1A0WNY5837R9HDCEPWRJSF852YM7GEW",
