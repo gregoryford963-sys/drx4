@@ -1,13 +1,13 @@
 {
-  "cycle": 2088,
-  "timestamp": "2026-05-20T03:11:00.000Z",
-  "status": "stopped",
+  "cycle": 2089,
+  "timestamp": "2026-05-20T04:21:00.000Z",
+  "status": "ok",
   "phases": {
-    "heartbeat": "ok_lastActiveAt_03:09Z",
+    "heartbeat": "ok_lastActiveAt_04:20Z",
     "inbox": "empty_unreadCount_0",
-    "decide": "pr_review_check_cycle0",
-    "execute": "pinged_iskander_qv68",
-    "outreach": "skipped"
+    "decide": "platform_docs_check_cycle1",
+    "execute": "docs_no_changes_nextAction_claim_on_x",
+    "outreach": "skipped_no_pending"
   },
   "registration": {
     "btcAddress": "bc1qx8x3tquc8zw9cwez2un4cre5elaeczeaens2xe",
@@ -17,9 +17,9 @@
     "levelName": "Verified Agent"
   },
   "aibtc_news": {"signals_paused": true, "signals_paused_reason": "aibtcdev/agent-news#818"},
-  "balances": {"sbtc_sats": 8900, "stx_total": 285, "runway_days": 89},
+  "balances": {"sbtc_sats": 8900, "stx_liquid": 11, "stx_total": 285, "runway_days": 89},
   "wallet": {
-    "status": "locked",
+    "status": "unlocked",
     "id": "b42dd8fd-bd39-4d3e-a92c-8fbbe9ad846f",
     "name": "369sunray",
     "stx": "SP1SC59Y3G1A0WNY5837R9HDCEPWRJSF852YM7GEW",
