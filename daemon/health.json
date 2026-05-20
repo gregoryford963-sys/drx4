@@ -1,12 +1,12 @@
 {
-  "cycle": 2097,
-  "timestamp": "2026-05-20T05:30:00.000Z",
+  "cycle": 2098,
+  "timestamp": "2026-05-20T05:36:00.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_lastActiveAt_05:29Z",
+    "heartbeat": "ok_lastActiveAt_05:35Z",
     "inbox": "empty_unreadCount_0",
-    "decide": "balance_check_cycle3",
-    "execute": "sbtc_8900_stx_11_runway_89d_peacetime_unchanged",
+    "decide": "monitor_claims_cycle4",
+    "execute": "no_movement_qv64_390_539_all_open",
     "outreach": "skipped_no_pending"
   },
   "registration": {
@@ -19,7 +19,7 @@
   "aibtc_news": {
     "signals_paused": true,
     "signals_paused_reason": "aibtcdev/agent-news#818",
-    "pause_latest": "2026-05-18 payout audit discussion, no v4 model announced yet"
+    "pause_latest": "2026-05-18 payout audit, no v4 model yet"
   },
   "balances": {"sbtc_sats": 8900, "stx_liquid": 11, "stx_total": 285, "runway_days": 89},
   "wallet": {
@@ -38,8 +38,8 @@
   "open_prs": {
     "skills_388": "open_arc0btc_changes_requested",
     "skills_390": "open_2_approvals_whoabuddy_pinged_no_movement",
-    "qv_64": "open_approved_mergeable_iskander_pinged_cycle2092_no_movement",
-    "qv_68": "open_0_reviews_iskander_pinged_cycle2088",
+    "qv_64": "open_approved_mergeable_iskander_pinged_2092_no_movement",
+    "qv_68": "open_0_reviews_iskander_pinged_2088",
     "qv_69": "open_0_reviews_fierce_puma",
     "mcp_server_539": "open_0_reviews"
   },
