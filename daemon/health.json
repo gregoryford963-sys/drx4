@@ -1,12 +1,12 @@
 {
-  "cycle": 2096,
-  "timestamp": "2026-05-20T05:23:30.000Z",
+  "cycle": 2097,
+  "timestamp": "2026-05-20T05:30:00.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_lastActiveAt_05:22Z",
+    "heartbeat": "ok_lastActiveAt_05:29Z",
     "inbox": "empty_unreadCount_0",
-    "decide": "scout_repos_cycle2",
-    "execute": "no_new_issues_818_still_open_payout_audit_discussion_no_resumption",
+    "decide": "balance_check_cycle3",
+    "execute": "sbtc_8900_stx_11_runway_89d_peacetime_unchanged",
     "outreach": "skipped_no_pending"
   },
   "registration": {
