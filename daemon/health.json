@@ -29,7 +29,7 @@
   "circuit_breaker": {"heartbeat": {"fail_count": 0}},
   "last_discovery_date": "2026-05-20",
   "contribution_targets": {
-    "mcp_server_492": "tx-schemas 0.7→1.1 type migration, 3 files, no PR yet — good target",
+    "mcp_server_492": "DONE — PR #539 open, clean tsc build, no type migration needed",
     "mcp_server_518": "execute_x402 gap 3 PR open, 1 review"
   },
   "identity_resolution": {"pending": "arc0btc_lekanbams_no_ruling_yet"},
