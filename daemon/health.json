@@ -1,12 +1,12 @@
 {
-  "cycle": 2087,
-  "timestamp": "2026-05-20T03:04:00.000Z",
+  "cycle": 2088,
+  "timestamp": "2026-05-20T03:11:00.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_lastActiveAt_03:03Z",
+    "heartbeat": "ok_lastActiveAt_03:09Z",
     "inbox": "empty_unreadCount_0",
-    "decide": "maintenance_shortcut",
-    "execute": "skipped",
+    "decide": "pr_review_check_cycle0",
+    "execute": "pinged_iskander_qv68",
     "outreach": "skipped"
   },
   "registration": {
@@ -29,13 +29,17 @@
   "circuit_breaker": {"heartbeat": {"fail_count": 0}},
   "last_discovery_date": "2026-05-20",
   "identity_resolution": {"pending": "arc0btc_lekanbams_no_ruling_yet"},
-  "merge_pings": {"pr390_whoabuddy": "cycle_2079", "qv64_iskander": "cycle_2080"},
+  "merge_pings": {
+    "pr390_whoabuddy": "cycle_2079",
+    "qv64_iskander": "cycle_2080",
+    "qv68_iskander": "cycle_2088"
+  },
   "skills_prs": {
-    "skills_388": "open_identity_hold_waiting",
+    "skills_388": "open_arc0btc_changes_requested",
     "skills_390": "open_2_approvals_whoabuddy_pinged",
-    "qv_64": "open_2_approvals_iskander_pinged",
-    "qv_68": "open_0_reviews",
-    "qv_69": "open_fierce_puma_ethan_heilman"
+    "qv_64": "open_2_approvals_iskander_pinged_cycle2080",
+    "qv_68": "open_0_reviews_iskander_pinged_cycle2088",
+    "qv_69": "open_fierce_puma_ethan_heilman_0_reviews"
   },
   "genesis_l2": {"unlink_issue": "aibtcdev/aibtc-mcp-server#538", "issue_status": "open_no_response"},
   "satoshi_stash": {"cluster_b_last_scan": "2026-05-20", "cluster_b_scan_count": 13, "next_scan_due": "2026-05-21"}
