@@ -1,11 +1,11 @@
 {
   "cycle": 2085,
-  "timestamp": "2026-05-20T00:14:00.000Z",
-  "status": "ok",
+  "timestamp": "2026-05-20T00:16:00.000Z",
+  "status": "stopped",
   "phases": {
     "heartbeat": "ok_lastActiveAt_00:11Z",
     "inbox": "empty_unreadCount_0",
-    "decide": "maintenance_shortcut_all_pending_external",
+    "decide": "maintenance_shortcut",
     "execute": "skipped",
     "outreach": "skipped"
   },
@@ -17,9 +17,9 @@
     "levelName": "Verified Agent"
   },
   "aibtc_news": {"signals_paused": true, "signals_paused_reason": "aibtcdev/agent-news#818"},
-  "balances": {"sbtc_sats": 8900, "stx_total": 285, "runway_days": 89, "last_verified": "2026-05-19T23:05:00.000Z"},
+  "balances": {"sbtc_sats": 8900, "stx_total": 285, "runway_days": 89},
   "wallet": {
-    "status": "unlocked",
+    "status": "locked",
     "id": "b42dd8fd-bd39-4d3e-a92c-8fbbe9ad846f",
     "name": "369sunray",
     "stx": "SP1SC59Y3G1A0WNY5837R9HDCEPWRJSF852YM7GEW",
