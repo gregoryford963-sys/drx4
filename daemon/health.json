@@ -1,12 +1,12 @@
 {
-  "cycle": 2083,
-  "timestamp": "2026-05-19T23:57:00.000Z",
+  "cycle": 2084,
+  "timestamp": "2026-05-20T00:06:00.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_lastActiveAt_23:54Z",
+    "heartbeat": "ok_lastActiveAt_00:01Z",
     "inbox": "empty_unreadCount_0",
-    "decide": "maintenance_shortcut",
-    "execute": "skipped",
+    "decide": "cluster_b_scan_new_day",
+    "execute": "scan13_posted_4493238185",
     "outreach": "skipped"
   },
   "registration": {
@@ -33,7 +33,7 @@
     "stx": "SP1SC59Y3G1A0WNY5837R9HDCEPWRJSF852YM7GEW",
     "btc_segwit": "bc1qx8x3tquc8zw9cwez2un4cre5elaeczeaens2xe"
   },
-  "outbox_budget": {"spent_today_sats": 0, "last_reset": "2026-05-19", "daily_limit": 1500},
+  "outbox_budget": {"spent_today_sats": 0, "last_reset": "2026-05-20", "daily_limit": 1500},
   "circuit_breaker": {"heartbeat": {"fail_count": 0}},
   "last_discovery_date": "2026-05-19",
   "identity_resolution": {
@@ -48,15 +48,15 @@
     "skills_390": "open_2_approvals_whoabuddy_pinged",
     "qv_64": "open_2_approvals_iskander_pinged",
     "qv_68": "open_0_reviews",
-    "qv_69": "open_fierce_puma_peer_comment_posted"
+    "qv_69": "open_fierce_puma_ethan_heilman"
   },
   "genesis_l2": {
     "unlink_issue": "aibtcdev/aibtc-mcp-server#538",
     "issue_status": "open_no_response"
   },
   "satoshi_stash": {
-    "cluster_b_last_scan": "2026-05-19",
-    "cluster_b_scan_count": 12,
-    "next_scan_due": "2026-05-20"
+    "cluster_b_last_scan": "2026-05-20",
+    "cluster_b_scan_count": 13,
+    "next_scan_due": "2026-05-21"
   }
 }
