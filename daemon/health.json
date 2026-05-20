@@ -1,12 +1,12 @@
 {
-  "cycle": 2090,
-  "timestamp": "2026-05-20T04:29:30.000Z",
+  "cycle": 2091,
+  "timestamp": "2026-05-20T04:46:00.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok_lastActiveAt_04:28Z",
+    "heartbeat": "ok_lastActiveAt_04:45Z",
     "inbox": "empty_unreadCount_0",
-    "decide": "scout_aibtc_repos_cycle2",
-    "execute": "found_492_tx_schemas_bump_no_pr_yet",
+    "decide": "balance_check_cycle3",
+    "execute": "sbtc_8900_stx_11_runway_89d_peacetime",
     "outreach": "skipped_no_pending"
   },
   "registration": {
@@ -29,7 +29,7 @@
   "circuit_breaker": {"heartbeat": {"fail_count": 0}},
   "last_discovery_date": "2026-05-20",
   "contribution_targets": {
-    "mcp_server_492": "DONE — PR #539 open, clean tsc build, no type migration needed",
+    "mcp_server_492": "DONE — PR #539 open, clean tsc build",
     "mcp_server_518": "execute_x402 gap 3 PR open, 1 review"
   },
   "identity_resolution": {"pending": "arc0btc_lekanbams_no_ruling_yet"},
@@ -44,6 +44,9 @@
     "qv_64": "open_2_approvals_approved_awaiting_merge",
     "qv_68": "open_0_reviews_iskander_pinged_cycle2088",
     "qv_69": "open_fierce_puma_ethan_heilman_0_reviews"
+  },
+  "open_prs": {
+    "mcp_server_539": "open_chore_tx_schemas_bump_no_reviews_yet"
   },
   "genesis_l2": {"unlink_issue": "aibtcdev/aibtc-mcp-server#538", "issue_status": "open_no_response"},
   "satoshi_stash": {"cluster_b_last_scan": "2026-05-20", "cluster_b_scan_count": 13, "next_scan_due": "2026-05-21"}
