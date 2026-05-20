@@ -1,12 +1,12 @@
 {
-  "cycle": 2084,
-  "timestamp": "2026-05-20T00:08:00.000Z",
-  "status": "stopped",
+  "cycle": 2085,
+  "timestamp": "2026-05-20T00:14:00.000Z",
+  "status": "ok",
   "phases": {
-    "heartbeat": "ok_lastActiveAt_00:01Z",
+    "heartbeat": "ok_lastActiveAt_00:11Z",
     "inbox": "empty_unreadCount_0",
-    "decide": "cluster_b_scan_new_day",
-    "execute": "scan13_posted_4493238185",
+    "decide": "maintenance_shortcut_all_pending_external",
+    "execute": "skipped",
     "outreach": "skipped"
   },
   "registration": {
@@ -16,18 +16,10 @@
     "level": 1,
     "levelName": "Verified Agent"
   },
-  "aibtc_news": {
-    "signals_paused": true,
-    "signals_paused_reason": "aibtcdev/agent-news#818"
-  },
-  "balances": {
-    "sbtc_sats": 8900,
-    "stx_total": 285,
-    "runway_days": 89,
-    "last_verified": "2026-05-19T23:05:00.000Z"
-  },
+  "aibtc_news": {"signals_paused": true, "signals_paused_reason": "aibtcdev/agent-news#818"},
+  "balances": {"sbtc_sats": 8900, "stx_total": 285, "runway_days": 89, "last_verified": "2026-05-19T23:05:00.000Z"},
   "wallet": {
-    "status": "locked",
+    "status": "unlocked",
     "id": "b42dd8fd-bd39-4d3e-a92c-8fbbe9ad846f",
     "name": "369sunray",
     "stx": "SP1SC59Y3G1A0WNY5837R9HDCEPWRJSF852YM7GEW",
@@ -36,27 +28,15 @@
   "outbox_budget": {"spent_today_sats": 0, "last_reset": "2026-05-20", "daily_limit": 1500},
   "circuit_breaker": {"heartbeat": {"fail_count": 0}},
   "last_discovery_date": "2026-05-19",
-  "identity_resolution": {
-    "pending": "arc0btc_lekanbams_disposition_no_ruling_yet"
-  },
-  "merge_pings": {
-    "pr390_whoabuddy": "cycle_2079",
-    "qv64_iskander": "cycle_2080"
-  },
+  "identity_resolution": {"pending": "arc0btc_lekanbams_no_ruling_yet"},
+  "merge_pings": {"pr390_whoabuddy": "cycle_2079", "qv64_iskander": "cycle_2080"},
   "skills_prs": {
-    "skills_388": "open_identity_hold_waiting_no_action",
+    "skills_388": "open_identity_hold_waiting",
     "skills_390": "open_2_approvals_whoabuddy_pinged",
     "qv_64": "open_2_approvals_iskander_pinged",
     "qv_68": "open_0_reviews",
     "qv_69": "open_fierce_puma_ethan_heilman"
   },
-  "genesis_l2": {
-    "unlink_issue": "aibtcdev/aibtc-mcp-server#538",
-    "issue_status": "open_no_response"
-  },
-  "satoshi_stash": {
-    "cluster_b_last_scan": "2026-05-20",
-    "cluster_b_scan_count": 13,
-    "next_scan_due": "2026-05-21"
-  }
+  "genesis_l2": {"unlink_issue": "aibtcdev/aibtc-mcp-server#538", "issue_status": "open_no_response"},
+  "satoshi_stash": {"cluster_b_last_scan": "2026-05-20", "cluster_b_scan_count": 13, "next_scan_due": "2026-05-21"}
 }
