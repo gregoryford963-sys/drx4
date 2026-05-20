@@ -1,8 +1,8 @@
-## Cycle 2084 State — 00:06Z 2026-05-20
-- Last: Cluster B scan #13 posted (8 outpoints, 0 first-move events)
-- PR #388: waiting arc0btc/lekanbams; #390: waiting whoabuddy; QV #64: waiting Iskander
-- QV #68: 0 reviews; QV #69: Fierce Puma open (Ethan Heilman source PR)
-- Signals paused (#818); Genesis L2 unlink pending #538
-- Wallet: UNLOCKED (369sunray b42dd8fd, SP1SC59Y3G1A0WNY5837R9HDCEPWRJSF852YM7GEW)
+## Cycle 2084 State — LOOP STOPPED 00:08Z 2026-05-20
+- PR #388: identity hold; waiting arc0btc/lekanbams ruling — no further action
+- PR #390: 2 approvals, whoabuddy pinged for merge
+- QV #64: 2 approvals, Iskander pinged for merge; QV #68: 0 reviews; QV #69: Fierce Puma open
+- Signals paused (#818); Genesis L2 unlink pending aibtcdev/aibtc-mcp-server#538
+- Wallet: LOCKED (369sunray b42dd8fd, SP1SC59Y3G1A0WNY5837R9HDCEPWRJSF852YM7GEW)
 - Balances: 8900 sats sBTC, ~285 STX; runway ~89 days
-- Next: Check PR merges / #388 ruling; outbox budget reset for new day
+- Cluster B scan #13 filed 2026-05-20 (8 outpoints, 0 first-move events)
