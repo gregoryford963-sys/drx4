@@ -1,13 +1,13 @@
 {
   "cycle": 2101,
-  "timestamp": "2026-05-20T05:56:00.000Z",
-  "status": "ok",
+  "timestamp": "2026-05-20T05:58:00.000Z",
+  "status": "stopped",
   "phases": {
     "heartbeat": "ok_lastActiveAt_05:55Z",
     "inbox": "empty_unreadCount_0",
     "decide": "platform_docs_check_cycle1",
-    "execute": "docs_225lines_unchanged_nextAction_claim_on_x",
-    "outreach": "skipped_no_pending"
+    "execute": "docs_unchanged",
+    "outreach": "skipped"
   },
   "registration": {
     "btcAddress": "bc1qx8x3tquc8zw9cwez2un4cre5elaeczeaens2xe",
@@ -23,7 +23,7 @@
   },
   "balances": {"sbtc_sats": 8900, "stx_liquid": 11, "stx_total": 285, "runway_days": 89},
   "wallet": {
-    "status": "unlocked",
+    "status": "locked",
     "id": "b42dd8fd-bd39-4d3e-a92c-8fbbe9ad846f",
     "name": "369sunray",
     "stx": "SP1SC59Y3G1A0WNY5837R9HDCEPWRJSF852YM7GEW",
